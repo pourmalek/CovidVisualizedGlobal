@@ -1,6 +1,6 @@
 globalcovid 20210414 dates of component studies updates used
 
-This is the 20210414 and version of globalcovid codes. Date of collection of component studies' updates is 20210414
+This is the 20210414 and original version of globalcovid codes. Date of collection of component studies' updates is 20210414.
 
 The following dates are the update dates of component studies' estimates used in this version of globalcovid codes.
 
