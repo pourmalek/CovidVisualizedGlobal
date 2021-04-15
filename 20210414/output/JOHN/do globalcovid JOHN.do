@@ -19,8 +19,8 @@ log using "log globalcovid JOHN.smcl", replace
 * OBJECTIVE: Get, prepare, and combine component studies' estimates
 
 * This update   20210414        // update date of these codes
-* Date update   Not Applicable  // update date of study estimates used here
-* Date coverage 22jan2020, `c(current_date)' minus 1 or 2
+* Date update   20210414        // update date of study estimates used here (updates daily)
+* Date coverage 01jan2020,14apr2021
 ***************************************************************************
 
 
