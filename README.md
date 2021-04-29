@@ -8,9 +8,11 @@
 * **OBJECTIVE** of these `Stata` codes: Get and prepare component studies' estimates for global level, graph estimates
 ********************************************************************************************************************************************
 
-<br/><br/>
+The Stata codes can be exectued on local machines:
 
 Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" on local machine after the directory |globalcovid-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for 20210428 update.
+
+Preproduced outputs are stored foe ach update, e.g., [`20210428`](https://github.com/pourmalek/globalcovid/tree/main/20210428), in folder 
 
 ********************************************************************************************************************************************
 
