@@ -32,7 +32,7 @@ Benchmark for comparison.
 
 Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
 
-Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159018/pdf/main.pdf
+Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19. https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext
 
 Data site: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
 <br/><br/>
