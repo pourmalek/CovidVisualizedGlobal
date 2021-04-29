@@ -26,7 +26,6 @@
 ![image](https://user-images.githubusercontent.com/30849720/116574950-11768080-a8c3-11eb-8b7f-1e94a31ec1e7.png)
 
 *
-
 [COVID-19 daily deaths estimated to reported, global, reference scenarios](https://github.com/pourmalek/globalcovid/blob/main/20210414/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/116581330-10e0e880-a8c9-11eb-904e-9edadf98b072.png)
