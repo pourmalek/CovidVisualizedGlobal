@@ -115,6 +115,7 @@ Data site: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/histo
 
 #### A05 SRIV
 * S00 = [current]
+* Note: SRIV has 3 sets of scenrios, here (add). 
 <br/><br/>
 
 ********************************************************************************************************************************************
