@@ -1,5 +1,5 @@
 # globalcovid
-Rapid review of international estimates of global COVID-19
+# Rapid review of international estimates of global COVID-19
 
 ********************************************************************************************************************************************
 * Project: Rapid review of international estimates of global COVID-19
@@ -9,6 +9,8 @@ Rapid review of international estimates of global COVID-19
 ********************************************************************************************************************************************
 
 <br/><br/>
+
+Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" on local machine after the directory |globalcovid-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for 20210428 update.
 
 ********************************************************************************************************************************************
 
