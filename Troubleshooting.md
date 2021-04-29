@@ -1,7 +1,7 @@
 ## Troubleshooting
 
 
-Once you have started executing the downloaded code that is expected to be located in your local machine's |Downloads|covir2-main|20210405|code|master|do Iran merge.do, `Stata` may return *ERRORs*, or may *RESTART*. The following are among possible causes and treatments. | denotes / or \ for Mac or Windows respectively. 
+Once you have started executing the downloaded "do globalcovid master.do" that is expected to be located in your local machine's "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" (for update 20210428), `Stata` may return *ERRORs*, or may *RESTART*. The following are among possible causes and treatments. | denotes / or \ for Mac or Windows respectively. 
 <br/><br/>
 
 ### KNOWN ISSUES
@@ -14,7 +14,7 @@ _Déjà diagnostiqué_
 
 * **Treatment**: Make sure the file path to "do globalcovid master.do" on the local machine is: 
 
-"Users/local-user-name/Downloads/globalcovid-main/c/code/master/do globalcovid master.do"  [for Mac]  for update 20210428; and later instances of 202YMMDD for later updates. 
+"Users/local-user-name/Downloads/globalcovid-main/20210428/code/master/do globalcovid master.do"  [for Mac]  for update 20210428; and later instances of 202YMMDD for later updates. 
 
 "C:Users\local-user-name\Downloads\globalcovid-main\20210428\code\master\do globalcovid master.do" [for Windows] for update 20210428; and later instances of 202YMMDD for later updates. 
 
