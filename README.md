@@ -21,18 +21,14 @@ Selected _graphs_ are showb below.
 ********************************************************************************************************************************************
 
 ### Component studies
-
-**A00 JOHN**
-Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
-
-Benchmark for comparison.
-
 <br/><br/>
+
 **A01 DELP** 
 COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology https://www.covidanalytics.io/projections
 
 Main manuscript, pre-print: https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1
 <br/><br/>
+
 **A02 IHME** 
 Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
 <br/><br/>
@@ -45,13 +41,12 @@ Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los 
 **A05 SRIV**
 University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19
 <br/><br/>
-**A06 SOLT**
-Soltani K, Rezazadeh G. A New Dynamic Model to Predict the Effects of Governmental Decisions on the Progress of the CoViD-19 Epidemic. arxiv preprint. Submitted on 15 Aug 2020. https://arxiv.org/abs/2008.11716
-<br/><br/>
-**A07 GHAN**
-Ghanbari B. On forecasting the spread of the COVID-19 in Iran: The second wave. Chaos Solitons Fractals. 2020 Nov;140:110176. doi: 10.1016/j.chaos.2020.110176. Epub 2020 Jul 28. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386426/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386426/)
-<br/><br/>
-<br/><br/>
+
+* **A00 JOHN**
+Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
+
+Benchmark for comparison.
+
 
 ### Scenario number within component study
 
