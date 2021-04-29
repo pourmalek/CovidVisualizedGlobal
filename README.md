@@ -201,3 +201,11 @@ Data site: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/histo
 
 ********************************************************************************************************************************************
 
+<br/><br/>
+
+
+* All codes are copyrighted by the author under Apache License 2.0.
+
+* See [`LICENSE`](https://github.com/pourmalek/globalcovid/blob/main/LICENSE)
+
+<br/><br/>
