@@ -25,6 +25,8 @@ Selected _graphs_ are shown below.
 
 _Component studies and their scenarios_ are mentioned below after the selected _graphs_.
 
+For _Variable name structure_ in data, see 
+
 ********************************************************************************************************************************************
 
 
