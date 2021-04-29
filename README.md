@@ -27,6 +27,8 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 [`Variable name structure`](https://github.com/pourmalek/globalcovid/blob/main/Variable%20name%20structure.md)
 
+[`Troubleshooting`](https://github.com/pourmalek/globalcovid/blob/main/Troubleshooting.md)
+
 ********************************************************************************************************************************************
 
 
