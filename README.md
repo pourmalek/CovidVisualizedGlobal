@@ -14,6 +14,8 @@ Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|mas
 
 Preproduced _outputs_ are stored for each update, e.g., [`20210428`](https://github.com/pourmalek/globalcovid/tree/main/20210428), in folder [`output`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output), for each component study, i.e. [`DELP`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/DELP), [`IHME`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/IHME), [`IMPE`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/IMPE), [`LANL`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/LANL), and [`SRIV`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/SRIV), plus [`JOHN`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/JOHN) as benchmark. Combined results stored in [`merge`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/merge). 
 
+[`longitudinal`](https://github.com/pourmalek/globalcovid/tree/main/longitudinal) assessment of models will be added later. 
+
 Selected _graphs_ are showb below. 
 
 ********************************************************************************************************************************************
