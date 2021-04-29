@@ -40,3 +40,8 @@ Rapid review of international estimates of global COVID-19
 
 *
 
+[COVID-19 daily deaths estimated to reported, global, reference scenarios](https://github.com/pourmalek/globalcovid/blob/main/20210414/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/116581330-10e0e880-a8c9-11eb-904e-9edadf98b072.png)
+
+*
