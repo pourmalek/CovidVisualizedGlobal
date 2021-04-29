@@ -1,5 +1,5 @@
 # globalcovid
-# Rapid review of international estimates of global COVID-19
+## Rapid review of international estimates of global COVID-19
 
 ********************************************************************************************************************************************
 * Project: Rapid review of international estimates of global COVID-19
