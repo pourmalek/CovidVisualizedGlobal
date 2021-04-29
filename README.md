@@ -22,22 +22,38 @@ Selected _graphs_ are showb below.
 
 ### Component studies
 
+#### A00 JOHN
+Benchmark for comparison.
+
+Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
+
+Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159018/pdf/main.pdf
+
+Data site: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
+<br/><br/>
+
 #### A01 DELP
 COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology https://www.covidanalytics.io/projections
 
 Main manuscript, pre-print: https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1
+
+Data site: https://www.covidanalytics.io/projections
 <br/><br/>
 
 #### A02 IHME
 Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
 
 Main article: IHME COVID-19 Forecasting Team. Modeling COVID-19 scenarios for the United States. Nat Med. 2021 Jan;27(1):94-105. doi: 10.1038/s41591-020-1132-9. Epub 2020 Oct 23. https://www.nature.com/articles/s41591-020-1132-9
+
+Data site: http://www.healthdata.org/covid/data-downloads
 <br/><br/>
 
 #### A03 IMPE
 MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports
 
 Main article: Walker PGT, Whittaker C, Watson OJ, Baguelin M, Winskill P, et al. The impact of COVID-19 and strategies for mitigation and suppression in low- and middle-income countries. Science. 2020 Jul 24;369(6502):413-422. doi: 10.1126/science.abc0035. Epub 2020 Jun 12. https://science.sciencemag.org/content/369/6502/413
+
+Data site: https://github.com/mrc-ide/global-lmic-reports/tree/master/data
 <br/><br/>
 
 #### A04 LANL
@@ -45,18 +61,17 @@ Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los 
 
 Main document: Castro L,  Fairchild G, Michaud I, Osthus D. COFFEE: COVID-19 Forecasts using Fast Evaluations and Estimation.
 https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf
+
+Data site: https://covid-19.bsvgateway.org
 <br/><br/>
 
 #### A05 SRIV
 University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19
 <br/><br/>
 
-#### A00 JOHN
-Benchmark for comparison.
+Main manuscript, pre-print:Srivastava A, Xu T, Prasanna VK. Fast and Accurate Forecasting of COVID-19 Deaths Using the SIkJα Model. arXiv pre-print. Submitted on 10 Jul 2020 (v1), last revised 13 Jul 2020 (this version, v2). https://arxiv.org/abs/2007.05180
 
-Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
-
-Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159018/pdf/main.pdf
+Data site: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/historical_forecasts
 
 
 ********************************************************************************************************************************************
