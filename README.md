@@ -24,13 +24,14 @@ Selected _graphs_ are showb below.
 
 **A01 DELP** 
 COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology https://www.covidanalytics.io/projections
-
 Main manuscript, pre-print: https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1
 <br/><br/>
 
 **A02 IHME** 
 Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
+Main manuscript
 <br/><br/>
+
 **A03 IMPE** 
 MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports
 <br/><br/>
