@@ -25,7 +25,7 @@ Selected _graphs_ are shown below.
 
 _Component studies and their scenarios_ are mentioned below after the selected _graphs_.
 
-[`_Variable name structure_`](https://github.com/pourmalek/globalcovid/blob/main/Variable%20name%20structure.md)
+[`Variable name structure`](https://github.com/pourmalek/globalcovid/blob/main/Variable%20name%20structure.md)
 
 ********************************************************************************************************************************************
 
