@@ -32,7 +32,7 @@ Sometime, if the downloaded zip file is unzipped manually (in Windows), there mi
 In cases where one or more component study files have been downloaded but then the internet connection fails to download a next component study file in the row of files to be downloaded, see _(4) Palliative treatment_  below.
 
 * **Treatment**: (1) Close all running programs / applications except `Stata` and try again. (2) Try a better internet connection. (3) Try again later. 
-Unresponsiveness of a component study site server (or `-renvars-` ) should be temporary, and is usually resolved in about a day. In the meanwhile, one can check the previously created results in [`20210428/output/merge/`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/merge) or later outputs in [`202YMMDD/output/merge/`]. _(4) Palliative treatment_ for Intermittent good and bad internet connection: one can -// comment out- the code lines that read from internet and the files have already been successfully downloaded and then rerun the code. 
+Unresponsiveness of a component study site server (or `-renvars-` ) should be temporary, and is usually resolved in about a day. In the meanwhile, one can check the previously created results in [`20210428/output/merge/`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/merge) or later outputs in [202YMMDD/output/merge/]. _(4) Palliative treatment_ for Intermittent good and bad internet connection: one can -// comment out- the code lines that read from internet and the files have already been successfully downloaded and then rerun the code. 
 
 <br/><br/>
 
