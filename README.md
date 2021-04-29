@@ -28,30 +28,30 @@ COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations 
 Main manuscript, pre-print: https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1
 <br/><br/>
 
-### A02 IHME
+#### A02 IHME
 Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
 
 Main article: IHME COVID-19 Forecasting Team. Modeling COVID-19 scenarios for the United States. Nat Med. 2021 Jan;27(1):94-105. doi: 10.1038/s41591-020-1132-9. Epub 2020 Oct 23. https://www.nature.com/articles/s41591-020-1132-9
 <br/><br/>
 
-### A03 IMPE
+#### A03 IMPE
 MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports
 
 Main article: Walker PGT, Whittaker C, Watson OJ, Baguelin M, Winskill P, et al. The impact of COVID-19 and strategies for mitigation and suppression in low- and middle-income countries. Science. 2020 Jul 24;369(6502):413-422. doi: 10.1126/science.abc0035. Epub 2020 Jun 12. https://science.sciencemag.org/content/369/6502/413
 <br/><br/>
 
-### A04 LANL
+#### A04 LANL
 Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org
 
 Main document: Castro L,  Fairchild G, Michaud I, Osthus D. COFFEE: COVID-19 Forecasts using Fast Evaluations and Estimation.
 https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf
 <br/><br/>
 
-### A05 SRIV
+#### A05 SRIV
 University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19
 <br/><br/>
 
-### A00 JOHN
+#### A00 JOHN
 Benchmark for comparison.
 
 Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
@@ -66,18 +66,21 @@ Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to
 
 [Names within brackets assigned by this review study.]
 
-* **A00 JOHN**
+#### A00 JOHN
 * S00 = [Not Applicable]
 <br/><br/>
-* **A01 DELP** 
+
+#### A01 DELP
 * S00 = [Single scenario]
 <br/><br/>
-* **A02 IHME** 
+
+#### A02 IHME
 * S01 = Reference scenario [Status Quo] 
 * S02 = Best scenario (Universal masks) [Best]
 * S03 = Worse scenario (Mandates easing) [Worst] 
 <br/><br/>
-* **A03 IMPE** 
+
+#### A03 IMPE
 * S01 = Additional 50% Reduction [Best]	
 * S02 = Current level of interventions [Reference] 			
 * S03 = Relax Interventions 50% [Worst]
@@ -85,10 +88,12 @@ Research article: Dong E, Du H, Gardner L. An interactive web-based dashboard to
 * S05 = Surged Maintain Status Quo [Reference, Surged] 	
 * S06 = Surged Relax Interventions 50% [Worst, Surged]	
 <br/><br/>
-* **A04 LANL** 
+
+#### A04 LANL
 * S00 = [Single scenario]
 <br/><br/>
-* **A05 SRIV**
+
+#### A05 SRIV
 * S00 = [current]
 <br/><br/>
 
