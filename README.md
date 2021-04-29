@@ -20,6 +20,72 @@ Selected _graphs_ are showb below.
 
 ********************************************************************************************************************************************
 
+### Component studies
+
+<br/><br/>
+
+**A00 JOHN**
+Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu/map.html 
+
+Benchmark for comparison.
+
+<br/><br/>
+**A01 DELP** 
+COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology https://www.covidanalytics.io/projections
+<br/><br/>
+**A02 IHME** 
+Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
+<br/><br/>
+**A03 IMPE** 
+MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports
+<br/><br/>
+**A04 LANL** 
+Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org
+<br/><br/>
+**A05 SRIV**
+University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19
+<br/><br/>
+**A06 SOLT**
+Soltani K, Rezazadeh G. A New Dynamic Model to Predict the Effects of Governmental Decisions on the Progress of the CoViD-19 Epidemic. arxiv preprint. Submitted on 15 Aug 2020. https://arxiv.org/abs/2008.11716
+<br/><br/>
+**A07 GHAN**
+Ghanbari B. On forecasting the spread of the COVID-19 in Iran: The second wave. Chaos Solitons Fractals. 2020 Nov;140:110176. doi: 10.1016/j.chaos.2020.110176. Epub 2020 Jul 28. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386426/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386426/)
+<br/><br/>
+<br/><br/>
+
+### Scenario number within component study
+
+
+[Names within brackets assigned by this review study.]
+
+* **A00 JOHN**
+* S00 = [Not Applicable]
+<br/><br/>
+* **A01 DELP** 
+* S00 = [Single scenario]
+<br/><br/>
+* **A02 IHME** 
+* S01 = Reference scenario [Status Quo] 
+* S02 = Best scenario (Universal masks) [Best]
+* S03 = Worse scenario (Mandates easing) [Worst] 
+<br/><br/>
+* **A03 IMPE** 
+* S01 = Additional 50% Reduction [Best]	
+* S02 = Current level of interventions [Reference] 			
+* S03 = Relax Interventions 50% [Worst]
+* S04 = Surged Additional 50% Reduction [Best, Surged]
+* S05 = Surged Maintain Status Quo [Reference, Surged] 	
+* S06 = Surged Relax Interventions 50% [Worst, Surged]	
+<br/><br/>
+* **A04 LANL** 
+* S00 = [Single scenario]
+<br/><br/>
+* **A05 SRIV**
+* S00 = [current]
+<br/><br/>
+
+********************************************************************************************************************************************
+
 ## Selected graphs from update 20210428
 
 *
