@@ -210,4 +210,4 @@ Note: Johns Hopkins, obviously not an "estimation study", is used as a benchmark
 
 * All codes are copyrighted by the author under Apache License 2.0.
 
-* See [`LICENSE`](https://github.com/pourmalek/covir2/blob/main/LICENSE)
+* See [`LICENSE`](https://github.com/pourmalek/globalcovid/blob/main/LICENSE)
