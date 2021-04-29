@@ -23,7 +23,7 @@ Preproduced _outputs_ are stored for each update, e.g., [`20210428`](https://git
 
 Selected _graphs_ are shown below. 
 
-_Component studies and their scenarios_ mentioned below after the selected _graphs_.
+_Component studies and their scenarios_ are mentioned below after the selected _graphs_.
 
 ********************************************************************************************************************************************
 
