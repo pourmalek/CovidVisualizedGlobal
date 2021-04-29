@@ -30,6 +30,7 @@ Benchmark for comparison.
 <br/><br/>
 **A01 DELP** 
 COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology https://www.covidanalytics.io/projections
+
 Main manuscript, pre-print: https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1
 <br/><br/>
 **A02 IHME** 
