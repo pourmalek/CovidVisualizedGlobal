@@ -11,6 +11,8 @@
 * Codes and configuration follow the prototype codes in [`covir2`](https://github.com/pourmalek/covir2) COVID-19 Iran Review No 2 https://github.com/pourmalek/covir2
 ********************************************************************************************************************************************
 
+### Summary
+
 The Stata _codes_ can be executed on local machines:
 
 Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" on local machine after the directory |globalcovid-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for update 20210428; and later instances of 202YMMDD for later updates.
