@@ -10,7 +10,7 @@
 
 The Stata _codes_ can be exectued on local machines:
 
-Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" on local machine after the directory |globalcovid-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for 20210428 update.
+Run in Stata "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" on local machine after the directory |globalcovid-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for update 20210428; and later instances of 202YMMDD for later udpates.
 
 Preproduced _outputs_ are stored for each update, e.g., [`20210428`](https://github.com/pourmalek/globalcovid/tree/main/20210428), in folder [`output`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output), for each component study, i.e. [`DELP`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/DELP), [`IHME`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/IHME), [`IMPE`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/IMPE), [`LANL`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/LANL), and [`SRIV`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/SRIV), plus [`JOHN`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/JOHN) as benchmark. Combined results stored in [`merge`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/merge). 
 
