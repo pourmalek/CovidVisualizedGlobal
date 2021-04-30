@@ -90,7 +90,7 @@ Example: The -varname- DayIcdMeRaA03S01V07 carries -varlabel- "Daily ICU demand 
 						
 #### Secondary variable names:
 
-Secondary variables have 3 subtypes: (1) store a calculated daily CFR, (2) store values created for visualization of temporal succession of daily cases and daily deaths peaks.
+Secondary variables have 2 subtypes: (1) store a calculated daily CFR, (2) store values created for visualization of temporal succession of daily cases and daily deaths peaks.
 
 
 _(1) store a calculated daily CFR_
