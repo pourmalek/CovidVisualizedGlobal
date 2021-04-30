@@ -70,7 +70,7 @@ cd master
 
 
 
-* preserve native scheme (of the local machine; will be eventually restored at the end of "do Iran merge.do")
+* preserve native scheme (of the local machine; will be eventually restored at the end of "do globalcovid merge.do")
 
 di c(scheme)
 
