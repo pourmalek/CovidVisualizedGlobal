@@ -21,7 +21,7 @@ This file "do Iran master.do" was set up to be run from:
   where 2021MMDD is the udpate date, e.g. starting with 20210428
 
 If the first run does not go thru due to directory path clash, edit the contents within " " of the line 57 or 61 below, located beneath ****** set path based on local operating system ****** ,,, 
-,,, to reflect the location of directory /globalcovid-main/ or \globalcovid-main\ on your local machine. Path of /data/ or \data\ should be:
+,,, to reflect the location of directory /globalcovid-main/ or \globalcovid-main\ on your local machine. Path of /code/ or \code\ should be:
 
 
 global pathglobalcovid "/Users/`usrnam'/Downloads/globalcovid-main/202YMMDD/code/" [for Mac]
