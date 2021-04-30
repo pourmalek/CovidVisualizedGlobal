@@ -1,5 +1,4 @@
 
-
 ***************************************************************************
 * This is "do globalcovid master.do"
 
@@ -15,12 +14,12 @@
 
 /* 
 
-This file "do Iran master.do" was set up to be run from:
+This file "do globalcovid master.do" was set up to be run from:
   |Users|local-user-name|Downloads|globalcovid-main|202YMMDD|code|master|do globalcovid master.do
-  where 2021MMDD is the udpate date, e.g. starting with 20210414
+  where 202YMMDD is the udpate date, e.g. starting with 20210414
 
-If the first run does not go thru due to directory path clash, edit the contents within " " of the line 57 or 61 below, located beneath ****** set path based on local operating system ****** ,,, 
-,,, to reflect the location of directory /globalcovid-main/ or \globalcovid-main\ on your local machine. Path of /data/ or \data\ should be:
+If the first run does not go thru due to directory path clash, edit the contents within " " of the line 57 or 60 below, located beneath ****** set path based on local operating system ****** ,,, 
+,,, to reflect the location of directory /globalcovid-main/ or \globalcovid-main\ on your local machine. Path should be:
 
 
 global pathglobalcovid "/Users/`usrnam'/Downloads/globalcovid-main/202YMMDD/code/" [for Mac]
