@@ -23,6 +23,17 @@ Manually rearrange the directories so that the expected file path leading to "do
 This code is set up to work from "|Users|local-user-name|Downloads|202YMMDD|code|master|do globalcovid master.do". Sometimes users chose destinations other than |Downloads| folder. Before editing the code, it will not work from anywhere else.
 <br/><br/>
 Sometime, if the downloaded zip file is unzipped manually (in Windows), there might be a possibility that the file path is not identical to the correct path, that is created after auto-inflation of the zip file and shown above. In any case, rearrange the directories so that the expected file path mentioned above leads to "do globalcovid master.do"  
+
+A relatively frequent problem with unzipping in Windows is that the file path might become something like:
+
+"C:\Users\local-user-name\Downloads\globalcovid-main\globalcovid-main\20210428\code\master\do globalcovid master.do"
+
+
+
+
+Note: |202YMMDD| updates an be similary used instead of |20210428| update. Run "|Users|local-user-name|Downloads|globalcovid-main|202YMMDD|code|master|do globalcovid master.do" on local machine for the future 202YMMDD updates.
+
+
 <br/><br/>
 
 ********************************************************************************************************************************************
