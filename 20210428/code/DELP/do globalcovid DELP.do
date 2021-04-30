@@ -36,7 +36,7 @@ log using "log globalcovid DELP.smcl", replace
 /* Their latest estimations file “covid_analytics_projections.csv” is located on web page (https://www.covidanalytics.io/projections), 
 linked via “Download Most Recent Predictions” located all the way down the page. 
 Trying to extract the "web address" of this file (like what is doable for all other studies) leads to the actual data in raw format. 
-The file can be downlaoded, and moved to "$pathglobalcovid/DELP"  */
+The file can be downlaoded, and moved to "$pathglobalcovid/202YMMDD/code/DELP"  */
 
 
 
