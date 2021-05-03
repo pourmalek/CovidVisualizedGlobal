@@ -1,7 +1,7 @@
 ## Troubleshooting
 
 
-Once you have started executing the downloaded "do globalcovid master.do" that is expected to be located in your local machine's "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" (for update 20210428), `Stata` may return *ERRORs*, or may *RESTART*. The following are among possible causes and treatments. | denotes / or \ for Mac or Windows respectively. 
+Once you have started executing the downloaded "do globalcovid master.do" that is expected to be located in your local machine's "Users|local-user-name|Downloads|globalcovid-main|20210428|code|master|do globalcovid master.do" (for update 20210428), Stata may return *ERRORs*, or may *RESTART*. The following are among possible causes and treatments. | denotes / or \ for Mac or Windows respectively. 
 <br/><br/>
 
 ### KNOWN ISSUES
