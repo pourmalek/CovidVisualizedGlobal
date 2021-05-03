@@ -20,7 +20,7 @@
 
 [III. INNER WORKS OF THIS REPOSITORY](https://github.com/pourmalek/GlobalCovidCombineVisualize#iii-inner-works-of-this-repository)
 
-IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
+[IV. SELCTED GRAPHS FROM PREVIOUS UPDATES](https://github.com/pourmalek/GlobalCovidCombineVisualize#iv-selcted-graphs-from-previous-update)
 
 ********************************************************************************************************************************************
 
