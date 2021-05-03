@@ -37,26 +37,26 @@ Note: |202YMMDD| updates an be similary used instead of |20210428| update. Run "
 <br/><br/>
 
 ********************************************************************************************************************************************
-* **Problem** (2): If the *ERROR* message is about unavailability / unresponsiveness of a component study site server, or less frequently, web server unresponsiveness might occur during downloading `-renvars-` `Stata` command. For instance, the error message might be -r(691); I/O error- that is usually an internet connection issue. See -r(691) I/O error- on [statalist](https://www.statalist.org/forums/forum/general-stata-discussion/general/1475517-update-all-r-691-i-o-error). For other errors regarding connecting to the Internet from within `Stata`, e.g., error -r(610);- see `Stata` [common-connection-error-messages](https://www.stata.com/support/faqs/web/common-connection-error-messages/)
+* **Problem** (2): If the *ERROR* message is about unavailability / unresponsiveness of a component study site server, or less frequently, web server unresponsiveness might occur during downloading `-renvars-` Stata command. For instance, the error message might be -r(691); I/O error- that is usually an internet connection issue. See -r(691) I/O error- on [statalist](https://www.statalist.org/forums/forum/general-stata-discussion/general/1475517-update-all-r-691-i-o-error). For other errors regarding connecting to the Internet from within Stata, e.g., error -r(610);- see Stata [common-connection-error-messages](https://www.stata.com/support/faqs/web/common-connection-error-messages/)
 
 * Intermittent good and bad internet connection: 
 In cases where one or more component study files have been downloaded but then the internet connection fails to download a next component study file in the row of files to be downloaded, see _(4) Palliative treatment_  below.
 
-* **Treatment**: (1) Close all running programs / applications except `Stata` and try again. (2) Try a better internet connection. (3) Try again later. 
+* **Treatment**: (1) Close all running programs / applications except Stata and try again. (2) Try a better internet connection. (3) Try again later. 
 Unresponsiveness of a component study site server (or `-renvars-` ) should be temporary, and is usually resolved in about a day. In the meanwhile, one can check the previously created results in [`20210428/output/merge/`](https://github.com/pourmalek/globalcovid/tree/main/20210428/output/merge) or later outputs in [202YMMDD/output/merge/]. _(4) Palliative treatment_ for Intermittent good and bad internet connection: one can -// comment out- the code lines that read from internet and the files have already been successfully downloaded and then rerun the code. 
 
 <br/><br/>
 
 ********************************************************************************************************************************************
-* **Problem** (3): `Stata` spontaneously *RESTARTs* and shows start logo - on a local machine using Mac OS Big Sur - this is due to a change in behavior in Big Sur, not a bug in `Stata`.
+* **Problem** (3): Stata spontaneously *RESTARTs* and shows start logo - on a local machine using Mac OS Big Sur - this is due to a change in behavior in Big Sur, not a bug in Stata.
 
-* **Treatment**: (1) Quit all other open applications / programs until `Stata` runs the codes and the last output, that is "log global merge.smcl" is shown up. Even better: Restarting the local machine (to empty the cache), invoking no program, and running the code can be more efficient than running the code on the local machine even with closing all running programs. (2) Provide more memory available for older `Stata`s: In older versions of `Stata`, manually set a higher memory, e.g., `-set mem 1000m`-. In modern `Statas`, memory is no longer needed to be manually set, as memory adjustments are automatically performed.
+* **Treatment**: (1) Quit all other open applications / programs until Stata runs the codes and the last output, that is "log global merge.smcl" is shown up. Even better: Restarting the local machine (to empty the cache), invoking no program, and running the code can be more efficient than running the code on the local machine even with closing all running programs. (2) Provide more memory available for older Statas: In older versions of Stata, manually set a higher memory, e.g., `-set mem 1000m`-. In modern Statas, memory is no longer needed to be manually set, as memory adjustments are automatically performed.
 <br/><br/>
 
 ********************************************************************************************************************************************
 * **Problem** (4): With less expected frequency, your local machine (OS) might stop responding or *RESTART*, due to oversaturation of RAM, CPU. Fan noise might be heard. 
 
-* **Treatment**: (1) If this happens during running the code while all programs except `Stata` and the web browser are NOT already closed, you may want to retry after all other programs and applications except `Stata` and the web browser are closed. (2) If this happens during running the code while all programs except `Stata` and the web browser ARE closed, the RAM and CPU of the local machine cannot afford running the code. You may want to try running the code on another computer with better RAM, CPU.
+* **Treatment**: (1) If this happens during running the code while all programs except Stata and the web browser are NOT already closed, you may want to retry after all other programs and applications except `Stata` and the web browser are closed. (2) If this happens during running the code while all programs except Stata and the web browser ARE closed, the RAM and CPU of the local machine cannot afford running the code. You may want to try running the code on another computer with better RAM, CPU.
 
 
 
