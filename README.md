@@ -80,7 +80,6 @@ IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
 
 **SUMMARY**
-<br/><br/>
   
 Five international and periodically updating models of COVID-19 pandemic are identified and the results of their estimates are gathered, combined, and graphs for the progression of the pandemic at the global level. Periodical releases of these studies’ estimates undergo processing and visualization in this repository. A longitudinal visualization component is also present.   
 <br/><br/>
