@@ -104,15 +104,15 @@ Methods generally follow, with alterations, this article: Pourmalek F, Rezaei He
 Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, SRIV, details below. Results of estimates for each study are stored in Stata data files and graphs. Results for combination of all five studies’ estimates are also are stored in data files and combined graphs. 
 
 (1) DELP  
-DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections  
-Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections  
-Study website: https://www.covidanalytics.io/projections  
-Estimates web site: https://www.covidanalytics.io/projections, down the page, link that reads, "Download Most Recent Predictions"  
-License: https://github.com/COVIDAnalytics/DELPHI/blob/master/LICENSE  
-Institution: Operations Research Center, Massachusetts Institute of Technology, Cambridge  
-Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf  
-Periodically updating: Yes   
-Periodical updates accessible: No  
+. DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections  
+. Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections  
+. Study website: https://www.covidanalytics.io/projections  
+. Estimates web site: https://www.covidanalytics.io/projections, down the page, link that reads, "Download Most Recent Predictions"  
+. License: https://github.com/COVIDAnalytics/DELPHI/blob/master/LICENSE  
+. Institution: Operations Research Center, Massachusetts Institute of Technology, Cambridge  
+. Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf  
+. Periodically updating: Yes   
+. Periodical updates accessible: No  
 
 (2) IHME
 . IHME = Institute for Health Metrics and Evaluation  
@@ -125,50 +125,50 @@ Periodical updates accessible: No
 . Periodically updating: Yes  
 . Periodical updates accessible: Yes  
 
-(3) IMPE
-. IMPE = Imperial College 
-. Citation: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/ 
-. Study web site: https://mrc-ide.github.io/global-lmic-reports/
-. Estimates web site: https://github.com/mrc-ide/global-lmic-reports/tree/master/data
-. License: https://github.com/mrc-ide/global-lmic-reports
-. Institution: Imperial College, London
-. Among articles: https://science.sciencemag.org/content/369/6502/413
-. Periodically updating: Yes 
-. Periodical updates accessible: Yes
+(3) IMPE  
+. IMPE = Imperial College  
+. Citation: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/  
+. Study web site: https://mrc-ide.github.io/global-lmic-reports/  
+. Estimates web site: https://github.com/mrc-ide/global-lmic-reports/tree/master/data  
+. License: https://github.com/mrc-ide/global-lmic-reports  
+. Institution: Imperial College, London  
+. Among articles: https://science.sciencemag.org/content/369/6502/413  
+. Periodically updating: Yes  
+. Periodical updates accessible: Yes  
 
-(4) LANL
-. LANL = Los Alamos National Laboratories
-. Citation: Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org
-. Study web site: https://covid-19.bsvgateway.org
-. Estimates web site: https://covid-19.bsvgateway.org, Model Outputs, Global
-. License: https://covid-19.bsvgateway.org
-. Institution: Los Alamos National Laboratories, Los Alamos
-. Among documents: https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf
-. Periodically updating: Yes 
-. Periodical updates accessible: Yes
+(4) LANL  
+. LANL = Los Alamos National Laboratories  
+. Citation: Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org  
+. Study web site: https://covid-19.bsvgateway.org  
+. Estimates web site: https://covid-19.bsvgateway.org, Model Outputs, Global  
+. License: https://covid-19.bsvgateway.org  
+. Institution: Los Alamos National Laboratories, Los Alamos  
+. Among documents: https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf  
+. Periodically updating: Yes  
+. Periodical updates accessible: Yes  
 
-(5) SRIV
-. SRIV = Srivastava, Ajitesh
-. Citation: University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19
-. Study web site: https://scc-usc.github.io/ReCOVER-COVID-19/
-. Estimates web site: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/historical_forecasts
-. License: https://github.com/scc-usc/ReCOVER-COVID-19/blob/master/LICENSE
-. Institution: University of Southern California, Los Angeles
-. Among articles: https://arxiv.org/abs/2007.05180
-. Periodically updating: Yes 
-. Periodical updates accessible: Yes
+(5) SRIV  
+. SRIV = Srivastava, Ajitesh  
+. Citation: University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19  
+. Study web site: https://scc-usc.github.io/ReCOVER-COVID-19/  
+. Estimates web site: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/historical_forecasts  
+. License: https://github.com/scc-usc/ReCOVER-COVID-19/blob/master/LICENSE  
+. Institution: University of Southern California, Los Angeles  
+. Among articles: https://arxiv.org/abs/2007.05180  
+. Periodically updating: Yes  
+. Periodical updates accessible: Yes  
 
-(0) JOHN
-. JOHN = Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu
-. Not a target study, but a benchmark for comparison.
-. Citation: "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
-. Study web site: https://coronavirus.jhu.edu
-. Estimates web site: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series , "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"
-. License: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
-. Institution: Johns Hopkins University, Baltimore
-. Among articles: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.
-. Periodically updating: Yes 
-. Periodical updates accessible: Yes
+(0) JOHN  
+. JOHN = Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu  
+. Not a target study, but a benchmark for comparison.  
+. Citation: "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"  
+. Study web site: https://coronavirus.jhu.edu  
+. Estimates web site: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series , "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"  
+. License: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series  
+. Institution: Johns Hopkins University, Baltimore  
+. Among articles: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.  
+. Periodically updating: Yes   
+. Periodical updates accessible: Yes  
 
 
 **RESULTS, (B) Periodical updates of component studies:** 
@@ -183,7 +183,7 @@ Within each study, estimates for any given person-place-time unit – that is an
   
 **LIMITATIONS**
 
-(1) The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. (2) Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. Even a R package might be produced for this purpose. (3) Checking and performing updates in this repository are not automated. Use of Phyton, for instance, can make the process automated. (4) Communication of results on GitHub covers a relatively limited proportion of audience. Alternative communication venues and strategies can broaden the outreach to the audience. 
+(1) The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. (2) Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. Even a R package might be produced for this purpose. (3) Checking and performing updates in this repository are not automated. Use of Phyton, for instance, can make the process automated. (4) Communication of results on GitHub covers a relatively limited proportion of audience. Alternative communication venues and strategies can broaden the outreach to the audience.   
 I am willing for suggestions, collaboration, and help regarding overcoming the above-mentioned, and other limitations of this work. Please e-mail me (pourmalek_farshad@yahoo.com)
 
 
@@ -199,7 +199,7 @@ The idea of this work originated from looking at estimates for COVID-19 epidemic
 
 The Stata _codes_ can be executed on local machines:
 
-Run in Stata "Users|local-user-name|Downloads|GlobalCovidCombineVisualizeCombineVisualize-main|20210428|code|master|do GlobalCovidCombineVisualizeCombineVisualizemaster.do" on local machine after the directory |GlobalCovidCombineVisualizeCombineVisualize-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for update 20210428; and later instances of 202YMMDD for later updates.
+Run in Stata "Users|local-user-name|Downloads|GlobalCovidCombineVisualizeCombineVisualize-main|20210428|code|master|do GlobalCovidCombineVisualizeCombineVisualizemaster.do" on local machine after the directory |GlobalCovidCombineVisualizeCombineVisualize-main| is downloaded into and is located in the root of |Downloads| folder of your local machine, for update 20210428; and later instances of 202YMMDD for later updates.  
 
 Preproduced _outputs_ are stored for each update, e.g., [`20210428`](https://github.com/pourmalek/ GlobalCovidCombineVisualizeCombineVisualize /tree/main/20210428), in folder [`output`](https://github.com/pourmalek/ GlobalCovidCombineVisualizeCombineVisualize /tree/main/20210428/output), for each component study, i.e. [`DELP`](https://github.com/pourmalek/ GlobalCovidCombineVisualizeCombineVisualize /tree/main/20210428/output/DELP), [`IHME`](https://github.com/pourmalek/GlobalCovidCombineVisualize/tree/main/20210428/output/IHME), [`IMPE`](https://github.com/pourmalek/ GlobalCovidCombineVisualizeCombineVisualize /tree/main/20210428/output/IMPE), [`LANL`](https://github.com/pourmalek/GlobalCovidCombineVisualize/tree/main/20210428/output/LANL), and [`SRIV`](https://github.com/pourmalek/GlobalCovidCombineVisualize/tree/main/20210428/output/SRIV), plus [`JOHN`](https://github.com/pourmalek/GlobalCovidCombineVisualize/tree/main/20210428/output/JOHN) as benchmark. Combined results stored in [`merge`](https://github.com/pourmalek/GlobalCovidCombineVisualize/tree/main/20210428/output/merge). 
 
