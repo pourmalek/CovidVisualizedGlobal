@@ -18,7 +18,7 @@
 
 [II. METHODS AND RESULTS OF THIS WORK](https://github.com/pourmalek/GlobalCovidCombineVisualize#ii-methods-and-results-of-this-work)
 
-III. INNER WORKS OF THIS REPOSITORY 
+[III. INNER WORKS OF THIS REPOSITORY](https://github.com/pourmalek/GlobalCovidCombineVisualize#iii-inner-works-of-this-repository)
 
 IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
