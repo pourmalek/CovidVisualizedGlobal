@@ -1,30 +1,30 @@
-## GlobalCovidCombineVisualizeCombineVisualize
+## GlobalCovidCombineVisualize
 
 ## Combine and visualize international periodically updating estimates of COVID-19 at the global level 
 
 
 ********************************************************************************************************************************************
-* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level
+* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (GlobalCovidCombineVisualize)
 * Person: Farshad Pourmalek pourmalek_farshad@yahoo.com
 * Time (initial): 2021-04-14
 ********************************************************************************************************************************************
 
 
-I. SELCTED GRAPHS FROM LATEST UPDATE
+## I. SELCTED GRAPHS FROM LATEST UPDATE
 
-II. METHODS AND RESULTS OF THIS WORK
+## II. METHODS AND RESULTS OF THIS WORK
 
-III. INNER WORKS OF THIS REPOSITORY 
+## III. INNER WORKS OF THIS REPOSITORY 
 
-IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
+## IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
 *
 
-I. SELCTED GRAPHS FROM LATEST UPDATE
+## I. SELCTED GRAPHS FROM LATEST UPDATE
 
 HERE
 
-II. METHODS AND RESULTS OF THIS WORK
+## II. METHODS AND RESULTS OF THIS WORK
 
 
 SUMMARY
@@ -141,7 +141,7 @@ FUTURE DIRECTIONS AND COLLABOATIONS
 The idea of this work originated from looking at estimates for COVID-19 epidemic in one location, Iran, in repository covir2. Then I thought about creating a template that can be used for any location and its sub-locations – from global level, to regional (e.g., continents, WHO regions, GBD regions, etc.), national, and subnational levels (where available). Also thought about a visualization hub, that creates (combined results and) graphs for all locations for which COVID-19 estimates are available via the international periodically updating models. For writing the code, I lack the knowledge and experience with Python to do the job. I am looking for suggestions, collaboration, and help; please e-mail me (pourmalek_farshad@yahoo.com)
 
 
-III. INNER WORKS OF THIS REPOSITORY 
+## III. INNER WORKS OF THIS REPOSITORY 
 
 The Stata _codes_ can be executed on local machines:
 
@@ -160,7 +160,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 [`Troubleshooting`](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/Troubleshooting.md)
 
 
-IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
+## IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
 
 ## Selected graphs from update 20210428
