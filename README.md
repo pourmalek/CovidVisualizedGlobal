@@ -105,7 +105,9 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 
 (1) DELP 
 . DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections
+
 . Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections
+
 . Study website: https://www.covidanalytics.io/projections
 . Estimates web site: https://www.covidanalytics.io/projections, down the page, link that reads, "Download Most Recent Predictions"
 . License: https://github.com/COVIDAnalytics/DELPHI/blob/master/LICENSE
