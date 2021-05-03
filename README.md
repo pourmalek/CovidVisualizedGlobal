@@ -115,15 +115,15 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 -  Periodical updates accessible: No
 
 (2) IHME
-. IHME = Institute for Health Metrics and Evaluation
-. Citation: Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid
-. Study web site: http://www.healthdata.org/covid
-. Estimates web site: http://www.healthdata.org/covid/data-downloads
-. License: http://www.healthdata.org/about/terms-and-conditions
-. Institution: IHME, University of Washington, Seattle 
-. Among articles: https://www.nature.com/articles/s41591-020-1132-9
-. Periodically updating: Yes 
-. Periodical updates accessible: Yes
+. IHME = Institute for Health Metrics and Evaluation  
+. Citation: Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid  
+. Study web site: http://www.healthdata.org/covid  
+. Estimates web site: http://www.healthdata.org/covid/data-downloads  
+. License: http://www.healthdata.org/about/terms-and-conditions  
+. Institution: IHME, University of Washington, Seattle   
+. Among articles: https://www.nature.com/articles/s41591-020-1132-9  
+. Periodically updating: Yes  
+. Periodical updates accessible: Yes  
 
 (3) IMPE
 . IMPE = Imperial College 
