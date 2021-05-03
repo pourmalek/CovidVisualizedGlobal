@@ -80,14 +80,14 @@ IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
 **SUMMARY**
 
-Five international and periodically updating models of COVID-19 pandemic are identified and the results of their estimates are gathered, combined, and graphs for the progression of the pandemic at the global level. Periodical releases of these studies’ estimates undergo processing and visualization in this repository. A longitudinal visualization component is also present.  
+Five international and periodically updating models of COVID-19 pandemic are identified and the results of their estimates are gathered, combined, and graphs for the progression of the pandemic at the global level. Periodical releases of these studies’ estimates undergo processing and visualization in this repository. A longitudinal visualization component is also present.   
 
-
+  
 **BACKGROUND**
 
 The idea put to work here is to combine and visualize international periodically updating studies / models of COVID-19 pandemic, for the global level. The end result being sharable codes and outputs, for estimates files and graphs, for individual studies, and for combination of them, and repeat the process periodically. 
 
-
+  
 **METHODS**
 
 Eligibility for target (component) studies (models) of COVID-19 pandemic, are set as those that (1) provide estimates for at least one of the four outcomes of interests, i.e., daily deaths, daily incident cases, cumulative (total) deaths, and cumulative (total) incident cases, (2) at the global level, (3) as sum of estimates at the country level, (4) periodically updating into 2021, (5) provide a list of input data and their sources, and (6) provide explanation on methods of using input data and generation of model outputs. 
@@ -96,7 +96,7 @@ Target studies were found via hand search using google. After “Additional file
 
 Methods generally follow, with alterations, this article: Pourmalek F, Rezaei Hemami M, Janani L, Moradi-Lakeh M. Rapid review of COVID-19 epidemic estimation studies for Iran. BMC Public Health. 2021 Feb 1;21(1):257. doi: 10.1186/s12889-021-10183-3. https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-10183-3
 
-
+  
 **RESULTS**
 
 **RESULTS, (A) Studies:**
@@ -113,7 +113,7 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf  
 . Periodically updating: Yes   
 . Periodical updates accessible: No  
-
+  
 (2) IHME
 . IHME = Institute for Health Metrics and Evaluation  
 . Citation: Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid  
@@ -124,7 +124,7 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among articles: https://www.nature.com/articles/s41591-020-1132-9  
 . Periodically updating: Yes  
 . Periodical updates accessible: Yes  
-
+  
 (3) IMPE  
 . IMPE = Imperial College  
 . Citation: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/  
@@ -135,7 +135,7 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among articles: https://science.sciencemag.org/content/369/6502/413  
 . Periodically updating: Yes  
 . Periodical updates accessible: Yes  
-
+  
 (4) LANL  
 . LANL = Los Alamos National Laboratories  
 . Citation: Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org  
@@ -146,7 +146,7 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among documents: https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf  
 . Periodically updating: Yes  
 . Periodical updates accessible: Yes  
-
+  
 (5) SRIV  
 . SRIV = Srivastava, Ajitesh  
 . Citation: University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19  
@@ -157,7 +157,7 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among articles: https://arxiv.org/abs/2007.05180  
 . Periodically updating: Yes  
 . Periodical updates accessible: Yes  
-
+  
 (0) JOHN  
 . JOHN = Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu  
 . Not a target study, but a benchmark for comparison.  
@@ -170,23 +170,23 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Periodically updating: Yes   
 . Periodical updates accessible: Yes  
 
-
+  
 **RESULTS, (B) Periodical updates of component studies:** 
 
 Periodical updates of component studies are performed here according to release of new estimates updates by the two studies with less frequent estimates updates releases, i.e., IHME and IMPE. LANL updates every 3-4 days, SRIV every day, and DELP updates frequency is not discoverable to me. With each update release by IHME or IMPE, the whole set of five studies’ estimates updates are processed (updated here) and the results are stored in a directory named after the calendar date on which update was performed. 
 
-
+  
 **RESULTS, (C) Longitudinal visualization of component studies’ estimates updates:**
 
 Within each study, estimates for any given person-place-time unit – that is any specific outcome (e.g., daily deaths), any given location (e.g., the global level), and given calendar time period (e.g., May 2021) – might vary (in terms of height and trajectory of outcome estimates), across consecutive releases of updated estimates. Analysis of such variations should – based on my understanding – reflect that the largest proportion of variance originates from the use of new data input to the model. This is true across all-time variations. Other sources of variation include input of new data types to the model, and less frequently, major and minor updates in the modeling process, that are known as “model version”, and are quite distinct from “model estimates updates”. Based on such variation of model estimates updates for any given person-place-time unit, looking at the estimates of the same person-place-time unit across consecutive model estimates updates of any given model might be expected to provide additional insight about how model estimates evolve along with progression of the pandemic. This leads to longitudinal view of component studies’ estimates updates: e.g., look at IHME estimates for daily global deaths for May 2021 across consecutive IHME estimates releases. Timing of longitudinal visualization is set for the end of each calendar month, to minimize the role of calendar time as source of the above-described variation. 
 
-  
+    
 **LIMITATIONS**
 
 (1) The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. (2) Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. Even a R package might be produced for this purpose. (3) Checking and performing updates in this repository are not automated. Use of Phyton, for instance, can make the process automated. (4) Communication of results on GitHub covers a relatively limited proportion of audience. Alternative communication venues and strategies can broaden the outreach to the audience.   
 I am willing for suggestions, collaboration, and help regarding overcoming the above-mentioned, and other limitations of this work. Please e-mail me (pourmalek_farshad@yahoo.com)
 
-
+  
 **FUTURE DIRECTIONS AND COLLABOATIONS** 
 
 The idea of this work originated from looking at estimates for COVID-19 epidemic in one location, Iran, in repository covir2. Then I thought about creating a template that can be used for any location and its sub-locations – from global level, to regional (e.g., continents, WHO regions, GBD regions, etc.), national, and subnational levels (where available). Also thought about a visualization hub, that creates (combined results and) graphs for all locations for which COVID-19 estimates are available via the international periodically updating models. For writing the code, I lack the knowledge and experience with Python to do the job. I am looking for suggestions, collaboration, and help; please e-mail me (pourmalek_farshad@yahoo.com)
