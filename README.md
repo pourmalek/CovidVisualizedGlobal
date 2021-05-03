@@ -103,16 +103,16 @@ Methods generally follow, with alterations, this article: Pourmalek F, Rezaei He
 
 Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, SRIV, details below. Results of estimates for each study are stored in Stata data files and graphs. Results for combination of all five studies’ estimates are also are stored in data files and combined graphs. 
 
-(1) DELP 
-- DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections
-- Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections
--  Study website: https://www.covidanalytics.io/projections
--  Estimates web site: https://www.covidanalytics.io/projections, down the page, link that reads, "Download Most Recent Predictions"
--  License: https://github.com/COVIDAnalytics/DELPHI/blob/master/LICENSE
--  Institution: Operations Research Center, Massachusetts Institute of Technology, Cambridge
--  Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf 
--  Periodically updating: Yes 
--  Periodical updates accessible: No
+(1) DELP  
+DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections  
+Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections  
+Study website: https://www.covidanalytics.io/projections  
+Estimates web site: https://www.covidanalytics.io/projections, down the page, link that reads, "Download Most Recent Predictions"  
+License: https://github.com/COVIDAnalytics/DELPHI/blob/master/LICENSE  
+Institution: Operations Research Center, Massachusetts Institute of Technology, Cambridge  
+Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf  
+Periodically updating: Yes   
+Periodical updates accessible: No  
 
 (2) IHME
 . IHME = Institute for Health Metrics and Evaluation  
