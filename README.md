@@ -76,17 +76,20 @@ IV. SELCTED GRAPHS FROM PREVIOUS UPDATE
 
 
 ## II. METHODS AND RESULTS OF THIS WORK
+<br/><br/>
 
 
 **SUMMARY**
+<br/><br/>
 
 Five international and periodically updating models of COVID-19 pandemic are identified and the results of their estimates are gathered, combined, and graphs for the progression of the pandemic at the global level. Periodical releases of these studies’ estimates undergo processing and visualization in this repository. A longitudinal visualization component is also present.   
+<br/><br/>
 
   
 **BACKGROUND**
 
 The idea put to work here is to combine and visualize international periodically updating studies / models of COVID-19 pandemic, for the global level. The end result being sharable codes and outputs, for estimates files and graphs, for individual studies, and for combination of them, and repeat the process periodically. 
-
+<br/><br/>
   
 **METHODS**
 
@@ -95,13 +98,17 @@ Eligibility for target (component) studies (models) of COVID-19 pandemic, are se
 Target studies were found via hand search using google. After “Additional file 1 of Rapid review of COVID-19 epidemic estimation studies for Iran”, Page 39, [here](https://s3-eu-west-1.amazonaws.com/pstorage-npg-968563215/26271814/12889_2021_10183_MOESM1_ESM.docx)
 
 Methods generally follow, with alterations, this article: Pourmalek F, Rezaei Hemami M, Janani L, Moradi-Lakeh M. Rapid review of COVID-19 epidemic estimation studies for Iran. BMC Public Health. 2021 Feb 1;21(1):257. doi: 10.1186/s12889-021-10183-3. https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-10183-3
+<br/><br/>
 
-  
 **RESULTS**
+<br/><br/>
+
 
 **RESULTS, (A) Studies:**
+<br/><br/>
 
 Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, SRIV, details below. Results of estimates for each study are stored in Stata data files and graphs. Results for combination of all five studies’ estimates are also are stored in data files and combined graphs. 
+<br/><br/>
 
 (1) DELP  
 . DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections  
@@ -169,9 +176,11 @@ Five studies (models) meeting the eligibility criteria: DELP, IHME, IMPE, LANL, 
 . Among articles: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.  
 . Periodically updating: Yes   
 . Periodical updates accessible: Yes  
+<br/><br/>
 
   
 **RESULTS, (B) Periodical updates of component studies:** 
+<br/><br/>
 
 Periodical updates of component studies are performed here according to release of new estimates updates by the two studies with less frequent estimates updates releases, i.e., IHME and IMPE. LANL updates every 3-4 days, SRIV every day, and DELP updates frequency is not discoverable to me. With each update release by IHME or IMPE, the whole set of five studies’ estimates updates are processed (updated here) and the results are stored in a directory named after the calendar date on which update was performed. 
 <br/><br/>
@@ -182,12 +191,14 @@ Within each study, estimates for any given person-place-time unit – that is an
 <br/><br/>
 
 **LIMITATIONS**
+<br/><br/>
 
 (1) The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. (2) Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. Even a R package might be produced for this purpose. (3) Checking and performing updates in this repository are not automated. Use of Phyton, for instance, can make the process automated. (4) Communication of results on GitHub covers a relatively limited proportion of audience. Alternative communication venues and strategies can broaden the outreach to the audience.   
 I am willing for suggestions, collaboration, and help regarding overcoming the above-mentioned, and other limitations of this work. Please e-mail me (pourmalek_farshad@yahoo.com)
 <br/><br/>
   
 **FUTURE DIRECTIONS AND COLLABOATIONS** 
+<br/><br/>
 
 The idea of this work originated from looking at estimates for COVID-19 epidemic in one location, Iran, in repository covir2. Then I thought about creating a template that can be used for any location and its sub-locations – from global level, to regional (e.g., continents, WHO regions, GBD regions, etc.), national, and subnational levels (where available). Also thought about a visualization hub, that creates (combined results and) graphs for all locations for which COVID-19 estimates are available via the international periodically updating models. For writing the code, I lack the knowledge and experience with Python to do the job. I am looking for suggestions, collaboration, and help; please e-mail me (pourmalek_farshad@yahoo.com)
 <br/><br/>
