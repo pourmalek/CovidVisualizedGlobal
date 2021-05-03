@@ -1,9 +1,9 @@
 ## GlobalCovidCombineVisualize
 
-## Combine and Visualize international periodically updating estimates of COVID-19 at the global level 
+## Combine and visualize international periodically updating estimates of COVID-19 at the global level 
 
 ********************************************************************************************************************************************
-* Project: Combine and Visualize international periodically updating estimates of COVID-19 at the global level
+* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level
 * Person: Farshad Pourmalek pourmalek_farshad@yahoo.com
 * Time (initial): 2021-04-14
 * **OBJECTIVE** of these `Stata` codes: Get and prepare international periodically updating models of COVID-19 pandemic, combine them, 
