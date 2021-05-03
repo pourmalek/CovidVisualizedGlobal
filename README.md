@@ -1,15 +1,16 @@
-## globalcovid
-## Rapid review of international estimates of global COVID-19
+## GlobalCovidCombineVisualize
+
+## Combine and Visualize international periodically updating estimates of COVID-19 at the global level 
 
 ********************************************************************************************************************************************
-* Project: Rapid review of international estimates of global COVID-19
+* Project: Combine and Visualize international periodically updating estimates of COVID-19 at the global level
 * Person: Farshad Pourmalek pourmalek_farshad@yahoo.com
 * Time (initial): 2021-04-14
-* **OBJECTIVE** of these `Stata` codes: Get and prepare component studies' estimates for global level, combine them, 
-* and produce data files and graphs of combined estimates
+* **OBJECTIVE** of these `Stata` codes: Get and prepare international periodically updating models of COVID-19 pandemic, combine them, 
+* and produce estimates data files and graphs for invididual models and combined estimates 
 *
-* This review generally follows the methods described in Pourmalek F, Rezaei Hemami M, Janani L, Moradi-Lakeh M. Rapid review of COVID-19 epidemic estimation studies for Iran. BMC Public Health. 2021 Feb 1;21(1):257. doi: 10.1186/s12889-021-10183-3. https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-10183-3
-* Codes and configuration follow the prototype codes in [`covir2`](https://github.com/pourmalek/covir2) COVID-19 Iran Review No 2 https://github.com/pourmalek/covir2
+* This work generally follows the methods described in Pourmalek F, Rezaei Hemami M, Janani L, Moradi-Lakeh M. Rapid review of COVID-19 epidemic estimation studies for Iran. BMC Public Health. 2021 Feb 1;21(1):257. doi: 10.1186/s12889-021-10183-3. https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-021-10183-3
+* Codes and configuration generally follow the prototype codes in [`covir2`](https://github.com/pourmalek/covir2) COVID-19 Iran Review No 2 https://github.com/pourmalek/covir2
 ********************************************************************************************************************************************
 
 ### Summary
