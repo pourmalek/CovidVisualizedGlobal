@@ -16,7 +16,7 @@
 
 [I. SELCTED GRAPHS FROM LATEST UPDATE](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/README.md#i-selcted-graphs-from-latest-update)
 
-II. METHODS AND RESULTS OF THIS WORK
+[II. METHODS AND RESULTS OF THIS WORK](https://github.com/pourmalek/GlobalCovidCombineVisualize#ii-methods-and-results-of-this-work)
 
 III. INNER WORKS OF THIS REPOSITORY 
 
