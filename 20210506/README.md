@@ -29,8 +29,9 @@ DELP 20210506, IHME 20210506, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 ****
 
-[Daily cases, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2021a%20COVID-19%20daily%20cases%2C%20Iran%2C%20reference%20scenarios.pdf)
+[Daily cases, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/118208629-f6a42000-b41b-11eb-9d18-e0c909f3aac8.png)
 
 ****
 
