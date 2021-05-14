@@ -23,9 +23,8 @@ DELP 20210506, IHME 20210506, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 ****
 
-[Daily deaths, 2021](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
+[Daily deaths, 2021, with uncertainty](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2013%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on%2C%20CI.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/118206401-492f0d80-b417-11eb-8439-0fa8d570b5a6.png)
 
 ****
 
