@@ -8,14 +8,7 @@ DELP 20210506, IHME 20210506, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 * IHME now explicitly adjusts for under-reporting. A major improvement. Next improvement could be accounting for asymptomatic transmission. 
 
-. IHME correction factors for under-reporting of deaths and cases in Iran are about **2.5** and **9** (6-17), the latter in first five months of 2021. 
-
-. IHME correction factor for under-reporting of deaths in Iran = 2.4. 
-
-. IHME correction factor for under-reporting of cases in Iran (during 21-01-01 to 21-05-06), mean = 8.9, min = 5.7, max = 17.2. 
-<br/><br/>
 * Hospital-related outcomes that were absent in one previous update of IHME are now back.
-
 
 <br/><br/>
 
@@ -30,8 +23,9 @@ DELP 20210506, IHME 20210506, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 ****
 
-[Daily deaths, 2020-12 on](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2012a%20COVID-19%20daily%20deaths%2C%20Iran%2C%20reference%20scenarios%2C%202020-12-01%20on.pdf)
+[Daily deaths, 2021](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/118206401-492f0d80-b417-11eb-8439-0fa8d570b5a6.png)
 
 ****
 
