@@ -35,33 +35,21 @@ DELP 20210506, IHME 20210506, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 ****
 
-[Daily cases, 2020-12 on](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2022a%20COVID-19%20daily%20cases%2C%20Iran%2C%20reference%20scenarios%2C%202020-12-01%20on.pdf)
+[Daily cases, 2021, with uncertainty]
 
 
 ****
 
-[Daily active cases](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2062.1%20COVID-19%20daily%20active%20cases%20wo%20GHAN%20Hijri.pdf)
+[Hospital-related outcomes, 2021]
 
 
 ****
 
-[Hospital-related outcomes, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2071%20COVID-19%20hospital-related%20outcomes.pdf)
+[Daily deaths estimated to reported, all time]
 
 
 ****
 
-[Hospital-related outcomes, 2020-12 on](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2073%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202020-12-01%20on.pdf)
-
-
-****
-
-[Daily deaths estimated to reported, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2091%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20Iran%2C%20reference%20scenarios.pdf)
-
-
-****
-
-[Daily cases estimated to reported, 2021](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210506/output/merge/graph%2093%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20Iran%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf) 
-
-
+[Daily cases estimated to reported, 2021]
 ****
 
