@@ -49,12 +49,19 @@ IHME source for model versions: IHME had 3 versions before (reference here). Sin
 IMPE model versions
 
 IMPE V1 2020-04-28 to 2020-05-30
+
 IMPE V2 2020-05-31 to 2020-06-09
+
 IMPE V3 2020-06-14 to 2020-06-26
+
 IMPE V4 2020-06-14 to 2020-07-31
+
 IMPE V5 2020-08-08 to 2020-11-01
+
 IMPE V6 2020-11-10 to 2021-01-12
+
 IMPE V7 2021-01-18 to 2021-04-24
+
 IMPE V8 2021-05-10 to when specified otherwise
 
 IMPE source for model versions: https://github.com/mrc-ide/global-lmic-reports/tree/master/data
