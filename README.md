@@ -29,43 +29,41 @@
 
 ********************************************************************************************************************************************
 
-## I. SELCTED GRAPHS FROM LATEST UPDATE
+## I. SELCTED GRAPHS 
 
-### update 20210428
+### Daily deaths, reference scenarios, all time
 
-*
-[COVID-19 daily deaths, Global, reference scenarios](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios.pdf)
+***
 
-![image](https://user-images.githubusercontent.com/30849720/116601081-e4d06200-a8de-11eb-997e-5f9d4f0ebe3e.png)
+uptake 20210521 [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210521/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/119574088-06036180-bd6a-11eb-9c4d-754f95230fee.png)
 
-*
-[COVID-19 daily deaths, global, reference scenarios, after 2021-01-01](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
+***
+***
 
-![image](https://user-images.githubusercontent.com/30849720/116601258-26f9a380-a8df-11eb-83c7-2f7b924ffcbb.png)
+### Daily cases, reference scenarios, with uncertainty, 2021
 
-* 
-[COVID-19 daily active cases, global](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2061%20COVID-19%20daily%20active%20cases.pdf)
+uptake 20210521 [Daily cases, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210521/output/merge/graph%2023%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on%2C%20CI.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/116601405-54dee800-a8df-11eb-861c-dab802964208.png)
+![image](https://user-images.githubusercontent.com/30849720/119574996-313a8080-bd6b-11eb-9020-235494eb6339.png)
 
-*
-[COVID-19 daily hospital-related outcomes global, median scenarios](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2071%20COVID-19%20hospital-related%20outcomes.pdf)
+***
 
-![image](https://user-images.githubusercontent.com/30849720/116601531-78099780-a8df-11eb-8a75-68e53678520a.png)
+### Hospital-related outcomes, all time
 
-*
-[COVID-19 daily hospital-related outcomes global, median scenarios, after 2020-12-01, without IHME Bed need, IMPE Hosp demand](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2073%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202021-01-01%20on.pdf)
+uptake 20210521 [Hospital-related outcomes, all time](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210521/output/merge/graph%2071%20COVID-19%20hospital-related%20outcomes.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/116601654-9374a280-a8df-11eb-9001-0877be166612.png)
+![image](https://user-images.githubusercontent.com/30849720/119575075-53cc9980-bd6b-11eb-85f7-6fa60c43ddf6.png)
 
-*
+***
 
-[COVID-19 daily deaths estimated to reported, global, reference scenarios](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210428/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
+### Daily deaths estimated to reported, reference scenarios, 2021
 
-![image](https://user-images.githubusercontent.com/30849720/116601776-b606bb80-a8df-11eb-88ca-467fb0328db7.png)
+uptake 20210521 [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/20210521/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021-01-01%20on.pdf)
 
-*
+![image](https://user-images.githubusercontent.com/30849720/119575287-a73ee780-bd6b-11eb-9ef5-45ebec21b24c.png)
+
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
