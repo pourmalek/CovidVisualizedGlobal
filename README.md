@@ -1,11 +1,12 @@
-## GlobalCovidCombineVisualize
+## CovidVisualizedGlobal
+
 
 ## Combine and visualize international periodically updating estimates of COVID-19 at the global level 
 
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
-* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (GlobalCovidCombineVisualize)
+* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (CovidVisualizedGlobal)
 * Person: Farshad Pourmalek pourmalek_farshad@yahoo.com
 * Time (initial): 2021-04-14
 ********************************************************************************************************************************************
