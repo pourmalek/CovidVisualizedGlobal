@@ -284,6 +284,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+
+*
+
 **uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
 
 [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time%2C%20without%20JOHN.pdf)
@@ -317,6 +321,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ****
 
 ### (2) Daily deaths, reference scenarios, with uncertainty, 2011
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
 
 *
 
@@ -355,6 +363,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+
+*
+
 **uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
 
 [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021%2C%20without%20JOHN.pdf)
@@ -386,6 +398,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ****
 
 ### (4) Daily cases, reference scenarios, all time
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
 
 *
 
@@ -427,6 +443,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+
+*
+
 **uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
 
 [Daily cases, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2033%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -458,6 +478,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ****
 
 ### (6) Daily cases, 3 scenarios, 2011
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
 
 *
 
@@ -494,6 +518,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ****
 
 ### (7) Hospital-related outcomes, all time
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
 
 *
 
@@ -535,6 +563,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+
+*
+
 **uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
 
 [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2072%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
@@ -569,6 +601,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+
+*
+
 **uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
 
 [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
@@ -600,6 +636,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ****
 
 ### (10) Daily cases estimated to reported, reference scenarios, 2021
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
 
 *
 
