@@ -278,7 +278,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily deaths, reference scenarios, all time
+### (1) Daily deaths, reference scenarios, all time
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522 
 
@@ -288,7 +288,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily deaths, reference scenarios, with uncertainty, 2011
+### (2) Daily deaths, reference scenarios, with uncertainty, 2011
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -298,7 +298,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily deaths, 3 scenarios, 2011
+### (3) Daily deaths, 3 scenarios, 2011
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -308,7 +308,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily cases, reference scenarios, all time
+### (4) Daily cases, reference scenarios, all time
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -318,7 +318,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily cases, reference scenarios, with uncertainty, 2021
+### (5) Daily cases, reference scenarios, with uncertainty, 2021
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -328,7 +328,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily cases, 3 scenarios, 2011
+### (6) Daily cases, 3 scenarios, 2011
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -338,7 +338,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Hospital-related outcomes, all time
+### (7) Hospital-related outcomes, all time
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -348,7 +348,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
+### (8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -358,7 +358,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily deaths estimated to reported, reference scenarios, 2021
+### (9) Daily deaths estimated to reported, reference scenarios, 2021
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
@@ -368,7 +368,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ****
 
-### Daily cases estimated to reported, reference scenarios, 2021
+### (10) Daily cases estimated to reported, reference scenarios, 2021
 
 **uptake 20210522**: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
 
