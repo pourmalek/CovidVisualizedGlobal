@@ -261,6 +261,20 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 * Note: SRIV has 3 sets of scenrios, here (add). 
 <br/><br/>
 
+
+
+### uptakes in this repository 
+
+**bold fonts** show the uptake wa triggered by IHME or IMPE. UCLS was included from 20210528.
+
+uptake 20210604: DELP 20210603, **IHME 20210604**, IMPE 20210527, LANL 20210602, SRIV 20210604, UCLA 20210507
+uptake 20210603: DELP 20210602, IHME 20210528, **IMPE 20210527**, LANL 20210526, SRIV 20210603, UCLA 20210507
+uptake 20210528: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528, UCLA 20210507
+uptake 20210522: DELP 20210522, IHME 20210521, **IMPE 20210522**, LANL 20210519, SRIV 20210522
+uptake 20210521: DELP 20210521, **IHME 20210521**, IMPE 20210516, LANL 20210519, SRIV 20210521
+uptake 20210516: DELP 20210516, IHME 20210510, **IMPE 20210516**, LANL 20210516, SRIV 20210516
+uptake 20210515: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
