@@ -322,6 +322,13 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
 
 
 
@@ -382,6 +389,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ![image](https://user-images.githubusercontent.com/30849720/120950227-34ceef80-c6fb-11eb-8cd9-197b3c27bd68.png)
 
 *
+
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
 
 
 
@@ -447,6 +466,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
+
 
 
 
@@ -509,6 +540,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ![image](https://user-images.githubusercontent.com/30849720/120950334-6942ab80-c6fb-11eb-8d3a-803abce84b72.png)
 
 *
+
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
 
 
 
@@ -574,6 +617,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
+
 
 
 
@@ -637,6 +692,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ![image](https://user-images.githubusercontent.com/30849720/120950426-9beca400-c6fb-11eb-97a6-90673fc2a1c6.png)
 
 *
+
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
 
 
 
@@ -704,6 +771,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
+
 
 
 
@@ -769,6 +848,19 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
+
+
 
 
 
@@ -832,6 +924,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ![image](https://user-images.githubusercontent.com/30849720/120950563-e5d58a00-c6fb-11eb-8680-834124eeec9a.png)
 
 *
+
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
 
 
 
@@ -897,6 +1001,18 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ![image](https://user-images.githubusercontent.com/30849720/120950618-000f6800-c6fc-11eb-8191-70d9649cac7c.png)
 
 *
+
+**uptake 20210515**: DELP 20210515, IHME 20210510, **IMPE 20210510**, LANL 20210512, SRIV 20210513
+
+
+
+*
+
+
+
+
+
+
 
 
 
