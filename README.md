@@ -265,7 +265,8 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 ### uptakes in this repository 
 
-**bold fonts** show the uptake wa triggered by IHME or IMPE. UCLS was included from 20210528.
+**bold fonts** show the uptake was triggered by IHME or IMPE. UCLS was included from 20210528.
+
 
 uptake 20210604: DELP 20210603, **IHME 20210604**, IMPE 20210527, LANL 20210602, SRIV 20210604, UCLA 20210507
 
