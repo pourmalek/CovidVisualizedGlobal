@@ -41,4 +41,9 @@ May 14, 2021 | ihme-covid19
 
 May 21, 2021 | ihme-covid19
 
-May 28, 2021 | ihme-covid19
+May 28, 2021 | ihme-covid19    https://ihmecovid19storage.blob.core.windows.net/archive/2021-05-28/ihme-covid19.zip
+
+
+June 4, 2021 | ihme-covid19    https://ihmecovid19storage.blob.core.windows.net/latest/ihme-covid19.zip
+
+
