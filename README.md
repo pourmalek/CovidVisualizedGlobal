@@ -191,8 +191,8 @@ Within each study, estimates for any given person-place-time unit – that is an
 **LIMITATIONS**
 <br/><br/>
 
-(1) The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. (2) Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. Even a R package might be produced for this purpose. (3) Checking and performing updates in this repository are not automated. Use of Phyton, for instance, can make the process automated. (4) Communication of results on GitHub covers a relatively limited proportion of audience. Alternative communication venues and strategies can broaden the outreach to the audience.   
-I am willing for suggestions, collaboration, and help regarding overcoming the above-mentioned, and other limitations of this work. Please e-mail me (pourmalek_farshad@yahoo.com)
+The search for target studies is not performed in a replicable method. A systematic review might reveal more target studies that meet the eligibility criteria. Software codes use a propriety software package. Use of  R or Phyton are preferable in terms of user accessibility. 
+
 <br/><br/>
   
 **FUTURE DIRECTIONS AND COLLABOATIONS** 
