@@ -439,6 +439,13 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
+
+*
+
+
 
 
 
@@ -571,9 +578,11 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
+.
 
-
+*
 
 
 
@@ -707,6 +716,12 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021%2C%20without%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/121193127-6b535a00-c822-11eb-8aea-60d4ba7e7655.png)
+
+*
+
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
 
 *
 
@@ -847,6 +862,13 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
+
+*
+
+
 
 
 
@@ -982,6 +1004,12 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 [Daily cases, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/output/merge/graph%2033%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/121193547-c8e7a680-c822-11eb-949e-45f366c8d7ed.png)
+
+*
+
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
 
 *
 
@@ -1125,6 +1153,12 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
+
+*
+
 
 
 
@@ -1265,11 +1299,11 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
+.
 
-
-
-
+*
 
 
 
@@ -1409,8 +1443,11 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
+.
 
+*
 
 
 
@@ -1551,9 +1588,11 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 *
 
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
+.
 
-
+*
 
 
 
@@ -1691,6 +1730,12 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/output/merge/graph%2093%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/121194501-a43ffe80-c823-11eb-91eb-054bbf75a1db.png)
+
+*
+
+**uptake 20210401**: DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+.
 
 *
 
