@@ -263,7 +263,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 
 
-### uptakes in this repository, since january 2021 
+### uptakes in this repository, since April 2021 
 
 
 **bold fonts** show the uptake was triggered by IHME or IMPE. 
