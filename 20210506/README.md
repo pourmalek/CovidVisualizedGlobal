@@ -45,7 +45,7 @@ DELP 20210506, **IHME 20210506**, IMPE 20210424, LANL 20210505, SRIV 20210506
 
 ****
 
-(6) [Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210506/output/merge/graph%2034%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210506/output/merge/graph%2034%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/121204632-dd7c6c80-c82b-11eb-93c6-e824e0999d3a.png)
 
