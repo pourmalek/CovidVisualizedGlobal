@@ -37,6 +37,7 @@ This uptake is actually uptake 20210604 number 2, because IMPE update 20210604 (
 
 (4) [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/output/merge/graph%2031%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/121532262-092a5e80-c9b4-11eb-92ea-a4d245f08424.png)
 
 ****
 
@@ -45,8 +46,9 @@ This uptake is actually uptake 20210604 number 2, because IMPE update 20210604 (
 
 ****
 
-(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/output/merge/graph%2034%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/output/merge/graph%2033%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/121532555-4db5fa00-c9b4-11eb-9f09-266614be7ac1.png)
 
 ****
 
