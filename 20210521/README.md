@@ -20,13 +20,13 @@ DELP 20210521, **IHME 20210521**, IMPE 20210516, LANL 20210519, SRIV 20210521
 
 ****
 
-(2) [Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty%2C%20without%20JOHN.pdf)
+(2) [Daily deaths, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty%2C%20without%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/120910220-df7adb80-c631-11eb-9992-c840ff3d8eba.png)
 
 ****
 
-(3) [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021%2C%20without%20JOHN.pdf)
+(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021%2C%20without%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/120910357-143b6280-c633-11eb-9159-5fe9c11dbb6a.png)
 
