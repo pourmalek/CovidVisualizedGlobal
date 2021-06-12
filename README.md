@@ -15,13 +15,13 @@
 
 ### TOC
 
-[I. SELCTED GRAPHS FROM LATEST UPTAKE](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/README.md#i-selcted-graphs-from-latest-update)
+[I. SELCTED GRAPHS FROM LATEST UPTAKE](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/README.md#i-selcted-graphs-from-latest-updtake)
 
 [II. METHODS AND RESULTS OF THIS WORK](https://github.com/pourmalek/GlobalCovidCombineVisualize#ii-methods-and-results-of-this-work)
 
 [III. INNER WORKS OF THIS REPOSITORY](https://github.com/pourmalek/GlobalCovidCombineVisualize#iii-inner-works-of-this-repository)
 
-[IV. SELCTED GRAPHS FROM PREVIOUS UPTAKES](https://github.com/pourmalek/GlobalCovidCombineVisualize#iv-selcted-graphs-from-previous-update)
+[IV. SELCTED GRAPHS FROM PREVIOUS UPTAKES](https://github.com/pourmalek/GlobalCovidCombineVisualize#iv-selcted-graphs-from-previous-uptakes)
 
 ********************************************************************************************************************************************
 
