@@ -1,7 +1,9 @@
 ## CovidVisualizedGlobal
 
 
-### Combine and visualize international periodically updating estimates of COVID-19 at the global level 
+### Combine and visualize international periodically updating estimates of COVID-19 
+
+### <div align="center"> at the global level 🌐
 
 
 ********************************************************************************************************************************************
