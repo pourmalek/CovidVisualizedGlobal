@@ -3,7 +3,7 @@
 
 ### Combine and visualize international periodically updating estimates of COVID-19 
 
-### <div align="center"> at the global level 🌐
+### <div align="center"> at the global level 🌍
 
 
 ********************************************************************************************************************************************
