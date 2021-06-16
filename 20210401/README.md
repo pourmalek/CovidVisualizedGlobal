@@ -17,6 +17,7 @@ DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
 (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/122260494-33828d00-ce88-11eb-98cd-7ef1aa2f3275.png)
 
 ****
 
