@@ -33,10 +33,9 @@ DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
 ****
 
-(4) [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2031%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
+(4) [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121225305-3e14a500-c83e-11eb-9821-ce37e80ffda2.png)
-
+![image](https://user-images.githubusercontent.com/30849720/122261561-624d3300-ce89-11eb-9d26-07d926ff786e.png)
 
 ****
 
