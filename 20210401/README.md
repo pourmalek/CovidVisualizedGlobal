@@ -39,15 +39,15 @@ DELP 20210401, **IHME 20210401**, IMPE 20210329, LANL 20210331, SRIV 20210401
 
 ****
 
-(5) [Daily cases, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2033%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(5) [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121225386-52f13880-c83e-11eb-8393-926254bd6a34.png)
+![image](https://user-images.githubusercontent.com/30849720/122261820-a0e2ed80-ce89-11eb-89df-3e1d3725b235.png)
 
 ****
 
-(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2034%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121225482-6a302600-c83e-11eb-8d41-7a333ef617d3.png)
+![image](https://user-images.githubusercontent.com/30849720/122262157-f919ef80-ce89-11eb-9df8-7c088b4faf5d.png)
 
 ****
 
