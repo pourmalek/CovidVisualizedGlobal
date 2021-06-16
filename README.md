@@ -364,7 +364,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
   
 [(7) Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal#7-hospital-related-outcomes-all-time)
   
-[(8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand]()
+[(8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal#8-hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
   
 [(9) Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal#9-daily-deaths-estimated-to-reported-reference-scenarios-2021)
   
