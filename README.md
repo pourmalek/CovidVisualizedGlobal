@@ -795,9 +795,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021%2C%20without%20JOHN.pdf)
+(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2014%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092145-f9d2c780-c79f-11eb-8584-695bcf05f079.png)
+![image](https://user-images.githubusercontent.com/30849720/122321097-30af8880-ced8-11eb-925e-614512dff696.png)
 
 *
 
@@ -958,9 +958,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2031%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
+(4) [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092237-140ca580-c7a0-11eb-86ff-e116b6b8b83e.png)
+![image](https://user-images.githubusercontent.com/30849720/122321256-6d7b7f80-ced8-11eb-884b-c95acbe6b0ed.png)
 
 *
 
@@ -1122,9 +1122,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily cases, reference scenarios, with uncertainty, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2033%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(5) [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092301-2daded00-c7a0-11eb-8576-a612d7ea2cbf.png)
+![image](https://user-images.githubusercontent.com/30849720/122321336-8b48e480-ced8-11eb-93ae-2143ea9d2178.png)
 
 *
 
@@ -1286,9 +1286,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2034%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+(6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092382-4fa76f80-c7a0-11eb-8c7a-c75c6d5c53c4.png)
+![image](https://user-images.githubusercontent.com/30849720/122321389-a582c280-ced8-11eb-88d2-7b02561486ef.png)
 
 *
 
@@ -1450,9 +1450,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2071%20COVID-19%20hospital-related%20outcomes.pdf)
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092442-68178a00-c7a0-11eb-81d0-361a981642d9.png)
+![image](https://user-images.githubusercontent.com/30849720/122321454-c0553700-ced8-11eb-8497-9cb314fa8e07.png)
 
 *
 
@@ -1612,9 +1612,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2072%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
+(8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2063%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092510-81203b00-c7a0-11eb-803f-64a69dc2b7bb.png)
+![image](https://user-images.githubusercontent.com/30849720/122321536-da8f1500-ced8-11eb-917c-eeff25944068.png)
 
 *
 
@@ -1775,9 +1775,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2092%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+(9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092564-9ac18280-c7a0-11eb-85e9-551dd7b0c338.png)
+![image](https://user-images.githubusercontent.com/30849720/122321590-f397c600-ced8-11eb-96c5-daae0bf035da.png)
 
 *
 
@@ -1938,9 +1938,9 @@ Daily deaths, reference scenarios, with uncertainty, 2011](https://github.com/po
 
 **uptake 20210422**: DELP 20210422, **_IHME 20210422_**, IMPE 2010417, LANL 20210421, SRIV 20210422
 
-[Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210422/output/merge/graph%2093%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+(10) [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/121092622-b3ca3380-c7a0-11eb-81f1-cd38c19ce2d4.png)
+![image](https://user-images.githubusercontent.com/30849720/122321653-0f02d100-ced9-11eb-9192-057140badabd.png)
 
 *
 
