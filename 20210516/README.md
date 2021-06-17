@@ -43,11 +43,13 @@ Note: IMPE 20210516 (2021-05-16_v8.csv.zip) released on 20210519.
 
 (5) [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210516/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/122455932-cc390b80-cf61-11eb-8b32-95340c1f3b55.png)
 
 ****
 
 (6) [Daily cases, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210516/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/122456023-e7a41680-cf61-11eb-9840-315c50d8af53.png)
 
 ****
 
