@@ -7,8 +7,6 @@ This uptake is actually uptake 20210604 number 2, because IMPE update 20210604 (
 <br/><br/>
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210505/graphs%20merge%2020210505.pdf)
-
 ### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/graphs%20merge%2020210605.pdf)                                   
 
 ****
