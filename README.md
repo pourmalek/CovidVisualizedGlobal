@@ -299,6 +299,8 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 (uptake number) uptake date: study update date, study update date
 
 .
+  
+(19) uptake 20210611: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611  
 
 (18) uptake 20210610: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -368,6 +370,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (1) Daily deaths, reference scenarios, all time
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+*  
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -528,6 +536,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (2) Daily deaths, reference scenarios, 2021
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -689,6 +703,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (3) Daily deaths, 3 scenarios, 2011
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -852,6 +872,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (4) Daily cases, reference scenarios, all time
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1016,6 +1042,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (5) Daily cases, reference scenarios, 2021
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1180,6 +1212,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (6) Daily cases, 3 scenarios, 2011
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1344,6 +1382,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (7) Hospital-related outcomes, all time
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1506,6 +1550,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1669,6 +1719,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (9) Daily deaths estimated to reported, reference scenarios, 2021
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
@@ -1832,6 +1888,12 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ### (10) Daily cases estimated to reported, reference scenarios, 2021
 
 *
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+.
+  
+* 
 
 **uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
 
