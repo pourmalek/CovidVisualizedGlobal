@@ -2204,3 +2204,9 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 * See [`LICENSE`](https://github.com/pourmalek/GlobalCovidCombineVisualize/blob/main/LICENSE)
 
 <br/><br/>
+  
+  
+[![DOI](https://zenodo.org/badge/357850528.svg)](https://zenodo.org/badge/latestdoi/357850528)
+
+
+[`DOI`](https://zenodo.org/record/mmmm)  
