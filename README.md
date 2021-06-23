@@ -2210,3 +2210,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 
 [`DOI`](https://zenodo.org/record/5019030#.YNNftS295O0)  
+  
+  
+Pourmalek, F. CovidVisualizedGlobal: Combine and visualize international periodically updating estimates of COVID-19 at the global level. Version 1.1, Released June 23, 2021. http://doi.org/10.5281/zenodo.5019030 https://github.com/pourmalek/CovidVisualizedCountry 
+  
