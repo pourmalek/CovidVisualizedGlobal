@@ -2203,7 +2203,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
   
 * All codes are copyrighted by the author under Apache License 2.0.
 
-* See [`LICENSE`]https://github.com/pourmalek/CovidVisualizedCountry/blob/main/LICENSE
+* See [`LICENSE`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/LICENSE)
 
 <br/><br/>
   
