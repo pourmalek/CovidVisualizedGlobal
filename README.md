@@ -1,4 +1,4 @@
-# CovidVisualizedGlobal
+# CovidVisualizedGlobal [![DOI](https://zenodo.org/badge/357850528.svg)](https://zenodo.org/badge/latestdoi/357850528)
 
 
 ### Combine and visualize international periodically updating estimates of COVID-19 
