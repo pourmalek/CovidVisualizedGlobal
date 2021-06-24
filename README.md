@@ -2286,6 +2286,8 @@ SOURCE REPOSITORY LICENCE: https://covidcompare.io/about
 ## License, DOI, and suggested Citation of this reposirory 
   
 * All codes are copyrighted by the author under Apache License 2.0.
+  
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)   
 
 * See [`LICENSE`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/LICENSE)
 
