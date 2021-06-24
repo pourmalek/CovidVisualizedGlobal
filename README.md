@@ -2204,7 +2204,9 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 ********************************************************************************************************************************************
  
  
-## Licences / Copyrights of data and / or graphs used in this repository:
+## Licenses / Copyrights of data and / or graphs used in this repository:
+  
+All the data and / or graphs used in this repository are at non-individual and aggregate level, publicly available on the Internet, and under pertinent licenses and copyrights for non-commercial use, reproduction, and distribution for scientific research, provided that the conditions mentioned in the respective licenses and copyrights are met, as provided below.  
 
 .
 
