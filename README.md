@@ -8,8 +8,17 @@
 
 ### <div align="center"> at the global level 🌍 
   
-  
-<br/><br/>
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (CovidVisualizedGlobal)
+* Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
+* Time (initial): 2021-04-14
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+  <br/><br/>
 
  
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -32,20 +41,12 @@ The codes in these repositories can be adapted for use for any country or region
 
 
 <br/><br/>  
-
-
-********************************************************************************************************************************************
-********************************************************************************************************************************************
-* Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (CovidVisualizedGlobal)
-* Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
-* Time (initial): 2021-04-14
-********************************************************************************************************************************************
-********************************************************************************************************************************************
-
+  
+  
   
 ********************************************************************************************************************************************  
   *
-#### Nomenclature CORRECTION to be applied: Case Fatality Ratio (CFR) applies to symptomatic cases, Infection Fatality ratio (CFR) applies to all infections, comprised of symptomatic and asymptomatic cases. 
+#### Notice: Nomenclature CORRECTION to be applied: Case Fatality Ratio (CFR) applies to symptomatic cases, Infection Fatality ratio (CFR) applies to all infections, comprised of symptomatic and asymptomatic cases. 
   *
 ********************************************************************************************************************************************   
   
