@@ -2199,10 +2199,89 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 <br/><br/>
 
+ 
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+ 
+ 
+## Licences / Copyrights of data and / or graphs used in this repository:
+
+.
+
+(1) ABBREVIATED NAME IN THIS REPOSITORY: **DELP**
+
+CITATION: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections and https://github.com/COVIDAnalytics/website/tree/master/data/predicted
+
+SOURCE REPOSITORY: https://github.com/COVIDAnalytics/DELPHI
+
+SOURCE REPOSITORY LICENCE: https://github.com/COVIDAnalytics/website/blob/master/LICENSE
+
+.
+
+(2) ABBREVIATED NAME IN THIS REPOSITORY: **IHME**
+
+CITATION: Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid/ and http://www.healthdata.org/covid/data-downloads
+
+SOURCE REPOSITORY: http://www.healthdata.org/covid/data-downloads
+
+SOURCE REPOSITORY LICENCE: http://www.healthdata.org/about/terms-and-conditions
+
+.
+
+(3) ABBREVIATED NAME IN THIS REPOSITORY: **IMPE**
+
+CITATION: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/ and https://github.com/mrc-ide/global-lmic-reports/tree/master/data
+
+SOURCE REPOSITORY: https://github.com/mrc-ide/global-lmic-reports/tree/master/data
+
+SOURCE REPOSITORY LICENCE: https://mrc-ide.github.io/global-lmic-reports/
+
+.
+
+(4) ABBREVIATED NAME IN THIS REPOSITORY: **LANL**
+
+CITATION: Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org
+
+SOURCE REPOSITORY: https://covid-19.bsvgateway.org
+
+SOURCE REPOSITORY LICENCE: https://covid-19.bsvgateway.org
+.
+
+(5) ABBREVIATED NAME IN THIS REPOSITORY: **SRIV**
+
+CITATION: Srivastava, Ajitesh. University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19 and https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/historical_forecasts
+
+SOURCE REPOSITORY: https://github.com/scc-usc/ReCOVER-COVID-19/tree/master/results/historical_forecasts
+
+SOURCE REPOSITORY LICENCE: https://github.com/scc-usc/ReCOVER-COVID-19/blob/master/LICENSE
+
+.
+
+(6) ABBREVIATED NAME IN THIS REPOSITORY: **JOHN**
+
+CITATION: "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University" https://coronavirus. jhu.edu/map.html and https://github.com/CSSEGISandData/COVID-19
+
+SOURCE REPOSITORY: https://github.com/CSSEGISandData/COVID-19
+
+SOURCE REPOSITORY LICENCE: https://github.com/CSSEGISandData/COVID-19
+
+.
+
+(7) ABBREVIATED NAME IN THIS REPOSITORY: **covidcompare**
+
+CITATION: Friedman J, Liu P, Akre S. The covidcompare tool. https://covidcompare.io/about
+
+SOURCE REPOSITORY: https://covidcompare.io/
+
+SOURCE REPOSITORY LICENCE: https://covidcompare.io/about
+
+.
+
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-#### License, DOI, Citation  
+## License, DOI, and suggested Citation of this reposirory 
   
 * All codes are copyrighted by the author under Apache License 2.0.
 
