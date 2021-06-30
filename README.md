@@ -438,11 +438,10 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 *
   
 **uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
-  
 
 (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210611/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/122510054-c53de780-cfb9-11eb-8d3c-be9e20bbd999.png)
+![image](https://user-images.githubusercontent.com/30849720/123966404-4017e280-d96a-11eb-909e-ea9658d6bdde.png)
   
 *  
 
@@ -620,7 +619,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
   
 (2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210611/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/122510109-dd156b80-cfb9-11eb-8e67-04b31a5ce1b7.png)
+![image](https://user-images.githubusercontent.com/30849720/123967108-dcda8000-d96a-11eb-9b34-4d2a9f180105.png)
   
 * 
 
@@ -789,9 +788,9 @@ _Component studies and their scenarios_ are mentioned below after the selected _
   
 **uptake 20210618**: DELP 20210618, **_IHME 20210618_**, IMPE 20210611, LANL 20210613, SRIV 20210618  
   
-(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210618/output/merge/graph%2014%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021.pdf)
+(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210611/output/merge/graph%2014%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/123903811-42574e00-d924-11eb-848d-29211e24c96f.png)
+![image](https://user-images.githubusercontent.com/30849720/123967203-f2e84080-d96a-11eb-8444-901b46267497.png)
 
 *
   
