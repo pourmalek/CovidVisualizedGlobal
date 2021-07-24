@@ -4,7 +4,46 @@ DELP 20210723, **_IHME 20210723_**, IMPE 20210709, LANL 20210718, SRIV 20210723
 
 
 <br/><br/>
-****
+
+### IHME estimates for the global level in update 20210723 and in update 20210715 are identical, with numerical value difference of zero. 
+
+See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/code/IHME/do%20CovidVisualizedGlobal%20IHME.do)
+
+<br/><br/>
+
+********
+********
+
+### IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723
+
+[COVID-19 daily deaths raw, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A1%20COVID-19%20daily%20deaths%20raw%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+
+
+*
+
+[COVID-19 daily deaths smooth, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A2%20COVID-19%20daily%20deaths%20smooth%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+
+
+*
+
+[COVID-19 daily infections, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A3%20COVID-19%20daily%20infections%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+
+
+*
+
+[COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A4%20COVID-19%20total%20deaths%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+
+
+*
+
+[COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A5%20COVID-19%20total%20infections%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+
+
+<br/><br/>
+
+********
+********
+
 
 ### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/graphs%20merge%2020210723.pdf)
 
