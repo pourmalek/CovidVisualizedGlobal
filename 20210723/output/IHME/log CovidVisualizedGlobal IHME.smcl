@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210723/code/IHME/log CovidVisualizedGlobal IHME.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}23 Jul 2021, 23:14:44
+ {txt}opened on:  {res}23 Jul 2021, 23:51:46
 {txt}
 {com}. 
 . ***************************************************************************
@@ -1731,8 +1731,7 @@ DayDMuMeR~01 {c |}{res}        637     4498638     2243378   823.4317    9965168
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal IHME 20210723.dta", replace
-{txt}(note: file CovidVisualizedGlobal IHME 20210723.dta not found)
-file CovidVisualizedGlobal IHME 20210723.dta saved
+{txt}file CovidVisualizedGlobal IHME 20210723.dta saved
 
 {com}. 
 . 
@@ -1859,16 +1858,15 @@ successfully unzipped ihme-covid19.zip to current directory
 {com}. drop year month day date2
 {txt}
 {com}. 
-. replace loc_grand_name = "Global"
-{txt}(0 real changes made)
+. replace loc_grand_name = "global"
+{txt}(637 real changes made)
 
 {com}. 
 . sort date loc_grand_name
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal IHME 20210715.dta", replace
-{txt}(note: file CovidVisualizedGlobal IHME 20210715.dta not found)
-file CovidVisualizedGlobal IHME 20210715.dta saved
+{txt}file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {com}. 
 . 
@@ -1889,11 +1887,8 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}           1,274
-{txt}{col 9}from master{col 30}{res}             637{txt}  (_merge==1)
-{col 9}from using{col 30}{res}             637{txt}  (_merge==2)
-
-{col 5}matched{col 30}{res}               0{txt}  (_merge==3)
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}             637{txt}  (_merge==3)
 {col 5}{hline 41}
 
 {com}. 
@@ -1902,23 +1897,17 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {txt}
 {com}. 
 . gen DayDeaMeRaA02S01Udiff = DayDeaMeRaA02S01U20210715 - DayDeaMeRaA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. gen TotDeaMeRaA02S01Udiff = TotDeaMeRaA02S01U20210715 - TotDeaMeRaA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. gen DayDeaMeSmA02S01Udiff = DayDeaMeSmA02S01U20210715 - DayDeaMeSmA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. gen TotDeaMeSmA02S01Udiff = TotDeaMeSmA02S01U20210715 - TotDeaMeSmA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. gen DayINFMeRaA02S01Udiff = DayINFMeRaA02S01U20210715 - DayINFMeRaA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. gen TotINFMeRaA02S01Udiff = TotINFMeRaA02S01U20210715 - TotINFMeRaA02S01U20210723
-{txt}(1,274 missing values generated)
-
+{txt}
 {com}. 
 . label var DayDeaMeRaA02S01Udiff "DayDeaMeRaA02S01 diff of updates 20210715 20210723"
 {txt}
@@ -1941,11 +1930,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 
 {txt}{hline}
 {res}TotDeaMeRaA02S01Udiff{right:TotDeaMeRaA02S01 diff of updates 20210715 20210723}
@@ -1953,11 +1942,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 
 {txt}{hline}
 {res}DayDeaMeSmA02S01Udiff{right:DayDeaMeSmA02S01 diff of updates 20210715 20210723}
@@ -1965,11 +1954,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 
 {txt}{hline}
 {res}TotDeaMeSmA02S01Udiff{right:TotDeaMeSmA02S01 diff of updates 20210715 20210723}
@@ -1977,11 +1966,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 
 {txt}{hline}
 {res}DayINFMeRaA02S01Udiff{right:DayINFMeRaA02S01 diff of updates 20210715 20210723}
@@ -1989,11 +1978,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 
 {txt}{hline}
 {res}TotINFMeRaA02S01Udiff{right:TotINFMeRaA02S01 diff of updates 20210715 20210723}
@@ -2001,11 +1990,11 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 
 {col 19}type:  numeric ({res}float{txt})
 
-{col 18}range:  [{res}.{txt},{res}.{txt}]{col 55}units:  {res}.
-{col 10}{txt}unique values:  {res}0{col 51}{txt}missing .:  {res}1,274{txt}/{res}1,274
+{col 18}range:  [{res}0{txt},{res}0{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}637
 
 {txt}{col 13}tabulation:  Freq.  Value
-{col 21}{res}     1,274{col 33}.
+{col 21}{res}       637{col 33}0
 {txt}
 {com}. 
 . 
@@ -2025,7 +2014,6 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}{txt}
 {com}. 
 . graph save "graph A1 COVID-19 daily deaths raw, reference scenario, global, IHME.gph", replace
-{txt}(note: file graph A1 COVID-19 daily deaths raw, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph A1 COVID-19 daily deaths raw, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph A1 COVID-19 daily deaths raw, reference scenario, global, IHME.pdf", replace
@@ -2051,7 +2039,6 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}{txt}
 {com}. 
 . graph save "graph A2 COVID-19 daily deaths smooth, reference scenario, global, IHME.gph", replace
-{txt}(note: file graph A2 COVID-19 daily deaths smooth, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph A2 COVID-19 daily deaths smooth, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph A2 COVID-19 daily deaths smooth, reference scenario, global, IHME.pdf", replace
@@ -2079,7 +2066,6 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}{txt}
 {com}. 
 . graph save "graph A3 COVID-19 daily infections, reference scenario, global, IHME.gph", replace
-{txt}(note: file graph A3 COVID-19 daily infections, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph A3 COVID-19 daily infections, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph A3 COVID-19 daily infections, reference scenario, global, IHME.pdf", replace
@@ -2098,7 +2084,7 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 > (line TotDeaMeRaA02S01U20210723 date, sort lcolor(blue) lwidth(vthick) lpattern(tight_dot)) ///
 > (line TotDeaMeRaA02S01Udiff     date, sort lcolor(gold) lwidth(thick)) ///
 > , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 > ytitle(Total deaths) title("COVID-19 total deaths, global, IHME, reference scenario", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "update 20210715" 2 "update 20210723" 3 "difference") rows(1)) ///
@@ -2106,7 +2092,6 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}{txt}
 {com}. 
 . graph save "graph A4 COVID-19 total deaths, reference scenario, global, IHME.gph", replace
-{txt}(note: file graph A4 COVID-19 total deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph A4 COVID-19 total deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph A4 COVID-19 total deaths, reference scenario, global, IHME.pdf", replace
@@ -2127,7 +2112,7 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 > (line TotINFMeRaA02S01U20210723 date, sort lcolor(blue) lwidth(vthick) lpattern(tight_dot)) ///
 > (line TotINFMeRaA02S01Udiff     date, sort lcolor(gold) lwidth(thick)) ///
 > , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-> xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 > ytitle(Total infections) title("COVID-19 total infections, global, IHME, reference scenario", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "update 20210715" 2 "update 20210723" 3 "difference") rows(1)) ///
@@ -2135,7 +2120,6 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
 {res}{txt}
 {com}. 
 . graph save "graph A5 COVID-19 total infections, reference scenario, global, IHME.gph", replace
-{txt}(note: file graph A5 COVID-19 total infections, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph A5 COVID-19 total infections, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph A5 COVID-19 total infections, reference scenario, global, IHME.pdf", replace
@@ -2166,7 +2150,7 @@ file CovidVisualizedGlobal IHME 20210715.dta saved
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210723/code/IHME/log CovidVisualizedGlobal IHME.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}23 Jul 2021, 23:17:21
+ {txt}closed on:  {res}23 Jul 2021, 23:54:14
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
