@@ -16,7 +16,7 @@ See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/202
 
 ### IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723
 
-[COVID-19 daily deaths raw, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/covir2/blob/main/20210723/output/IHME/graph%20A1%20COVID-19%20daily%20deaths%20raw%2C%20reference%20scenario%2C%20Iran%2C%20IHME.pdf)
+[COVID-19 daily deaths raw, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A1%20COVID-19%20daily%20deaths%20raw%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
 
 *
@@ -31,7 +31,7 @@ See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/202
 
 *
 
-[COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723]https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A4%20COVID-19%20total%20deaths%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
+[COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A4%20COVID-19%20total%20deaths%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
 
 *
