@@ -18,26 +18,31 @@ See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/202
 
 [COVID-19 daily deaths raw, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A1%20COVID-19%20daily%20deaths%20raw%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/126860464-3af395e9-35b4-4fd9-968e-5454c849ea54.png)
 
 *
 
 [COVID-19 daily deaths smooth, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A2%20COVID-19%20daily%20deaths%20smooth%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/126860484-cbb34c1d-af83-42d5-9be3-e83dc3eab1a1.png)
 
 *
 
 [COVID-19 daily infections, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A3%20COVID-19%20daily%20infections%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/126860499-31908f2f-9f7d-429b-9532-71211ad2cada.png)
 
 *
 
 [COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A4%20COVID-19%20total%20deaths%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/126860529-279e458a-0778-4f71-b09a-0ab07cc1753a.png)
 
 *
 
 [COVID-19 total deaths, global, IHME, reference scenario, C O M P A R I S O N of UPDATES 20210715 & 20210723](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/IHME/graph%20A5%20COVID-19%20total%20infections%2C%20reference%20scenario%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/126860548-7957898f-e5dd-472d-8caa-4e4cb9692beb.png)
 
 <br/><br/>
 
