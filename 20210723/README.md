@@ -5,9 +5,13 @@ DELP 20210723, **_IHME 20210723_**, IMPE 20210709, LANL 20210718, SRIV 20210723
 
 <br/><br/>
 
-### IHME estimates for the global level in update 20210723 and in update 20210715 are identical, with numerical value difference of zero. 
+### 20210723: IHME estimates for global level in update 20210723 and in update 20210715 are identical, with numerical value difference of zero. 
 
-See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/code/IHME/do%20CovidVisualizedGlobal%20IHME.do)
+### 20210726: IHME estimates for global level in update 20210723 and in update 20210715 WERE identical UPON FIRST RELEASE OF update 20210723, with numerical value difference of zero. As of 20210726, update 20210723 has been replaced by IHME and is not identical with update 20210715. See [`20210726`](https://github.com/pourmalek/covir2/tree/main/20210726)
+
+
+See code [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/code/IHME/do%20country%20IHME.do)
+
 
 <br/><br/>
 
