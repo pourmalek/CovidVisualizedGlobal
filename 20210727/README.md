@@ -56,13 +56,11 @@ IMPE update 20210719 (2021-07-19_v8.csv.zip) released on 20210727.
 
 (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210727/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/127259839-cf2d4d93-ebe6-407f-ba97-0eb228101ba8.png)
 
 ****
 
 (8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210727/output/merge/graph%2063%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/127259890-aec68e28-2110-465a-b61c-11a5d17c6bcb.png)
 
 ****
 
