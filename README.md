@@ -289,6 +289,8 @@ Selected _graphs_ are shown below.
 _Component studies and their scenarios_ are mentioned below after the selected _graphs_.
 
 [`Variable name structure`](https://github.com/pourmalek/covir2/blob/main/Variable%20name%20structure.md)
+  
+[`Rule for uptakes`](https://github.com/pourmalek/covir2/blob/main/setup/README.md)  
 
 [`Troubleshooting`](https://github.com/pourmalek/covir2/blob/main/Troubleshooting.md)
 
