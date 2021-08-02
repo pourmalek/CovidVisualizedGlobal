@@ -15,8 +15,10 @@
 * Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (CovidVisualizedGlobal)
 * Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com) 
   
+  [![name](link to image on GH)](link to your URL)
   
-  ![image](https://user-images.githubusercontent.com/30849720/127926326-89321742-cb08-4c18-bbdd-9b0c12e4ab2f.png)[`https://orcid.org/0000-0002-2134-0771`]
+  
+  ![image](https://user-images.githubusercontent.com/30849720/127926326-89321742-cb08-4c18-bbdd-9b0c12e4ab2f.png)(https://orcid.org/0000-0002-2134-0771)
   
   (https://orcid.org/0000-0002-2134-0771)
 
