@@ -16,8 +16,13 @@
 * Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com) 
   ![image](https://user-images.githubusercontent.com/30849720/127925857-473f9151-d057-4d57-8f72-479cae7ed5c1.png)[`https://orcid.org/0000-0002-2134-0771`](https://orcid.org/0000-0002-2134-0771)
 
-  [![Orcid](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)][`https://orcid.org/0000-0002-2134-0771`]
-  (https://orcid.org/0000-0002-2134-0771) https://orcid.org/0000-0002-2134-0771 |    [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200)
+  [![Orcid](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)]
+  
+  [`https://orcid.org/0000-0002-2134-0771`](https://orcid.org/0000-0002-2134-0771)
+  
+  (https://orcid.org/0000-0002-2134-0771) https://orcid.org/0000-0002-2134-0771 |    
+  
+  [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200)
 * Time (initial): 2021-04-14
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
