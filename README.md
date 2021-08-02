@@ -13,8 +13,8 @@
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 * Project: Combine and visualize international periodically updating estimates of COVID-19 at the global level (CovidVisualizedGlobal)
-* Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com)  <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2134-0771" href="https://orcid.org/0000-0002-2134-0771" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2134-0771</a></div>
-  [![Orcid](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-2134-0771)    [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200)
+* Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com)  
+  [![Orcid](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0002-2134-0771) https://orcid.org/0000-0002-2134-0771 |    [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200)
 * Time (initial): 2021-04-14
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
