@@ -15,6 +15,8 @@ DELP 20210806, **_IHME 20210806_**, IMPE 20210719, LANL 20210801, SRIV 20210801
 
 ### Selected graphs
 
+Note: The latest update of SRIV as of 20210806, that is SRIV update 20210801, predictions of daily deaths and daily cases are very high. The very high predictions of daily deaths by SRIV compress down and obscure the predictions of daily deaths by other models in the first three graphs below. Graph (3b) Daily deaths, 3 scenarios, 2021, IHME, and graph (3c) Daily deaths, 3 scenarios, 2021, IMPE, reveal the predictions by IHME and IMPE, respectively. 
+
 ****
 
 (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210806/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
