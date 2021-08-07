@@ -91,6 +91,9 @@ The codes in these repositories can be adapted for use for any country or region
 
 ### Selected graphs
   
+  
+Note: In the latest update of SRIV as of 20210806, that is SRIV update 20210801, predictions of daily deaths and daily cases are very high. The very high predictions of daily deaths by SRIV compress down and obscure the predictions of daily deaths by other models in the first three graphs below. Graph (3b) Daily deaths, 3 scenarios, 2021, IHME, and graph (3c) Daily deaths, 3 scenarios, 2021, IMPE, reveal the predictions by IHME and IMPE, respectively.   
+  
 
 ****
 
