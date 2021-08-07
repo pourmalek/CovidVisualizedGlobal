@@ -459,11 +459,11 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
   
 [(3) Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal#3-daily-deaths-3-scenarios-2011)
   
-[(4) Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal#4-daily-cases-reference-scenarios-all-time)
+[(4) Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal#4-daily-cases-or-infections-reference-scenarios-all-time)
   
-[(5) Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal#5-daily-cases-reference-scenarios-2021)
+[(5) Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal#5-daily-cases-or-infections-reference-scenarios-2021)
   
-[(6) Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal#6-daily-cases-3-scenarios-2011)
+[(6) Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal#6-daily-cases-or-infections-3-scenarios-2011)
   
 [(7) Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal#7-hospital-related-outcomes-all-time)
   
