@@ -1300,12 +1300,17 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
 
 ****
 
-### (4) Daily cases or infections, reference scenarios, all time
+### (3b) Daily deaths, 3 scenarios, 2021, IHME
   
   
 
 *
   
+(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210806/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/128608462-8682c532-06af-43b4-aa9e-18b6732911cc.png)  
+  
+*  
   
   
   
