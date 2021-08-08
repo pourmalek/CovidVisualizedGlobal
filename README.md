@@ -223,8 +223,19 @@ Farshad Pourmalek, MD PhD
 **Eligibility criteria**: The criteria for inclusion of target COVID-19 models were (1) an international model scope and (2) periodic updates. “International model” denotes a model that estimates COVID-19 cases or infections and deaths for all countries of the world, with global-level estimates that equate the sum of the national-level estimates. “Periodically updated” denotes a model with a record of periodically updated estimates since its first release, with continued updates in 2021. 
 
 **Finding the eligible models**: The eligible models were found within the literature search of a previous publication, “Rapid review of COVID-19 epidemic estimation studies for Iran” [1]. The results were verified by comparison with models found in a recently published study on “Predictive performance of international COVID-19 mortality forecasting models” [2]. While non-updated or one-time models can be contemporaneously usable, their results would not sustain up-to-dateness in the long run, especially with the emergence of new variants of concern and various degrees of uncertainties in the progression of vaccination coverage.  
-Identified eligible models: 
 
+
+ 
+ 
+<br/><br/>
+ 
+**RESULTS**
+
+Results are described under the following items: (1) The five identified models / studies, (2) The CovidVisualized repositories created in this work, (3) Data management, and (4) Periodical uptakes.
+<br/><br/>
+ 
+**(1) The five identified models / studies**
+ 
 Five international and periodically updated models of the COVID-19 pandemic were identified: (1) DELPHI , Massachusetts Institute of Technology, Cambridge (abbreviation used in this work: DELP) [3], (2) Institute for Health Metrics and Evaluation, Seattle (IHME) [4], (3) Imperial College, London (IMPE) [5], (4) Los Alamos National Laboratories, Los Alamos (LANL) [6], (5) University of Southern California, Los Angeles, by Srivastava, Ajitesh (SRIV) [7]. Official reports of countries to World Health Organization, curated by Johns Hopkins University Coronavirus resource center (JOHN) [8], were also used for comparison. 
 
 <br/><br/>
@@ -301,28 +312,33 @@ Five international and periodically updated models of the COVID-19 pandemic were
 
 The COVID-19 epidemic model by Youyang Gu [9] and the model by University of California, Los Angeles model [10] could not be categorized as international and periodically updated models. The COVID-19 International Modelling Consortium (CoMo Consortium) model, created by researchers at the University of Oxford and Cornell University [11], and CovidSim (COVID Simulation) model, developed by researchers at Imperial College, London [12], provide templates for researchers to model the future of epidemic trajectory at national and subnational levels of their choice, through adjusting the model inputs and setting the time horizon into future for the estimations. Unlike the five international and periodically updated models mentioned above, the latter two models are not intended for periodic updates by their original creators. The CoMo Consortium has engaged some countries, including Iran, but not Canada. There is no evidence of either model being used on a periodically updated basis in Iran or Canada.
 
-
- 
  
 <br/><br/>
  
-**RESULTS**
-
-Results are described under the following items: (1) repositories for codes and data sharing, (2) data management, and (3) periodical uptakes.
-
-<br/><br/>
+**(2) The CovidVisualized repositories created in this work**
  
-**Repositories for codes and data sharing**
-
 GitHub (https://github.com) is used for sharing the codes and data. Global and country levels were chosen for demonstration of results. For the national level, one country with and one country without subnational estimates – Canada and Iran, respectively – were chosen based on personal bonds. 
 
 Four of the five identified models share codes and estimates updates via GitHub repositories, and the IHME estimates are released on IHME’s website [4]. Three Github repositories were created for this project: “CovidVisualizedGlobal” [13] for the global level, “CovidVisualizedCountry” [14] for Canada, and “covir2” [15] for Iran. These are referred to as CovidVisualized GitHub repositories hereon. The “covir2” repository was created as “COVID Iran Review number 2” in March 2021, as an update after a first-iteration review was published [1]. The idea and work were further developed toward applicability to any location in the world, with case application for the global level, Canada, and Iran. 
 
 GitHub repositories allow others to view and/or download, scrutinize, and verify the integrity of the codes and data. It is also possible to minimally modify the codes to recreate similar repositories for any other country that reports COVID-19 cases and deaths to World Health Organization. Such use of the codes and data in GitHub is free of charge and bound to the pertinent licenses. 
+ 
 
 <br/><br/>
  
-**Data management**
+The three GitHub repositories created in this project are:  
+
+**CovidVisualizedGlobal**, COVID-19 estimates at the global level [13] http://doi.org/10.5281/zenodo.5019030
+
+**CovidVisualizedCountry**, COVID-19 estimates at the country level: Canada [14] http://doi.org/10.5281/zenodo.5019482
+
+**covir2**, COVID-19 estimates at the country level: Iran [15] http://doi.org/10.5281/zenodo.5020797
+ 
+
+<br/><br/>
+ 
+ 
+**(3) Data management**
 
 **Data management template**: A data management template was created for assigning comparable variable names to various outcomes from different models. Comparable and common variable names consist of generic parts (positions in the variable name) denoting the following items: (1) daily or total, (2) deaths, cases or infections, or other outcomes, (3) mean estimate, or lower, or upper uncertainty limit, (4) raw or smoothed estimate, (5) each of the five individual models, and (6) scenarios within each model. This template is described in detail in “variable name structure” in the CovidVisualized GitHub repositories [16]. Stata SE 14.2 (Stata Statistical Software. StataCorp. College Station, Texas) was used to write and run the codes on macOS Big Sur, and test run on Microsoft Windows 10. 
 
@@ -338,7 +354,7 @@ _Subnational estimates_: The DELP and IHME models provide subnational-level esti
 <br/><br/>
  
  
-**Periodical uptakes**
+**(4) Periodical uptakes**
 
 A set of conventions were created for the periodic uptake of the models’ estimates updates. The two models with the least frequency of periodic updates of estimates are IHME and IMPE, updated almost weekly and bi-weekly, respectively. With the release of each update of either of these two models, the whole set of the five included models are updated in all the three CovidVisualized GitHub repositories. The most recent update of each model is used. These updates of CovidVisualized repositories are labelled as “uptakes” to differentiate them from models’ estimates updates. These conventions for periodical uptake are described in detail in the CovidVisualized GitHub repositories [17]. R software via RStudio 1.4 (Integrated Development for R. RStudio. PBC, Boston, Massachusetts) was used for semi-automatization of the uptakes’ execution. Estimates of the LANL model get updated about every 3-4 days, and DELP and SRIV models get updated daily. Uptaking the models’ estimates updates with every update of these latter three models is not expected to depict a much more informative profile of the epidemic’s trajectory in future, when compared against the current convention for uptakes. The IHME, IMPE, and SRIV models provide estimates for about three months into the future with each update release, the DELP model for about two months, and the LANL model for about one month.  
 
@@ -346,19 +362,6 @@ A set of conventions were created for the periodic uptake of the models’ estim
 With each uptake, a directory is created in the root of the main branch of each of the three CovidVisualized repositories and named with the uptake date (e.g., 20210730). Uptakes are also created retrospectively, compiling the results of the previous updates of the models’ results. Available uptakes for Iran and the global level have been created going back to April 2021 and for Canada to June 2021. Under each dated uptake directory, there are two directories for “code” and for “output”. Under each, there are located directories with the abbreviated name of the models. For example, “DELP” directories under “code” store the Stata code files (.do), and those under “output” contain the outputs from executing the codes: the single data file for model estimates (in. dta and .csv formats), Stata log file (.smcl), and the graphs in PDF format. The directory “master” contains the master Stata do-file which executes all the other do-files, and the directory “merge” (under “code”) contains the code for creating the single final merged file of all models. The directory “merge” (under “output”) stores the created single final merged file of all compiled models, as well as the graphs that contain all the models. Selected graphs that contain all the models are visible on the root page of each uptake directory and are also stacked in reverse chronological order on the main page of each repository. With each uptake, selected graphs of estimated outcomes are added at the start of the main page for each repository. Situation Reports are created and shared with national and subnational health authorities. Table 1 demonstrates an overview of the data sets (the three CovidVisualized GitHub repositories). 
 Similar work: The “covidcompare” tool [18] provides graph visualization of the latest estimates of daily and total deaths from international and periodically updated COVID-19 models for countries of the world and US states, along with historical forecasts and model performance, based on IHME’s “Predictive performance of international COVID-19 mortality forecasting models” [2]. 
 
- 
- <br/><br/>
- 
-The three GitHub repositories created in this project are:  
-
-**CovidVisualizedGlobal**, COVID-19 estimates at the global level [13] http://doi.org/10.5281/zenodo.5019030
-
-**CovidVisualizedCountry**, COVID-19 estimates at the country level: Canada [14] http://doi.org/10.5281/zenodo.5019482
-
-**covir2**, COVID-19 estimates at the country level: Iran [15] http://doi.org/10.5281/zenodo.5020797
-
-
- 
  <br/><br/>
  
 **Limitations and Strengths**
@@ -434,9 +437,12 @@ _Automatized data acquisition_: The Stata codes in these repositories automatica
 23. Pourmalek, F. GitHub repository “covir2”: Combine and visualize international periodically updated estimates of COVID-19 at the country level, countries without subnational level estimates: Iran. Version 2.2, Released June 23, 2021. Licenses / Copyrights of data and/or graphs used in this repository. http://doi.org/10.5281/zenodo.5020797 https://github.com/pourmalek/covir2#licenses--copyrights-of-data-and--or-graphs-used-in-this-repository Accessed 23 June 2021.
 
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+********************************************************************************************************************************************
+********************************************************************************************************************************************
   
-********************************************************************************************************************************************
-********************************************************************************************************************************************
+  
 
 ## III. INNER WORKS OF THIS REPOSITORY 
 
