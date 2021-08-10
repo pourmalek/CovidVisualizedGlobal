@@ -1611,7 +1611,7 @@ gen date_latest_available_impe = r(max)
 keep if date == date_latest_available_ihme | date == date_latest_available_impe
 
 keep ///
-date provincestate ///
+date loc_grand_name ///
 DayDeaMeSmA02S01 DayDeaUpSmA02S01 DayDeaMeSmA02S03 DayDeaUpSmA02S03 /// IHME Daily Deaths, Mean Upper, Reference Worse scenrio
 TotDeaMeSmA02S01 TotDeaUpSmA02S01 TotDeaMeSmA02S03 TotDeaUpSmA02S03 /// IHME Total Deaths, Mean Upper, Reference Worse scenrio
 DayINFMeRaA02S01 DayINFUpRaA02S01 DayINFMeRaA02S03 DayINFUpRaA02S03 /// IHME Daily Infections, Mean Upper, Reference Worse scenrio
@@ -1625,7 +1625,7 @@ DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
 
 
 order ///
-date provincestate ///
+date loc_grand_name ///
 DayDeaMeSmA02S01 DayDeaUpSmA02S01 DayDeaMeSmA02S03 DayDeaUpSmA02S03 /// IHME Daily Deaths, Mean Upper, Reference Worse scenrio
 TotDeaMeSmA02S01 TotDeaUpSmA02S01 TotDeaMeSmA02S03 TotDeaUpSmA02S03 /// IHME Total Deaths, Mean Upper, Reference Worse scenrio
 DayINFMeRaA02S01 DayINFUpRaA02S01 DayINFMeRaA02S03 DayINFUpRaA02S03 /// IHME Daily Infections, Mean Upper, Reference Worse scenrio
@@ -1637,7 +1637,7 @@ TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 /// IMPE Tot
 DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
 DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
 
-sort date provincestate 
+sort date loc_grand_name 
 
 
 
