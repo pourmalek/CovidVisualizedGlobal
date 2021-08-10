@@ -543,7 +543,7 @@ grstyle color background white
 
 ** order of graphs: 
 
-** (A) outcomes, (B) correction factors, (C) time coverage, (D) confidence intervals
+** (A) outcomes, (B) time coverage, (C) confidence intervals
 
 
 
@@ -556,19 +556,14 @@ grstyle color background white
 
 
 
-** (B) correction factors 2 and 5 (for deaths and cases) 
 
-* w/ correction factors 2 and 5, without correction factors 2 and 5
-
-
-
-** (C) time coverage
+** (B) time coverage
 
 * all time, 2021-01-01 on
 
 
 
-** (D) confidence intervals 
+** (C) confidence intervals 
 
 * without confidence intervals, w/ confidence intervals, not show extremes 
 
@@ -1584,6 +1579,91 @@ graph save "graph 88 COVID-19 total cases estimated to reported, global, referen
 graph export "graph 88 COVID-19 total cases estimated to reported, global, reference scenarios, 2021.pdf", replace
 
 ***
+
+
+
+
+
+
+
+
+******************************************************************************************
+******************************************************************************************
+
+* summary table 
+
+use "CovidVisualizedGlobal merge.dta", clear 
+
+
+* gen date of latest available estimate from IHME and IMPE
+
+
+summ date if DayDeaMeSmA02S01 != . 
+di r(max) 
+gen date_latest_available_ihme = r(max)
+
+
+summ date if DayDeaMeRaA03S02 != . 
+di r(max) 
+gen date_latest_available_impe = r(max)
+
+
+keep if date == date_latest_available_ihme | date == date_latest_available_impe
+
+keep ///
+date provincestate ///
+DayDeaMeSmA02S01 DayDeaUpSmA02S01 DayDeaMeSmA02S03 DayDeaUpSmA02S03 /// IHME Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeSmA02S01 TotDeaUpSmA02S01 TotDeaMeSmA02S03 TotDeaUpSmA02S03 /// IHME Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA02S01 DayINFUpRaA02S01 DayINFMeRaA02S03 DayINFUpRaA02S03 /// IHME Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA02S01 TotINFUpRaA02S01 TotINFMeRaA02S03 TotINFUpRaA02S03 /// IHME Total Infections, Mean Upper, Reference Worse scenrio
+DayDeaMeRaA03S02 DayDeaUpRaA03S02 DayDeaMeRaA03S03 DayDeaUpRaA03S03 /// IMPE Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeRaA03S02 TotDeaUpRaA03S02 TotDeaMeRaA03S03 TotDeaUpRaA03S03 /// IMPE Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA03S02 DayINFUpRaA03S02 DayINFMeRaA03S03 DayINFUpRaA03S03 /// IMPE Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 /// IMPE Total Infections, Mean Upper, Reference Worse scenrio
+DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
+DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
+
+
+order ///
+date provincestate ///
+DayDeaMeSmA02S01 DayDeaUpSmA02S01 DayDeaMeSmA02S03 DayDeaUpSmA02S03 /// IHME Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeSmA02S01 TotDeaUpSmA02S01 TotDeaMeSmA02S03 TotDeaUpSmA02S03 /// IHME Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA02S01 DayINFUpRaA02S01 DayINFMeRaA02S03 DayINFUpRaA02S03 /// IHME Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA02S01 TotINFUpRaA02S01 TotINFMeRaA02S03 TotINFUpRaA02S03 /// IHME Total Infections, Mean Upper, Reference Worse scenrio
+DayDeaMeRaA03S02 DayDeaUpRaA03S02 DayDeaMeRaA03S03 DayDeaUpRaA03S03 /// IMPE Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeRaA03S02 TotDeaUpRaA03S02 TotDeaMeRaA03S03 TotDeaUpRaA03S03 /// IMPE Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA03S02 DayINFUpRaA03S02 DayINFMeRaA03S03 DayINFUpRaA03S03 /// IMPE Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 /// IMPE Total Infections, Mean Upper, Reference Worse scenrio
+DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
+DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
+
+sort date provincestate 
+
+
+
+local varlist ///
+DayDeaMeSmA02S01 DayDeaUpSmA02S01 DayDeaMeSmA02S03 DayDeaUpSmA02S03 /// IHME Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeSmA02S01 TotDeaUpSmA02S01 TotDeaMeSmA02S03 TotDeaUpSmA02S03 /// IHME Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA02S01 DayINFUpRaA02S01 DayINFMeRaA02S03 DayINFUpRaA02S03 /// IHME Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA02S01 TotINFUpRaA02S01 TotINFMeRaA02S03 TotINFUpRaA02S03 /// IHME Total Infections, Mean Upper, Reference Worse scenrio
+DayDeaMeRaA03S02 DayDeaUpRaA03S02 DayDeaMeRaA03S03 DayDeaUpRaA03S03 /// IMPE Daily Deaths, Mean Upper, Reference Worse scenrio
+TotDeaMeRaA03S02 TotDeaUpRaA03S02 TotDeaMeRaA03S03 TotDeaUpRaA03S03 /// IMPE Total Deaths, Mean Upper, Reference Worse scenrio
+DayINFMeRaA03S02 DayINFUpRaA03S02 DayINFMeRaA03S03 DayINFUpRaA03S03 /// IMPE Daily Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 ///  IMPE Total Infections, Mean Upper, Reference Worse scenrio
+DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
+DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
+
+
+
+foreach var of local varlist {
+
+	qui replace `var' = round(`var')
+	
+}
+*	
+
+
+export excel using "summary table.xlsx", replace firstrow(variables)
 
 
 
