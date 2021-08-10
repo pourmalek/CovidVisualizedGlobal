@@ -41,6 +41,8 @@ erase ihme-covid19.zip
 
 * import csv files
 
+cd 2021_08_04
+
 import delimited using reference_hospitalization_all_locs.csv, clear varnames(1)
 save Reference_hospitalization_all_locs.dta, replace
 	
@@ -1226,6 +1228,8 @@ sort date loc_grand_name
 order date loc_grand_name
 
 qui compress
+
+cd ..
 
 save "CovidVisualizedGlobal IHME.dta", replace
 
