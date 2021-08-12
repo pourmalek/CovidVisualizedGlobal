@@ -1836,7 +1836,7 @@ label var DayINFUpRaA02S03_LPD "Daily infections IHME worse scenario, upper, dat
 
 * Daily deaths reference scenario, mean
 
-summ DayDeaMeSmA03S02 if date > td(01Aug2021)
+summ DayDeaMeRaA03S02 if date > td(01Aug2021)
 
 gen DayDeaMeSmA03S02_LPV = r(max)
 
@@ -1855,55 +1855,58 @@ label var DayDeaMeSmA03S02_LPD "Daily deaths IMPE reference scenario, mean, date
 
 * Daily deaths reference scenario, upper
 
-summ DayDeaUpSmA03S02 if date > td(01Aug2021)
+summ DayDeaUpRaA03S02 if date > td(01Aug2021)
 
-gen DayDeaUpSmA03S02_LPV = r(max)
+gen DayDeaUpRaA03S02_LPV = r(max)
 
-label var DayDeaUpSmA03S02_LPV "Daily deaths IMPE reference scenario, upper, value"
+label var DayDeaUpRaA03S02_LPV "Daily deaths IMPE reference scenario, upper, value"
 
-summ date if DayDeaUpSmA03S02 == DayDeaUpSmA03S02_LPV & date > td(01Aug2021)
+summ date if DayDeaUpRaA03S02 == DayDeaUpRaA03S02_LPV & date > td(01Aug2021)
 
-gen DayDeaUpSmA03S02_LPD = r(mean)
+gen DayDeaUpRaA03S02_LPD = r(mean)
 
-format DayDeaUpSmA03S02_LPD %tdDDMonCCYY
+format DayDeaUpRaA03S02_LPD %tdDDMonCCYY
  
-label var DayDeaUpSmA03S02_LPD "Daily deaths IMPE reference scenario, upper, date"
+label var DayDeaUpRaA03S02_LPD "Daily deaths IMPE reference scenario, upper, date"
+
 
 
 
 * Daily deaths worse scenario, mean
 
-summ DayDeaMeSmA03S03 if date > td(01Aug2021)
+summ DayDeaMeRaA03S03 if date > td(01Aug2021)
 
-gen DayDeaMeSmA03S03_LPV = r(max)
+gen DayDeaMeRaA03S03_LPV = r(max)
 
-label var DayDeaMeSmA03S03_LPV "Daily deaths IMPE worse scenario, mean, value"
+label var DayDeaMeRaA03S03_LPV "Daily deaths IMPE worse scenario, mean, value"
 
-summ date if DayDeaMeSmA03S03 == DayDeaMeSmA03S03_LPV & date > td(01Aug2021)
+summ date if DayDeaMeRaA03S03 == DayDeaMeRaA03S03_LPV & date > td(01Aug2021)
 
-gen DayDeaMeSmA03S03_LPD = r(mean)
+gen DayDeaMeRaA03S03_LPD = r(mean)
 
-format DayDeaMeSmA03S03_LPD %tdDDMonCCYY
+format DayDeaMeRaA03S03_LPD %tdDDMonCCYY
 
-label var DayDeaMeSmA03S03_LPD "Daily deaths IMPE worse scenario, mean, date"
+label var DayDeaMeRaA03S03_LPD "Daily deaths IMPE worse scenario, mean, date"
+
+
 
 
 
 * Daily deaths worse scenario, upper
 
-summ DayDeaUpSmA03S03 if date > td(01Aug2021)
+summ DayDeaUpRaA03S03 if date > td(01Aug2021)
 
-gen DayDeaUpSmA03S03_LPV = r(max)
+gen DayDeaUpRaA03S03_LPV = r(max)
 
-label var DayDeaUpSmA03S03_LPV "Daily deaths IMPE worse scenario, upper, value"
+label var DayDeaUpRaA03S03_LPV "Daily deaths IMPE worse scenario, upper, value"
 
-summ date if DayDeaUpSmA03S03 == DayDeaUpSmA03S03_LPV & date > td(01Aug2021)
+summ date if DayDeaUpRaA03S03 == DayDeaUpRaA03S03_LPV & date > td(01Aug2021)
 
-gen DayDeaUpSmA03S03_LPD = r(mean)
+gen DayDeaUpRaA03S03_LPD = r(mean)
 
-format DayDeaUpSmA03S03_LPD %tdDDMonCCYY
+format DayDeaUpRaA03S03_LPD %tdDDMonCCYY
 
-label var DayDeaUpSmA03S03_LPD "Daily deaths IMPE worse scenario, upper, date"
+label var DayDeaUpRaA03S03_LPD "Daily deaths IMPE worse scenario, upper, date"
 
 
 
@@ -1991,10 +1994,13 @@ DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_
 DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
 DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
 DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
-DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpSmA03S02_LPV DayDeaUpSmA03S02_LPD ///
-DayDeaMeSmA03S03_LPV DayDeaMeSmA03S03_LPD DayDeaUpSmA03S03_LPV DayDeaUpSmA03S03_LPD ///
+DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
 DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
-DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD
+DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
+
+
+keep in 1 
 
 
 
@@ -2003,10 +2009,10 @@ DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_
 DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
 DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
 DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
-DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpSmA03S02_LPV DayDeaUpSmA03S02_LPD ///
-DayDeaMeSmA03S03_LPV DayDeaMeSmA03S03_LPD DayDeaUpSmA03S03_LPV DayDeaUpSmA03S03_LPD ///
+DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
 DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
-DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD
+DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
 
 
 
@@ -2016,10 +2022,10 @@ DayDeaMeSmA02S01_LPV DayDeaUpSmA02S01_LPV ///
 DayDeaMeSmA02S03_LPV DayDeaUpSmA02S03_LPV ///
 DayINFMeRaA02S01_LPV DayINFUpRaA02S01_LPV ///
 DayINFMeRaA02S03_LPV DayINFUpRaA02S03_LPV ///
-DayDeaMeSmA03S02_LPV DayDeaUpSmA03S02_LPV ///
-DayDeaMeSmA03S03_LPV DayDeaUpSmA03S03_LPV ///
+DayDeaMeSmA03S02_LPV DayDeaUpRaA03S02_LPV ///
+DayDeaMeRaA03S03_LPV DayDeaUpRaA03S03_LPV /// 
 DayINFMeRaA03S02_LPV DayINFUpRaA03S02_LPV ///
-DayINFMeRaA03S03_LPV DayINFUpRaA03S03_LPV 
+DayINFMeRaA03S03_LPV DayINFUpRaA03S03_LPV  
 
 
 
