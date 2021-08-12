@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210806/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}10 Aug 2021, 06:57:55
+ {txt}opened on:  {res}12 Aug 2021, 16:35:35
 {txt}
 {com}. 
 . 
@@ -51,11 +51,11 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}             553
+{col 5}not matched{col 30}{res}             551
 {txt}{col 9}from master{col 30}{res}             486{txt}  (_merge==1)
-{col 9}from using{col 30}{res}              67{txt}  (_merge==2)
+{col 9}from using{col 30}{res}              65{txt}  (_merge==2)
 
-{col 5}matched{col 30}{res}             101{txt}  (_merge==3)
+{col 5}matched{col 30}{res}             103{txt}  (_merge==3)
 {col 5}{hline 41}
 {com}. {c )-}
 {txt}
@@ -75,9 +75,9 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}              51
+{col 5}not matched{col 30}{res}              81
 {txt}{col 9}from master{col 30}{res}              34{txt}  (_merge==1)
-{col 9}from using{col 30}{res}              17{txt}  (_merge==2)
+{col 9}from using{col 30}{res}              47{txt}  (_merge==2)
 
 {col 5}matched{col 30}{res}             620{txt}  (_merge==3)
 {col 5}{hline 41}
@@ -99,8 +99,8 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}              49
-{txt}{col 9}from master{col 30}{res}              16{txt}  (_merge==1)
+{col 5}not matched{col 30}{res}              79
+{txt}{col 9}from master{col 30}{res}              46{txt}  (_merge==1)
 {col 9}from using{col 30}{res}              33{txt}  (_merge==2)
 
 {col 5}matched{col 30}{res}             655{txt}  (_merge==3)
@@ -123,8 +123,8 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}              98
-{txt}{col 9}from master{col 30}{res}              98{txt}  (_merge==1)
+{col 5}not matched{col 30}{res}             128
+{txt}{col 9}from master{col 30}{res}             128{txt}  (_merge==1)
 {col 9}from using{col 30}{res}               0{txt}  (_merge==2)
 
 {col 5}matched{col 30}{res}             606{txt}  (_merge==3)
@@ -148,11 +148,11 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}             617
-{txt}{col 9}from master{col 30}{res}             610{txt}  (_merge==1)
-{col 9}from using{col 30}{res}               7{txt}  (_merge==2)
+{col 5}not matched{col 30}{res}             633
+{txt}{col 9}from master{col 30}{res}             633{txt}  (_merge==1)
+{col 9}from using{col 30}{res}               0{txt}  (_merge==2)
 
-{col 5}matched{col 30}{res}              94{txt}  (_merge==3)
+{col 5}matched{col 30}{res}             101{txt}  (_merge==3)
 {col 5}{hline 41}
 {com}. {c )-}
 {txt}
@@ -182,14 +182,14 @@
 . 
 . 
 . gen DayCTDMeRaA00S00 =  DayCasMeRaA00S00 / DayDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayCTDMeRaA00S00  "Daily Cases to Deaths S0 JOHN"
 {txt}
 {com}. 
 . gen TotCTDMeRaA00S00 =  TotCasMeRaA00S00 / TotDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotCTDMeRaA00S00  "Total Cases to Deaths S0 JOHN"
@@ -199,14 +199,14 @@
 . 
 . 
 . gen DayCTDMeRaA01S00 =  DayCasMeRaA01S00 / DayDeaMeRaA01S00
-{txt}(544 missing values generated)
+{txt}(567 missing values generated)
 
 {com}. 
 . label var DayCTDMeRaA01S00  "Daily Cases to Deaths S0 DELP"
 {txt}
 {com}. 
 . gen TotCTDMeRaA01S00 =  TotCasMeRaA01S00 / TotDeaMeRaA01S00
-{txt}(543 missing values generated)
+{txt}(566 missing values generated)
 
 {com}. 
 . label var TotCTDMeRaA01S00  "Total Cases to Deaths S0 DELP"  
@@ -216,14 +216,14 @@
 . 
 . 
 . gen DayITDMeRaA02S01  =  DayINFMeRaA02S01  / DayDeaMeRaA02S01 
-{txt}(74 missing values generated)
+{txt}(67 missing values generated)
 
 {com}. 
 . label var DayITDMeRaA02S01   "Daily infections to Deaths S1 IHME"
 {txt}
 {com}. 
 . gen TotITDMeRaA02S01  =  TotINFMeRaA02S01  / TotDeaMeRaA02S01 
-{txt}(74 missing values generated)
+{txt}(67 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA02S01   "Total infections to Deaths S1 IHME"
@@ -240,7 +240,7 @@
 {txt}
 {com}. 
 . gen TotITDMeRaA02S02 = TotINFMeRaA02S02 / TotDeaMeRaA02S02  
-{txt}(711 missing values generated)
+{txt}(734 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA02S02 "Total infections to Deaths S2 IHME"
@@ -257,7 +257,7 @@
 {txt}
 {com}. 
 . gen TotITDMeRaA02S03  = TotINFMeRaA02S03  / TotDeaMeRaA02S03   
-{txt}(711 missing values generated)
+{txt}(734 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA02S03  "Total infections to Deaths S3 IHME"
@@ -267,14 +267,14 @@
 . 
 . 
 . gen DayITDMeRaA03S01  = DayINFMeRaA03S01  / DayDeaMeRaA03S01   
-{txt}(38 missing values generated)
+{txt}(61 missing values generated)
 
 {com}. 
 . label var DayITDMeRaA03S01  "Daily infections to Deaths S1 IMPE"
 {txt}
 {com}. 
 . gen TotITDMeRaA03S01  = TotINFMeRaA03S01  / TotDeaMeRaA03S01   
-{txt}(35 missing values generated)
+{txt}(58 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA03S01  "Total infections to Deaths S1 IMPE"
@@ -284,14 +284,14 @@
 . 
 . 
 . gen DayITDMeRaA03S02  = DayINFMeRaA03S02  / DayDeaMeRaA03S02   
-{txt}(38 missing values generated)
+{txt}(61 missing values generated)
 
 {com}. 
 . label var DayITDMeRaA03S02  "Daily infections to Deaths S2 IMPE"
 {txt}
 {com}. 
 . gen TotITDMeRaA03S02  = TotINFMeRaA03S02  / TotDeaMeRaA03S02   
-{txt}(35 missing values generated)
+{txt}(58 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA03S02  "Total infections to Deaths S2 IMPE"
@@ -301,14 +301,14 @@
 . 
 . 
 . gen DayITDMeRaA03S03  = DayINFMeRaA03S03  / DayDeaMeRaA03S03   
-{txt}(38 missing values generated)
+{txt}(61 missing values generated)
 
 {com}. 
 . label var DayITDMeRaA03S03  "Daily infections to Deaths S3 IMPE"
 {txt}
 {com}. 
 . gen TotITDMeRaA03S03  = TotINFMeRaA03S03  / TotDeaMeRaA03S03   
-{txt}(35 missing values generated)
+{txt}(58 missing values generated)
 
 {com}. 
 . label var TotITDMeRaA03S03  "Total infections to Deaths S3 IMPE"
@@ -318,14 +318,14 @@
 . 
 . 
 . gen DayCTDMeRaA04S00  = DayCasMeRaA04S00  / DayDeaMeRaA04S00   
-{txt}(105 missing values generated)
+{txt}(128 missing values generated)
 
 {com}. 
 . label var DayCTDMeRaA04S00  "Daily Cases to Deaths S0 LANL"
 {txt}
 {com}. 
 . gen TotCTDMeRaA04S00  = TotCasMeRaA04S00  / TotDeaMeRaA04S00   
-{txt}(105 missing values generated)
+{txt}(128 missing values generated)
 
 {com}. 
 . label var TotCTDMeRaA04S00  "Total Cases to Deaths S0 LANL"
@@ -335,14 +335,14 @@
 . 
 . 
 . gen DayCTDMeRaA05S00  = DayCasMeRaA05S00  / DayDeaMeRaA05S00   
-{txt}(611 missing values generated)
+{txt}(634 missing values generated)
 
 {com}. 
 . label var DayCTDMeRaA05S00  "Daily Cases to Deaths S0 SRIV"
 {txt}
 {com}. 
 . gen TotCTDMeRaA05S00  = TotCasMeRaA05S00  / TotDeaMeRaA05S00   
-{txt}(610 missing values generated)
+{txt}(633 missing values generated)
 
 {com}. 
 . label var TotCTDMeRaA05S00  "Total Cases to Deaths S0 SRIV"
@@ -357,7 +357,7 @@
 . 
 .     
 . gen DayDERMeRaA00S00 = DayDeaMeRaA00S00 / DayDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA00S00 "Daily Deaths estim to reported JOHN = 1" 
@@ -365,7 +365,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA01S00 = DayDeaMeRaA01S00 / DayDeaMeRaA00S00
-{txt}(611 missing values generated)
+{txt}(632 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA01S00 "Daily Deaths estim to reported Mean DELP S0"
@@ -373,7 +373,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA02S01 = DayDeaMeRaA02S01 / DayDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA02S01 "Daily Deaths estim to reported Mean not smoothed IHME S1"
@@ -381,7 +381,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA02S02 = DayDeaMeRaA02S02 / DayDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA02S02 "Daily Deaths estim to reported Mean not smoothed IHME S2"
@@ -389,7 +389,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA02S03 = DayDeaMeRaA02S03 / DayDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA02S03 "Daily Deaths estim to reported Mean not smoothed IHME S3"
@@ -397,7 +397,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S01 = DayDeaMeRaA03S01 / DayDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S01 "Daily Deaths estim to reported Mean S1 IMPE"
@@ -405,7 +405,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S02 = DayDeaMeRaA03S02 / DayDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S02 "Daily Deaths estim to reported Mean S2 IMPE"
@@ -413,7 +413,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S03 = DayDeaMeRaA03S03 / DayDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S03 "Daily Deaths estim to reported Mean S3 IMPE"
@@ -421,7 +421,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA04S00 = DayDeaMeRaA04S00 / DayDeaMeRaA00S00
-{txt}(145 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA04S00 "Daily Deaths estim to reported to Deaths S0 LANL"
@@ -429,7 +429,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA05S00  = DayDeaMeRaA05S00 / DayDeaMeRaA00S00
-{txt}(702 missing values generated)
+{txt}(723 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA05S00 "Daily Deaths estim to reported S0 SRIV"
@@ -444,7 +444,7 @@
 . 
 . 
 . gen DayCERMeRaA00S00 = DayCasMeRaA00S00 / DayCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA00S00 "Daily Cases estim to reported JOHN = 1" 
@@ -452,7 +452,7 @@
 {com}. 
 . 
 . gen DayCERMeRaA01S00 = DayCasMeRaA01S00 / DayCasMeRaA00S00
-{txt}(611 missing values generated)
+{txt}(632 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA01S00 "Daily Cases estim to reported Mean DELP S0"
@@ -460,7 +460,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA02S01 = DayINFMeRaA02S01 / DayCasMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA02S01 "Daily infections estim to reported cases Mean not smoothed IHME S1"
@@ -468,7 +468,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA02S02 = DayINFMeRaA02S02 / DayCasMeRaA00S00
-{txt}(679 missing values generated)
+{txt}(707 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA02S02 "Daily infections estim to reported cases Mean not smoothed IHME S2"
@@ -476,7 +476,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA02S03 = DayINFMeRaA02S03 / DayCasMeRaA00S00
-{txt}(679 missing values generated)
+{txt}(707 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA02S03 "Daily infections estim to reported cases Mean not smoothed IHME S3"
@@ -484,7 +484,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S01 = DayINFMeRaA03S01 / DayCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S01 "Daily infections estim to reported cases Mean S1 IMPE"
@@ -492,7 +492,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S02 = DayINFMeRaA03S02 / DayCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S02 "Daily infections estim to reported cases Mean S2 IMPE"
@@ -500,7 +500,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S03 = DayINFMeRaA03S03 / DayCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S03 "Daily infections estim to reported cases Mean S3 IMPE"
@@ -508,7 +508,7 @@
 {com}. 
 . 
 . gen DayCERMeRaA04S00 = DayCasMeRaA04S00 / DayCasMeRaA00S00
-{txt}(145 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA04S00 "Daily Cases estim to reported to Cases S0 LANL"
@@ -516,7 +516,7 @@
 {com}. 
 . 
 . gen DayCERMeRaA05S00  = DayCasMeRaA05S00 / DayCasMeRaA00S00
-{txt}(702 missing values generated)
+{txt}(723 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA05S00 "Daily Cases estim to reported S0 SRIV"
@@ -531,7 +531,7 @@
 . 
 . 
 . gen TotDERMeRaA00S00 = TotDeaMeRaA00S00 / TotDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA00S00 "Total Deaths estim to reported JOHN = 1" 
@@ -539,7 +539,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA01S00 = TotDeaMeRaA01S00 / TotDeaMeRaA00S00
-{txt}(610 missing values generated)
+{txt}(631 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA01S00 "Total Deaths estim to reported Mean DELP S0"
@@ -547,7 +547,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA02S01 = TotDeaMeRaA02S01 / TotDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA02S01 "Total Deaths estim to reported Mean not smoothed IHME S1"
@@ -555,7 +555,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA02S02 = TotDeaMeRaA02S02 / TotDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA02S02 "Total Deaths estim to reported Mean not smoothed IHME S2"
@@ -563,7 +563,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA02S03 = TotDeaMeRaA02S03 / TotDeaMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA02S03 "Total Deaths estim to reported Mean not smoothed IHME S3"
@@ -571,7 +571,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S01 = TotDeaMeRaA03S01 / TotDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S01 "Total Deaths estim to reported Mean S1 IMPE"
@@ -579,7 +579,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S02 = TotDeaMeRaA03S02 / TotDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S02 "Total Deaths estim to reported Mean S2 IMPE"
@@ -587,7 +587,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S03 = TotDeaMeRaA03S03 / TotDeaMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S03 "Total Deaths estim to reported Mean S3 IMPE"
@@ -595,7 +595,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA04S00 = TotDeaMeRaA04S00 / TotDeaMeRaA00S00
-{txt}(145 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA04S00 "Total Deaths estim to reported to Deaths S0 LANL"
@@ -603,7 +603,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA05S00  = TotDeaMeRaA05S00 / TotDeaMeRaA00S00
-{txt}(701 missing values generated)
+{txt}(722 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA05S00 "Total Deaths estim to reported S0 SRIV"
@@ -618,7 +618,7 @@
 . 
 . 
 . gen TotCERMeRaA00S00 = TotCasMeRaA00S00 / TotCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA00S00 "Total Cases estim to reported JOHN = 1" 
@@ -626,7 +626,7 @@
 {com}. 
 . 
 . gen TotCERMeRaA01S00 = TotCasMeRaA01S00 / TotCasMeRaA00S00
-{txt}(610 missing values generated)
+{txt}(631 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA01S00 "Total Cases estim to reported Mean DELP S0"
@@ -634,7 +634,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA02S01 = TotINFMeRaA02S01 / TotCasMeRaA00S00
-{txt}(158 missing values generated)
+{txt}(179 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA02S01 "Total infections estim to reported cases Mean not smoothed IHME S1"
@@ -642,7 +642,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA02S02 = TotINFMeRaA02S02 / TotCasMeRaA00S00
-{txt}(711 missing values generated)
+{txt}(734 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA02S02 "Total infections estim to reported cases Mean not smoothed IHME S2"
@@ -650,7 +650,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA02S03 = TotINFMeRaA02S03 / TotCasMeRaA00S00
-{txt}(711 missing values generated)
+{txt}(734 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA02S03 "Total infections estim to reported cases Mean not smoothed IHME S3"
@@ -658,7 +658,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S01 = TotINFMeRaA03S01 / TotCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S01 "Total infections estim to reported cases Mean S1 IMPE"
@@ -666,7 +666,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S02 = TotINFMeRaA03S02 / TotCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S02 "Total infections estim to reported cases Mean S2 IMPE"
@@ -674,7 +674,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S03 = TotINFMeRaA03S03 / TotCasMeRaA00S00
-{txt}(124 missing values generated)
+{txt}(145 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S03 "Total infections estim to reported cases Mean S3 IMPE"
@@ -682,7 +682,7 @@
 {com}. 
 . 
 . gen TotCERMeRaA04S00 = TotCasMeRaA04S00 / TotCasMeRaA00S00
-{txt}(145 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA04S00 "Total Cases estim to reported to Cases S0 LANL"
@@ -690,7 +690,7 @@
 {com}. 
 . 
 . gen TotCERMeRaA05S00  = TotCasMeRaA05S00 / TotCasMeRaA00S00
-{txt}(701 missing values generated)
+{txt}(722 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA05S00 "Total Cases estim to reported S0 SRIV"
@@ -782,16 +782,16 @@ now 732
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}              87
-{txt}{col 9}from master{col 30}{res}              54{txt}  (_merge==1)
+{col 5}not matched{col 30}{res}              64
+{txt}{col 9}from master{col 30}{res}              31{txt}  (_merge==1)
 {col 9}from using{col 30}{res}              33{txt}  (_merge==2)
 
-{col 5}matched{col 30}{res}             678{txt}  (_merge==3)
+{col 5}matched{col 30}{res}             701{txt}  (_merge==3)
 {col 5}{hline 41}
 
 {com}. 
 . replace loc_grand_name = "global"
-{txt}(54 real changes made)
+{txt}(31 real changes made)
 
 {com}. 
 . sort date loc_grand_name
@@ -829,7 +829,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}           765                          
-{txt} vars:{res}           483                          10 Aug 2021 06:57
+{txt} vars:{res}           483                          12 Aug 2021 16:35
 {txt} size:{res}     2,082,330                          
 {txt}{hline}
               storage   display    value
@@ -3064,10 +3064,10 @@ Sorted by: {res}date  loc_grand_name
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}        637       22267    184.0303      21949      22585
+{space 8}date {c |}{res}        667       22282    192.6906      21949      22615
 {txt}
 {com}. di r(max) 
-{res}22585
+{res}22615
 {txt}
 {com}. gen date_latest_available_ihme = r(max)
 {txt}
@@ -3132,7 +3132,7 @@ Sorted by: {res}date  loc_grand_name
 > DayDeaMeRaA03S02 DayDeaUpRaA03S02 DayDeaMeRaA03S03 DayDeaUpRaA03S03 /// IMPE Daily Deaths, Mean Upper, Reference Worse scenrio
 > TotDeaMeRaA03S02 TotDeaUpRaA03S02 TotDeaMeRaA03S03 TotDeaUpRaA03S03 /// IMPE Total Deaths, Mean Upper, Reference Worse scenrio
 > DayINFMeRaA03S02 DayINFUpRaA03S02 DayINFMeRaA03S03 DayINFUpRaA03S03 /// IMPE Daily Infections, Mean Upper, Reference Worse scenrio
-> TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 ///  IMPE Total Infections, Mean Upper, Reference Worse scenrio
+> TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 /// IMPE Total Infections, Mean Upper, Reference Worse scenrio
 > DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
 > DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
 {txt}
@@ -3148,10 +3148,642 @@ Sorted by: {res}date  loc_grand_name
 {com}. *       
 . 
 . 
-. export excel using "summary table.xlsx", replace firstrow(variables)
+. export excel using "summary table.xlsx", replace firstrow(variables) sheet("latest")
 {res}{txt}file summary table.xlsx saved
 
 {com}. 
+. 
+. 
+. ********************************
+. 
+. * Laest peak 
+. 
+. 
+. use "CovidVisualizedGlobal merge.dta", clear 
+{txt}
+{com}. 
+. 
+. * IHME
+. 
+. 
+. 
+. * Daily deaths reference scenario, mean
+. 
+. summ DayDeaMeSmA02S01 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeS~01 {c |}{res}        122     20169.1    4270.061   15262.86   26647.94
+{txt}
+{com}. 
+. gen DayDeaMeSmA02S01_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaMeSmA02S01_LPV "Daily deaths IHME reference scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayDeaMeSmA02S01 == DayDeaMeSmA02S01_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22507           .      22507      22507
+{txt}
+{com}. 
+. gen DayDeaMeSmA02S01_LPD = r(mean)
+{txt}
+{com}. 
+. format DayDeaMeSmA02S01_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaMeSmA02S01_LPD "Daily deaths IHME reference scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * Daily deaths reference scenario, upper
+. 
+. summ DayDeaUpSmA02S01 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaUpS~01 {c |}{res}        122    33146.75    8725.476   21400.51   49705.32
+{txt}
+{com}. 
+. gen DayDeaUpSmA02S01_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaUpSmA02S01_LPV "Daily deaths IHME reference scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayDeaUpSmA02S01 == DayDeaUpSmA02S01_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22552           .      22552      22552
+{txt}
+{com}. 
+. gen DayDeaUpSmA02S01_LPD = r(mean)
+{txt}
+{com}. 
+. format DayDeaUpSmA02S01_LPD %tdDDMonCCYY
+{txt}
+{com}.  
+. label var DayDeaUpSmA02S01_LPD "Daily deaths IHME reference scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily deaths worse scenario, mean
+. 
+. summ DayDeaMeSmA02S03 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeS~03 {c |}{res}        122    33987.67    6808.264   24275.52   45383.82
+{txt}
+{com}. 
+. gen DayDeaMeSmA02S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaMeSmA02S03_LPV "Daily deaths IHME worse scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayDeaMeSmA02S03 == DayDeaMeSmA02S03_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22569           .      22569      22569
+{txt}
+{com}. 
+. gen DayDeaMeSmA02S03_LPD = r(mean)
+{txt}
+{com}. 
+. format DayDeaMeSmA02S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaMeSmA02S03_LPD "Daily deaths IHME worse scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily deaths worse scenario, upper
+. 
+. summ DayDeaUpSmA02S03 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaUpS~03 {c |}{res}        122    50173.78    15962.58   25175.57   75746.09
+{txt}
+{com}. 
+. gen DayDeaUpSmA02S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaUpSmA02S03_LPV "Daily deaths IHME worse scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayDeaUpSmA02S03 == DayDeaUpSmA02S03_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22561           .      22561      22561
+{txt}
+{com}. 
+. gen DayDeaUpSmA02S03_LPD = r(mean)
+{txt}
+{com}. 
+. format DayDeaUpSmA02S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaUpSmA02S03_LPD "Daily deaths IHME worse scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. * Daily infections reference scenario, mean
+. 
+. summ DayINFMeRaA02S01 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFM~2S01 {c |}{res}        153     6711324     1453714    4824862    8852569
+{txt}
+{com}. 
+. gen DayINFMeRaA02S01_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFMeRaA02S01_LPV "Daily infections IHME reference scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayINFMeRaA02S01 == DayINFMeRaA02S01_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22506           .      22506      22506
+{txt}
+{com}. 
+. gen DayINFMeRaA02S01_LPD = r(mean)
+{txt}
+{com}. 
+. format DayINFMeRaA02S01_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFMeRaA02S01_LPD "Daily infections IHME reference scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily infections reference scenario, upper
+. 
+. summ DayINFUpRaA02S01 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFU~2S01 {c |}{res}        153    1.02e+07     3821134    6384619   1.85e+07
+{txt}
+{com}. 
+. gen DayINFUpRaA02S01_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFUpRaA02S01_LPV "Daily infections IHME reference scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayINFUpRaA02S01 == DayINFUpRaA02S01_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22526           .      22526      22526
+{txt}
+{com}. 
+. gen DayINFUpRaA02S01_LPD = r(mean)
+{txt}
+{com}. 
+. format DayINFUpRaA02S01_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFUpRaA02S01_LPD "Daily infections IHME reference scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * Daily infections worse scenario, mean
+. 
+. summ DayINFMeRaA02S03 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFM~2S03 {c |}{res}        139    1.07e+07     2569202    6462811   1.46e+07
+{txt}
+{com}. 
+. gen DayINFMeRaA02S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFMeRaA02S03_LPV "Daily infections IHME worse scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayINFMeRaA02S03 == DayINFMeRaA02S03_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22545           .      22545      22545
+{txt}
+{com}. 
+. gen DayINFMeRaA02S03_LPD = r(mean)
+{txt}
+{com}. 
+. format DayINFMeRaA02S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFMeRaA02S03_LPD "Daily infections IHME worse scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily infections worse scenario, upper
+. 
+. summ DayINFUpRaA02S03 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFU~2S03 {c |}{res}        139    1.54e+07     5081649    8103419   2.32e+07
+{txt}
+{com}. 
+. gen DayINFUpRaA02S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFUpRaA02S03_LPV "Daily infections IHME worse scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayINFUpRaA02S03 == DayINFUpRaA02S03_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22539           .      22539      22539
+{txt}
+{com}. 
+. gen DayINFUpRaA02S03_LPD = r(mean)
+{txt}
+{com}. 
+. format DayINFUpRaA02S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFUpRaA02S03_LPD "Daily infections IHME worse scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * IMPE
+. 
+. 
+. 
+. * Daily deaths reference scenario, mean
+. 
+. summ DayDeaMeRaA03S02 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaM~3S02 {c |}{res}         76    12709.29    2180.173    8467.89   15470.14
+{txt}
+{com}. 
+. gen DayDeaMeSmA03S02_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaMeSmA03S02_LPV "Daily deaths IMPE reference scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayDeaMeSmA03S02 == DayDeaMeSmA03S02_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        153       22570     44.3114      22494      22646
+{txt}
+{com}. 
+. gen DayDeaMeSmA03S02_LPD = r(mean)
+{txt}
+{com}. 
+. format DayDeaMeSmA03S02_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaMeSmA03S02_LPD "Daily deaths IMPE reference scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * Daily deaths reference scenario, upper
+. 
+. summ DayDeaUpRaA03S02 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaU~3S02 {c |}{res}         76    17929.35    3395.361   11888.84   22432.46
+{txt}
+{com}. 
+. gen DayDeaUpRaA03S02_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaUpRaA03S02_LPV "Daily deaths IMPE reference scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayDeaUpRaA03S02 == DayDeaUpRaA03S02_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayDeaUpRaA03S02_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayDeaUpRaA03S02_LPD %tdDDMonCCYY
+{txt}
+{com}.  
+. label var DayDeaUpRaA03S02_LPD "Daily deaths IMPE reference scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * Daily deaths worse scenario, mean
+. 
+. summ DayDeaMeRaA03S03 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaM~3S03 {c |}{res}         76    45190.35    13454.19   14220.27   64594.77
+{txt}
+{com}. 
+. gen DayDeaMeRaA03S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaMeRaA03S03_LPV "Daily deaths IMPE worse scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayDeaMeRaA03S03 == DayDeaMeRaA03S03_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayDeaMeRaA03S03_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayDeaMeRaA03S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaMeRaA03S03_LPD "Daily deaths IMPE worse scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * Daily deaths worse scenario, upper
+. 
+. summ DayDeaUpRaA03S03 if date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaU~3S03 {c |}{res}         76    67226.17     17690.5   19904.94   88490.52
+{txt}
+{com}. 
+. gen DayDeaUpRaA03S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayDeaUpRaA03S03_LPV "Daily deaths IMPE worse scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayDeaUpRaA03S03 == DayDeaUpRaA03S03_LPV & date > td(01Aug2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayDeaUpRaA03S03_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayDeaUpRaA03S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayDeaUpRaA03S03_LPD "Daily deaths IMPE worse scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. * Daily infections reference scenario, mean
+. 
+. summ DayINFMeRaA03S02 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFM~3S02 {c |}{res}        107     4943556     1099973    2839785    6546464
+{txt}
+{com}. 
+. gen DayINFMeRaA03S02_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFMeRaA03S02_LPV "Daily infections IMPE reference scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayINFMeRaA03S02 == DayINFMeRaA03S02_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayINFMeRaA03S02_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayINFMeRaA03S02_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFMeRaA03S02_LPD "Daily infections IMPE reference scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily infections reference scenario, upper
+. 
+. summ DayINFUpRaA03S02 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFU~3S02 {c |}{res}        107     6851450     1660132    4366336    9358429
+{txt}
+{com}. 
+. gen DayINFUpRaA03S02_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFUpRaA03S02_LPV "Daily infections IMPE reference scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayINFUpRaA03S02 == DayINFUpRaA03S02_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayINFUpRaA03S02_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayINFUpRaA03S02_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFUpRaA03S02_LPD "Daily infections IMPE reference scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * Daily infections worse scenario, mean
+. 
+. summ DayINFMeRaA03S03 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFM~3S03 {c |}{res}        107    1.52e+07     7164880    3691657   2.56e+07
+{txt}
+{com}. 
+. gen DayINFMeRaA03S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFMeRaA03S03_LPV "Daily infections IMPE worse scenario, mean, value"
+{txt}
+{com}. 
+. summ date if DayINFMeRaA03S03 == DayINFMeRaA03S03_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayINFMeRaA03S03_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayINFMeRaA03S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFMeRaA03S03_LPD "Daily infections IMPE worse scenario, mean, date"
+{txt}
+{com}. 
+. 
+. 
+. * Daily infections worse scenario, upper
+. 
+. summ DayINFUpRaA03S03 if date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
+{txt}
+{com}. 
+. gen DayINFUpRaA03S03_LPV = r(max)
+{txt}
+{com}. 
+. label var DayINFUpRaA03S03_LPV "Daily infections IMPE worse scenario, upper, value"
+{txt}
+{com}. 
+. summ date if DayINFUpRaA03S03 == DayINFUpRaA03S03_LPV & date > td(01Jul2021)
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          0
+{txt}
+{com}. 
+. gen DayINFUpRaA03S03_LPD = r(mean)
+{txt}(765 missing values generated)
+
+{com}. 
+. format DayINFUpRaA03S03_LPD %tdDDMonCCYY
+{txt}
+{com}. 
+. label var DayINFUpRaA03S03_LPD "Daily infections IMPE worse scenario, upper, date"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. keep ///
+> DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_LPD ///
+> DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
+> DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
+> DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
+> DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+> DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
+> DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
+> DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
+{txt}
+{com}. 
+. 
+. keep in 1 
+{txt}(764 observations deleted)
+
+{com}. 
+. 
+. 
+. order ///
+> DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_LPD ///
+> DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
+> DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
+> DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
+> DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+> DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
+> DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
+> DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
+{txt}
+{com}. 
+. 
+. 
+. 
+. local varlist ///
+> DayDeaMeSmA02S01_LPV DayDeaUpSmA02S01_LPV ///
+> DayDeaMeSmA02S03_LPV DayDeaUpSmA02S03_LPV ///
+> DayINFMeRaA02S01_LPV DayINFUpRaA02S01_LPV ///
+> DayINFMeRaA02S03_LPV DayINFUpRaA02S03_LPV ///
+> DayDeaMeSmA03S02_LPV DayDeaUpRaA03S02_LPV ///
+> DayDeaMeRaA03S03_LPV DayDeaUpRaA03S03_LPV /// 
+> DayINFMeRaA03S02_LPV DayINFUpRaA03S02_LPV ///
+> DayINFMeRaA03S03_LPV DayINFUpRaA03S03_LPV  
+{txt}
+{com}. 
+. 
+. 
+. foreach var of local varlist {c -(}
+{txt}  2{com}. 
+.         qui replace `var' = round(`var')
+{txt}  3{com}.         
+. {c )-}
+{txt}
+{com}. *       
+. 
+. 
+. 
+. export excel using "summary table.xlsx", firstrow(variables) sheet("peak")
+{res}{txt}file summary table.xlsx saved
+
+{com}. 
+. 
 . 
 . 
 . 
@@ -3168,7 +3800,7 @@ Sorted by: {res}date  loc_grand_name
 {txt}
 {com}. 
 . di c(scheme)
-{res}_GRSTYLE_
+{res}s2color
 {txt}
 {com}. 
 . 
@@ -3179,7 +3811,7 @@ Sorted by: {res}date  loc_grand_name
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210806/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}10 Aug 2021, 06:58:39
+ {txt}closed on:  {res}12 Aug 2021, 16:36:18
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
