@@ -1649,7 +1649,7 @@ TotINFMeRaA02S01 TotINFUpRaA02S01 TotINFMeRaA02S03 TotINFUpRaA02S03 /// IHME Tot
 DayDeaMeRaA03S02 DayDeaUpRaA03S02 DayDeaMeRaA03S03 DayDeaUpRaA03S03 /// IMPE Daily Deaths, Mean Upper, Reference Worse scenrio
 TotDeaMeRaA03S02 TotDeaUpRaA03S02 TotDeaMeRaA03S03 TotDeaUpRaA03S03 /// IMPE Total Deaths, Mean Upper, Reference Worse scenrio
 DayINFMeRaA03S02 DayINFUpRaA03S02 DayINFMeRaA03S03 DayINFUpRaA03S03 /// IMPE Daily Infections, Mean Upper, Reference Worse scenrio
-TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 ///  IMPE Total Infections, Mean Upper, Reference Worse scenrio
+TotINFMeRaA03S02 TotINFMeRaA03S02 TotINFMeRaA03S03 TotINFMeRaA03S03 /// IMPE Total Infections, Mean Upper, Reference Worse scenrio
 DayBedMeSmA02S01 /// IHME Bed need (Daily Beds needed Mean IHME S1)
 DayIcuMeSmA02S01 // IHME ICU need (Daily ICU beds needed Mean IHME S1)
 
@@ -1663,7 +1663,377 @@ foreach var of local varlist {
 *	
 
 
-export excel using "summary table.xlsx", replace firstrow(variables)
+export excel using "summary table.xlsx", replace firstrow(variables) sheet("latest")
+
+
+
+********************************
+
+* Laest peak 
+
+
+use "CovidVisualizedGlobal merge.dta", clear 
+
+
+* IHME
+
+
+
+* Daily deaths reference scenario, mean
+
+summ DayDeaMeSmA02S01 if date > td(01Aug2021)
+
+gen DayDeaMeSmA02S01_LPV = r(max)
+
+label var DayDeaMeSmA02S01_LPV "Daily deaths IHME reference scenario, mean, value"
+
+summ date if DayDeaMeSmA02S01 == DayDeaMeSmA02S01_LPV & date > td(01Aug2021)
+
+gen DayDeaMeSmA02S01_LPD = r(mean)
+
+format DayDeaMeSmA02S01_LPD %tdDDMonCCYY
+
+label var DayDeaMeSmA02S01_LPD "Daily deaths IHME reference scenario, mean, date"
+
+
+
+
+* Daily deaths reference scenario, upper
+
+summ DayDeaUpSmA02S01 if date > td(01Aug2021)
+
+gen DayDeaUpSmA02S01_LPV = r(max)
+
+label var DayDeaUpSmA02S01_LPV "Daily deaths IHME reference scenario, upper, value"
+
+summ date if DayDeaUpSmA02S01 == DayDeaUpSmA02S01_LPV & date > td(01Aug2021)
+
+gen DayDeaUpSmA02S01_LPD = r(mean)
+
+format DayDeaUpSmA02S01_LPD %tdDDMonCCYY
+ 
+label var DayDeaUpSmA02S01_LPD "Daily deaths IHME reference scenario, upper, date"
+
+
+
+* Daily deaths worse scenario, mean
+
+summ DayDeaMeSmA02S03 if date > td(01Aug2021)
+
+gen DayDeaMeSmA02S03_LPV = r(max)
+
+label var DayDeaMeSmA02S03_LPV "Daily deaths IHME worse scenario, mean, value"
+
+summ date if DayDeaMeSmA02S03 == DayDeaMeSmA02S03_LPV & date > td(01Aug2021)
+
+gen DayDeaMeSmA02S03_LPD = r(mean)
+
+format DayDeaMeSmA02S03_LPD %tdDDMonCCYY
+
+label var DayDeaMeSmA02S03_LPD "Daily deaths IHME worse scenario, mean, date"
+
+
+
+* Daily deaths worse scenario, upper
+
+summ DayDeaUpSmA02S03 if date > td(01Aug2021)
+
+gen DayDeaUpSmA02S03_LPV = r(max)
+
+label var DayDeaUpSmA02S03_LPV "Daily deaths IHME worse scenario, upper, value"
+
+summ date if DayDeaUpSmA02S03 == DayDeaUpSmA02S03_LPV & date > td(01Aug2021)
+
+gen DayDeaUpSmA02S03_LPD = r(mean)
+
+format DayDeaUpSmA02S03_LPD %tdDDMonCCYY
+
+label var DayDeaUpSmA02S03_LPD "Daily deaths IHME worse scenario, upper, date"
+
+
+
+
+
+
+
+* Daily infections reference scenario, mean
+
+summ DayINFMeRaA02S01 if date > td(01Jul2021)
+
+gen DayINFMeRaA02S01_LPV = r(max)
+
+label var DayINFMeRaA02S01_LPV "Daily infections IHME reference scenario, mean, value"
+
+summ date if DayINFMeRaA02S01 == DayINFMeRaA02S01_LPV & date > td(01Jul2021)
+
+gen DayINFMeRaA02S01_LPD = r(mean)
+
+format DayINFMeRaA02S01_LPD %tdDDMonCCYY
+
+label var DayINFMeRaA02S01_LPD "Daily infections IHME reference scenario, mean, date"
+
+
+
+* Daily infections reference scenario, upper
+
+summ DayINFUpRaA02S01 if date > td(01Jul2021)
+
+gen DayINFUpRaA02S01_LPV = r(max)
+
+label var DayINFUpRaA02S01_LPV "Daily infections IHME reference scenario, upper, value"
+
+summ date if DayINFUpRaA02S01 == DayINFUpRaA02S01_LPV & date > td(01Jul2021)
+
+gen DayINFUpRaA02S01_LPD = r(mean)
+
+format DayINFUpRaA02S01_LPD %tdDDMonCCYY
+
+label var DayINFUpRaA02S01_LPD "Daily infections IHME reference scenario, upper, date"
+
+
+
+
+* Daily infections worse scenario, mean
+
+summ DayINFMeRaA02S03 if date > td(01Jul2021)
+
+gen DayINFMeRaA02S03_LPV = r(max)
+
+label var DayINFMeRaA02S03_LPV "Daily infections IHME worse scenario, mean, value"
+
+summ date if DayINFMeRaA02S03 == DayINFMeRaA02S03_LPV & date > td(01Jul2021)
+
+gen DayINFMeRaA02S03_LPD = r(mean)
+
+format DayINFMeRaA02S03_LPD %tdDDMonCCYY
+
+label var DayINFMeRaA02S03_LPD "Daily infections IHME worse scenario, mean, date"
+
+
+
+* Daily infections worse scenario, upper
+
+summ DayINFUpRaA02S03 if date > td(01Jul2021)
+
+gen DayINFUpRaA02S03_LPV = r(max)
+
+label var DayINFUpRaA02S03_LPV "Daily infections IHME worse scenario, upper, value"
+
+summ date if DayINFUpRaA02S03 == DayINFUpRaA02S03_LPV & date > td(01Jul2021)
+
+gen DayINFUpRaA02S03_LPD = r(mean)
+
+format DayINFUpRaA02S03_LPD %tdDDMonCCYY
+
+label var DayINFUpRaA02S03_LPD "Daily infections IHME worse scenario, upper, date"
+
+
+
+
+* IMPE
+
+
+
+* Daily deaths reference scenario, mean
+
+summ DayDeaMeSmA03S02 if date > td(01Aug2021)
+
+gen DayDeaMeSmA03S02_LPV = r(max)
+
+label var DayDeaMeSmA03S02_LPV "Daily deaths IMPE reference scenario, mean, value"
+
+summ date if DayDeaMeSmA03S02 == DayDeaMeSmA03S02_LPV & date > td(01Aug2021)
+
+gen DayDeaMeSmA03S02_LPD = r(mean)
+
+format DayDeaMeSmA03S02_LPD %tdDDMonCCYY
+
+label var DayDeaMeSmA03S02_LPD "Daily deaths IMPE reference scenario, mean, date"
+
+
+
+
+* Daily deaths reference scenario, upper
+
+summ DayDeaUpSmA03S02 if date > td(01Aug2021)
+
+gen DayDeaUpSmA03S02_LPV = r(max)
+
+label var DayDeaUpSmA03S02_LPV "Daily deaths IMPE reference scenario, upper, value"
+
+summ date if DayDeaUpSmA03S02 == DayDeaUpSmA03S02_LPV & date > td(01Aug2021)
+
+gen DayDeaUpSmA03S02_LPD = r(mean)
+
+format DayDeaUpSmA03S02_LPD %tdDDMonCCYY
+ 
+label var DayDeaUpSmA03S02_LPD "Daily deaths IMPE reference scenario, upper, date"
+
+
+
+* Daily deaths worse scenario, mean
+
+summ DayDeaMeSmA03S03 if date > td(01Aug2021)
+
+gen DayDeaMeSmA03S03_LPV = r(max)
+
+label var DayDeaMeSmA03S03_LPV "Daily deaths IMPE worse scenario, mean, value"
+
+summ date if DayDeaMeSmA03S03 == DayDeaMeSmA03S03_LPV & date > td(01Aug2021)
+
+gen DayDeaMeSmA03S03_LPD = r(mean)
+
+format DayDeaMeSmA03S03_LPD %tdDDMonCCYY
+
+label var DayDeaMeSmA03S03_LPD "Daily deaths IMPE worse scenario, mean, date"
+
+
+
+* Daily deaths worse scenario, upper
+
+summ DayDeaUpSmA03S03 if date > td(01Aug2021)
+
+gen DayDeaUpSmA03S03_LPV = r(max)
+
+label var DayDeaUpSmA03S03_LPV "Daily deaths IMPE worse scenario, upper, value"
+
+summ date if DayDeaUpSmA03S03 == DayDeaUpSmA03S03_LPV & date > td(01Aug2021)
+
+gen DayDeaUpSmA03S03_LPD = r(mean)
+
+format DayDeaUpSmA03S03_LPD %tdDDMonCCYY
+
+label var DayDeaUpSmA03S03_LPD "Daily deaths IMPE worse scenario, upper, date"
+
+
+
+
+
+
+
+* Daily infections reference scenario, mean
+
+summ DayINFMeRaA03S02 if date > td(01Jul2021)
+
+gen DayINFMeRaA03S02_LPV = r(max)
+
+label var DayINFMeRaA03S02_LPV "Daily infections IMPE reference scenario, mean, value"
+
+summ date if DayINFMeRaA03S02 == DayINFMeRaA03S02_LPV & date > td(01Jul2021)
+
+gen DayINFMeRaA03S02_LPD = r(mean)
+
+format DayINFMeRaA03S02_LPD %tdDDMonCCYY
+
+label var DayINFMeRaA03S02_LPD "Daily infections IMPE reference scenario, mean, date"
+
+
+
+* Daily infections reference scenario, upper
+
+summ DayINFUpRaA03S02 if date > td(01Jul2021)
+
+gen DayINFUpRaA03S02_LPV = r(max)
+
+label var DayINFUpRaA03S02_LPV "Daily infections IMPE reference scenario, upper, value"
+
+summ date if DayINFUpRaA03S02 == DayINFUpRaA03S02_LPV & date > td(01Jul2021)
+
+gen DayINFUpRaA03S02_LPD = r(mean)
+
+format DayINFUpRaA03S02_LPD %tdDDMonCCYY
+
+label var DayINFUpRaA03S02_LPD "Daily infections IMPE reference scenario, upper, date"
+
+
+
+
+* Daily infections worse scenario, mean
+
+summ DayINFMeRaA03S03 if date > td(01Jul2021)
+
+gen DayINFMeRaA03S03_LPV = r(max)
+
+label var DayINFMeRaA03S03_LPV "Daily infections IMPE worse scenario, mean, value"
+
+summ date if DayINFMeRaA03S03 == DayINFMeRaA03S03_LPV & date > td(01Jul2021)
+
+gen DayINFMeRaA03S03_LPD = r(mean)
+
+format DayINFMeRaA03S03_LPD %tdDDMonCCYY
+
+label var DayINFMeRaA03S03_LPD "Daily infections IMPE worse scenario, mean, date"
+
+
+
+* Daily infections worse scenario, upper
+
+summ DayINFUpRaA03S03 if date > td(01Jul2021)
+
+gen DayINFUpRaA03S03_LPV = r(max)
+
+label var DayINFUpRaA03S03_LPV "Daily infections IMPE worse scenario, upper, value"
+
+summ date if DayINFUpRaA03S03 == DayINFUpRaA03S03_LPV & date > td(01Jul2021)
+
+gen DayINFUpRaA03S03_LPD = r(mean)
+
+format DayINFUpRaA03S03_LPD %tdDDMonCCYY
+
+label var DayINFUpRaA03S03_LPD "Daily infections IMPE worse scenario, upper, date"
+
+
+
+
+
+keep ///
+DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_LPD ///
+DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
+DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
+DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
+DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpSmA03S02_LPV DayDeaUpSmA03S02_LPD ///
+DayDeaMeSmA03S03_LPV DayDeaMeSmA03S03_LPD DayDeaUpSmA03S03_LPV DayDeaUpSmA03S03_LPD ///
+DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
+DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD
+
+
+
+order ///
+DayDeaMeSmA02S01_LPV DayDeaMeSmA02S01_LPD DayDeaUpSmA02S01_LPV DayDeaUpSmA02S01_LPD ///
+DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
+DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
+DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
+DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpSmA03S02_LPV DayDeaUpSmA03S02_LPD ///
+DayDeaMeSmA03S03_LPV DayDeaMeSmA03S03_LPD DayDeaUpSmA03S03_LPV DayDeaUpSmA03S03_LPD ///
+DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
+DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD
+
+
+
+
+local varlist ///
+DayDeaMeSmA02S01_LPV DayDeaUpSmA02S01_LPV ///
+DayDeaMeSmA02S03_LPV DayDeaUpSmA02S03_LPV ///
+DayINFMeRaA02S01_LPV DayINFUpRaA02S01_LPV ///
+DayINFMeRaA02S03_LPV DayINFUpRaA02S03_LPV ///
+DayDeaMeSmA03S02_LPV DayDeaUpSmA03S02_LPV ///
+DayDeaMeSmA03S03_LPV DayDeaUpSmA03S03_LPV ///
+DayINFMeRaA03S02_LPV DayINFUpRaA03S02_LPV ///
+DayINFMeRaA03S03_LPV DayINFUpRaA03S03_LPV 
+
+
+
+foreach var of local varlist {
+
+	qui replace `var' = round(`var')
+	
+}
+*	
+
+
+
+export excel using "summary table.xlsx", firstrow(variables) sheet("peak")
+
 
 
 
