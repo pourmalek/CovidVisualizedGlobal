@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210806/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}12 Aug 2021, 16:35:35
+ {txt}opened on:  {res}12 Aug 2021, 17:11:23
 {txt}
 {com}. 
 . 
@@ -829,7 +829,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}           765                          
-{txt} vars:{res}           483                          12 Aug 2021 16:35
+{txt} vars:{res}           483                          12 Aug 2021 17:11
 {txt} size:{res}     2,082,330                          
 {txt}{hline}
               storage   display    value
@@ -3169,20 +3169,20 @@ Sorted by: {res}date  loc_grand_name
 . 
 . * Daily deaths reference scenario, mean
 . 
-. summ DayDeaMeSmA02S01 if date > td(01Aug2021)
+. summ DayDeaMeSmA02S01 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaMeS~01 {c |}{res}        122     20169.1    4270.061   15262.86   26647.94
+DayDeaMeS~01 {c |}{res}        153    20471.15    3979.681   15262.86   26647.94
 {txt}
 {com}. 
-. gen DayDeaMeSmA02S01_LPV = r(max)
+. gen double DayDeaMeSmA02S01_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaMeSmA02S01_LPV "Daily deaths IHME reference scenario, mean, value"
 {txt}
 {com}. 
-. summ date if DayDeaMeSmA02S01 == DayDeaMeSmA02S01_LPV & date > td(01Aug2021)
+. summ date if DayDeaMeSmA02S01 == DayDeaMeSmA02S01_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
@@ -3203,20 +3203,20 @@ DayDeaMeS~01 {c |}{res}        122     20169.1    4270.061   15262.86   26647.94
 . 
 . * Daily deaths reference scenario, upper
 . 
-. summ DayDeaUpSmA02S01 if date > td(01Aug2021)
+. summ DayDeaUpSmA02S01 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaUpS~01 {c |}{res}        122    33146.75    8725.476   21400.51   49705.32
+DayDeaUpS~01 {c |}{res}        153    30828.49    9104.967   18726.62   49705.32
 {txt}
 {com}. 
-. gen DayDeaUpSmA02S01_LPV = r(max)
+. gen double DayDeaUpSmA02S01_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaUpSmA02S01_LPV "Daily deaths IHME reference scenario, upper, value"
 {txt}
 {com}. 
-. summ date if DayDeaUpSmA02S01 == DayDeaUpSmA02S01_LPV & date > td(01Aug2021)
+. summ date if DayDeaUpSmA02S01 == DayDeaUpSmA02S01_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
@@ -3236,20 +3236,20 @@ DayDeaUpS~01 {c |}{res}        122    33146.75    8725.476   21400.51   49705.32
 . 
 . * Daily deaths worse scenario, mean
 . 
-. summ DayDeaMeSmA02S03 if date > td(01Aug2021)
+. summ DayDeaMeSmA02S03 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaMeS~03 {c |}{res}        122    33987.67    6808.264   24275.52   45383.82
+DayDeaMeS~03 {c |}{res}        153    31489.89    7910.464   18721.28   45383.82
 {txt}
 {com}. 
-. gen DayDeaMeSmA02S03_LPV = r(max)
+. gen double DayDeaMeSmA02S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaMeSmA02S03_LPV "Daily deaths IHME worse scenario, mean, value"
 {txt}
 {com}. 
-. summ date if DayDeaMeSmA02S03 == DayDeaMeSmA02S03_LPV & date > td(01Aug2021)
+. summ date if DayDeaMeSmA02S03 == DayDeaMeSmA02S03_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
@@ -3269,20 +3269,20 @@ DayDeaMeS~03 {c |}{res}        122    33987.67    6808.264   24275.52   45383.82
 . 
 . * Daily deaths worse scenario, upper
 . 
-. summ DayDeaUpSmA02S03 if date > td(01Aug2021)
+. summ DayDeaUpSmA02S03 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaUpS~03 {c |}{res}        122    50173.78    15962.58   25175.57   75746.09
+DayDeaUpS~03 {c |}{res}        153     44405.6    18320.59   18726.62   75746.09
 {txt}
 {com}. 
-. gen DayDeaUpSmA02S03_LPV = r(max)
+. gen double DayDeaUpSmA02S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaUpSmA02S03_LPV "Daily deaths IHME worse scenario, upper, value"
 {txt}
 {com}. 
-. summ date if DayDeaUpSmA02S03 == DayDeaUpSmA02S03_LPV & date > td(01Aug2021)
+. summ date if DayDeaUpSmA02S03 == DayDeaUpSmA02S03_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
@@ -3313,7 +3313,7 @@ DayDeaUpS~03 {c |}{res}        122    50173.78    15962.58   25175.57   75746.09
 DayINFM~2S01 {c |}{res}        153     6711324     1453714    4824862    8852569
 {txt}
 {com}. 
-. gen DayINFMeRaA02S01_LPV = r(max)
+. gen double DayINFMeRaA02S01_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFMeRaA02S01_LPV "Daily infections IHME reference scenario, mean, value"
@@ -3346,7 +3346,7 @@ DayINFM~2S01 {c |}{res}        153     6711324     1453714    4824862    8852569
 DayINFU~2S01 {c |}{res}        153    1.02e+07     3821134    6384619   1.85e+07
 {txt}
 {com}. 
-. gen DayINFUpRaA02S01_LPV = r(max)
+. gen double DayINFUpRaA02S01_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFUpRaA02S01_LPV "Daily infections IHME reference scenario, upper, value"
@@ -3380,7 +3380,7 @@ DayINFU~2S01 {c |}{res}        153    1.02e+07     3821134    6384619   1.85e+07
 DayINFM~2S03 {c |}{res}        139    1.07e+07     2569202    6462811   1.46e+07
 {txt}
 {com}. 
-. gen DayINFMeRaA02S03_LPV = r(max)
+. gen double DayINFMeRaA02S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFMeRaA02S03_LPV "Daily infections IHME worse scenario, mean, value"
@@ -3413,7 +3413,7 @@ DayINFM~2S03 {c |}{res}        139    1.07e+07     2569202    6462811   1.46e+07
 DayINFU~2S03 {c |}{res}        139    1.54e+07     5081649    8103419   2.32e+07
 {txt}
 {com}. 
-. gen DayINFUpRaA02S03_LPV = r(max)
+. gen double DayINFUpRaA02S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFUpRaA02S03_LPV "Daily infections IHME worse scenario, upper, value"
@@ -3444,33 +3444,33 @@ DayINFU~2S03 {c |}{res}        139    1.54e+07     5081649    8103419   2.32e+07
 . 
 . * Daily deaths reference scenario, mean
 . 
-. summ DayDeaMeRaA03S02 if date > td(01Aug2021)
+. summ DayDeaMeRaA03S02 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaM~3S02 {c |}{res}         76    12709.29    2180.173    8467.89   15470.14
+DayDeaM~3S02 {c |}{res}        107    11313.72    2870.769    7530.82   15470.14
 {txt}
 {com}. 
-. gen DayDeaMeSmA03S02_LPV = r(max)
+. gen double DayDeaMeRaA03S02_LPV = r(max)
 {txt}
 {com}. 
-. label var DayDeaMeSmA03S02_LPV "Daily deaths IMPE reference scenario, mean, value"
+. label var DayDeaMeRaA03S02_LPV "Daily deaths IMPE reference scenario, mean, value"
 {txt}
 {com}. 
-. summ date if DayDeaMeSmA03S02 == DayDeaMeSmA03S02_LPV & date > td(01Aug2021)
+. summ date if DayDeaMeRaA03S02 == DayDeaMeRaA03S02_LPV 
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}        153       22570     44.3114      22494      22646
+{space 8}date {c |}{res}          1       22532           .      22532      22532
 {txt}
 {com}. 
-. gen DayDeaMeSmA03S02_LPD = r(mean)
+. gen DayDeaMeRaA03S02_LPD = r(mean)
 {txt}
 {com}. 
-. format DayDeaMeSmA03S02_LPD %tdDDMonCCYY
+. format DayDeaMeRaA03S02_LPD %tdDDMonCCYY
 {txt}
 {com}. 
-. label var DayDeaMeSmA03S02_LPD "Daily deaths IMPE reference scenario, mean, date"
+. label var DayDeaMeRaA03S02_LPD "Daily deaths IMPE reference scenario, mean, date"
 {txt}
 {com}. 
 . 
@@ -3478,29 +3478,28 @@ DayDeaM~3S02 {c |}{res}         76    12709.29    2180.173    8467.89   15470.14
 . 
 . * Daily deaths reference scenario, upper
 . 
-. summ DayDeaUpRaA03S02 if date > td(01Aug2021)
+. summ DayDeaUpRaA03S02 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaU~3S02 {c |}{res}         76    17929.35    3395.361   11888.84   22432.46
+DayDeaU~3S02 {c |}{res}        107    15576.53    4714.139    8688.08   22432.46
 {txt}
 {com}. 
-. gen DayDeaUpRaA03S02_LPV = r(max)
+. gen double DayDeaUpRaA03S02_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaUpRaA03S02_LPV "Daily deaths IMPE reference scenario, upper, value"
 {txt}
 {com}. 
-. summ date if DayDeaUpRaA03S02 == DayDeaUpRaA03S02_LPV & date > td(01Aug2021)
+. summ date if DayDeaUpRaA03S02 == DayDeaUpRaA03S02_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22528           .      22528      22528
 {txt}
 {com}. 
 . gen DayDeaUpRaA03S02_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayDeaUpRaA03S02_LPD %tdDDMonCCYY
 {txt}
@@ -3513,29 +3512,28 @@ DayDeaU~3S02 {c |}{res}         76    17929.35    3395.361   11888.84   22432.46
 . 
 . * Daily deaths worse scenario, mean
 . 
-. summ DayDeaMeRaA03S03 if date > td(01Aug2021)
+. summ DayDeaMeRaA03S03 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaM~3S03 {c |}{res}         76    45190.35    13454.19   14220.27   64594.77
+DayDeaM~3S03 {c |}{res}        107    34528.83    20248.61    7530.82   64594.77
 {txt}
 {com}. 
-. gen DayDeaMeRaA03S03_LPV = r(max)
+. gen double DayDeaMeRaA03S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaMeRaA03S03_LPV "Daily deaths IMPE worse scenario, mean, value"
 {txt}
 {com}. 
-. summ date if DayDeaMeRaA03S03 == DayDeaMeRaA03S03_LPV & date > td(01Aug2021)
+. summ date if DayDeaMeRaA03S03 == DayDeaMeRaA03S03_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22525           .      22525      22525
 {txt}
 {com}. 
 . gen DayDeaMeRaA03S03_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayDeaMeRaA03S03_LPD %tdDDMonCCYY
 {txt}
@@ -3549,29 +3547,28 @@ DayDeaM~3S03 {c |}{res}         76    45190.35    13454.19   14220.27   64594.77
 . 
 . * Daily deaths worse scenario, upper
 . 
-. summ DayDeaUpRaA03S03 if date > td(01Aug2021)
+. summ DayDeaUpRaA03S03 if date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaU~3S03 {c |}{res}         76    67226.17     17690.5   19904.94   88490.52
+DayDeaU~3S03 {c |}{res}        107    50798.68    29851.55    8688.08   88490.52
 {txt}
 {com}. 
-. gen DayDeaUpRaA03S03_LPV = r(max)
+. gen double DayDeaUpRaA03S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayDeaUpRaA03S03_LPV "Daily deaths IMPE worse scenario, upper, value"
 {txt}
 {com}. 
-. summ date if DayDeaUpRaA03S03 == DayDeaUpRaA03S03_LPV & date > td(01Aug2021)
+. summ date if DayDeaUpRaA03S03 == DayDeaUpRaA03S03_LPV & date > td(01Jul2021)
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22526           .      22526      22526
 {txt}
 {com}. 
 . gen DayDeaUpRaA03S03_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayDeaUpRaA03S03_LPD %tdDDMonCCYY
 {txt}
@@ -3594,7 +3591,7 @@ DayDeaU~3S03 {c |}{res}         76    67226.17     17690.5   19904.94   88490.52
 DayINFM~3S02 {c |}{res}        107     4943556     1099973    2839785    6546464
 {txt}
 {com}. 
-. gen DayINFMeRaA03S02_LPV = r(max)
+. gen double DayINFMeRaA03S02_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFMeRaA03S02_LPV "Daily infections IMPE reference scenario, mean, value"
@@ -3604,12 +3601,11 @@ DayINFM~3S02 {c |}{res}        107     4943556     1099973    2839785    6546464
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22522           .      22522      22522
 {txt}
 {com}. 
 . gen DayINFMeRaA03S02_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayINFMeRaA03S02_LPD %tdDDMonCCYY
 {txt}
@@ -3628,7 +3624,7 @@ DayINFM~3S02 {c |}{res}        107     4943556     1099973    2839785    6546464
 DayINFU~3S02 {c |}{res}        107     6851450     1660132    4366336    9358429
 {txt}
 {com}. 
-. gen DayINFUpRaA03S02_LPV = r(max)
+. gen double DayINFUpRaA03S02_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFUpRaA03S02_LPV "Daily infections IMPE reference scenario, upper, value"
@@ -3638,12 +3634,11 @@ DayINFU~3S02 {c |}{res}        107     6851450     1660132    4366336    9358429
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22518           .      22518      22518
 {txt}
 {com}. 
 . gen DayINFUpRaA03S02_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayINFUpRaA03S02_LPD %tdDDMonCCYY
 {txt}
@@ -3663,7 +3658,7 @@ DayINFU~3S02 {c |}{res}        107     6851450     1660132    4366336    9358429
 DayINFM~3S03 {c |}{res}        107    1.52e+07     7164880    3691657   2.56e+07
 {txt}
 {com}. 
-. gen DayINFMeRaA03S03_LPV = r(max)
+. gen double DayINFMeRaA03S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFMeRaA03S03_LPV "Daily infections IMPE worse scenario, mean, value"
@@ -3673,12 +3668,11 @@ DayINFM~3S03 {c |}{res}        107    1.52e+07     7164880    3691657   2.56e+07
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22515           .      22515      22515
 {txt}
 {com}. 
 . gen DayINFMeRaA03S03_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayINFMeRaA03S03_LPD %tdDDMonCCYY
 {txt}
@@ -3697,7 +3691,7 @@ DayINFM~3S03 {c |}{res}        107    1.52e+07     7164880    3691657   2.56e+07
 DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
 {txt}
 {com}. 
-. gen DayINFUpRaA03S03_LPV = r(max)
+. gen double DayINFUpRaA03S03_LPV = r(max)
 {txt}
 {com}. 
 . label var DayINFUpRaA03S03_LPV "Daily infections IMPE worse scenario, upper, value"
@@ -3707,12 +3701,11 @@ DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}          0
+{space 8}date {c |}{res}          1       22516           .      22516      22516
 {txt}
 {com}. 
 . gen DayINFUpRaA03S03_LPD = r(mean)
-{txt}(765 missing values generated)
-
+{txt}
 {com}. 
 . format DayINFUpRaA03S03_LPD %tdDDMonCCYY
 {txt}
@@ -3729,7 +3722,7 @@ DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
 > DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
 > DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
 > DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
-> DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+> DayDeaMeRaA03S02_LPV DayDeaMeRaA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
 > DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
 > DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
 > DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
@@ -3747,7 +3740,7 @@ DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
 > DayDeaMeSmA02S03_LPV DayDeaMeSmA02S03_LPD DayDeaUpSmA02S03_LPV DayDeaUpSmA02S03_LPD ///
 > DayINFMeRaA02S01_LPV DayINFMeRaA02S01_LPD DayINFUpRaA02S01_LPV DayINFUpRaA02S01_LPD ///
 > DayINFMeRaA02S03_LPV DayINFMeRaA02S03_LPD DayINFUpRaA02S03_LPV DayINFUpRaA02S03_LPD ///
-> DayDeaMeSmA03S02_LPV DayDeaMeSmA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
+> DayDeaMeRaA03S02_LPV DayDeaMeRaA03S02_LPD DayDeaUpRaA03S02_LPV DayDeaUpRaA03S02_LPD ///
 > DayDeaMeRaA03S03_LPV DayDeaMeRaA03S03_LPD DayDeaUpRaA03S03_LPV DayDeaUpRaA03S03_LPD /// 
 > DayINFMeRaA03S02_LPV DayINFMeRaA03S02_LPD DayINFUpRaA03S02_LPV DayINFUpRaA03S02_LPD ///
 > DayINFMeRaA03S03_LPV DayINFMeRaA03S03_LPD DayINFUpRaA03S03_LPV DayINFUpRaA03S03_LPD 
@@ -3761,7 +3754,7 @@ DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
 > DayDeaMeSmA02S03_LPV DayDeaUpSmA02S03_LPV ///
 > DayINFMeRaA02S01_LPV DayINFUpRaA02S01_LPV ///
 > DayINFMeRaA02S03_LPV DayINFUpRaA02S03_LPV ///
-> DayDeaMeSmA03S02_LPV DayDeaUpRaA03S02_LPV ///
+> DayDeaMeRaA03S02_LPV DayDeaUpRaA03S02_LPV ///
 > DayDeaMeRaA03S03_LPV DayDeaUpRaA03S03_LPV /// 
 > DayINFMeRaA03S02_LPV DayINFUpRaA03S02_LPV ///
 > DayINFMeRaA03S03_LPV DayINFUpRaA03S03_LPV  
@@ -3811,7 +3804,7 @@ DayINFU~3S03 {c |}{res}        107    2.21e+07    1.05e+07    4366336   3.32e+07
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210806/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}12 Aug 2021, 16:36:18
+ {txt}closed on:  {res}12 Aug 2021, 17:12:09
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
