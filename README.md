@@ -93,11 +93,10 @@ The codes in these repositories can be adapted for use for any country or region
 ****
 
 
-### Selected graphs
   
 ****
   
-Abbreviations used in graphs:  
+## Abbreviations used in graphs:  
   
 (See [Methods and Results](https://github.com/pourmalek/CovidVisualizedGlobal#ii-methods-and-results-of-this-work-1) for full details.)
 
