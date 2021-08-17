@@ -1,6 +1,6 @@
 
 
-## IV. SELCTED GRAPHS FROM PREVIOUS UPTAKES
+## IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES
   
   
 [(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal#1-daily-deaths-reference-scenarios-all-time)
