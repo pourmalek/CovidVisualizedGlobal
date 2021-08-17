@@ -1508,6 +1508,577 @@
 
 
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (6) Daily cases or infections, 3 scenarios, 2011
+  
+  
+
+*
+  
+**uptake 20210813**: DELP 20210813, IHME 20210806, **_IMPE 20210806_**, LANL 20210808, SRIV 20210813
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/129428486-03a676da-e60c-4071-aa1c-c0cbd22b9869.png)
+  
+*
+  
+**uptake 20210806**: DELP 20210806, **_IHME 20210806_**, IMPE 20210719, LANL 20210801, SRIV 20210801
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210806/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/128911278-1a630fcc-6a4c-4b80-9cee-70bed37d1ce8.png)
+
+*  
+  
+**uptake 20210730**: DELP 20210730, **_IHME 20210730_**, IMPE 20210719, LANL 20210725, SRIV 20210730
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210730/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127789150-864e7b1d-14dd-42ea-a783-ec45ed80a230.png)
+  
+*  
+  
+**uptake 20210727**: DELP 20210726, IHME 20210723 version 2, **_IMPE 20210719_**, LANL 20210725, SRIV 20210727  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210727/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127260106-cd432a2b-df20-4efe-aee7-30f5eb29de16.png)
+  
+*  
+  
+**uptake 20210726**: DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV 20210726  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210726/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127068889-c84e5abd-b165-4adb-90a0-db094c1a7ee4.png)
+  
+*  
+  
+**uptake 20210723**: DELP 20210723, **_IHME 20210723_**, IMPE 20210709, LANL 20210718, SRIV 20210723  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/126873573-d88bb51f-67e6-403e-8902-2e91d6a440b5.png)
+  
+*  
+  
+**uptake 20210715**: DELP 20210715, **_IHME 20210715_**, IMPE 20210709, LANL 20210711, SRIV 20210715  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210715/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125999647-38028707-bc6c-4d88-a3a5-9190bf40aee2.png)
+  
+* 
+  
+**uptake 20210714**: DELP 20210714, IHME 20210702, **_IMPE 20210709_**, LANL 20210711, SRIV 20210714  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210714/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125707657-45d7078e-d36f-41de-8de3-8052eb3e052c.png)
+  
+*  
+  
+**uptake 20210709**: DELP 20210708, IHME 20210702, **_IMPE 20210702_**, LANL 20210704, SRIV 20210709   
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210709/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125149933-e5605280-e0f0-11eb-9390-fd277893f418.png)
+  
+*  
+  
+**uptake 20210704**: DELP 20210704, IHME 20210702, **_IMPE 20210626_**, LANL 20210704, SRIV 20210704  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210704/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124697445-979edc80-de9b-11eb-9e28-f68c39a42f22.png)
+  
+* 
+  
+**uptake 20210703**: DELP 20210703, **_IHME 20210702_**, IMPE 20210618, LANL 20210627, SRIV 20210703  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210703/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124372129-58735000-dc3d-11eb-9629-8064c1421642.png)  
+  
+* 
+  
+**uptake 20210625**: DELP 20210625, **_IHME 20210625_**, IMPE 20210618, LANL 20210613, SRIV 20210624  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210625/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124200965-887af180-da8b-11eb-92be-f6ccd80c8268.png)
+  
+*
+
+**uptake 20210624**: DELP 20210624, IHME 20210618, **_IMPE 20210618_**, LANL 20210613, SRIV 20210624   
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210624/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124203708-2ffb2280-da92-11eb-8cb6-fcf348261b8d.png)
+  
+*  
+  
+**uptake 20210618**: DELP 20210618, **_IHME 20210618_**, IMPE 20210611, LANL 20210613, SRIV 20210618  
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210618/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124209197-f203fb80-da9d-11eb-987d-1fbf9baf912b.png)
+
+*
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210611/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124213508-8de53580-daa5-11eb-9e76-848f13063d5b.png)
+  
+* 
+
+**uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210610/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124225041-a2342d00-dabb-11eb-8594-c420d210c104.png)
+
+*
+
+**uptake 20210605**: DELP 20210603, IHME 20210604, **_IMPE 20210604_**, LANL 20210602, SRIV 20210604
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124340544-bbe07d80-db6a-11eb-9102-4d72c0e12e3d.png)
+  
+*
+
+**uptake 20210604**: DELP 20210604, **_IHME 20210604_**, IMPE 20210527, LANL 20210602, SRIV 20210604
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210604/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124299631-814af680-db12-11eb-82c9-d8dd20e6e93e.png)
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **_IMPE 20210527_**, LANL 20210526, SRIV 20210603
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210603/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124306098-cc690780-db1a-11eb-9b38-fdbeea9d2ca6.png)
+
+*
+
+**uptake 20210528**: DELP 20210528, **_IHME 20210528_**, IMPE 20210522, LANL 20210526, SRIV 20210528
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124310737-7f3c6400-db21-11eb-8986-1633ebbe2895.png)
+
+*
+
+**uptake 20210522**: DELP 20210522, IHME 20210521, **_IMPE 20210522_**, LANL 20210519, SRIV 20210522 
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210522/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124341930-f0593700-db74-11eb-9cfb-ff18224725dd.png)
+
+*
+
+**uptake 20210521**: DELP 20210521, **_IHME 20210521_**, IMPE 20210516, LANL 20210519, SRIV 20210521 
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124346312-e9d9b800-db92-11eb-92fd-f0e4652292b2.png)
+
+*
+
+**uptake 20210516**: DELP 20210516, IHME 20210514, **_IMPE 20210516_**, LANL 20210516, SRIV 20210516
+  
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210516/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124354709-296bc880-dbc2-11eb-83e8-6aaac0198648.png)
+
+*
+
+**uptake 20210515**: DELP 20210515, IHME 20210514, **_IMPE 20210510_**, LANL 20210512, SRIV 20210515
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210515/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124356928-bc5e3000-dbcd-11eb-9694-d6ce8ca16190.png)
+
+*
+
+**uptake 20210514**: DELP 20210514, **_IHME 20210514_**, IMPE 20210424, LANL 20210512, SRIV 20210514
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210514/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124366170-8dae7c80-dc02-11eb-8f49-99dc3fbc7c5c.png)
+
+*
+
+**uptake 20210506**: DELP 20210506, **_IHME 20210506_**, IMPE 20210424, LANL 20210505, SRIV 20210506
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210506/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124387269-b1b99e80-dc92-11eb-95b7-c9b548a6c34d.png)
+
+*
+
+**uptake 20210424**: DELP 20210424, IHME 20210422, **ـIMPE 20210424ـ**, LANL 20210421, SRIV 20210424
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210424/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124392208-2dbee100-dca9-11eb-826c-21d725db0136.png)
+
+*
+
+**uptake uptake 20210423**: DELP 20210423, **_IHME 20210423_**, IMPE 2010417, LANL 20210421, SRIV 20210423
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210423/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/126084211-ab3b9059-dfca-4c5b-9ca9-09cf8ee2207e.png)
+  
+*
+
+**uptake 20210417**: DELP 20210417, IHME 20210416, **_IMPE 20210417_**, LANL 20210414, SRIV 20210417
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124395690-4daad080-dcba-11eb-8f12-2876680b36b9.png)
+
+*
+
+**uptake 20210416**: DELP 20210416, **_IHME 20210416_**, IMPE 20210406, LANL 20210414, SRIV 20210416
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210416/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124397059-54d5dc80-dcc2-11eb-9b81-33a825b54431.png)
+
+*
+
+**uptake 20210409**: DELP 20210409, **_IHME 20210409_**, IMPE 20210406, LANL 20210407, SRIV 20210409
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210409/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124401317-9e7ff080-dcdd-11eb-81f6-3cdcc96c3ca0.png)
+
+*
+
+**uptake 20210406**: DELP 20210406, IHME 20210401, **_IMPE 20210406_**, LANL 20210404, SRIV 20210406
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124403903-6e404e00-dced-11eb-8e0a-5288e4d59cc7.png)
+
+*
+
+**uptake 20210401**: DELP 20210401, **_IHME 20210401_**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124405105-85356f00-dcf2-11eb-95e1-d5fe123d1030.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (7) Hospital-related outcomes, all time
+  
+  
+
+*
+  
+**uptake 20210813**: DELP 20210813, IHME 20210806, **_IMPE 20210806_**, LANL 20210808, SRIV 20210813
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/129428506-d2691fc3-eac7-45cb-bc25-47c609fa4941.png)
+  
+*
+  
+**uptake 20210806**: DELP 20210806, **_IHME 20210806_**, IMPE 20210719, LANL 20210801, SRIV 20210801
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210806/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/128911422-8eae3b78-59e6-4373-bbcd-264ec8571241.png)
+
+*  
+  
+**uptake 20210730**: DELP 20210730, **_IHME 20210730_**, IMPE 20210719, LANL 20210725, SRIV 20210730
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210730/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127789174-76142d4f-3a57-433a-9239-14c8e02c9113.png)
+  
+*  
+  
+**uptake 20210727**: DELP 20210726, IHME 20210723 version 2, **_IMPE 20210719_**, LANL 20210725, SRIV 20210727  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210727/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127260165-b601e8eb-fabb-450c-b06b-db114b5f2902.png)
+  
+*  
+  
+**uptake 20210726**: DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV 20210726  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210726/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/127068944-b5ec561e-beae-425e-83a8-78fb3a2df341.png)
+  
+*  
+  
+**uptake 20210723**: DELP 20210723, **_IHME 20210723_**, IMPE 20210709, LANL 20210718, SRIV 20210723  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210723/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/126873592-0d3ad491-5f0e-4b35-b77b-1cc71fde86dc.png)
+  
+*  
+  
+**uptake 20210715**: DELP 20210715, **_IHME 20210715_**, IMPE 20210709, LANL 20210711, SRIV 20210715  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210715/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125999709-7f6d8e42-1d8a-4442-9f51-2e74a6e80f63.png)
+  
+* 
+  
+**uptake 20210714**: DELP 20210714, IHME 20210702, **_IMPE 20210709_**, LANL 20210711, SRIV 20210714  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210714/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125707709-3685fa38-745b-4be9-92a8-e2f869dce605.png)
+  
+*  
+  
+**uptake 20210709**: DELP 20210708, IHME 20210702, **_IMPE 20210702_**, LANL 20210704, SRIV 20210709   
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210709/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/125149941-fc06a980-e0f0-11eb-8bda-358799f22c4a.png)
+  
+*  
+  
+**uptake 20210704**: DELP 20210704, IHME 20210702, **_IMPE 20210626_**, LANL 20210704, SRIV 20210704  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210704/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124697494-ad140680-de9b-11eb-82cf-11bdcb204750.png)
+  
+* 
+  
+**uptake 20210703**: DELP 20210703, **_IHME 20210702_**, IMPE 20210618, LANL 20210627, SRIV 20210703  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210703/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124372144-6e811080-dc3d-11eb-92f3-1e1d193c3e60.png)  
+  
+* 
+  
+**uptake 20210625**: DELP 20210625, **_IHME 20210625_**, IMPE 20210618, LANL 20210613, SRIV 20210624  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210625/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124200989-9e88b200-da8b-11eb-867d-62bb99bda630.png)  
+  
+*
+
+**uptake 20210624**: DELP 20210624, IHME 20210618, **_IMPE 20210618_**, LANL 20210613, SRIV 20210624   
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210624/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124203755-486b3d00-da92-11eb-9bee-d14778bfba89.png)
+  
+*  
+  
+**uptake 20210618**: DELP 20210618, **_IHME 20210618_**, IMPE 20210611, LANL 20210613, SRIV 20210618  
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210618/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124209245-0811bc00-da9e-11eb-9dad-ccfbc1a1adb7.png)
+
+*
+  
+**uptake 20210611**: DELP 20210611, IHME 20210610, **_IMPE 20210611_**, LANL 20210606, SRIV 20210611 
+  
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210611/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124213554-a5242300-daa5-11eb-90e3-1b4445d488de.png)
+  
+* 
+
+**uptake 20210610**: DELP 20210610, **_IHME 20210610_**, IMPE 20210604, LANL 20210606, SRIV 20210610
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210610/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124225105-b9731a80-dabb-11eb-9242-97f2697034f7.png)
+
+*
+
+**uptake 20210605**: DELP 20210603, IHME 20210604, **_IMPE 20210604_**, LANL 20210602, SRIV 20210604
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210605/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124340554-d1ee3e00-db6a-11eb-8018-ebb106e9fc37.png)
+
+*
+
+**uptake 20210604**: DELP 20210604, **_IHME 20210604_**, IMPE 20210527, LANL 20210602, SRIV 20210604
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210604/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124299727-9de72e80-db12-11eb-992f-71aa61087964.png)
+
+*
+
+**uptake 20210603**: DELP 20210602, IHME 20210528, **_IMPE 20210527_**, LANL 20210526, SRIV 20210603
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210603/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124306165-e276c800-db1a-11eb-9c1a-55cebfbd9a68.png)
+
+*
+
+**uptake 20210528**: DELP 20210528, **IHME 20210528**, IMPE 20210522, LANL 20210526, SRIV 20210528
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210528/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124310797-93806100-db21-11eb-9df2-810420d3a1c4.png)
+
+*
+
+**uptake 20210522**: DELP 20210522, IHME 20210521, **_IMPE 20210522_**, LANL 20210519, SRIV 20210522 
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210522/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124341945-06ff8e00-db75-11eb-9f83-c45f3be4e1f9.png)
+
+*
+
+**uptake 20210521**: DELP 20210521, **_IHME 20210521_**, IMPE 20210516, LANL 20210519, SRIV 20210521 
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210521/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124346328-037aff80-db93-11eb-925f-d88785522eca.png)
+
+*
+
+**uptake 20210516**: DELP 20210516, IHME 20210514, **_IMPE 20210516_**, LANL 20210516, SRIV 20210516
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210516/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124354724-41434c80-dbc2-11eb-830d-9d1a7b2bad80.png)
+
+*
+
+**uptake 20210515**: DELP 20210515, IHME 20210514, **_IMPE 20210510_**, LANL 20210512, SRIV 20210515
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210515/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124356944-dc8def00-dbcd-11eb-87b9-8bd069daeea2.png)
+
+*
+
+**uptake 20210514**: DELP 20210514, **_IHME 20210514_**, IMPE 20210424, LANL 20210512, SRIV 20210514
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210514/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124366179-a28b1000-dc02-11eb-9f49-2426edc8166d.png)
+
+*
+
+**uptake 20210506**: DELP 20210506, **_IHME 20210506_**, IMPE 20210424, LANL 20210505, SRIV 20210506
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210506/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124387295-ce55d680-dc92-11eb-943c-253348e56a1e.png)
+
+*
+
+**uptake 20210424**: DELP 20210424, IHME 20210422, **ـIMPE 20210424ـ**, LANL 20210421, SRIV 20210424
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210424/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124392231-43cca180-dca9-11eb-9cf5-0fb1fa2ca9a2.png)
+
+*
+
+**uptake uptake 20210423**: DELP 20210423, **_IHME 20210423_**, IMPE 2010417, LANL 20210421, SRIV 20210423
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210423/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/126084232-621b17ca-2f6b-4867-9fe9-0dd073fd0629.png)
+  
+*
+
+**uptake 20210417**: DELP 20210417, IHME 20210416, **_IMPE 20210417_**, LANL 20210414, SRIV 20210417
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210417/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124395702-631ffa80-dcba-11eb-804e-c9797ecad4d8.png)
+
+*
+
+**uptake 20210416**: DELP 20210416, **_IHME 20210416_**, IMPE 20210406, LANL 20210414, SRIV 20210416
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210416/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124397066-6ae39d00-dcc2-11eb-8d42-a5b42b0d1a4b.png)
+
+*
+
+**uptake 20210409**: DELP 20210409, **_IHME 20210409_**, IMPE 20210406, LANL 20210407, SRIV 20210409
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210409/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124401334-b5264780-dcdd-11eb-87ab-36669f26a27d.png)
+
+*
+
+**uptake 20210406**: DELP 20210406, IHME 20210401, **_IMPE 20210406_**, LANL 20210404, SRIV 20210406
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124403929-887a2c00-dced-11eb-84e0-9b9c0f1c33ea.png)
+
+*
+
+**uptake 20210401**: DELP 20210401, **_IHME 20210401_**, IMPE 20210329, LANL 20210331, SRIV 20210401
+
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210401/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/124405122-98e0d580-dcf2-11eb-9774-b1e077d42b18.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
