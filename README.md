@@ -59,13 +59,13 @@ The codes in these repositories can be adapted for use for any country or region
 
 ## TOC
 
-### [I. SELCTED GRAPHS FROM LATEST UPTAKE](https://github.com/pourmalek/CovidVisualizedGlobal#i-selcted-graphs-from-latest-uptake-1)
+### [I. SELECTED GRAPHS FROM LATEST UPTAKE](https://github.com/pourmalek/CovidVisualizedGlobal#i-selected-graphs-from-latest-uptake-1)
 
 ### [II. METHODS AND RESULTS OF THIS WORK](https://github.com/pourmalek/CovidVisualizedGlobal#ii-methods-and-results-of-this-work-1)
 
 ### [III. INNER WORKS OF THIS REPOSITORY](https://github.com/pourmalek/CovidVisualizedGlobal#iii-inner-works-of-this-repository-1)
 
-### [IV. SELCTED GRAPHS FROM PREVIOUS UPTAKES](https://github.com/pourmalek/CovidVisualizedGlobal#iv-selcted-graphs-from-previous-uptakes-1)
+### [IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES](https://github.com/pourmalek/CovidVisualizedGlobal#iv-selected-graphs-from-previous-uptakes-1)
 
 ********************************************************************************************************************************************
 
@@ -75,7 +75,7 @@ The codes in these repositories can be adapted for use for any country or region
   
 ********************************************************************************************************************************************
 
-## I. SELCTED GRAPHS FROM LATEST UPTAKE
+## I. SELECTED GRAPHS FROM LATEST UPTAKE
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
@@ -640,7 +640,7 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-## IV. SELCTED GRAPHS FROM PREVIOUS UPTAKES
+## IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES
   
   
 [(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal#1-daily-deaths-reference-scenarios-all-time)
