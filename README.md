@@ -370,7 +370,6 @@ https://github.com/pourmalek/CovidVisualizedCountry
 **covir2**, COVID-19 estimates at the country level: Iran [15] 
 https://github.com/pourmalek/covir2                               
 ************************************************* 
-
 <br/><br/>
  
  
