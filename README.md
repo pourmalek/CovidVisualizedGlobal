@@ -642,7 +642,7 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
 
 ## IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES
   
-Selected graphs from previous uptakes are stored in another web page: [RESULTS, PREVIOUS UPTAKES](https://github.com/pourmalek/covir2#iv-selected-graphs-from-previous-uptakes-1), and their list and links also provided below. 
+### Selected graphs from previous uptakes are stored in another web page: [RESULTS, PREVIOUS UPTAKES](https://github.com/pourmalek/covir2#iv-selected-graphs-from-previous-uptakes-1), and their list and links also provided below:
   
   
 [(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#1-daily-deaths-reference-scenarios-all-time)
