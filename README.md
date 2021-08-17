@@ -260,9 +260,11 @@ Results are described under the following items: (1) The five identified models 
  
 Five international and periodically updated models of the COVID-19 pandemic were identified: (1) DELPHI , Massachusetts Institute of Technology, Cambridge (abbreviation used in this work: DELP) [3], (2) Institute for Health Metrics and Evaluation, Seattle (IHME) [4], (3) Imperial College, London (IMPE) [5], (4) Los Alamos National Laboratories, Los Alamos (LANL) [6], (5) University of Southern California, Los Angeles, by Srivastava, Ajitesh (SRIV) [7]. Official reports of countries to World Health Organization, curated by Johns Hopkins University Coronavirus resource center (JOHN) [8], were also used for comparison. 
 
+
 <br/><br/>
  
 (1) DELP  
+  
 . DELP = DELPHI: Differential Equations Lead to Predictions of Hospitalizations and Infections  
 . Citation: COVID Analytics. DELPHI epidemiological case predictions. Cambridge: Operations Research Center, Massachusetts Institute of Technology. https://www.covidanalytics.io/projections  
 . Study website: https://www.covidanalytics.io/projections  
@@ -271,9 +273,11 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Institution: Operations Research Center, Massachusetts Institute of Technology, Cambridge  
 . Among articles: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883965/ , https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1, https://www.covidanalytics.io/DELPHI_documentation_pdf  
 . Periodically updated: Yes   
-. Periodical updates accessible: Yes    
+. Periodical updates accessible: Yes
 <br/><br/>
+  
 (2) IHME
+  
 . IHME = Institute for Health Metrics and Evaluation  
 . Citation: Institute for Health Metrics and Evaluation (IHME). COVID-19 mortality, infection, testing, hospital resource use, and social distancing projections. Seattle: Institute for Health Metrics and Evaluation (IHME), University of Washington. http://www.healthdata.org/covid  
 . Study web site: http://www.healthdata.org/covid  
@@ -284,7 +288,9 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Periodically updated: Yes  
 . Periodical updates accessible: Yes  
 <br/><br/>
+  
 (3) IMPE  
+  
 . IMPE = Imperial College  
 . Citation: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/  
 . Study web site: https://mrc-ide.github.io/global-lmic-reports/  
@@ -295,7 +301,9 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Periodically updated: Yes  
 . Periodical updates accessible: Yes    
 <br/><br/>
+  
 (4) LANL  
+  
 . LANL = Los Alamos National Laboratories  
 . Citation: Los Alamos National Laboratory (LANL). COVID-19 cases and deaths forecasts. Los Alamos: Los Alamos National Laboratory (LANL). https://covid-19.bsvgateway.org  
 . Study web site: https://covid-19.bsvgateway.org  
@@ -304,9 +312,11 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Institution: Los Alamos National Laboratories, Los Alamos  
 . Among documents: https://covid-19.bsvgateway.org/static/COFFEE-methodology.pdf  
 . Periodically updated: Yes  
-. Periodical updates accessible: Yes    
+. Periodical updates accessible: Yes  
 <br/><br/>
+  
 (5) SRIV  
+  
 . SRIV = Srivastava, Ajitesh  
 . Citation: University of Southern California (USC). COVID-19 forecast. Los Angeles: University of Southern California. https://scc-usc.github.io/ReCOVER-COVID-19  
 . Study web site: https://scc-usc.github.io/ReCOVER-COVID-19/  
@@ -315,9 +325,11 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Institution: University of Southern California, Los Angeles  
 . Among articles: https://arxiv.org/abs/2007.05180  
 . Periodically updated: Yes  
-. Periodical updates accessible: Yes    
+. Periodical updates accessible: Yes  
 <br/><br/>
+  
 (0) JOHN  
+  
 . JOHN = Johns Hopkins University. Coronavirus resource center. https://coronavirus.jhu.edu  
 . Not a target study, but a benchmark for comparison.  
 . Citation: "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"  
@@ -325,7 +337,7 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . Estimates web site: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series , "COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University"  
 . License: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series  
 . Institution: Johns Hopkins University, Baltimore  
-. Among articles: Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.  
+. Among articles: [Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020 May;20(5):533-534. doi: 10.1016/S1473-3099(20)30120-1. Epub 2020 Feb 19.](https://pubmed.ncbi.nlm.nih.gov/32087114/) 
 . Periodically updated: Yes   
 . Periodical updates accessible: Yes  
  
@@ -491,9 +503,8 @@ Run in Stata "Users/local-user-name/Downloads/CovidVisualizedGlobal/20210709/cod
 Preproduced _outputs_ are stored for each uptake, e.g., [`20210709`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/), in folder [`output`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output), for each component study, i.e., [`DELP`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/DELP), [`IHME`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/IHME), [`IMPE`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/IMPE), [`LANL`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/LANL), and [`SRIV`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/SRIV), plus [`JOHN`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/JOHN) as benchmark. Combined results are stored in [`merge`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/output/merge). All merged graphs for each uptake are accessible via main page of each uptake date, e.g., https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210709/ and the link is placed in front of **Merged graphs of uptake 20210709** [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210709/graphs%20merge%2020210709.pdf)
   
   
-Selected _graphs_ are shown below. 
 
-_Component studies and their scenarios_ are mentioned below after the selected _graphs_.
+_Component studies and their scenarios_ are mentioned below.
 
 [`Variable name structure`](https://github.com/pourmalek/covir2/blob/main/Variable%20name%20structure.md)
   
@@ -503,10 +514,7 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 
 
 
-### Scenario number within component study
-
-
-[Names within brackets assigned by this review study.]
+[Names within brackets assigned by this project.]
 
 #### A00 JOHN
 * S00 = [Not Applicable]
@@ -526,6 +534,8 @@ _Component studies and their scenarios_ are mentioned below after the selected _
 * S01 = Additional 50% Reduction [Best]	
 * S02 = Current level of interventions [Reference] 			
 * S03 = Relax Interventions 50% [Worst]
+  
+  . additional alternate scenarios:
 * S04 = Surged Additional 50% Reduction [Best, Surged]
 * S05 = Surged Maintain Status Quo [Reference, Surged] 	
 * S06 = Surged Relax Interventions 50% [Worst, Surged]	
@@ -3611,7 +3621,7 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
  
 ## Licenses / Copyrights of data and / or graphs used in this repository:
   
-All the data and / or graphs used in this repository are at non-individual and aggregate level, publicly available on the Internet, and under pertinent licenses and copyrights for non-commercial use, reproduction, and distribution for scientific research, provided that the conditions mentioned in the respective licenses and copyrights are met, as provided below.  
+All the data and / or graphs used in this repository are at non-individual and aggregate level, publicly available on the Internet, and under pertinent licenses and copyrights for non-commercial use, reproduction, and distribution for scientific research, provided that the conditions mentioned in the respective licenses and copyrights are met, as referred to below. 
 
 .
 
@@ -3708,6 +3718,6 @@ SOURCE REPOSITORY LICENCE: https://covidcompare.io/about
 <br/><br/>
   
   
-Pourmalek, F. GitHub repository “CovidVisualizedGlobal”: Combine and visualize international periodically updating estimates of COVID-19 at the global level. Version 1.1, Released June 23, 2021. http://doi.org/10.5281/zenodo.5019030 https://github.com/pourmalek/CovidVisualizedGlobal 
+Pourmalek, F. GitHub repository “CovidVisualizedGlobal”: Combine and visualize international periodically updating estimates of COVID-19 pandemic at the global level. Version 1.1, Released June 23, 2021. http://doi.org/10.5281/zenodo.5019030 , https://github.com/pourmalek/CovidVisualizedGlobal 
   
   
