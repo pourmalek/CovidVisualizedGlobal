@@ -360,13 +360,13 @@ GitHub repositories allow others to view and/or download, scrutinize, and verify
 <br/><br/>
 *************************************************
 #### The three GitHub repositories created in this project are:
-<br/><br/>
+.
 #### **CovidVisualizedGlobal**, COVID-19 estimates at the global level [13] 
 ####  https://github.com/pourmalek/CovidVisualizedGlobal               
- <br/><br/>
+.
 #### **CovidVisualizedCountry**, COVID-19 estimates at the country level: Canada [14] 
 ####  https://github.com/pourmalek/CovidVisualizedCountry               
-<br/><br/>
+.
 #### **covir2**, COVID-19 estimates at the country level: Iran [15] 
 ####  https://github.com/pourmalek/covir2                               
 ************************************************* 
