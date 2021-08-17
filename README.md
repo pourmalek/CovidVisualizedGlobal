@@ -159,7 +159,7 @@ The codes in these repositories can be adapted for use for any country or region
 
 ****
 
-(4) [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
+#### (4) [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/129428442-77a33583-e8b0-4935-b75a-f1f63d5c3bd3.png)
 
@@ -177,7 +177,7 @@ The codes in these repositories can be adapted for use for any country or region
 
 ****
 
-(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+#### (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/129428506-d2691fc3-eac7-45cb-bc25-47c609fa4941.png)
 
