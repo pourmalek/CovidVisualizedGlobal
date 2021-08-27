@@ -10,7 +10,7 @@
   
 
   
-  *****************************
+*****************************
   
   ## TOC
 
@@ -22,7 +22,7 @@
 
 ### [IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES](https://github.com/pourmalek/CovidVisualizedGlobal#iv-selected-graphs-from-previous-uptakes-1)
   
-    *****************************
+*****************************
 
   
 #### :eyes: SEE graphs, code, and data of periodical updates of COVID-19 pandemic models’ estimates: 
