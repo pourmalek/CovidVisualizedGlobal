@@ -124,7 +124,7 @@ do "$pathCovidVisualizedCountry/DELP/do CovidVisualizedCountry DELP.do"
 
 do "$pathCovidVisualizedCountry/IHME/do CovidVisualizedCountry IHME.do" 
 
-do "$pathCovidVisualizedCountry/IMPE/do CovidVisualizedCountry IMPE.do" 
+// do "$pathCovidVisualizedCountry/IMPE/do CovidVisualizedCountry IMPE.do" 
 
 do "$pathCovidVisualizedCountry/LANL/do CovidVisualizedCountry LANL.do" 
 
@@ -132,6 +132,27 @@ do "$pathCovidVisualizedCountry/SRIV/do CovidVisualizedCountry SRIV.do"
 
 do "$pathCovidVisualizedCountry/merge/do CovidVisualizedCountry merge.do" 
 
+
+/*
+
+* On 20210824, the Imperial College COVID-19 model/study removed their "old fits" – 
+all previously released updates from day 1 up to and including IMPE update 20210719 – 
+from https://github.com/mrc-ide/global-lmic-reports/tree/master/data 
+
+This means the Imperial College COVID-19 model/study is no more a periodically updated study with ACCESSIBLE updates – 
+short of early retirement of the study. 
+
+Several thousand lines of codes that used their previously released updates will not work.
+
+The remedy for CovidVisualized repository https://github.com/pourmalek/CovidVisualizedGlobal for the global level: 
+is to comment out the command line reading csv data from https://github.com/mrc-ide/global-lmic-reports/tree/master/data.
+
+* However, the previously stored results, such as:
+data in CovidVisualizedGlobal-main/20210730/output/merge/CovidVisualizedGlobal merge.dta
+and graphs stored in:
+CovidVisualizedGlobal-main/20210730/output/merge/*.pdf
+and CovidVisualizedGlobal-main/20210730/output/IMPE/*.pdf
+preserve a copy of previously accessed the Imperial College COVID-19 model/study removed updates.
 
 
 
