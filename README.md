@@ -589,7 +589,7 @@ in line 124, that currently reads as:
 
 do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
-put // at the beginning of the line, so that it reads as:
+double forward slashes // have been put at the beginning of the line, so that it reads as:
 
 // do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
