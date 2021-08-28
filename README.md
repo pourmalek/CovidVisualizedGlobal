@@ -587,11 +587,11 @@ where 20210806 denotes uptake 20210806 in this repository that uses IMPE update 
 
 in line 124, that currently reads as:
 
-do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do"
+do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
 put // at the beginning of the line, so that it reads as:
 
-// do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do"
+// do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
 save the do file and then run the file.
  
