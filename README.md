@@ -573,7 +573,7 @@ The remedy for CovidVisualized repositories (https://github.com/pourmalek/covir2
 <br/><br/> 
 
  
-To -comment out-, 
+* To -comment out-, 
 
 For https://github.com/pourmalek/CovidVisualizedGlobal,
 
@@ -594,6 +594,8 @@ double forward slashes // have been put at the beginning of the line, so that it
 // do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
 save the do file and then run the file.
+  
+* However, the previously stored results, such as data in "CovidVisualizedGlobal-main/20210401/output/merge/CovidVisualizedGlobal merge.dta", and graphs stored in "CovidVisualizedGlobal-main/20210401/output/merge/asterisk.pdf" and "CovidVisualizedGlobal-main/20210401/output/IMPE/asterisk.pdf" preserve a copy of previously accessed the Imperial College COVID-19 model/study removed updates.  
  
 <br/><br/> 
   
