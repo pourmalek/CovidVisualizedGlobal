@@ -1,5 +1,7 @@
 # CovidVisualizedGlobal 
 
+For a streamlined view of this repository, see: https://pourmalek.github.io/CovidVisualizedGlobal/
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 [![DOI](https://zenodo.org/badge/357850528.svg)](https://zenodo.org/badge/latestdoi/357850528)
 
