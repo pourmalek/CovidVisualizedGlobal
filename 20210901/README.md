@@ -30,6 +30,7 @@ Does this inaccuracy of the results of IMPE update 20210825 for Iran increase th
 
 (1) [Daily deaths, all time](https://github.com/pourmalek/covir2/blob/main/20210901/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20Iran%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/131759190-a1296dad-9e3a-4ab9-9475-7f6f386343fb.png)
 
 ****
 
