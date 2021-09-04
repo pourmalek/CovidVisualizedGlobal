@@ -1,5 +1,7 @@
 # CovidVisualizedGlobal 
 
+## If you are in a rush, look at the graphs in the [latest Situation report](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/04%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2004%20–%202021-08-28.pdf).
+
 For a streamlined view of this repository, see: https://pourmalek.github.io/CovidVisualizedGlobal/
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
