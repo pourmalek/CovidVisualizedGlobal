@@ -546,7 +546,7 @@ gen datesince01jan2020 = datemax - td(01jan2020)
 
 gen monthssince01jan2020 = datesince01jan2020 / 30
 
-replace monthssince01jan2020 = (ceil(monthssince01jan2020)) + 1
+replace monthssince01jan2020 = (ceil(monthssince01jan2020))
 
 global yticknalltime = monthssince01jan2020
 
@@ -555,7 +555,7 @@ gen datesince01jan2021 = datemax - td(01jan2021)
 
 gen monthssince01jan2021 = datesince01jan2021 / 30
 
-replace monthssince01jan2021 = (ceil(monthssince01jan2021)) + 1
+replace monthssince01jan2021 = (ceil(monthssince01jan2021))
 
 global ytickn2021 = monthssince01jan2021
 
