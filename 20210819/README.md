@@ -1,4 +1,4 @@
-! Read Global COVID-19 epidemic models situation report No 02 - 2021-09-19 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/02%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2002%20-%202021-08-19.pdf)
+! Read Global COVID-19 epidemic models situation report No 02 - 2021-08-19 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/02%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2002%20-%202021-08-19.pdf)
 
 ### Study update dates in uptake 20210819
 
