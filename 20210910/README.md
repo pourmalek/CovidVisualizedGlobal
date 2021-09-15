@@ -1,3 +1,5 @@
+! Read Global COVID-19 epidemic models situation report No 05 - 2021-09-10 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/05%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2005%20–%202021-09-10.pdf)
+
 ### Study update dates in uptake 20210910
 
 DELP 20210910, **_IHME 20210910_**, IMPE 20210825, LANL 20210905, SRIV 20210910
