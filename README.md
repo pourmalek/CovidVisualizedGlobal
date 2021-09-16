@@ -43,7 +43,7 @@ For a streamlined view of this repository, see: https://pourmalek.github.io/Covi
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 * Project: Combine and visualize international periodically updated estimates of COVID-19 pandemic at the global level (CovidVisualizedGlobal)
-* Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com) || [![ORCIDID](https://user-images.githubusercontent.com/30849720/127926326-89321742-cb08-4c18-bbdd-9b0c12e4ab2f.png)](https://orcid.org/0000-0002-2134-0771) || [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200) || [![Global_Reach_Top10p](https://github.com/pourmalek/CovidVisualizedCountry/blob/main/sandbox/Global_Reach_Top10p.jpg)](https://profiles.impactstory.org/u/0000-0002-2134-0771/achievements)
+* Person: Farshad Pourmalek (pourmalek_farshad at yahoo dot com) || [![ORCIDID](https://user-images.githubusercontent.com/30849720/127926326-89321742-cb08-4c18-bbdd-9b0c12e4ab2f.png)](https://orcid.org/0000-0002-2134-0771) || [`PubMed`](https://pubmed.ncbi.nlm.nih.gov/?term=Pourmalek+F&sort=pubdate&size=200) 
   
   || [UBC SPPH](https://www.spph.ubc.ca/person/farshad-pourmalek/) || [UW IHME](http://www.healthdata.org/about/farshad-pourmalek) || [YouCheck](https://youcheck.ca)
 * Time (initial): 2021-04-14
