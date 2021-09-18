@@ -91,6 +91,7 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 (7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/133869953-de07eb9c-a6cb-45bf-a018-12eafa9b5834.png)
 
 ****
 
