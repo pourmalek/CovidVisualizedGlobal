@@ -124,3 +124,11 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 ![image](https://user-images.githubusercontent.com/30849720/133870292-bea37137-ebfc-418a-a2fd-a09264c822e9.png)
 
 ****
+
+(13) [Daily mask_use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870348-d69d02b1-060f-49e3-97ba-d8a0ee1325b2.png)
+
+****
+
+
