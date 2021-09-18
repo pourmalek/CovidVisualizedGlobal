@@ -83,7 +83,7 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 ****
 
-(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2061%20COVID-19%20hospital-related%20outcomes.pdf)
+(7) [Hospital-related outcomes, all time]https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
 
 ****
