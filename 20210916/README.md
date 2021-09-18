@@ -73,6 +73,7 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 (5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/133869075-4b45e47c-06f9-47f0-8009-ef29c715a72f.png)
 
 ****
 
