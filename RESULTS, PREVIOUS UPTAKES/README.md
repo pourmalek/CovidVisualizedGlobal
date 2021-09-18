@@ -2648,6 +2648,40 @@
 
 
 
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+  
+### (7b) Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity
+
+  
+  
+*
+
+**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
+
+(7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133869953-de07eb9c-a6cb-45bf-a018-12eafa9b5834.png)
+
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
   
@@ -2659,7 +2693,9 @@
 
 **uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
 
-.
+(8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2062b%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%20ICU%20bed%20capcity.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870026-f0eab1a6-a060-4092-8f1e-9b9657876ca8.png)
 
 *
 
@@ -2999,7 +3035,9 @@
 
 **uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
 
-.
+(9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870061-aab73dd0-238e-4f20-914e-2e6616d5629c.png)
 
 *
 
@@ -3339,7 +3377,9 @@
 
 **uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
 
-.
+(10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870118-dd0d8290-8d66-49fe-b8ff-65a0b275cce1.png)
 
 *
 
@@ -3663,9 +3703,105 @@
 
 
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (11) Daily Infection outcomes ratios, global 3 scenarios, all time, IHME
+
+  
+  
+*
+
+**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
+
+(11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870220-d1ca7d56-f2ff-4950-af79-a9db54dddee9.png)
+
+*
 
 
 
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (12) Daily mobility, global, 3 scenarios, all time, IHME
+
+  
+  
+*
+
+**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
+
+(12) [Daily mobility, global, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870292-bea37137-ebfc-418a-a2fd-a09264c822e9.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (13) Daily mask_use, global, 3 scenarios, IHME
+
+  
+  
+*
+
+**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
+
+(13) [Daily mask_use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870348-d69d02b1-060f-49e3-97ba-d8a0ee1325b2.png)
+
+*
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (14) Percent cumulative vaccinated, IHME
+
+  
+  
+*
+
+**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
+
+(14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870396-626a1a91-38a0-4854-a0dc-063c1008e715.png)
+
+*
 
 
 
