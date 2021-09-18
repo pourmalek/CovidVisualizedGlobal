@@ -1179,6 +1179,18 @@ summ DayDMuMeSmA02S01
 
 
 
+* gen percent vaccinated 
+
+gen cumulative_all_vaccin_pct = 100 * (cumulative_all_vaccinated / population)
+label var cumulative_all_vaccin_pct "% population IHME Initially vaccinated (one dose of two doses)"
+
+gen cumul_all_effect_vacci_pct = 100 * (cumulative_all_effectively_vacci / population)
+label var cumul_all_effect_vacci_pct "% population IHME Effectively vaccinated (one and two dose with efficacy)"
+
+gen cumul_all_fully_vacci_pct = 100 * (cumulative_all_fully_vaccinated / population)
+label var cumul_all_fully_vacci_pct "% population IHME Fully vaccinated (one of one and two of two doses)"
+
+
 qui compress
 
 save "CovidVisualizedGlobal IHME.dta", replace
@@ -2175,6 +2187,27 @@ note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
 
 graph save "graph 36 COVID-19 cumulative vaccinated, global.gph", replace
 graph export "graph 36 COVID-19 cumulative vaccinated, global.pdf", replace
+
+
+
+* percent cumulative vaccinated
+
+twoway ///
+(line cumulative_all_vaccin_pct date, sort lcolor(black)) ///
+(line cumul_all_effect_vacci_pct date, sort lcolor(blue)) ///
+(line cumul_all_fully_vacci_pct date, sort lcolor(green)) ///
+if date >= td(01dec2020) ///
+, xtitle(Date) xlabel(#13, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+ytitle(% Cumulative vaccinated) title("COVID-19 percent cumulative vaccinated, IHME, 3 scenarios", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "% Vaccinated" 2 "% Effectively vaccinated" 3 "% Fully vaccinated") rows(1)) ///
+note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
+"Effectively vaccinated: one and two dose with efficacy" ///
+"Fully vaccinated: one of one and two of two doses", size(small))
+
+graph save "graph 37 COVID-19 percent cumulative vaccinated, global.gph", replace
+graph export "graph 37 COVID-19 percent cumulative vaccinated, global.pdf", replace
 
 
 
