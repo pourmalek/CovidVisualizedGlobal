@@ -1,6 +1,6 @@
 # CovidVisualizedGlobal 
 
-## ! If you are in a rush, look at the graphs in the [latest Situation report](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/05%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2005%20–%202021-09-10.pdf).
+## ! If you are in a rush, look at the graphs in the [latest Situation report](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/06%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2005%20–%202021-09-16.pdf).
 
 For a streamlined view of this repository, see: https://pourmalek.github.io/CovidVisualizedGlobal/
 
@@ -112,7 +112,7 @@ The codes in these repositories can be adapted for use for any country or region
   <br/><br/>
 
 
-# :eyes: SEE: - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 05 – 2021-09-10](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/05%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2005%20–%202021-09-10.pdf)  
+# :eyes: SEE: - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 06 – 2021-09-16](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/06%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2005%20–%202021-09-16.pdf)  
 
   
 ****
