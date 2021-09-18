@@ -131,4 +131,12 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 ****
 
+(14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870396-626a1a91-38a0-4854-a0dc-063c1008e715.png)
+
+****
+
+
+
 
