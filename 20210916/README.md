@@ -113,5 +113,9 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 ****
 
-(11) 
+(11) [Daily Infection outcomes ratios, global 3 scenarios, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/133870220-d1ca7d56-f2ff-4950-af79-a9db54dddee9.png)
+
+****
 
