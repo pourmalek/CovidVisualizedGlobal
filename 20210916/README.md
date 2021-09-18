@@ -23,13 +23,7 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 ****
 
-(1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2011a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/133867888-a6a99180-befb-4314-ac4e-8a455f66ab62.png)
-
-****
-
-(1b) [Daily deaths, reference scenarios, all time, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2011b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time%20with%20IHME%20excess%20deaths.pdf)
+(1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2011%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time%20with%20IHME%20excess%20deaths.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/133867982-cda9c1e4-4f27-4839-8b5b-0be322248279.png)
 
