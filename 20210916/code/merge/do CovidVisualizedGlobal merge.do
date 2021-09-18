@@ -623,21 +623,21 @@ graph export "graph 11b COVID-19 daily deaths, global, reference scenarios, all 
 ****
 * daily deaths, reference scenarios, 2021
 
+
 twoway ///
 (line DayDeaMeRaA00S00 date, sort lcolor(cyan*1.2) lwidth(medium) lpattern(tight_dot)) /// 1 "JOHN raw"
 (line DayDeaMeSmA00S00 date, sort lcolor(cyan*1.2) lwidth(medthick)) /// 2 "JOHN smooth"
 (line DayDeaMeRaA01S00 date, sort lcolor(red)) /// 3 "DELP"
 (line DayDeaMeSmA02S01 date, sort lcolor(black)) /// 4 "IHME"
-(line DayDeXMeSmA02S01 date, sort lcolor(black) lpattern(dash)) /// 5 "IHME"
-(line DayDeaMeRaA03S02 date, sort lcolor(magenta)) /// 6 "IMPE"
-(line DayDeaMeRaA04S00 date, sort lcolor(gold)) /// 7 "LANL"
-(line DayDeaMeRaA05S00 date, sort lcolor(green)) /// 8 "SRIV"
+(line DayDeaMeRaA03S02 date, sort lcolor(magenta)) /// 5 "IMPE"
+(line DayDeaMeRaA04S00 date, sort lcolor(gold)) /// 6 "LANL"
+(line DayDeaMeRaA05S00 date, sort lcolor(green)) /// 7 "SRIV"
 if date >= td(01jan2021)  ///
 , xtitle(Date) xlabel(#$ytickn2021, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, global, reference scenarios", size(medium)) /// 
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "JOHN raw" 2 "JOHN smooth" 3 "DELP" 4 "IHME" 5 "IHME excess" 6 "IMPE" 7 "LANL" 8 "SRIV") size(small) row(2)) ///
+legend(order(1 "JOHN raw" 2 "JOHN smooth" 3 "DELP" 4 "IHME" 5 "IMPE" 6 "LANL" 7 "SRIV") size(small) row(2)) ///
 subtitle("after 2021-01-01", size(small))
 
 graph save "graph 12a COVID-19 daily deaths, global, reference scenarios, 2021.gph", replace
@@ -654,15 +654,16 @@ twoway ///
 (line DayDeaMeSmA00S00 date, sort lcolor(cyan*1.2) lwidth(medthick)) /// 2 "JOHN smooth"
 (line DayDeaMeRaA01S00 date, sort lcolor(red)) /// 3 "DELP"
 (line DayDeaMeSmA02S01 date, sort lcolor(black)) /// 4 "IHME"
-(line DayDeaMeRaA03S02 date, sort lcolor(magenta)) /// 5 "IMPE"
-(line DayDeaMeRaA04S00 date, sort lcolor(gold)) /// 6 "LANL"
-(line DayDeaMeRaA05S00 date, sort lcolor(green)) /// 7 "SRIV"
+(line DayDeXMeSmA02S01 date, sort lcolor(black) lpattern(dash)) /// 5 "IHME"
+(line DayDeaMeRaA03S02 date, sort lcolor(magenta)) /// 6 "IMPE"
+(line DayDeaMeRaA04S00 date, sort lcolor(gold)) /// 7 "LANL"
+(line DayDeaMeRaA05S00 date, sort lcolor(green)) /// 8 "SRIV"
 if date >= td(01jan2021)  ///
 , xtitle(Date) xlabel(#$ytickn2021, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, global, reference scenarios", size(medium)) /// 
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "JOHN raw" 2 "JOHN smooth" 3 "DELP" 4 "IHME" 5 "IMPE" 6 "LANL" 7 "SRIV") size(small) row(2)) ///
+legend(order(1 "JOHN raw" 2 "JOHN smooth" 3 "DELP" 4 "IHME" 5 "IHME excess" 6 "IMPE" 7 "LANL" 8 "SRIV") size(small) row(2)) ///
 subtitle("after 2021-01-01", size(small))
 
 graph save "graph 12b COVID-19 daily deaths, global, reference scenarios, 2021 with IHME excess deaths.gph", replace
