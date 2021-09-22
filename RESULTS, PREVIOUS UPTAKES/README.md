@@ -746,32 +746,6 @@
 
 
 
-********************************************************************************************************************************************
-********************************************************************************************************************************************
-
-### (2b) Daily deaths, reference scenarios, 2021, with IHME excess deaths
-
-
-
-*
-
-**uptake 20210920**: DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920 
-
-
-
-*
-
-**uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
-
-(2b) [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2012b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/133868875-218e67de-f836-4583-8628-bbc6e0119c5a.png)
-
-*
-
-
-
-
 
 
 
@@ -793,7 +767,9 @@
 
 **uptake 20210920**: DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920 
 
+(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2014%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366253-f18ead4e-553a-4426-879f-1d01be8da9e8.png)
 
 *
 
