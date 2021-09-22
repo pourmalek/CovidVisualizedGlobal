@@ -106,21 +106,25 @@ DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920
 
 (11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134368283-4c71ac69-0e18-46dc-9d88-614342226b44.png)
 
 ****
 
 (12) [Daily mobility, global, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134368445-06331042-3698-4c22-900c-5b87d9bfed95.png)
 
 ****
 
-(13) [Daily mask_use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
+(13) [Daily mask use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134368600-08bd3803-b730-4332-9cee-6ed3227a2662.png)
 
 ****
 
-(14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
+(14) [Percent cumulative vaccinated, global, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134368716-2e609982-0061-41cf-972e-645b029571ab.png)
 
 ****
 
