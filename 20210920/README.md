@@ -58,41 +58,49 @@ DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920
 
 (4) [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366791-542fddfc-f5ae-42b6-97ce-0a1fce024316.png)
 
 ****
 
 (5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366904-f646e2d1-bc93-475d-a40b-d5f1cd46bfc2.png)
 
 ****
 
 (6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367034-e0757786-23eb-4668-af9a-515e5bba7ef7.png)
 
 ****
 
 (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367187-506e2806-766c-43a7-9bfa-3c2b4700084b.png)
 
 ****
 
 (7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367314-b746da7b-8450-4b0f-b364-ba7db0f60209.png)
 
 ****
 
 (8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2062b%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%20ICU%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367490-527a4b10-e483-4894-9d00-835ed0140a6f.png)
 
 ****
 
 (9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367626-99f1fbb2-7a94-4ef7-951f-64748921fe5b.png)
 
 ****
 
 (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134367786-0d460c0f-4aca-4f3c-8e25-2194b5d595f7.png)
 
 ****
 
