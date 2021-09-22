@@ -28,26 +28,31 @@ DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920
 
 (2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2012a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134365935-199cfef9-9099-4410-ab9b-f3818d02ac8d.png)
 
 ****
 
 (2b) [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2012b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366101-c8420315-3d46-4c3a-a9ee-9d1772d4d4ba.png)
 
 ****
 
 (3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2014%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366253-f18ead4e-553a-4426-879f-1d01be8da9e8.png)
 
 ****
 
 (3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366408-90e42b38-0848-4c1e-9545-01f22472f39e.png)
 
 ****
 
 (3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/134366576-23867e7c-504c-48d3-bcba-d30d597f980b.png)
 
 ****
 
