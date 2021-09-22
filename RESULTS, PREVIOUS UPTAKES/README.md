@@ -417,7 +417,7 @@
 
 (2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2012b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
-,,,,
+![image](https://user-images.githubusercontent.com/30849720/134392574-37756cc2-1fde-4e19-aace-fc4b884cb8e2.png)
 
 *
 
