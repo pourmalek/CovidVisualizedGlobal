@@ -415,9 +415,9 @@
 
 **uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
 
-(2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2012a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+(2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2012b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/133868849-7f153fc4-ec18-43b4-8da8-da353bb2910b.png)
+,,,,
 
 *
 
