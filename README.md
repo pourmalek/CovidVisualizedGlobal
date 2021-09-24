@@ -105,9 +105,9 @@ The codes in these repositories can be adapted for use for any country or region
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-#### LATEST UPTAKE: uptake [`20210920`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210920)
+#### LATEST UPTAKE: uptake [`20210923`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210923)
  
-#### DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920
+#### DELP 20210923, **_IHME 20210923_**, IMPE 20210909, LANL 20210919, SRIV 20210923
 
   <br/><br/>
 
@@ -704,6 +704,9 @@ _Component studies (the international periodically updated models) and their sce
 . 
 
   
+
+(42) uptake [`20210923`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210923): 
+DELP 20210923, **_IHME 20210923_**, IMPE 20210909, LANL 20210919, SRIV 20210923   
   
 (41) uptake [`20210920`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20210920): 
 DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920 
