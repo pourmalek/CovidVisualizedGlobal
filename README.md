@@ -32,7 +32,7 @@ For a streamlined view of this repository, see: https://pourmalek.github.io/Covi
 *****************************
 
   
-#### :eyes: SEE graphs, code, and data of periodical updates of COVID-19 pandemic models’ estimates: 
+#### :eyes: SEE the graphs, code, and data of periodical updates of COVID-19 pandemic models’ estimates: 
   
 #### by models: [Delphi](https://covidanalytics.io/projections), [IHME](https://covid19.healthdata.org/canada?view=daily-deaths&tab=trend), [Imperial college](https://github.com/mrc-ide/global-lmic-reports/blob/master/CAN/2021-06-18/index.pdf), [Los Alamos](https://covid-19.bsvgateway.org), and [Srivastava](https://scc-usc.github.io/ReCOVER-COVID-19/#/), 
   
@@ -112,7 +112,7 @@ The codes in these repositories can be adapted for use for any country or region
   <br/><br/>
 
 
-# :eyes: SEE: - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 07 – 2021-09-23](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/07%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2007%20–%202021-09-23.pdf)  
+# :eyes: SEE: The - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 07 – 2021-09-23](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/07%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2007%20–%202021-09-23.pdf)  
 
   
 ****
