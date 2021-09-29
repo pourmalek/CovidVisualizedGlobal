@@ -282,25 +282,25 @@ The codes in these repositories can be adapted for use for any country or region
 
 ****
 
-### (11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
+### (11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/135330065-f7ae6ca7-5363-476c-a4a4-9b3f80e2ef63.png)
 
 ****
 
-### (12) [Daily mobility, global, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
+### (12) [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/135330148-f3c02c74-b6ad-4b7c-b9fb-15cce296ef5f.png)
 
 ****
 
-### (13) [Daily mask use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
+### (13) [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/135330278-ecb7952b-243b-4e6a-8d23-243d8d87528b.png)
 
 ****
 
-### (14) [Percent cumulative vaccinated, global, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
+### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/135330379-bd90ee7e-2858-4302-a90f-13fbd0bd25c2.png)
 
