@@ -157,7 +157,7 @@ The codes in these repositories can be adapted for use for any country or region
   
 #### List of graphs (with links)
   
-(1) [Daily deaths, reference scenarios, all time]()
+(1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#1-daily-deaths-reference-scenarios-all-time)
   
 (2) [Daily deaths, reference scenarios, 2021]  
   
