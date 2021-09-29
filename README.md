@@ -185,13 +185,13 @@ The codes in these repositories can be adapted for use for any country or region
 
 (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#10-daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
 
-(11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#11-daily-infection-outcomes-ratios-global-3-scenarios-all-time-ihme)
+(11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME]()
 
-(12) [Daily mobility, global, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#12-daily-mobility-global-3-scenarios-all-time-ihme)
+(12) [Daily mobility, 3 scenarios, all time, IHME]()
 
-(13) [Daily mask use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#13-daily-mask-use-global-3-scenarios-ihme)
-
-(14) [Percent cumulative vaccinated, global, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#14-percent-cumulative-vaccinated-global-ihme)  
+(13) [Daily mask use, 3 scenarios, IHME]()
+  
+(14) [Percent cumulative vaccinated, IHME]()
   
 ****
 ****
