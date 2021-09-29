@@ -159,39 +159,39 @@ The codes in these repositories can be adapted for use for any country or region
   
 (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#1-daily-deaths-reference-scenarios-all-time)
   
-(2) [Daily deaths, reference scenarios, 2021]  
+(2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#2-daily-deaths-reference-scenarios-2021)  
   
-(2b) [Daily deaths, reference scenarios, 2021, with IHME excess deaths]
+(2b) [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#2b-daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
   
-(3) [Daily deaths, 3 scenarios, 2021]
+(3) [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#3-daily-deaths-3-scenarios-2021)
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME]
+(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#3b-daily-deaths-3-scenarios-2021-ihme)
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE]
+(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#3c-daily-deaths-3-scenarios-2021-impe)
 
-(4) [Daily cases or infections, reference scenarios, all time]
+(4) [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#4-daily-cases-or-infections-reference-scenarios-all-time)
 
-(5) [Daily cases or infections, reference scenarios, 2021]
+(5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#5-daily-cases-or-infections-reference-scenarios-2021)
 
-(6) [Daily cases or infections, 3 scenarios, 2021]
+(6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#6-daily-cases-or-infections-3-scenarios-2021)
 
-(7) [Hospital-related outcomes, all time]
+(7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#7-hospital-related-outcomes-all-time)
 
-(7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity]
+(7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#7b-hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
 
-(8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand]
+(8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#8-hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
-(9) [Daily deaths estimated to reported, reference scenarios, 2021]
+(9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#9-daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
-(10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021]
+(10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#10-daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
 
-(11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME]
+(11) [Daily Infection outcomes ratios, global 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#11-daily-infection-outcomes-ratios-global-3-scenarios-all-time-ihme)
 
-(12) [Daily mobility, global, 3 scenarios, all time, IHME]
+(12) [Daily mobility, global, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#12-daily-mobility-global-3-scenarios-all-time-ihme)
 
-(13) [Daily mask use, global, 3 scenarios, IHME]
+(13) [Daily mask use, global, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#13-daily-mask-use-global-3-scenarios-ihme)
 
-(14) [Percent cumulative vaccinated, global, IHME]  
+(14) [Percent cumulative vaccinated, global, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#14-percent-cumulative-vaccinated-global-ihme)  
   
 ****
 ****
