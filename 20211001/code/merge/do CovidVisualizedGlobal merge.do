@@ -1766,7 +1766,7 @@ graph export "graph 92 COVID-19 daily mobility, global, 3 scenarios.pdf", replac
 
 
 
-* daily mask_use Percent of population reporting always wearing a mask when leaving home
+* daily mask use Percent of population reporting always wearing a mask when leaving home
 
 twoway ///
 (line mask_use_mean_A02S02 date, sort lcolor(green)) ///
@@ -1778,7 +1778,7 @@ xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, l
 ytitle(Daily mask use) title("COVID-19 daily mask use, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1)) ///
-subtitle(Percent of population reporting always wearing a mask when leaving home, size(small))
+subtitle(Proportion of population reporting always wearing a mask when leaving home, size(small))
 
 graph save "graph 93 COVID-19 daily mask_use, global, 3 scenarios.gph", replace
 graph export "graph 93 COVID-19 daily mask_use, global, 3 scenarios.pdf", replace
