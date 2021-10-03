@@ -103,21 +103,25 @@ The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021.
 
 (9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211001/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/135737712-8f587408-e6e6-42ad-ac4e-c1f26d3976f0.png)
 
 ****
 
 (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211001/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/135737730-0ff24fa0-9d80-412c-a29b-3372e2ee2f2d.png)
 
 ****
 
 (11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211001/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/135737744-7b2d5b18-b457-4a1d-8a08-8eba68a0da09.png)
 
 ****
 
 (12) [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211001/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/135737775-aec7cec8-64ba-4a5d-911b-640028a51d27.png)
 
 ****
 
