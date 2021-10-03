@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211001/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 2 Oct 2021, 18:48:52
+ {txt}opened on:  {res} 2 Oct 2021, 19:58:16
 {txt}
 {com}. 
 . 
@@ -829,7 +829,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}           771                          
-{txt} vars:{res}           516                          2 Oct 2021 18:48
+{txt} vars:{res}           516                          2 Oct 2021 19:58
 {txt} size:{res}     1,607,535                          
 {txt}{hline}
               storage   display    value
@@ -3334,7 +3334,7 @@ Sorted by: {res}date  loc_grand_name
 . 
 . 
 . 
-. * daily mask_use Percent of population reporting always wearing a mask when leaving home
+. * daily mask use Percent of population reporting always wearing a mask when leaving home
 . 
 . twoway ///
 > (line mask_use_mean_A02S02 date, sort lcolor(green)) ///
@@ -3346,7 +3346,7 @@ Sorted by: {res}date  loc_grand_name
 > ytitle(Daily mask use) title("COVID-19 daily mask use, IHME, 3 scenarios", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1)) ///
-> subtitle(Percent of population reporting always wearing a mask when leaving home, size(small))
+> subtitle(Proportion of population reporting always wearing a mask when leaving home, size(small))
 {res}{txt}
 {com}. 
 . graph save "graph 93 COVID-19 daily mask_use, global, 3 scenarios.gph", replace
@@ -3409,7 +3409,7 @@ Sorted by: {res}date  loc_grand_name
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211001/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 2 Oct 2021, 18:49:43
+ {txt}closed on:  {res} 2 Oct 2021, 19:59:24
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
