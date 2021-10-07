@@ -314,6 +314,20 @@ The codes in these repositories can be adapted for use for any country or region
   
 <br/><br/>
   
+### Addendum to rules for performing uptakes in this repository, 20211008:
+
+Considering the recent deviations of IMPE and IHME from their regularly scheduled updates, omission of IMPE models’ previous updates except for the latest couple of updates, and the retirement of LANL model on 20210926, the following changes are made, effective as of 20211008.
+
+(1) Every Friday, a new uptake will be performed. 
+
+(2) Any model updates older than two weeks on the uptake date will not be included in the new uptake. 
+
+As such, the last LANL update of 20210926 will no longer be used after the uptake 20211008.
+  
+ <br/><br/>
+ 
+ * 
+  
 Pre-print for this project: 
  
 [Farshad Pourmalek. CovidVisualized: Visualized compilation of international updating models’ estimates of COVID-19 pandemic at global and country levels, 02 August 2021, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-768714/v1]](https://www.researchsquare.com/article/rs-768714/v1)
