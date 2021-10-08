@@ -10,6 +10,8 @@ Updates that are new in this uptake:
 
 DELP 20211008, SRIV 20211008
 
+## NOTE: It is precedented that a new update of SRIV predicts hugely high number of deaths but the next update returns to the usual range of predictions. 
+
 <br/><br/>
 
 ### Addendum to rules for performing uptakes in this repository, 20211008:
