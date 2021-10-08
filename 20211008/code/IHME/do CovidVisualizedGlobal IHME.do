@@ -1191,6 +1191,34 @@ gen cumul_all_fully_vacci_pct = 100 * (cumulative_all_fully_vaccinated / populat
 label var cumul_all_fully_vacci_pct "% population IHME Fully vaccinated (one of one and two of two doses)"
 
 
+
+* gen daily vaccinated number 
+
+sort loc_grand_name date
+
+bysort loc_grand_name: gen daily_all_vaccinated = cumulative_all_vaccinated[_n] - cumulative_all_vaccinated[_n-1]
+label var daily_all_vaccinated "Daily population IHME Initially vaccinated (one dose of two doses)"
+bysort loc_grand_name: gen daily_all_effectively_vacci = cumulative_all_effectively_vacci[_n] - cumulative_all_effectively_vacci[_n-1]
+label var daily_all_effectively_vacci "Daily population IHME Effectively vaccinated (one and two dose with efficacy)"
+bysort loc_grand_name: gen daily_all_fully_vaccinated = cumulative_all_fully_vaccinated[_n] - cumulative_all_fully_vaccinated[_n-1]
+label var daily_all_fully_vaccinated "Daily population IHME Fully vaccinated (one of one and two of two doses)"
+
+
+
+
+* gen daily vaccinated percent
+
+sort loc_grand_name date
+
+bysort loc_grand_name: gen daily_all_vaccin_pct = cumulative_all_vaccin_pct[_n] - cumulative_all_vaccin_pct[_n-1]
+label var daily_all_vaccin_pct "% Daily population IHME Initially vaccinated (one dose of two doses)"
+bysort loc_grand_name: gen daily_all_effect_vacci_pct = cumul_all_effect_vacci_pct[_n] - cumul_all_effect_vacci_pct[_n-1]
+label var daily_all_effect_vacci_pct "% Daily population IHME Effectively vaccinated (one and two dose with efficacy)"
+bysort loc_grand_name: gen daily_all_fully_vacci_pct = cumul_all_fully_vacci_pct[_n] - cumul_all_fully_vacci_pct[_n-1]
+label var daily_all_fully_vacci_pct "% Daily population IHME Fully vaccinated (one of one and two of two doses)"
+
+
+
 qui compress
 
 save "CovidVisualizedGlobal IHME.dta", replace
@@ -2075,7 +2103,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes global, IHME, reference scenario", size(medium)) ///
+ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes, global, IHME, reference scenario", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Bed" 2 "ICU" 3 "Admission" 4 "All bed capacity" 5 "ICU bed capacity") rows(2)) yscale(titlegap(4))
 
@@ -2096,7 +2124,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes global, IHME, reference scenario", size(medium)) ///
+ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes, global, IHME, reference scenario", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "ICU" 2 "Admission" 3 "ICU bed capacity") rows(1)) ///
 subtitle("without beds needed", size(small)) yscale(titlegap(4))
@@ -2118,7 +2146,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily % change in mobility from baseline) title("COVID-19 daily % change in mobility, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily % change in mobility from baseline) title("COVID-19 daily % change in mobility, global, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1)) 
 
@@ -2129,7 +2157,7 @@ graph export "graph 33 COVID-19 daily mobility, global, 3 scenarios.pdf", replac
 
 
 
-* daily mask_use Percent of population reporting always wearing a mask when leaving home
+* daily mask use Percent of population reporting always wearing a mask when leaving home
 
 twoway ///
 (line mask_use_mean_A02S02 date, sort lcolor(green)) ///
@@ -2138,7 +2166,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily mask use) title("COVID-19 daily mask use, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily mask use) title("COVID-19 daily mask use, global, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1)) ///
 subtitle(Percent of population reporting always wearing a mask when leaving home, size(small))
@@ -2157,7 +2185,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily ratio of pneumonia deaths) title("COVID-19 daily ratio of pneumonia deaths, IHME", size(medium)) ///
+ytitle(Daily ratio of pneumonia deaths) title("COVID-19 daily ratio of pneumonia deaths, global, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) ///
 subtitle(Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths, size(small))
 
@@ -2168,46 +2196,93 @@ graph export "graph 35 COVID-19 daily ratio of pneumonia deaths, global.pdf", re
 
 
 
-
-* cumulative vaccinated
+* cumulative vaccinated number
 
 twoway ///
 (line cumulative_all_vaccinated date, sort lcolor(black)) ///
 (line cumulative_all_effectively_vacci date, sort lcolor(blue)) ///
-(line cumulative_all_fully_vaccinated date, sort lcolor(green)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line cumulative_all_fully_vaccinated date, sort lcolor(green) lwidth(thick)) ///
+if date >= td(01jan2021) ///
+, xtitle(Date) xlabel(#13, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Cumulative vaccinated) title("COVID-19 cumulative vaccinated, IHME, 3 scenarios", size(medium)) ///
+ytitle(Cumulative vaccinated number) title("COVID-19 cumulative vaccinated number, global, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Vaccinated" 2 "Effectively vaccinated" 3 "Fully vaccinated") rows(1)) ///
 note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
 "Effectively vaccinated: one and two dose with efficacy" ///
 "Fully vaccinated: one of one and two of two doses", size(small))
 
-graph save "graph 36 COVID-19 cumulative vaccinated, global.gph", replace
-graph export "graph 36 COVID-19 cumulative vaccinated, global.pdf", replace
+graph save "graph 36 COVID-19 cumulative vaccinated number, global.gph", replace
+graph export "graph 36 COVID-19 cumulative vaccinated number, global.pdf", replace
 
 
 
-* percent cumulative vaccinated
+
+* daily vaccinated number
+
+twoway ///
+(line daily_all_vaccinated date, sort lcolor(black)) ///
+(line daily_all_effectively_vacci date, sort lcolor(blue)) ///
+(line daily_all_fully_vaccinated date, sort lcolor(green) lwidth(thick)) ///
+if date >= td(01jan2021) ///
+, xtitle(Date) xlabel(#13, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+ytitle(Daily vaccinated number) title("COVID-19 daily vaccinated number, global, IHME, 3 scenarios", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "Vaccinated" 2 "Effectively vaccinated" 3 "Fully vaccinated") rows(1)) ///
+note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
+"Effectively vaccinated: one and two dose with efficacy" ///
+"Fully vaccinated: one of one and two of two doses", size(small))
+
+graph save "graph 36b COVID-19 daily vaccinated number, global.gph", replace
+graph export "graph 36b COVID-19 daily vaccinated number, global.pdf", replace
+
+
+
+
+
+* cumulative vaccinated percent
 
 twoway ///
 (line cumulative_all_vaccin_pct date, sort lcolor(black)) ///
 (line cumul_all_effect_vacci_pct date, sort lcolor(blue)) ///
-(line cumul_all_fully_vacci_pct date, sort lcolor(green)) ///
+(line cumul_all_fully_vacci_pct date, sort lcolor(green) lwidth(thick)) ///
 if date >= td(01dec2020) ///
 , xtitle(Date) xlabel(#13, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(% Cumulative vaccinated) title("COVID-19 percent cumulative vaccinated, IHME, 3 scenarios", size(medium)) ///
+ytitle(% Cumulative vaccinated percent) title("COVID-19 cumulative vaccinated percent, global, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "% Vaccinated" 2 "% Effectively vaccinated" 3 "% Fully vaccinated") rows(1)) ///
 note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
 "Effectively vaccinated: one and two dose with efficacy" ///
 "Fully vaccinated: one of one and two of two doses", size(small))
 
-graph save "graph 37 COVID-19 percent cumulative vaccinated, global.gph", replace
-graph export "graph 37 COVID-19 percent cumulative vaccinated, global.pdf", replace
+graph save "graph 37 COVID-19 cumulative vaccinated percent, global.gph", replace
+graph export "graph 37 COVID-19 cumulative vaccinated percent, global.pdf", replace
+
+
+
+
+
+* daily vaccinated percent
+
+twoway ///
+(line daily_all_vaccin_pct date, sort lcolor(black)) ///
+(line daily_all_effect_vacci_pct date, sort lcolor(blue)) ///
+(line daily_all_fully_vacci_pct date, sort lcolor(green) lwidth(thick)) ///
+if date >= td(01dec2020) ///
+, xtitle(Date) xlabel(#13, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+ytitle(% Daily vaccinated percent) title("COVID-19 daily vaccinated percent, global, IHME, 3 scenarios", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "% Vaccinated" 2 "% Effectively vaccinated" 3 "% Fully vaccinated") rows(1)) ///
+note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
+"Effectively vaccinated: one and two dose with efficacy" ///
+"Fully vaccinated: one of one and two of two doses", size(small))
+
+graph save "graph 37b COVID-19 daily vaccinated percent, global.gph", replace
+graph export "graph 37b COVID-19 daily vaccinated percent, global.pdf", replace
+
 
 
 
