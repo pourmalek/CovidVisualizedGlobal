@@ -108,6 +108,8 @@ The codes in these repositories can be adapted for use for any country or region
 ### LATEST UPTAKE: uptake [`20211008`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20211008)
  
 ### **_DELP 20211008_**, IHME 20211001, IMPE 20210924, LANL 20210926, **_SRIV 20211008_**
+  
+  ## NOTE about SRIV update 20211008: It is precedented that a new update of SRIV predicts a hugely high number of deaths, but the next update returns to the plausible range of predictions. 
 
   <br/><br/>
 
