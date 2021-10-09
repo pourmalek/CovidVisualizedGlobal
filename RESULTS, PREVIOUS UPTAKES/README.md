@@ -39,7 +39,7 @@
 
 [(15) Daily vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#15-daily-vaccinated-percent-ihme)
 
-[(16) Daily vaccinated number, IHME]()
+[(16) Daily vaccinated number, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#16-daily-vaccinated-number-ihme)
 
 
 ****
