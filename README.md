@@ -105,14 +105,14 @@ The codes in these repositories can be adapted for use for any country or region
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20211001`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20211001)
+### LATEST UPTAKE: uptake [`20211008`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20211008)
  
-### DELP 20210930, **_IHME 20211001_**, IMPE 20210924, LANL 20210926, SRIV 20210930
+### **_DELP 20211008_**, IHME 20211001, IMPE 20210924, LANL 20210926, **_SRIV 20211008_**
 
   <br/><br/>
 
 
-# :eyes: SEE: The - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 09 – 2021-10-01](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/09%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2009%20–%202021-10-01.pdf)  
+# :eyes: SEE: The - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 10 – 2021-10-10](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/09%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2009%20–%202021-10-01.pdf)  
 
   
 ****
