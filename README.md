@@ -195,7 +195,7 @@ The codes in these repositories can be adapted for use for any country or region
   
 (15) [Daily vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#15-daily-vaccinated-percent-ihme)
 
-(16) [Daily vaccinated number, IHME]()
+(16) [Daily vaccinated number, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#16-daily-vaccinated-number-ihme)
  
   
 ****
