@@ -4464,7 +4464,7 @@ uptake 20210920 and uptake 20210916 both use IHME 20210916.
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### (14) Percent cumulative vaccinated, IHME
+### (14) Cumulative vaccinated percent, IHME
 
   
   
@@ -4522,5 +4522,44 @@ uptake 20210920 and uptake 20210916 both use IHME 20210916.
   
   
   
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (15) Daily vaccinated percent, IHME
+
+This graph added starting on 20211008. 
   
+*
+
+**uptake 20211008**: **_DELP 20211008_**, IHME 20211001, IMPE 20210924, LANL 20210926, **_SRIV 20211008_**
   
+(15) [Daily vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211008/output/merge/graph%2095%20COVID-19%20daily%20vaccinated%20percent%2C%20global.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/136635950-a39af725-ee8e-43f4-9c56-4db76a58ad00.png)
+
+*
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (16) Daily vaccinated number, IHME
+
+This graph added starting on 20211008. 
+  
+*
+
+**uptake 20211008**: **_DELP 20211008_**, IHME 20211001, IMPE 20210924, LANL 20210926, **_SRIV 20211008_**
+  
+(16) [Daily vaccinated number, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211008/output/merge/graph%2096%20COVID-19%20daily%20vaccinated%20number%2C%20global.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/136636000-ae4442fd-aa5e-478f-872c-8c0f9705d767.png)
+
+*
