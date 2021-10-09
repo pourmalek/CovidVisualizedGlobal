@@ -37,7 +37,7 @@
 
 [(14) Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#14-cumulative-vaccinated-percent-ihme)
 
-[(15) Daily vaccinated percent, IHME]()
+[(15) Daily vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#15-daily-vaccinated-percent-ihme)
 
 [(16) Daily vaccinated number, IHME]()
 
