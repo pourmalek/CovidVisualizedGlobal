@@ -106,6 +106,7 @@ The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021.
 
 ### (9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137550994-bb702253-1176-4c2c-b2aa-3ed2a801eb13.png)
 
 ****
 
