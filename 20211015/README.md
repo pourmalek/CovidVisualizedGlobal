@@ -129,8 +129,9 @@ The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021.
 
 ****
 
-### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2094%20COVID-19%20percent%20cumulative%20vaccinated%2C%20global.pdf)
+### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137550427-7d5de171-9778-4785-903e-761e22b3aae7.png)
 
 ****
 
