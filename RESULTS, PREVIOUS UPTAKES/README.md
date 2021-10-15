@@ -37,10 +37,6 @@
 
 [(14) Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#14-cumulative-vaccinated-percent-ihme)
 
-[(15) Daily vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#15-daily-vaccinated-percent-ihme)
-
-[(16) Daily vaccinated number, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#16-daily-vaccinated-number-ihme)
-
 
 ****
   
@@ -58,7 +54,9 @@
 
 **uptake 20211015**: **_DELP 20211015_**, IHME 20211001, **_IMPE 20211006_**, **_SRIV 20211015_**
 
+(1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2011a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137547359-d3286dba-961c-48a2-8b9e-c642d65a4b40.png)
 
 *
 
@@ -451,7 +449,9 @@
 
 **uptake 20211015**: **_DELP 20211015_**, IHME 20211001, **_IMPE 20211006_**, **_SRIV 20211015_**
 
+(2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2012a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137547421-566cdd84-abe0-49cb-b471-8f7cc0f1f219.png)
 
 *
 
@@ -835,7 +835,7 @@
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### (2) Daily deaths, reference scenarios, 2021
+### (2b) Daily deaths, reference scenarios, 2021, with IHME excess deaths
 
 
   
