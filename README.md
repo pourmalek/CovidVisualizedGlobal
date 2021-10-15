@@ -114,7 +114,7 @@ The codes in these repositories can be adapted for use for any country or region
   <br/><br/>
 
 
-# :eyes: SEE: The - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 10 – 2021-10-10](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/LATEST/10%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2010%20–%202021-10-08.pdf)  
+# :eyes: SEE: The - S I X T H - G L O B A L - W A V E - in [Global COVID-19 epidemic models situation report No 11 – 2021-10-15](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/11%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2011%20–%202021-10-15.pdf)  
 
   
 ****
