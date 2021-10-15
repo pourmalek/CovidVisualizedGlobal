@@ -112,21 +112,25 @@ The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021.
 
 ### (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137551125-869ccbb1-2132-4322-a55c-4302c3aaf055.png)
 
 ****
 
 ### (11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137551198-5a9493ea-90d5-43d4-b690-d2d285de5620.png)
 
 ****
 
 ### (12) [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137551264-c2c9764f-96c5-4d44-b896-76906f3009a0.png)
 
 ****
 
 ### (13) [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137551323-2410480b-f926-4242-b5cd-b50b67e7e421.png)
 
 ****
 
