@@ -430,7 +430,7 @@ Five international and periodically updated models of the COVID-19 pandemic were
 . IMPE = Imperial College  
 . Citation: MRC Centre for Global Infectious Disease Analysis (MRC GIDA). Future scenarios of the healthcare burden of COVID-19 in low- or middle-income countries. London: MRC Centre for Global Infectious Disease Analysis, Imperial College London. https://mrc-ide.github.io/global-lmic-reports/  
 . Study web site: https://mrc-ide.github.io/global-lmic-reports/  
-. Estimates web site: https://github.com/mrc-ide/global-lmic-reports/tree/master/data  
+. Estimates web site: https://mrcdata.dide.ic.ac.uk/global-lmic-reports/ (new), https://github.com/mrc-ide/global-lmic-reports/tree/master/data (old) 
 . License: https://github.com/mrc-ide/global-lmic-reports  
 . Institution: Imperial College, London  
 . Among articles: https://science.sciencemag.org/content/369/6502/413  
