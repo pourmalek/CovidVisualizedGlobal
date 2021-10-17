@@ -64,36 +64,43 @@ The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021.
 
 ### (3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608058-34b2e071-fed5-45c0-b346-36be3c31b2be.png)
 
 ****
 
 ### (4) [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2021%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608078-11abfc42-6255-4b8d-b81c-07d8c63c44bc.png)
 
 ****
 
 ### (5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608104-c268d6eb-b6a2-4cd5-bab4-ec715e6953c6.png)
 
 ****
 
 ### (6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608138-b20a84b9-1c7f-4834-8369-37c7c74cf39d.png)
 
 ****
 
 ### (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608211-d664a4aa-c184-4e05-bc0a-48372eb3c930.png)
 
 ****
 
 ### (7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608262-5fc6b3aa-81c4-4ac1-876c-68decd9fcb8c.png)
 
 ****
 
 ### (8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2062b%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%20ICU%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/137608275-2e6abff0-7d51-4039-99d9-9992fe81e407.png)
 
 ****
 
