@@ -1,9 +1,9 @@
 {smcl}
-{com}{sf}{ul off}{txt}{.-}
+{txt}{sf}{ul off}{.-}
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211015/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}15 Oct 2021, 12:17:47
+ {txt}opened on:  {res}16 Oct 2021, 18:59:30
 {txt}
 {com}. 
 . 
@@ -51,11 +51,11 @@
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}             623
+{col 5}not matched{col 30}{res}             622
 {txt}{col 9}from master{col 30}{res}             561{txt}  (_merge==1)
-{col 9}from using{col 30}{res}              62{txt}  (_merge==2)
+{col 9}from using{col 30}{res}              61{txt}  (_merge==2)
 
-{col 5}matched{col 30}{res}              92{txt}  (_merge==3)
+{col 5}matched{col 30}{res}              93{txt}  (_merge==3)
 {col 5}{hline 41}
 {com}. {c )-}
 {txt}
@@ -170,14 +170,14 @@
 . 
 . 
 . gen DayCTDMeRaA00S00 =  DayCasMeRaA00S00 / DayDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayCTDMeRaA00S00  "Daily Cases to Deaths S0 JOHN"
 {txt}
 {com}. 
 . gen TotCTDMeRaA00S00 =  TotCasMeRaA00S00 / TotDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotCTDMeRaA00S00  "Total Cases to Deaths S0 JOHN"
@@ -327,7 +327,7 @@
 . 
 .     
 . gen DayDERMeRaA00S00 = DayDeaMeRaA00S00 / DayDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA00S00 "Daily Deaths estim to reported JOHN = 1" 
@@ -335,7 +335,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA01S00 = DayDeaMeRaA01S00 / DayDeaMeRaA00S00
-{txt}(695 missing values generated)
+{txt}(694 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA01S00 "Daily Deaths estim to reported Mean DELP S0"
@@ -343,7 +343,7 @@
 {com}. 
 . 
 . gen DayDERMeSmA02S01 = DayDeaMeSmA02S01 / DayDeaMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayDERMeSmA02S01 "Daily Deaths estim to reported Mean smoothed IHME S1"
@@ -351,7 +351,7 @@
 {com}. 
 . 
 . gen DayDERMeSmA02S02 = DayDeaMeSmA02S02 / DayDeaMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayDERMeSmA02S02 "Daily Deaths estim to reported Mean smoothed IHME S2"
@@ -359,7 +359,7 @@
 {com}. 
 . 
 . gen DayDERMeSmA02S03 = DayDeaMeSmA02S03 / DayDeaMeSmA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayDERMeSmA02S03 "Daily Deaths estim to reported Mean smoothed IHME S3"
@@ -367,7 +367,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S01 = DayDeaMeRaA03S01 / DayDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S01 "Daily Deaths estim to reported Mean S1 IMPE"
@@ -375,7 +375,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S02 = DayDeaMeRaA03S02 / DayDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S02 "Daily Deaths estim to reported Mean S2 IMPE"
@@ -383,7 +383,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA03S03 = DayDeaMeRaA03S03 / DayDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA03S03 "Daily Deaths estim to reported Mean S3 IMPE"
@@ -391,7 +391,7 @@
 {com}. 
 . 
 . gen DayDERMeRaA05S00  = DayDeaMeRaA05S00 / DayDeaMeRaA00S00
-{txt}(786 missing values generated)
+{txt}(785 missing values generated)
 
 {com}. 
 . label var DayDERMeRaA05S00 "Daily Deaths estim to reported S0 SRIV"
@@ -406,7 +406,7 @@
 . 
 . 
 . gen DayCERMeRaA00S00 = DayCasMeRaA00S00 / DayCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA00S00 "Daily Cases estim to reported JOHN = 1" 
@@ -414,7 +414,7 @@
 {com}. 
 . 
 . gen DayCERMeRaA01S00 = DayCasMeRaA01S00 / DayCasMeRaA00S00
-{txt}(695 missing values generated)
+{txt}(694 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA01S00 "Daily Cases estim to reported Mean DELP S0"
@@ -422,7 +422,7 @@
 {com}. 
 . 
 . gen DayIERMeSmA02S01 = DayINFMeSmA02S01 / DayCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayIERMeSmA02S01 "Daily infections estim to reported cases Mean smoothed IHME S1"
@@ -430,7 +430,7 @@
 {com}. 
 . 
 . gen DayIERMeSmA02S02 = DayINFMeSmA02S02 / DayCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayIERMeSmA02S02 "Daily infections estim to reported cases Mean smoothed IHME S2"
@@ -438,7 +438,7 @@
 {com}. 
 . 
 . gen DayIERMeSmA02S03 = DayINFMeSmA02S03 / DayCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var DayIERMeSmA02S03 "Daily infections estim to reported cases Mean smoothed IHME S3"
@@ -446,7 +446,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S01 = DayINFMeRaA03S01 / DayCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S01 "Daily infections estim to reported cases Mean S1 IMPE"
@@ -454,7 +454,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S02 = DayINFMeRaA03S02 / DayCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S02 "Daily infections estim to reported cases Mean S2 IMPE"
@@ -462,7 +462,7 @@
 {com}. 
 . 
 . gen DayIERMeRaA03S03 = DayINFMeRaA03S03 / DayCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var DayIERMeRaA03S03 "Daily infections estim to reported cases Mean S3 IMPE"
@@ -470,7 +470,7 @@
 {com}. 
 . 
 . gen DayCERMeRaA05S00  = DayCasMeRaA05S00 / DayCasMeRaA00S00
-{txt}(786 missing values generated)
+{txt}(785 missing values generated)
 
 {com}. 
 . label var DayCERMeRaA05S00 "Daily Cases estim to reported S0 SRIV"
@@ -485,7 +485,7 @@
 . 
 . 
 . gen TotDERMeRaA00S00 = TotDeaMeRaA00S00 / TotDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA00S00 "Total Deaths estim to reported JOHN = 1" 
@@ -493,7 +493,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA01S00 = TotDeaMeRaA01S00 / TotDeaMeRaA00S00
-{txt}(694 missing values generated)
+{txt}(693 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA01S00 "Total Deaths estim to reported Mean DELP S0"
@@ -501,7 +501,7 @@
 {com}. 
 . 
 . gen TotDERMeSmA02S01 = TotDeaMeSmA02S01 / TotDeaMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotDERMeSmA02S01 "Total Deaths estim to reported Mean smoothed IHME S1"
@@ -509,7 +509,7 @@
 {com}. 
 . 
 . gen TotDERMeSmA02S02 = TotDeaMeSmA02S02 / TotDeaMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotDERMeSmA02S02 "Total Deaths estim to reported Mean smoothed IHME S2"
@@ -517,7 +517,7 @@
 {com}. 
 . 
 . gen TotDERMeSmA02S03 = TotDeaMeSmA02S03 / TotDeaMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotDERMeSmA02S03 "Total Deaths estim to reported Mean smoothed IHME S3"
@@ -525,7 +525,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S01 = TotDeaMeRaA03S01 / TotDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S01 "Total Deaths estim to reported Mean S1 IMPE"
@@ -533,7 +533,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S02 = TotDeaMeRaA03S02 / TotDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S02 "Total Deaths estim to reported Mean S2 IMPE"
@@ -541,7 +541,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA03S03 = TotDeaMeRaA03S03 / TotDeaMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA03S03 "Total Deaths estim to reported Mean S3 IMPE"
@@ -549,7 +549,7 @@
 {com}. 
 . 
 . gen TotDERMeRaA05S00  = TotDeaMeRaA05S00 / TotDeaMeRaA00S00
-{txt}(785 missing values generated)
+{txt}(784 missing values generated)
 
 {com}. 
 . label var TotDERMeRaA05S00 "Total Deaths estim to reported S0 SRIV"
@@ -564,7 +564,7 @@
 . 
 . 
 . gen TotCERMeRaA00S00 = TotCasMeRaA00S00 / TotCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA00S00 "Total Cases estim to reported JOHN = 1" 
@@ -572,7 +572,7 @@
 {com}. 
 . 
 . gen TotCERMeRaA01S00 = TotCasMeRaA01S00 / TotCasMeRaA00S00
-{txt}(694 missing values generated)
+{txt}(693 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA01S00 "Total Cases estim to reported Mean DELP S0"
@@ -580,7 +580,7 @@
 {com}. 
 . 
 . gen TotIERMeSmA02S01 = TotINFMeSmA02S01 / TotCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotIERMeSmA02S01 "Total infections estim to reported cases Mean smoothed IHME S1"
@@ -588,7 +588,7 @@
 {com}. 
 . 
 . gen TotIERMeSmA02S02 = TotINFMeSmA02S02 / TotCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotIERMeSmA02S02 "Total infections estim to reported cases Mean smoothed IHME S2"
@@ -596,7 +596,7 @@
 {com}. 
 . 
 . gen TotIERMeSmA02S03 = TotINFMeSmA02S03 / TotCasMeRaA00S00
-{txt}(167 missing values generated)
+{txt}(166 missing values generated)
 
 {com}. 
 . label var TotIERMeSmA02S03 "Total infections estim to reported cases Mean smoothed IHME S3"
@@ -604,7 +604,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S01 = TotINFMeRaA03S01 / TotCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S01 "Total infections estim to reported cases Mean S1 IMPE"
@@ -612,7 +612,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S02 = TotINFMeRaA03S02 / TotCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S02 "Total infections estim to reported cases Mean S2 IMPE"
@@ -620,7 +620,7 @@
 {com}. 
 . 
 . gen TotIERMeRaA03S03 = TotINFMeRaA03S03 / TotCasMeRaA00S00
-{txt}(133 missing values generated)
+{txt}(132 missing values generated)
 
 {com}. 
 . label var TotIERMeRaA03S03 "Total infections estim to reported cases Mean S3 IMPE"
@@ -628,7 +628,7 @@
 {com}. 
 . 
 . gen TotCERMeRaA05S00  = TotCasMeRaA05S00 / TotCasMeRaA00S00
-{txt}(785 missing values generated)
+{txt}(784 missing values generated)
 
 {com}. 
 . label var TotCERMeRaA05S00 "Total Cases estim to reported S0 SRIV"
@@ -642,7 +642,8 @@
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal merge.dta", replace
-{txt}file CovidVisualizedGlobal merge.dta saved
+{txt}(note: file CovidVisualizedGlobal merge.dta not found)
+file CovidVisualizedGlobal merge.dta saved
 
 {com}. 
 . 
@@ -750,7 +751,8 @@ now 732
 
 {com}. 
 . export delimited using "CovidVisualizedGlobal merge.csv", replace 
-{res}{txt}file CovidVisualizedGlobal merge.csv saved
+{res}{txt}(note: file CovidVisualizedGlobal merge.csv not found)
+{txt}file CovidVisualizedGlobal merge.csv saved
 
 {com}. 
 . 
@@ -767,8 +769,8 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}           786                          
-{txt} vars:{res}           490                          15 Oct 2021 12:17
-{txt} size:{res}     1,516,194                          
+{txt} vars:{res}           487                          16 Oct 2021 18:59
+{txt} size:{res}     1,539,774                          
 {txt}{hline}
               storage   display    value
 variable name   type    format     label      variable label
@@ -895,22 +897,19 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (lower 95% confidence interval) S1{p_end}
 {p 0 48}reff_upper_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (upper 95% confidence interval) S1{p_end}
-{p 0 48}cumulative_cases_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S1{p_end}
 {p 0 48}cumulative_deaths_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative deaths (raw data with excess mortality scalar applied) S1{p_end}
-{p 0 48}cumulative_hosp_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S1{p_end}
 {p 0 48}daily_deaths_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data with excess mortality scalar applied) S1{p_end}
-{p 0 48}daily_infections_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data){p_end}
+{p 0 48}cumulative_cases_A02S01{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S1{p_end}
 {p 0 48}cumul_deaths_unscaled_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME umulative deaths (raw data without excess mortality scalar applied) S1{p_end}
+{p 0 48}cumulative_hosp_A02S01{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S1{p_end}
 {p 0 48}dai_dea_unscaled_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data without excess mortality scalar applied) S1{p_end}
-{p 0 48}dai_inf_unscaled_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
+{p 0 48}{bind:dai_inf_A02S01 }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
 {p 0 48}{bind:population     }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Population size{p_end}
 {p 0 48}mobility_mean_A02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Percent change in mobility from baseline (mean)  S1{p_end}
@@ -951,11 +950,11 @@ variable name   type    format     label      variable label
 {p 0 48}{bind:DayBEDMeSmA02  }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}IHME Total number of beds that exist at a location{p_end}
 {p 0 48}{bind:DayICUMeSmA02  }{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}IHME Total number of ICU beds that exist at a location{p_end}
 {p 0 48}infection_fatality_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S1{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S1{p_end}
 {p 0 48}infection_detection_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S1{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S1{p_end}
 {p 0 48}infection_hospitalization_A02S01{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S1{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S1{p_end}
 {p 0 48}DayINFMeSmA02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily infections Mean smoothed IHME S2{p_end}
 {p 0 48}DayINFUpSmA02S02{p_end}
@@ -998,22 +997,19 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (lower 95% confidence interval) S2{p_end}
 {p 0 48}reff_upper_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (upper 95% confidence interval) S2{p_end}
-{p 0 48}cumulative_cases_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S2{p_end}
 {p 0 48}cumulative_deaths_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative deaths (raw data with excess mortality scalar applied) S2{p_end}
-{p 0 48}cumulative_hosp_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S2{p_end}
 {p 0 48}daily_deaths_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data with excess mortality scalar applied) S2{p_end}
-{p 0 48}daily_infections_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data){p_end}
+{p 0 48}cumulative_cases_A02S02{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S2{p_end}
 {p 0 48}cumul_deaths_unscaled_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME umulative deaths (raw data without excess mortality scalar applied) S2{p_end}
+{p 0 48}cumulative_hosp_A02S02{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S2{p_end}
 {p 0 48}dai_dea_unscaled_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data without excess mortality scalar applied) S2{p_end}
-{p 0 48}dai_inf_unscaled_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
+{p 0 48}{bind:dai_inf_A02S02 }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
 {p 0 48}mobility_mean_A02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Percent change in mobility from baseline (mean) S2{p_end}
 {p 0 48}mask_use_mean_A02S02{p_end}
@@ -1037,11 +1033,11 @@ variable name   type    format     label      variable label
 {p 0 48}DayAdmLoSmA02S02{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily COVID-19 hospital admissions (mean estimate) S2{p_end}
 {p 0 48}infection_fatality_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S2{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S2{p_end}
 {p 0 48}infection_detection_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S2{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S2{p_end}
 {p 0 48}infection_hospitalization_A02S02{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S2{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S2{p_end}
 {p 0 48}DayINFMeSmA02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily infections Mean smoothed IHME S3{p_end}
 {p 0 48}DayINFUpSmA02S03{p_end}
@@ -1084,22 +1080,19 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (lower 95% confidence interval) S3{p_end}
 {p 0 48}reff_upper_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME R effective (upper 95% confidence interval) S3{p_end}
-{p 0 48}cumulative_cases_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S3{p_end}
 {p 0 48}cumulative_deaths_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative deaths (raw data with excess mortality scalar applied) S3{p_end}
-{p 0 48}cumulative_hosp_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S3{p_end}
 {p 0 48}daily_deaths_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data with excess mortality scalar applied) S3{p_end}
-{p 0 48}daily_infections_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data){p_end}
+{p 0 48}cumulative_cases_A02S03{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative cases (raw data) S3{p_end}
 {p 0 48}cumul_deaths_unscaled_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME umulative deaths (raw data without excess mortality scalar applied) S3{p_end}
+{p 0 48}cumulative_hosp_A02S03{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Cumulative hospitalizations (raw data) S3{p_end}
 {p 0 48}dai_dea_unscaled_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily deaths (raw data without excess mortality scalar applied) S3{p_end}
-{p 0 48}dai_inf_unscaled_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
+{p 0 48}{bind:dai_inf_A02S03 }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily infections (raw data without excess mortality scalar applied){p_end}
 {p 0 48}mobility_mean_A02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Percent change in mobility from baseline (mean) S3{p_end}
 {p 0 48}mask_use_mean_A02S03{p_end}
@@ -1123,11 +1116,11 @@ variable name   type    format     label      variable label
 {p 0 48}DayAdmLoSmA02S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Daily COVID-19 hospital admissions (mean estimate) S3{p_end}
 {p 0 48}infection_fatality_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S3{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection fatality ratio S3{p_end}
 {p 0 48}infection_detection_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S3{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection detection ratio S3{p_end}
 {p 0 48}infection_hospitalization_A02S03{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S3{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}IHME Infection hospitalization ratio S3{p_end}
 {p 0 48}DayDeMMeSmA02S01{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths mean IHME DayDeM{p_end}
 {p 0 48}DayCaMMeSmA02S01{p_end}
@@ -1685,7 +1678,7 @@ variable name   type    format     label      variable label
 {p 0 48}DayDERMeRaA03S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths estim to reported Mean S3 IMPE{p_end}
 {p 0 48}DayDERMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}DayCERMeRaA00S00{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases estim to reported JOHN = 1{p_end}
 {p 0 48}DayCERMeRaA01S00{p_end}
@@ -1703,7 +1696,7 @@ variable name   type    format     label      variable label
 {p 0 48}DayIERMeRaA03S03{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily infections estim to reported cases Mean S3 IMPE{p_end}
 {p 0 48}DayCERMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases estim to reported S0 SRIV{p_end}
 {p 0 48}TotDERMeRaA00S00{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported JOHN = 1{p_end}
 {p 0 48}TotDERMeRaA01S00{p_end}
@@ -1827,6 +1820,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 11a COVID-19 daily deaths, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 11a COVID-19 daily deaths, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 11a COVID-19 daily deaths, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 11a COVID-19 daily deaths, global, reference scenarios, all time.pdf", replace
@@ -1858,6 +1852,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 11b COVID-19 daily deaths, global, reference scenarios, all time with IHME excess deaths.gph", replace
+{txt}(note: file graph 11b COVID-19 daily deaths, global, reference scenarios, all time with IHME excess deaths.gph not found)
 {res}{txt}(file graph 11b COVID-19 daily deaths, global, reference scenarios, all time with IHME excess deaths.gph saved)
 
 {com}. graph export "graph 11b COVID-19 daily deaths, global, reference scenarios, all time with IHME excess deaths.pdf", replace
@@ -1888,6 +1883,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 12a COVID-19 daily deaths, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 12a COVID-19 daily deaths, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 12a COVID-19 daily deaths, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 12a COVID-19 daily deaths, global, reference scenarios, 2021.pdf", replace
@@ -1918,6 +1914,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 12b COVID-19 daily deaths, global, reference scenarios, 2021 with IHME excess deaths.gph", replace
+{txt}(note: file graph 12b COVID-19 daily deaths, global, reference scenarios, 2021 with IHME excess deaths.gph not found)
 {res}{txt}(file graph 12b COVID-19 daily deaths, global, reference scenarios, 2021 with IHME excess deaths.gph saved)
 
 {com}. graph export "graph 12b COVID-19 daily deaths, global, reference scenarios, 2021 with IHME excess deaths.pdf", replace
@@ -1956,6 +1953,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 13 COVID-19 daily deaths, global, reference scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 13 COVID-19 daily deaths, global, reference scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 13 COVID-19 daily deaths, global, reference scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 13 COVID-19 daily deaths, global, reference scenarios, 2021, uncertainty.pdf", replace
@@ -1989,6 +1987,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 14 COVID-19 daily deaths, global, 3 scenarios, 2021.gph", replace
+{txt}(note: file graph 14 COVID-19 daily deaths, global, 3 scenarios, 2021.gph not found)
 {res}{txt}(file graph 14 COVID-19 daily deaths, global, 3 scenarios, 2021.gph saved)
 
 {com}. graph export "graph 14 COVID-19 daily deaths, global, 3 scenarios, 2021.pdf", replace
@@ -2019,6 +2018,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 15 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IHME.gph", replace
+{txt}(note: file graph 15 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IHME.gph not found)
 {res}{txt}(file graph 15 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IHME.gph saved)
 
 {com}. graph export "graph 15 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IHME.pdf", replace
@@ -2050,6 +2050,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 16 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IHME.gph", replace
+{txt}(note: file graph 16 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IHME.gph not found)
 {res}{txt}(file graph 16 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IHME.gph saved)
 
 {com}. graph export "graph 16 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IHME.pdf", replace
@@ -2079,6 +2080,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 17 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IMPE.gph", replace
+{txt}(note: file graph 17 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IMPE.gph not found)
 {res}{txt}(file graph 17 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IMPE.gph saved)
 
 {com}. graph export "graph 17 COVID-19 daily deaths, global, reference scenario, uncertainty, 2021, IMPE.pdf", replace
@@ -2110,6 +2112,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 18 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IMPE.gph", replace
+{txt}(note: file graph 18 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IMPE.gph not found)
 {res}{txt}(file graph 18 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IMPE.gph saved)
 
 {com}. graph export "graph 18 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 2021, IMPE.pdf", replace
@@ -2145,6 +2148,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 21 COVID-19 daily cases, global, reference scenarios.gph", replace
+{txt}(note: file graph 21 COVID-19 daily cases, global, reference scenarios.gph not found)
 {res}{txt}(file graph 21 COVID-19 daily cases, global, reference scenarios.gph saved)
 
 {com}. graph export "graph 21 COVID-19 daily cases, global, reference scenarios.pdf", replace
@@ -2174,6 +2178,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 22 COVID-19 daily cases, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 22 COVID-19 daily cases, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 22 COVID-19 daily cases, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 22 COVID-19 daily cases, global, reference scenarios, 2021.pdf", replace
@@ -2212,6 +2217,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 23 COVID-19 daily cases, global, reference scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 23 COVID-19 daily cases, global, reference scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 23 COVID-19 daily cases, global, reference scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 23 COVID-19 daily cases, global, reference scenarios, 2021, uncertainty.pdf", replace
@@ -2246,6 +2252,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 24 COVID-19 daily cases, global, 3 scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 24 COVID-19 daily cases, global, 3 scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 24 COVID-19 daily cases, global, 3 scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 24 COVID-19 daily cases, global, 3 scenarios, 2021, uncertainty.pdf", replace
@@ -2279,6 +2286,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 31a COVID-19 total deaths, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 31a COVID-19 total deaths, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 31a COVID-19 total deaths, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 31a COVID-19 total deaths, global, reference scenarios, all time.pdf", replace
@@ -2309,6 +2317,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 31b COVID-19 total deaths, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 31b COVID-19 total deaths, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 31b COVID-19 total deaths, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 31b COVID-19 total deaths, global, reference scenarios, all time.pdf", replace
@@ -2339,6 +2348,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 32 COVID-19 total deaths, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 32 COVID-19 total deaths, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 32 COVID-19 total deaths, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 32 COVID-19 total deaths, global, reference scenarios, 2021.pdf", replace
@@ -2376,6 +2386,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 33 COVID-19 total deaths, global, reference scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 33 COVID-19 total deaths, global, reference scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 33 COVID-19 total deaths, global, reference scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 33 COVID-19 total deaths, global, reference scenarios, 2021, uncertainty.pdf", replace
@@ -2412,6 +2423,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 41 COVID-19 total cases, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 41 COVID-19 total cases, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 41 COVID-19 total cases, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 41 COVID-19 total cases, global, reference scenarios, all time.pdf", replace
@@ -2441,6 +2453,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 42 COVID-19 total cases, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 42 COVID-19 total cases, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 42 COVID-19 total cases, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 42 COVID-19 total cases, global, reference scenarios, 2021.pdf", replace
@@ -2479,6 +2492,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 43 COVID-19 total cases, global, reference scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 43 COVID-19 total cases, global, reference scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 43 COVID-19 total cases, global, reference scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 43 COVID-19 total cases, global, reference scenarios, 2021, uncertainty.pdf", replace
@@ -2512,6 +2526,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 51 COVID-19 daily CFR, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 51 COVID-19 daily CFR, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 51 COVID-19 daily CFR, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 51 COVID-19 daily CFR, global, reference scenarios, all time.pdf", replace
@@ -2541,6 +2556,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 52 COVID-19 daily CFR, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 52 COVID-19 daily CFR, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 52 COVID-19 daily CFR, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 52 COVID-19 daily CFR, global, reference scenarios, 2021.pdf", replace
@@ -2575,6 +2591,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 53 COVID-19 daily CFR, global, reference scenarios, reference scenarios, 2021, uncertainty.gph", replace
+{txt}(note: file graph 53 COVID-19 daily CFR, global, reference scenarios, reference scenarios, 2021, uncertainty.gph not found)
 {res}{txt}(file graph 53 COVID-19 daily CFR, global, reference scenarios, reference scenarios, 2021, uncertainty.gph saved)
 
 {com}. graph export "graph 53 COVID-19 daily CFR, global, reference scenarios, reference scenarios, 2021, uncertainty.pdf", replace
@@ -2616,6 +2633,7 @@ Sorted by: {res}date  loc_grand_name
 . * ICU new of IHME retired
 . 
 . graph save "graph 61a COVID-19 hospital-related outcomes.gph", replace
+{txt}(note: file graph 61a COVID-19 hospital-related outcomes.gph not found)
 {res}{txt}(file graph 61a COVID-19 hospital-related outcomes.gph saved)
 
 {com}. graph export "graph 61a COVID-19 hospital-related outcomes.pdf", replace
@@ -2654,6 +2672,7 @@ Sorted by: {res}date  loc_grand_name
 . * ICU new of IHME retired
 . 
 . graph save "graph 61b COVID-19 hospital-related outcomes with bed capcity.gph", replace
+{txt}(note: file graph 61b COVID-19 hospital-related outcomes with bed capcity.gph not found)
 {res}{txt}(file graph 61b COVID-19 hospital-related outcomes with bed capcity.gph saved)
 
 {com}. graph export "graph 61b COVID-19 hospital-related outcomes with bed capcity.pdf", replace
@@ -2684,6 +2703,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 62a COVID-19 hospital-related outcomes, wo extremes.gph", replace
+{txt}(note: file graph 62a COVID-19 hospital-related outcomes, wo extremes.gph not found)
 {res}{txt}(file graph 62a COVID-19 hospital-related outcomes, wo extremes.gph saved)
 
 {com}. graph export "graph 62a COVID-19 hospital-related outcomes, wo extremes.pdf", replace
@@ -2716,6 +2736,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 62b COVID-19 hospital-related outcomes, wo extremes ICU bed capcity.gph", replace
+{txt}(note: file graph 62b COVID-19 hospital-related outcomes, wo extremes ICU bed capcity.gph not found)
 {res}{txt}(file graph 62b COVID-19 hospital-related outcomes, wo extremes ICU bed capcity.gph saved)
 
 {com}. graph export "graph 62b COVID-19 hospital-related outcomes, wo extremes ICU bed capcity.pdf", replace
@@ -2747,6 +2768,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 63 COVID-19 hospital-related outcomes, wo extremes, 2021.gph", replace
+{txt}(note: file graph 63 COVID-19 hospital-related outcomes, wo extremes, 2021.gph not found)
 {res}{txt}(file graph 63 COVID-19 hospital-related outcomes, wo extremes, 2021.gph saved)
 
 {com}. graph export "graph 63 COVID-19 hospital-related outcomes, wo extremes, 2021.pdf", replace
@@ -2781,6 +2803,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 71 COVID-19 daily cases to deaths, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 71 COVID-19 daily cases to deaths, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 71 COVID-19 daily cases to deaths, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 71 COVID-19 daily cases to deaths, global, reference scenarios, all time.pdf", replace
@@ -2810,6 +2833,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 72 COVID-19 daily cases to deaths, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 72 COVID-19 daily cases to deaths, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 72 COVID-19 daily cases to deaths, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 72 COVID-19 daily cases to deaths, global, reference scenarios, 2021.pdf", replace
@@ -2839,6 +2863,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 73 COVID-19 total cases to deaths, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 73 COVID-19 total cases to deaths, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 73 COVID-19 total cases to deaths, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 73 COVID-19 total cases to deaths, global, reference scenarios, all time.pdf", replace
@@ -2868,6 +2893,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 74 COVID-19 total cases to deaths, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 74 COVID-19 total cases to deaths, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 74 COVID-19 total cases to deaths, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 74 COVID-19 total cases to deaths, global, reference scenarios, 2021.pdf", replace
@@ -2905,6 +2931,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 81 COVID-19 daily deaths estimated to reported, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 81 COVID-19 daily deaths estimated to reported, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 81 COVID-19 daily deaths estimated to reported, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 81 COVID-19 daily deaths estimated to reported, global, reference scenarios, all time.pdf", replace
@@ -2933,6 +2960,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 82 COVID-19 daily deaths estimated to reported, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 82 COVID-19 daily deaths estimated to reported, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 82 COVID-19 daily deaths estimated to reported, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 82 COVID-19 daily deaths estimated to reported, global, reference scenarios, 2021.pdf", replace
@@ -2965,6 +2993,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 83 COVID-19 daily cases estimated to reported, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 83 COVID-19 daily cases estimated to reported, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 83 COVID-19 daily cases estimated to reported, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 83 COVID-19 daily cases estimated to reported, global, reference scenarios, all time.pdf", replace
@@ -2994,6 +3023,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 84 COVID-19 daily cases estimated to reported, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 84 COVID-19 daily cases estimated to reported, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 84 COVID-19 daily cases estimated to reported, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 84 COVID-19 daily cases estimated to reported, global, reference scenarios, 2021.pdf", replace
@@ -3022,6 +3052,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 85 COVID-19 total deaths estimated to reported, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 85 COVID-19 total deaths estimated to reported, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 85 COVID-19 total deaths estimated to reported, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 85 COVID-19 total deaths estimated to reported, global, reference scenarios, all time.pdf", replace
@@ -3050,6 +3081,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 86 COVID-19 total deaths estimated to reported, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 86 COVID-19 total deaths estimated to reported, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 86 COVID-19 total deaths estimated to reported, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 86 COVID-19 total deaths estimated to reported, global, reference scenarios, 2021.pdf", replace
@@ -3078,6 +3110,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 87 COVID-19 total cases estimated to reported, global, reference scenarios, all time.gph", replace
+{txt}(note: file graph 87 COVID-19 total cases estimated to reported, global, reference scenarios, all time.gph not found)
 {res}{txt}(file graph 87 COVID-19 total cases estimated to reported, global, reference scenarios, all time.gph saved)
 
 {com}. graph export "graph 87 COVID-19 total cases estimated to reported, global, reference scenarios, all time.pdf", replace
@@ -3107,6 +3140,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 88 COVID-19 total cases estimated to reported, global, reference scenarios, 2021.gph", replace
+{txt}(note: file graph 88 COVID-19 total cases estimated to reported, global, reference scenarios, 2021.gph not found)
 {res}{txt}(file graph 88 COVID-19 total cases estimated to reported, global, reference scenarios, 2021.gph saved)
 
 {com}. graph export "graph 88 COVID-19 total cases estimated to reported, global, reference scenarios, 2021.pdf", replace
@@ -3143,6 +3177,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 91 COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 91 COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 91 COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 91 COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.pdf", replace
@@ -3169,6 +3204,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 92 COVID-19 daily mobility, global, 3 scenarios.gph", replace
+{txt}(note: file graph 92 COVID-19 daily mobility, global, 3 scenarios.gph not found)
 {res}{txt}(file graph 92 COVID-19 daily mobility, global, 3 scenarios.gph saved)
 
 {com}. graph export "graph 92 COVID-19 daily mobility, global, 3 scenarios.pdf", replace
@@ -3197,6 +3233,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 93 COVID-19 daily mask_use, global, 3 scenarios.gph", replace
+{txt}(note: file graph 93 COVID-19 daily mask_use, global, 3 scenarios.gph not found)
 {res}{txt}(file graph 93 COVID-19 daily mask_use, global, 3 scenarios.gph saved)
 
 {com}. graph export "graph 93 COVID-19 daily mask_use, global, 3 scenarios.pdf", replace
@@ -3223,6 +3260,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 94 COVID-19 cumulative vaccinated percent, global, IHME.gph", replace
+{txt}(note: file graph 94 COVID-19 cumulative vaccinated percent, global, IHME.gph not found)
 {res}{txt}(file graph 94 COVID-19 cumulative vaccinated percent, global, IHME.gph saved)
 
 {com}. graph export "graph 94 COVID-19 cumulative vaccinated percent, global, IHME.pdf", replace
@@ -3251,6 +3289,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 95 COVID-19 daily vaccinated percent, global.gph", replace
+{txt}(note: file graph 95 COVID-19 daily vaccinated percent, global.gph not found)
 {res}{txt}(file graph 95 COVID-19 daily vaccinated percent, global.gph saved)
 
 {com}. graph export "graph 95 COVID-19 daily vaccinated percent, global.pdf", replace
@@ -3278,6 +3317,7 @@ Sorted by: {res}date  loc_grand_name
 {res}{txt}
 {com}. 
 . graph save "graph 96 COVID-19 daily vaccinated number, global.gph", replace
+{txt}(note: file graph 96 COVID-19 daily vaccinated number, global.gph not found)
 {res}{txt}(file graph 96 COVID-19 daily vaccinated number, global.gph saved)
 
 {com}. graph export "graph 96 COVID-19 daily vaccinated number, global.pdf", replace
@@ -3300,7 +3340,7 @@ Sorted by: {res}date  loc_grand_name
 {txt}
 {com}. 
 . di c(scheme)
-{res}_GRSTYLE_
+{res}s2color
 {txt}
 {com}. 
 . 
@@ -3311,7 +3351,7 @@ Sorted by: {res}date  loc_grand_name
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211015/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}15 Oct 2021, 12:18:43
+ {txt}closed on:  {res}16 Oct 2021, 19:00:18
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
