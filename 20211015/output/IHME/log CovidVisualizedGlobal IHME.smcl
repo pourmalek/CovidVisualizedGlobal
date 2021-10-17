@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211015/code/IHME/log CovidVisualizedGlobal IHME.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}15 Oct 2021, 12:10:14
+ {txt}opened on:  {res}16 Oct 2021, 18:54:43
 {txt}
 {com}. 
 . ***************************************************************************
@@ -56,20 +56,20 @@
 . 
 . 
 . import delimited using data_download_file_reference_2020.csv, clear varnames(1)
-{res}{text}(61 vars, 124,059 obs)
+{res}{text}(60 vars, 124,612 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(123,727 observations deleted)
+{txt}(124,280 observations deleted)
 
 {com}. save data_download_file_reference_2020.dta, replace
 {txt}file data_download_file_reference_2020.dta saved
 
 {com}. 
 . import delimited using data_download_file_reference_2021.csv, clear varnames(1)
-{res}{text}(61 vars, 140,178 obs)
+{res}{text}(60 vars, 139,812 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(139,812 observations deleted)
+{txt}(139,446 observations deleted)
 
 {com}. save data_download_file_reference_2021.dta, replace
 {txt}file data_download_file_reference_2021.dta saved
@@ -78,20 +78,20 @@
 . 
 .         
 . import delimited using data_download_file_best_masks_2020.csv, clear varnames(1)
-{res}{text}(61 vars, 124,059 obs)
+{res}{text}(60 vars, 124,612 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(123,727 observations deleted)
+{txt}(124,280 observations deleted)
 
 {com}. save data_download_file_best_masks_2020.dta, replace
 {txt}file data_download_file_best_masks_2020.dta saved
 
 {com}. 
 . import delimited using data_download_file_best_masks_2021.csv, clear varnames(1)
-{res}{text}(61 vars, 140,178 obs)
+{res}{text}(60 vars, 139,812 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(139,812 observations deleted)
+{txt}(139,446 observations deleted)
 
 {com}. save data_download_file_best_masks_2021.dta, replace
 {txt}file data_download_file_best_masks_2021.dta saved
@@ -100,20 +100,20 @@
 .         
 .         
 . import delimited using data_download_file_worse_2020.csv, clear varnames(1)
-{res}{text}(61 vars, 124,059 obs)
+{res}{text}(60 vars, 124,612 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(123,727 observations deleted)
+{txt}(124,280 observations deleted)
 
 {com}. save data_download_file_worse_2020.dta, replace
 {txt}file data_download_file_worse_2020.dta saved
 
 {com}. 
 . import delimited using data_download_file_worse_2021.csv, clear varnames(1)
-{res}{text}(61 vars, 140,178 obs)
+{res}{text}(60 vars, 139,812 obs)
 
 {com}. keep if strpos(location_name, "Global")
-{txt}(139,812 observations deleted)
+{txt}(139,446 observations deleted)
 
 {com}. save data_download_file_worse_2021.dta, replace
 {txt}file data_download_file_worse_2021.dta saved
@@ -129,7 +129,7 @@
 . use "data_download_file_reference_2020.dta", clear 
 {txt}
 {com}. 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -155,7 +155,16 @@ reff_lower: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(0 real changes made)
 reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(332 missing values generated)
-{res}{txt}
+{res}infection_fatality contains string
+{txt}(0 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+infection_detection contains string
+{txt}(0 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+infection_hospitalization contains string
+{txt}(0 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}
 {com}. *
 . 
 . save "data_download_file_reference_2020.dta", replace 
@@ -168,7 +177,7 @@ reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}
 {com}. 
 . 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -188,6 +197,9 @@ reff_mean: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(366 missing values generated)
 {res}reff_lower is numeric
 reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
 {txt}
 {com}. *
 . 
@@ -196,7 +208,22 @@ reff_upper is numeric
 
 {com}. 
 . append using "data_download_file_reference_2020.dta"
-{txt}
+{txt}{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
 {com}. 
 . save "data_download_file_reference_2020_21.dta", replace
 {txt}file data_download_file_reference_2020_21.dta saved
@@ -207,7 +234,7 @@ reff_upper is numeric
 . use "data_download_file_best_masks_2020.dta", clear
 {txt}
 {com}. 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -233,7 +260,16 @@ reff_lower: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(0 real changes made)
 reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(332 missing values generated)
-{res}{txt}
+{res}infection_fatality contains string
+{txt}(0 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+infection_detection contains string
+{txt}(0 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+infection_hospitalization contains string
+{txt}(0 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}
 {com}. *
 . 
 . save "data_download_file_best_masks_2020.dta", replace
@@ -245,7 +281,7 @@ reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 . use "data_download_file_best_masks_2021.dta", clear
 {txt}
 {com}. 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -265,6 +301,9 @@ reff_mean: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(366 missing values generated)
 {res}reff_lower is numeric
 reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
 {txt}
 {com}. *
 . 
@@ -273,7 +312,22 @@ reff_upper is numeric
 
 {com}. 
 . append using "data_download_file_best_masks_2020.dta"
-{txt}
+{txt}{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
 {com}. 
 . save "data_download_file_best_masks_2020_21.dta", replace
 {txt}file data_download_file_best_masks_2020_21.dta saved
@@ -284,7 +338,7 @@ reff_upper is numeric
 . use "data_download_file_worse_2020.dta", clear 
 {txt}
 {com}. 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -310,7 +364,16 @@ reff_lower: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(0 real changes made)
 reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(332 missing values generated)
-{res}{txt}
+{res}infection_fatality contains string
+{txt}(0 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+infection_detection contains string
+{txt}(0 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+infection_hospitalization contains string
+{txt}(0 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}
 {com}. *
 . 
 . save "data_download_file_worse_2020.dta", replace 
@@ -322,7 +385,7 @@ reff_upper: all characters numeric; {res}replaced {txt}as {res}byte
 . use "data_download_file_worse_2021.dta", clear 
 {txt}
 {com}. 
-. local varlist reff_mean reff_lower reff_upper
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 {txt}
 {com}. 
 . foreach v of local varlist {c -(}
@@ -342,6 +405,9 @@ reff_mean: all characters numeric; {res}replaced {txt}as {res}byte
 {txt}(366 missing values generated)
 {res}reff_lower is numeric
 reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
 {txt}
 {com}. *
 . 
@@ -350,7 +416,22 @@ reff_upper is numeric
 
 {com}. 
 . append using "data_download_file_worse_2020.dta"
-{txt}
+{txt}{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
 {com}. 
 . save "data_download_file_worse_2020_21.dta", replace
 {txt}file data_download_file_worse_2020_21.dta saved
@@ -655,9 +736,9 @@ reff_upper is numeric
 {com}. label var dai_dea_unscaled_A02S01 "IHME Daily deaths (raw data without excess mortality scalar applied) S1"
 {txt}
 {com}. 
-. rename daily_infections_unscaled dai_inf_unscaled_A02S01
+. rename daily_infections dai_inf_A02S01
 {res}{txt}
-{com}. label var dai_inf_unscaled_A02S01 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{com}. label var dai_inf_A02S01 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 {txt}
 {com}. 
 . 
@@ -942,7 +1023,8 @@ reff_upper is numeric
 {txt}
 {com}. 
 . save "Reference global.dta", replace
-{txt}file Reference global.dta saved
+{txt}(note: file Reference global.dta not found)
+file Reference global.dta saved
 
 {com}. 
 . 
@@ -1132,9 +1214,9 @@ reff_upper is numeric
 {com}. label var dai_dea_unscaled_A02S02 "IHME Daily deaths (raw data without excess mortality scalar applied) S2"
 {txt}
 {com}. 
-. rename daily_infections_unscaled dai_inf_unscaled_A02S02
+. rename daily_infections dai_inf_A02S02
 {res}{txt}
-{com}. label var dai_inf_unscaled_A02S02 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{com}. label var dai_inf_A02S02 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 {txt}
 {com}. 
 . 
@@ -1346,7 +1428,8 @@ reff_upper is numeric
 {com}. 
 . 
 . save "Best global.dta", replace
-{txt}file Best global.dta saved
+{txt}(note: file Best global.dta not found)
+file Best global.dta saved
 
 {com}. 
 . 
@@ -1537,9 +1620,9 @@ reff_upper is numeric
 {com}. label var dai_dea_unscaled_A02S03 "IHME Daily deaths (raw data without excess mortality scalar applied) S3"
 {txt}
 {com}. 
-. rename daily_infections_unscaled dai_inf_unscaled_A02S03
+. rename daily_infections dai_inf_A02S03
 {res}{txt}
-{com}. label var dai_inf_unscaled_A02S03 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{com}. label var dai_inf_A02S03 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 {txt}
 {com}. 
 . 
@@ -1751,7 +1834,8 @@ reff_upper is numeric
 {com}. 
 . 
 . save "Worse global.dta", replace
-{txt}file Worse global.dta saved
+{txt}(note: file Worse global.dta not found)
+file Worse global.dta saved
 
 {com}. 
 . 
@@ -1804,7 +1888,7 @@ reff_upper is numeric
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaMeS~01 {c |}{res}        698    8413.003    3595.125      85.44   16308.17
+DayDeaMeS~01 {c |}{res}        698    8441.485    3588.416      85.06   16359.82
 {txt}
 {com}. gen DayDeMMeSmA02S01 = r(mean)
 {txt}
@@ -1815,7 +1899,7 @@ DayDeaMeS~01 {c |}{res}        698    8413.003    3595.125      85.44   16308.17
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayINFMeS~01 {c |}{res}        698     4839444     2770970   21248.02   1.66e+07
+DayINFMeS~01 {c |}{res}        698     5360916     2941776   22825.83   1.73e+07
 {txt}
 {com}. gen DayCaMMeSmA02S01 = r(mean)
 {txt}
@@ -1830,7 +1914,7 @@ DayINFMeS~01 {c |}{res}        698     4839444     2770970   21248.02   1.66e+07
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayCbDMeS~01 {c |}{res}        698    575.2338           0   575.2338   575.2338
+DayCbDMeS~01 {c |}{res}        698    635.0679           0   635.0679   635.0679
 {txt}
 {com}.                                               
 . gen DayDMuMeSmA02S01 = DayDeaMeSmA02S01 * DayCbDMeSmA02S01
@@ -1841,7 +1925,7 @@ DayCbDMeS~01 {c |}{res}        698    575.2338           0   575.2338   575.2338
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
+DayDMuMeS~01 {c |}{res}        698     5360916     2278888   54018.88   1.04e+07
 {txt}
 {com}. 
 . 
@@ -1919,7 +2003,8 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal IHME.dta", replace
-{txt}file CovidVisualizedGlobal IHME.dta saved
+{txt}(note: file CovidVisualizedGlobal IHME.dta not found)
+file CovidVisualizedGlobal IHME.dta saved
 
 {com}. 
 . 
@@ -1951,6 +2036,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 1a COVID-19 daily reported deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 1a COVID-19 daily reported deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 1a COVID-19 daily reported deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 1a COVID-19 daily reported deaths, reference scenario, global, IHME.pdf", replace
@@ -1971,6 +2057,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 1b COVID-19 daily excess deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 1b COVID-19 daily excess deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 1b COVID-19 daily excess deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 1b COVID-19 daily excess deaths, reference scenario, global, IHME.pdf", replace
@@ -1995,6 +2082,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 1c COVID-19 daily reported & excess deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 1c COVID-19 daily reported & excess deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 1c COVID-19 daily reported & excess deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 1c COVID-19 daily reported & excess deaths, reference scenario, global, IHME.pdf", replace
@@ -2022,6 +2110,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 2a COVID-19 daily reported deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 2a COVID-19 daily reported deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 2a COVID-19 daily reported deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 2a COVID-19 daily reported deaths, global 3 scenarios, IHME.pdf", replace
@@ -2046,6 +2135,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 2b COVID-19 daily excess deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 2b COVID-19 daily excess deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 2b COVID-19 daily excess deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 2b COVID-19 daily excess deaths, global 3 scenarios, IHME.pdf", replace
@@ -2074,6 +2164,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 2c COVID-19 daily reported & excess deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 2c COVID-19 daily reported & excess deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 2c COVID-19 daily reported & excess deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 2c COVID-19 daily reported & excess deaths, global 3 scenarios, IHME.pdf", replace
@@ -2099,6 +2190,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 3 COVID-19 daily deaths, global reference scenario CI, IHME.gph", replace
+{txt}(note: file graph 3 COVID-19 daily deaths, global reference scenario CI, IHME.gph not found)
 {res}{txt}(file graph 3 COVID-19 daily deaths, global reference scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 3 COVID-19 daily deaths, global reference scenario CI, IHME.pdf", replace
@@ -2123,6 +2215,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 4 COVID-19 daily deaths, global best scenario CI, IHME.gph", replace
+{txt}(note: file graph 4 COVID-19 daily deaths, global best scenario CI, IHME.gph not found)
 {res}{txt}(file graph 4 COVID-19 daily deaths, global best scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 4 COVID-19 daily deaths, global best scenario CI, IHME.pdf", replace
@@ -2147,6 +2240,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 5 COVID-19 daily deaths, global worse scenario CI, IHME.gph", replace
+{txt}(note: file graph 5 COVID-19 daily deaths, global worse scenario CI, IHME.gph not found)
 {res}{txt}(file graph 5 COVID-19 daily deaths, global worse scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 5 COVID-19 daily deaths, global worse scenario CI, IHME.pdf", replace
@@ -2171,6 +2265,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 6 COVID-19 daily infections, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 6 COVID-19 daily infections, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 6 COVID-19 daily infections, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 6 COVID-19 daily infections, reference scenario, global, IHME.pdf", replace
@@ -2195,6 +2290,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 7 COVID-19 daily infections, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 7 COVID-19 daily infections, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 7 COVID-19 daily infections, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 7 COVID-19 daily infections, global 3 scenarios, IHME.pdf", replace
@@ -2219,6 +2315,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 8 COVID-19 daily infections, global reference scenario CI, IHME.gph", replace
+{txt}(note: file graph 8 COVID-19 daily infections, global reference scenario CI, IHME.gph not found)
 {res}{txt}(file graph 8 COVID-19 daily infections, global reference scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 8 COVID-19 daily infections, global reference scenario CI, IHME.pdf", replace
@@ -2243,6 +2340,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 9 COVID-19 daily infections, global best scenario CI, IHME.gph", replace
+{txt}(note: file graph 9 COVID-19 daily infections, global best scenario CI, IHME.gph not found)
 {res}{txt}(file graph 9 COVID-19 daily infections, global best scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 9 COVID-19 daily infections, global best scenario CI, IHME.pdf", replace
@@ -2267,6 +2365,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 10 COVID-19 daily infections, global worse scenario CI, IHME.gph", replace
+{txt}(note: file graph 10 COVID-19 daily infections, global worse scenario CI, IHME.gph not found)
 {res}{txt}(file graph 10 COVID-19 daily infections, global worse scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 10 COVID-19 daily infections, global worse scenario CI, IHME.pdf", replace
@@ -2291,6 +2390,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 11a COVID-19 total reported deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 11a COVID-19 total reported deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 11a COVID-19 total reported deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 11a COVID-19 total reported deaths, reference scenario, global, IHME.pdf", replace
@@ -2311,6 +2411,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 11b COVID-19 total excess deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 11b COVID-19 total excess deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 11b COVID-19 total excess deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 11b COVID-19 total excess deaths, reference scenario, global, IHME.pdf", replace
@@ -2335,6 +2436,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 11c COVID-19 total reported & excess deaths, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 11c COVID-19 total reported & excess deaths, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 11c COVID-19 total reported & excess deaths, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 11c COVID-19 total reported & excess deaths, reference scenario, global, IHME.pdf", replace
@@ -2359,6 +2461,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 12a COVID-19 total reported deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 12a COVID-19 total reported deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 12a COVID-19 total reported deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 12a COVID-19 total reported deaths, global 3 scenarios, IHME.pdf", replace
@@ -2383,6 +2486,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 12b COVID-19 total excess deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 12b COVID-19 total excess deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 12b COVID-19 total excess deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 12b COVID-19 total excess deaths, global 3 scenarios, IHME.pdf", replace
@@ -2411,6 +2515,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 12c COVID-19 total reported & excess deaths, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 12c COVID-19 total reported & excess deaths, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 12c COVID-19 total reported & excess deaths, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 12c COVID-19 total reported & excess deaths, global 3 scenarios, IHME.pdf", replace
@@ -2436,6 +2541,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 13 COVID-19 total deaths, global reference scenario CI, IHME.gph", replace
+{txt}(note: file graph 13 COVID-19 total deaths, global reference scenario CI, IHME.gph not found)
 {res}{txt}(file graph 13 COVID-19 total deaths, global reference scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 13 COVID-19 total deaths, global reference scenario CI, IHME.pdf", replace
@@ -2460,6 +2566,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 14 COVID-19 total deaths, global best scenario CI, IHME.gph", replace
+{txt}(note: file graph 14 COVID-19 total deaths, global best scenario CI, IHME.gph not found)
 {res}{txt}(file graph 14 COVID-19 total deaths, global best scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 14 COVID-19 total deaths, global best scenario CI, IHME.pdf", replace
@@ -2484,6 +2591,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 15 COVID-19 total deaths, global worse scenario CI, IHME.gph", replace
+{txt}(note: file graph 15 COVID-19 total deaths, global worse scenario CI, IHME.gph not found)
 {res}{txt}(file graph 15 COVID-19 total deaths, global worse scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 15 COVID-19 total deaths, global worse scenario CI, IHME.pdf", replace
@@ -2508,6 +2616,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 16 COVID-19 total infections, reference scenario, global, IHME.gph", replace
+{txt}(note: file graph 16 COVID-19 total infections, reference scenario, global, IHME.gph not found)
 {res}{txt}(file graph 16 COVID-19 total infections, reference scenario, global, IHME.gph saved)
 
 {com}. graph export "graph 16 COVID-19 total infections, reference scenario, global, IHME.pdf", replace
@@ -2532,6 +2641,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 18 COVID-19 total infections, global reference scenario CI, IHME.gph", replace
+{txt}(note: file graph 18 COVID-19 total infections, global reference scenario CI, IHME.gph not found)
 {res}{txt}(file graph 18 COVID-19 total infections, global reference scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 18 COVID-19 total infections, global reference scenario CI, IHME.pdf", replace
@@ -2556,6 +2666,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 19 COVID-19 total infections, global better scenario CI, IHME.gph", replace
+{txt}(note: file graph 19 COVID-19 total infections, global better scenario CI, IHME.gph not found)
 {res}{txt}(file graph 19 COVID-19 total infections, global better scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 19 COVID-19 total infections, global better scenario CI, IHME.pdf", replace
@@ -2579,6 +2690,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 19 COVID-19 total infections, global worse scenario CI, IHME.gph", replace
+{txt}(note: file graph 19 COVID-19 total infections, global worse scenario CI, IHME.gph not found)
 {res}{txt}(file graph 19 COVID-19 total infections, global worse scenario CI, IHME.gph saved)
 
 {com}. graph export "graph 19 COVID-19 total infections, global worse scenario CI, IHME.pdf", replace
@@ -2610,6 +2722,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 20 COVID-19 total infections, global 3 scenarios CI, IHME.gph", replace
+{txt}(note: file graph 20 COVID-19 total infections, global 3 scenarios CI, IHME.gph not found)
 {res}{txt}(file graph 20 COVID-19 total infections, global 3 scenarios CI, IHME.gph saved)
 
 {com}. graph export "graph 20 COVID-19 total infections, global 3 scenarios CI, IHME.pdf", replace
@@ -2640,6 +2753,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21a COVID-19 daily IFR, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 21a COVID-19 daily IFR, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 21a COVID-19 daily IFR, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 21a COVID-19 daily IFR, global 3 scenarios, IHME.pdf", replace
@@ -2664,6 +2778,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21b COVID-19 daily IDR, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 21b COVID-19 daily IDR, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 21b COVID-19 daily IDR, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 21b COVID-19 daily IDR, global 3 scenarios, IHME.pdf", replace
@@ -2689,6 +2804,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21c COVID-19 daily IHR, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 21c COVID-19 daily IHR, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 21c COVID-19 daily IHR, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 21c COVID-19 daily IHR, global 3 scenarios, IHME.pdf", replace
@@ -2713,6 +2829,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21d COVID-19 daily Infection outcomes ratios, global reference scenario, IHME.gph", replace
+{txt}(note: file graph 21d COVID-19 daily Infection outcomes ratios, global reference scenario, IHME.gph not found)
 {res}{txt}(file graph 21d COVID-19 daily Infection outcomes ratios, global reference scenario, IHME.gph saved)
 
 {com}. graph export "graph 21d COVID-19 daily Infection outcomes ratios, global reference scenario, IHME.pdf", replace
@@ -2736,6 +2853,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21e COVID-19 daily Infection outcomes ratios, global better scenario, IHME.gph", replace
+{txt}(note: file graph 21e COVID-19 daily Infection outcomes ratios, global better scenario, IHME.gph not found)
 {res}{txt}(file graph 21e COVID-19 daily Infection outcomes ratios, global better scenario, IHME.gph saved)
 
 {com}. graph export "graph 21e COVID-19 daily Infection outcomes ratios, global better scenario, IHME.pdf", replace
@@ -2761,6 +2879,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21f COVID-19 daily Infection outcomes ratios, global worse scenario, IHME.gph", replace
+{txt}(note: file graph 21f COVID-19 daily Infection outcomes ratios, global worse scenario, IHME.gph not found)
 {res}{txt}(file graph 21f COVID-19 daily Infection outcomes ratios, global worse scenario, IHME.gph saved)
 
 {com}. graph export "graph 21f COVID-19 daily Infection outcomes ratios, global worse scenario, IHME.pdf", replace
@@ -2794,6 +2913,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 21g COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 21g COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 21g COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 21g COVID-19 daily Infection outcomes ratios, global 3 scenarios, IHME.pdf", replace
@@ -2825,6 +2945,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 22a COVID-19 daily beds needed, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 22a COVID-19 daily beds needed, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 22a COVID-19 daily beds needed, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 22a COVID-19 daily beds needed, global 3 scenarios, IHME.pdf", replace
@@ -2852,6 +2973,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 22b COVID-19 daily beds needed, global 3 scenarios, IHME all_bed_capacity.gph", replace
+{txt}(note: file graph 22b COVID-19 daily beds needed, global 3 scenarios, IHME all_bed_capacity.gph not found)
 {res}{txt}(file graph 22b COVID-19 daily beds needed, global 3 scenarios, IHME all_bed_capacity.gph saved)
 
 {com}. graph export "graph 22b COVID-19 daily beds needed, global 3 scenarios, IHME all_bed_capacity.pdf", replace
@@ -2877,6 +2999,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 23a COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 23a COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 23a COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 23a COVID-19 daily ICU beds needed, global 3 scenarios, IHME.pdf", replace
@@ -2904,6 +3027,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {com}. 
 .            
 . graph save "graph 23b COVID-19 daily ICU beds needed, global 3 scenarios, IHME icu_bed_capacity.gph", replace
+{txt}(note: file graph 23b COVID-19 daily ICU beds needed, global 3 scenarios, IHME icu_bed_capacity.gph not found)
 {res}{txt}(file graph 23b COVID-19 daily ICU beds needed, global 3 scenarios, IHME icu_bed_capacity.gph saved)
 
 {com}. graph export "graph 23b COVID-19 daily ICU beds needed, global 3 scenarios, IHME icu_bed_capacity.pdf", replace
@@ -2929,6 +3053,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}.            
 . graph save "graph 25 COVID-19 daily hospital admissions, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 25 COVID-19 daily hospital admissions, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 25 COVID-19 daily hospital admissions, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 26 COVID-19 daily hospital admissions, global 3 scenarios, IHME.pdf", replace
@@ -2954,6 +3079,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 26 COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph", replace
+{txt}(note: file graph 26 COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph not found)
 {res}{txt}(file graph 26 COVID-19 daily ICU beds needed, global 3 scenarios, IHME.gph saved)
 
 {com}. graph export "graph 26 COVID-19 ICU beds needed, global 3 scenarios, IHME.pdf", replace
@@ -2975,6 +3101,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 29 COVID-19 Tests per 100,000, global, IHME.gph", replace
+{txt}(note: file graph 29 COVID-19 Tests per 100,000, global, IHME.gph not found)
 {res}{txt}(file graph 29 COVID-19 Tests per 100,000, global, IHME.gph saved)
 
 {com}. graph export "graph 29 COVID-19 Tests per 100,000, global, IHME.pdf", replace
@@ -2999,6 +3126,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 31a COVID-19 daily hospital-related outcomes, global reference scenario, IHME.gph", replace
+{txt}(note: file graph 31a COVID-19 daily hospital-related outcomes, global reference scenario, IHME.gph not found)
 {res}{txt}(file graph 31a COVID-19 daily hospital-related outcomes, global reference scenario, IHME.gph saved)
 
 {com}. graph export "graph 31a COVID-19 daily hospital-related outcomes, global reference scenario, IHME.pdf", replace
@@ -3025,6 +3153,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 31b COVID-19 daily hospital-related outcomes, global reference scenario, IHME all_bed_capacity.gph", replace
+{txt}(note: file graph 31b COVID-19 daily hospital-related outcomes, global reference scenario, IHME all_bed_capacity.gph not found)
 {res}{txt}(file graph 31b COVID-19 daily hospital-related outcomes, global reference scenario, IHME all_bed_capacity.gph saved)
 
 {com}. graph export "graph 31b COVID-19 daily hospital-related outcomes, global reference scenario, IHME all_bed_capacity.pdf", replace
@@ -3052,6 +3181,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 32 COVID-19 daily hospital-related outcomes, global reference scenario, IHME, wo beds needed.gph", replace
+{txt}(note: file graph 32 COVID-19 daily hospital-related outcomes, global reference scenario, IHME, wo beds needed.gph not found)
 {res}{txt}(file graph 32 COVID-19 daily hospital-related outcomes, global reference scenario, IHME, wo beds needed.gph saved)
 
 {com}. graph export "graph 32 COVID-19 daily hospital-related outcomes, global reference scenario, IHME, wo beds needed.pdf", replace
@@ -3078,6 +3208,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 33 COVID-19 daily mobility, global, 3 scenarios.gph", replace
+{txt}(note: file graph 33 COVID-19 daily mobility, global, 3 scenarios.gph not found)
 {res}{txt}(file graph 33 COVID-19 daily mobility, global, 3 scenarios.gph saved)
 
 {com}. graph export "graph 33 COVID-19 daily mobility, global, 3 scenarios.pdf", replace
@@ -3104,6 +3235,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 34 COVID-19 daily mask_use, global, 3 scenarios.gph", replace
+{txt}(note: file graph 34 COVID-19 daily mask_use, global, 3 scenarios.gph not found)
 {res}{txt}(file graph 34 COVID-19 daily mask_use, global, 3 scenarios.gph saved)
 
 {com}. graph export "graph 34 COVID-19 daily mask_use, global, 3 scenarios.pdf", replace
@@ -3127,6 +3259,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 35 COVID-19 daily ratio of pneumonia deaths, global.gph", replace
+{txt}(note: file graph 35 COVID-19 daily ratio of pneumonia deaths, global.gph not found)
 {res}{txt}(file graph 35 COVID-19 daily ratio of pneumonia deaths, global.gph saved)
 
 {com}. graph export "graph 35 COVID-19 daily ratio of pneumonia deaths, global.pdf", replace
@@ -3155,6 +3288,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 36 COVID-19 cumulative vaccinated number, global.gph", replace
+{txt}(note: file graph 36 COVID-19 cumulative vaccinated number, global.gph not found)
 {res}{txt}(file graph 36 COVID-19 cumulative vaccinated number, global.gph saved)
 
 {com}. graph export "graph 36 COVID-19 cumulative vaccinated number, global.pdf", replace
@@ -3182,6 +3316,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 36b COVID-19 daily vaccinated number, global.gph", replace
+{txt}(note: file graph 36b COVID-19 daily vaccinated number, global.gph not found)
 {res}{txt}(file graph 36b COVID-19 daily vaccinated number, global.gph saved)
 
 {com}. graph export "graph 36b COVID-19 daily vaccinated number, global.pdf", replace
@@ -3210,6 +3345,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 37 COVID-19 cumulative vaccinated percent, global.gph", replace
+{txt}(note: file graph 37 COVID-19 cumulative vaccinated percent, global.gph not found)
 {res}{txt}(file graph 37 COVID-19 cumulative vaccinated percent, global.gph saved)
 
 {com}. graph export "graph 37 COVID-19 cumulative vaccinated percent, global.pdf", replace
@@ -3238,6 +3374,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 37b COVID-19 daily vaccinated percent, global.gph", replace
+{txt}(note: file graph 37b COVID-19 daily vaccinated percent, global.gph not found)
 {res}{txt}(file graph 37b COVID-19 daily vaccinated percent, global.gph saved)
 
 {com}. graph export "graph 37b COVID-19 daily vaccinated percent, global.pdf", replace
@@ -3266,6 +3403,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
 {res}{txt}
 {com}. 
 . graph save "graph 45 COVID-19 daily deaths and infections global, IHME.gph", replace
+{txt}(note: file graph 45 COVID-19 daily deaths and infections global, IHME.gph not found)
 {res}{txt}(file graph 45 COVID-19 daily deaths and infections global, IHME.gph saved)
 
 {com}. qui graph export "graph 45 COVID-19 daily deaths and infections global, IHME.pdf", replace
@@ -3283,7 +3421,7 @@ DayDMuMeS~01 {c |}{res}        698     4839444     2068037   49147.98    9381011
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211015/code/IHME/log CovidVisualizedGlobal IHME.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}15 Oct 2021, 12:16:06
+ {txt}closed on:  {res}16 Oct 2021, 18:57:45
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
