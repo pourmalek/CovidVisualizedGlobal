@@ -85,7 +85,7 @@ save data_download_file_worse_2021.dta, replace
 
 use "data_download_file_reference_2020.dta", clear 
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -107,7 +107,7 @@ save "data_download_file_reference_2020.dta", replace
 use "data_download_file_reference_2021.dta", clear 
 
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -132,7 +132,7 @@ save "data_download_file_reference_2020_21.dta", replace
 
 use "data_download_file_best_masks_2020.dta", clear
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -153,7 +153,7 @@ save "data_download_file_best_masks_2020.dta", replace
 
 use "data_download_file_best_masks_2021.dta", clear
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -178,7 +178,7 @@ save "data_download_file_best_masks_2020_21.dta", replace
 
 use "data_download_file_worse_2020.dta", clear 
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -199,7 +199,7 @@ save "data_download_file_worse_2020.dta", replace
 
 use "data_download_file_worse_2021.dta", clear 
 
-local varlist reff_mean reff_lower reff_upper
+local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
 
 foreach v of local varlist {
 	capture confirm numeric variable `v'
@@ -436,8 +436,8 @@ label var daily_infections_A02S01 "IHME Daily infections (raw data)"
 label var cumul_deaths_unscaled_A02S01 "IHME umulative deaths (raw data without excess mortality scalar applied) S1"
 label var dai_dea_unscaled_A02S01 "IHME Daily deaths (raw data without excess mortality scalar applied) S1"
 
-rename daily_infections_unscaled dai_inf_unscaled_A02S01
-label var dai_inf_unscaled_A02S01 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+rename daily_infections dai_inf_A02S01
+label var dai_inf_A02S01 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 
 
 
@@ -752,8 +752,8 @@ label var daily_infections_A02S02 "IHME Daily infections (raw data)"
 label var cumul_deaths_unscaled_A02S02 "IHME umulative deaths (raw data without excess mortality scalar applied) S2"
 label var dai_dea_unscaled_A02S02 "IHME Daily deaths (raw data without excess mortality scalar applied) S2"
 
-rename daily_infections_unscaled dai_inf_unscaled_A02S02
-label var dai_inf_unscaled_A02S02 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+rename daily_infections dai_inf_A02S02
+label var dai_inf_A02S02 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 
 
 
@@ -996,8 +996,8 @@ label var daily_infections_A02S03 "IHME Daily infections (raw data)"
 label var cumul_deaths_unscaled_A02S03 "IHME umulative deaths (raw data without excess mortality scalar applied) S3"
 label var dai_dea_unscaled_A02S03 "IHME Daily deaths (raw data without excess mortality scalar applied) S3"
 
-rename daily_infections_unscaled dai_inf_unscaled_A02S03
-label var dai_inf_unscaled_A02S03 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+rename daily_infections dai_inf_A02S03
+label var dai_inf_A02S03 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
 
 
 
