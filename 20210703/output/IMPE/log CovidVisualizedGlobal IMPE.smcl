@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210703/code/IMPE/log CovidVisualizedGlobal IMPE.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 3 Jul 2021, 19:51:20
+ {txt}opened on:  {res}19 Oct 2021, 19:33:39
 {txt}
 {com}. 
 . ***************************************************************************
@@ -28,7 +28,7 @@
 . 
 . * get IMPE estimates
 . 
-. copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-06-18_v8.csv.zip 2021-06-18_v8.csv.zip
+. copy https://mrcdata.dide.ic.ac.uk/global-lmic-reports/2021-06-18_v8.csv.zip 2021-06-18_v8.csv.zip
 {txt}
 {com}. unzipfile 2021-06-18_v8.csv.zip, replace
 {res}{txt}    inflating: 2021-06-18_v8.csv
@@ -2011,7 +2011,7 @@ file CovidVisualizedGlobal IMPE.dta saved
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210703/code/IMPE/log CovidVisualizedGlobal IMPE.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 3 Jul 2021, 19:55:06
+ {txt}closed on:  {res}19 Oct 2021, 19:38:56
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
