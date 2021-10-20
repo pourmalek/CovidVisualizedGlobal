@@ -1,9 +1,9 @@
 {smcl}
-{com}{sf}{ul off}{txt}{.-}
+{txt}{sf}{ul off}{.-}
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210709/code/IMPE/log CovidVisualizedGlobal IMPE.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 9 Jul 2021, 19:44:07
+ {txt}opened on:  {res}20 Oct 2021, 06:53:55
 {txt}
 {com}. 
 . ***************************************************************************
@@ -28,7 +28,7 @@
 . 
 . * get IMPE estimates
 . 
-. copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-07-02_v8.csv.zip 2021-07-02_v8.csv.zip
+. copy https://mrcdata.dide.ic.ac.uk/global-lmic-reports/2021-07-02_v8.csv.zip 2021-07-02_v8.csv.zip
 {txt}
 {com}. unzipfile 2021-07-02_v8.csv.zip, replace
 {res}{txt}    inflating: 2021-07-02_v8.csv
@@ -1358,6 +1358,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 1 COVID-19 daily deaths, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 1 COVID-19 daily deaths, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 1 COVID-19 daily deaths, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 1 COVID-19 daily deaths, 6 scenarios, global, IMPE.pdf", replace
@@ -1380,6 +1381,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 2 COVID-19 daily deaths, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 2 COVID-19 daily deaths, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 2 COVID-19 daily deaths, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 2 COVID-19 daily deaths, median scenario, global, IMPE.pdf", replace
@@ -1407,6 +1409,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 3 COVID-19 total deaths, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 3 COVID-19 total deaths, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 3 COVID-19 total deaths, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 3 COVID-19 total deaths, 6 scenarios, global, IMPE.pdf", replace
@@ -1429,6 +1432,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 4 COVID-19 total deaths, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 4 COVID-19 total deaths, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 4 COVID-19 total deaths, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 4 COVID-19 total deaths, median scenario, global, IMPE.pdf", replace
@@ -1456,6 +1460,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 5 COVID-19 daily infections, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 5 COVID-19 daily infections, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 5 COVID-19 daily infections, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 5 COVID-19 daily infections, 6 scenarios, global, IMPE.pdf", replace
@@ -1478,6 +1483,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 6 COVID-19 daily infections, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 6 COVID-19 daily infections, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 6 COVID-19 daily infections, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 6 COVID-19 daily infections, median scenario, global, IMPE.pdf", replace
@@ -1505,6 +1511,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 7 COVID-19 total infections, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 7 COVID-19 total infections, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 7 COVID-19 total infections, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 7 COVID-19 total infections, 6 scenarios, global, IMPE.pdf", replace
@@ -1527,6 +1534,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 8 COVID-19 total infections, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 8 COVID-19 total infections, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 8 COVID-19 total infections, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 8 COVID-19 total infections, median scenario, global, IMPE.pdf", replace
@@ -1554,6 +1562,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 9 COVID-19 daily IFR, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 9 COVID-19 daily IFR, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 9 COVID-19 daily IFR, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 9 COVID-19 daily IFR, 6 scenarios, global, IMPE.pdf", replace
@@ -1576,6 +1585,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 10 COVID-19 daily IFR, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 10 COVID-19 daily IFR, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 10 COVID-19 daily IFR, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 10 COVID-19 daily IFR, median scenario, global, IMPE.pdf", replace
@@ -1601,6 +1611,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 11 COVID-19 daily hospital demand, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 11 COVID-19 daily hospital demand, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 11 COVID-19 daily hospital demand, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 11 COVID-19 daily hospital demand, median scenario, global, IMPE.pdf", replace
@@ -1628,6 +1639,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 12 COVID-19 daily hospital demand, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 12 COVID-19 daily hospital demand, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 12 COVID-19 daily hospital demand, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 12 COVID-19 daily hospital demand, 6 scenarios, global, IMPE.pdf", replace
@@ -1650,6 +1662,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 13 COVID-19 daily hospital incidence, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 13 COVID-19 daily hospital incidence, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 13 COVID-19 daily hospital incidence, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 13 COVID-19 daily hospital incidence, median scenario, global, IMPE.pdf", replace
@@ -1677,6 +1690,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 14 COVID-19 daily hospital incidence, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 14 COVID-19 daily hospital incidence, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 14 COVID-19 daily hospital incidence, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 14 COVID-19 daily hospital incidence, 6 scenarios, global, IMPE.pdf", replace
@@ -1699,6 +1713,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 15 COVID-19 daily ICU demand, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 15 COVID-19 daily ICU demand, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 15 COVID-19 daily ICU demand, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 15 COVID-19 daily ICU demand, median scenario, global, IMPE.pdf", replace
@@ -1726,6 +1741,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 16 COVID-19 daily ICU demand, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 16 COVID-19 daily ICU demand, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 16 COVID-19 daily ICU demand, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 16 COVID-19 daily ICU demand, 6 scenarios, global, IMPE.pdf", replace
@@ -1748,6 +1764,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 17 COVID-19 daily ICU incidence, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 17 COVID-19 daily ICU incidence, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 17 COVID-19 daily ICU incidence, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 17 COVID-19 daily ICU incidence, median scenario, global, IMPE.pdf", replace
@@ -1775,6 +1792,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 18 COVID-19 daily ICU incidence, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 18 COVID-19 daily ICU incidence, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 18 COVID-19 daily ICU incidence, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 18 COVID-19 daily ICU incidence, 6 scenarios, global, IMPE.pdf", replace
@@ -1798,6 +1816,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 19 COVID-19 daily R effective, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 19 COVID-19 daily R effective, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 19 COVID-19 daily R effective, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 19 COVID-19 daily R effective, median scenario, global, IMPE.pdf", replace
@@ -1825,6 +1844,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 20 COVID-19 daily R effective, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 20 COVID-19 daily R effective, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 20 COVID-19 daily R effective, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 20 COVID-19 daily R effective, 6 scenarios, global, IMPE.pdf", replace
@@ -1847,6 +1867,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 21 COVID-19 daily R t, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 21 COVID-19 daily R t, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 21 COVID-19 daily R t, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 21 COVID-19 daily R t, median scenario, global, IMPE.pdf", replace
@@ -1874,6 +1895,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 22 COVID-19 daily R t, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 22 COVID-19 daily R t, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 22 COVID-19 daily R t, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 22 COVID-19 daily R t, 6 scenarios, global, IMPE.pdf", replace
@@ -1896,6 +1918,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}. 
 . graph save "graph 23 COVID-19 daily prevalence, median scenario, global, IMPE.gph", replace
+{txt}(note: file graph 23 COVID-19 daily prevalence, median scenario, global, IMPE.gph not found)
 {res}{txt}(file graph 23 COVID-19 daily prevalence, median scenario, global, IMPE.gph saved)
 
 {com}. graph export "graph 23 COVID-19 daily prevalence, median scenario, global, IMPE.pdf", replace
@@ -1923,6 +1946,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {res}{txt}
 {com}.            
 . graph save "graph 24 COVID-19 daily prevalence, 6 scenarios, global, IMPE.gph", replace
+{txt}(note: file graph 24 COVID-19 daily prevalence, 6 scenarios, global, IMPE.gph not found)
 {res}{txt}(file graph 24 COVID-19 daily prevalence, 6 scenarios, global, IMPE.gph saved)
 
 {com}. graph export "graph 24 COVID-19 daily prevalence, 6 scenarios, global, IMPE.pdf", replace
@@ -1972,7 +1996,8 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal IMPE.dta", replace
-{txt}file CovidVisualizedGlobal IMPE.dta saved
+{txt}(note: file CovidVisualizedGlobal IMPE.dta not found)
+file CovidVisualizedGlobal IMPE.dta saved
 
 {com}. 
 . 
@@ -1986,7 +2011,7 @@ DayDMuMeR~02 {c |}{res}        670     2403239     1392095          0    4925520
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210709/code/IMPE/log CovidVisualizedGlobal IMPE.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 9 Jul 2021, 19:48:40
+ {txt}closed on:  {res}20 Oct 2021, 06:59:43
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
