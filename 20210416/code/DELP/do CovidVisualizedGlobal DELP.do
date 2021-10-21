@@ -20,15 +20,15 @@ log using "log CovidVisualizedGlobal DELP.smcl", replace
 
 
                                                                                                          ***************************
-* To change update date, find and replace all, 20210416 (old), with 20210416 (new) <<--           <<<--- * change update date here *
+* To change update date, find and replace all, 20210415 (old), with 20210415 (new) <<--           <<<--- * change update date here *
                                                                                                          ***************************
 
 
 clear
 
-copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_20210416.csv Global_V4_20210416.csv
+copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_20210415.csv Global_V4_20210415.csv
 
-import delimited using "Global_V4_20210416.csv", clear varnames(1)
+import delimited using "Global_V4_20210415.csv", clear varnames(1)
 
 rename country loc_grand_name
 
