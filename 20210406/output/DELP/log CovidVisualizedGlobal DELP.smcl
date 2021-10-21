@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210406/code/DELP/log CovidVisualizedGlobal DELP.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 4 Jul 2021, 16:41:31
+ {txt}opened on:  {res}20 Oct 2021, 19:07:13
 {txt}
 {com}. 
 . ***************************************************************************
@@ -17,29 +17,29 @@
 . 
 . 
 .                                                                                                          ***************************
-. * To change update date, find and replace all, 20210406 (old), with 20210406 (new) <<--           <<<--- * change update date here *
+. * To change update date, find and replace all, 20210401 (old), with 20210401 (new) <<--           <<<--- * change update date here *
 .                                                                                                          ***************************
 . 
 . 
 . clear
 {txt}
 {com}. 
-. copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_20210406.csv Global_V4_20210406.csv
+. copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_20210401.csv Global_V4_20210401.csv
 {txt}
 {com}. 
-. import delimited using "Global_V4_20210406.csv", clear varnames(1)
-{res}{text}(16 vars, 9,600 obs)
+. import delimited using "Global_V4_20210401.csv", clear varnames(1)
+{res}{text}(16 vars, 10,800 obs)
 
 {com}. 
 . rename country loc_grand_name
 {res}{txt}
 {com}. 
 . keep if continent == "None"
-{txt}(9,560 observations deleted)
+{txt}(10,755 observations deleted)
 
 {com}. 
 . replace loc_grand_name = "global"
-{txt}(40 real changes made)
+{txt}(45 real changes made)
 
 {com}. 
 . 
@@ -68,16 +68,16 @@
 
 {col 19}type:  numeric daily date ({res}float{txt})
 
-{col 18}range:  [{res}22376{txt},{res}22415{txt}]{col 55}units:  {res}1
-{col 8}{txt}or equivalently:  [{res}06apr2021{txt},{res}15may2021{txt}]{col 55}units:  {res}days
-{col 10}{txt}unique values:  {res}40{col 51}{txt}missing .:  {res}0{txt}/{res}40
+{col 18}range:  [{res}22371{txt},{res}22415{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}01apr2021{txt},{res}15may2021{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}45{col 51}{txt}missing .:  {res}0{txt}/{res}45
 
-{txt}{col 19}mean:{res}{col 26} 22395.5{txt} = {res}25apr2021{txt} (+ 12 hours)
-{col 15}std. dev:{res}{col 26} 11.6905
+{txt}{col 19}mean:{res}{col 26}   22393{txt} = {res}23apr2021{txt}
+{col 15}std. dev:{res}{col 26} 13.1339
 
 {txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
-{res}{col 27} 22379.5{col 37} 22385.5{col 47} 22395.5{col 57} 22405.5{col 67} 22411.5
-{col 26}09apr2021{col 36}15apr2021{col 46}25apr2021{col 56}05may2021{col 66}11may2021
+{res}{col 27}   22375{col 37}   22382{col 47}   22393{col 57}   22404{col 67}   22411
+{col 26}05apr2021{col 36}12apr2021{col 46}23apr2021{col 56}04may2021{col 66}11may2021
 {txt}
 {com}. 
 . drop year month day date2
@@ -251,7 +251,7 @@
 {txt}(1 missing value generated)
 
 {com}. gen DayCfrLoRaA01S00 = 100 * DayDeaLoRaA01S00 / DayCasLoRaA01S00
-{txt}(14 missing values generated)
+{txt}(9 missing values generated)
 
 {com}. gen DayCfrUpRaA01S00 = 100 * DayDeaUpRaA01S00 / DayCasUpRaA01S00
 {txt}(1 missing value generated)
@@ -280,7 +280,7 @@
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDeaMeR~00 {c |}{res}         39    6783.128    1503.986       4240       8962
+DayDeaMeR~00 {c |}{res}         44    6564.182    1486.746       4049       8703
 {txt}
 {com}. gen DayDeMMeRaA01S00 = r(mean)
 {txt}
@@ -291,7 +291,7 @@ DayDeaMeR~00 {c |}{res}         39    6783.128    1503.986       4240       8962
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayCasMeR~00 {c |}{res}         39    379982.9    122669.8     194996     579487
+DayCasMeR~00 {c |}{res}         44    376562.6    114335.4     200217     551875
 {txt}
 {com}. gen DayCaMMeRaA01S00 = r(mean)
 {txt}
@@ -307,7 +307,7 @@ DayCasMeR~00 {c |}{res}         39    379982.9    122669.8     194996     579487
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayCbDMeR~00 {c |}{res}         39    59.03049    14.20685   42.39935   89.61861
+DayCbDMeR~00 {c |}{res}         44    60.61293    14.95862   43.26814   93.00138
 {txt}
 {com}.         
 . gen DayDMuMeRaA01S00 = DayDeaMeRaA01S00 * DayCbDMeRaA01S00
@@ -319,7 +319,7 @@ DayCbDMeR~00 {c |}{res}         39    59.03049    14.20685   42.39935   89.61861
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
+DayDMuMeR~00 {c |}{res}         44    376562.6    .0065846   376562.6   376562.6
 {txt}
 {com}. 
 . 
@@ -350,6 +350,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}.            
 . graph save "graph 1 COVID-19 daily deaths, global, DELP wo CI.gph", replace
+{txt}(note: file graph 1 COVID-19 daily deaths, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 1 COVID-19 daily deaths, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 1 COVID-19 daily deaths, global, DELP wo CI.pdf", replace
@@ -372,6 +373,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}.            
 . graph save "graph 2 COVID-19 daily deaths, global, DELP with CI.gph", replace
+{txt}(note: file graph 2 COVID-19 daily deaths, global, DELP with CI.gph not found)
 {res}{txt}(file graph 2 COVID-19 daily deaths, global, DELP with CI.gph saved)
 
 {com}. graph export "graph 2 COVID-19 daily deaths, global, DELP with CI.pdf", replace
@@ -393,6 +395,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 3 COVID-19 total deaths, global, DELP wo CI.gph", replace
+{txt}(note: file graph 3 COVID-19 total deaths, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 3 COVID-19 total deaths, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 3 COVID-19 total deaths, global, DELP wo CI.pdf", replace
@@ -415,6 +418,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}.         
 . graph save "graph 4 COVID-19 total deaths, global, DELP with CI.gph", replace
+{txt}(note: file graph 4 COVID-19 total deaths, global, DELP with CI.gph not found)
 {res}{txt}(file graph 4 COVID-19 total deaths, global, DELP with CI.gph saved)
 
 {com}. graph export "graph 4 COVID-19 total deaths, global, DELP with CI.pdf", replace
@@ -436,6 +440,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 5 COVID-19 daily cases, global, DELP wo CI.gph", replace
+{txt}(note: file graph 5 COVID-19 daily cases, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 5 COVID-19 daily cases, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 5 COVID-19 daily cases, global, DELP wo CI.pdf", replace
@@ -458,6 +463,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 6 COVID-19 daily cases, global, DELP with CI.gph", replace
+{txt}(note: file graph 6 COVID-19 daily cases, global, DELP with CI.gph not found)
 {res}{txt}(file graph 6 COVID-19 daily cases, global, DELP with CI.gph saved)
 
 {com}. graph export "graph 6 COVID-19 daily cases, global, DELP with CI.pdf", replace
@@ -479,6 +485,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 7 COVID-19 total cases, global, DELP wo CI.gph", replace
+{txt}(note: file graph 7 COVID-19 total cases, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 7 COVID-19 total cases, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 7 COVID-19 total cases, global, DELP wo CI.pdf", replace
@@ -501,6 +508,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}.         
 . graph save "graph 8 COVID-19 total cases, global, DELP with CI.gph", replace
+{txt}(note: file graph 8 COVID-19 total cases, global, DELP with CI.gph not found)
 {res}{txt}(file graph 8 COVID-19 total cases, global, DELP with CI.gph saved)
 
 {com}. graph export "graph 8 COVID-19 total cases, global, DELP with CI.pdf", replace
@@ -522,6 +530,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 9 COVID-19 daily CFR, global, DELP.gph", replace
+{txt}(note: file graph 9 COVID-19 daily CFR, global, DELP.gph not found)
 {res}{txt}(file graph 9 COVID-19 daily CFR, global, DELP.gph saved)
 
 {com}. graph export "graph 9 COVID-19 daily CFR, global, DELP.pdf", replace
@@ -547,6 +556,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}.            
 . graph save "graph 10 COVID-19 daily cases etc, global, DELP wo CI.gph", replace
+{txt}(note: file graph 10 COVID-19 daily cases etc, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 10 COVID-19 daily cases etc, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 10 COVID-19 daily cases etc, global, DELP wo CI.pdf", replace
@@ -571,6 +581,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 11 COVID-19 daily cases etc, global, DELP wo CI.gph", replace
+{txt}(note: file graph 11 COVID-19 daily cases etc, global, DELP wo CI.gph not found)
 {res}{txt}(file graph 11 COVID-19 daily cases etc, global, DELP wo CI.gph saved)
 
 {com}. graph export "graph 11 COVID-19 daily cases etc, global, DELP wo CI.pdf", replace
@@ -597,6 +608,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {res}{txt}
 {com}. 
 . graph save "graph 12 COVID-19 daily deaths and cases global, DELP.gph", replace
+{txt}(note: file graph 12 COVID-19 daily deaths and cases global, DELP.gph not found)
 {res}{txt}(file graph 12 COVID-19 daily deaths and cases global, DELP.gph saved)
 
 {com}. graph export "graph 12 COVID-19 daily deaths and cases global, DELP.pdf", replace
@@ -614,7 +626,8 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal DELP.dta", replace
-{txt}file CovidVisualizedGlobal DELP.dta saved
+{txt}(note: file CovidVisualizedGlobal DELP.dta not found)
+file CovidVisualizedGlobal DELP.dta saved
 
 {com}. 
 . 
@@ -628,7 +641,7 @@ DayDMuMeR~00 {c |}{res}         39    379982.9    .0096048   379982.9     379983
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210406/code/DELP/log CovidVisualizedGlobal DELP.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 4 Jul 2021, 16:41:44
+ {txt}closed on:  {res}20 Oct 2021, 19:07:25
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
