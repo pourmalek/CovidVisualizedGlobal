@@ -54,6 +54,12 @@
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2011a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -447,6 +453,12 @@
 
 
   
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
 *
 
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
@@ -843,6 +855,12 @@
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (2b) [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2012b%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
@@ -921,6 +939,12 @@
   
   
   
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
 *
 
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
@@ -1308,6 +1332,12 @@
 
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 ![image](https://user-images.githubusercontent.com/30849720/137607859-b5b794b5-d360-45ca-b3f9-6202f80d310f.png)
@@ -1451,6 +1481,12 @@ uptake 20211008 and uptake 20211001 both use IHME 20211001.
 
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
@@ -1579,6 +1615,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 ### (4) Daily cases or infections, reference scenarios, all time
   
   
+
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
 
 *
 
@@ -1974,6 +2016,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2022%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
@@ -2355,6 +2403,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 ### (6) Daily cases or infections, 3 scenarios, 2011
   
   
+
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
 
 *
 
@@ -2747,6 +2801,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 ### (7) Hospital-related outcomes, all time
   
   
+
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
 
 *
 
@@ -3143,6 +3203,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
@@ -3219,6 +3285,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
   
   
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
 *
 
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
@@ -3612,6 +3684,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
@@ -4003,6 +4081,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211015/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
@@ -4389,6 +4473,12 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 ![image](https://user-images.githubusercontent.com/30849720/137608895-10aef803-5e1f-4507-a24d-264549b1cbed.png)
@@ -4456,6 +4546,12 @@ uptake 20210920 and uptake 20210916 both use IHME 20210916.
 
   
   
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
 *
 
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
@@ -4528,6 +4624,12 @@ uptake 20210920 and uptake 20210916 both use IHME 20210916.
   
 *
 
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
+*
+
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
 
 ![image](https://user-images.githubusercontent.com/30849720/137608936-7084211b-695f-4f23-8d35-34b31744feec.png)
@@ -4592,6 +4694,12 @@ uptake 20210920 and uptake 20210916 both use IHME 20210916.
 
   
   
+*
+
+**uptake 20211022**: **_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+
+
+
 *
 
 **uptake 20211015**: **_DELP 20211015_**, **_IHME 20211015_**, **_IMPE 20211006_**, **_SRIV 20211015_**
