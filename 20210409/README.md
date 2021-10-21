@@ -1,6 +1,6 @@
 ### Study update dates in uptake 20210409
 
-DELP 20210409, IHME 20210409, **_IMPE 20210406_**, LANL 20210407, SRIV 20210409
+DELP 20210408, IHME 20210409, **_IMPE 20210406_**, LANL 20210407, SRIV 20210409
 
 DELP 20210409 used to be accessible on https://github.com/COVIDAnalytics/website/tree/master/data/predicted but is not available on 20211020. As such, closet available DELP update, that is DELP 20210408 is used here.
 
