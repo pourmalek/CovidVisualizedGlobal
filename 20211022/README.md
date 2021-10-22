@@ -78,7 +78,7 @@ DELP and SRIV models have started falling behind their daily update release sche
 
 ****
 
-### (6b) [Daily cases, 2021]()
+### (6b) [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2022b%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
 .
 
