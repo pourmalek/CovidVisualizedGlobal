@@ -8,11 +8,6 @@
 
 DELP and SRIV models have started falling behind their daily update release schedules. On 20211022, latest DELP update is not 20211022, but is 20211019. On 20211022, latest SRIV update is not 20211022, but is 20211017 for the global level. On 20211022, DELP has update 20211022, but it does not contain update for the global level. 
 
-<br/><br/>
-
-IMPE update 20211006 (2021-10-06_v8.csv.zip) was released on 20211013.
-
-The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 
 <br/><br/>
 
