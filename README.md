@@ -176,6 +176,8 @@ The codes in these repositories can be adapted for use for any country or region
 (5) [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#5-daily-cases-or-infections-reference-scenarios-2021)
 
 (6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#6-daily-cases-or-infections-3-scenarios-2021)
+  
+(6b) [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#6b-daily-cases-2021)  
 
 (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#7-hospital-related-outcomes-all-time)
 
