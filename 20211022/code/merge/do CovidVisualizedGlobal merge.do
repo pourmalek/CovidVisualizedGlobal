@@ -853,6 +853,28 @@ graph export "graph 22 COVID-19 daily cases, global, reference scenarios, 2021.p
 
 
 ****
+* daily cases, reference scenarios, 2021
+
+twoway ///
+(line DayCasMeRaA00S00 date, sort lcolor(cyan) lwidth(medium)) /// 1 "JOHN"
+(line DayCasMeSmA00S00 date, sort lcolor(cyan*1.2) lwidth(vthick)) /// 2 "JOHN"
+(line DayCasMeRaA01S00 date, sort lcolor(red)) /// 2 "DELP"
+(line DayCasMeRaA05S00 date, sort lcolor(green)) /// 5 "SRIV"
+if date >= td(01jan2021) ///
+, xtitle(Date) xlabel(#$ytickn2021, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, global, reference scenarios", size(medium)) /// 
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "JOHN cases raw" 2 "JOHN cases smooth" 3 "DELP cases" 4 "SRIV cases") size(small) row(2)) ///
+subtitle("after 2021-01-01", size(small)) 
+
+graph save "graph 22b COVID-19 daily cases, global, reference scenarios, 2021.gph", replace
+graph export "graph 22b COVID-19 daily cases, global, reference scenarios, 2021.pdf", replace
+
+
+
+
+****
 * daily cases or infections, reference scenario, 2021, uncertainty 
 
 twoway ///
