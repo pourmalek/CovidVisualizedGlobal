@@ -122,11 +122,13 @@ DELP and SRIV models have started falling behind their daily update release sche
 
 ### (13) [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138507669-71cd6ad6-bb3d-43ee-932d-982128d23fc8.png)
 
 ****
 
 ### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138507782-08390cec-2e6b-4be3-96e1-a5ef075ace83.png)
 
 ****
 
