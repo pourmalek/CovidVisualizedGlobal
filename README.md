@@ -1,6 +1,6 @@
 # CovidVisualizedGlobal 
 
-## ! If you are in a rush, look at the graphs in the [_latest Situation report_](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/12%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2012%20–%202021-10-22.pdf).
+## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/12%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2012%20–%202021-10-22.pdf).
 
 For a streamlined view of this repository, see: https://pourmalek.github.io/CovidVisualizedGlobal/
 
