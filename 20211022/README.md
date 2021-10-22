@@ -4,9 +4,9 @@
 
 ### Study update dates in uptake 20211022
 
-**_DELP 20211022_**, IHME 20211022, IMPE 20211006, **_SRIV 20211022_**
+**_DELP 20211019_**, **_IHME 20211021_**, IMPE 20211006, **_SRIV 20211017_**
 
-
+DELP and SRIV models have started falling behind their daily update release schedules. On 20211022, latest DELP update is not 20211022, but is 20211019. On 20211022, latest SRIV update is not 20211022, but is 20211017 for the global level. On 20211022, DELP has update 20211022, but it does not contain update for the global level. 
 
 <br/><br/>
 
