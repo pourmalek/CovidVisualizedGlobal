@@ -74,41 +74,49 @@ DELP and SRIV models have started falling behind their daily update release sche
 
 ### (6) [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2024%20COVID-19%20daily%20cases%2C%20global%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138505852-ff5a9e41-c9ef-4b7e-9188-e54a86c85f2d.png)
 
 ****
 
 ### (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138505945-7ccffd48-7244-4cb0-82db-b54076fc6c29.png)
 
 ****
 
 ### (7b) [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2061b%20COVID-19%20hospital-related%20outcomes%20with%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506029-80734e78-6f3c-479a-8271-4c38604e3610.png)
 
 ****
 
 ### (8) [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2062b%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes%20ICU%20bed%20capcity.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506119-69e5575d-d28c-4e17-9025-ef8121d5bcec.png)
 
 ****
 
 ### (9) [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506226-09ad52c8-0bd9-4bca-b99c-c567abaf2dfe.png)
 
 ****
 
 ### (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506290-3815869a-1ea0-4390-83e9-4472a49a02d2.png)
 
 ****
 
 ### (11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506449-0e4da8b1-0fa0-4ac5-8891-dac2203b88b1.png)
 
 ****
 
 ### (12) [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/138506562-22b95615-495c-4775-9062-0475fdcc5c89.png)
 
 ****
 
