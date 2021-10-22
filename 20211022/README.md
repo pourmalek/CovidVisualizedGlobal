@@ -78,6 +78,12 @@ DELP and SRIV models have started falling behind their daily update release sche
 
 ****
 
+### (6b) [Daily cases, 2021]()
+
+.
+
+****
+
 ### (7) [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/138505945-7ccffd48-7244-4cb0-82db-b54076fc6c29.png)
