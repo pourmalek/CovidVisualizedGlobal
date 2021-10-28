@@ -15,5 +15,12 @@ log replaced for above-mentioned
 
 continued above-mentioned work on master and IMPE starting from 20210806 to 20210819 on 20211027
 
+running 20210901 master returns:
+
+. copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_since100_20210901.csv Glob
+> al_V4_since100_20210901.csv
+file https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_since100_20210901.csv not
+    found
+
 IHME
 pending
