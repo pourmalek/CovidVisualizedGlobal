@@ -2,6 +2,11 @@ Housekeeping CovidVisualizedGlobal
 
 master
 comment out IMPE removed for uptakes from 20210401 to 20210730 on 20211021
+problem: master stops working for do CovidVisualizedGlobal JOHN.do as follows:
+do "$pathCovidVisualizedGlobal/JOHN/do CovidVisualizedGlobal JOHN.do" 
+file /Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20210730/code//JOHN/do CovidVisualizedGlobal JOHN.do
+    not found
+
  
 IMPE 
 mrcdata.dide.ic.ac.uk/global-lmic-reports done for uptakes for uptakes from 20210401 to 20210730 on 20211021
