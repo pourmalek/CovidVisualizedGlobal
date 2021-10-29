@@ -1,4 +1,4 @@
-! Read the Global COVID-19 epidemic models situation report No 12 - 2021-10-22 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/12%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2012%20–%202021-10-22.pdf)
+! Read the Global COVID-19 epidemic models situation report No 13 - 2021-10-29 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/13%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2013%20–%202021-10-29.pdf)
 
 <br/><br/>
 
