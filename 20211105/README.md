@@ -26,11 +26,13 @@ IMPE update 20211027 (2021-10-27_v8.csv.zip) released on 20211031.
 
 ### (1) [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2011a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/140572599-e617f6f9-89fa-49c3-938f-e20c8bbdcf3b.png)
 
 ****
 
 ### (2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2012a%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/140572658-6187dcd3-c09e-4af6-a369-be52599fce6e.png)
 
 ****
 
