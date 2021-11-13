@@ -110,26 +110,31 @@ IMPE update 20211103 (2021-11-03_v9.csv.zip) released on 20211110.
 
 ### (10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211112/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/141602472-9ad2a143-ef2f-48b4-9c50-532fe8851873.png)
 
 ****
 
 ### (11) [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211112/output/merge/graph%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20global%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/141602498-265908fa-3040-4039-ae97-c3e4344fefbc.png)
 
 ****
 
 ### (12) [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211112/output/merge/graph%2092%20COVID-19%20daily%20mobility%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/141602519-04cbae08-58bd-4afd-bd3b-69dc82873bb6.png)
 
 ****
 
 ### (13) [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211112/output/merge/graph%2093%20COVID-19%20daily%20mask_use%2C%20global%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/141602540-cc41ccd8-4651-4d17-9c8e-1b8cb574c54b.png)
 
 ****
 
 ### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211112/output/merge/graph%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/141602559-faa385bf-d463-4085-9d08-028294ec4723.png)
 
 ****
 
