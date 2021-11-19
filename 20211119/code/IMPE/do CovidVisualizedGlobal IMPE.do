@@ -31,14 +31,14 @@ clear all
 * get IMPE estimates
 
 /*
-copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-11-15_v9.csv.zip 2021-11-15_v9.csv.zip
-unzipfile 2021-11-15_v9.csv.zip, replace
-erase 2021-11-15_v9.csv.zip
+copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-11-15_v8.csv.zip 2021-11-15_v8.csv.zip
+unzipfile 2021-11-15_v8.csv.zip, replace
+erase 2021-11-15_v8.csv.zip
 
 
-On 20210920, IMPE removed their THREE available previous updates, and uploaded their new update, 2021-11-15_v9.csv.zip.
+On 20210920, IMPE removed their THREE available previous updates, and uploaded their new update, 2021-11-15_v8.csv.zip.
  
-For use in this code, IMPE estimates for Global level from "2021-11-15_v9.csv" is stored in file "2021-11-15_v9 Global.csv".
+For use in this code, IMPE estimates for Global level from "2021-11-15_v8.csv" is stored in file "2021-11-15_v8 Global.csv".
 */
 
  
@@ -46,7 +46,7 @@ For use in this code, IMPE estimates for Global level from "2021-11-15_v9.csv" i
 
 * import csv file
 
-import delimited "2021-11-15_v9 Global.csv", clear varnames(1) // * Wait Note: large file size, takes a while ...
+import delimited "2021-11-15_v8 Global.csv", clear varnames(1) // * Wait Note: large file size, takes a while ...
 
 
 
@@ -100,28 +100,16 @@ S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
 S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
-
-With IMPE update 20211103 (2021-11-15_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
-
-S1	Optimistic
-S2	Maintain Status Quo
-S3	Pessimistic
-
-S4	Surged Optimistic
-S5	Surged Maintain Status Quo
-S6	Surged Pessimistic
 */
 
 
-
 gen scenario_snail = ""
-replace scenario_snail = "S1" if scenario == "Optimistic"
+replace scenario_snail = "S1" if scenario == "Additional 50% Reduction"
 replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
-replace scenario_snail = "S3" if scenario == "Pessimistic"
-replace scenario_snail = "S4" if scenario == "Surged Optimistic"
+replace scenario_snail = "S3" if scenario == "Relax Interventions 50%"
+replace scenario_snail = "S4" if scenario == "Surged Additional 50% Reduction"
 replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
-replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
-
+replace scenario_snail = "S6" if scenario == "Surged Relax Interventions 50%"
 
 
 gen underline = "_"
@@ -152,8 +140,6 @@ replace compartment = "hospi_deman" if compartment == "hospital_demand"		// Hod
 replace compartment = "hospi_incid" if compartment == "hospital_incidence"  // Hoi
 replace compartment = "preval_____" if compartment == "prevalence"			// Pre
 
-
-duplicates drop date compartment scenario, force
 
 
 
@@ -1131,7 +1117,6 @@ view "log CovidVisualizedGlobal IMPE.smcl"
 log close
 
 exit, clear
-
 
 
 
