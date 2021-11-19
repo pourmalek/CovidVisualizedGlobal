@@ -788,7 +788,7 @@ graph export "graph 18 COVID-19 daily deaths, global, 3 scenarios, uncertainty, 
 * daily cases or infections, reference scenarios, all time
 
 twoway ///
-(line DayDeaMeRaA00S00 date, sort lcolor(cyan*1.2) lwidth(vthick)) /// 1 "JOHN raw"
+(line DayDeaMeRaA00S00 date, sort lcolor(cyan*1.2) lwidth(thick)) /// 1 "JOHN raw"
 (line DayCasMeRaA01S00 date, sort lcolor(red)) /// 2 "DELP"
 (line DayINFMeSmA02S01 date, sort lcolor(black)) /// 3 "IHME"
 (line DayINFMeRaA03S02 date, sort lcolor(magenta)) /// 4 "IMPE"
@@ -812,7 +812,7 @@ graph export "graph 21 COVID-19 daily cases, global, reference scenarios.pdf", r
 * daily cases or infections, reference scenarios, 2021
 
 twoway ///
-(line DayCasMeRaA00S00 date, sort lcolor(cyan*1.2) lwidth(vthick)) /// 1 "JOHN"
+(line DayCasMeRaA00S00 date, sort lcolor(cyan*1.2)) /// 1 "JOHN"
 (line DayCasMeRaA01S00 date, sort lcolor(red)) /// 2 "DELP"
 (line DayINFMeSmA02S01 date, sort lcolor(black)) /// 3 "IHME"
 (line DayINFMeRaA03S02 date, sort lcolor(magenta)) /// 4 "IMPE"
