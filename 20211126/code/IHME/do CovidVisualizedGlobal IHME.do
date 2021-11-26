@@ -21,7 +21,7 @@ log using "log CovidVisualizedGlobal IHME.smcl", replace
 
 
                                                                                                          ***************************
-* To change update date, find and replace all, 2021-11-18 (old), with 2021-11-18 (new) <<--       <<<--- * change update date here *
+* To change update date, find and replace all, 2021-11-19 (old), with 2021-11-19 (new) <<--       <<<--- * change update date here *
                                                                                                          ***************************
 																										 
 clear 
@@ -30,7 +30,7 @@ clear
 
 * get IHME estimates
 
-* URLs as of  2021-11-18
+* URLs as of  2021-11-19
 
 copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2020.csv data_download_file_reference_2020.csv 
 copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2021.csv data_download_file_reference_2021.csv 
