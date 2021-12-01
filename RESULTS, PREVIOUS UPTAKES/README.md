@@ -23,6 +23,9 @@
 
 [(6b) Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#6b-daily-cases-2021)
   
+  
+[(6c) Global Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#6c-daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+  
 [(7) Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#7-hospital-related-outcomes-all-time)
 
 [(7b) Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#7b-hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
