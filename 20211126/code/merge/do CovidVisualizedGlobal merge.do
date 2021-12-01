@@ -1012,7 +1012,7 @@ subtitle("reference scenarios", size(small)) ///
 note("IHME smooth median in 2021 = `DayITCMeSmA02S01sm_median'; IMPE smooth median in 2021 = `DayITCMeRaA03S02sm_median'")
 
 graph save "graph 26 C19 daily estimated infections to reported cases, global, reference scenarios 2021.gph", replace
-graph export "graph 29 C19 daily estimated infections to reported cases, global, reference scenarios 2021.pdf", replace
+graph export "graph 26 C19 daily estimated infections to reported cases, global, reference scenarios 2021.pdf", replace
 
 
 
