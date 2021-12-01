@@ -3239,6 +3239,27 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+
+### (6c) Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
+  
+  
+
+*
+
+### (6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211126/output/merge/graph%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20global%2C%20reference%20scenarios%202021.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/144149069-4d5b9ad0-ce67-4908-bdad-a3b16f3f652e.png)
+
+*
+
+
+
+
+
+
+
 
 
 
