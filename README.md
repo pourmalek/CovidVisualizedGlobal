@@ -192,7 +192,7 @@ The codes in these repositories can be adapted for use for any country or region
 
 (13) [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#13-daily-mask-use-3-scenarios-ihme)
   
-(14) [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#14-cumulative-vaccinated-percent-ihme)
+(14) [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#14-percent-cumulative-vaccinated-ihme)
   
  
   
