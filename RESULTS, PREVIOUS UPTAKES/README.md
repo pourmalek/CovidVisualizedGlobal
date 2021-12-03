@@ -4846,9 +4846,7 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 **uptake 20211203**: **_DELP 20211203_**, IHME 20211119, **_IMPE 20211129_**, **_SRIV 20211203_**
 
-(10) [Daily cases or infections estimated to reported cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211203/output/merge/graph%2084%20COVID-19%20daily%20cases%20estimated%20to%20reported%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/144672386-a4d09da1-ce95-4db7-b5ee-f91914ca5e23.png)
+This graph discontinued. Needs revision of calculations. 
 
 *
 
