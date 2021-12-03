@@ -20,7 +20,7 @@ log using "log CovidVisualizedGlobal IMPE.smcl", replace
 
 
                                                                                                          ***************************
-* To change update date, find and replace all, 2021-11-21 (old), with 2021-11-21 (new) <<--       <<<--- * change update date here *
+* To change update date, find and replace all, 2021-11-29 (old), with 2021-11-29 (new) <<--       <<<--- * change update date here *
                                                                                                          ***************************																						 
 																										
 clear all
@@ -31,14 +31,14 @@ clear all
 * get IMPE estimates
 
 /*
-copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-11-21_v9.csv.zip 2021-11-21_v9.csv.zip
-unzipfile 2021-11-21_v9.csv.zip, replace
-erase 2021-11-21_v9.csv.zip
+copy https://raw.githubusercontent.com/mrc-ide/global-lmic-reports/master/data/2021-11-29_v9.csv.zip 2021-11-29_v9.csv.zip
+unzipfile 2021-11-29_v9.csv.zip, replace
+erase 2021-11-29_v9.csv.zip
 
 
-On 20210920, IMPE removed their THREE available previous updates, and uploaded their new update, 2021-11-21_v9.csv.zip.
+On 20210920, IMPE removed their THREE available previous updates, and uploaded their new update, 2021-11-29_v9.csv.zip.
  
-For use in this code, IMPE estimates for Global level from "2021-11-21_v9.csv" is stored in file "2021-11-21_v9 Global.csv".
+For use in this code, IMPE estimates for Global level from "2021-11-29_v9.csv" is stored in file "2021-11-29_v9 Global.csv".
 */
 
  
@@ -46,7 +46,7 @@ For use in this code, IMPE estimates for Global level from "2021-11-21_v9.csv" i
 
 * import csv file
 
-import delimited "2021-11-21_v9 Global.csv", clear varnames(1) // * Wait Note: large file size, takes a while ...
+import delimited "2021-11-29_v9 Global.csv", clear varnames(1) // * Wait Note: large file size, takes a while ...
 
 
 
@@ -101,7 +101,7 @@ S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
 S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
-With IMPE update 20211103 (2021-11-21_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
+With IMPE update 20211103 (2021-11-29_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
 S2	Maintain Status Quo
