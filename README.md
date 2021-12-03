@@ -317,7 +317,7 @@ The codes in these repositories can be adapted for use for any country or region
 
 ### (14) [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211203/output/merge/graph%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20global%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/144672785-f5d98514-6184-4771-8f16-46b05ef68bc0.png)
+![image](https://user-images.githubusercontent.com/30849720/144677804-c404d081-32b2-432e-b994-add373ee191c.png)
 
 ****
 
