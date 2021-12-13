@@ -152,3 +152,34 @@
 
 
 
+
+****
+
+### Selected graphs - [Regions together]
+
+(1) Regions together [Daily deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201a1%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/145882566-a9c21c00-2436-4138-b3c6-afcff5bec82d.png)
+
+****
+
+(2) Regions together [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201b1%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/145884305-c88bc9a3-e8a3-4cbd-8cbc-fa509daad958.png)
+
+****
+
+(3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/145884910-1ebaa638-e509-4345-8cc6-bda83ab102f0.png)
+
+****
+
+(4) Regions together [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201b2%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/145885161-79215c45-22b2-4d86-8b63-003e2322ee64.png)
+
+****
+
+
+
