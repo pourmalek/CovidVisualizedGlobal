@@ -28,7 +28,7 @@
 
 ### Selected graphs - [African region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---african-region-afro)
 
-### Selected graphs - [American region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---american-region-amro)
+### Selected graphs - [American region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--american-region-amro)
 
 
 ****
