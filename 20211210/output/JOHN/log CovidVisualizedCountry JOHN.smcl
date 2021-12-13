@@ -1,0 +1,1786 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/JOHN/log CovidVisualizedCountry JOHN.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Dec 2021, 10:15:31
+{txt}
+{com}. 
+. ***************************************************************************
+. * This is "do CovidVisualizedCountry JOHN.do"
+. 
+. * Project: Combine and visualize international periodically updating 
+. * estimates of COVID-19 at the country level (CovidVisualizedCountry)
+. * Person: Farshad Pourmalek pourmalek_farshad at yahoo dotcom
+. * Time (initial): 2021-04-14
+. ***************************************************************************
+. 
+. 
+. 
+. 
+. ****************************************
+. 
+. * get Johns Hopkins data for deaths
+. 
+. 
+. import delimited ///
+> "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv" ///
+> , clear varnames(1) colrange(1:2)
+{res}{text}(2 vars, 280 obs)
+
+{com}. 
+. save "time_series_covid19_deaths_global col 2.dta", replace
+{txt}file time_series_covid19_deaths_global col 2.dta saved
+
+{com}. 
+. 
+. import delimited ///
+> "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv" ///
+> , clear varnames(1) colrange(5)
+{res}{text}(689 vars, 280 obs)
+
+{com}. 
+. save "time_series_covid19_deaths_global col 5 on.dta", replace
+{txt}file time_series_covid19_deaths_global col 5 on.dta saved
+
+{com}. 
+. 
+. use "time_series_covid19_deaths_global col 2.dta", clear 
+{txt}
+{com}. 
+. merge 1:1 _n using "time_series_covid19_deaths_global col 5 on.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}             280{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. 
+. drop _merge
+{txt}
+{com}. 
+. replace countryregion = trim(countryregion)
+{txt}(0 real changes made)
+
+{com}. 
+. rename countryregion loc_grand_name
+{res}{txt}
+{com}. 
+. label var loc_grand_name loc_grand_name
+{txt}
+{com}. 
+. keep if loc_grand_name == "$country"
+{txt}(264 observations deleted)
+
+{com}. 
+. qui destring v*, replace
+{txt}
+{com}. 
+. save "time_series_covid19_deaths_global.dta", replace 
+{txt}file time_series_covid19_deaths_global.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. * gen national sum
+. 
+. collapse (sum) v*, by(loc_grand_name) 
+{txt}
+{com}. 
+. gen provincestate = " National"
+{txt}
+{com}. 
+. order provincestate
+{txt}
+{com}. 
+. save "time_series_covid19_deaths_global National sum.dta", replace
+{txt}file time_series_covid19_deaths_global National sum.dta saved
+
+{com}. 
+. 
+. 
+. * append National sum to subNationals
+. 
+. use "time_series_covid19_deaths_global.dta", clear 
+{txt}
+{com}. 
+. gen provincestate_proper = provincestate // non-provincestate_proper is included in National sum
+{txt}
+{com}. 
+. replace provincestate_proper = "" if provincestate == "Diamond Princess" | ///
+>  provincestate == "Grand Princess" |  provincestate == "Repatriated Travellers"
+{txt}(3 real changes made)
+
+{com}. 
+. drop if provincestate_proper == ""
+{txt}(3 observations deleted)
+
+{com}. 
+. qui append using "time_series_covid19_deaths_global National sum.dta"
+{txt}
+{com}. 
+. order provincestate loc_grand_name, last 
+{txt}
+{com}. 
+. save "time_series_covid19_deaths_global with National sum.dta", replace
+{txt}file time_series_covid19_deaths_global with National sum.dta saved
+
+{com}. 
+. 
+. * reshape 
+. 
+. order loc_grand_name, last
+{txt}
+{com}. 
+. gen counter = _n
+{txt}
+{com}. 
+. qui reshape long v, i(counter) 
+{txt}
+{com}. 
+. drop counter 
+{txt}
+{com}. 
+. codebook _j
+
+{txt}{hline}
+{res}_j{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}1{txt},{res}689{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}689{col 51}{txt}missing .:  {res}0{txt}/{res}9,646
+
+{txt}{col 19}mean:{res}{col 26}     345
+{txt}{col 15}std. dev:{res}{col 26} 198.907
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      69{col 37}     173{col 47}     345{col 57}     517{col 67}     621
+{txt}
+{com}. 
+. 
+. * JOHN starts from 22 Jan 2020
+. 
+. gen date = date("22 Jan 2020", "DMY")
+{txt}
+{com}. 
+. sort loc_grand_name date
+{txt}
+{com}. 
+. bysort loc_grand_name: replace date = date + _j - 1
+{txt}(9,632 real changes made)
+
+{com}. 
+. format date %td
+{txt}
+{com}. 
+. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21936{txt},{res}22624{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}22jan2020{txt},{res}10dec2021{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}689{col 51}{txt}missing .:  {res}0{txt}/{res}9,646
+
+{txt}{col 19}mean:{res}{col 26}   22280{txt} = {res}31dec2020{txt}
+{col 15}std. dev:{res}{col 26} 198.907
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22004{col 37}   22108{col 47}   22280{col 57}   22452{col 67}   22556
+{col 26}30mar2020{col 36}12jul2020{col 46}31dec2020{col 56}21jun2021{col 66}03oct2021
+{txt}
+{com}. 
+. order date 
+{txt}
+{com}. 
+. rename v TotDeaMeRaA00S00
+{res}{txt}
+{com}. 
+. label var TotDeaMeRaA00S00 "Total deaths raw A00 JOHN"
+{txt}
+{com}. 
+. destring TotDeaMeRaA00S00, replace
+{txt}TotDeaMeRaA00S00 already numeric; no {res}replace
+{txt}
+{com}. 
+. gen DayDeaMeRaA00S00 =  TotDeaMeRaA00S00[_n] - TotDeaMeRaA00S00[_n-1]
+{txt}(1 missing value generated)
+
+{com}. 
+. label var DayDeaMeRaA00S00 "Daily deaths raw A00 JOHN"
+{txt}
+{com}. 
+. replace DayDeaMeRaA00S00 = TotDeaMeRaA00S00 if _j == 1
+{txt}(13 real changes made)
+
+{com}. 
+. drop _j 
+{txt}
+{com}. 
+. order loc_grand_name date provincestate_proper DayDeaMeRaA00S00 TotDeaMeRaA00S00                
+{txt}
+{com}. 
+. sort loc_grand_name provincestate_proper date 
+{txt}
+{com}. 
+. 
+. * replace outcomes = . before first date reported
+. 
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. summ date if provincestate == "`l'" & TotDeaMeRaA00S00 == 0
+{txt}  3{com}. 
+. gen TotDeaMeRaA00S00zerodate = r(max)
+{txt}  4{com}. 
+. replace DayDeaMeRaA00S00 = . if date <= r(max) & provincestate == "`l'"
+{txt}  5{com}. 
+. replace TotDeaMeRaA00S00 = . if date <= r(max) & provincestate == "`l'"
+{txt}  6{com}. 
+. drop TotDeaMeRaA00S00zerodate
+{txt}  7{com}. 
+. {c )-}
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         47       21959    13.71131      21936      21982
+{txt}(47 real changes made, 47 to missing)
+(47 real changes made, 47 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         58     21964.5    16.88688      21936      21993
+{txt}(58 real changes made, 58 to missing)
+(58 real changes made, 58 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         47       21959    13.71131      21936      21982
+{txt}(47 real changes made, 47 to missing)
+(47 real changes made, 47 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         65       21968    18.90767      21936      22000
+{txt}(65 real changes made, 65 to missing)
+(65 real changes made, 65 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        134     22002.5    38.82654      21936      22069
+{txt}(134 real changes made, 134 to missing)
+(134 real changes made, 134 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         68     21969.5    19.77372      21936      22003
+{txt}(68 real changes made, 68 to missing)
+(68 real changes made, 68 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        581       22226    167.8645      21936      22516
+{txt}(581 real changes made, 581 to missing)
+(581 real changes made, 581 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         76     21973.5    22.08318      21936      22011
+{txt}(76 real changes made, 76 to missing)
+(76 real changes made, 76 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        333       22102    96.27305      21936      22268
+{txt}(333 real changes made, 333 to missing)
+(333 real changes made, 333 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         55       21963    16.02082      21936      21990
+{txt}(55 real changes made, 55 to missing)
+(55 real changes made, 55 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        688    22280.39    198.9252      21936      22624
+{txt}(689 real changes made, 689 to missing)
+(689 real changes made, 689 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         55       21963    16.02082      21936      21990
+{txt}(55 real changes made, 55 to missing)
+(55 real changes made, 55 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         68     21969.5    19.77372      21936      22003
+{txt}(68 real changes made, 68 to missing)
+(68 real changes made, 68 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        282     22076.5     81.5506      21936      22217
+{txt}(282 real changes made, 282 to missing)
+(282 real changes made, 282 to missing)
+
+{com}. *
+. 
+. qui compress
+{txt}
+{com}. 
+. save "$country JOHN deaths.dta", replace
+{txt}file Canada JOHN deaths.dta saved
+
+{com}. 
+. 
+. 
+. 
+. ****************************************
+. 
+. * get Johns Hopkins data for cases
+. 
+. 
+. import delimited ///
+> "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv" ///
+> , clear varnames(1) colrange(1:2)
+{res}{text}(2 vars, 280 obs)
+
+{com}. 
+. save "time_series_covid19_confirmed_global col 2.dta", replace
+{txt}file time_series_covid19_confirmed_global col 2.dta saved
+
+{com}. 
+. 
+. import delimited ///
+> "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv" ///
+> , clear varnames(1) colrange(5)
+{res}{text}(689 vars, 280 obs)
+
+{com}. 
+. save "time_series_covid19_confirmed_global col 5 on.dta", replace
+{txt}file time_series_covid19_confirmed_global col 5 on.dta saved
+
+{com}. 
+. 
+. use "time_series_covid19_confirmed_global col 2.dta", clear 
+{txt}
+{com}. 
+. merge 1:1 _n using "time_series_covid19_confirmed_global col 5 on.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}             280{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. 
+. drop _merge
+{txt}
+{com}. 
+. replace countryregion = trim(countryregion)
+{txt}(0 real changes made)
+
+{com}. 
+. rename countryregion loc_grand_name
+{res}{txt}
+{com}. 
+. label var loc_grand_name loc_grand_name
+{txt}
+{com}. 
+. keep if loc_grand_name == "$country"
+{txt}(264 observations deleted)
+
+{com}. 
+. qui destring v*, replace
+{txt}
+{com}. 
+. save "time_series_covid19_confirmed_global.dta", replace 
+{txt}file time_series_covid19_confirmed_global.dta saved
+
+{com}. 
+. 
+. 
+. * gen National sum
+. 
+. collapse (sum) v*, by(loc_grand_name) 
+{txt}
+{com}. 
+. gen provincestate = " National"
+{txt}
+{com}. 
+. order provincestate
+{txt}
+{com}. 
+. save "time_series_covid19_confirmed_global national sum.dta", replace
+{txt}file time_series_covid19_confirmed_global national sum.dta saved
+
+{com}. 
+. 
+. 
+. * append national sum to subnationals
+. 
+. use "time_series_covid19_confirmed_global.dta", clear 
+{txt}
+{com}. 
+. gen provincestate_proper = provincestate // non-provincestate_proper is included in national sum // provincestate names for "$country"
+{txt}
+{com}. 
+. replace provincestate_proper = "" if provincestate == "Diamond Princess" | ///
+>  provincestate == "Grand Princess" |  provincestate == "Repatriated Travellers"
+{txt}(3 real changes made)
+
+{com}. 
+. drop if provincestate_proper == ""
+{txt}(3 observations deleted)
+
+{com}. 
+. qui append using "time_series_covid19_confirmed_global national sum.dta"
+{txt}
+{com}. 
+. order provincestate loc_grand_name, last 
+{txt}
+{com}. 
+. save "time_series_covid19_confirmed_global with national sum.dta", replace
+{txt}file time_series_covid19_confirmed_global with national sum.dta saved
+
+{com}. 
+. 
+. * reshape 
+. 
+. order loc_grand_name, last
+{txt}
+{com}. 
+. gen counter = _n
+{txt}
+{com}. 
+. qui reshape long v, i(counter) 
+{txt}
+{com}. 
+. drop counter 
+{txt}
+{com}. 
+. codebook _j
+
+{txt}{hline}
+{res}_j{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}1{txt},{res}689{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}689{col 51}{txt}missing .:  {res}0{txt}/{res}9,646
+
+{txt}{col 19}mean:{res}{col 26}     345
+{txt}{col 15}std. dev:{res}{col 26} 198.907
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      69{col 37}     173{col 47}     345{col 57}     517{col 67}     621
+{txt}
+{com}. 
+. 
+. * JOHN starts from 22 Jan 2020
+. 
+. gen date = date("22 Jan 2020", "DMY")
+{txt}
+{com}. 
+. sort loc_grand_name date
+{txt}
+{com}. 
+. bysort loc_grand_name: replace date = date + _j - 1
+{txt}(9,632 real changes made)
+
+{com}. 
+. format date %td
+{txt}
+{com}. 
+. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21936{txt},{res}22624{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}22jan2020{txt},{res}10dec2021{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}689{col 51}{txt}missing .:  {res}0{txt}/{res}9,646
+
+{txt}{col 19}mean:{res}{col 26}   22280{txt} = {res}31dec2020{txt}
+{col 15}std. dev:{res}{col 26} 198.907
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22004{col 37}   22108{col 47}   22280{col 57}   22452{col 67}   22556
+{col 26}30mar2020{col 36}12jul2020{col 46}31dec2020{col 56}21jun2021{col 66}03oct2021
+{txt}
+{com}. 
+. order date 
+{txt}
+{com}. 
+. rename v TotCasMeRaA00S00
+{res}{txt}
+{com}. 
+. label var TotCasMeRaA00S00 "Total cases raw A00 JOHN"
+{txt}
+{com}. 
+. destring TotCasMeRaA00S00, replace
+{txt}TotCasMeRaA00S00 already numeric; no {res}replace
+{txt}
+{com}. 
+. gen DayCasMeRaA00S00 =  TotCasMeRaA00S00[_n] - TotCasMeRaA00S00[_n-1]
+{txt}(1 missing value generated)
+
+{com}. 
+. label var DayCasMeRaA00S00 "Daily cases raw A00 JOHN"
+{txt}
+{com}. 
+. replace DayCasMeRaA00S00 = TotCasMeRaA00S00 if _j == 1
+{txt}(14 real changes made)
+
+{com}. 
+. drop _j 
+{txt}
+{com}. 
+. order loc_grand_name date provincestate_proper DayCasMeRaA00S00 TotCasMeRaA00S00        
+{txt}
+{com}. 
+. sort loc_grand_name provincestate_proper date 
+{txt}
+{com}. 
+. 
+. * replace outcomes = . before first date reported
+. 
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. summ date if provincestate == "`l'" & TotCasMeRaA00S00 == 0
+{txt}  3{com}. 
+. gen TotCasMeRaA00S00zerodate = r(max)
+{txt}  4{com}. 
+. replace DayCasMeRaA00S00 = . if date <= r(max) & provincestate == "`l'"
+{txt}  5{com}. 
+. replace TotCasMeRaA00S00 = . if date <= r(max) & provincestate == "`l'"
+{txt}  6{com}. 
+. drop TotCasMeRaA00S00zerodate
+{txt}  7{com}. 
+. {c )-}
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          4     21937.5    1.290994      21936      21939
+{txt}(4 real changes made, 4 to missing)
+(4 real changes made, 4 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         44     21957.5    12.84523      21936      21979
+{txt}(44 real changes made, 44 to missing)
+(44 real changes made, 44 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          6     21938.5    1.870829      21936      21941
+{txt}(6 real changes made, 6 to missing)
+(6 real changes made, 6 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         51       21961    14.86607      21936      21986
+{txt}(51 real changes made, 51 to missing)
+(51 real changes made, 51 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         49       21960    14.28869      21936      21984
+{txt}(49 real changes made, 49 to missing)
+(49 real changes made, 49 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         53       21962    15.44345      21936      21988
+{txt}(53 real changes made, 53 to missing)
+(53 real changes made, 53 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         64     21967.5    18.61899      21936      21999
+{txt}(64 real changes made, 64 to missing)
+(64 real changes made, 64 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         54     21962.5    15.73213      21936      21989
+{txt}(54 real changes made, 54 to missing)
+(54 real changes made, 54 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}        289       22080    83.57133      21936      22224
+{txt}(289 real changes made, 289 to missing)
+(289 real changes made, 289 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          4     21937.5    1.290994      21936      21939
+{txt}(4 real changes made, 4 to missing)
+(4 real changes made, 4 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         53       21962    15.44345      21936      21988
+{txt}(53 real changes made, 53 to missing)
+(53 real changes made, 53 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         34     21952.5    9.958246      21936      21969
+{txt}(34 real changes made, 34 to missing)
+(34 real changes made, 34 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         51       21961    14.86607      21936      21986
+{txt}(51 real changes made, 51 to missing)
+(51 real changes made, 51 to missing)
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}         64     21967.5    18.61899      21936      21999
+{txt}(64 real changes made, 64 to missing)
+(64 real changes made, 64 to missing)
+
+{com}. *
+. 
+. qui compress
+{txt}
+{com}. 
+. save "$country JOHN cases.dta", replace
+{txt}file Canada JOHN cases.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. ****************************************
+. 
+. * merge deaths and cases 
+. 
+. use "$country JOHN deaths.dta", clear 
+{txt}
+{com}. 
+. merge 1:1 date loc_grand_name provincestate using "$country JOHN Cases.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}           9,646{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. 
+. drop _merge
+{txt}
+{com}. 
+. 
+. 
+. *
+. 
+. * gen cfr
+. 
+. gen DayCfrMeRaA00S00 = 100 * DayDeaMeRaA00S00 / DayCasMeRaA00S00
+{txt}(4,229 missing values generated)
+
+{com}. 
+. label var DayCfrMeRaA00S00 "Daily CFR raw JOHN"
+{txt}
+{com}. 
+. *
+. 
+. 
+. 
+. 
+. 
+. *************************
+. 
+. * to visualize timing of deaths and cases peaks
+. 
+. summ DayDeaMeRaA00S00 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeR~00 {c |}{res}      7,088    8.451608    22.23339        -11        244
+{txt}
+{com}. gen DayDeMMeRaA00S00 = r(mean)
+{txt}
+{com}. label var DayDeMMeRaA00S00 "Daily deaths raw mean JOHN DayDeM"
+{txt}
+{com}. 
+. summ DayCasMeRaA00S00 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayCasMeR~00 {c |}{res}      8,826    415.7163    1091.912        -90      11381
+{txt}
+{com}. gen DayCaMMeRaA00S00 = r(mean)
+{txt}
+{com}. label var DayCaMMeRaA00S00 "Daily cases raw mean JOHN DayCaM"
+{txt}
+{com}. 
+. gen DayCbDMeRaA00S00 = DayCaMMeRaA00S00 / DayDeMMeRaA00S00
+{txt}
+{com}. label var DayCbDMeRaA00S00 "Daily cases mean div by daily deaths mean JOHN DayCbD"
+{txt}
+{com}. summ DayCbDMeRaA00S00 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayCbDMeR~00 {c |}{res}      9,646    49.18783           0   49.18783   49.18783
+{txt}
+{com}. 
+. gen DayDeaMeRaA00multip = DayDeaMeRaA00S00 * DayCbDMeRaA00S00 
+{txt}(2,558 missing values generated)
+
+{com}. label var DayDeaMeRaA00multip "Daily deaths scaled (times means of cases by deaths) only for visualization JOHN"
+{txt}
+{com}. summ DayDeaMeRaA00multip
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeRa~p {c |}{res}      7,088    415.7163    1093.612  -541.0661   12001.83
+{txt}
+{com}. 
+. 
+. 
+. 
+. ******************
+. 
+. * smooth 
+. 
+. encode provincestate, gen(provincestate_encoded)
+{txt}
+{com}. 
+. tsset provincestate_encoded date, daily   
+{res}{txt}{col 8}panel variable:  {res}provincestate_encoded (strongly balanced)
+{txt}{col 9}time variable:  {res}{col 25}date, 22jan2020 to 10dec2021
+{txt}{col 17}delta:  {res}1 day
+{txt}
+{com}. 
+. 
+. tssmooth ma DayDeaMeRaA00S00_window = DayDeaMeRaA00S00 if DayDeaMeRaA00S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayDeaMeRaA00S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayDeaMeSmA00S00 = DayDeaMeRaA00S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayDeaMeRaA00S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayDeaMeSmA00S00 "Daily deaths smooth A00 JOHN"
+{txt}
+{com}. 
+. drop DayDeaMeRaA00S00_window
+{txt}
+{com}. 
+. 
+. tssmooth ma DayCasMeRaA00S00_window = DayCasMeRaA00S00 if DayCasMeRaA00S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayCasMeRaA00S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayCasMeSmA00S00 = DayCasMeRaA00S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayCasMeRaA00S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayCasMeSmA00S00 "Daily cases smooth A00 JOHN"
+{txt}
+{com}. 
+. drop DayCasMeRaA00S00_window
+{txt}
+{com}. 
+. 
+. tssmooth ma DayCfrMeRaA00S00_window = DayCfrMeRaA00S00 if DayCfrMeRaA00S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayCfrMeRaA00S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayCfrMeSmA00S00 = DayCfrMeRaA00S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayCfrMeRaA00S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayCfrMeSmA00S00 "Daily CFR smooth A00 JOHN"
+{txt}
+{com}. 
+. drop DayCfrMeRaA00S00_window
+{txt}
+{com}. 
+. 
+. 
+. tssmooth ma DayDeaMeRaA00multip_window = DayDeaMeRaA00multip if DayDeaMeRaA00multip >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayDeaMeRaA00multip {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayDeaMeSmA00multip = DayDeaMeRaA00multip_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayDeaMeRaA00multip_window
+{txt}
+{smcl}
+{com}. 
+. label var DayDeaMeSmA00multip "Daily deaths scaled smooth A00 JOHN"
+{txt}
+{com}. 
+. drop DayDeaMeRaA00multip_window
+{txt}
+{com}. 
+. 
+. 
+. drop provincestate_encoded
+{txt}
+{com}. 
+. tsset, clear
+{txt}
+{com}. 
+. 
+. *
+. 
+. * gen vars by provincestate 
+. 
+. foreach var of varlist DayDeaMeRaA00S00 TotDeaMeRaA00S00 DayCasMeRaA00S00 TotCasMeRaA00S00 ///
+> DayCfrMeRaA00S00 DayDeMMeRaA00S00 DayCaMMeRaA00S00 DayCbDMeRaA00S00 DayDeaMeRaA00multip ///
+> DayDeaMeSmA00S00 DayCasMeSmA00S00 DayCfrMeSmA00S00 DayDeaMeSmA00multip {c -(}
+{txt}  2{com}. 
+. *
+. 
+. qui gen `var'XAB = `var' 
+{txt}  3{com}. qui replace `var'XAB = . if provincestate != "Alberta"
+{txt}  4{com}. 
+. qui gen `var'XBC = `var'
+{txt}  5{com}. qui replace `var'XBC = . if provincestate != "British Columbia"
+{txt}  6{com}. 
+. qui gen `var'XMB = `var'
+{txt}  7{com}. qui replace `var'XMB = . if provincestate != "Manitoba"
+{txt}  8{com}. 
+. qui gen `var'XXX = `var'
+{txt}  9{com}. qui replace `var'XXX = . if provincestate != " National"
+{txt} 10{com}. 
+. qui gen `var'XNB = `var'
+{txt} 11{com}. qui replace `var'XNB = . if provincestate != "New Brunswick"
+{txt} 12{com}. 
+. qui gen `var'XNL = `var'
+{txt} 13{com}. qui replace `var'XNL = . if provincestate != "Newfoundland and Labrador"
+{txt} 14{com}. 
+. qui gen `var'XNT = `var'
+{txt} 15{com}. qui replace `var'XNT = . if provincestate != "Northwest Territories"
+{txt} 16{com}. 
+. qui gen `var'XNS = `var'
+{txt} 17{com}. qui replace `var'XNS = . if provincestate != "Nova Scotia"
+{txt} 18{com}. 
+. qui gen `var'XNU = `var'
+{txt} 19{com}. qui replace `var'XNU = . if provincestate != "Nunavut"
+{txt} 20{com}. 
+. qui gen `var'XON = `var'
+{txt} 21{com}. qui replace `var'XON = . if provincestate != "Ontario"
+{txt} 22{com}. 
+. qui gen `var'XPE = `var'
+{txt} 23{com}. qui replace `var'XPE = . if provincestate != "Prince Edward Island"
+{txt} 24{com}. 
+. qui gen `var'XQC = `var'
+{txt} 25{com}. qui replace `var'XQC = . if provincestate != "Quebec"
+{txt} 26{com}. 
+. qui gen `var'XSK = `var'
+{txt} 27{com}. qui replace `var'XSK = . if provincestate != "Saskatchewan"
+{txt} 28{com}. 
+. qui gen `var'XYT = `var'
+{txt} 29{com}. qui replace `var'XYT = . if provincestate != "Yukon"
+{txt} 30{com}. 
+. label var `var'XAB "`var' Alberta"
+{txt} 31{com}. label var `var'XBC "`var' British Columbia"
+{txt} 32{com}. label var `var'XMB "`var' Manitoba"
+{txt} 33{com}. label var `var'XXX "`var' National"
+{txt} 34{com}. label var `var'XNB "`var' New Brunswick"
+{txt} 35{com}. label var `var'XNL "`var' Newfoundland and Labrador"
+{txt} 36{com}. label var `var'XNT "`var' Northwest Territories"
+{txt} 37{com}. label var `var'XNS "`var' Nova Scotia"
+{txt} 38{com}. label var `var'XNU "`var' Nunavut"
+{txt} 39{com}. label var `var'XON "`var' Ontario"
+{txt} 40{com}. label var `var'XPE "`var' Prince Edward Island"
+{txt} 41{com}. label var `var'XQC "`var' Quebec"
+{txt} 42{com}. label var `var'XSK "`var' Saskatchewan"
+{txt} 43{com}. label var `var'XYT "`var' Yukon"
+{txt} 44{com}. 
+. 
+.                 
+. {c )-}
+{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. sort loc_grand_name provincestate date
+{txt}
+{com}. 
+. order loc_grand_name provincestate date
+{txt}
+{com}. 
+. qui compress
+{txt}
+{com}. 
+. save "CovidVisualizedCountry JOHN.dta", replace
+{txt}file CovidVisualizedCountry JOHN.dta saved
+
+{com}. 
+. 
+. 
+. ***************************************
+. 
+. * graphs
+. 
+. 
+. grstyle init
+{res}{txt}
+{com}. 
+. grstyle color background white
+{txt}
+{com}. 
+. 
+. 
+. *****************
+. * daily deaths (graph numbers starting with 1)
+. 
+. 
+. ****
+. * 1 a daily deaths, national, all subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayDeaMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayDeaMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayDeaMeSmA00S00XNB date, sort lwidth(medthin) lpattern(dash) lcolor(brown)) /// 4 "NB"
+> (line DayDeaMeSmA00S00XNL date, sort lwidth(medthin) lpattern(dash) lcolor(gray)) /// 5 "NL"
+> (line DayDeaMeSmA00S00XNT date, sort lwidth(medthin) lpattern(dash) lcolor(khaki)) /// 6 "NT"
+> (line DayDeaMeSmA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 7 "NS" magenta
+> (line DayDeaMeSmA00S00XNU date, sort lwidth(medthin) lpattern(dash) lcolor(lavender)) /// 8 "NU"
+> (line DayDeaMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" red
+> (line DayDeaMeSmA00S00XPE date, sort lwidth(medthin) lpattern(dash) lcolor(gold)) /// 10 "PE" 
+> (line DayDeaMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" black
+> (line DayDeaMeSmA00S00XSK date, sort lwidth(medium) lcolor(orange)) /// 12 "SK" orange
+> (line DayDeaMeSmA00S00XYT date, sort lwidth(medthin) lpattern(dash) lcolor(green)) /// 13 "YT'"
+> (line DayDeaMeSmA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 14 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NT" ///
+> 7 "NS" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT" 14 "CAN") rows(3) size(small)) ///
+> subtitle("All provinces and territories", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 1 a COVID-19 daily deaths, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 1 a COVID-19 daily deaths, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 1 b daily deaths, subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" 
+> (line DayDeaMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" 
+> (line DayDeaMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" 
+> (line DayDeaMeSmA00S00XNB date, sort lwidth(medium) lcolor(dknavy)) /// 4 "NB" 
+> (line DayDeaMeSmA00S00XNL date, sort lwidth(medium) lcolor(gold)) /// 5 "NL" 
+> (line DayDeaMeSmA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" 
+> (line DayDeaMeSmA00S00XNT date, sort lwidth(medium) lcolor(dkorange) lpattern(tight_dot) lwidth(vthick)) /// 7 "NT" 
+> (line DayDeaMeSmA00S00XNU date, sort lwidth(medium) lcolor(brown) lpattern(tight_dot) lwidth(vthick)) /// 8 "NU" 
+> (line DayDeaMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" 
+> (line DayDeaMeSmA00S00XPE date, sort lwidth(medium) lcolor(pink)) /// 10 "PE" 
+> (line DayDeaMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" 
+> (line DayDeaMeSmA00S00XSK date, sort lwidth(medium) lcolor(lavender)) /// 12 "SK" 
+> (line DayDeaMeSmA00S00XYT date, sort lwidth(medium) lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 13 "YT" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NS" 7 "NT" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT") rows(2) size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 1 b COVID-19 daily deaths, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 1 b COVID-19 daily deaths, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. ****
+. * 1 b2 daily deaths, subnational, 2021
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" 
+> (line DayDeaMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" 
+> (line DayDeaMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" 
+> (line DayDeaMeSmA00S00XNB date, sort lwidth(medium) lcolor(dknavy)) /// 4 "NB" 
+> (line DayDeaMeSmA00S00XNL date, sort lwidth(medium) lcolor(gold)) /// 5 "NL" 
+> (line DayDeaMeSmA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" 
+> (line DayDeaMeSmA00S00XNT date, sort lwidth(medium) lcolor(dkorange) lpattern(tight_dot) lwidth(vthick)) /// 7 "NT" 
+> (line DayDeaMeSmA00S00XNU date, sort lwidth(medium) lcolor(brown) lpattern(tight_dot) lwidth(vthick)) /// 8 "NU" 
+> (line DayDeaMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" 
+> (line DayDeaMeSmA00S00XPE date, sort lwidth(medium) lcolor(pink)) /// 10 "PE" 
+> (line DayDeaMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" 
+> (line DayDeaMeSmA00S00XSK date, sort lwidth(medium) lcolor(lavender)) /// 12 "SK" 
+> (line DayDeaMeSmA00S00XYT date, sort lwidth(medium) lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 13 "YT" 
+> if date >= td(01jan2021) /// 
+> , xtitle(Date) xlabel(#12, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NS" 7 "NT" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT") rows(2) size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 1 b2 COVID-19 daily deaths, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 1 b2 COVID-19 daily deaths, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. ****
+. * 1 c daily deaths, national, subnational, separate
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayDeaMeRaA00S00 date, sort lcolor(gray)) ///
+> (line DayDeaMeSmA00S00 date, sort lwidth(thick) lcolor(red)) ///
+> if provincestate == "`l'" & DayDeaMeRaA00S00 >= 0 ///
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "Raw" 2 "Smoothed") size(small)) ///
+> subtitle("`l'", size(small)) 
+{txt}  3{com}. 
+. qui qui graph save "graph 1 c COVID-19 daily deaths, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 1 c COVID-19 daily deaths, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily cases (graph numbers starting with 2)
+. 
+. 
+. ****
+. * 2 a daily cases, national, all subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayCasMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCasMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCasMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCasMeSmA00S00XNB date, sort lwidth(medthin) lpattern(dash) lcolor(brown)) /// 4 "NB"
+> (line DayCasMeSmA00S00XNL date, sort lwidth(medthin) lpattern(dash) lcolor(gray)) /// 5 "NL"
+> (line DayCasMeSmA00S00XNT date, sort lwidth(medthin) lpattern(dash) lcolor(khaki)) /// 6 "NT"
+> (line DayCasMeSmA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 7 "NS" magenta
+> (line DayCasMeSmA00S00XNU date, sort lwidth(medthin) lpattern(dash) lcolor(lavender)) /// 8 "NU"
+> (line DayCasMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" red
+> (line DayCasMeSmA00S00XPE date, sort lwidth(medthin) lpattern(dash) lcolor(gold)) /// 10 "PE" 
+> (line DayCasMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" black
+> (line DayCasMeSmA00S00XSK date, sort lwidth(medium) lcolor(orange)) /// 12 "SK" orange
+> (line DayCasMeSmA00S00XYT date, sort lwidth(medthin) lpattern(dash) lcolor(green)) /// 13 "YT'"
+> (line DayCasMeSmA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 14 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NT" ///
+> 7 "NS" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT" 14 "CAN") rows(3) size(small)) ///
+> subtitle("All provinces and territories", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 2 a COVID-19 daily cases, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 2 a COVID-19 daily cases, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 2 b daily cases, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayCasMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCasMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCasMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCasMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayCasMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayCasMeSmA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 2 b COVID-19 daily cases, $country, subnational, most affected, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 2 b COVID-19 daily cases, $country, subnational, most affected, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 2 c daily cases, national, subnational, separate
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayCasMeRaA00S00 date, sort lcolor(gray)) ///
+> (line DayCasMeSmA00S00 date, sort lwidth(thick) lcolor(red)) ///
+> if provincestate == "`l'" & DayCasMeRaA00S00 >= 0 ///
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "Raw" 2 "Smoothed") size(small)) ///
+> subtitle("`l'", size(small)) 
+{txt}  3{com}. 
+. qui qui graph save "graph 2 c COVID-19 daily cases, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 2 c COVID-19 daily cases, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * total deaths (graph numbers starting with 3)
+. 
+. 
+. ****
+. * 3 a total deaths, national, all subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line TotDeaMeRaA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotDeaMeRaA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotDeaMeRaA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotDeaMeRaA00S00XNB date, sort lwidth(medthin) lpattern(dash) lcolor(brown)) /// 4 "NB"
+> (line TotDeaMeRaA00S00XNL date, sort lwidth(medthin) lpattern(dash) lcolor(gray)) /// 5 "NL"
+> (line TotDeaMeRaA00S00XNT date, sort lwidth(medthin) lpattern(dash) lcolor(khaki)) /// 6 "NT"
+> (line TotDeaMeRaA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 7 "NS" magenta
+> (line TotDeaMeRaA00S00XNU date, sort lwidth(medthin) lpattern(dash) lcolor(lavender)) /// 8 "NU"
+> (line TotDeaMeRaA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" red
+> (line TotDeaMeRaA00S00XPE date, sort lwidth(medthin) lpattern(dash) lcolor(gold)) /// 10 "PE" 
+> (line TotDeaMeRaA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" black
+> (line TotDeaMeRaA00S00XSK date, sort lwidth(medium) lcolor(orange)) /// 12 "SK" orange
+> (line TotDeaMeRaA00S00XYT date, sort lwidth(medthin) lpattern(dash) lcolor(green)) /// 13 "YT'"
+> (line TotDeaMeRaA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 14 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NT" ///
+> 7 "NS" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT" 14 "CAN") rows(3) size(small)) ///
+> subtitle("All provinces and territories", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 3 a COVID-19 total deaths, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 3 a COVID-19 total deaths, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 3 b total deaths, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line TotDeaMeRaA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotDeaMeRaA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotDeaMeRaA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotDeaMeRaA00S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line TotDeaMeRaA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line TotDeaMeRaA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 3 b COVID-19 total deaths, $country, subnational, most affected, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 3 b COVID-19 total deaths, $country, subnational, most affected, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 3 c total deaths, national, subnational, separate
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line TotDeaMeRaA00S00 date, sort lcolor(gray)) ///
+> (line TotDeaMeRaA00S00 date, sort lwidth(thick) lcolor(red)) ///
+> if provincestate == "`l'" & TotDeaMeRaA00S00 >= 0 ///
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "Raw" 2 "Smoothed") size(small)) ///
+> subtitle("`l'", size(small)) 
+{txt}  3{com}. 
+. qui qui graph save "graph 3 c COVID-19 total deaths, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 3 c COVID-19 total deaths, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * total cases (graph numbers starting with 4)
+. 
+. 
+. ****
+. * 4 a total cases, national, all subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line TotCasMeRaA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotCasMeRaA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotCasMeRaA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotCasMeRaA00S00XNB date, sort lwidth(medthin) lpattern(dash) lcolor(brown)) /// 4 "NB"
+> (line TotCasMeRaA00S00XNL date, sort lwidth(medthin) lpattern(dash) lcolor(gray)) /// 5 "NL"
+> (line TotCasMeRaA00S00XNT date, sort lwidth(medthin) lpattern(dash) lcolor(khaki)) /// 6 "NT"
+> (line TotCasMeRaA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 7 "NS" magenta
+> (line TotCasMeRaA00S00XNU date, sort lwidth(medthin) lpattern(dash) lcolor(lavender)) /// 8 "NU"
+> (line TotCasMeRaA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" red
+> (line TotCasMeRaA00S00XPE date, sort lwidth(medthin) lpattern(dash) lcolor(gold)) /// 10 "PE" 
+> (line TotCasMeRaA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" black
+> (line TotCasMeRaA00S00XSK date, sort lwidth(medium) lcolor(orange)) /// 12 "SK" orange
+> (line TotCasMeRaA00S00XYT date, sort lwidth(medthin) lpattern(dash) lcolor(green)) /// 13 "YT'"
+> (line TotCasMeRaA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 14 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NT" ///
+> 7 "NS" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT" 14 "CAN") rows(3) size(small)) ///
+> subtitle("All provinces and territories", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 4 a COVID-19 total cases, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 4 a COVID-19 total cases, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 4 b total cases, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line TotCasMeRaA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotCasMeRaA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotCasMeRaA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotCasMeRaA00S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line TotCasMeRaA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line TotCasMeRaA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 4 b COVID-19 total cases, $country, subnational, most affected, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 4 b COVID-19 total cases, $country, subnational, most affected, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 4 c total cases, national, subnational, separate
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line TotCasMeRaA00S00 date, sort lcolor(gray)) ///
+> (line TotCasMeRaA00S00 date, sort lwidth(thick) lcolor(red)) ///
+> if provincestate == "`l'" & TotCasMeRaA00S00 >= 0 ///
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "Raw" 2 "Smoothed") size(small)) ///
+> subtitle("`l'", size(small)) 
+{txt}  3{com}. 
+. qui qui graph save "graph 4 c COVID-19 total cases, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 4 c COVID-19 total cases, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily CFR (graph numbers starting with 5)
+. 
+. 
+. ****
+. * 5 a daily CFR, national, all subnational
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayCfrMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCfrMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCfrMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCfrMeSmA00S00XNB date, sort lwidth(medthin) lpattern(dash) lcolor(brown)) /// 4 "NB"
+> (line DayCfrMeSmA00S00XNL date, sort lwidth(medthin) lpattern(dash) lcolor(gray)) /// 5 "NL"
+> (line DayCfrMeSmA00S00XNT date, sort lwidth(medthin) lpattern(dash) lcolor(khaki)) /// 6 "NT"
+> (line DayCfrMeSmA00S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 7 "NS" magenta
+> (line DayCfrMeSmA00S00XNU date, sort lwidth(medthin) lpattern(dash) lcolor(lavender)) /// 8 "NU"
+> (line DayCfrMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 9 "ON" red
+> (line DayCfrMeSmA00S00XPE date, sort lwidth(medthin) lpattern(dash) lcolor(gold)) /// 10 "PE" 
+> (line DayCfrMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 11 "QC" black
+> (line DayCfrMeSmA00S00XSK date, sort lwidth(medium) lcolor(orange)) /// 12 "SK" orange
+> (line DayCfrMeSmA00S00XYT date, sort lwidth(medthin) lpattern(dash) lcolor(green)) /// 13 "YT'"
+> (line DayCfrMeSmA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 14 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "NB" 5 "NL" 6 "NT" ///
+> 7 "NS" 8 "NU" 9 "ON" 10 "PE" 11 "QC" 12 "SK" 13 "YT" 14 "CAN") rows(3) size(small)) ///
+> subtitle("All provinces and territories", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 5 a COVID-19 daily CFR, $country, subnational, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 5 a COVID-19 daily CFR, $country, subnational, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 5 b daily CFR, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. twoway ///
+> (line DayCfrMeSmA00S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCfrMeSmA00S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCfrMeSmA00S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCfrMeSmA00S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayCfrMeSmA00S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayCfrMeSmA00S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC"6 "CAN") rows(1) size(small)) ///
+> subtitle("5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "graph 5 b COVID-19 daily CFR, $country, subnational, most affected, Johns Hopkins.gph", replace
+{txt}
+{com}. qui graph export "graph 5 b COVID-19 daily CFR, $country, subnational, most affected, Johns Hopkins.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. ****
+. * 5 c daily CFR, national, subnational, separate
+. 
+. forval i = 1(1)12 {c -(}
+{txt}  2{com}.         local date2020 = mdy(`i', 1, 2020)
+{txt}  3{com}.         local dates2020 `dates2020' `date2020'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. local wanted : di %tdNN daily("$S_DATE", "DMY")
+{res}{txt}
+{com}. forval i = 1(1)`wanted' {c -(}
+{txt}  2{com}.         local date2021 = mdy(`i', 1, 2021)
+{txt}  3{com}.         local dates2021 `dates2021' `date2021'
+{txt}  4{com}. {c )-}
+{txt}
+{com}. *
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayCfrMeSmA00S00 date, sort lcolor(gray)) ///
+> (line DayCfrMeSmA00S00 date, sort lwidth(thick) lcolor(red)) ///
+> if provincestate == "`l'" & DayCfrMeSmA00S00 >= 0 ///
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "Raw" 2 "Smoothed") size(small)) ///
+> subtitle("`l'", size(small)) 
+{txt}  3{com}. 
+. qui qui graph save "graph 5 c COVID-19 daily CFR, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 5 c COVID-19 daily CFR, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. * visualize timing of deaths and cases peaks, raw
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayCasMeRaA00S00 date, sort lcolor(blue)) ///
+> (line DayDeaMeRaA00S00 date, sort lcolor(red)) ///
+> (line DayDeaMeRaA00multip date, sort lpattern(tight_dot) lcolor(red)) ///
+> if provincestate == "`l'" & DayCasMeRaA00S00 >= 0 & DayDeaMeRaA00S00 >= 0 & date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases and scaled deaths) title("COVID-19 daily cases and deaths, raw, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none)))  ///
+> legend(order(1 "Daily cases" 2 "Daily deaths" 3 "Daily deaths scaled") rows(1)) ///
+> subtitle("`l'. Daily deaths scaled (times means of cases by deaths) only for visualization", size(small))
+{txt}  3{com}. 
+. qui qui graph save "graph 6 COVID-19 daily deaths and cases timing, raw, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 6 COVID-19 daily deaths and cases timing, raw, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. * visualize timing of deaths and cases peaks, smooth 
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Northwest Territories"' `"Nova Scotia"' `"Nunavut"' `"Ontario"' `"Prince Edward Island"' `"Quebec"' `"Saskatchewan"' `"Yukon"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayCasMeSmA00S00 date, sort lcolor(blue)) ///
+> (line DayDeaMeSmA00S00 date, sort lcolor(red)) ///
+> (line DayDeaMeSmA00multip date, sort lpattern(tight_dot) lcolor(red)) ///
+> if provincestate == "`l'" & date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases and scaled deaths) title("COVID-19 daily cases and deaths, smooth, $country, Johns Hopkins", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none)))  ///
+> legend(order(1 "Daily cases" 2 "Daily deaths" 3 "Daily deaths scaled") rows(1)) ///
+> subtitle("`l'. Daily deaths scaled (times means of cases by deaths) only for visualization", size(small))
+{txt}  3{com}. 
+. qui qui graph save "graph 7 COVID-19 daily deaths and cases timing, smooth, $country, `l', Johns Hopkins.gph", replace
+{txt}  4{com}. qui qui graph export "graph 7 COVID-19 daily deaths and cases timing, smooth, $country, `l', Johns Hopkins.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. ****************
+. 
+. 
+. 
+. view "log CovidVisualizedCountry JOHN.smcl"
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/JOHN/log CovidVisualizedCountry JOHN.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}11 Dec 2021, 10:18:08
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
