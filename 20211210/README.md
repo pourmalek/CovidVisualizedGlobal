@@ -24,7 +24,7 @@
 
 ### Selected graphs - [Global](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---global-1)
 
-### Selected graphs - [Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/readme.md#selected-graphs---regions-together-1)
+### Selected graphs - [Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---regions-together-1)
 
 ### Selected graphs - [AMRO](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/readme.md#selected-graphs---amro-1)
 
