@@ -294,91 +294,79 @@
 
 (2) African region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2012a%20COVID-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145893811-f04a41bf-cdc6-4b6d-9f14-1c27f788bd8b.png)
 
 ****
 
 (2b) African region [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2012b%20COVID-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145893907-b4cb1709-0700-4f48-a31d-18d9c84639d3.png)
 
 ****
 
 (3) African region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2014%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145893975-4c1f8b01-934f-4d82-88aa-1a675121fe45.png)
 
 ****
 
 (3b) African region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2016%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894072-c9befc08-4463-43f5-9e9c-aa45d3ea79c8.png)
 
 ****
 
 (3c) African region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2018%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894172-6dd21973-fa8d-4eba-a66f-d6befa0dd7c9.png)
 
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2021%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894249-ddd84b9e-1223-495e-9af4-99cbb8d35b07.png)
 
 ****
 
 (5) African region [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2022%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894326-7676590d-14f6-4313-9898-4ba888dc1a9e.png)
 
 ****
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894412-b1d03714-7c87-4784-a95e-a0a2f13c2b97.png)
 
 ****
 
 (6b) African region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2022b%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894502-a28270e1-a9d7-4be4-b575-6b3f93256fa0.png)
 
 ****
 
 (6c) African region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20AFRO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894585-fb798f6a-855c-41e2-9d19-ed0ff802ca82.png)
 
 ****
 
 (7) African region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894675-9e68ca1a-239e-4842-9ecf-01818c3c2c3e.png)
 
 ****
 
 (8) African region [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145894744-53811c00-cf53-4924-80ee-2cd599410a1d.png)
 
 ****
 
 (9) African region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
-
-****
-
-(11) African region [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20AFRO%203%20scenarios%2C%20IHME.pdf)
-
-
-****
-
-(11b) African region [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2091b%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20AFRO%203%20scenarios%2C%20IHME.pdf)
-
-
-****
-
-(12) African region [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2092%20COVID-19%20daily%20mobility%2C%20AFRO%2C%203%20scenarios.pdf)
-
-
-****
-
-(13) African region [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2093%20COVID-19%20daily%20mask_use%2C%20AFRO%2C%203%20scenarios.pdf)
-
-
-****
-
-(14) African region [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20AFRO%2C%20IHME.pdf)
-
+![image](https://user-images.githubusercontent.com/30849720/145894824-81670783-0dab-46b1-8829-7ed0795f2f9f.png)
 
 ****
 
