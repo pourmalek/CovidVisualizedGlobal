@@ -591,7 +591,7 @@ foreach region of local list2 {
 	
 	  
 	  
-	* IDR, IHR, IFR
+	* IDR, IHR, IFR, 2021
 	
 	
 	* daily Infection fatality ratio, 3 scenarios  
@@ -600,9 +600,9 @@ foreach region of local list2 {
 	(line InfFatalA02S02`region' date, sort lcolor(green)) ///
 	(line InfFatalA02S03`region' date, sort lcolor(red)) ///
 	(line InfFatalA02S01`region' date, sort lcolor(black)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection fatality ratio) title("COVID-19 daily Infection fatality ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1))
@@ -613,15 +613,15 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection detection ratio, 3 scenarios  
+	* daily Infection detection ratio, 3 scenarios, 2021  
 	  
 	twoway ///
 	(line InfDetectA02S02`region' date, sort lcolor(green)) ///
 	(line InfDetectA02S03`region' date, sort lcolor(red)) ///
 	(line InfDetectA02S01`region' date, sort lcolor(black)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection detection ratio) title("COVID-19 daily Infection detection ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1))
@@ -633,15 +633,15 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection hospitalization ratio, 3 scenarios  
+	* daily Infection hospitalization ratio, 3 scenarios, 2021  
 	  
 	twoway ///
 	(line InfHospitA02S02`region' date, sort lcolor(green)) ///
 	(line InfHospitA02S03`region' date, sort lcolor(red)) ///
 	(line InfHospitA02S01`region' date, sort lcolor(black)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection hospitalization ratio) title("COVID-19 daily Infection hospitalization ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Better" 2 "Worse" 3 "Reference") rows(1))
@@ -652,15 +652,15 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection outcomes ratios, reference scenario 
+	* daily Infection outcomes ratios, reference scenario, 2021
 	  
 	twoway ///
 	(line InfDetectA02S01`region' date, sort lcolor(green)) ///
 	(line InfHospitA02S01`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S01`region' date, sort lcolor(red)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Infection detection ratio" 2 "Infection hospitalization ratio" 3 "Infection fatality ratio") rows(2))
@@ -670,15 +670,15 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection outcomes ratios, better scenario 
+	* daily Infection outcomes ratios, better scenario, 2021
 	  
 	twoway ///
 	(line InfDetectA02S02`region' date, sort lcolor(green)) ///
 	(line InfHospitA02S02`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S02`region' date, sort lcolor(red)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, better scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Infection detection ratio" 2 "Infection hospitalization ratio" 3 "Infection fatality ratio") rows(2))
@@ -690,15 +690,15 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection outcomes ratios, worse scenario 
+	* daily Infection outcomes ratios, worse scenario, 2021 
 	  
 	twoway ///
 	(line InfDetectA02S03`region' date, sort lcolor(green)) ///
 	(line InfHospitA02S03`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S03`region' date, sort lcolor(red)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Infection detection ratio" 2 "Infection hospitalization ratio" 3 "Infection fatality ratio") rows(2))
@@ -711,7 +711,7 @@ foreach region of local list2 {
 	
 	
 	
-	* daily Infection outcomes ratios, 3 scenarios 
+	* daily Infection outcomes ratios, 3 scenarios, 2021
 	  
 	twoway ///
 	(line InfDetectA02S01`region' date, sort lcolor(green)) ///
@@ -723,9 +723,9 @@ foreach region of local list2 {
 	(line InfDetectA02S03`region' date, sort lcolor(green) lpattern(dash)) ///
 	(line InfHospitA02S03`region' date, sort lcolor(black) lpattern(dash)) ///
 	(line InfFatalA02S03`region' date, sort lcolor(red) lpattern(dash)) ///
-	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	if date >= td(01jan2021) ///
+	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Infection detection ratio" 2 "Infection hospitalization ratio" 3 "Infection fatality ratio") rows(2)) ///
