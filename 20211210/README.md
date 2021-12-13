@@ -1,10 +1,10 @@
-! Read the Global COVID-19 epidemic models situation report No 19 - 2021-12-10 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/19%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2019%20–%202021-12-10.pdf)
+! Read the Global COVID-19 epidemic models situation report No 18 - 2021-12-03 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/18%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2018%20–%202021-12-03.pdf)
 
 <br/><br/>
 
 ### Study update dates in uptake 20211210
 
-**_DELP 20211210_**, **_IHME 20211210_**, IMPE 20211129, **_SRIV 20211210_**
+**_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
 <br/><br/>
 
@@ -68,6 +68,11 @@
 ****
 
 ### (6b) [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%2022b%20COVID-19%20daily%20cases%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
+
+
+****
+
+### (6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20global%2C%20reference%20scenarios%202021.pdf)
 
 
 ****
