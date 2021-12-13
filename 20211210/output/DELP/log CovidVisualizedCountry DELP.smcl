@@ -1,0 +1,1381 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/log CovidVisualizedCountry DELP.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Dec 2021, 10:18:08
+{txt}
+{com}. 
+. ***************************************************************************
+. * This is "do CovidVisualizedCountry DELP.do"
+. 
+. * Project: Combine and visualize international periodically updating 
+. * estimates of COVID-19 at the country level (CovidVisualizedCountry)
+. * Person: Farshad Pourmalek pourmalek_farshad at yahoo dotcom
+. * Time (initial): 2021-04-14
+. ***************************************************************************
+. 
+. 
+.                                                                                                          ***************************
+. * To change update date, find and replace all, 20211210 (old), with 20211210 (new) <<--           <<<--- * change update date here *
+.                                                                                                          ***************************
+. 
+. 
+. clear
+{txt}
+{com}. 
+. copy https://raw.githubusercontent.com/COVIDAnalytics/website/master/data/predicted/Global_V4_since100_20211210.csv Global_V4_since100_20211210.csv
+{txt}
+{com}. 
+. import delimited using "Global_V4_since100_20211210.csv", clear varnames(1)
+{res}{text}(16 vars, 40,080 obs)
+
+{com}. 
+. rename country loc_grand_name
+{res}{txt}
+{com}. 
+. keep if loc_grand_name == "$country"
+{txt}(38,410 observations deleted)
+
+{com}. 
+. drop continent
+{txt}
+{com}. 
+. rename province provincestate
+{res}{txt}
+{com}. 
+. replace provincestate = " National" if provincestate == "None"
+{txt}(167 real changes made)
+
+{com}. 
+. 
+. 
+. * gen date
+. 
+. rename day date_original
+{res}{txt}
+{com}. 
+. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}22553{txt},{res}22719{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}30sep2021{txt},{res}15mar2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}167{col 51}{txt}missing .:  {res}0{txt}/{res}1,670
+
+{txt}{col 19}mean:{res}{col 26}   22636{txt} = {res}22dec2021{txt}
+{col 15}std. dev:{res}{col 26} 48.2223
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22569{col 37}   22594{col 47}   22636{col 57}   22678{col 67}   22703
+{col 26}16oct2021{col 36}10nov2021{col 46}22dec2021{col 56}02feb2022{col 66}27feb2022
+{txt}
+{com}. 
+. drop year month day date2
+{txt}
+{com}. 
+. 
+. * rename outcome variables
+. 
+. 
+. * total vars
+. 
+. rename totaldetecteddeaths   TotDeaMeRaA01S00
+{res}{txt}
+{com}. rename totaldetecteddeathslb TotDeaLoRaA01S00
+{res}{txt}
+{com}. rename totaldetecteddeathsub TotDeaUpRaA01S00
+{res}{txt}
+{com}. 
+. label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+{txt}
+{com}. label var TotDeaMeRaA01S00 "Total Deaths Lower DELP S0"
+{txt}
+{com}. label var TotDeaMeRaA01S00 "Total Deaths Upper DELP S0"
+{txt}
+{com}. 
+. rename totaldetected   TotCasMeRaA01S00
+{res}{txt}
+{com}. rename totaldetectedlb TotCasLoRaA01S00
+{res}{txt}
+{com}. rename totaldetectedub TotCasUpRaA01S00
+{res}{txt}
+{com}. 
+. label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+{txt}
+{com}. label var TotCasMeRaA01S00 "Total Cases Lower DELP S0"
+{txt}
+{com}. label var TotCasMeRaA01S00 "Total Cases Upper DELP S0"
+{txt}
+{com}. 
+. 
+. * gen daily vars and rename
+. 
+. sort provincestate date
+{txt}
+{com}. 
+. bysort provincestate (date): gen DayDeaMeRaA01S00 =  TotDeaMeRaA01S00[_n] - TotDeaMeRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. bysort provincestate (date): gen DayDeaLoRaA01S00 =  TotDeaLoRaA01S00[_n] - TotDeaLoRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. bysort provincestate (date): gen DayDeaUpRaA01S00 =  TotDeaUpRaA01S00[_n] - TotDeaUpRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. bysort provincestate (date): gen DayCasMeRaA01S00 =  TotCasMeRaA01S00[_n] - TotCasMeRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. bysort provincestate (date): gen DayCasLoRaA01S00 =  TotCasLoRaA01S00[_n] - TotCasLoRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. bysort provincestate (date): gen DayCasUpRaA01S00 =  TotCasUpRaA01S00[_n] - TotCasUpRaA01S00[_n-1]
+{txt}(10 missing values generated)
+
+{com}. 
+. 
+. label var DayDeaMeRaA01S00 "Daily Deaths Mean DELP S0"
+{txt}
+{com}. label var DayDeaLoRaA01S00 "Daily Deaths Lower DELP S0"
+{txt}
+{com}. label var DayDeaUpRaA01S00 "Daily Deaths Upper DELP S0"
+{txt}
+{com}. 
+. label var DayCasMeRaA01S00 "Daily Cases Mean DELP S0"
+{txt}
+{com}. label var DayCasLoRaA01S00 "Daily Cases Lower DELP S0"
+{txt}
+{com}. label var DayCasUpRaA01S00 "Daily Cases Upper DELP S0"
+{txt}
+{com}. 
+. label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+{txt}
+{com}. label var TotDeaLoRaA01S00 "Total Deaths Lower DELP S0"
+{txt}
+{com}. label var TotDeaUpRaA01S00 "Total Deaths Upper DELP S0"
+{txt}
+{com}. 
+. label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+{txt}
+{com}. label var TotCasLoRaA01S00 "Total Cases Lower DELP S0"
+{txt}
+{com}. label var TotCasUpRaA01S00 "Total Cases Upper DELP S0"
+{txt}
+{com}. 
+. 
+. * 
+. 
+. * other outcomes
+. 
+. * active activehospitalized activeventilated cumulativehospitalized
+. 
+. /*
+> ***********************
+> * rename convention
+> 
+> active                                  Act
+> 
+> activehospitalized              Hos
+> 
+> activeventilated                Ven
+> 
+> cumulativehospitalized  Hos
+> 
+> */
+. 
+. 
+. rename active DayActMeRaA01S00
+{res}{txt}
+{com}. 
+. rename activehospitalized DayHosMeRaA01S00
+{res}{txt}
+{com}. 
+. rename activeventilated DayVenMeRaA01S00
+{res}{txt}
+{com}. 
+. rename cumulativehospitalized TotHosMeRaA01S00
+{res}{txt}
+{com}. 
+. label var DayActMeRaA01S00 "Daily Cases Active Mean DELP S0"
+{txt}
+{com}. 
+. label var DayHosMeRaA01S00 "Daily Cases Active Hospitalized Mean DELP S0"
+{txt}
+{com}. 
+. label var DayVenMeRaA01S00 "Daily Cases Active Ventilated Mean DELP S0"
+{txt}
+{com}. 
+. label var TotHosMeRaA01S00 "Total Cases Active Mean DELP S0"
+{txt}
+{com}. 
+.  
+. 
+. keep ///
+> loc_grand_name provincestate date ///
+> TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+> DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+> TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+> DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+> DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+{txt}
+{com}. 
+. 
+. order ///
+> loc_grand_name provincestate date ///
+> TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+> DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+> TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+> DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+> DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+{txt}
+{com}. 
+. 
+. 
+. * gen cfr
+. 
+. gen DayCfrMeRaA01S00 = 100 * DayDeaMeRaA01S00 / DayCasMeRaA01S00
+{txt}(294 missing values generated)
+
+{com}. gen DayCfrLoRaA01S00 = 100 * DayDeaLoRaA01S00 / DayCasLoRaA01S00
+{txt}(693 missing values generated)
+
+{com}. gen DayCfrUpRaA01S00 = 100 * DayDeaUpRaA01S00 / DayCasUpRaA01S00
+{txt}(63 missing values generated)
+
+{com}. 
+. label var DayCfrMeRaA01S00 "Daily CFR Mean DELP S0"
+{txt}
+{com}. label var DayCfrLoRaA01S00 "Daily CFR Lower DELP S0"
+{txt}
+{com}. label var DayCfrUpRaA01S00 "Daily CFR Upper DELP S0"
+{txt}
+{com}. 
+. *
+. 
+. * smooth daily deaths and daily cases
+. 
+. encode provincestate, gen(provincestate_encoded)
+{txt}
+{com}. 
+. tsset provincestate_encoded date, daily   
+{res}{txt}{col 8}panel variable:  {res}provincestate_encoded (strongly balanced)
+{txt}{col 9}time variable:  {res}{col 25}date, 30Sep2021 to 15Mar2022
+{txt}{col 17}delta:  {res}1 day
+{txt}
+{com}. 
+. 
+. tssmooth ma DayDeaMeRaA01S00_window = DayDeaMeRaA01S00 if DayDeaMeRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayDeaMeRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayDeaMeSmA01S00 = DayDeaMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayDeaMeRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayDeaMeSmA01S00 "Daily deaths mean smooth DELP"
+{txt}
+{com}. 
+. 
+. tssmooth ma DayDeaLoRaA01S00_window = DayDeaLoRaA01S00 if DayDeaLoRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayDeaLoRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayDeaLoSmA01S00 = DayDeaLoRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayDeaLoRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayDeaLoSmA01S00 "Daily deaths lower smooth DELP"
+{txt}
+{com}. 
+. 
+. tssmooth ma DayDeaUpRaA01S00_window = DayDeaUpRaA01S00 if DayDeaUpRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayDeaUpRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayDeaUpSmA01S00 = DayDeaUpRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayDeaUpRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayDeaUpSmA01S00 "Daily deaths upper smooth DELP"
+{txt}
+{com}. 
+. 
+. 
+. tssmooth ma DayCasMeRaA01S00_window = DayCasMeRaA01S00 if DayCasMeRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayCasMeRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayCasMeSmA01S00 = DayCasMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayCasMeRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayCasMeSmA01S00 "Daily cases mean smooth DELP"
+{txt}
+{com}. 
+. 
+. tssmooth ma DayCasLoRaA01S00_window = DayCasLoRaA01S00 if DayCasLoRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayCasLoRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayCasLoSmA01S00 = DayCasLoRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayCasLoRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayCasLoSmA01S00 "Daily cases lower smooth DELP"
+{txt}
+{com}. 
+. 
+. tssmooth ma DayCasUpRaA01S00_window = DayCasUpRaA01S00 if DayCasUpRaA01S00 >= 0, window(3 1 3)
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/7)*[x(t-3) + x(t-2) + x(t-1) + 1*x(t) + x(t+1) + x(t+2) + x(t+3)]; x(t)= DayCasUpRaA01S00 {p_end}
+{txt}
+{com}. 
+. tssmooth ma DayCasUpSmA01S00 = DayCasUpRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}The smoother applied was
+{res}{p 5 5 5} by provincestate_encoded : (1/16)*[1*x(t-3) + 2*x(t-2) + 3*x(t-1) + 4*x(t) + 3*x(t+1) + 2*x(t+2) + ...; x(t)= DayCasUpRaA01S00_window
+{txt}
+{smcl}
+{com}. 
+. label var DayCasUpSmA01S00 "Daily cases upper smooth DELP"
+{txt}
+{com}. 
+. 
+. drop *_window
+{txt}
+{com}. 
+. drop provincestate_encoded
+{txt}
+{com}. 
+. tsset, clear
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * gen "Daily cases mean div by daily deaths mean DELP DayCbD" for visulization of temporal relation of deaths and cases peaks 
+. 
+. 
+. summ DayDeaMeRaA01S00 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeR~00 {c |}{res}      1,660    3.859036    6.681013          0         39
+{txt}
+{com}. gen DayDeMMeRaA01S00 = r(mean)
+{txt}
+{com}. label var DayDeMMeRaA01S00 "Daily deaths mean DELP DayDeM"
+{txt}
+{com}. 
+. summ DayCasMeRaA01S00 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayCasMeR~00 {c |}{res}      1,660    464.2783    868.6497          0       3915
+{txt}
+{com}. gen DayCaMMeRaA01S00 = r(mean)
+{txt}
+{com}. label var DayCaMMeRaA01S00 "Daily cases mean DELP DayCaM"
+{txt}
+{com}.                               
+. gen DayCbDMeRaA01S00 = DayCaMMeRaA01S00 / DayDeaMeRaA01S00
+{txt}(652 missing values generated)
+
+{com}. label var DayCbDMeRaA01S00 "Daily cases mean div by daily deaths mean DELP DayCbD"
+{txt}
+{com}. summ DayCbDMeRaA01S00
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayCbDMeR~00 {c |}{res}      1,018     196.914    161.6657   11.90457   464.2783
+{txt}
+{com}.         
+. gen DayDMuMeRaA01S00 = DayDeaMeRaA01S00 * DayCbDMeRaA01S00
+{txt}(652 missing values generated)
+
+{com}. label var DayDMuMeRaA01S00 "Daily deaths scaled (times means of cases by deaths) only for visualization DELP"
+{txt}
+{com}. summ DayDMuMeRaA01S00   
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDMuMeR~00 {c |}{res}      1,018    464.2783    7.57e-06   464.2783   464.2784
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. * gen vars by provincestate 
+. 
+. foreach var of varlist ///
+> DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 /// 
+> TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+> DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00 ///
+> DayCfrMeRaA01S00 DayCfrLoRaA01S00 DayCfrUpRaA01S00 ///
+> DayDeMMeRaA01S00 DayCaMMeRaA01S00 DayCbDMeRaA01S00 DayDMuMeRaA01S00 {c -(}
+{txt}  2{com}. 
+. *
+.                          
+. qui gen `var'XAB = `var' 
+{txt}  3{com}. qui replace `var'XAB = . if provincestate != "Alberta"
+{txt}  4{com}. 
+. qui gen `var'XBC = `var'
+{txt}  5{com}. qui replace `var'XBC = . if provincestate != "British Columbia"
+{txt}  6{com}. 
+. qui gen `var'XMB = `var'
+{txt}  7{com}. qui replace `var'XMB = . if provincestate != "Manitoba"
+{txt}  8{com}. 
+. qui gen `var'XXX = `var'
+{txt}  9{com}. qui replace `var'XXX = . if provincestate != " National"
+{txt} 10{com}. 
+. qui gen `var'XNB = `var'
+{txt} 11{com}. qui replace `var'XNB = . if provincestate != "New Brunswick"
+{txt} 12{com}. 
+. qui gen `var'XNL = `var'
+{txt} 13{com}. qui replace `var'XNL = . if provincestate != "Newfoundland and Labrador"
+{txt} 14{com}. 
+. qui gen `var'XNS = `var'
+{txt} 15{com}. qui replace `var'XNS = . if provincestate != "Nova Scotia"
+{txt} 16{com}. 
+. qui gen `var'XON = `var'
+{txt} 17{com}. qui replace `var'XON = . if provincestate != "Ontario"
+{txt} 18{com}. 
+. qui gen `var'XQC = `var'
+{txt} 19{com}. qui replace `var'XQC = . if provincestate != "Quebec"
+{txt} 20{com}. 
+. qui gen `var'XSK = `var'
+{txt} 21{com}. qui replace `var'XSK = . if provincestate != "Saskatchewan"
+{txt} 22{com}. 
+. 
+. label var `var'XAB "`var' Alberta"
+{txt} 23{com}. label var `var'XBC "`var' British Columbia"
+{txt} 24{com}. label var `var'XMB "`var' Manitoba"
+{txt} 25{com}. label var `var'XXX "`var' National"
+{txt} 26{com}. label var `var'XNB "`var' New Brunswick"
+{txt} 27{com}. label var `var'XNL "`var' Newfoundland and Labrador"
+{txt} 28{com}. label var `var'XNS "`var' Nova Scotia"
+{txt} 29{com}. label var `var'XON "`var' Ontario"
+{txt} 30{com}. label var `var'XQC "`var' Quebec"
+{txt} 31{com}. label var `var'XSK "`var' Saskatchewan"
+{txt} 32{com}. 
+. 
+.                 
+. {c )-}
+{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. * smooth daily deaths and daily cases
+. 
+. encode provincestate, gen(provincestate_encoded)
+{txt}
+{com}. 
+. tsset provincestate_encoded date, daily   
+{res}{txt}{col 8}panel variable:  {res}provincestate_encoded (strongly balanced)
+{txt}{col 9}time variable:  {res}{col 25}date, 30Sep2021 to 15Mar2022
+{txt}{col 17}delta:  {res}1 day
+{txt}
+{com}. 
+. 
+.         foreach var of varlist ///
+>         DayDeaMeRaA01S00XAB-DayCasMeRaA01S00XSK {c -(}
+{txt}  2{com}. 
+. 
+. qui tssmooth ma `var'_window = `var' if `var' >= 0, window(3 1 3)
+{txt}  3{com}. 
+. qui tssmooth ma `var'_sm = `var'_window, weights( 1 2 3 <4> 3 2 1) replace
+{txt}  4{com}. 
+. 
+.         {c )-}
+{txt}
+{com}. *
+. 
+. drop *_window
+{txt}
+{com}. 
+. drop provincestate_encoded
+{txt}
+{com}. 
+. tsset, clear
+{txt}
+{com}. 
+. 
+. rename ///
+> (DayDeaMeRaA01S00XAB_sm DayDeaMeRaA01S00XBC_sm  DayDeaMeRaA01S00XMB_sm  DayDeaMeRaA01S00XXX_sm  DayDeaMeRaA01S00XNB_sm  DayDeaMeRaA01S00XNL_sm  DayDeaMeRaA01S00XNS_sm  DayDeaMeRaA01S00XON_sm  DayDeaMeRaA01S00XQC_sm  DayDeaMeRaA01S00XSK_sm  DayCasMeRaA01S00XAB_sm  DayCasMeRaA01S00XBC_sm  DayCasMeRaA01S00XMB_sm  DayCasMeRaA01S00XXX_sm  DayCasMeRaA01S00XNB_sm  DayCasMeRaA01S00XNL_sm  DayCasMeRaA01S00XNS_sm  DayCasMeRaA01S00XON_sm  DayCasMeRaA01S00XQC_sm  DayCasMeRaA01S00XSK_sm) ///
+> (DayDeaMeSmA01S00XAB    DayDeaMeSmA01S00XBC     DayDeaMeSmA01S00XMB     DayDeaMeSmA01S00XXX     DayDeaMeSmA01S00XNB     DayDeaMeSmA01S00XNL     DayDeaMeSmA01S00XNS     DayDeaMeSmA01S00XON     DayDeaMeSmA01S00XQC     DayDeaMeSmA01S00XSK     DayCasMeSmA01S00XAB     DayCasMeSmA01S00XBC     DayCasMeSmA01S00XMB     DayCasMeSmA01S00XXX     DayCasMeSmA01S00XNB     DayCasMeSmA01S00XNL     DayCasMeSmA01S00XNS     DayCasMeSmA01S00XON     DayCasMeSmA01S00XQC     DayCasMeSmA01S00XSK   )
+{res}{txt}
+{com}. 
+. 
+. labvars DayDeaMeSmA01S00XAB-DayCasMeSmA01S00XSK ,names
+{txt}
+{com}.            
+. *
+. 
+. sort loc_grand_name provincestate date
+{txt}
+{com}. 
+. order loc_grand_name provincestate date
+{txt}
+{com}. 
+. qui compress
+{txt}
+{com}. 
+. save "CovidVisualizedCountry DELP.dta", replace
+{txt}file CovidVisualizedCountry DELP.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. ***********************
+. 
+. * graphs
+. 
+. 
+. grstyle init
+{res}{txt}
+{com}. 
+. grstyle color background white
+{txt}
+{com}. 
+. 
+. 
+. *****************
+. * daily deaths (graph numbers starting with 1)
+. 
+. 
+. ****
+. * 1 a daily deaths, national, all subnational
+. 
+. twoway ///
+> (line DayDeaMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayDeaMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayDeaMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayDeaMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayDeaMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayDeaMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayDeaMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayDeaMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayDeaMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayDeaMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "1aDayDeaDELPsub1 - COVID-19 daily deaths, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "1aDayDeaDELPsub1 - COVID-19 daily deaths, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/1aDayDeaDELPsub1 - COVID-19 daily deaths, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 1 b daily deaths, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayDeaMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayDeaMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayDeaMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayDeaMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayDeaMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayDeaMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "1bDayDeaDELPsub2 - COVID-19 daily deaths, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "1bDayDeaDELPsub2 - COVID-19 daily deaths, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/1bDayDeaDELPsub2 - COVID-19 daily deaths, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 1 c daily deaths, national, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway (rarea DayDeaLoRaA01S00 DayDeaUpRaA01S00 date, sort color(green*.2)) ///
+> (line DayDeaMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayDeaMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario, with confidence limits", size(small))        
+{txt}  3{com}.            
+. qui graph save "1cDayDeaDELPsub3 `l' - COVID-19 daily deaths, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "1cDayDeaDELPsub3 `l' - COVID-19 daily deaths, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily cases (graph numbers starting with 2)
+. 
+. 
+. ****
+. * 2 a daily cases, national, all subnational
+. 
+. twoway ///
+> (line DayCasMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCasMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCasMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCasMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayCasMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayCasMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayCasMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayCasMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayCasMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayCasMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "2aDayCasDELPsub1 - COVID-19 daily cases, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "2aDayCasDELPsub1 - COVID-19 daily cases, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/2aDayCasDELPsub1 - COVID-19 daily cases, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 2 b daily cases, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayCasMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCasMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCasMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCasMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayCasMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayCasMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "2bDayCasDELPsub2 - COVID-19 daily cases, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "2bDayCasDELPsub2 - COVID-19 daily cases, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/2bDayCasDELPsub2 - COVID-19 daily cases, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 2 c daily cases, national, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway (rarea DayCasLoRaA01S00 DayCasUpRaA01S00 date, sort color(green*.2)) ///
+> (line DayCasMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayCasMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario, with confidence limits", size(small))        
+{txt}  3{com}.            
+. qui graph save "2cDayCasDELPsub3 `l' - COVID-19 daily cases, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "2cDayCasDELPsub3 `l' - COVID-19 daily cases, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * total deaths (graph numbers starting with 3)
+. 
+. 
+. ****
+. * 3 a total deaths, national, all subnational
+. 
+. twoway ///
+> (line TotDeaMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotDeaMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotDeaMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotDeaMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line TotDeaMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line TotDeaMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line TotDeaMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line TotDeaMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line TotDeaMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line TotDeaMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "3aTotDeaDELPsub1 - COVID-19 total deaths, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "3aTotDeaDELPsub1 - COVID-19 total deaths, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/3aTotDeaDELPsub1 - COVID-19 total deaths, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 3 b total deaths, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line TotDeaMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotDeaMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotDeaMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotDeaMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line TotDeaMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line TotDeaMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "3bTotDeaDELPsub2 - COVID-19 total deaths, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "3bTotDeaDELPsub2 - COVID-19 total deaths, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/3bTotDeaDELPsub2 - COVID-19 total deaths, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 3 c total deaths, national, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway (rarea TotDeaLoRaA01S00 TotDeaUpRaA01S00 date, sort color(green*.2)) ///
+> (line TotDeaMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & TotDeaMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario, with confidence limits", size(small))        
+{txt}  3{com}.            
+. qui graph save "3cTotDeaDELPsub3 `l' - COVID-19 total deaths, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "3cTotDeaDELPsub3 `l' - COVID-19 total deaths, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * total cases (graph numbers starting with 4)
+. 
+. 
+. ****
+. * 4 a total cases, national, all subnational
+. 
+. twoway ///
+> (line TotCasMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotCasMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotCasMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotCasMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line TotCasMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line TotCasMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line TotCasMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line TotCasMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line TotCasMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line TotCasMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "4aTotCasDELPsub1 - COVID-19 total cases, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "4aTotCasDELPsub1 - COVID-19 total cases, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/4aTotCasDELPsub1 - COVID-19 total cases, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 4 b total cases, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line TotCasMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line TotCasMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line TotCasMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line TotCasMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line TotCasMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line TotCasMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "4bTotCasDELPsub2 - COVID-19 total cases, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "4bTotCasDELPsub2 - COVID-19 total cases, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/4bTotCasDELPsub2 - COVID-19 total cases, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 4 c total cases, national, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway (rarea TotCasLoRaA01S00 TotCasUpRaA01S00 date, sort color(green*.2)) ///
+> (line TotCasMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & TotCasMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Total cases) title("COVID-19 total cases, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario, with confidence limits", size(small))        
+{txt}  3{com}.            
+. qui graph save "4cTotCasDELPsub3 `l' - COVID-19 total cases, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "4cTotCasDELPsub3 `l' - COVID-19 total cases, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily CFR (graph numbers starting with 5)
+. 
+. 
+. ****
+. * 5 a daily CFR, national, all subnational
+. 
+. twoway ///
+> (line DayCfrMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCfrMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCfrMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCfrMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayCfrMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayCfrMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayCfrMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayCfrMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayCfrMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayCfrMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "5aDayCfrDELPsub1 - COVID-19 daily CFR, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "5aDayCfrDELPsub1 - COVID-19 daily CFR, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/5aDayCfrDELPsub1 - COVID-19 daily CFR, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 5 b daily CFR, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayCfrMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayCfrMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayCfrMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayCfrMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayCfrMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayCfrMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "5bDayCfrDELPsub2 - COVID-19 daily CFR, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "5bDayCfrDELPsub2 - COVID-19 daily CFR, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/5bDayCfrDELPsub2 - COVID-19 daily CFR, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 5 c daily CFR, national, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway (rarea DayCfrLoRaA01S00 DayCfrUpRaA01S00 date, sort color(green*.2)) ///
+> (line DayCfrMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayCfrMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily CFR) title("COVID-19 daily CFR, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario, with confidence limits", size(small))        
+{txt}  3{com}.            
+. qui graph save "5cDayCfrDELPsub3 `l' - COVID-19 daily CFR, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "5cDayCfrDELPsub3 `l' -  COVID-19 daily CFR, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily active cases (graph numbers starting with 6)
+. 
+. 
+. ****
+. * 6 a daily active cases, national, all subnational
+. 
+. twoway ///
+> (line DayActMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayActMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayActMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayActMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayActMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayActMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayActMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayActMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayActMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayActMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active cases) title("COVID-19 daily active cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "6aDayActDELPsub1 -  COVID-19 daily active cases, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "6aDayActDELPsub1 - COVID-19 daily active cases, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/6aDayActDELPsub1 - COVID-19 daily active cases, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 6 b daily active cases, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayActMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayActMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayActMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayActMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayActMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayActMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active cases) title("COVID-19 daily active cases, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "6bDayActDELPsub2 - COVID-19 daily active cases, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "6bDayActDELPsub2 - COVID-19 daily active cases, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/6bDayActDELPsub2 - COVID-19 daily active cases, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 6 c daily active cases, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayActMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayActMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily active cases) title("COVID-19 daily active cases, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario", size(small)) 
+{txt}  3{com}. 
+. qui graph save "6cDayActDELPsub3 `l' - COVID-19 daily active cases, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "6cDayActDELPsub3 `l' - COVID-19 daily active cases, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily active hospitalized (graph numbers starting with 7)
+. 
+. 
+. ****
+. * 7 a daily active hospitalized, national, all subnational
+. 
+. twoway ///
+> (line DayHosMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayHosMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayHosMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayHosMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayHosMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayHosMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayHosMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayHosMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayHosMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayHosMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active hospitalized) title("COVID-19 daily active hospitalized, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "7aDayHosDELPsub1 - COVID-19 daily active hospitalized, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "7aDayHosDELPsub1 - COVID-19 daily active hospitalized, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/7aDayHosDELPsub1 - COVID-19 daily active hospitalized, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 7 b daily active hospitalized, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayHosMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayHosMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayHosMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayHosMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayHosMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayHosMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active hospitalized) title("COVID-19 daily active hospitalized, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) ///
+> 
+{res}{txt}
+{com}. qui graph save "7bDayHosDELPsub2 - COVID-19 daily active hospitalized, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "7bDayHosDELPsub2 - COVID-19 daily active hospitalized, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/7bDayHosDELPsub2 - COVID-19 daily active hospitalized, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 7 c daily active hospitalized, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayHosMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayHosMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily active hospitalized) title("COVID-19 daily active hospitalized, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario", size(small)) 
+{txt}  3{com}. 
+. qui graph save "7cDayHosDELPsub3 `l' - COVID-19 daily active hospitalized, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "7cDayHosDELPsub3 `l' - COVID-19 daily active hospitalized, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. 
+. 
+. *****************
+. * daily active ventilated (graph numbers starting with 8)
+. 
+. 
+. ****
+. * 8 a daily active ventilated, national, all subnational
+. 
+. twoway ///
+> (line DayVenMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayVenMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayVenMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayVenMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 4 "NS" magenta
+> (line DayVenMeRaA01S00XNL date, sort lwidth(medium) lcolor(gray)) /// 5 "NL"
+> (line DayVenMeRaA01S00XNS date, sort lwidth(medium) lcolor(magenta)) /// 6 "NS" magenta
+> (line DayVenMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 7 "ON" red
+> (line DayVenMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 8 "QC" black
+> (line DayVenMeRaA01S00XSK date, sort lwidth(medium) lcolor(orange)) /// 9 "SK" orange
+> (line DayVenMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 10 "CAN" 
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active ventilated) title("COVID-19 daily active ventilated, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 5 "NL" 6 "NS" 7 "ON" 8 "QC" 9 "SK" 10 "CAN") rows(2) size(small)) ///
+> subtitle("single scenario, all provinces avilable in DELP", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "8aDayVenDELPsub1 - COVID-19 daily active ventilated, $country, subnational, DELP.gph", replace
+{txt}
+{com}. graph export "8aDayVenDELPsub1 - COVID-19 daily active ventilated, $country, subnational, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/8aDayVenDELPsub1 - COVID-19 daily active ventilated, Canada, subnational, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 8 b daily active ventilated, subnational, most affected 
+. * Alberta (AB), British Columbia (BC), Manitoba (MB), Ontario (ON), Quebec (QC)
+. 
+. twoway ///
+> (line DayVenMeRaA01S00XAB date, sort lwidth(medium) lcolor(cyan)) /// 1 "AB" cyan
+> (line DayVenMeRaA01S00XBC date, sort lwidth(medium) lcolor(blue)) /// 2 "BC" blue
+> (line DayVenMeRaA01S00XMB date, sort lwidth(medium) lcolor(lime)) /// 3 "MB" lime
+> (line DayVenMeRaA01S00XON date, sort lwidth(medium) lcolor(red)) /// 4 "ON" red
+> (line DayVenMeRaA01S00XQC date, sort lwidth(medium) lcolor(black)) /// 5 "QC" black
+> (line DayVenMeRaA01S00XXX date, sort lwidth(thick) lcolor(gray)) /// 6 "CAN" 
+> , xtitle(Date) xlabel(`dates2020' `dates2021', format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily active ventilated) title("COVID-19 daily active ventilated, $country, DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AB" 2 "BC" 3 "MB" 4 "ON" 5 "QC" 6 "CAN") rows(1) size(small)) ///
+> subtitle("single scenario, 5 most affected provinces", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph save "8bDayVenDELPsub2 - COVID-19 daily active ventilated, $country, subnational, most affected, DELP.gph", replace
+{txt}
+{com}. graph export "8bDayVenDELPsub2 - COVID-19 daily active ventilated, $country, subnational, most affected, DELP.pdf", replace
+{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/8bDayVenDELPsub2 - COVID-19 daily active ventilated, Canada, subnational, most affected, DELP.pdf written in PDF format)
+
+{com}. 
+. 
+. 
+. 
+. ****
+. * 8 c daily active ventilated, subnational, separate
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayVenMeRaA01S00 date, sort lcolor(green)) ///
+> if provincestate == "`l'" & DayVenMeRaA01S00 != ., legend(off) ///         
+> xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily active ventilated) title("COVID-19 daily active ventilated, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> subtitle("single scenario", size(small)) 
+{txt}  3{com}.            
+. qui graph save "8cDayVenDELPsub3 `l' - COVID-19 daily active ventilated, $country, `l', DELP.gph", replace
+{txt}  4{com}. qui graph export "8cDayVenDELPsub3 `l' - COVID-19 daily active ventilated, $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}
+{com}. *
+. 
+. 
+. 
+. 
+. *************************************
+. 
+. ** DayCas DayDea DayDea_multip
+. 
+. levelsof provincestate, local(levels)
+{txt}`" National"' `"Alberta"' `"British Columbia"' `"Manitoba"' `"New Brunswick"' `"Newfoundland and Labrador"' `"Nova Scotia"' `"Ontario"' `"Quebec"' `"Saskatchewan"'
+
+{com}. 
+. foreach l of local levels {c -(}
+{txt}  2{com}. 
+. twoway ///
+> (line DayCasMeRaA01S00 date, sort lcolor(blue)) ///
+> (line DayDeaMeRaA01S00 date, sort lcolor(red)) ///
+> (line DayDMuMeRaA01S00 date, sort lpattern(dot) lcolor(red)) ///
+> if provincestate == "`l'" & date > td(01jan2020) ///
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
+> ytitle(Daily cases and deaths) title("COVID-19 daily cases and deaths, $country, `l', DELP", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) yscale(titlegap(4)) legend(region(lcolor(none)))  ///
+> legend(order(1 "Daily cases" 2 "Daily deaths" 3 "Daily deaths scaled for visualization") size(small)) ///
+> subtitle("Daily deaths, scaled = times (means of cases divided by deaths) for visualization only", size(small)) ///
+> note("Single scenario, mean estimate")
+{txt}  3{com}. 
+. qui graph save "9DayDMuDELPsub3 `l' - COVID-19 daily deaths and cases, $country, `l', DELP.gph", replace
+{txt}  4{com}. graph export "9DayDMuDELPsub3 `l' - COVID-19 daily deaths and cases,  $country, `l', DELP.pdf", replace
+{txt}  5{com}. 
+. {c )-}
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3  National - COVID-19 daily deaths and cases,  Canada,  National, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Alberta - COVID-19 daily deaths and cases,  Canada, Alberta, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 British Columbia - COVID-19 daily deaths and cases,  Canada, British Columbia, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Manitoba - COVID-19 daily deaths and cases,  Canada, Manitoba, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 New Brunswick - COVID-19 daily deaths and cases,  Canada, New Brunswick, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Newfoundland and Labrador - COVID-19 daily deaths and cases,  Canada, Newfoundland and Labrador, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Nova Scotia - COVID-19 daily deaths and cases,  Canada, Nova Scotia, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Ontario - COVID-19 daily deaths and cases,  Canada, Ontario, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Quebec - COVID-19 daily deaths and cases,  Canada, Quebec, DELP.pdf written in PDF format)
+{res}{txt}(file /Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/9DayDMuDELPsub3 Saskatchewan - COVID-19 daily deaths and cases,  Canada, Saskatchewan, DELP.pdf written in PDF format)
+
+{com}. *
+. 
+. 
+. 
+. 
+. view "log CovidVisualizedCountry DELP.smcl"
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedCountry-main/20211210/code/DELP/log CovidVisualizedCountry DELP.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}11 Dec 2021, 10:19:46
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
