@@ -30,7 +30,7 @@
 
 ### Selected graphs - [American region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--american-region-amro)
 
-### Selected graphs - [Eastern Mediterranean region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--eastern mediterranean-region-emro)
+### Selected graphs - [Eastern Mediterranean region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--eastern-mediterranean-region-emro)
 
 ****
 
