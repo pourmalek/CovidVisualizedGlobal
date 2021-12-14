@@ -16,7 +16,7 @@
   
 ## <div align="center"> and for SIX WHO REGIONS 
   
-<div align="center"> [`GLOBAL`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL)
+### <div align="center"> [`GLOBAL`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL)
 [`Regions together`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together)
   
 <div align="center"> [`African region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md) [`Americas region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md) [`Eastern Mediterranean region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern%20Mediterranean%20region/README.md) [`European region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20European%20region/README.md) [`South-East Asian region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian%20region/README.md) [`Western Pacific region`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md)  
