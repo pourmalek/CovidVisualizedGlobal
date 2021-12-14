@@ -1,4 +1,4 @@
-### Selected Results - Americas region (AMRO)
+### Selected Results - Americas Region (AMR O)
   
 <br/><br/>
 
