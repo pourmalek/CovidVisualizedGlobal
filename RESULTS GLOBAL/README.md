@@ -1937,7 +1937,9 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(4) Global [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2021%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145880451-2cec1fd9-4763-4fbc-8bef-712babebf625.png)
 
 *
 
@@ -2391,7 +2393,9 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(5) Global [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145880548-84acce89-3265-4d03-9e83-6c72231cdffd.png)
 
 *
 
@@ -2837,7 +2841,9 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(6) Global [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2024%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145880652-eab93d60-4294-403f-a3e5-df57753edc15.png)
 
 *
 
@@ -3289,7 +3295,9 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(6b) Global [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2022b%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145880740-940c4be4-98b4-4c82-bed7-499384a576ea.png)
 
 *
 
@@ -3415,7 +3423,9 @@ uptake 20211210 and uptake 20211203 both use IHME update 2021119 and IMPE update
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(7) Global [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145880882-0b52c947-6f76-43be-8438-a4552ef2e520.png)
 
 *
 
@@ -4004,7 +4014,9 @@ This graph discontinued starting from uptake 20211210.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(8) Global [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145881052-d961f4cd-f8cc-4173-8e96-5f700a21d3cc.png)
 
 *
 
@@ -4458,7 +4470,9 @@ This graph discontinued starting from uptake 20211210.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
+(9) Global [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/145881152-067c7b7d-4627-484e-9943-b20f186a0c42.png)
 
 *
 
