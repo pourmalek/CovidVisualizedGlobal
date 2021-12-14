@@ -1,5 +1,5 @@
 
-### Selected Results from Previous Uptake - GLOBAL
+### Selected Results - GLOBAL
   
 <br/><br/>
 
