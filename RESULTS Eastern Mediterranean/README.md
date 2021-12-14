@@ -23,7 +23,7 @@ List of graphs:
 
 (6) Eastern Mediterranean region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean#6-eastern-mediterranean-region---daily-cases-or-infections-3-scenarios-2021)
 
-(6b) Eastern Mediterranean region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean#7-eastern-mediterranean-region---daily-cases-2021)
+(6b) Eastern Mediterranean region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean#6b-eastern-mediterranean-region---daily-cases-2021)
 
 (6c) Eastern Mediterranean region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean#6c-eastern-mediterranean-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
 
