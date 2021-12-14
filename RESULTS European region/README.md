@@ -1,4 +1,4 @@
-### Selected Results - European region (EURO)
+### Selected Results - European Region (EUR O)
   
 <br/><br/>
 
