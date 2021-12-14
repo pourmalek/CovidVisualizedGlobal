@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - Americas region (AMRO)
+### Selected Results - Americas region (AMRO)
   
 <br/><br/>
 
