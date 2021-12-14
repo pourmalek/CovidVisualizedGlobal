@@ -16,7 +16,7 @@
   
 ## <div align="center"> and for SIX WHO REGIONS 
   
-
+[`GLOBAL`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL)
   
 *****************************
   
