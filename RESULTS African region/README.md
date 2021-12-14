@@ -18,7 +18,7 @@ List of graphs:
 
 (3b) African region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3b-african-region---daily-deaths-3-scenarios-2021-ihme)
 
-(3c) African region - [Daily deaths, 3 scenarios, 2021, IMPE)[https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3c-african-region---daily-deaths-3-scenarios-2021-impe]
+(3c) African region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3c-african-region---daily-deaths-3-scenarios-2021-impe]
 
 (4) African region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#4-african-region---daily-cases-or-infections-reference-scenarios-all-time)
 
@@ -33,7 +33,7 @@ List of graphs:
 
 (7) African region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#7-african-region---hospital-related-outcomes-all-time)
 
-(8) African region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand)[https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#8-african-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand]
+(8) African region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand][https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#8-african-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand]
 
 (9) African region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#9-african-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
