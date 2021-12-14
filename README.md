@@ -12,9 +12,9 @@
 
 ### Combine and visualize international periodically updated estimates of COVID-19 pandemic 
 
-### <div align="center"> at the global level 🌍 
+### <div align="center"> at the GLOBAL level 🌍 
   
-### <div align="center"> and for six WHO REGIONS 
+## <div align="center"> and for SIX WHO REGIONS 
   
 
   
