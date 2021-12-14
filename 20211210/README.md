@@ -26,17 +26,17 @@
 
 ### Selected graphs - [Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---regions-together-1)
 
-### Selected graphs - [African region (AFRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---african-region-afro)
+### Selected graphs - [African region (AFRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---african-region-afro-1)
 
-### Selected graphs - [Americas region (AMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--americas-region-amro)
+### Selected graphs - [Americas region (AMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--americas-region-amro-1)
 
-### Selected graphs - [Eastern Mediterranean region (EMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--eastern-mediterranean-region-emro)
+### Selected graphs - [Eastern Mediterranean region (EMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--eastern-mediterranean-region-emro-1)
 
-### Selected graphs - [European region (EURO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--european-region-euro)
+### Selected graphs - [European region (EURO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--european-region-euro-1)
 
-### Selected graphs - [South-East Asian region (SEARO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--south-east-asian-region-searo)
+### Selected graphs - [South-East Asian region (SEARO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--south-east-asian-region-searo-1)
 
-### Selected graphs - [Western Pacific region (WPRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--western-pacific-region-wpro)
+### Selected graphs - [Western Pacific region (WPRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--western-pacific-region-wpro-1)
 
 
 ****
