@@ -1,4 +1,4 @@
-### Selected Results - Western Pacific region (WPRO)
+### Selected Results - Western Pacific Region (WPR O)
   
 <br/><br/>
 
