@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - European region (EURO)
+### Selected Results - European region (EURO)
   
 <br/><br/>
 
