@@ -10,7 +10,7 @@ List of graphs:
 
 [(2) Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2-regions-together---daily-deaths-reference-scenarios-2021)
 
-[(2b) Daily deaths, reference scenarios, with IHME excess deaths, 2021](hhttps://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2b-regions-together---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+[(2b) Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2b-regions-together---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
   
 [(3) Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#3-regions-together---daily-deaths-3-scenarios-2011)
   
