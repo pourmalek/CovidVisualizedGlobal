@@ -2,7 +2,7 @@
 ***************************************************************************
 * This is "do CovidVisualizedGlobal master.do"
                                                                                                           *******************
-* Project: Combine and visualize international periodically updating                                      * uptake 20211203 *
+* Project: Combine and visualize international periodically updating                                      * uptake 20211210 *
 * estimates of COVID-19 at the global level (CovidVisualizedGlobal)                                       *******************
 * Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
 * Time (initial): 2021-04-14
@@ -10,7 +10,7 @@
 
 
                                                                                                          ***************************
-* To change uptake date, find and replace all, 20211203 (old), with 20211203 (new) <<--           <<<--- * change uptake date here *
+* To change uptake date, find and replace all, 20211210 (old), with 20211210 (new) <<--           <<<--- * change uptake date here *
                                                                                                          ***************************
 
 
@@ -19,7 +19,7 @@
 
 This file "do CovidVisualizedGlobal master.do" was set up to be run from:
   |Users|local-user-name|Downloads|CovidVisualizedGlobal-main|202YMMDD|code|master|do CovidVisualizedGlobal master.do
-  where 2021MMDD is the udpate date, e.g. update 20211203
+  where 2021MMDD is the udpate date, e.g. update 20211210
 
 If the first run does not go thru due to directory path clash, edit the contents within " " of the line _59_ or _62_ below, located beneath ****** set path based on local operating system ****** ,,, 
 ,,, to reflect the location of directory /CovidVisualizedGlobal-main/ or \CovidVisualizedGlobal-main\ on your local machine. Path should be:
@@ -56,10 +56,10 @@ di "`usrnam'"
 ****** set path based on local operating system ******
 
 if regexm(c(os),"Mac") == 1 {
-	global pathCovidVisualizedGlobal "/Users/`usrnam'/Downloads/CovidVisualizedGlobal-main/20211203/code/" 
+	global pathCovidVisualizedGlobal "/Users/`usrnam'/Downloads/CovidVisualizedGlobal-main/20211210/code/" 
 }
 else if regexm(c(os),"Windows") {
-	global pathCovidVisualizedGlobal = "C:\Users\\`usrnam'\Downloads\CovidVisualizedGlobal-main\20211203\code\"
+	global pathCovidVisualizedGlobal = "C:\Users\\`usrnam'\Downloads\CovidVisualizedGlobal-main\20211210\code\"
 }
 *
 
