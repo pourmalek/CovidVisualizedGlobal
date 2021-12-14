@@ -1613,9 +1613,7 @@ Uptake 20211112 and uptake 20211105 both use IHME update 20211104.
 
 **uptake 20211029**: **_DELP 20211029_**, IHME 20211021, **_IMPE 20211021_**, **_SRIV 20211029_**
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/139504592-c5f36b9a-7d9f-405a-b96d-941850101107.png)
+uptake 20211029 and uptake 20211022 both use IHMPE update 20211021.
 
 *
 
@@ -1635,7 +1633,7 @@ Uptake 20211112 and uptake 20211105 both use IHME update 20211104.
 
 **uptake 20211008**: **_DELP 20211008_**, IHME 20211001, IMPE 20210924, LANL 20210926, **_SRIV 20211008_**
 
-Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
+uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 *
 *
@@ -1650,9 +1648,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20210928**: DELP 20210927, IHME 20210923, **_IMPE 20210924_**, LANL 20210926, SRIV 20210928  
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210928/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/135329058-eac3a46a-9549-4b12-a89e-85db1bffa3dd.png)
+uptake 20210928 and uptake 20210923 both use IHME update 20210923.
 
 *
 
@@ -1666,9 +1662,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20210920**: DELP 20210920, IHME 20210916, **_IMPE 20210909_**, LANL 20210919, SRIV 20210920 
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210920/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/134366408-90e42b38-0848-4c1e-9545-01f22472f39e.png)
+uptake 20210920 and uptake 20210916 both use IHME update 20210916.
 
 *
 
@@ -1698,9 +1692,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20210901**: DELP 20210901, IHME 20210826, **_IMPE 20210825_**, LANL 20210829, SRIV 20210901
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210901/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/131761755-96e49041-d16d-4c56-be61-3b28d202bd7e.png)
+uptake 20210901 and uptake 20210826 both use IHME update 20210826.
 
 *
 
@@ -1714,9 +1706,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20210824**: DELP 20210824, IHME 20210819, **_IMPE 20210819_**, LANL 20210822, SRIV 20210824
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210824/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/130955730-37c38223-294c-4bf3-b6cd-f65921601341.png)
+uptake 20210824 and uptake 20210819 both use IHME update 20210819.
 
 *
 
@@ -1730,9 +1720,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
   
 **uptake 20210813**: DELP 20210813, IHME 20210806, **_IMPE 20210806_**, LANL 20210808, SRIV 20210813
   
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210813/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/129428400-3ad134db-e5b0-4ffd-b96e-34f1f66b695e.png)
+uptake 20210813 and uptake 20210806 both use IHME update 20210806.
   
 *
   
@@ -1772,7 +1760,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
-
+uptake 20211210 and uptake 20211203 both use IMPE uptake 20211119.
 
 *
 
@@ -1786,9 +1774,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20211126**: **_DELP 20211123_**, IHME 20211119, IMPE 20211115, **_SRIV 20211126_**
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211126/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/143664251-f2f4f01b-6685-4f71-8089-cca8343aed51.png)
+uptake 20211126 and uptake 20211119 both use IMPE uptake 20211119.
 
 *
 
@@ -1826,9 +1812,7 @@ Uptake 20211008 and uptake 20211001 both use IHME update 20211001.
 
 **uptake 20211022**: **_DELP 20211019_**, **_IHME 20211021_**, IMPE 20211006, **_SRIV 20211017_**
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/138505548-30cbd622-b9e6-4f0d-b606-c007eccc4587.png)
+uptake 20211022 and uptake 20211015 both use IMPE uptake 20211006.
 
 *
 
@@ -1865,9 +1849,7 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 **uptake 20210923**: DELP 20210923, **_IHME 20210923_**, IMPE 20210909, LANL 20210919, SRIV 20210923   
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210923/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/134707594-71581cef-8e5d-439f-ab96-3e4b5636b7aa.png)
+uptake 20210923 and uptake 20210920 both use IMPE 20210909.
 
 *
 
@@ -1881,25 +1863,19 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 **uptake 20210916**: DELP 20210916, **_IHME 20210916_**, IMPE 20210825, LANL 20210912, SRIV 20210916 
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210916/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/133869006-117afde8-82ff-4e6d-8092-54d2248cff35.png)
+uptake 20210916 and uptake 20210910 both use IMPE 20210825.
 
 *
 
 **uptake 20210910**: DELP 20210910, **_IHME 20210910_**, IMPE 20210825, LANL 20210905, SRIV 20210910
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210910/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/132937770-51a9d38d-3ab5-4c0f-bf30-7daca94c50ba.png)
+uptake 20210910 and uptake 20210902 both use IMPE 20210825.
 
 *
 
 **uptake 20210902**: DELP 20210902, **_IHME 20210902_**, IMPE 20210825, LANL 20210829, SRIV 20210902
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210902/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/132105351-f0b137fb-346e-4148-b2e6-c01c189ef17a.png)
+uptake 20210902 and uptake 20210901 both use IMPE 20210825.
 
 *
 
@@ -1913,9 +1889,7 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 **uptake 20210826**: DELP 20210826, **_IHME 20210826_**, IMPE 20210819, LANL 20210822, SRIV 20210826
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210826/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/131236025-6d05d610-9acc-466f-ae6f-525a8f68d447.png)
+uptake 20210826 and uptake 20210824 both use IMPE 20210819.
 
 *
 
@@ -1929,9 +1903,7 @@ uptake 20211008 and uptake 20211001 both use IMPE 20210924.
 
 **uptake 20210819**: DELP 20210819, **_IHME 20210819_**, IMPE 20210806, LANL 20210815, SRIV 20210819
 
-(3c) [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210819/output/merge/graph%2018%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/130898007-51623046-fb66-44e0-8a2e-6fab8f197c71.png)
+uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 *
   
