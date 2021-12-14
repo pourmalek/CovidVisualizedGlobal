@@ -1,6 +1,5 @@
 
-
-## IV. SELECTED GRAPHS FROM PREVIOUS UPTAKES
+### Selected Results from Previous Uptake - GLOBAL
   
   
 [(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS,%20PREVIOUS%20UPTAKES/README.md#1-daily-deaths-reference-scenarios-all-time)
