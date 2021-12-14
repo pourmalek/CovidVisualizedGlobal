@@ -4905,7 +4905,7 @@ This graph discontinued starting from uptake 20211210.
 
 ### (10) GLOBAL - Daily cases or infections estimated to reported cases, reference scenarios, 2021
 
-  
+This graph is retired and replaced by graph (6c) Global Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 (above).   
 
 
 
