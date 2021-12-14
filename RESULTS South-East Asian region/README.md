@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - South-East Asian region (SEARO)
+### Selected Results - South-East Asian region (SEARO)
   
 <br/><br/>
 
