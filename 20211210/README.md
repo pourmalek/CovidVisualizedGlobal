@@ -36,7 +36,7 @@
 
 ### Selected graphs - [South-East Asian region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--south-east-asian-region-searo)
 
-### Selected graphs - [Western Pacific region region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--western-pacific-region-region-wpro)
+### Selected graphs - [Western Pacific region region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--western-pacific-region-wpro)
 
 
 ****
