@@ -6,47 +6,35 @@
 List of graphs:
 
   
-[(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#1-Regions together---daily-deaths-reference-scenarios-all-time)
+[(1) Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#1-regions-together---daily-deaths-reference-scenarios-all-time)
 
-[(2) Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#2-Regions together---daily-deaths-reference-scenarios-2021)
+[(2) Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2-regions-together---daily-deaths-reference-scenarios-2021)
 
-[(2b) Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#2b-Regions together---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+[(2b) Daily deaths, reference scenarios, with IHME excess deaths, 2021](hhttps://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2b-regions-together---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
   
-[(3) Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#3-Regions together---daily-deaths-3-scenarios-2011)
+[(3) Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#3-regions-together---daily-deaths-3-scenarios-2011)
   
-[(3b) Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#3b-Regions together---daily-deaths-3-scenarios-2021-ihme)
+[(3b) Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#3b-regions-together---daily-deaths-3-scenarios-2021-ihme)
 
-[(3c) Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#3c-Regions together---daily-deaths-3-scenarios-2021-impe)
+[(3c) Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#3c-regions-together---daily-deaths-3-scenarios-2021-impe)
   
-[(4) Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#4-Regions together---daily-cases-or-infections-reference-scenarios-all-time)
+[(4) Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#4-regions-together---daily-cases-or-infections-reference-scenarios-all-time)
   
-[(5) Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#5-Regions together---daily-cases-or-infections-reference-scenarios-2021)
+[(5) Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#5-regions-together---daily-cases-or-infections-reference-scenarios-2021)
   
-[(6) Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#6-Regions together---daily-cases-or-infections-3-scenarios-2011)
+[(6) Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#6-regions-together---daily-cases-or-infections-3-scenarios-2011)
 
-[(6b) Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#6b-Regions together---daily-cases-2021)
+[(6b) Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#6b-regions-together---daily-cases-2021)
   
   
-[(6c) Regions together Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#6c-Regions together---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+[(6c) Regions together Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#6c-regions-together---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
   
-[(7) Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#7-Regions together---hospital-related-outcomes-all-time)
+[(7) Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#7-regions-together---hospital-related-outcomes-all-time)
 
-[(7b) Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#7b-Regions together---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
   
-[(8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#8-Regions together---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
+[(8) Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#8-regions-together---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
   
-[(9) Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#9-Regions together---daily-deaths-estimated-to-reported-reference-scenarios-2021)
-  
-[(10) Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#10-Regions together---daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
-
-[(11) Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#11-Regions together---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
-
-[(12) Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#12-Regions together---daily-mobility-3-scenarios-all-time-ihme)
-
-[(13) Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#13-Regions together---daily-mask-use-3-scenarios-ihme)
-
-[(14) Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedRegions together/blob/main/RESULTS%20Regions together/README.md#14-Regions together---cumulative-vaccinated-percent-ihme)
-
+[(9) Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#9-regions-together---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
 ****
   
