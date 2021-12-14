@@ -7,15 +7,15 @@ List of graphs:
   
 (1) Eastern Mediterranean region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-reference-scenarios-all-time)
 
-(2) Eastern Mediterranean region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#2-Eastern Mediterranean-region---daily-deaths-reference-scenarios-2021)
+(2) Eastern Mediterranean region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-reference-scenarios-2021)
 
-(2b) Eastern Mediterranean region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#2b-Eastern Mediterranean-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+(2b) Eastern Mediterranean region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
 
-(3) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#3-Eastern Mediterranean-region---daily-deaths-3-scenarios-2021)
+(3) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-3-scenarios-2021)
 
-(3b) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#3b-Eastern Mediterranean-region---daily-deaths-3-scenarios-2021-ihme)
+(3b) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-3-scenarios-2021-ihme)
 
-(3c) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#3c-Eastern Mediterranean-region---daily-deaths-3-scenarios-2021-impe)
+(3c) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern%20Mediterranean#1-eastern-mediterranean-region---daily-deaths-3-scenarios-2021-impe)
 
 (4) Eastern Mediterranean region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Eastern Mediterranean%20region/README.md#4-Eastern Mediterranean-region---daily-cases-or-infections-reference-scenarios-all-time)
 
