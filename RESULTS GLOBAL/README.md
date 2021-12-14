@@ -3372,7 +3372,7 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
-
+uptake 20211210 and uptake 20211203 both use IHME update 2021119 and IMPE update 20211129.
 
 *
 
@@ -3384,7 +3384,9 @@ uptake 20210819 and uptake 20210813 both use IMPE 20210806.
 
 *
 
-### (6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211126/output/merge/graph%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20global%2C%20reference%20scenarios%202021.pdf)
+**uptake 20211126**: **_DELP 20211123_**, IHME 20211119, IMPE 20211115, **_SRIV 20211126_**
+
+(6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211126/output/merge/graph%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20global%2C%20reference%20scenarios%202021.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/144149069-4d5b9ad0-ce67-4908-bdad-a3b16f3f652e.png)
 
