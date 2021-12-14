@@ -34,7 +34,7 @@
 
 ### Selected graphs - [European region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--european-region-euro)
 
-### Selected graphs - [South-East Asian region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--south-east-asian-searo)
+### Selected graphs - [South-East Asian region](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--south-east-asian-region-searo)
 
 
 ****
