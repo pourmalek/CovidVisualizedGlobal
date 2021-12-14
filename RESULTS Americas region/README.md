@@ -27,7 +27,7 @@ List of graphs:
 
 (6) Americas region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6-Americas-region---daily-cases-or-infections-3-scenarios-2021)
 
-(7) Americas region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#7-Americas-region---daily-cases-2021)
+(6b) Americas region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6b-americas-region---daily-cases-2021)
 
 (6c) Americas region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6c-Americas-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
 
