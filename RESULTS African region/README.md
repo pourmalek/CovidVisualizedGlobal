@@ -1,4 +1,4 @@
-### Selected Results - African region (AFRO)
+### Selected Results - African Region (AFR O)
   
 <br/><br/>
 
