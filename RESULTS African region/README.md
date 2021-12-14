@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - African region (AFRO)
+### Selected Results - African region (AFRO)
   
 <br/><br/>
 
