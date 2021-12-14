@@ -30,16 +30,38 @@ List of graphs:
 
 
 
+
+
+
+
+
+
+
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
 ### (2) Regions together -
+  
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
 (2) Regions together [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201b1%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145884305-c88bc9a3-e8a3-4cbd-8cbc-fa509daad958.png)
 
-****
+*
+
+
+
+
+
+
+
+
 
 
 
@@ -49,11 +71,26 @@ List of graphs:
 
 ### (3) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145884910-1ebaa638-e509-4345-8cc6-bda83ab102f0.png)
 
-****
+*
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,11 +101,24 @@ List of graphs:
 
 ### (4) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (4) Regions together [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201b2%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145885161-79215c45-22b2-4d86-8b63-003e2322ee64.png)
 
-****
+*
+
+
+
+
+
+
+
 
 
 
@@ -80,11 +130,25 @@ List of graphs:
 
 ### (5) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (5) Regions together [Daily excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201%202%20a1%20COVID-19%20daily%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145885937-a43ab4cf-f555-4a42-ad8b-e3e003b0abd1.png)
 
-****
+*
+
+
+
+
+
+
+
+
 
 
 
@@ -95,11 +159,22 @@ List of graphs:
 
 ### (6) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (6) Regions together [Daily excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%201%202%20a1%20COVID-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145886084-5a3231b8-e4c0-4541-8f4b-ab166854efbb.png)
 
-****
+*
+
+
+
+
+
 
 
 
@@ -112,11 +187,26 @@ List of graphs:
 
 ### (7) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (7) Regions together [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%202a1%20COVID-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145886421-62adfb36-42c9-4225-add3-9b10e7a098ff.png)
 
-****
+*
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,11 +216,26 @@ List of graphs:
 
 ### (8) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (8) Regions together [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%202b1%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145886624-566957a6-2c6f-4392-983a-c7b2dfdc7e2e.png)
 
-****
+*
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,11 +246,27 @@ List of graphs:
 
 ### (9) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (9) Regions together [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%202a2%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145886869-d09978e8-24c3-4150-8cdb-03a5d8683fb4.png)
 
-****
+*
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,11 +277,25 @@ List of graphs:
 
 ### (10) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%202b2%20COVID-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145887068-83746165-8370-4457-b740-ccb33c9cea7d.png)
 
-****
+*
+
+
+
+
+
+
+
+
 
 
 
@@ -172,11 +307,22 @@ List of graphs:
 
 ### (11) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (11) Regions together [Total deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203a1%20COVID-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145887284-73027be4-ef31-4903-9e56-2c1fc2d84d61.png)
 
-****
+*
+
+
+
+
+
 
 
 
@@ -188,11 +334,24 @@ List of graphs:
 
 ### (12) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (12) Regions together [Total deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203b1%20COVID-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145887490-dc014f82-257e-44cc-b50c-ce4ede3e6f0e.png)
 
-****
+*
+
+
+
+
+
+
+
 
 
 
@@ -204,11 +363,23 @@ List of graphs:
 
 ### (13) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (13) Regions together [Total deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203a2%20COVID-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145887654-8d116d94-979d-41d0-96e8-975b6a7d9cb0.png)
 
-****
+*
+
+
+
+
+
+
 
 
 
@@ -220,11 +391,23 @@ List of graphs:
 
 ### (14) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203b2%20COVID-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145887802-4e80aae5-5586-4452-8ade-a5aca63238dd.png)
 
-****
+*
+
+
+
+
+
+
 
 
 
@@ -237,11 +420,23 @@ List of graphs:
 
 ### (15) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (15) Regions together [Total excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203%202%20a1%20COVID-19%20total%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145888153-1d917b05-f4bd-4702-8a92-524828f15bbf.png)
 
-****
+*
+
+
+
+
+
+
 
 
 
@@ -255,11 +450,23 @@ List of graphs:
 
 ### (16) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (16) Regions together [Total excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%203%202%20a1%20COVID-19%20total%20excess%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145888268-cacac9a7-0be8-428e-8055-bc06b9e64d8e.png)
 
-****
+*
+
+
+
+
+
+
 
 
 
@@ -273,11 +480,24 @@ List of graphs:
 
 ### (17) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (17) Regions together [Total infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%204a1%20COVID-19%20total%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145889429-8e386bde-d5f7-4389-b8fe-30a24f125877.png)
 
-****
+*
+
+
+
+
+
+
+
 
 
 
@@ -290,11 +510,23 @@ List of graphs:
 
 ### (18) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (18) Regions together [Total infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%204b1%20COVID-19%20total%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145889776-2b0474cf-e5f7-42f5-b924-66f1637b0542.png)
 
-****
+*
+
+
+
+
+
+
 
 
 
@@ -309,11 +541,22 @@ List of graphs:
 
 ### (19) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (19) Regions together [Total cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%204a2%20COVID-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145890021-0bbf2977-541b-4e56-b365-bbaab508616e.png)
 
-****
+*
+
+
+
+
+
 
 
 
@@ -326,8 +569,14 @@ List of graphs:
 
 ### (20) Regions together -
 
+ 
+  
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
 (20) Regions together [Total cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%204b2%20COVID-19%20total%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145890167-ec5d6471-b761-4b89-8199-5b5b119a28f8.png)
 
-****
+*
