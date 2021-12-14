@@ -5,6 +5,47 @@
 
 List of graphs:
 
+(1) Regions together - [Daily deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#1-regions-together---daily-deaths-with-global-ihme-impe)
+
+(2) Regions together - [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#2-regions-together---daily-deaths-without-global-ihme-impe)
+  
+(3) Regions together - [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#3-regions-together---daily-deaths-with-global-delp-sriv)
+
+(4) Regions together - [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#4-regions-together---daily-deaths-without-global-delp-sriv)
+
+(5) Regions together - [Daily excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#5-regions-together---daily-excess-deaths-with-global-ihme)
+
+(6) Regions together - [Daily excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#6-regions-together---daily-excess-deaths-without-global-ihme)
+
+(7) Regions together - [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#7-regions-together---daily-infections-with-global-ihme-impe)
+
+(8) Regions together - [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#8-regions-together---daily-infections-without-global-ihme-impe)
+
+(9) Regions together - [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#9-regions-together---daily-cases-with-global-delp-sriv)
+
+(10) Regions together - [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#10-regions-together---daily-cases-without-global-delp-sriv)
+  
+
+(11) Regions together - [Total deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#11-regions-together---total-deaths-with-global-ihme-impe)
+  
+(12) Regions together - [Total deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#12-regions-together---total-deaths-without-global-ihme-impe)
+
+(13) Regions together - [Total deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#13-regions-together---total-deaths-with-global-delp-sriv)
+
+(14) Regions together - [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#14-regions-together---total-deaths-without-global-delp-sriv)
+  
+(15) Regions together - [Total excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#15-regions-together---total-excess-deaths-with-global-ihme)
+
+(16) Regions together - [Total excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#16-regions-together---total-excess-deaths-without-global-ihme)
+
+(17) Regions together - [Total infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#17-regions-together---total-infections-with-global-ihme-impe)
+
+(18) Regions together - [Total infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#18-regions-together---total-infections-without-global-ihme-impe)
+
+(19) Regions together - [Total cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#19-regions-together---total-cases-with-global-delp-sriv)
+
+(20) Regions together - [Total cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#20-regions-together---total-cases-without-global-delp-sriv)
+
   
 
 
