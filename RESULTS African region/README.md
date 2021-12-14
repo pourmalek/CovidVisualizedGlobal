@@ -5,9 +5,9 @@
 List of graphs:
 
   
-(1) African region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#1-global---daily-deaths-reference-scenarios-all-time)
+(1) African region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20African%20region#1-african-region---daily-deaths-reference-scenarios-all-time)
 
-(2) African region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#2-global---daily-deaths-reference-scenarios-2021)
+(2) African region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#2-global---daily-deaths-reference-scenarios-2021)
 
 (2b) African region - [Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#2b-global---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
   
