@@ -662,7 +662,7 @@
 
 ****
 
-### Selected graphs – South-East Asia region (SEARO)
+### Selected graphs – South-East Asian region (SEARO)
 
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20SEARO%2011a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
