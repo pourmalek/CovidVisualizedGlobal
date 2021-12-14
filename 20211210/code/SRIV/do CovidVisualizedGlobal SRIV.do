@@ -20,10 +20,10 @@ log using "log CovidVisualizedGlobal SRIV 1.smcl", replace
 
 
                                                                                                          ***************************
-* To change update date, find and replace all, 2021-12-03 (old), with 2021-12-03 (new) <<--       <<<--- * change update date here *
+* To change update date, find and replace all, 2021-12-10 (old), with 2021-12-10 (new) <<--       <<<--- * change update date here *
                                                                                                          ***************************
 																										 
-******* Also, find and replace all, 02dec2021 (old), with 02dec2021 (new) **********              <<<---       *  AND HERE  *
+******* Also, find and replace all, 09dec2021 (old), with 09dec2021 (new) **********              <<<---       *  AND HERE  *
                                                                                                          ***************************
 
 
@@ -31,12 +31,12 @@ log using "log CovidVisualizedGlobal SRIV 1.smcl", replace
 * Get SRIV estimates 
 
 
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_deaths.csv global_forecasts_deaths.csv
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_deaths_lb.csv global_forecasts_deaths_lb.csv
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_deaths_ub.csv global_forecasts_deaths_ub.csv
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_cases.csv global_forecasts_cases.csv
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_cases_lb.csv global_forecasts_cases_lb.csv
-copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-03/global_forecasts_cases_ub.csv global_forecasts_cases_ub.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_deaths.csv global_forecasts_deaths.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_deaths_lb.csv global_forecasts_deaths_lb.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_deaths_ub.csv global_forecasts_deaths_ub.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_cases.csv global_forecasts_cases.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_cases_lb.csv global_forecasts_cases_lb.csv
+copy https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/2021-12-10/global_forecasts_cases_ub.csv global_forecasts_cases_ub.csv
 
 
 
