@@ -383,7 +383,7 @@
 
 ****
 
-### Selected graphs – American region (AMRO)
+### Selected graphs – Americas region (AMRO)
 
 
 (1) Americas region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AMRO%2011a%20COVID-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
