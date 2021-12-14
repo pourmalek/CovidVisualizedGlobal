@@ -21,6 +21,7 @@
 
 
 ****
+****
 
 ### Selected graphs - [Global](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs---global-1)
 
@@ -39,6 +40,7 @@
 ### Selected graphs - [Western Pacific region (WPRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/README.md#selected-graphs--western-pacific-region-wpro)
 
 
+****
 ****
 
 ### Selected graphs - Global
@@ -162,6 +164,7 @@
 *
 
 
+****
 ****
 
 ### Selected graphs - Regions together
@@ -291,6 +294,7 @@
 
 
 ****
+****
 
 ### Selected graphs - African region (AFRO)
 
@@ -383,6 +387,7 @@
 *
 
 
+****
 ****
 
 ### Selected graphs – Americas region (AMRO)
@@ -477,6 +482,7 @@
 
 
 ****
+****
 
 ### Selected graphs – Eastern Mediterranean region (EMRO)
 
@@ -569,6 +575,7 @@
 *
 
 
+****
 ****
 
 ### Selected graphs – European region (EURO)
@@ -663,6 +670,7 @@
 
 
 ****
+****
 
 ### Selected graphs – South-East Asian region (SEARO)
 
@@ -756,6 +764,7 @@
 
 
 ****
+****
 
 ### Selected graphs – Western Pacific region (WPRO)
 
@@ -843,7 +852,8 @@
 ![image](https://user-images.githubusercontent.com/30849720/145911622-2adc2469-4195-43a4-b708-03ad56d90787.png)
 
 ****
+****
 
-*
+
 
 
