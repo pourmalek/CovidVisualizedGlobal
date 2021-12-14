@@ -5,33 +5,33 @@
 List of graphs:
 
   
-(1) South-East Asian region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#1-south-east-asian-region---daily-deaths-reference-scenarios-all-time)
+(1) South-East Asian region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#1-south-east-asian-region---daily-deaths-reference-scenarios-all-time)
 
-(2) South-East Asian region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#2-south-east-asian-region---daily-deaths-reference-scenarios-2021)
+(2) South-East Asian region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#2-south-east-asian-region---daily-deaths-reference-scenarios-2021)
 
-(2b) South-East Asian region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#2b-south-east-asian-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+(2b) South-East Asian region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#2b-south-east-asian-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
 
-(3) South-East Asian region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#3-south-east-asian-region---daily-deaths-3-scenarios-2021)
+(3) South-East Asian region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#3-south-east-asian-region---daily-deaths-3-scenarios-2021)
 
-(3b) South-East Asian region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#3b-south-east-asian-region---daily-deaths-3-scenarios-2021-ihme)
+(3b) South-East Asian region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#3b-south-east-asian-region---daily-deaths-3-scenarios-2021-ihme)
 
-(3c) South-East Asian region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#3c-south-east-asian-region---daily-deaths-3-scenarios-2021-impe)
+(3c) South-East Asian region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#3c-south-east-asian-region---daily-deaths-3-scenarios-2021-impe)
 
-(4) South-East Asian region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#4-south-east-asian-region---daily-cases-or-infections-reference-scenarios-all-time)
+(4) South-East Asian region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#4-south-east-asian-region---daily-cases-or-infections-reference-scenarios-all-time)
 
-(5) South-East Asian region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#5-south-east-asian-region---daily-cases-or-infections-reference-scenarios-2021)
+(5) South-East Asian region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#5-south-east-asian-region---daily-cases-or-infections-reference-scenarios-2021)
 
-(6) South-East Asian region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#6-south-east-asian-region---daily-cases-or-infections-3-scenarios-2021)
+(6) South-East Asian region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6-south-east-asian-region---daily-cases-or-infections-3-scenarios-2021)
 
-(6b) South-East Asian region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#6b-south-east-asian-region---daily-cases-2021)
+(6b) South-East Asian region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6b-south-east-asian-region---daily-cases-2021)
 
-(6c) South-East Asian region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#6c-south-east-asian-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+(6c) South-East Asian region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6c-south-east-asian-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
 
-(7) South-East Asian region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#7-south-east-asian-region---hospital-related-outcomes-all-time)
+(7) South-East Asian region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#7-south-east-asian-region---hospital-related-outcomes-all-time)
 
-(8) South-East Asian region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#8-south-east-asian-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
+(8) South-East Asian region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#8-south-east-asian-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
-(9) South-East Asian region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20South-East%20Asian/README.md#9-south-east-asian-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+(9) South-East Asian region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#9-south-east-asian-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
 
 ****
