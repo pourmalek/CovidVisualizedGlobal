@@ -7,36 +7,35 @@ List of graphs:
   
 (1) African region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20African%20region#1-african-region---daily-deaths-reference-scenarios-all-time)
 
-(2) African region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#2-global---daily-deaths-reference-scenarios-2021)
 
-(2b) African region - [Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#2b-global---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
-  
-(3) African region - [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3-global---daily-deaths-3-scenarios-2011)
-  
-(3b) African region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3b-global---daily-deaths-3-scenarios-2021-ihme)
 
-(3c) African region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3c-global---daily-deaths-3-scenarios-2021-impe)
-  
-(4) African region - [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
-  
-(5) African region - [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021)
-  
-(6) African region - [Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6-global---daily-cases-or-infections-3-scenarios-2011)
 
-(6b) African region - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6b-global---daily-cases-2021)
- 
-(6c) African region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6c-global---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
-  
-(7) African region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#7-global---hospital-related-outcomes-all-time)
+(2) African region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#2-african-region---daily-deaths-reference-scenarios-2021)
 
-(7b) African region - [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#7b-global---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
-  
-(8) African region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#8-global---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
-  
-(9) African region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021)
-  
-(10) African region - [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#10-global---daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
+(2b) African region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#2b-african-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
 
+(3) African region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3-african-region---daily-deaths-3-scenarios-2021)
+
+(3b) African region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3b-african-region---daily-deaths-3-scenarios-2021-ihme)
+
+(3c) African region - [Daily deaths, 3 scenarios, 2021, IMPE)[https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3c-african-region---daily-deaths-3-scenarios-2021-impe]
+
+(4) African region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#4-african-region---daily-cases-or-infections-reference-scenarios-all-time)
+
+(5) African region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#5-african-region---daily-cases-or-infections-reference-scenarios-2021)
+
+
+(6) African region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#6-african-region---daily-cases-or-infections-3-scenarios-2021)
+
+(7) African region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#7-african-region---daily-cases-2021)
+
+(6c) African region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#6c-african-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+
+(7) African region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#7-african-region---hospital-related-outcomes-all-time)
+
+(8) African region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand)[https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#8-african-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand]
+
+(9) African region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#9-african-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
 
 ****
