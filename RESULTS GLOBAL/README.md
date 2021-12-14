@@ -1574,25 +1574,19 @@ List of graphs:
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
-(3b) Global [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2016%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/145880257-fe002c40-41bf-4c24-8f96-91ae4cf0ecb0.png)
+uptake 20211210 and uptake 20121203 both use IHMPE update 20211119. 
 
 *
 
 **uptake 20211203**: **_DELP 20211203_**, IHME 20211119, **_IMPE 20211129_**, **_SRIV 20211203_**
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211203/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/144671435-97afadac-b470-450b-9753-036995316fbc.png)
+uptake 20121203 and uptake 20211126 both use IHMPE update 20211119.
 
 *
 
 **uptake 20211126**: **_DELP 20211123_**, IHME 20211119, IMPE 20211115, **_SRIV 20211126_**
 
-(3b) [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211126/output/merge/graph%2016%20COVID-19%20daily%20deaths%2C%20global%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/143664231-ce6892cb-06da-4497-bb69-674f322ee57f.png)
+uptake 20211126 and uptake 20211119 both use IHMPE update 20211119.
 
 *
 
