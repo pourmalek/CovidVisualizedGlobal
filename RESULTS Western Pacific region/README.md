@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - Western Pacific region (WPRO)
+### Selected Results - Western Pacific region (WPRO)
   
 <br/><br/>
 
