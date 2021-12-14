@@ -5,34 +5,33 @@
 List of graphs:
 
   
-(1) Western Pacific region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Western Pacific%20region#1-Western Pacific-region---daily-deaths-reference-scenarios-all-time)
+(1) Western Pacific region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#1-western-pacific-region---daily-deaths-reference-scenarios-all-time)
 
-(2) Western Pacific region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#2-Western Pacific-region---daily-deaths-reference-scenarios-2021)
+(2) Western Pacific region - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#2-western-pacific-region---daily-deaths-reference-scenarios-2021)
 
-(2b) Western Pacific region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#2b-Western Pacific-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+(2b) Western Pacific region - [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#2b-western-pacific-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
 
-(3) Western Pacific region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#3-Western Pacific-region---daily-deaths-3-scenarios-2021)
+(3) Western Pacific region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#3-western-pacific-region---daily-deaths-3-scenarios-2021)
 
-(3b) Western Pacific region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#3b-Western Pacific-region---daily-deaths-3-scenarios-2021-ihme)
+(3b) Western Pacific region - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#3b-western-pacific-region---daily-deaths-3-scenarios-2021-ihme)
 
-(3c) Western Pacific region - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#3c-Western Pacific-region---daily-deaths-3-scenarios-2021-impe)
+(3c) Western Pacific region - [Daily deaths, 3 scenarios, 2021, IMPE](hhttps://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#3c-western-pacific-region---daily-deaths-3-scenarios-2021-impe)
 
-(4) Western Pacific region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#4-Western Pacific-region---daily-cases-or-infections-reference-scenarios-all-time)
+(4) Western Pacific region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#4-western-pacific-region---daily-cases-or-infections-reference-scenarios-all-time)
 
-(5) Western Pacific region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#5-Western Pacific-region---daily-cases-or-infections-reference-scenarios-2021)
+(5) Western Pacific region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#5-western-pacific-region---daily-cases-or-infections-reference-scenarios-2021)
 
+(6) Western Pacific region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#6-western-pacific-region---daily-cases-or-infections-3-scenarios-2021)
 
-(6) Western Pacific region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#6-Western Pacific-region---daily-cases-or-infections-3-scenarios-2021)
+(6b) Western Pacific region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#6b-western-pacific-region---daily-cases-2021)
 
-(6b) Western Pacific region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#6b-Western Pacific-region---daily-cases-2021)
+(6c) Western Pacific region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#6c-western-pacific-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
 
-(6c) Western Pacific region - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#6c-Western Pacific-region---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+(7) Western Pacific region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#7-western-pacific-region---hospital-related-outcomes-all-time)
 
-(7) Western Pacific region - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#7-Western Pacific-region---hospital-related-outcomes-all-time)
+(8) Western Pacific region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#8-western-pacific-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
-(8) Western Pacific region - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#8-Western Pacific-region---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
-
-(9) Western Pacific region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western Pacific%20region/README.md#9-Western Pacific-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+(9) Western Pacific region - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#9-western-pacific-region---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
 
 ****
