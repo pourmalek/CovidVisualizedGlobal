@@ -1,4 +1,4 @@
-### Selected Results from Previous Uptake - Eastern Mediterranean region (EMRO)
+### Selected Results - Eastern Mediterranean region (EMRO)
   
 <br/><br/>
 
