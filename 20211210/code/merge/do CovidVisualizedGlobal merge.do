@@ -1715,9 +1715,7 @@ foreach region of local list5 {
 
 
 
-* GLOBAL only
-
-
+*************************
 	
 * GLOBAL only
 
@@ -1866,31 +1864,34 @@ qui graph export "graph GLOBAL 96 COVID-19 daily vaccinated number, GLOBAL.pdf",
 
 
 
-
+*******************************
 *******************************
 
 * regions together
 
+* two sets of graphs: first set = IHME and IMPE (graph ??1), second set: DELP and SRIV (graph ??2)
+
+* (a) with global, (b) w/o global 
 
 
-* daily deaths, with GLOBAL
+* daily deaths, with GLOBAL, IHME, IMPE
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
 (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
+(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
 (line DayDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line DayDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
 (line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
-(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -1905,28 +1906,66 @@ legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") 
 subtitle("with GLOBAL", size(small)) ///
 note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
 
-qui graph save "graph 1a COVID-19 daily deaths, regions together, IHME, IMPE.gph", replace
-qui graph export "graph 1a COVID-19 daily deaths, regions together, IHME, IMPE.pdf", replace
+qui graph save "graph 1a1 COVID-19 daily deaths, regions together, IHME, IMPE.gph", replace
+qui graph export "graph 1a1 COVID-19 daily deaths, regions together, IHME, IMPE.pdf", replace
 
 
 
 
-* daily deaths, without GLOBAL
+* daily deaths, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
 (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
-(line DayDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line DayDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 1a2 COVID-19 daily deaths, regions together, DELP, SRIV.gph", replace
+qui graph export "graph 1a2 COVID-19 daily deaths, regions together, DELP, SRIV.pdf", replace
+
+
+
+
+* daily deaths, without GLOBAL, IHME, IMPE
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line DayDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) /// 
 (line DayDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -1940,30 +1979,127 @@ legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small)
 subtitle("without GLOBAL", size(small)) ///
 note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
 
-qui graph save "graph 1b COVID-19 daily deaths, regions together wo global, IHME, IMPE.gph", replace
-qui graph export "graph 1b COVID-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
+qui graph save "graph 1b1 COVID-19 daily deaths, regions together wo global, IHME, IMPE.gph", replace
+qui graph export "graph 1b1 COVID-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
 
 
 
 
-* daily infections, with GLOBAL
+* daily deaths, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line DayDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 1b2 COVID-19 daily deaths, regions together wo global, DELP, SRIV.gph", replace
+qui graph export "graph 1b2 COVID-19 daily deaths, regions together wo global, DELP, SRIV.pdf", replace
+
+
+
+
+* daily excess deaths, with GLOBAL, IHME
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line DayDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("IHME: dashed curves; JOHN: solid curves")
+
+qui graph save "graph 1 2 a1 COVID-19 daily excess deaths, regions together, IHME.gph", replace
+qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together, IHME.pdf", replace
+
+
+
+
+* daily excess deaths, without GLOBAL, IHME
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line DayDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("IHME: dashed curves; JOHN: solid curves")
+
+qui graph save "graph 1 2 a1 COVID-19 daily excess deaths, regions together wo global, IHME.gph", replace
+qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together  wo global, IHME.pdf", replace
+
+
+
+
+
+
+* daily infections, with GLOBAL, IHME, IMPE
+
+twoway ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
 (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
+(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
 (line DayINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line DayINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
-(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -1978,29 +2114,67 @@ legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") 
 subtitle("with GLOBAL", size(small)) ///
 note("IHME infections: dashed curves; IMPE infections: dash-three-dots curves; JOHN cases: solid curves")
 
-qui graph save "graph 2a COVID-19 daily infections, regions together, IHME, IMPE.gph", replace
-qui graph export "graph 2a COVID-19 daily infections, regions together, IHME, IMPE.pdf", replace
+qui graph save "graph 2a1 COVID-19 daily infections, regions together, IHME, IMPE.gph", replace
+qui graph export "graph 2a1 COVID-19 daily infections, regions together, IHME, IMPE.pdf", replace
 
 
 
 
-* daily cases, without GLOBAL
 
+* daily cases, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
 (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
+(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line DayCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("DELP cases: dashed curves; SRIV cases: dash-three-dots curves; JOHN cases: solid curves")
+
+qui graph save "graph 2a2 COVID-19 daily cases, regions together, DELP, SRIV.gph", replace
+qui graph export "graph 2a2 COVID-19 daily cases, regions together, DELP, SRIV.pdf", replace
+
+
+
+
+* daily infections, without GLOBAL, IHME, IMPE
+
+twoway ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
 (line DayINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line DayINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -2014,30 +2188,66 @@ legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small)
 subtitle("without GLOBAL", size(small)) ///
 note("IHME infections: dashed curves; IMPE infections: dash-three-dots curves; JOHN cases: solid curves")
 
-qui graph save "graph 2b COVID-19 daily infections, regions together wo global, IHME, IMPE.gph", replace
-qui graph export "graph 2b COVID-19 daily infections, regions together wo global, IHME, IMPE.pdf", replace
+qui graph save "graph 2b1 COVID-19 daily infections, regions together wo global, IHME, IMPE.gph", replace
+qui graph export "graph 2b1 COVID-19 daily infections, regions together wo global, IHME, IMPE.pdf", replace
 
 
 
 
-* total deaths, with GLOBAL
+* daily cases, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line DayCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("DELP cases: dashed curves; SRIV cases: dash-three-dots curves; JOHN cases: solid curves")
+
+qui graph save "graph 2b2 COVID-19 daily cases, regions together wo global, DELP, SRIV.gph", replace
+qui graph export "graph 2b2 COVID-19 daily cases, regions together wo global, DELP, SRIV.pdf", replace
+
+
+
+
+
+* total deaths, with GLOBAL, IHME, IMPE
+
+twoway ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
 (line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
+(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
 (line TotDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
-(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -2052,27 +2262,66 @@ legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") 
 subtitle("with GLOBAL", size(small)) ///
 note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
 
-qui graph save "graph 3a COVID-19 total deaths, regions together, IHME, IMPE.gph", replace
-qui graph export "graph 3a COVID-19 total deaths, regions together, IHME, IMPE.pdf", replace
+qui graph save "graph 3a1 COVID-19 total deaths, regions together, IHME, IMPE.gph", replace
+qui graph export "graph 3a1 COVID-19 total deaths, regions together, IHME, IMPE.pdf", replace
 
 
 
-* total deaths, with GLOBAL
+
+* total deaths, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
 (line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) ///
+(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line TotDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 3a2 COVID-19 total deaths, regions together, DELP, SRIV.gph", replace
+qui graph export "graph 3a2 COVID-19 total deaths, regions together, DELP, SRIV.pdf", replace
+
+
+
+
+* total deaths, without GLOBAL, IHME, IMPE
+
+twoway ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
 (line TotDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
 (line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
@@ -2083,13 +2332,252 @@ xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, la
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
-subtitle("wo global GLOBAL", size(small)) ///
+subtitle("without global GLOBAL", size(small)) ///
 note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
 
-qui graph save "graph 3b COVID-19 total deaths, regions together wo global, IHME, IMPE.gph", replace
-qui graph export "graph 3b COVID-19 total deaths, regions together wo global, IHME, IMPE.pdf", replace
+qui graph save "graph 3b1 COVID-19 total deaths, regions together wo global, IHME, IMPE.gph", replace
+qui graph export "graph 3b1 COVID-19 total deaths, regions together wo global, IHME, IMPE.pdf", replace
 
 
+
+
+* total deaths, without GLOBAL, DELP, SRIV
+
+twoway ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line TotDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" ) size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 3b2 COVID-19 total deaths, regions together wo global, DELP, SRIV.gph", replace
+qui graph export "graph 3b2 COVID-19 total deaths, regions together wo global, DELP, SRIV.pdf", replace
+
+
+
+
+* total excess deaths, with GLOBAL, IHME
+
+twoway ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line TotDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.gph", replace
+qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.pdf", replace
+
+
+
+
+* total excess deaths, without GLOBAL, IHME
+
+twoway ///
+(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line TotDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.gph", replace
+qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.pdf", replace
+
+
+
+
+* total infections, with GLOBAL, IHME, IMPE
+
+twoway ///
+(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line TotINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 4a1 COVID-19 total infections, regions together, IHME, IMPE.gph", replace
+qui graph export "graph 4a1 COVID-19 total infections, regions together, IHME, IMPE.pdf", replace
+
+
+
+
+* total cases, with GLOBAL, DELP, SRIV
+
+twoway ///
+(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line TotCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 4a2 COVID-19 total cases, regions together, DELP, SRIV.gph", replace
+qui graph export "graph 4a2 COVID-19 total cases, regions together, DELP, SRIV.pdf", replace
+
+
+
+
+* total infections, without GLOBAL, IHME, IMPE
+
+twoway ///
+(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
+(line TotINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+subtitle("without global GLOBAL", size(small)) ///
+note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 4b1 COVID-19 total infections, regions together wo global, IHME, IMPE.gph", replace
+qui graph export "graph 4b1 COVID-19 total infections, regions together wo global, IHME, IMPE.pdf", replace
+
+
+
+
+* total cases, without GLOBAL, DELP, SRIV
+
+twoway ///
+(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
+(line TotCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
+(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
+(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" ) size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+
+qui graph save "graph 4b2 COVID-19 total cases, regions together wo global, DELP, SRIV.gph", replace
+qui graph export "graph 4b2 COVID-19 total cases, regions together wo global, DELP, SRIV.pdf", replace
 
 
 
