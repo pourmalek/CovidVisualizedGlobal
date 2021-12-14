@@ -1,4 +1,4 @@
-! Read the Global COVID-19 epidemic models situation report No 19 - 2021-12-10 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/19%20Global%20COVID-19%20epidemic%20models%20situation%20report%20No%2019%20–%202021-12-10.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 19 - 2021-12-10 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/19%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2019%20–%202021-12-10.pdf)
 
 <br/><br/>
 
