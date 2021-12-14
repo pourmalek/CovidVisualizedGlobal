@@ -7,7 +7,7 @@ List of graphs:
 
 Daily, followed by Total. 
 
-Deaths, followed by infections, and cases. 
+Deaths, followed by excess deaths, infections, and cases. 
 
 With Global, followed by without Global. 
 
