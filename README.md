@@ -1494,6 +1494,9 @@ _Component studies (the international periodically updated models) and their sce
   
 
   
+(55) uptake [`20211217`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20211217): 
+**_DELP 20211216_**, IHME 2021119, **_IMPE 20211205_**, **_SRIV 20211217_**  
+  
 (54) uptake [`20211210`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20211210): 
 **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**  
   
