@@ -2394,12 +2394,12 @@ twoway ///
 (line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
 (line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
 , xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: dashed curves; JOHN: solid curves")
 
 qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.gph", replace
 qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.pdf", replace
@@ -2428,7 +2428,7 @@ ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IH
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: dashed curves; JOHN: solid curves")
 
 qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.gph", replace
 qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.pdf", replace
