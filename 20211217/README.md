@@ -722,36 +722,43 @@ Farshad Pourmalek, December 15, 2021
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2011a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659578-d71a7e22-c5ba-48f1-82e0-c8d2b3234423.png)
 
 ****
 
 (2) South-East Asian region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2012a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659589-fc53c145-367f-4a57-b703-c498ba6dd818.png)
 
 ****
 
 (2b) South-East Asian region [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2012b%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659608-eef84c88-07b6-472e-984e-1e2d577256fc.png)
 
 ****
 
 (3) South-East Asian region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2014%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659626-0ab56862-c09d-4d61-96d9-7733ef6e7bd1.png)
 
 ****
 
 (3b) South-East Asian region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2016%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659644-fc4bcb0f-2392-4b4b-be6e-7ced1731a1d2.png)
 
 ****
 
 (3c) South-East Asian region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2018%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659655-7b5e8bfd-210a-4f61-b4e1-32c8430a9ae1.png)
 
 ****
 
 (4) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2021%20COVID-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659684-45620f0e-09d0-4dc7-9d56-019eb436f459.png)
 
 ****
 
