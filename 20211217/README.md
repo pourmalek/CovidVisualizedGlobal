@@ -764,36 +764,43 @@ Farshad Pourmalek, December 15, 2021
 
 (5) South-East Asian region [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2022%20COVID-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659719-6d733673-6930-4a2c-98d2-7349a821cd39.png)
 
 ****
 
 (6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2024%20COVID-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659735-37dc1547-d0e7-41bf-822b-9408acdbae75.png)
 
 ****
 
 (6b) South-East Asian region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2022b%20COVID-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659750-df105b64-9aee-4e5a-b172-68f7231e7a7f.png)
 
 ****
 
 (6c) South-East Asian region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20SEARO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659764-34f5badc-7df2-47c9-8aa3-681c69361cbb.png)
 
 ****
 
 (7) South-East Asian region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659778-e90643bf-7da5-4b03-bdde-54b3efd709b6.png)
 
 ****
 
 (8) South-East Asian region [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659801-e7f77a80-d43a-44d3-a6a1-76bdfd054413.png)
 
 ****
 
 (9) South-East Asian region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20SEARO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659824-15e604b5-356a-4b87-aae5-9768f7937972.png)
 
 ****
 
