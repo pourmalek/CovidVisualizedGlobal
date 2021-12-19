@@ -817,71 +817,85 @@ Farshad Pourmalek, December 15, 2021
 
 (1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659855-a0dfc7b4-b0d1-4408-b294-256ea7106ba4.png)
 
 ****
 
 (2) Western Pacific region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2012a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659872-65ce3981-97c1-424d-ad2a-4ee0b0687e5b.png)
 
 ****
 
 (2b) Western Pacific region [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2012b%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659891-ccc5a4ea-6949-4bee-86fc-aa777cac3ade.png)
 
 ****
 
 (3) Western Pacific region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2014%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659908-259cd166-92e3-45ae-907c-e4f540acdee6.png)
 
 ****
 
 (3b) Western Pacific region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2016%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659933-4b0d3c96-45be-420f-a0c9-e6702ca37510.png)
 
 ****
 
 (3c) Western Pacific region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2018%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659939-5d9688bb-87ea-42ac-88ae-deeb2c05bf78.png)
 
 ****
 
 (4) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2021%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659953-8608df52-aeb4-4bc6-a9e2-6a6648264e89.png)
 
 ****
 
 (5) Western Pacific region [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2022%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659973-64eba1c8-1fa5-4247-81a2-66dd9233e71d.png)
 
 ****
 
 (6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2024%20COVID-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146659986-2986e833-d370-417a-a766-1372b68112c2.png)
 
 ****
 
 (6b) Western Pacific region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2022b%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146660000-a76be133-fa4c-4d30-bf32-3c9e7087b273.png)
 
 ****
 
 (6c) Western Pacific region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20WPRO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146660010-2f39343b-ed62-4009-b602-529af2a34413.png)
 
 ****
 
 (7) Western Pacific region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146660023-a93ed101-653c-4de3-88b7-40b40fcd8bbb.png)
 
 ****
 
 (8) Western Pacific region [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146660044-376940c8-a5b9-47b1-a59f-c7affdca022d.png)
 
 ****
 
 (9) Western Pacific region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20WPRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20WPRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/146660071-f5b7eb11-9a68-465c-8036-721c084c905e.png)
 
 ****
 ****
