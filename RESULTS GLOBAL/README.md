@@ -61,6 +61,14 @@ List of graphs:
   
 *
 
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_** 
+
+(1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/146625918-0b2312ce-4270-49be-8352-85295c8a325c.png)
+
+*
+
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -518,6 +526,12 @@ List of graphs:
 
 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_** 
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
