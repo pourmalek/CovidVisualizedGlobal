@@ -44,8 +44,16 @@ List of graphs:
 
 ### (1) South-East Asian region - Daily deaths, reference scenarios, all time
   
+  
+  
  
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -70,7 +78,15 @@ List of graphs:
 ### (2) South-East Asian region - Daily deaths, reference scenarios, 2021
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -94,7 +110,15 @@ List of graphs:
 ### (2b) South-East Asian region - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -120,7 +144,15 @@ List of graphs:
 ### (3) South-East Asian region - Daily deaths, 3 scenarios, 2021
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -144,8 +176,16 @@ List of graphs:
 
 ### (3b) South-East Asian region - Daily deaths, 3 scenarios, 2021, IHME
   
+  
+  
  
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -168,6 +208,14 @@ List of graphs:
 ********************************************************************************************************************************************  
   
 ### (3c) South-East Asian region - Daily deaths, 3 scenarios, 2021, IMPE
+
+
+
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
 
 
 
@@ -195,7 +243,15 @@ List of graphs:
 ### (4) South-East Asian region - Daily cases or infections, reference scenarios, all time
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -221,6 +277,14 @@ List of graphs:
   
  
   
+  
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -246,7 +310,15 @@ List of graphs:
 ### (6) South-East Asian region - Daily cases or infections, 3 scenarios, 2021
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -271,7 +343,15 @@ List of graphs:
 ### (6b) South-East Asian region - Daily cases, 2021
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -295,8 +375,16 @@ List of graphs:
 
 ### (6c) South-East Asian region - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
   
+  
+  
  
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -322,6 +410,14 @@ List of graphs:
   
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -345,7 +441,16 @@ List of graphs:
 
 ### (8) South-East Asian region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
  
+ 
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -371,6 +476,14 @@ List of graphs:
   
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
