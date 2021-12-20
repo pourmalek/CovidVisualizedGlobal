@@ -67,7 +67,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (1) Regions together - Daily deaths, with GLOBAL, IHME, IMPE
   
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -96,6 +104,14 @@ IHME and IMPE, followed by DELP and SRIV.
   
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -124,6 +140,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -153,7 +177,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (4) Regions together - Daily deaths, without GLOBAL, DELP, SRIV
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -183,6 +215,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -211,7 +251,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (6) Regions together - Daily excess deaths, without GLOBAL, IHME
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -239,7 +287,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (7) Regions together - Daily infections, with GLOBAL, IHME, IMPE
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -268,7 +324,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (8) Regions together - Daily infections, without GLOBAL, IHME, IMPE
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -299,6 +363,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -329,7 +401,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (10) Regions together - Daily cases, without GLOBAL, DELP, SRIV
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -359,7 +439,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (11) Regions together - Total deaths, with GLOBAL, IHME, IMPE
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -387,6 +475,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -415,7 +511,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (13) Regions together - Total deaths, with GLOBAL, DELP, SRIV
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -443,7 +547,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (14) Regions together - Total deaths, without GLOBAL, DELP, SRIV
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -473,6 +585,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -502,7 +622,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (16) Regions together - Total excess deaths, without GLOBAL, IHME
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -532,7 +660,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (17) Regions together - Total infections, with GLOBAL, IHME, IMPE
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -562,7 +698,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (18) Regions together - Total infections, without GLOBAL, IHME, IMPE
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -594,6 +738,14 @@ IHME and IMPE, followed by DELP and SRIV.
 
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -621,7 +773,15 @@ IHME and IMPE, followed by DELP and SRIV.
 ### (20) Regions together - Total cases, without GLOBAL, DELP, SRIV
 
  
+ 
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
