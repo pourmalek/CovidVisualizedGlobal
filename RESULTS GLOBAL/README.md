@@ -58,6 +58,7 @@ List of graphs:
 ### (1) GLOBAL - Daily deaths, reference scenarios, all time
   
  
+ 
   
 *
 
@@ -526,6 +527,8 @@ List of graphs:
 
 
   
+  
+  
 *
 
 **uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_** 
@@ -989,7 +992,15 @@ List of graphs:
 ### (2b) GLOBAL - Daily deaths, reference scenarios, 2021, with IHME excess deaths
 
 
+
+
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -1134,6 +1145,12 @@ List of graphs:
   
   
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -1582,6 +1599,14 @@ List of graphs:
 ### (3b) GLOBAL - Daily deaths, 3 scenarios, 2021, IHME
   
   
+  
+  
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1771,6 +1796,13 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 
 
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -1945,6 +1977,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (4) GLOBAL - Daily cases or infections, reference scenarios, all time
   
   
+
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
 
 *
 
@@ -2402,6 +2442,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
   
 
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -2849,6 +2897,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (6) GLOBAL - Daily cases or infections, 3 scenarios, 2011
   
   
+  
+  
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
 
 *
 
@@ -3303,6 +3359,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (6b) GLOBAL - Daily cases, 2021
   
   
+  
+  
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
 
 *
 
@@ -3388,6 +3452,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (6c) GLOBAL - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
   
   
+  
+  
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
 
 *
 
@@ -3431,6 +3503,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (7) GLOBAL - Hospital-related outcomes, all time
   
   
+
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
 
 *
 
@@ -4021,8 +4101,16 @@ This graph discontinued starting from uptake 20211210.
   
 ### (8) GLOBAL - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
 
+
+
   
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -4479,6 +4567,14 @@ This graph discontinued starting from uptake 20211210.
 
   
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -4949,6 +5045,14 @@ This graph is retired and replaced by graph (6c) Global Daily estimated infectio
 
   
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -5074,6 +5178,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
   
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -5200,6 +5312,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
   
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -5322,6 +5442,14 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
   
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+Both this and the previous uptake use the same model update, so the graphs are identical.
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
