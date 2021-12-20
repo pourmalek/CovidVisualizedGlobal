@@ -50,6 +50,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -74,7 +81,14 @@ List of graphs:
 ### (2) Americas region - Daily deaths, reference scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -98,7 +112,14 @@ List of graphs:
 ### (2b) Americas region - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -124,7 +145,14 @@ List of graphs:
 ### (3) Americas region - Daily deaths, 3 scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -150,6 +178,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -172,6 +207,13 @@ List of graphs:
 ********************************************************************************************************************************************  
   
 ### (3c) Americas region - Daily deaths, 3 scenarios, 2021, IMPE
+
+
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
 
 
 
@@ -199,7 +241,14 @@ List of graphs:
 ### (4) Americas region - Daily cases or infections, reference scenarios, all time
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -224,7 +273,14 @@ List of graphs:
 ### (5) Americas region - Daily cases or infections, reference scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -250,7 +306,14 @@ List of graphs:
 ### (6) Americas region - Daily cases or infections, 3 scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -275,7 +338,14 @@ List of graphs:
 ### (6b) Americas region - Daily cases, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -301,6 +371,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -325,7 +402,14 @@ List of graphs:
 ### (7) Americas region - Hospital-related outcomes, all time
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -350,6 +434,14 @@ List of graphs:
 ### (8) Americas region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -374,7 +466,14 @@ List of graphs:
 ### (9) Americas region - Daily deaths estimated to reported, reference scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
