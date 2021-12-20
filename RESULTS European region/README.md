@@ -46,7 +46,14 @@ List of graphs:
 ### (1) European region - Daily deaths, reference scenarios, all time
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -72,6 +79,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -95,7 +109,14 @@ List of graphs:
 ### (2b) European region - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -121,7 +142,14 @@ List of graphs:
 ### (3) European region - Daily deaths, 3 scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -146,7 +174,14 @@ List of graphs:
 ### (3b) European region - Daily deaths, 3 scenarios, 2021, IHME
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -169,6 +204,13 @@ List of graphs:
 ********************************************************************************************************************************************  
   
 ### (3c) European region - Daily deaths, 3 scenarios, 2021, IMPE
+
+
+
+
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
 
 
 
@@ -196,7 +238,14 @@ List of graphs:
 ### (4) European region - Daily cases or infections, reference scenarios, all time
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -222,6 +271,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -247,7 +303,14 @@ List of graphs:
 ### (6) European region - Daily cases or infections, 3 scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -272,7 +335,14 @@ List of graphs:
 ### (6b) European region - Daily cases, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -298,6 +368,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -323,6 +400,13 @@ List of graphs:
   
  
   
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -347,6 +431,14 @@ List of graphs:
 ### (8) European region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
  
   
+  
+  
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
@@ -371,7 +463,14 @@ List of graphs:
 ### (9) European region - Daily deaths estimated to reported, reference scenarios, 2021
   
  
+ 
   
+*
+
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
 *
 
 **uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
