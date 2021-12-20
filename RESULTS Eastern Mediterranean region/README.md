@@ -179,7 +179,7 @@ List of graphs:
 
 **uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
