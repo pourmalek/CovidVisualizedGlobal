@@ -145,7 +145,7 @@
 
 (11) Global [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/147380816-907eeb73-0dc7-4eab-a26c-789202a56817.png)
+![image](https://user-images.githubusercontent.com/30849720/147390962-d3e8b4e8-7a92-4a7b-96eb-3d459c97bd78.png)
 
 ****
 
