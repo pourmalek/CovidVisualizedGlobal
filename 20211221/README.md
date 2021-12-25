@@ -77,8 +77,9 @@
 
 ****
 
-(3b2) Global [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2016%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
+(3b2) Global [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20GLOBAL%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20GLOBAL%205%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147380562-c968c8eb-ab1c-4704-a2cc-7f5b2ad017bd.png)
 
 ****
 
