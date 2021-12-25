@@ -515,6 +515,7 @@ IHME: 2021 on, 2022
 
 (9) Americas region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393886-97cef9b6-685e-4cae-b2f3-f4afa3425a03.png)
 
 ****
 
@@ -531,26 +532,31 @@ IHME: 2021 on, 2022
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2011a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393910-6c6c13ac-a4dc-4891-a2d8-eb2de09acb0f.png)
 
 ****
 
 (2) Eastern Mediterranean region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2012a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393943-0e95b409-555d-41a8-a378-535fd3e1b109.png)
 
 ****
 
 (2b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2012b%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393954-fb090b63-2e86-4d4a-84fc-a8a3dda5d754.png)
 
 ****
 
 (3) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2014%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393968-0e9b9cc6-da55-4124-9315-939fda119e41.png)
 
 ****
 
 (3b) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2016%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393975-5200cadc-114d-479a-bd41-69e6ce4690bf.png)
 
 ****
 
