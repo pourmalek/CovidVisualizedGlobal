@@ -208,6 +208,18 @@
 
 ****
 
+(2b) Regions together [Daily deaths, without GLOBAL, IHME, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%201b%202%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147381505-c6a3f7ce-97eb-4d64-a407-8115e4c094fe.png)
+
+****
+
+(2b) Regions together [Daily deaths, without GLOBAL, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%201b%203%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147381550-19b064a5-1618-4e30-b7f8-4b81c1a935e3.png)
+
+****
+
 (3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147380991-4fd2700e-3a3b-43ab-962a-d961c426c6bf.png)
