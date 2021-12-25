@@ -53,7 +53,7 @@ foreach region of local list2 {
 	twoway (rarea DayDeaLoSmA02S01`region' DayDeaUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -69,7 +69,7 @@ foreach region of local list2 {
 	twoway (rarea DayDeXLoSmA02S01`region' DayDeXUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -88,7 +88,7 @@ foreach region of local list2 {
 	(rarea DayDeXLoSmA02S01`region' DayDeXUpSmA02S01`region' date, sort color(red*.2)) ///
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported & excess deaths) title("COVID-19 daily reported & excess deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -113,7 +113,7 @@ foreach region of local list2 {
 	(line DayDeaMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line DayDeaMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, 5 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -135,7 +135,7 @@ foreach region of local list2 {
 	(line DayDeaMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line DayDeaMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, 5 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -179,7 +179,7 @@ foreach region of local list2 {
 	(line DayDeXMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line DayDeXMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, `region', IHME, 5 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -200,7 +200,7 @@ foreach region of local list2 {
 	(line DayDeaLoSmA02S01`region' date, sort lcolor(green)) ///
 	(line DayDeaUpSmA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -220,7 +220,7 @@ foreach region of local list2 {
 	(line DayDeaLoSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayDeaUpSmA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -240,7 +240,7 @@ foreach region of local list2 {
 	(line DayDeaLoSmA02S03`region' date, sort lcolor(green)) ///
 	(line DayDeaUpSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -259,7 +259,7 @@ foreach region of local list2 {
 	(line DayDeaLoSmA02S04`region' date, sort lcolor(green)) ///
 	(line DayDeaUpSmA02S04`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, 2nd Best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -279,7 +279,7 @@ foreach region of local list2 {
 	(line DayDeaLoSmA02S05`region' date, sort lcolor(green)) ///
 	(line DayDeaUpSmA02S05`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily reported deaths) title("COVID-19 daily reported deaths, `region', IHME, 3rd Best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -301,7 +301,7 @@ foreach region of local list2 {
 	twoway (rarea DayINFLoSmA02S01`region' DayINFUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -322,7 +322,7 @@ foreach region of local list2 {
 	(line DayINFMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line DayINFMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -344,7 +344,7 @@ foreach region of local list2 {
 	(line DayINFMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line DayINFMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -386,7 +386,7 @@ foreach region of local list2 {
 	(line DayINFLoSmA02S01`region' date, sort lcolor(green)) ///
 	(line DayINFUpSmA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -406,7 +406,7 @@ foreach region of local list2 {
 	(line DayINFLoSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayINFUpSmA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -426,7 +426,7 @@ foreach region of local list2 {
 	(line DayINFLoSmA02S03`region' date, sort lcolor(green)) ///
 	(line DayINFUpSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -445,7 +445,7 @@ foreach region of local list2 {
 	(line DayINFLoSmA02S04`region' date, sort lcolor(green)) ///
 	(line DayINFUpSmA02S04`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, 2nd Best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -463,7 +463,7 @@ foreach region of local list2 {
 	(line DayINFLoSmA02S05`region' date, sort lcolor(green)) ///
 	(line DayINFUpSmA02S05`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infections) title("COVID-19 daily infections, `region', IHME, 3rd Best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -485,7 +485,7 @@ foreach region of local list2 {
 	twoway (rarea TotDeaLoSmA02S01`region' TotDeaUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line TotDeaMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported deaths) title("COVID-19 total reported deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -501,7 +501,7 @@ foreach region of local list2 {
 	twoway (rarea TotDeXLoSmA02S01`region' TotDeXUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line TotDeXMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total excess deaths) title("COVID-19 total excess deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -520,7 +520,7 @@ foreach region of local list2 {
 	(rarea TotDeXLoSmA02S01`region' TotDeXUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line TotDeXMeSmA02S01`region' date, sort lcolor(black) lpattern(dash)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported and excess deaths) title("COVID-19 total reported & excess deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) yscale(titlegap(4)) legend(off) ///
@@ -542,7 +542,7 @@ foreach region of local list2 {
 	(line TotDeaMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line TotDeaMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported deaths) title("COVID-19 total reported deaths, `region', IHME, 5 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -565,7 +565,7 @@ foreach region of local list2 {
 	(line TotDeXMeSmA02S04`region' date, sort lcolor(cyan) lwidth(vthick) lpattern(tight_dot)) ///
 	(line TotDeXMeSmA02S02`region' date, sort lcolor(green)) /// 
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total excess deaths) title("COVID-19 total excess deaths, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -587,7 +587,7 @@ foreach region of local list2 {
 	(line TotDeaLoSmA02S01`region' date, sort lcolor(green)) ///
 	(line TotDeaUpSmA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported deaths) title("COVID-19 total reported deaths, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -607,7 +607,7 @@ foreach region of local list2 {
 	(line TotDeaLoSmA02S02`region' date, sort lcolor(green)) ///
 	(line TotDeaUpSmA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported deaths) title("COVID-19 total reported deaths, `region', IHME, best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -627,7 +627,7 @@ foreach region of local list2 {
 	(line TotDeaLoSmA02S03`region' date, sort lcolor(green)) ///
 	(line TotDeaUpSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total reported deaths) title("COVID-19 total reported deaths, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -648,7 +648,7 @@ foreach region of local list2 {
 	twoway (rarea TotINFLoSmA02S01`region' TotINFUpSmA02S01`region' date, sort color(black*.2)) ///
 	(line TotINFMeSmA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total infections) title("COVID-19 total infections, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off)	///
@@ -667,7 +667,7 @@ foreach region of local list2 {
 	(line TotINFLoSmA02S01`region' date, sort lcolor(green)) ///
 	(line TotINFUpSmA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total infections) title("COVID-19 total infections, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -687,7 +687,7 @@ foreach region of local list2 {
 	(line TotINFLoSmA02S02`region' date, sort lcolor(green)) ///
 	(line TotINFUpSmA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total infections) title("COVID-19 total infections, `region', IHME, best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -706,7 +706,7 @@ foreach region of local list2 {
 	(line TotINFLoSmA02S03`region' date, sort lcolor(green)) ///
 	(line TotINFUpSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total infections) title("COVID-19 total infections, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -732,7 +732,7 @@ foreach region of local list2 {
 	(line TotINFLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) ///
 	(line TotINFUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total infections) title("COVID-19 total infections, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -758,7 +758,7 @@ foreach region of local list2 {
 	(line InfFatalA02S03`region' date, sort lcolor(red)) ///
 	(line InfFatalA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection fatality ratio) title("COVID-19 daily Infection fatality ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -777,7 +777,7 @@ foreach region of local list2 {
 	(line InfDetectA02S03`region' date, sort lcolor(red)) ///
 	(line InfDetectA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection detection ratio) title("COVID-19 daily Infection detection ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -797,7 +797,7 @@ foreach region of local list2 {
 	(line InfHospitA02S03`region' date, sort lcolor(red)) ///
 	(line InfHospitA02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily Infection hospitalization ratio) title("COVID-19 daily Infection hospitalization ratio, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -816,7 +816,7 @@ foreach region of local list2 {
 	(line InfHospitA02S01`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S01`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -835,7 +835,7 @@ foreach region of local list2 {
 	(line InfHospitA02S02`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, best scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -856,7 +856,7 @@ foreach region of local list2 {
 	(line InfHospitA02S03`region' date, sort lcolor(black)) ///
 	(line InfFatalA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, worse scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -884,7 +884,7 @@ foreach region of local list2 {
 	(line InfHospitA02S03`region' date, sort lcolor(black) lpattern(dash)) ///
 	(line InfFatalA02S03`region' date, sort lcolor(red) lpattern(dash)) ///
 	if date >= td(01jan2021) ///
-	, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -910,7 +910,7 @@ foreach region of local list2 {
 	(line DayBedMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayBedMeSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily beds needed) title("COVID-19 daily beds needed, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -929,7 +929,7 @@ foreach region of local list2 {
 	(line DayBedMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayBedMeSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily beds needed) title("COVID-19 daily beds needed, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -948,7 +948,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayIcuMeSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(ICU beds needed) title("COVID-19 daily ICU beds needed, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -966,7 +966,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayIcuMeSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(ICU beds needed) title("COVID-19 daily ICU beds needed, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -986,7 +986,7 @@ foreach region of local list2 {
 	(line DayAdmMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayAdmMeSmA02S02`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily hospital admissions) title("COVID-19 daily hospital admissions `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1005,7 +1005,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S02`region' date, sort lcolor(green)) ///
 	(line DayIcuMeSmA02S03`region' date, sort lcolor(red)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily ICU beds needed) title("COVID-19 daily ICU beds needed `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1029,7 +1029,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) ///
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1048,7 +1048,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) ///
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1068,7 +1068,7 @@ foreach region of local list2 {
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) ///
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("COVID-19 daily hospital-related outcomes, `region', IHME, reference scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1105,7 +1105,8 @@ twoway ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1129,7 +1130,7 @@ twoway ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1174,7 +1175,8 @@ twoway ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1197,7 +1199,7 @@ twoway ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1242,8 +1244,9 @@ twoway ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
 (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1267,7 +1270,7 @@ twoway ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1313,7 +1316,8 @@ twoway ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1337,7 +1341,7 @@ twoway ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1383,8 +1387,9 @@ twoway ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
 (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1408,7 +1413,7 @@ twoway ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1454,7 +1459,8 @@ twoway ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1478,7 +1484,7 @@ twoway ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1523,8 +1529,9 @@ twoway ///
 (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
 (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1548,7 +1555,7 @@ twoway ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1595,7 +1602,8 @@ twoway ///
 (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1618,7 +1626,7 @@ twoway ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1663,8 +1671,9 @@ twoway ///
 (line InfFatalA02S01EURO date, sort lcolor(green)) ///
 (line InfFatalA02S01SEARO date, sort lcolor(cyan)) ///
 (line InfFatalA02S01WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
 (line InfFatalA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#25, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1689,7 +1698,7 @@ twoway ///
 (line InfFatalA02S01WPRO date, sort lcolor(blue)) ///
 (line InfFatalA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
-, xtitle(Date) xlabel(#14, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
