@@ -228,16 +228,19 @@
 
 (8) Regions together [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%202b1%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147381045-83b98f32-7468-4f94-b2d9-42b57f9f8864.png)
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%202a2%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147381057-c9dcf510-31a6-4bc4-a7c8-732ca852de2f.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%202b2%20COVID-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147381072-0a57aea3-f145-49ca-9f0a-59180107f9ae.png)
 
 ****
 
