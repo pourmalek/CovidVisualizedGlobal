@@ -194,7 +194,7 @@ Models: IHME and IMPE, DELP and SRIV
 
 Global: With Global, Without Global
 
-IHME: All time, 2021 on, 2022
+IHME: 2021 on, 2022
 
 
 ****
