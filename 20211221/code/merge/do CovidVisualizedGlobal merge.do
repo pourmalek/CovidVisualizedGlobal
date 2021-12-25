@@ -2152,8 +2152,8 @@ twoway ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
