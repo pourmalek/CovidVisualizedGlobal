@@ -151,7 +151,7 @@
 
 (11b) Global [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2091b%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/147380831-f47ea17e-ae82-4364-b2bc-990d4476b2d0.png)
+![image](https://user-images.githubusercontent.com/30849720/147390974-2581f4b5-c44a-452a-b374-1471b63b6eda.png)
 
 ****
 
