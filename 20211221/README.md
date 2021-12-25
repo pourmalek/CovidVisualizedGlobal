@@ -157,7 +157,7 @@
 
 (12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/147380841-ed348c4b-a590-4a09-8f0e-6f3cfe4c8f94.png)
+![image](https://user-images.githubusercontent.com/30849720/147390999-b759f1f6-7b7d-4079-90f0-fb98495bb2f9.png)
 
 ****
 
