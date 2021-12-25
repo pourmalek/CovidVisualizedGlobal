@@ -1698,7 +1698,7 @@ foreach region of local list5 {
 	(line mask_use_mean_A02S03`region' date, sort lcolor(red)) ///
 	(line mask_use_mean_A02S01`region' date, sort lcolor(black)) ///
 	if date >= td(01jan2020) ///
-	, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+	, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily mask use) title("COVID-19 daily mask use, `region', IHME, 3 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1734,7 +1734,7 @@ twoway ///
 (line InfHospitA02S03GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 (line InfFatalA02S03GLOBAL date, sort lcolor(red) lpattern(dash)) ///
 if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1758,7 +1758,7 @@ twoway ///
 (line InfHospitA02S03GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 (line InfFatalA02S03GLOBAL date, sort lcolor(red) lpattern(dash)) ///
 if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1779,7 +1779,7 @@ twoway ///
 (line mobility_mean_A02S03GLOBAL date, sort lcolor(red)) ///
 (line mobility_mean_A02S01GLOBAL date, sort lcolor(black)) ///
 if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 ytitle(Daily % change in mobility from baseline) title("COVID-19 daily % change in mobility, GLOBAL, IHME, 3 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1898,7 +1898,8 @@ twoway ///
 (line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1936,7 +1937,8 @@ twoway ///
 (line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -1971,7 +1973,8 @@ twoway ///
 (line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2006,7 +2009,8 @@ twoway ///
 (line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2037,7 +2041,8 @@ twoway ///
 (line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
 (line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2066,7 +2071,8 @@ twoway ///
 (line DayDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2106,7 +2112,8 @@ twoway ///
 (line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2145,7 +2152,8 @@ twoway ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2180,7 +2188,8 @@ twoway ///
 (line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2215,7 +2224,8 @@ twoway ///
 (line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2254,7 +2264,8 @@ twoway ///
 (line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2292,7 +2303,8 @@ twoway ///
 (line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2327,7 +2339,8 @@ twoway ///
 (line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2362,7 +2375,8 @@ twoway ///
 (line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2393,7 +2407,8 @@ twoway ///
 (line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
 (line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2422,7 +2437,8 @@ twoway ///
 (line TotDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2460,7 +2476,8 @@ twoway ///
 (line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2498,7 +2515,8 @@ twoway ///
 (line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2533,7 +2551,8 @@ twoway ///
 (line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2568,7 +2587,8 @@ twoway ///
 (line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
