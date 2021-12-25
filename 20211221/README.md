@@ -157,16 +157,19 @@
 
 (12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147392948-b3739704-5bfc-4df2-a773-9d3456a5ee31.png)
 
 ****
 
 (13) Global [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147392965-2d1e3e00-e7b4-4364-be89-349912e47dec.png)
 
 ****
 
 (14) Global [Percent cumulative vaccinated, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20GLOBAL%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147392973-a074be52-2e53-45dc-be69-d22cae22de5a.png)
 
 ****
 
