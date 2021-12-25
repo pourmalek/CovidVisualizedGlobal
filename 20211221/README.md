@@ -163,7 +163,6 @@
 
 (13) Global [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/147380853-0845fea2-0375-4898-8b41-5b889d607be9.png)
 
 ****
 
