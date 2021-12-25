@@ -109,7 +109,7 @@
 
 (6a) Global [Daily cases or infections, 5 scenarios, IHME 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20GLOBAL%207%202%20COVID-19%20daily%20infections%2C%20GLOBAL%205%20scenarios%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/147380723-4fb22000-a224-4a55-910b-45616adbca2a.png)
+![image](https://user-images.githubusercontent.com/30849720/147390839-080bc39e-0d09-4ecd-be8e-428de347814c.png)
 
 ****
 
