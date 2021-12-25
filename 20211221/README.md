@@ -186,7 +186,7 @@
 
 #### Order of graphs in "Regions together":
 
-Outcomes: Reported deaths, Excess deaths (IHME), Cases or infections
+Outcomes: Reported deaths, Excess deaths (IHME), Infections or Cases (IHME and IMPE provide Infections, DELP and SRIV provide cases)
 
 Daily or total: Daily, Total
 
