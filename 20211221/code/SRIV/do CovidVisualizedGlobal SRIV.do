@@ -27,6 +27,7 @@ log using "log CovidVisualizedGlobal SRIV 1.smcl", replace
                                                                                                          ***************************
 
 
+clear 
 
 * Get SRIV estimates 
 
@@ -55,13 +56,20 @@ foreach l of local list1 {
 	foreach v of var * {
 		local lbl : var label `v'
 		local lbl = strtoname("`lbl'")
-		rename `v' `lbl'					
+		rename `v' `lbl'			
 	}
 	*
 	
+	drop id
+		
+	foreach v of var * {
+		capture replace `v' = "" if `v' == "NaN"
+	}
+	*
+	
+	
 	destring *, replace
 	
-	drop id
 	
 	gen i = _n
 		
