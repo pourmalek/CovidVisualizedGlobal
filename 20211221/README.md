@@ -182,6 +182,21 @@
 
 ### Selected graphs - Regions together
 
+<br/><br/>
+
+#### Order of graphs in "Regions together":
+
+Outcomes: Reported deaths, Excess deaths (IHME), Cases or infections
+
+Daily or total: Daily, Total
+
+Models: IHME and IMPE, DELP and SRIV
+
+Global: With Global, Without Global
+
+IHME: All time, 2021 on, 2022
+
+
 ****
 
 (1) Regions together [Daily deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%201a1%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
