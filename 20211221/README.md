@@ -634,11 +634,6 @@ https://ourworldindata.org/world-region-map-definitions
 
 ### Selected graphs – European region (EURO)
 
-![image](https://user-images.githubusercontent.com/30849720/147396412-c51e964e-d6cf-4f5f-b219-f22c2045a2fb.png)
-
-Our World In Data 
-
-https://ourworldindata.org/world-region-map-definitions
 
 ****
 
@@ -819,11 +814,7 @@ https://ourworldindata.org/world-region-map-definitions
 
 ### Selected graphs – Western Pacific region (WPRO)
 
-![image](https://user-images.githubusercontent.com/30849720/147396479-6004d729-a7e2-47ba-a42d-69f68be63f7c.png)
 
-WHO WPRO 
-
-https://www.who.int/westernpacific/about/where-we-work
 
 ****
 
