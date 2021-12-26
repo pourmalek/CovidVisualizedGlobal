@@ -246,6 +246,39 @@ The codes in these repositories can be adapted for use for any country or region
 (14) [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/README.md#14-percent-cumulative-vaccinated-ihme)
   
  
+***************************************************************************************************************************************
+
+### Summary of Predictions
+
+#### (A) IHME, Reference scenario, estimated DAILY INFECTIONS:
+
+OUTCOME TYPE: Estimated daily infections include both asymptomatic and symptomatic cases, both undetected and detected cases, and all the mild, moderate, and severe cases. Number of daily infections are, by definition, more than the detected symptomatic cases. 
+
+RISE TIME: Number of estimated daily infections rise first at the Global level, AFRO, and EURO (in mid- to late November 2021), followed by AMRO, SEARO, and EMRO (in December 2021), and in WPRO (in February 2022). 
+
+PEAK TIME: In AFRO, estimated daily infections peak in December 2021; in EURO an at the Global level in January 2022, In AMRO and EMRO in late January to early February 2022, and in SEARO and WPRO in early to mid-February 2022. Peak times are about (plus or minus) two weeks accurate.  
+
+
+Table 1 - Peak values and dates of estimated daily infections by location
+
+![image](https://user-images.githubusercontent.com/30849720/147418405-9d3b6834-22de-4dc2-ac76-9fb653602af7.png)
+
+
+PEAK VALUE: Number of estimated daily infections might reach 38 million at the Global level, 12 million in SEARO, 8 million in EURO, 7 million in AMRO and in AFRO, 5 million in EMRO, and 1 million in WPRO.
+
+SURPASS EXPECTED: Numbers of estimated daily infections in this wave are expected to surpass the highest numbers from the previous waves in EURO (by a factor of about 6); AFRO and AMRO (each by a factor of about 4); at the Global level (by a factor of about 3); EMRO (by a factor of about 2.5), in WPRO (by a factor of about 2), and in SEARO (by a factor of about 1.2).
+
+
+#### (B) IHME, Reference scenario, estimated DAILY DEATHS:
+
+Estimated daily deaths are not expected to surpass those seen in previous wases at the global and regional levels. 
+
+Among the regions, the highest numbers of estimated daily deaths are expected be seen in EURO (about > 5,000 in late January 2022), and in AMRO (about 3,000 in early February 2022). At the Global level, the number of estimated daily deaths are expected to peak at about > 9,000 at late January to early February 2022. 
+
+
+
+***************************************************************************************************************************************
+  
   
 ****
 ****
