@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211221/code/IHME/log CovidVisualizedGlobal IHME 3.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}25 Dec 2021, 08:56:37
+ {txt}opened on:  {res}26 Dec 2021, 12:10:05
 {txt}
 {com}. 
 . ***************************************************************************
@@ -1264,8 +1264,8 @@
 > (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 > (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 > (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-> if date >= td(01jan2020) ///
 > (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
@@ -1273,11 +1273,766 @@
 > legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
 > subtitle("with GLOBAL", size(small)) ///
 > note("Reference scenario = Current projection")
-{err}invalid '(' 
-{txt}{search r(198), local:r(198);}
-
-end of do-file
-
-{search r(198), local:r(198);}
-
+{res}{txt}
 {com}. 
+. qui graph save "graph 2a 1 COVID-19 daily infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2a 1 COVID-19 daily infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * daily infections, with GLOBAL, 2021 on 
+. 
+. twoway ///
+> (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 2a 2 COVID-19 daily infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2a 2 COVID-19 daily infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * daily infections, with GLOBAL, 2022 
+. 
+. twoway ///
+> (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 2a 3 COVID-19 daily infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2a 3 COVID-19 daily infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * daily infections, without GLOBAL, all time
+. 
+. twoway ///
+> (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 2b 1 COVID-19 daily infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2b 1 COVID-19 daily infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily infections, without GLOBAL, 2021 on
+. 
+. twoway ///
+> (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 2b 2 COVID-19 daily infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2b 2 COVID-19 daily infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * daily infections, without GLOBAL, 2022
+. 
+. twoway ///
+> (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 2b 3 COVID-19 daily infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 2b 3 COVID-19 daily infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * total deaths, with GLOBAL, all time 
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3a 1 COVID-19 total deaths, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3a 1 COVID-19 total deaths, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total deaths, with GLOBAL, 2021 on
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3a 2 COVID-19 total deaths, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3a 2 COVID-19 total deaths, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total deaths, with GLOBAL, 2022
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3a 3 COVID-19 total deaths, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3a 3 COVID-19 total deaths, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total deaths, without GLOBAL, all time 
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3b 1 COVID-19 total deaths, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3b 1 COVID-19 total deaths, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * total deaths, without GLOBAL, 2021 on 
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3b 2 COVID-19 total deaths, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3b 2 COVID-19 total deaths, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total deaths, without GLOBAL, 2022
+. 
+. twoway ///
+> (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 3b 3 COVID-19 total deaths, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 3b 3 COVID-19 total deaths, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total infections, with GLOBAL, all time 
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4a 1 COVID-19 total infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4a 1 COVID-19 total infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total infections, with GLOBAL, 2021 on
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4a 2 COVID-19 total infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4a 2 COVID-19 total infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total infections, with GLOBAL, 2022
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4a 3 COVID-19 total infections, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4a 3 COVID-19 total infections, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * total infections, without GLOBAL, all time 
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4b 1 COVID-19 total infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4b 1 COVID-19 total infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total infections, without GLOBAL, 2021 on 
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4b 2 COVID-19 total infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4b 2 COVID-19 total infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * total infections, without GLOBAL, 2022
+. 
+. twoway ///
+> (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) ///
+> (line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+> (line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+> (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+> (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+> (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2022) ///
+> , xtitle(Date) xlabel(#4, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+> subtitle("without GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 4b 3 COVID-19 total infections, regions together wo global, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 4b 3 COVID-19 total infections, regions together wo global, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. * daily cfr, with GLOBAL
+. 
+. twoway ///
+> (line InfFatalA02S01AFRO date, sort lcolor(brown)) ///
+> (line InfFatalA02S01AMRO date, sort lcolor(red)) ///
+> (line InfFatalA02S01EMRO date, sort lcolor(gold)) ///
+> (line InfFatalA02S01EURO date, sort lcolor(green)) ///
+> (line InfFatalA02S01SEARO date, sort lcolor(cyan)) ///
+> (line InfFatalA02S01WPRO date, sort lcolor(blue)) ///
+> (line InfFatalA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 5a COVID-19 daily cfr, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 5a COVID-19 daily cfr, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily cfr after 2021, with GLOBAL
+. 
+. twoway ///
+> (line InfFatalA02S01AFRO date, sort lcolor(brown)) ///
+> (line InfFatalA02S01AMRO date, sort lcolor(red)) ///
+> (line InfFatalA02S01EMRO date, sort lcolor(gold)) ///
+> (line InfFatalA02S01EURO date, sort lcolor(green)) ///
+> (line InfFatalA02S01SEARO date, sort lcolor(cyan)) ///
+> (line InfFatalA02S01WPRO date, sort lcolor(blue)) ///
+> (line InfFatalA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+> if date >= td(01jan2021) ///
+> , xtitle(Date) xlabel(#15, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, IHME", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+> subtitle("after 2021, with GLOBAL", size(small)) ///
+> note("Reference scenario = Current projection")
+{res}{txt}
+{com}. 
+. qui graph save "graph 6a COVID-19 daily cfr, regions together, IHME.gph", replace
+{txt}
+{com}. qui graph export "graph 6a COVID-19 daily cfr, regions together, IHME.pdf", replace
+{txt}
+{com}. 
+. 
+. ***********
+. 
+. 
+. 
+. * gen peak Values and Dates
+. 
+. local list2 GLOBAL AFRO AMRO EMRO EURO SEARO WPRO
+{txt}
+{com}. 
+. foreach region of local list2 {c -(}
+{txt}  2{com}. 
+. 
+. summ DayINFMeSmA02S01`region' if date > td(01dec2021)
+{txt}  3{com}. 
+. gen DayINFMeSmA02S01`region'maxV = r(max)
+{txt}  4{com}. 
+. label var DayINFMeSmA02S01`region'maxV "DayINFMeSmA02S01`region' max Value"
+{txt}  5{com}. 
+. summ date if DayINFMeSmA02S01`region' == DayINFMeSmA02S01`region'maxV
+{txt}  6{com}. 
+. gen DayINFMeSmA02S01`region'maxD = r(mean)
+{txt}  7{com}. 
+. label var DayINFMeSmA02S01`region'maxD "DayINFMeSmA02S01`region' max Date"
+{txt}  8{com}. 
+. format DayINFMeSmA02S01`region'maxD %tdDDMonCCYY
+{txt}  9{com}. 
+. {c )-}
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121    2.55e+07     9116739    7260817   3.82e+07
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22674           .      22674      22674
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121     4398381     1679848    1696481    7312846
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22633           .      22633      22633
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121     4588901     2078440   766522.8    7446289
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22675           .      22675      22675
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121     3141222     1714355   271328.6    5437128
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22678           .      22678      22678
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121     5024958     2319601    1168503    8305299
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22663           .      22663      22663
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121     7227231     3935989   336712.1   1.22e+07
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22682           .      22682      22682
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeSm.. {c |}{res}        121    780615.1    373125.4   128719.5    1197721
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}          1       22689           .      22689      22689
+{txt}
+{com}. *
+. 
+. tab1 *maxV
+
+{res}-> tabulation of DayINFMeSmA02S01GLOBALmaxV  
+
+{txt}DayINFMeSmA {c |}
+02S01GLOBAL {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+   3.82e+07 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01AFROmaxV  
+
+{txt}DayINFMeSmA {c |}
+  02S01AFRO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    7312846 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01AMROmaxV  
+
+{txt}DayINFMeSmA {c |}
+  02S01AMRO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    7446289 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01EMROmaxV  
+
+{txt}DayINFMeSmA {c |}
+  02S01EMRO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    5437128 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01EUROmaxV  
+
+{txt}DayINFMeSmA {c |}
+  02S01EURO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    8305299 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01SEAROmaxV  
+
+{txt}DayINFMeSmA {c |}
+ 02S01SEARO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+   1.22e+07 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01WPROmaxV  
+
+{txt}DayINFMeSmA {c |}
+  02S01WPRO {c |}
+  max Value {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    1197721 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+{txt}
+{com}. 
+. tab1 *maxD
+
+{res}-> tabulation of DayINFMeSmA02S01GLOBALmaxD  
+
+{txt}DayINFMeSmA {c |}
+02S01GLOBAL {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  29Jan2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01AFROmaxD  
+
+{txt}DayINFMeSmA {c |}
+  02S01AFRO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  19Dec2021 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01AMROmaxD  
+
+{txt}DayINFMeSmA {c |}
+  02S01AMRO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  30Jan2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01EMROmaxD  
+
+{txt}DayINFMeSmA {c |}
+  02S01EMRO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  02Feb2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01EUROmaxD  
+
+{txt}DayINFMeSmA {c |}
+  02S01EURO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  18Jan2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01SEAROmaxD  
+
+{txt}DayINFMeSmA {c |}
+ 02S01SEARO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  06Feb2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+
+-> tabulation of DayINFMeSmA02S01WPROmaxD  
+
+{txt}DayINFMeSmA {c |}
+  02S01WPRO {c |}
+   max Date {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+  13Feb2022 {c |}{res}      5,516      100.00      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      5,516      100.00
+{txt}
+{com}. 
+. 
+. 
+. 
+. view "log CovidVisualizedGlobal IHME 3.smcl"
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20211221/code/IHME/log CovidVisualizedGlobal IHME 3.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}26 Dec 2021, 12:16:30
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
