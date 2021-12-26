@@ -8,6 +8,7 @@
 
 WHO Regeions
 
+![image](https://user-images.githubusercontent.com/30849720/147396350-22be0ca2-0b62-4c67-be90-c7f167d6f89b.png)
 
 Our World In Data 
 
