@@ -378,6 +378,12 @@ https://ourworldindata.org/world-region-map-definitions
 
 ****
 
+(3b2) African region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20AFRO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20AFRO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398819-5204281f-2c87-4363-af20-fa86740663bd.png)
+
+****
+
 (3c) African region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AFRO%2018%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147393091-0c1aeb76-fa09-4f51-ac21-718e831afa04.png)
@@ -470,6 +476,12 @@ https://ourworldindata.org/world-region-map-definitions
 (3b) Americas region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2016%20COVID-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147393438-5467bf02-ff66-4283-bfd3-e6b97d947730.png)
+
+****
+
+(3b2) Americas region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20AMRO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20AMRO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398852-6f164135-735e-4aca-8849-5ff5d5d3e4e2.png)
 
 ****
 
