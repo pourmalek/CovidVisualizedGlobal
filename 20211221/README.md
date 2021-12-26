@@ -8,9 +8,9 @@
 
 ***************************************************************************************************************************************
 
-Summary of Predictions
+### Summary of Predictions
 
-(A) IHME, Reference scenario, estimated DAILY INFECTIONS:
+#### (A) IHME, Reference scenario, estimated DAILY INFECTIONS:
 
 OUTCOME TYPE: Estimated daily infections include both asymptomatic and symptomatic cases, both undetected and detected cases, and all the mild, moderate, and severe cases. Number of daily infections are, by definition, more than the detected symptomatic cases. 
 
@@ -30,10 +30,17 @@ EURO	8,305,000	18Jan2022
 SEARO	12,200,000	06Feb2022
 WPRO	1,198,000	13Feb2022
 
-| Location | Max value  | Date
+| Location | Max value  | Date      |
 | -------- |       ---: | --------- |
 | GLOBAL   | 38,200,000 | 29Jan2022 |
 | AFRO     | 7,313,000  | 19Dec2021 |
+| AMRO     | 7,447,000  | 30Jan2022 |
+| EMRO     | 5,437,000  | 02Feb2022 |
+| EURO     | 8,305,000  | 18Jan2022 |
+| SEARO    | 12,200,000 | 06Feb2022 |
+| WPRO     | 1,198,000  | 13Feb2022 |
+
+![image](https://user-images.githubusercontent.com/30849720/147418405-9d3b6834-22de-4dc2-ac76-9fb653602af7.png)
 
 
 PEAK VALUE: Number of estimated daily infections might reach 38 million at the Global level, 12 million in SEARO, 8 million in EURO, 7 million in AMRO and in AFRO, 5 million in EMRO, and 1 million in WPRO.
