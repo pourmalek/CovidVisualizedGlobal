@@ -676,6 +676,12 @@ https://ourworldindata.org/world-region-map-definitions
 
 ****
 
+(3b2) European region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20EURO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20EURO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398890-e8ffd93f-215b-4765-a79f-4f58b0d7a17d.png)
+
+****
+
 (3c) European region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EURO%2018%20COVID-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147396199-c2b10af9-a44e-4c04-a956-4897eaefb3e4.png)
@@ -768,6 +774,12 @@ https://ourworldindata.org/world-region-map-definitions
 (3b) South-East Asian region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20SEARO%2016%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147396638-67e02be1-1bc5-494c-8445-f89b085b0876.png)
+
+****
+
+(3b2) South-East Asian region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20SEARO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20SEARO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398923-63c68cca-5ab3-4467-b5ed-7905236a511e.png)
 
 ****
 
@@ -865,6 +877,12 @@ https://ourworldindata.org/world-region-map-definitions
 (3b) Western Pacific region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20WPRO%2016%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147396823-ad47143d-a12c-4e6f-b80d-fa18d891a109.png)
+
+****
+
+(3b2) Western Pacific region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20WPRO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20WPRO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398952-a933749b-4e6e-4a44-a275-9875697005fa.png)
 
 ****
 
