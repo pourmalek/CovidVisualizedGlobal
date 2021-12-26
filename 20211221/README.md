@@ -12,7 +12,7 @@ WHO Regeions
 
 Our World In Data 
 
-https://ourworldindata.org/grapher/who-regions
+![image](https://user-images.githubusercontent.com/30849720/147396332-92e777d7-9148-470f-9100-727717b40a9c.png)
 
 ****
 
