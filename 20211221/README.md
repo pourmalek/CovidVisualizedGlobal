@@ -345,6 +345,9 @@ IHME: 2021 on, 2022
 
 ![image](https://user-images.githubusercontent.com/30849720/147396392-fbf81d2f-db4c-4362-b6ed-2d1c85c35a2e.png)
 
+Our World In Data 
+
+https://ourworldindata.org/world-region-map-definitions
 
 ****
 
@@ -630,6 +633,12 @@ IHME: 2021 on, 2022
 ****
 
 ### Selected graphs – European region (EURO)
+
+![image](https://user-images.githubusercontent.com/30849720/147396412-c51e964e-d6cf-4f5f-b219-f22c2045a2fb.png)
+
+Our World In Data 
+
+https://ourworldindata.org/world-region-map-definitions
 
 ****
 
