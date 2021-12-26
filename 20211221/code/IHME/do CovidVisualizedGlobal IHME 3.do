@@ -1244,8 +1244,8 @@ twoway ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
 (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME", size(medium)) ///
@@ -1387,8 +1387,8 @@ twoway ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
 (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME", size(medium)) ///
@@ -1529,8 +1529,8 @@ twoway ///
 (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
 (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME", size(medium)) ///
@@ -1671,8 +1671,8 @@ twoway ///
 (line InfFatalA02S01EURO date, sort lcolor(green)) ///
 (line InfFatalA02S01SEARO date, sort lcolor(cyan)) ///
 (line InfFatalA02S01WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
 (line InfFatalA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#26, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, IHME", size(medium)) ///
