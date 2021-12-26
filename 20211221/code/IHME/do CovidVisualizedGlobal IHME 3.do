@@ -1710,6 +1710,38 @@ qui graph save "graph 6a COVID-19 daily cfr, regions together, IHME.gph", replac
 qui graph export "graph 6a COVID-19 daily cfr, regions together, IHME.pdf", replace
 
 
+***********
+
+
+
+* gen peak Values and Dates
+
+local list2 GLOBAL AFRO AMRO EMRO EURO SEARO WPRO
+
+foreach region of local list2 {
+
+
+summ DayINFMeSmA02S01`region' if date > td(01dec2021)
+
+gen DayINFMeSmA02S01`region'maxV = r(max)
+
+label var DayINFMeSmA02S01`region'maxV "DayINFMeSmA02S01`region' max Value"
+
+summ date if DayINFMeSmA02S01`region' == DayINFMeSmA02S01`region'maxV
+
+gen DayINFMeSmA02S01`region'maxD = r(mean)
+
+label var DayINFMeSmA02S01`region'maxD "DayINFMeSmA02S01`region' max Date"
+
+format DayINFMeSmA02S01`region'maxD %tdDDMonCCYY
+
+}
+*
+
+tab1 *maxV
+
+tab1 *maxD
+
 
 
 
