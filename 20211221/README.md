@@ -255,14 +255,6 @@ IHME: 2021 on, 2022
 
 ****
 
-(5b) Regions together [Daily excess deaths, with GLOBAL, IHMEIHME, 2021 on]
-
-****
-
-(5c) Regions together [Daily excess deaths, with GLOBAL, IHMEIHME, 2022]
-
-****
-
 (6) Regions together [Daily excess deaths, without GLOBAL, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%201%202%20a1%20COVID-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147399199-28d43b5e-460b-4e37-b204-b65178d4df26.png)
@@ -275,7 +267,7 @@ IHME: 2021 on, 2022
 
 ****
 
-(7b) Regions together [Daily infections, with GLOBAL, IHME, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%202a%202%20COVID-19%20daily%20infections%2C%20regions%20together%2C%20IHME.pdf)
+(7b) Regions together [Daily infections, with GLOBAL, IHME, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%202a%202%20COVID-19%20daily%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/147400378-3a893383-512b-4301-8bcf-57a28763a355.png)
 
@@ -293,11 +285,15 @@ IHME: 2021 on, 2022
 
 ****
 
-(8b) Regions together [Daily infections, without GLOBAL, IHME, 2021]
+(8b) Regions together [Daily infections, without GLOBAL, IHME, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%202b%202%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147413297-dfb1b6ed-59b2-42cf-a6fe-b4c1fa7b3d85.png)
 
 ****
 
-(8c) Regions together [Daily infections, without GLOBAL, IHME, 2022]
+(8c) Regions together [Daily infections, without GLOBAL, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%202b%203%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147413339-92fbf519-7e3b-4430-b57e-bbed3635d9e9.png)
 
 ****
 
