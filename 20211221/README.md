@@ -343,6 +343,9 @@ IHME: 2021 on, 2022
 
 ### Selected graphs - African region (AFRO)
 
+![image](https://user-images.githubusercontent.com/30849720/147396392-fbf81d2f-db4c-4362-b6ed-2d1c85c35a2e.png)
+
+
 ****
 
 (1) African region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AFRO%2011a%20COVID-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
