@@ -44,6 +44,8 @@ List of graphs:
 
 (11) Global - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
 
+(11b) Global - [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME] mmmm
+
 (12) Global - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#12-global---daily-mobility-3-scenarios-all-time-ihme)
 
 (13) Global - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#13-global---daily-mask-use-3-scenarios-ihme)
