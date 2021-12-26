@@ -21,25 +21,6 @@ PEAK TIME: In AFRO, estimated daily infections peak in December 2021; in EURO an
 
 Table 1 - Peak values and dates of estimated daily infections by location
 
-Location	Max value	Date
-GLOBAL	38,200,000	29Jan2022
-AFRO	7,313,000	19Dec2021
-AMRO 	7,447,000	30Jan2022
-EMRO	5,437,000	02Feb2022
-EURO	8,305,000	18Jan2022
-SEARO	12,200,000	06Feb2022
-WPRO	1,198,000	13Feb2022
-
-| Location | Max value  | Date      |
-| -------- |       ---: | --------- |
-| GLOBAL   | 38,200,000 | 29Jan2022 |
-| AFRO     | 7,313,000  | 19Dec2021 |
-| AMRO     | 7,447,000  | 30Jan2022 |
-| EMRO     | 5,437,000  | 02Feb2022 |
-| EURO     | 8,305,000  | 18Jan2022 |
-| SEARO    | 12,200,000 | 06Feb2022 |
-| WPRO     | 1,198,000  | 13Feb2022 |
-
 ![image](https://user-images.githubusercontent.com/30849720/147418405-9d3b6834-22de-4dc2-ac76-9fb653602af7.png)
 
 
@@ -48,7 +29,7 @@ PEAK VALUE: Number of estimated daily infections might reach 38 million at the G
 SURPASS EXPECTED: Numbers of estimated daily infections in this wave are expected to surpass the highest numbers from the previous waves in EURO (by a factor of about 6); AFRO and AMRO (each by a factor of about 4); at the Global level (by a factor of about 3); EMRO (by a factor of about 2.5), in WPRO (by a factor of about 2), and in SEARO (by a factor of about 1.2).
 
 
-(B) IHME, Reference scenario, estimated DAILY DEATHS:
+#### (B) IHME, Reference scenario, estimated DAILY DEATHS:
 
 Estimated daily deaths are not expected to surpass those seen in previous wases at the global and regional levels. 
 
