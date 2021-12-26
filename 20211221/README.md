@@ -16,9 +16,6 @@ https://ourworldindata.org/world-region-map-definitions
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/graphs%20merge%2020211221.pdf)
-
-
 ****
 
 
