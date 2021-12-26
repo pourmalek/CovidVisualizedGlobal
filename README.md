@@ -207,51 +207,51 @@ The codes in these repositories can be adapted for use for any country or region
   
 #### List of graphs 
   
-(1)   Global - Daily deaths, reference scenarios, all time
+(1)   Daily deaths, reference scenarios, all time
   
-(2)   Global - Daily deaths, reference scenarios, 2021
+(2)   Daily deaths, reference scenarios, 2021
   
-(2b)  Global - Daily deaths, reference scenarios, with IHME excess deaths, 2021
+(2b)  Daily deaths, reference scenarios, with IHME excess deaths, 2021
   
-(3)   Global - Daily deaths, 3 scenarios, 2011
+(3)   Daily deaths, 3 scenarios, 2011
   
-(3b)  Global - Daily deaths, 3 scenarios, 2021, IHME
+(3b)  Daily deaths, 3 scenarios, 2021, IHME
   
-(3b2) Global - Daily deaths, 5 scenarios, 2021, IHME
+(3b2) Daily deaths, 5 scenarios, 2021, IHME
   
-(3c)  Global - Daily deaths, 3 scenarios, 2021, IMPE
+(3c)  Daily deaths, 3 scenarios, 2021, IMPE
   
-(4)   Global - Daily cases, reference scenarios, all time
+(4)   Daily cases, reference scenarios, all time
   
-(5)   Global - Daily cases, reference scenarios, 2021
+(5)   Daily cases, reference scenarios, 2021
   
-(6)   Global - Daily cases, 3 scenarios, 2011
+(6)   Daily cases, 3 scenarios, 2011
   
-(6a)  Global - Daily cases or infections, 5 scenarios, IHME 2021
+(6a)  Daily cases or infections, 5 scenarios, IHME 2021
   
-(6b)  Global - Daily cases, 2011
+(6b)  Daily cases, 2011
   
-(6c)  Global - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
+(6c)  Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
   
-(7)   Global - Hospital-related outcomes, all time
+(7)   Hospital-related outcomes, all time
   
-(7b)  Global - Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity
+(7b)  Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity
   
-(8)   Global - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
+(8)   Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand
   
-(9)   Global - Daily deaths estimated to reported, reference scenarios, 2021
+(9)   Daily deaths estimated to reported, reference scenarios, 2021
   
-(10)  Global - Daily cases estimated to reported, reference scenarios, 2021
+(10)  Daily cases estimated to reported, reference scenarios, 2021
   
-(11)  Global - Daily Infection outcomes ratios, 3 scenarios, all time, IHME
+(11)  Daily Infection outcomes ratios, 3 scenarios, all time, IHME
   
-(11b) Global - Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME
+(11b) Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME
   
-(12)  Global - Daily mobility, 3 scenarios, all time, IHME
+(12)  Daily mobility, 3 scenarios, all time, IHME
   
-(13)  Global - Daily mask use, 3 scenarios, IHME
+(13)  Daily mask use, 3 scenarios, IHME
   
-(14)  Global - Cumulative vaccinated percent, IHME
+(14)  Cumulative vaccinated percent, IHME
 
 
  
