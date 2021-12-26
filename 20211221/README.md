@@ -8,11 +8,11 @@
 
 WHO Regeions
 
-![image](https://user-images.githubusercontent.com/30849720/147396327-7268a578-ca10-4327-af73-37a782946276.png)
+![image](https://user-images.githubusercontent.com/30849720/147396341-1ae33b65-d3f0-4ab4-8ccd-a4e0397706cf.png)
 
 Our World In Data 
 
-![image](https://user-images.githubusercontent.com/30849720/147396332-92e777d7-9148-470f-9100-727717b40a9c.png)
+https://ourworldindata.org/world-region-map-definitions
 
 ****
 
