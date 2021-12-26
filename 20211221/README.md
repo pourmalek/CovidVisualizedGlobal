@@ -819,6 +819,12 @@ https://ourworldindata.org/world-region-map-definitions
 
 ### Selected graphs – Western Pacific region (WPRO)
 
+![image](https://user-images.githubusercontent.com/30849720/147396479-6004d729-a7e2-47ba-a42d-69f68be63f7c.png)
+
+WHO WPRO 
+
+https://www.who.int/westernpacific/about/where-we-work
+
 ****
 
 (1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
