@@ -309,7 +309,6 @@ https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/mer
 
 (13) Regions together [Total deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%203a2%20COVID-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148442409-58476165-a4fa-4a0b-a8f1-b9c9301558cd.png)
 
 ****
 
