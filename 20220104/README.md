@@ -279,6 +279,7 @@ https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/mer
 
 (8) Regions together [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202b1%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148439055-f0cda6a3-92b2-4ded-a93d-76f1e98754a4.png)
 
 ****
 
