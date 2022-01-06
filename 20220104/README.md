@@ -8,7 +8,7 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 <br/><br/>
 
-Note on exclusion of very implausible values:
+Note on exclusion of extremely implausible values from the graphs:
 
 In **DELP** update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and come down toward plausible values around 2021-10-22. Similar issue in WHO regions. That compresses down the curves of other models in daily deaths graphs. As such, the implausible values are regarded as missing here.
 
@@ -433,21 +433,25 @@ In **DELP** update 20220104, Global daily deaths start from about 800,000 around
 
 (6c) African region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20AFRO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148467179-04b3cbf9-9282-4f5d-86b9-14669fa6df87.png)
 
 ****
 
 (7) African region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148467247-163cf979-7d64-4737-8603-216b44b7bc5e.png)
 
 ****
 
 (8) African region [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148467377-26d9d9ae-0d55-44be-82e4-588bf2fec220.png)
 
 ****
 
 (9) African region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148467414-7a839c33-c9b3-4cf8-9486-f4cfb0e36760.png)
 
 ****
 
