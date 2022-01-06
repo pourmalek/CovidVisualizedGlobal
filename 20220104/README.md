@@ -165,26 +165,31 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 (11) Global [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148400535-7817fd27-c610-4564-843a-fb38a895f224.png)
 
 ****
 
 (11b) Global [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2091b%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148400694-f36b6d1b-d2e0-4e6e-8466-a376941859ff.png)
 
 ****
 
 (12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148400871-78db0248-528c-406a-8c40-46e2926dd219.png)
 
 ****
 
 (13) Global [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148400988-ee45dadc-4694-42cc-a670-0f6b6cf53938.png)
 
 ****
 
 (14) Global [Percent cumulative vaccinated, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20GLOBAL%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148401126-30153c4a-5ea9-4887-a0e6-bc7ca9aa5210.png)
 
 ****
 
