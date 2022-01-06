@@ -81,19 +81,19 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148395277-a7939bb3-7f49-4934-8d77-52087c992e8f.png)
+![image](https://user-images.githubusercontent.com/30849720/148435423-67f5f9f6-5d86-407c-b252-9d81ab677ed0.png)
 
 ****
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2012a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148395403-d83b1058-cefd-4f9c-8386-339a284f3aae.png)
+![image](https://user-images.githubusercontent.com/30849720/148435526-6b04f555-cf60-44ad-8438-c1846998abf0.png)
 
 ****
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2012b%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148396438-f40cb8ef-1869-4956-b942-69747fa2b402.png)
+![image](https://user-images.githubusercontent.com/30849720/148435622-ce5de915-cabc-448d-952f-fb79d36abd02.png)
 
 ****
 
