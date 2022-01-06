@@ -159,7 +159,7 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 (9) Global [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148400340-4adde592-7d56-4d6b-a17e-08b77c3ce351.png)
+![image](https://user-images.githubusercontent.com/30849720/148436107-002d5be6-b236-4081-b842-0452aa3a889f.png)
 
 ****
 
