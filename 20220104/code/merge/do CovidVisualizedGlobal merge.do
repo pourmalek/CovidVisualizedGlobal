@@ -1867,11 +1867,89 @@ qui graph export "graph GLOBAL 96 COVID-19 daily vaccinated number, GLOBAL.pdf",
 *******************************
 *******************************
 
+
 * regions together
+
+* JOHN
+
+* models
 
 * two sets of graphs: first set = IHME and IMPE (graph ??1), second set: DELP and SRIV (graph ??2)
 
 * (a) with global, (b) w/o global 
+
+
+
+
+
+* JOHN
+
+
+* gen today's date
+gen today_date_string = "`c(current_date)'"
+
+gen year = substr(today_date_string,8,4) 
+gen month = substr(today_date_string,4,3) 
+gen day = substr(today_date_string,1,2) 
+egen date2 = concat(day month year)
+
+gen today_numericdailydate  = date(date2, "DMY", 2050)
+format today_numericdailydate  %tdDDMonCCYY
+
+drop year month day date2
+
+codebook today_numericdailydate today_date_string
+
+local today_numericdailydate = today_numericdailydate 
+
+
+* daily deaths, with GLOBAL, JOHN
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) 
+
+qui graph save "graph 1a1 JOHN COVID-19 daily deaths, regions together, JOHN.gph", replace
+qui graph export "graph 1a1 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+
+
+
+
+* daily deaths, without GLOBAL, JOHN
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) 
+
+qui graph save "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.gph", replace
+qui graph export "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+
+
+
+* models
 
 
 * daily deaths, with GLOBAL, IHME, IMPE
@@ -2086,6 +2164,78 @@ qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together  w
 
 
 
+
+* JOHN
+
+
+* daily cases, with GLOBAL, JOHN
+
+twoway ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("with GLOBAL", size(small)) 
+
+qui graph save "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
+qui graph export "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
+
+
+
+
+* daily cases, without GLOBAL, JOHN
+
+twoway ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) 
+
+qui graph save "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
+qui graph export "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
+
+
+
+
+twoway ///
+(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+if date >= td(01dec2021) & date <= `today_numericdailydate' ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+subtitle("without GLOBAL", size(small)) 
+
+qui graph save "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN recent.gph", replace
+qui graph export "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN recent.pdf", replace
+
+
+
+* models
 
 
 * daily infections, with GLOBAL, IHME, IMPE
