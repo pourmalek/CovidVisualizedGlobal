@@ -23,6 +23,17 @@ log using "log CovidVisualizedGlobal DELP.smcl", replace
 * To change update date, find and replace all, 20220104 (old), with 20220104 (new) <<--           <<<--- * change update date here *
                                                                                                          ***************************
 
+																										 
+/*	
+Note on exclusion of very implausible values:
+																									 
+In DELP update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and 
+come down toward plausible values around 2021-10-15. 
+That compresses down the curves of other models in daily deaths graphs. 
+As such, the implausible values are regarded as missing here. 
+*/
+
+
 
 clear
 
@@ -239,6 +250,11 @@ qui {
 	drop DayCasMeRaA01S00_window
 }
 *
+
+
+
+
+
 
 
 order date loc_grand_name	
@@ -1866,6 +1882,29 @@ DayCfrUpRaA01S00	DayDeMMeRaA01S00	DayCaMMeRaA01S00	DayCbDMeRaA01S00	DayDMuMeRaA0
 *
 
 
+
+
+************
+
+/*	
+Note on exclusion of very implausible values:
+																									 
+In DELP update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and 
+come down toward plausible values around 2021-10-22. 
+That compresses down the curves of other models in daily deaths graphs. 
+As such, the implausible values are regarded as missing here. 
+*/
+
+foreach var of varlist ///
+DayDeaMeRaA01S00AFRO DayDeaMeRaA01S00AMRO DayDeaMeRaA01S00EMRO DayDeaMeRaA01S00EURO DayDeaMeRaA01S00GLOBAL DayDeaMeRaA01S00SEARO DayDeaMeRaA01S00WPRO ///
+DayDeaLoRaA01S00AFRO DayDeaLoRaA01S00AMRO DayDeaLoRaA01S00EMRO DayDeaLoRaA01S00EURO DayDeaLoRaA01S00GLOBAL DayDeaLoRaA01S00SEARO DayDeaLoRaA01S00WPRO ///
+DayDeaUpRaA01S00AFRO DayDeaUpRaA01S00AMRO DayDeaUpRaA01S00EMRO DayDeaUpRaA01S00EURO DayDeaUpRaA01S00GLOBAL DayDeaUpRaA01S00SEARO DayDeaUpRaA01S00WPRO {
+
+	qui replace `var' = . if date < td(22oct2021)
+
+
+}
+*
 
 
 sort date loc_grand_name
