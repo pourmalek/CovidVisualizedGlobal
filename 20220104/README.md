@@ -8,6 +8,12 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 <br/><br/>
 
+Note on exclusion of very implausible values:
+
+In **DELP** update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and come down toward plausible values around 2021-10-15. That compresses down the curves of other models in daily deaths graphs. As such, the implausible values are regarded as missing here.
+
+<br/><br/>
+
 
 ### Inclusion of the Omicron variant in models, as of 20220104:
 
@@ -397,16 +403,19 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 (3c) African region [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2018%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148466437-df86127b-1450-4415-8dfd-4901931edf8c.png)
 
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2021%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148466506-344cf20f-dfc1-49b0-8eca-bbb352cd615f.png)
 
 ****
 
 (5) African region [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2022%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148466562-6d81fd89-0d16-4097-bce8-25e06f13c6e0.png)
 
 ****
 
