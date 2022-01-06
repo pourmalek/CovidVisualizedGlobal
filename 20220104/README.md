@@ -10,7 +10,7 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 
 Note on exclusion of very implausible values:
 
-In **DELP** update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and come down toward plausible values around 2021-10-15. That compresses down the curves of other models in daily deaths graphs. As such, the implausible values are regarded as missing here.
+In **DELP** update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and come down toward plausible values around 2021-10-22. Similar issue in WHO regions. That compresses down the curves of other models in daily deaths graphs. As such, the implausible values are regarded as missing here.
 
 <br/><br/>
 
@@ -421,11 +421,13 @@ In **DELP** update 20220104, Global daily deaths start from about 800,000 around
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148466876-acbeb4d7-860f-45b1-b200-d7e1f548c3ce.png)
 
 ****
 
 (6b) African region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2022b%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148466936-229586df-4b22-4261-92a1-4404c6b96e27.png)
 
 ****
 
