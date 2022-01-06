@@ -264,8 +264,7 @@ IMPE update 20211213 (2021-12-13_v9.csv.zip) released on 20220202.
 ![image](https://user-images.githubusercontent.com/30849720/148438504-32914ca5-26c7-4b4e-a9ea-cb27643d377b.png)
 
 ****
-(00b) Regions together [Daily cases, without GLOBAL, JOHN, Recent]
-https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN%20recent.pdf
+(00c) Regions together [Daily cases, without GLOBAL, JOHN, Recent](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN%20recent.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/148438781-5a640198-89e7-437c-bd21-f25c52242e9c.png)
 
