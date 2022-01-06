@@ -1031,7 +1031,7 @@ foreach region of local list5 {
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "IHME" 2 "IMPE" 3 "IHME smooth" 4 "IMPE smooth" 5 "IHME smooth meadian" 6 "IMPE smooth meadian") size(small) row(2)) ///
 	subtitle("reference scenarios", size(small)) ///
-	note("IHME smooth median in 2021 = `DayITCMeSmA02S01`region'sm_m'; IMPE smooth median in 2021 = `DayITCMeRaA03S02`region'sm_m'")
+	note("IHME smooth median 2021 on = `DayITCMeSmA02S01`region'sm_m'; IMPE smooth median 2021 on = `DayITCMeRaA03S02`region'sm_m'")
 	
 	qui graph save "graph `region' 26 C19 daily estimated infections to reported cases, `region', reference scenarios 2021.gph", replace
 	qui graph export "graph `region' 26 C19 daily estimated infections to reported cases, `region', reference scenarios 2021.pdf", replace
