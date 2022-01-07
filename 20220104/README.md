@@ -213,11 +213,13 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (0a) Regions together [Daily deaths, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%201a1%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148587652-9436ed0d-3b63-4a18-bdb0-a39bc9f1ae99.png)
 
 ****
 
 (0b) Regions together [Daily deaths, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148587729-3d9c2ed7-e940-4efb-b9ee-71fa232098a9.png)
 
 ****
 
