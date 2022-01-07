@@ -451,7 +451,7 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (9) African region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148467414-7a839c33-c9b3-4cf8-9486-f4cfb0e36760.png)
+![image](https://user-images.githubusercontent.com/30849720/148601900-c0d0e8aa-1b9f-4ebf-a068-f4383a58aab2.png)
 
 ****
 
