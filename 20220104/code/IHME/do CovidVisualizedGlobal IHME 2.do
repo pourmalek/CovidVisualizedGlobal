@@ -121,6 +121,7 @@ save "IHME AFRO.dta", replace
 
 
 
+
 *****************************
 
 * gen AMRO
@@ -171,6 +172,88 @@ sort date loc_grand_name
 
 qui compress
 save "IHME AMRO.dta", replace
+
+
+
+
+
+*****************************
+
+* gen AMR1
+
+use "IHME.dta", clear
+
+keep if ///
+loc_grand_name == "Canada" | ///
+loc_grand_name == "United States of America" 
+
+
+collapse (sum) DayINFMeSmA02S01-daily_all_fully_vacci_pct, by(date)
+
+labvars ,names
+
+gen loc_grand_name = "AMR1"
+
+order date loc_grand_name
+
+sort date loc_grand_name
+
+qui compress
+save "IHME AMR1.dta", replace
+
+
+
+
+
+
+*****************************
+
+* gen AMR2
+
+use "IHME.dta", clear
+
+keep if ///
+loc_grand_name == "Argentina" | ///
+loc_grand_name == "Bahamas" | ///
+loc_grand_name == "Barbados" | ///
+loc_grand_name == "Bolivia (Plurinational State of)" | ///
+loc_grand_name == "Brazil" | ///
+loc_grand_name == "Chile" | ///
+loc_grand_name == "Colombia" | ///
+loc_grand_name == "Costa Rica" | ///
+loc_grand_name == "Cuba" | ///
+loc_grand_name == "Dominican Republic" | ///
+loc_grand_name == "Ecuador" | ///
+loc_grand_name == "El Salvador" | ///
+loc_grand_name == "Guatemala" | ///
+loc_grand_name == "Guyana" | ///
+loc_grand_name == "Haiti" | ///
+loc_grand_name == "Honduras" | ///
+loc_grand_name == "Jamaica" | ///
+loc_grand_name == "Mexico" | ///
+loc_grand_name == "Nicaragua" | ///
+loc_grand_name == "Panama" | ///
+loc_grand_name == "Peru" | ///
+loc_grand_name == "Puerto Rico" | ///
+loc_grand_name == "Suriname" | ///
+loc_grand_name == "Trinidad and Tobago" | ///
+loc_grand_name == "United States Virgin Islands" | ///
+loc_grand_name == "Uruguay" | ///
+loc_grand_name == "Venezuela (Bolivarian Republic of)" 
+
+
+collapse (sum) DayINFMeSmA02S01-daily_all_fully_vacci_pct, by(date)
+
+labvars ,names
+
+gen loc_grand_name = "AMR2"
+
+order date loc_grand_name
+
+sort date loc_grand_name
+
+qui compress
+save "IHME AMR2.dta", replace
 
 
 
@@ -390,7 +473,7 @@ save "IHME WPRO.dta", replace
 
 use "IHME GLOBAL.dta", clear 
 
-local list2 AFRO AMRO EMRO EURO SEARO WPRO
+local list2 AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list2 {
 
@@ -472,6 +555,12 @@ foreach var of varlist DayINFMeSmA02S01-DayAllFulVaxPct {
 	qui gen `var'AMRO = `var'
 	qui replace `var'AMRO = . if loc_grand_name != "AMRO"
 	
+	qui gen `var'AMR1 = `var'
+	qui replace `var'AMR1 = . if loc_grand_name != "AMR1"
+	
+	qui gen `var'AMR2 = `var'
+	qui replace `var'AMR2 = . if loc_grand_name != "AMR2"	
+	
 	qui gen `var'EMRO = `var'
 	qui replace `var'EMRO = . if loc_grand_name != "EMRO"
 	
@@ -490,6 +579,8 @@ foreach var of varlist DayINFMeSmA02S01-DayAllFulVaxPct {
 	
 	label var `var'AFRO "`var' AFRO"
 	label var `var'AMRO "`var' AMRO"
+	label var `var'AMR1 "`var' AMR1"
+	label var `var'AMR2 "`var' AMR2"	
 	label var `var'EMRO "`var' EMRO"
 	label var `var'EURO "`var' EURO"
 	label var `var'GLOBAL "`var' GLOBAL"
