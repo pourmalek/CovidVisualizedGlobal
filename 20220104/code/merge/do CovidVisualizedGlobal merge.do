@@ -33,6 +33,9 @@ SRIV
 
 
 
+set maxvar 10000 // Stata MP & SE
+
+
 
 * JOHN
 
@@ -117,7 +120,7 @@ label var loc_grand_name "Location"
 
 *************************************
 
-local list5 GLOBAL AFRO AMRO EMRO EURO SEARO WPRO
+local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list5 {
 
@@ -490,7 +493,6 @@ qui compress
 
 save "CovidVisualizedGlobal merge.dta", replace
 
-// export delimited using "CovidVisualizedGlobal merge.csv", replace 
 
 
 
@@ -522,7 +524,7 @@ grstyle color background white
 ******************
 
 
-local list5 GLOBAL AFRO AMRO EMRO EURO SEARO WPRO
+local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list5 {
 
@@ -1885,29 +1887,14 @@ qui graph export "graph GLOBAL 96 COVID-19 daily vaccinated number, GLOBAL.pdf",
 * JOHN
 
 
-* gen today's date
-gen today_date_string = "`c(current_date)'"
-
-gen year = substr(today_date_string,8,4) 
-gen month = substr(today_date_string,4,3) 
-gen day = substr(today_date_string,1,2) 
-egen date2 = concat(day month year)
-
-gen today_numericdailydate  = date(date2, "DMY", 2050)
-format today_numericdailydate  %tdDDMonCCYY
-
-drop year month day date2
-
-codebook today_numericdailydate today_date_string
-
-local today_numericdailydate = today_numericdailydate 
-
 
 * daily deaths, with GLOBAL, JOHN
 
 twoway ///
 (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
 (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
@@ -1918,7 +1905,7 @@ if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) 
 
 qui graph save "graph 1a1 JOHN COVID-19 daily deaths, regions together, JOHN.gph", replace
@@ -1932,6 +1919,8 @@ qui graph export "graph 1a1 JOHN COVID-19 daily deaths, regions together, JOHN.p
 twoway ///
 (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
 (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
@@ -1941,7 +1930,7 @@ if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) 
 
 qui graph save "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.gph", replace
@@ -1955,35 +1944,32 @@ qui graph export "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.p
 * daily deaths, with GLOBAL, IHME, IMPE
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
-(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line DayDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) ) ///
+(line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 1a1 COVID-19 daily deaths, regions together, IHME, IMPE.gph", replace
 qui graph export "graph 1a1 COVID-19 daily deaths, regions together, IHME, IMPE.pdf", replace
@@ -1994,35 +1980,32 @@ qui graph export "graph 1a1 COVID-19 daily deaths, regions together, IHME, IMPE.
 * daily deaths, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line DayDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 1a2 COVID-19 daily deaths, regions together, DELP, SRIV.gph", replace
 qui graph export "graph 1a2 COVID-19 daily deaths, regions together, DELP, SRIV.pdf", replace
@@ -2033,32 +2016,30 @@ qui graph export "graph 1a2 COVID-19 daily deaths, regions together, DELP, SRIV.
 * daily deaths, without GLOBAL, IHME, IMPE
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) /// 
-(line DayDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayDeaMeSmA02S01AMRO date, sort lcolor(red)) /// 
+(line DayDeaMeSmA02S01AMR1 date, sort lcolor(orange)) /// 
+(line DayDeaMeSmA02S01AMR2 date, sort lcolor(purple)) /// 
+(line DayDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 1b1 COVID-19 daily deaths, regions together wo global, IHME, IMPE.gph", replace
 qui graph export "graph 1b1 COVID-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
@@ -2069,32 +2050,30 @@ qui graph export "graph 1b1 COVID-19 daily deaths, regions together wo global, I
 * daily deaths, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line DayDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 1b2 COVID-19 daily deaths, regions together wo global, DELP, SRIV.gph", replace
 qui graph export "graph 1b2 COVID-19 daily deaths, regions together wo global, DELP, SRIV.pdf", replace
@@ -2105,28 +2084,22 @@ qui graph export "graph 1b2 COVID-19 daily deaths, regions together wo global, D
 * daily excess deaths, with GLOBAL, IHME
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayDeXMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line DayDeXMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line DayDeXMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayDeXMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
-subtitle("with GLOBAL", size(small)) ///
-note("IHME excess deaths: dashed curves; JOHN reprted deaths: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+subtitle("with GLOBAL", size(small)) 
 
 qui graph save "graph 1 2 a1 COVID-19 daily excess deaths, regions together, IHME.gph", replace
 qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together, IHME.pdf", replace
@@ -2137,26 +2110,21 @@ qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together, I
 * daily excess deaths, without GLOBAL, IHME
 
 twoway ///
-(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayDeXMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line DayDeXMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line DayDeXMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line DayDeXMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayDeXMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily excess deaths) title("COVID-19 daily excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
-subtitle("without GLOBAL", size(small)) ///
-note("IHME excess deaths: dashed curves; JOHN reprted deaths: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+subtitle("without GLOBAL", size(small)) 
 
 qui graph save "graph 1 2 a1 COVID-19 daily excess deaths, regions together wo global, IHME.gph", replace
 qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together  wo global, IHME.pdf", replace
@@ -2173,6 +2141,8 @@ qui graph export "graph 1 2 a1 COVID-19 daily excess deaths, regions together  w
 twoway ///
 (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
 (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
@@ -2183,7 +2153,7 @@ if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) 
 
 qui graph save "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
@@ -2197,6 +2167,8 @@ qui graph export "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.pd
 twoway ///
 (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
 (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
@@ -2206,7 +2178,7 @@ if date >= td(01jan2020) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) 
 
 qui graph save "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
@@ -2214,20 +2186,23 @@ qui graph export "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.pd
 
 
 
+* daily cases, without GLOBAL, JOHN, recent
 
 twoway ///
 (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
 (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
 (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-if date >= td(01dec2021) & date <= `today_numericdailydate' ///
+if date >= td(17dec2021) & date <= td(15jan2022) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) 
 
 qui graph save "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN recent.gph", replace
@@ -2241,35 +2216,32 @@ qui graph export "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN re
 * daily infections, with GLOBAL, IHME, IMPE
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+(line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line DayINFMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line DayINFMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("IHME infections: dashed curves; IMPE infections: dash-three-dots curves; JOHN cases: solid curves")
+note("IHME infections: solid curves; IMPE infections: dashed curves")
 
 qui graph save "graph 2a1 COVID-19 daily infections, regions together, IHME, IMPE.gph", replace
 qui graph export "graph 2a1 COVID-19 daily infections, regions together, IHME, IMPE.pdf", replace
@@ -2278,38 +2250,36 @@ qui graph export "graph 2a1 COVID-19 daily infections, regions together, IHME, I
 
 
 
+
 * daily cases, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line DayCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line DayCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("DELP cases: dashed curves; SRIV cases: dash-three-dots curves; JOHN cases: solid curves")
+note("DELP cases: solid curves; SRIV cases: dashed curves")
 
 qui graph save "graph 2a2 COVID-19 daily cases, regions together, DELP, SRIV.gph", replace
 qui graph export "graph 2a2 COVID-19 daily cases, regions together, DELP, SRIV.pdf", replace
@@ -2320,32 +2290,30 @@ qui graph export "graph 2a2 COVID-19 daily cases, regions together, DELP, SRIV.p
 * daily infections, without GLOBAL, IHME, IMPE
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line DayINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line DayINFMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line DayINFMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line DayINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily infections) title("COVID-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("IHME infections: dashed curves; IMPE infections: dash-three-dots curves; JOHN cases: solid curves")
+note("IHME infections: solid curves; IMPE infections: dashed curves")
 
 qui graph save "graph 2b1 COVID-19 daily infections, regions together wo global, IHME, IMPE.gph", replace
 qui graph export "graph 2b1 COVID-19 daily infections, regions together wo global, IHME, IMPE.pdf", replace
@@ -2356,32 +2324,30 @@ qui graph export "graph 2b1 COVID-19 daily infections, regions together wo globa
 * daily cases, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-(line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-(line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-(line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-(line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line DayCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("DELP cases: dashed curves; SRIV cases: dash-three-dots curves; JOHN cases: solid curves")
+note("DELP cases: solid curves; SRIV cases: dashed curves")
 
 qui graph save "graph 2b2 COVID-19 daily cases, regions together wo global, DELP, SRIV.gph", replace
 qui graph export "graph 2b2 COVID-19 daily cases, regions together wo global, DELP, SRIV.pdf", replace
@@ -2393,35 +2359,32 @@ qui graph export "graph 2b2 COVID-19 daily cases, regions together wo global, DE
 * total deaths, with GLOBAL, IHME, IMPE
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotDeaMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotDeaMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 3a1 COVID-19 total deaths, regions together, IHME, IMPE.gph", replace
 qui graph export "graph 3a1 COVID-19 total deaths, regions together, IHME, IMPE.pdf", replace
@@ -2432,35 +2395,32 @@ qui graph export "graph 3a1 COVID-19 total deaths, regions together, IHME, IMPE.
 * total deaths, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line TotDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line TotDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line TotDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA01S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 3a2 COVID-19 total deaths, regions together, DELP, SRIV.gph", replace
 qui graph export "graph 3a2 COVID-19 total deaths, regions together, DELP, SRIV.pdf", replace
@@ -2471,32 +2431,30 @@ qui graph export "graph 3a2 COVID-19 total deaths, regions together, DELP, SRIV.
 * total deaths, without GLOBAL, IHME, IMPE
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotDeaMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeaMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeaMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeaMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotDeaMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotDeaMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotDeaMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
-subtitle("without global GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 3b1 COVID-19 total deaths, regions together wo global, IHME, IMPE.gph", replace
 qui graph export "graph 3b1 COVID-19 total deaths, regions together wo global, IHME, IMPE.pdf", replace
@@ -2507,32 +2465,30 @@ qui graph export "graph 3b1 COVID-19 total deaths, regions together wo global, I
 * total deaths, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line TotDeaMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeaMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line TotDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line TotDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line TotDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line TotDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line TotDeaMeRaA01S00EURO date, sort lcolor(green)) ///
+(line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line TotDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line TotDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" ) size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 3b2 COVID-19 total deaths, regions together wo global, DELP, SRIV.gph", replace
 qui graph export "graph 3b2 COVID-19 total deaths, regions together wo global, DELP, SRIV.pdf", replace
@@ -2543,28 +2499,22 @@ qui graph export "graph 3b2 COVID-19 total deaths, regions together wo global, D
 * total excess deaths, with GLOBAL, IHME
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotDeXMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotDeXMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotDeXMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotDeXMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
-subtitle("with GLOBAL", size(small)) ///
-note("IHME excess deaths: dashed curves; JOHN reprted deaths: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+subtitle("with GLOBAL", size(small)) 
 
 qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.gph", replace
 qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together, IHME.pdf", replace
@@ -2575,26 +2525,21 @@ qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together, I
 * total excess deaths, without GLOBAL, IHME
 
 twoway ///
-(line TotDeaMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotDeaMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotDeaMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotDeaMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotDeaMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotDeaMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotDeXMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotDeXMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotDeXMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotDeXMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotDeXMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotDeXMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotDeXMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total excess deaths) title("COVID-19 total excess deaths, WHO regions, IHME", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
-subtitle("without GLOBAL", size(small)) ///
-note("IHME excess deaths: dashed curves; JOHN reprted deaths: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+subtitle("without GLOBAL", size(small)) 
 
 qui graph save "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.gph", replace
 qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together wo global, IHME.pdf", replace
@@ -2605,35 +2550,32 @@ qui graph export "graph 3 2 a1 COVID-19 total excess deaths, regions together wo
 * total infections, with GLOBAL, IHME, IMPE
 
 twoway ///
-(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotCasMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line TotINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) ///
+(line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotINFMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotINFMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 4a1 COVID-19 total infections, regions together, IHME, IMPE.gph", replace
 qui graph export "graph 4a1 COVID-19 total infections, regions together, IHME, IMPE.pdf", replace
@@ -2644,35 +2586,32 @@ qui graph export "graph 4a1 COVID-19 total infections, regions together, IHME, I
 * total cases, with GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotCasMeRaA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line TotCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line TotCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
-(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash_3dot)) /// 
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line TotCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) /// 
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 4a2 COVID-19 total cases, regions together, DELP, SRIV.gph", replace
 qui graph export "graph 4a2 COVID-19 total cases, regions together, DELP, SRIV.pdf", replace
@@ -2683,32 +2622,30 @@ qui graph export "graph 4a2 COVID-19 total cases, regions together, DELP, SRIV.p
 * total infections, without GLOBAL, IHME, IMPE
 
 twoway ///
-(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotINFMeSmA02S01AFRO date, sort lcolor(brown) lpattern(dash)) /// IHME
-(line TotINFMeSmA02S01AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotINFMeSmA02S01EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotINFMeSmA02S01EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotINFMeSmA02S01WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// IMPE
-(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
+(line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line TotINFMeSmA02S01AMRO date, sort lcolor(red)) ///
+(line TotINFMeSmA02S01AMR1 date, sort lcolor(orange)) ///
+(line TotINFMeSmA02S01AMR2 date, sort lcolor(purple)) ///
+(line TotINFMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
+(line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total infections) title("COVID-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
-subtitle("without global GLOBAL", size(small)) ///
-note("IHME: dashed curves; IMPE: dash-three-dots curves; JOHN: solid curves")
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+subtitle("without GLOBAL", size(small)) ///
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph save "graph 4b1 COVID-19 total infections, regions together wo global, IHME, IMPE.gph", replace
 qui graph export "graph 4b1 COVID-19 total infections, regions together wo global, IHME, IMPE.pdf", replace
@@ -2719,32 +2656,26 @@ qui graph export "graph 4b1 COVID-19 total infections, regions together wo globa
 * total cases, without GLOBAL, DELP, SRIV
 
 twoway ///
-(line TotCasMeRaA00S00AFRO date, sort lcolor(brown)) /// JOHN
-(line TotCasMeRaA00S00AMRO date, sort lcolor(red)) ///
-(line TotCasMeRaA00S00EMRO date, sort lcolor(gold)) ///
-(line TotCasMeRaA00S00EURO date, sort lcolor(green)) ///
-(line TotCasMeRaA00S00SEARO date, sort lcolor(cyan)) ///
-(line TotCasMeRaA00S00WPRO date, sort lcolor(blue)) ///
-(line TotCasMeRaA01S00AFRO date, sort lcolor(brown) lpattern(dash)) /// DELP
-(line TotCasMeRaA01S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line TotCasMeRaA01S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line TotCasMeRaA01S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line TotCasMeRaA01S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash_3dot)) /// SRIV
-(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash_3dot)) ///
-(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash_3dot)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#27, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+(line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+if date >= td(01oct2021) ///
+, xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" ) size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small)) ///
-note("DELP: dashed curves; SRIV: dash-three-dots curves; JOHN: solid curves")
+note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph save "graph 4b2 COVID-19 total cases, regions together wo global, DELP, SRIV.gph", replace
 qui graph export "graph 4b2 COVID-19 total cases, regions together wo global, DELP, SRIV.pdf", replace
