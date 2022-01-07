@@ -397,13 +397,13 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (3b) African region [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2016%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148465229-769baf05-32bc-49a2-9be2-3dbb567a3cce.png)
+![image](https://user-images.githubusercontent.com/30849720/148601404-15fa296c-ce3f-45ff-9618-2b5de4744e9f.png)
 
 ****
 
 (3c) African region [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2018%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148466437-df86127b-1450-4415-8dfd-4901931edf8c.png)
+![image](https://user-images.githubusercontent.com/30849720/148601482-61c83e16-7604-43a4-a6cc-61d05ecc4833.png)
 
 ****
 
@@ -421,13 +421,13 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148466876-acbeb4d7-860f-45b1-b200-d7e1f548c3ce.png)
+![image](https://user-images.githubusercontent.com/30849720/148601643-6d0d81d8-eb6d-4fea-8668-3d3bec88c61e.png)
 
 ****
 
 (6b) African region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AFRO%2022b%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148466936-229586df-4b22-4261-92a1-4404c6b96e27.png)
+![image](https://user-images.githubusercontent.com/30849720/148601717-f3cd598c-2187-43b6-919c-93b01c968049.png)
 
 ****
 
