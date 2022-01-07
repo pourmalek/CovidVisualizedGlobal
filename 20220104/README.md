@@ -356,6 +356,7 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (20) Regions together [Total cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%204b2%20COVID-19%20total%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148592074-fb5436bf-5412-489d-8574-c7c9435ff30a.png)
 
 ****
 
