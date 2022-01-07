@@ -25,11 +25,11 @@ log using "log CovidVisualizedGlobal DELP.smcl", replace
 
 																										 
 /*	
-Note on exclusion of very implausible values:
-																									 
+Note on exclusion of extremely implausible values from the graphs:
+
 In DELP update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and 
-come down toward plausible values around 2021-10-15. 
-That compresses down the curves of other models in daily deaths graphs. 
+come down toward plausible values around 2021-10-22. Similar issue in WHO regions and in Daily Cases. 
+Such values compress down the curves of other models in daily deaths graphs. 
 As such, the implausible values are regarded as missing here. 
 */
 
@@ -800,6 +800,475 @@ sort date
 
 qui compress
 save "DELP AMRO.dta", replace
+
+
+
+
+*****************************
+
+* gen AMR1
+
+use "DELP.dta", clear
+
+keep if ///
+loc_grand_name == "Canada" | ///
+loc_grand_name == "US" 
+
+drop continent province loc_grand_name
+
+collapse (sum) totaldetected-totaldetecteddeathsub, by(day)
+
+gen loc_grand_name = "AMR1"
+
+
+rename day date_original
+gen year = substr(date_original,1,4) 
+gen month = substr(date_original,6,2) 
+gen day = substr(date_original,9,2) 
+egen date2 = concat(day month year)
+gen date = date(date2, "DMY", 2050)
+format date %tdDDMonCCYY
+codebook date
+drop year month day date2 date_original
+
+* rename outcome variables
+
+
+* total vars
+
+rename totaldetecteddeaths   TotDeaMeRaA01S00
+rename totaldetecteddeathslb TotDeaLoRaA01S00
+rename totaldetecteddeathsub TotDeaUpRaA01S00
+
+label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+label var TotDeaMeRaA01S00 "Total Deaths Lower DELP S0"
+label var TotDeaMeRaA01S00 "Total Deaths Upper DELP S0"
+
+rename totaldetected   TotCasMeRaA01S00
+rename totaldetectedlb TotCasLoRaA01S00
+rename totaldetectedub TotCasUpRaA01S00
+
+label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+label var TotCasMeRaA01S00 "Total Cases Lower DELP S0"
+label var TotCasMeRaA01S00 "Total Cases Upper DELP S0"
+
+
+* gen daily vars and rename
+
+sort date
+
+gen DayDeaMeRaA01S00 =  TotDeaMeRaA01S00[_n] - TotDeaMeRaA01S00[_n-1]
+
+gen DayDeaLoRaA01S00 =  TotDeaLoRaA01S00[_n] - TotDeaLoRaA01S00[_n-1]
+
+gen DayDeaUpRaA01S00 =  TotDeaUpRaA01S00[_n] - TotDeaUpRaA01S00[_n-1]
+
+gen DayCasMeRaA01S00 =  TotCasMeRaA01S00[_n] - TotCasMeRaA01S00[_n-1]
+
+gen DayCasLoRaA01S00 =  TotCasLoRaA01S00[_n] - TotCasLoRaA01S00[_n-1]
+
+gen DayCasUpRaA01S00 =  TotCasUpRaA01S00[_n] - TotCasUpRaA01S00[_n-1]
+
+
+label var DayDeaMeRaA01S00 "Daily Deaths Mean DELP S0"
+label var DayDeaLoRaA01S00 "Daily Deaths Lower DELP S0"
+label var DayDeaUpRaA01S00 "Daily Deaths Upper DELP S0"
+
+label var DayCasMeRaA01S00 "Daily Cases Mean DELP S0"
+label var DayCasLoRaA01S00 "Daily Cases Lower DELP S0"
+label var DayCasUpRaA01S00 "Daily Cases Upper DELP S0"
+
+label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+label var TotDeaLoRaA01S00 "Total Deaths Lower DELP S0"
+label var TotDeaUpRaA01S00 "Total Deaths Upper DELP S0"
+
+label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+label var TotCasLoRaA01S00 "Total Cases Lower DELP S0"
+label var TotCasUpRaA01S00 "Total Cases Upper DELP S0"
+
+
+* 
+
+* other outcomes
+
+* active activehospitalized activeventilated cumulativehospitalized
+
+/*
+***********************
+* rename convention
+
+active					Act
+
+activehospitalized		Hos
+
+activeventilated 		Ven
+
+cumulativehospitalized 	Hos
+
+*/
+
+
+rename active DayActMeRaA01S00
+
+rename activehospitalized DayHosMeRaA01S00
+
+rename activeventilated DayVenMeRaA01S00
+
+rename cumulativehospitalized TotHosMeRaA01S00
+
+label var DayActMeRaA01S00 "Daily Cases Active Mean DELP S0"
+
+label var DayHosMeRaA01S00 "Daily Cases Active Hospitalized Mean DELP S0"
+
+label var DayVenMeRaA01S00 "Daily Cases Active Ventilated Mean DELP S0"
+
+label var TotHosMeRaA01S00 "Total Cases Active Mean DELP S0"
+
+ 
+
+keep ///
+loc_grand_name date ///
+TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+
+
+order ///
+loc_grand_name date ///
+TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+
+
+
+* gen cfr
+
+gen DayCfrMeRaA01S00 = 100 * DayDeaMeRaA01S00 / DayCasMeRaA01S00
+gen DayCfrLoRaA01S00 = 100 * DayDeaLoRaA01S00 / DayCasLoRaA01S00
+gen DayCfrUpRaA01S00 = 100 * DayDeaUpRaA01S00 / DayCasUpRaA01S00
+
+label var DayCfrMeRaA01S00 "Daily CFR Mean DELP S0"
+label var DayCfrLoRaA01S00 "Daily CFR Lower DELP S0"
+label var DayCfrUpRaA01S00 "Daily CFR Upper DELP S0"
+
+
+
+
+*
+
+
+
+
+
+* gen "Daily cases mean div by daily deaths mean DELP DayCbD" for visulization of temporal relation of deaths and cases peaks 
+
+
+summ DayDeaMeRaA01S00 
+gen DayDeMMeRaA01S00 = r(mean)
+label var DayDeMMeRaA01S00 "Daily deaths mean DELP DayDeM"
+
+summ DayCasMeRaA01S00 
+gen DayCaMMeRaA01S00 = r(mean)
+label var DayCaMMeRaA01S00 "Daily cases mean DELP DayCaM"
+                              
+gen DayCbDMeRaA01S00 = DayCaMMeRaA01S00 / DayDeaMeRaA01S00
+label var DayCbDMeRaA01S00 "Daily cases mean div by daily deaths mean DELP DayCbD"
+summ DayCbDMeRaA01S00
+	
+gen DayDMuMeRaA01S00 = DayDeaMeRaA01S00 * DayCbDMeRaA01S00
+label var DayDMuMeRaA01S00 "Daily deaths scaled (times means of cases by deaths) only for visualization DELP"
+summ DayDMuMeRaA01S00	
+
+
+
+
+******************
+	
+* smooth 
+
+encode loc_grand_name, gen(loc_grand_name_encoded)
+
+tsset loc_grand_name_encoded date, daily   
+
+qui {
+	tssmooth ma DayDeaMeRaA01S00_window = DayDeaMeRaA01S00 if DayDeaMeRaA01S00 >= 0, window(3 1 3) 
+	
+	tssmooth ma DayDeaMeSmA01S00 = DayDeaMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayDeaMeSmA01S00 "Daily deaths smooth A01 DELP"
+	
+	drop DayDeaMeRaA01S00_window
+	
+	
+	tssmooth ma DayCasMeRaA01S00_window = DayCasMeRaA01S00 if DayCasMeRaA01S00 >= 0, window(3 1 3)
+	
+	tssmooth ma DayCasMeSmA01S00 = DayCasMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayCasMeSmA01S00 "Daily cases smooth A01 DELP"
+	
+	drop DayCasMeRaA01S00_window
+}
+*
+
+
+order date loc_grand_name	
+sort date
+
+
+qui compress
+save "DELP AMR1.dta", replace
+
+
+
+
+
+*****************************
+
+* gen AMR2
+
+use "DELP.dta", clear
+
+keep if ///
+loc_grand_name == "Antigua and Barbuda" | ///
+loc_grand_name == "Argentina" | ///
+loc_grand_name == "Barbados" | ///
+loc_grand_name == "Belize" | ///
+loc_grand_name == "Bolivia" | ///
+loc_grand_name == "Brazil" | ///
+loc_grand_name == "Chile" | ///
+loc_grand_name == "Colombia" | ///
+loc_grand_name == "Costa Rica" | ///
+loc_grand_name == "Cuba" | ///
+loc_grand_name == "Dominican Republic" | ///
+loc_grand_name == "Ecuador" | ///
+loc_grand_name == "El Salvador" | ///
+loc_grand_name == "Guatemala" | ///
+loc_grand_name == "Guyana" | ///
+loc_grand_name == "Haiti" | ///
+loc_grand_name == "Honduras" | ///
+loc_grand_name == "Jamaica" | ///
+loc_grand_name == "Mexico" | ///
+loc_grand_name == "Nicaragua" | ///
+loc_grand_name == "Panama" | ///
+loc_grand_name == "Paraguay" | ///
+loc_grand_name == "Peru" | ///
+loc_grand_name == "Suriname" | ///
+loc_grand_name == "Trinidad and Tobago" | ///
+loc_grand_name == "Uruguay" | ///
+loc_grand_name == "Venezuela" 
+
+drop continent province loc_grand_name
+
+collapse (sum) totaldetected-totaldetecteddeathsub, by(day)
+
+gen loc_grand_name = "AMR2"
+
+
+rename day date_original
+gen year = substr(date_original,1,4) 
+gen month = substr(date_original,6,2) 
+gen day = substr(date_original,9,2) 
+egen date2 = concat(day month year)
+gen date = date(date2, "DMY", 2050)
+format date %tdDDMonCCYY
+codebook date
+drop year month day date2 date_original
+
+* rename outcome variables
+
+
+* total vars
+
+rename totaldetecteddeaths   TotDeaMeRaA01S00
+rename totaldetecteddeathslb TotDeaLoRaA01S00
+rename totaldetecteddeathsub TotDeaUpRaA01S00
+
+label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+label var TotDeaMeRaA01S00 "Total Deaths Lower DELP S0"
+label var TotDeaMeRaA01S00 "Total Deaths Upper DELP S0"
+
+rename totaldetected   TotCasMeRaA01S00
+rename totaldetectedlb TotCasLoRaA01S00
+rename totaldetectedub TotCasUpRaA01S00
+
+label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+label var TotCasMeRaA01S00 "Total Cases Lower DELP S0"
+label var TotCasMeRaA01S00 "Total Cases Upper DELP S0"
+
+
+* gen daily vars and rename
+
+sort date
+
+gen DayDeaMeRaA01S00 =  TotDeaMeRaA01S00[_n] - TotDeaMeRaA01S00[_n-1]
+
+gen DayDeaLoRaA01S00 =  TotDeaLoRaA01S00[_n] - TotDeaLoRaA01S00[_n-1]
+
+gen DayDeaUpRaA01S00 =  TotDeaUpRaA01S00[_n] - TotDeaUpRaA01S00[_n-1]
+
+gen DayCasMeRaA01S00 =  TotCasMeRaA01S00[_n] - TotCasMeRaA01S00[_n-1]
+
+gen DayCasLoRaA01S00 =  TotCasLoRaA01S00[_n] - TotCasLoRaA01S00[_n-1]
+
+gen DayCasUpRaA01S00 =  TotCasUpRaA01S00[_n] - TotCasUpRaA01S00[_n-1]
+
+
+label var DayDeaMeRaA01S00 "Daily Deaths Mean DELP S0"
+label var DayDeaLoRaA01S00 "Daily Deaths Lower DELP S0"
+label var DayDeaUpRaA01S00 "Daily Deaths Upper DELP S0"
+
+label var DayCasMeRaA01S00 "Daily Cases Mean DELP S0"
+label var DayCasLoRaA01S00 "Daily Cases Lower DELP S0"
+label var DayCasUpRaA01S00 "Daily Cases Upper DELP S0"
+
+label var TotDeaMeRaA01S00 "Total Deaths Mean DELP S0"
+label var TotDeaLoRaA01S00 "Total Deaths Lower DELP S0"
+label var TotDeaUpRaA01S00 "Total Deaths Upper DELP S0"
+
+label var TotCasMeRaA01S00 "Total Cases Mean DELP S0"
+label var TotCasLoRaA01S00 "Total Cases Lower DELP S0"
+label var TotCasUpRaA01S00 "Total Cases Upper DELP S0"
+
+
+* 
+
+* other outcomes
+
+* active activehospitalized activeventilated cumulativehospitalized
+
+/*
+***********************
+* rename convention
+
+active					Act
+
+activehospitalized		Hos
+
+activeventilated 		Ven
+
+cumulativehospitalized 	Hos
+
+*/
+
+
+rename active DayActMeRaA01S00
+
+rename activehospitalized DayHosMeRaA01S00
+
+rename activeventilated DayVenMeRaA01S00
+
+rename cumulativehospitalized TotHosMeRaA01S00
+
+label var DayActMeRaA01S00 "Daily Cases Active Mean DELP S0"
+
+label var DayHosMeRaA01S00 "Daily Cases Active Hospitalized Mean DELP S0"
+
+label var DayVenMeRaA01S00 "Daily Cases Active Ventilated Mean DELP S0"
+
+label var TotHosMeRaA01S00 "Total Cases Active Mean DELP S0"
+
+ 
+
+keep ///
+loc_grand_name date ///
+TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+
+
+order ///
+loc_grand_name date ///
+TotDeaMeRaA01S00 TotDeaLoRaA01S00 TotDeaUpRaA01S00 ///
+DayDeaMeRaA01S00 DayDeaLoRaA01S00 DayDeaUpRaA01S00 ///
+TotCasMeRaA01S00 TotCasLoRaA01S00 TotCasUpRaA01S00 ///
+DayCasMeRaA01S00 DayCasLoRaA01S00 DayCasUpRaA01S00 ///
+DayActMeRaA01S00 DayHosMeRaA01S00 DayVenMeRaA01S00 TotHosMeRaA01S00
+
+
+
+* gen cfr
+
+gen DayCfrMeRaA01S00 = 100 * DayDeaMeRaA01S00 / DayCasMeRaA01S00
+gen DayCfrLoRaA01S00 = 100 * DayDeaLoRaA01S00 / DayCasLoRaA01S00
+gen DayCfrUpRaA01S00 = 100 * DayDeaUpRaA01S00 / DayCasUpRaA01S00
+
+label var DayCfrMeRaA01S00 "Daily CFR Mean DELP S0"
+label var DayCfrLoRaA01S00 "Daily CFR Lower DELP S0"
+label var DayCfrUpRaA01S00 "Daily CFR Upper DELP S0"
+
+
+
+
+*
+
+
+
+
+
+* gen "Daily cases mean div by daily deaths mean DELP DayCbD" for visulization of temporal relation of deaths and cases peaks 
+
+
+summ DayDeaMeRaA01S00 
+gen DayDeMMeRaA01S00 = r(mean)
+label var DayDeMMeRaA01S00 "Daily deaths mean DELP DayDeM"
+
+summ DayCasMeRaA01S00 
+gen DayCaMMeRaA01S00 = r(mean)
+label var DayCaMMeRaA01S00 "Daily cases mean DELP DayCaM"
+                              
+gen DayCbDMeRaA01S00 = DayCaMMeRaA01S00 / DayDeaMeRaA01S00
+label var DayCbDMeRaA01S00 "Daily cases mean div by daily deaths mean DELP DayCbD"
+summ DayCbDMeRaA01S00
+	
+gen DayDMuMeRaA01S00 = DayDeaMeRaA01S00 * DayCbDMeRaA01S00
+label var DayDMuMeRaA01S00 "Daily deaths scaled (times means of cases by deaths) only for visualization DELP"
+summ DayDMuMeRaA01S00	
+
+
+
+
+******************
+	
+* smooth 
+
+encode loc_grand_name, gen(loc_grand_name_encoded)
+
+tsset loc_grand_name_encoded date, daily   
+
+qui {
+	tssmooth ma DayDeaMeRaA01S00_window = DayDeaMeRaA01S00 if DayDeaMeRaA01S00 >= 0, window(3 1 3) 
+	
+	tssmooth ma DayDeaMeSmA01S00 = DayDeaMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayDeaMeSmA01S00 "Daily deaths smooth A01 DELP"
+	
+	drop DayDeaMeRaA01S00_window
+	
+	
+	tssmooth ma DayCasMeRaA01S00_window = DayCasMeRaA01S00 if DayCasMeRaA01S00 >= 0, window(3 1 3)
+	
+	tssmooth ma DayCasMeSmA01S00 = DayCasMeRaA01S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayCasMeSmA01S00 "Daily cases smooth A01 DELP"
+	
+	drop DayCasMeRaA01S00_window
+}
+*
+
+
+order date loc_grand_name	
+sort date
+
+
+qui compress
+save "DELP AMR2.dta", replace
+
 
 
 
@@ -1824,7 +2293,7 @@ save "DELP WPRO.dta", replace
 
 use "DELP GLOBAL.dta", clear 
 
-local list2 AFRO AMRO EMRO EURO SEARO WPRO
+local list2 AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list2 {
 
@@ -1853,6 +2322,12 @@ DayCfrUpRaA01S00	DayDeMMeRaA01S00	DayCaMMeRaA01S00	DayCbDMeRaA01S00	DayDMuMeRaA0
 	qui gen `var'AMRO = `var'
 	qui replace `var'AMRO = . if loc_grand_name != "AMRO"
 	
+	qui gen `var'AMR1 = `var'
+	qui replace `var'AMR1 = . if loc_grand_name != "AMR1"
+	
+	qui gen `var'AMR2 = `var'
+	qui replace `var'AMR2 = . if loc_grand_name != "AMR2"	
+	
 	qui gen `var'EMRO = `var'
 	qui replace `var'EMRO = . if loc_grand_name != "EMRO"
 	
@@ -1871,6 +2346,8 @@ DayCfrUpRaA01S00	DayDeMMeRaA01S00	DayCaMMeRaA01S00	DayCbDMeRaA01S00	DayDMuMeRaA0
 	
 	label var `var'AFRO "`var' AFRO"
 	label var `var'AMRO "`var' AMRO"
+	label var `var'AMR1 "`var' AMR1"
+	label var `var'AMR2 "`var' AMR2"
 	label var `var'EMRO "`var' EMRO"
 	label var `var'EURO "`var' EURO"
 	label var `var'GLOBAL "`var' GLOBAL"
@@ -1887,18 +2364,24 @@ DayCfrUpRaA01S00	DayDeMMeRaA01S00	DayCaMMeRaA01S00	DayCbDMeRaA01S00	DayDMuMeRaA0
 ************
 
 /*	
-Note on exclusion of very implausible values:
-																									 
+Note on exclusion of extremely implausible values from the graphs:
+
 In DELP update 20220104, Global daily deaths start from about 800,000 around 2021-10-01 and 
-come down toward plausible values around 2021-10-22. 
-That compresses down the curves of other models in daily deaths graphs. 
+come down toward plausible values around 2021-10-22. Similar issue in WHO regions and in Daily Cases. 
+Such values compress down the curves of other models in daily deaths graphs. 
 As such, the implausible values are regarded as missing here. 
 */
 
 foreach var of varlist ///
-DayDeaMeRaA01S00AFRO DayDeaMeRaA01S00AMRO DayDeaMeRaA01S00EMRO DayDeaMeRaA01S00EURO DayDeaMeRaA01S00GLOBAL DayDeaMeRaA01S00SEARO DayDeaMeRaA01S00WPRO ///
-DayDeaLoRaA01S00AFRO DayDeaLoRaA01S00AMRO DayDeaLoRaA01S00EMRO DayDeaLoRaA01S00EURO DayDeaLoRaA01S00GLOBAL DayDeaLoRaA01S00SEARO DayDeaLoRaA01S00WPRO ///
-DayDeaUpRaA01S00AFRO DayDeaUpRaA01S00AMRO DayDeaUpRaA01S00EMRO DayDeaUpRaA01S00EURO DayDeaUpRaA01S00GLOBAL DayDeaUpRaA01S00SEARO DayDeaUpRaA01S00WPRO {
+DayDeaMeRaA01S00AFRO DayDeaMeRaA01S00AMRO DayDeaMeRaA01S00AMR1 DayDeaMeRaA01S00AMR2 DayDeaMeRaA01S00EMRO DayDeaMeRaA01S00EURO DayDeaMeRaA01S00GLOBAL DayDeaMeRaA01S00SEARO DayDeaMeRaA01S00WPRO ///
+DayDeaLoRaA01S00AFRO DayDeaLoRaA01S00AMRO DayDeaLoRaA01S00AMR1 DayDeaLoRaA01S00AMR2 DayDeaLoRaA01S00EMRO DayDeaLoRaA01S00EURO DayDeaLoRaA01S00GLOBAL DayDeaLoRaA01S00SEARO DayDeaLoRaA01S00WPRO ///
+DayDeaUpRaA01S00AFRO DayDeaUpRaA01S00AMRO DayDeaUpRaA01S00AMR1 DayDeaUpRaA01S00AMR2 DayDeaUpRaA01S00EMRO DayDeaUpRaA01S00EURO DayDeaUpRaA01S00GLOBAL DayDeaUpRaA01S00SEARO DayDeaUpRaA01S00WPRO ///
+DayCasMeRaA01S00AFRO DayCasMeRaA01S00AMRO DayCasMeRaA01S00AMR1 DayCasMeRaA01S00AMR2 DayCasMeRaA01S00EMRO DayCasMeRaA01S00EURO DayCasMeRaA01S00GLOBAL DayCasMeRaA01S00SEARO DayCasMeRaA01S00WPRO ///
+DayCasLoRaA01S00AFRO DayCasLoRaA01S00AMRO DayCasLoRaA01S00AMR1 DayCasLoRaA01S00AMR2 DayCasLoRaA01S00EMRO DayCasLoRaA01S00EURO DayCasLoRaA01S00GLOBAL DayCasLoRaA01S00SEARO DayCasLoRaA01S00WPRO ///
+DayCasUpRaA01S00AFRO DayCasUpRaA01S00AMRO DayCasUpRaA01S00AMR1 DayCasUpRaA01S00AMR2 DayCasUpRaA01S00EMRO DayCasUpRaA01S00EURO DayCasUpRaA01S00GLOBAL DayCasUpRaA01S00SEARO DayCasUpRaA01S00WPRO ///
+DayCfrMeRaA01S00AFRO DayCfrMeRaA01S00AMRO DayCfrMeRaA01S00AMR1 DayCfrMeRaA01S00AMR2 DayCfrMeRaA01S00EMRO DayCfrMeRaA01S00EURO DayCfrMeRaA01S00GLOBAL DayCfrMeRaA01S00SEARO DayCfrMeRaA01S00WPRO ///
+DayCfrLoRaA01S00AFRO DayCfrLoRaA01S00AMRO DayCfrLoRaA01S00AMR1 DayCfrLoRaA01S00AMR2 DayCfrLoRaA01S00EMRO DayCfrLoRaA01S00EURO DayCfrLoRaA01S00GLOBAL DayCfrLoRaA01S00SEARO DayCfrLoRaA01S00WPRO ///
+DayCfrUpRaA01S00AFRO DayCfrUpRaA01S00AMRO DayCfrUpRaA01S00AMR1 DayCfrUpRaA01S00AMR2 DayCfrUpRaA01S00EMRO DayCfrUpRaA01S00EURO DayCfrUpRaA01S00GLOBAL DayCfrUpRaA01S00SEARO DayCfrUpRaA01S00WPRO {
 
 	qui replace `var' = . if date < td(22oct2021)
 
@@ -1928,7 +2411,7 @@ grstyle color background white
 
 
 
-local list2 GLOBAL AFRO AMRO EMRO EURO SEARO WPRO
+local list2 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list2 {
 
@@ -1939,7 +2422,7 @@ foreach region of local list2 {
 	twoway  ///
 	(line DayDeaMeRaA01S00`region' date, sort lcolor(red)) ///
 	, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off) ///
 		   
@@ -1955,7 +2438,7 @@ foreach region of local list2 {
 	(line DayDeaMeRaA01S00`region' date, sort lcolor(green)) ///
 	, legend(off) ///	   
 	xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	subtitle("with confidence limits", size(small))	
@@ -1972,7 +2455,7 @@ foreach region of local list2 {
 	(line TotDeaMeRaA01S00`region' date, sort lcolor(green)) ///
 	, legend(off) ///	   
 	xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("COVID-19 total deaths, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand)
 	
@@ -1988,7 +2471,7 @@ foreach region of local list2 {
 	(line TotDeaMeRaA01S00`region' date, sort lcolor(green)) ///
 	, legend(off) ///	   
 	xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("COVID-19 total deaths, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	subtitle("with confidence limits", size(small))	
@@ -2005,7 +2488,7 @@ foreach region of local list2 {
 	(line DayCasMeRaA01S00`region' date, sort lcolor(green)) ///
 	, legend(off) ///	   
 	xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases) title("COVID-19 daily cases, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand)	
 	
@@ -2088,7 +2571,7 @@ foreach region of local list2 {
 	(line DayHosMeRaA01S00`region' date, sort lcolor(black)) ///
 	(line DayVenMeRaA01S00`region' date, sort lcolor(red)) ///
 	, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcome) title("COVID-19 daily cases, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Active cases" 2 "Active hospitalized" 3 "Active ventilated") rows(1)) ///
@@ -2106,7 +2589,7 @@ foreach region of local list2 {
 	(line DayHosMeRaA01S00`region' date, sort lcolor(black)) ///
 	(line DayVenMeRaA01S00`region' date, sort lcolor(red)) ///
 	, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcome) title("COVID-19 daily cases, `region', DELP, single scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Active hospitalized" 2 "Active ventilated") rows(1)) ///
@@ -2149,26 +2632,29 @@ foreach region of local list2 {
 
 
 
+* Art: twoway (line TotDeaMeRaA01S00 date, lpattern(dash_3dot))
 
 * daily deaths, with GLOBAL
 
 twoway ///
 (line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
-qui qui graph save "graph 1a COVID-19 daily deaths, regions together, DELP.gph", replace
-qui qui graph export "graph 1a COVID-19 daily deaths, regions together, DELP.pdf", replace
+qui graph save "graph 1a COVID-19 daily deaths, regions together, DELP.gph", replace
+qui graph export "graph 1a COVID-19 daily deaths, regions together, DELP.pdf", replace
 
 
 
@@ -2178,19 +2664,21 @@ qui qui graph export "graph 1a COVID-19 daily deaths, regions together, DELP.pdf
 twoway ///
 (line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
-qui qui graph save "graph 1b COVID-19 daily deaths, regions together wo global, DELP.gph", replace
-qui qui graph export "graph 1b COVID-19 daily deaths, regions together wo global, DELP.pdf", replace
+qui graph save "graph 1b COVID-19 daily deaths, regions together wo global, DELP.gph", replace
+qui graph export "graph 1b COVID-19 daily deaths, regions together wo global, DELP.pdf", replace
 
 
 
@@ -2200,20 +2688,22 @@ qui qui graph export "graph 1b COVID-19 daily deaths, regions together wo global
 twoway ///
 (line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line DayCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
-qui qui graph save "graph 2a COVID-19 daily cases, regions together, DELP.gph", replace
-qui qui graph export "graph 2a COVID-19 daily cases, regions together, DELP.pdf", replace
+qui graph save "graph 2a COVID-19 daily cases, regions together, DELP.gph", replace
+qui graph export "graph 2a COVID-19 daily cases, regions together, DELP.pdf", replace
 
 
 
@@ -2223,19 +2713,21 @@ qui qui graph export "graph 2a COVID-19 daily cases, regions together, DELP.pdf"
 twoway ///
 (line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (2)) ///
 subtitle("without GLOBAL", size(small))
 
-qui qui graph save "graph 2b COVID-19 daily cases, regions together wo global, DELP.gph", replace
-qui qui graph export "graph 2b COVID-19 daily cases, regions together wo global, DELP.pdf", replace
+qui graph save "graph 2b COVID-19 daily cases, regions together wo global, DELP.gph", replace
+qui graph export "graph 2b COVID-19 daily cases, regions together wo global, DELP.pdf", replace
 
 
 
@@ -2246,20 +2738,22 @@ qui qui graph export "graph 2b COVID-19 daily cases, regions together wo global,
 twoway ///
 (line TotDeaMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line TotDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
-qui qui graph save "graph 3a COVID-19 total deaths, regions together, DELP.gph", replace
-qui qui graph export "graph 3a COVID-19 total deaths, regions together, DELP.pdf", replace
+qui graph save "graph 3a COVID-19 total deaths, regions together, DELP.gph", replace
+qui graph export "graph 3a COVID-19 total deaths, regions together, DELP.pdf", replace
 
 
 
@@ -2268,19 +2762,21 @@ qui qui graph export "graph 3a COVID-19 total deaths, regions together, DELP.pdf
 twoway ///
 (line TotDeaMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line TotDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
-qui qui graph save "graph 3b COVID-19 total deaths, regions together wo global, DELP.gph", replace
-qui qui graph export "graph 3b COVID-19 total deaths, regions together wo global, DELP.pdf", replace
+qui graph save "graph 3b COVID-19 total deaths, regions together wo global, DELP.gph", replace
+qui graph export "graph 3b COVID-19 total deaths, regions together wo global, DELP.pdf", replace
 
 
 
@@ -2291,20 +2787,22 @@ qui qui graph export "graph 3b COVID-19 total deaths, regions together wo global
 twoway ///
 (line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line TotCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
-qui qui graph save "graph 4a COVID-19 total cases, regions together, DELP.gph", replace
-qui qui graph export "graph 4a COVID-19 total cases, regions together, DELP.pdf", replace
+qui graph save "graph 4a COVID-19 total cases, regions together, DELP.gph", replace
+qui graph export "graph 4a COVID-19 total cases, regions together, DELP.pdf", replace
 
 
 
@@ -2313,19 +2811,21 @@ qui qui graph export "graph 4a COVID-19 total cases, regions together, DELP.pdf"
 twoway ///
 (line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
-qui qui graph save "graph 4b COVID-19 total cases, regions together wo global, DELP.gph", replace
-qui qui graph export "graph 4b COVID-19 total cases, regions together wo global, DELP.pdf", replace
+qui graph save "graph 4b COVID-19 total cases, regions together wo global, DELP.gph", replace
+qui graph export "graph 4b COVID-19 total cases, regions together wo global, DELP.pdf", replace
 
 
 
@@ -2336,20 +2836,22 @@ qui qui graph export "graph 4b COVID-19 total cases, regions together wo global,
 twoway ///
 (line DayCfrMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayCfrMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCfrMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCfrMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCfrMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayCfrMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayCfrMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCfrMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line DayCfrMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
-, xtitle(Date) xlabel(#24, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
-qui qui graph save "graph 5a COVID-19 daily cfr, regions together, DELP.gph", replace
-qui qui graph export "graph 5a COVID-19 daily cfr, regions together, DELP.pdf", replace
+qui graph save "graph 5a COVID-19 daily cfr, regions together, DELP.gph", replace
+qui graph export "graph 5a COVID-19 daily cfr, regions together, DELP.pdf", replace
 
 
 
@@ -2359,6 +2861,8 @@ qui qui graph export "graph 5a COVID-19 daily cfr, regions together, DELP.pdf", 
 twoway ///
 (line DayCfrMeRaA01S00AFRO date, sort lcolor(brown)) ///
 (line DayCfrMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCfrMeRaA01S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCfrMeRaA01S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCfrMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line DayCfrMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayCfrMeRaA01S00SEARO date, sort lcolor(cyan)) ///
@@ -2366,14 +2870,14 @@ twoway ///
 (line DayCfrMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 if date >= td(01jan2021) ///
 , xtitle(Date) xlabel(#12, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily CFR) title("COVID-19 daily cfr, WHO regions, DELP", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMR1" 4 "AMR2" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("after 2021, with GLOBAL", size(small))
 
-qui qui graph save "graph 6a COVID-19 daily cfr, regions together, DELP.gph", replace
-qui qui graph export "graph 6a COVID-19 daily cfr, regions together, DELP.pdf", replace
+qui graph save "graph 6a COVID-19 daily cfr, regions together, DELP.gph", replace
+qui graph export "graph 6a COVID-19 daily cfr, regions together, DELP.pdf", replace
 
 
 
