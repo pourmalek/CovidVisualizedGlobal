@@ -472,6 +472,139 @@ save "SRIV AMRO.dta", replace
 
 
 
+*****************************
+
+* gen AMR1
+
+use "SRIV.dta", clear
+
+keep if ///
+loc_grand_name == "Canada" | ///
+loc_grand_name == "United States" 
+
+drop loc_grand_name
+
+collapse (sum) TotDeaMeRaA05S00-DayDMuMeRaA05S00, by(date)
+
+foreach var of varlist DayDeaMeRaA05S00 DayDeaLoRaA05S00 DayDeaUpRaA05S00 ///
+DayCasMeRaA05S00 DayCasLoRaA05S00 DayCasUpRaA05S00 {
+	replace `var' = . if `var' == 0
+}
+*
+ 
+label var TotDeaMeRaA05S00 "Total Deaths Mean SRIV"
+label var TotDeaLoRaA05S00 "Total Deaths Lower SRIV"
+label var TotDeaUpRaA05S00 "Total Deaths Upper SRIV"
+label var TotCasMeRaA05S00 "Total Cases Mean SRIV"
+label var TotCasLoRaA05S00 "Total Cases Lower SRIV"
+label var TotCasUpRaA05S00 "Total Cases Upper SRIV" 
+
+label var DayDeaMeRaA05S00 "Daily Deaths Mean SRIV"
+label var DayDeaLoRaA05S00 "Daily Deaths Lower SRIV"
+label var DayDeaUpRaA05S00 "Daily Deaths Upper SRIV"
+label var DayCasMeRaA05S00 "Daily Cases Mean SRIV"
+label var DayCasLoRaA05S00 "Daily Cases Lower SRIV"
+label var DayCasUpRaA05S00 "Daily Cases Upper SRIV" 
+
+label var DayDeMMeRaA05S00 "Daily deaths mean SRIV  DayDeM"
+label var DayCaMMeRaA05S00 "Daily cases mean SRIV  DayCaM"
+label var DayCbDMeRaA05S00 "Daily cases mean div by daily deaths mean SRIV  DayCbD"
+label var DayDMuMeRaA05S00 "Daily deaths scaled (times means of cases by deaths) SRIV"
+
+gen loc_grand_name = "AMR1"
+
+order loc_grand_name date
+
+qui compress
+
+save "SRIV AMR1.dta", replace 
+
+
+
+
+*****************************
+
+* gen AMR2
+
+use "SRIV.dta", clear
+
+keep if ///
+loc_grand_name == "Antigua and Barbuda" | ///
+loc_grand_name == "Argentina" | ///
+loc_grand_name == "Barbados" | ///
+loc_grand_name == "Belize" | ///
+loc_grand_name == "Bolivia" | ///
+loc_grand_name == "Brazil" | ///
+loc_grand_name == "Chile" | ///
+loc_grand_name == "Colombia" | ///
+loc_grand_name == "Costa Rica" | ///
+loc_grand_name == "Cuba" | ///
+loc_grand_name == "Diamond Princess" | ///
+loc_grand_name == "Dominica" | ///
+loc_grand_name == "Dominican Republic" | ///
+loc_grand_name == "Ecuador" | ///
+loc_grand_name == "El Salvador" | ///
+loc_grand_name == "Grenada" | ///
+loc_grand_name == "Guatemala" | ///
+loc_grand_name == "Guyana" | ///
+loc_grand_name == "Haiti" | ///
+loc_grand_name == "Honduras" | ///
+loc_grand_name == "Jamaica" | ///
+loc_grand_name == "MS Zaandam" | ///
+loc_grand_name == "Mexico" | ///
+loc_grand_name == "Nicaragua" | ///
+loc_grand_name == "Panama" | ///
+loc_grand_name == "Paraguay" | ///
+loc_grand_name == "Peru" | ///
+loc_grand_name == "Saint Kitts and Nevis" | ///
+loc_grand_name == "Saint Lucia" | ///
+loc_grand_name == "Saint Vincent and the Grenadines" | ///
+loc_grand_name == "Suriname" | ///
+loc_grand_name == "The Bahamas" | ///
+loc_grand_name == "Trinidad and Tobago" | ///
+loc_grand_name == "Uruguay" | ///
+loc_grand_name == "Venezuela" 
+
+drop loc_grand_name
+
+collapse (sum) TotDeaMeRaA05S00-DayDMuMeRaA05S00, by(date)
+
+foreach var of varlist DayDeaMeRaA05S00 DayDeaLoRaA05S00 DayDeaUpRaA05S00 ///
+DayCasMeRaA05S00 DayCasLoRaA05S00 DayCasUpRaA05S00 {
+	replace `var' = . if `var' == 0
+}
+*
+ 
+label var TotDeaMeRaA05S00 "Total Deaths Mean SRIV"
+label var TotDeaLoRaA05S00 "Total Deaths Lower SRIV"
+label var TotDeaUpRaA05S00 "Total Deaths Upper SRIV"
+label var TotCasMeRaA05S00 "Total Cases Mean SRIV"
+label var TotCasLoRaA05S00 "Total Cases Lower SRIV"
+label var TotCasUpRaA05S00 "Total Cases Upper SRIV" 
+
+label var DayDeaMeRaA05S00 "Daily Deaths Mean SRIV"
+label var DayDeaLoRaA05S00 "Daily Deaths Lower SRIV"
+label var DayDeaUpRaA05S00 "Daily Deaths Upper SRIV"
+label var DayCasMeRaA05S00 "Daily Cases Mean SRIV"
+label var DayCasLoRaA05S00 "Daily Cases Lower SRIV"
+label var DayCasUpRaA05S00 "Daily Cases Upper SRIV" 
+
+label var DayDeMMeRaA05S00 "Daily deaths mean SRIV  DayDeM"
+label var DayCaMMeRaA05S00 "Daily cases mean SRIV  DayCaM"
+label var DayCbDMeRaA05S00 "Daily cases mean div by daily deaths mean SRIV  DayCbD"
+label var DayDMuMeRaA05S00 "Daily deaths scaled (times means of cases by deaths) SRIV"
+
+gen loc_grand_name = "AMR2"
+
+order loc_grand_name date
+
+qui compress
+
+save "SRIV AMR2.dta", replace 
+
+
+
+
 
 
 
@@ -807,7 +940,7 @@ save "SRIV WPRO.dta", replace
 
 use "SRIV GLOBAL.dta", clear 
 
-local list4 AFRO AMRO EMRO EURO SEARO WPRO
+local list4 AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list4 {
 
@@ -830,6 +963,12 @@ foreach var of varlist TotDeaMeRaA05S00-DayDMuMeRaA05S00 {
 	qui gen `var'AMRO = `var'
 	qui replace `var'AMRO = . if loc_grand_name != "AMRO"
 	
+	qui gen `var'AMR1 = `var'
+	qui replace `var'AMR1 = . if loc_grand_name != "AMR1"
+	
+	qui gen `var'AMR2 = `var'
+	qui replace `var'AMR2 = . if loc_grand_name != "AMR2"	
+	
 	qui gen `var'EMRO = `var'
 	qui replace `var'EMRO = . if loc_grand_name != "EMRO"
 	
@@ -848,6 +987,8 @@ foreach var of varlist TotDeaMeRaA05S00-DayDMuMeRaA05S00 {
 	
 	label var `var'AFRO "`var' AFRO"
 	label var `var'AMRO "`var' AMRO"
+	label var `var'AMR1 "`var' AMR1"
+	label var `var'AMR2 "`var' AMR2"	
 	label var `var'EMRO "`var' EMRO"
 	label var `var'EURO "`var' EURO"
 	label var `var'GLOBAL "`var' GLOBAL"
@@ -902,7 +1043,7 @@ foreach region of local list5 {
 	twoway ///
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(black)) ///
 	, xtitle(Date) xlabel(#5, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', SRIV, default scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) 
 	
@@ -918,7 +1059,7 @@ foreach region of local list5 {
 	(rarea DayDeaLoRaA05S00`region' DayDeaUpRaA05S00`region' date, sort color(black*.2)) ///
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(black)) ///
 	, xtitle(Date) xlabel(#5, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', SRIV, default scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off) ///
 	subtitle("with confidence limits", size(small))
@@ -934,7 +1075,7 @@ foreach region of local list5 {
 	twoway ///
 	(line DayCasMeRaA05S00`region' date, sort lcolor(black)) ///
 	, xtitle(Date) xlabel(#5, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases) title("COVID-19 daily cases, `region', SRIV, default scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) 
 	
@@ -950,7 +1091,7 @@ foreach region of local list5 {
 	(rarea DayCasLoRaA05S00`region' DayCasUpRaA05S00`region' date, sort color(black*.2)) ///
 	(line DayCasMeRaA05S00`region' date, sort lcolor(black)) ///
 	, xtitle(Date) xlabel(#5, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases) title("COVID-19 daily cases, `region', SRIV, default scenario", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(off) ///
 	subtitle("with confidence limits", size(small))
@@ -1033,7 +1174,7 @@ foreach region of local list5 {
 	(line DayDMuMeRaA05S00`region' date, sort lpattern(dot) lcolor(red)) ///
 	if date > td(01jan2020) ///
 	, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases and deaths) title("COVID-19 daily cases and deaths, `region', SRIV ", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) yscale(titlegap(4)) legend(region(lcolor(none)))  ///
 	legend(order(1 "Daily cases" 2 "Daily deaths" 3 "Daily deaths scaled for visualization") size(small)) ///
@@ -1065,16 +1206,18 @@ foreach region of local list5 {
 twoway ///
 (line DayDeaMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line DayDeaMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeRaA05S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeRaA05S00WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
 qui graph save "graph 1a COVID-19 daily deaths, regions together, SRIV.gph", replace
@@ -1088,15 +1231,17 @@ qui graph export "graph 1a COVID-19 daily deaths, regions together, SRIV.pdf", r
 twoway ///
 (line DayDeaMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line DayDeaMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayDeaMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line DayDeaMeRaA05S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeRaA05S00WPRO date, sort lcolor(blue)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
 qui graph save "graph 1b COVID-19 daily deaths, regions together wo global, SRIV.gph", replace
@@ -1110,16 +1255,18 @@ qui graph export "graph 1b COVID-19 daily deaths, regions together wo global, SR
 twoway ///
 (line DayCasMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line DayCasMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeRaA05S00EURO date, sort lcolor(green)) ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue)) ///
 (line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
 qui graph save "graph 2a COVID-19 daily cases, regions together, SRIV.gph", replace
@@ -1133,15 +1280,17 @@ qui graph export "graph 2a COVID-19 daily cases, regions together, SRIV.pdf", re
 twoway ///
 (line DayCasMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line DayCasMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line DayCasMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line DayCasMeRaA05S00EURO date, sort lcolor(green)) ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
 qui graph save "graph 2b COVID-19 daily cases, regions together wo global, SRIV.gph", replace
@@ -1156,16 +1305,18 @@ qui graph export "graph 2b COVID-19 daily cases, regions together wo global, SRI
 twoway ///
 (line TotDeaMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line TotDeaMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA05S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA05S00WPRO date, sort lcolor(blue)) ///
 (line TotDeaMeRaA05S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
 qui graph save "graph 3a COVID-19 total deaths, regions together, SRIV.gph", replace
@@ -1178,15 +1329,17 @@ qui graph export "graph 3a COVID-19 total deaths, regions together, SRIV.pdf", r
 twoway ///
 (line TotDeaMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line TotDeaMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line TotDeaMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotDeaMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line TotDeaMeRaA05S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA05S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA05S00WPRO date, sort lcolor(blue)) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%9.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total deaths) title("COVID-19 total deaths, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
 qui graph save "graph 3b COVID-19 total deaths, regions together wo global, SRIV.gph", replace
@@ -1201,6 +1354,8 @@ qui graph export "graph 3b COVID-19 total deaths, regions together wo global, SR
 twoway ///
 (line TotCasMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line TotCasMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line TotCasMeRaA05S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA05S00SEARO date, sort lcolor(cyan)) ///
@@ -1210,7 +1365,7 @@ twoway ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO" 7 "GLOBAL") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("with GLOBAL", size(small))
 
 qui graph save "graph 4a COVID-19 total cases, regions together, SRIV.gph", replace
@@ -1223,6 +1378,8 @@ qui graph export "graph 4a COVID-19 total cases, regions together, SRIV.pdf", re
 twoway ///
 (line TotCasMeRaA05S00AFRO date, sort lcolor(brown)) ///
 (line TotCasMeRaA05S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA05S00AMR1 date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR2 date, sort lcolor(red) lpattern(dash_3dot)) ///
 (line TotCasMeRaA05S00EMRO date, sort lcolor(gold)) ///
 (line TotCasMeRaA05S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA05S00SEARO date, sort lcolor(cyan)) ///
@@ -1231,7 +1388,7 @@ twoway ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Total cases) title("COVID-19 total cases, WHO regions, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "EMRO" 4 "EURO" 5 "SEARO" 6 "WPRO") size(small) rows (2)) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("without GLOBAL", size(small))
 
 qui graph save "graph 4b COVID-19 total cases, regions together wo global, SRIV.gph", replace
