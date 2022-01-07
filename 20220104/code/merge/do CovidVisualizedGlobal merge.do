@@ -2658,12 +2658,16 @@ qui graph export "graph 4b1 COVID-19 total infections, regions together wo globa
 twoway ///
 (line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
 (line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line TotCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
 (line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
 (line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
 (line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 (line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
 (line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
 (line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
