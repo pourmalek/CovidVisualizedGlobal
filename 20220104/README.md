@@ -727,16 +727,19 @@ AMRO is devided to AMR1 and AMR2:
 
 (7) Americas region, without Canada and United States [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613946-cec70ed3-9870-4896-bfc1-089f3fe8796e.png)
 
 ****
 
 (8) Americas region, without Canada and United States [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148614015-00f40a92-f0be-4950-9e2f-9c6ed86e8455.png)
 
 ****
 
 (9) Americas region, without Canada and United States [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148614051-9e77f9e4-4596-4a00-9c6f-cf7e8c43734f.png)
 
 ****
 
