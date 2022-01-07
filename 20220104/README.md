@@ -111,13 +111,13 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (3b) Global [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2016%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148396636-7fe4893b-8290-414e-a47a-d9f8f6282ff7.png)
+![image](https://user-images.githubusercontent.com/30849720/148586455-38ba3f32-19a7-4b80-85b6-64203cd7e3c0.png)
 
 ****
 
 (3c) Global [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2018%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148396743-bcaa4ed8-776b-4de8-9609-a602ea2c82c7.png)
+![image](https://user-images.githubusercontent.com/30849720/148586567-3b73790b-dc5b-45b0-9423-c822362131b8.png)
 
 ****
 
@@ -129,7 +129,7 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148396990-951658c9-1369-4f09-8c15-5b8bf6af10da.png)
+![image](https://user-images.githubusercontent.com/30849720/148586717-81a08f6b-c188-4acb-9840-d74f035c4c13.png)
 
 ****
 
