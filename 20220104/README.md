@@ -673,46 +673,55 @@ AMRO is devided to AMR1 and AMR2:
 
 (2b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2012b%20COVID-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148612524-8a9dc8c2-5d1e-48c6-a75b-b5a24bb43113.png)
 
 ****
 
 (3) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2014%20COVID-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148612596-9b0a6106-f7f5-4325-8dc8-2542028cb7e6.png)
 
 ****
 
 (3b) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2016%20COVID-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613263-574ddc2f-7fab-4fa5-ad63-3e2b37a8fe3d.png)
 
 ****
 
 (3c) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2018%20COVID-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613332-7b0574f5-f664-43f2-b1ac-b3cb55cd4c16.png)
 
 ****
 
 (4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2021%20COVID-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613429-6fe304a8-74e6-48be-9f3b-581a49acd697.png)
 
 ****
 
 (5) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2022%20COVID-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613531-78cc4e8e-588a-48b3-806d-1cc7036279fc.png)
 
 ****
 
 (6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2024%20COVID-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613653-eb1b2d5f-06e3-49e8-be51-9255aa748779.png)
 
 ****
 
 (6b) Americas region, without Canada and United States [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2022b%20COVID-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613732-3e8115ff-7e1b-4d34-b03f-1e2da471e3f4.png)
 
 ****
 
 (6c) Americas region, without Canada and United States [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20AMR2%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148613794-45090e55-ed9c-4157-8adb-1d41df5f2736.png)
 
 ****
 
