@@ -897,31 +897,37 @@ AMRO is devided to AMR1 and AMR2:
 
 (6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2024%20COVID-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616259-dcf013c0-5344-4cf4-9fe5-560fac15ede6.png)
 
 ****
 
 (6b) European region [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2022b%20COVID-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616303-83f5b854-0703-4f14-a612-c4a620fc4e5f.png)
 
 ****
 
 (6c) European region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20EURO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616352-520402fb-99ea-4dee-b365-26a8a00c0236.png)
 
 ****
 
 (7) European region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616404-db19947c-9a82-403f-bd6e-bf731cab1810.png)
 
 ****
 
 (8) European region [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616450-f63ff77e-faaf-4a17-8e88-5dfa1811b929.png)
 
 ****
 
 (9) European region [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148616501-b977d80b-ed29-4f50-86fd-3c3b86519442.png)
 
 ****
 
