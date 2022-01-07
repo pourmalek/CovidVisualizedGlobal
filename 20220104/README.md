@@ -616,25 +616,29 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 (6b) Americas region, Canada and United States [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2022b%20COVID-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148607865-0886b573-207f-4a39-9ad7-9542b2c93c57.png)
 
 ****
 
 (6c) Americas region, Canada and United States [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20AMR1%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148607945-9f90e68b-dfb1-41b7-b5bb-089f23cb64fc.png)
 
 ****
 
 (7) Americas region, Canada and United States [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148608016-046a84d0-f3d5-4a5b-a0ca-a61a0075b8c6.png)
 
 ****
 
 (8) Americas region, Canada and United States [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148608080-fdd9cc88-9370-421f-9000-f1c5e31b814b.png)
 
 ****
 
-(9) Americas region, Canada and United States [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
+(9) Americas region, Canada and United States [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AMR1%2C%20reference%20scenarios%2C%202021.pdf)
 
 
 ****
