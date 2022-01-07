@@ -69,7 +69,11 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 ### Selected graphs - [Americas region (AMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/README.md#selected-graphs--americas-region-amro)
 
+AMRO is devided to AMR1 and AMR2:
+
 ### Selected graphs - [Americas region, Canada and United States (AMR1)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/README.md#selected-graphs--americas-region-canada-and-united-states-amr1)
+
+### Selected graphs - [Americas region, without Canada and United States (AMR2)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/README.md#selected-graphs--americas-region-without-canada-and-united-states-amr2)
 
 ### Selected graphs - [Eastern Mediterranean region (EMRO)](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/README.md#selected-graphs--eastern-mediterranean-region-emro)
 
