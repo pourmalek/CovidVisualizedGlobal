@@ -1,6 +1,6 @@
 # CovidVisualizedGlobal 
 
-## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/21%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2021%20–%202021-12-21.pdf).
+## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/22%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2022%20–%202022-01-04.pdf).
 
 
 <br/><br/>
@@ -162,7 +162,7 @@ The codes in these repositories can be adapted for use for any country or region
   <br/><br/>
 
 
-# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 21 – 2021-12-21](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/21%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2021%20–%202021-12-21.pdf)  
+# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 22 – 2022-01-04](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/22%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2022%20–%202022-01-04.pdf)  
 
   
 ****
