@@ -30,7 +30,7 @@ List of graphs:
   
 (7) Global - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#7-global---hospital-related-outcomes-all-time)
 
-(7b) Global - [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#7b-global---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
+(7b) Global - [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#7b-global---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
   
 (8) Global - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#8-global---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
   
