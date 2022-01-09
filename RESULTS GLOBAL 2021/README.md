@@ -34,7 +34,7 @@ List of graphs:
   
 (8) Global - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#8-global---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
   
-(9) Global - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+(9) Global - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021)
   
 (10) Global - [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#10-global---daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
 
