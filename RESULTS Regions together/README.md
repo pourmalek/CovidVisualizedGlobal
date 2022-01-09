@@ -213,6 +213,37 @@ IHME and IMPE, followed by DELP and SRIV.
 
 
 
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
+### (2b) Regions together - Daily deaths, without GLOBAL, IHME, 2021 on
+  
+ 
+  
+  
+  
+*
+
+**uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
+
+(2b) Regions together [Daily deaths, without GLOBAL, IHME, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%201b%202%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147399147-339bf4e6-df9e-4aff-afcc-5a16b00dcc80.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
@@ -224,6 +255,8 @@ IHME and IMPE, followed by DELP and SRIV.
   
   
 *
+
+**uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (2c) Regions together [Daily deaths, without GLOBAL, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%201b%203%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
