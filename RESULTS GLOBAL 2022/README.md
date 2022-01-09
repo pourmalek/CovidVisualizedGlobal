@@ -27,29 +27,29 @@ List of graphs:
 
 (6a) Global - [Daily cases or infections, 5 scenarios, IHME 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6a-global---daily-cases-or-infections-5-scenarios-ihme-2021) 
 
-(6b) Global - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6b-global---daily-cases-2021)
+(6b) Global - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6b-global---daily-cases-2021)
  
-(6c) Global - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6c-global---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+(6c) Global - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6c-global---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
   
-(7) Global - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#7-global---hospital-related-outcomes-all-time)
+(7) Global - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#7-global---hospital-related-outcomes-all-time)
 
-(7b) Global - [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#7b-global---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
+(7b) Global - [Hospital-related outcomes, all time, with IHME All bed capacity and ICU bed capacity](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#7b-global---hospital-related-outcomes-all-time-with-ihme-all-bed-capacity-and-icu-bed-capacity)
   
-(8) Global - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#8-global---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
+(8) Global - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#8-global---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
   
-(9) Global - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+(9) Global - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021)
   
-(10) Global - [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#10-global---daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
+(10) Global - [Daily cases estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#10-global---daily-cases-or-infections-estimated-to-reported-cases-reference-scenarios-2021)
 
-(11) Global - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
+(11) Global - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
 
-(11b) Global - [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#11b-global---daily-infection--detection-and--hospitalizations-ratios-3-scenarios-all-time-ihme)
+(11b) Global - [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#11b-global---daily-infection--detection-and--hospitalizations-ratios-3-scenarios-all-time-ihme)
 
-(12) Global - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#12-global---daily-mobility-3-scenarios-all-time-ihme)
+(12) Global - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#12-global---daily-mobility-3-scenarios-all-time-ihme)
 
-(13) Global - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#13-global---daily-mask-use-3-scenarios-ihme)
+(13) Global - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#13-global---daily-mask-use-3-scenarios-ihme)
 
-(14) Global - [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#14-global---cumulative-vaccinated-percent-ihme)
+(14) Global - [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#14-global---cumulative-vaccinated-percent-ihme)
 
 
 ****
