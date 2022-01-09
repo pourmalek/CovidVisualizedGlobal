@@ -52,7 +52,9 @@ List of graphs:
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(1) Americas region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2011a%20COVID-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393391-ce653423-6b5e-490a-ba9d-a202bce75c2e.png)
 
 *
 
@@ -92,7 +94,9 @@ List of graphs:
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(2) Americas region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2012a%20COVID-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393408-1173a874-0357-424f-835c-3ecfd563293b.png)
 
 *
 
@@ -131,7 +135,9 @@ List of graphs:
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(2b) Americas region [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2012b%20COVID-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393415-100bf529-4afd-4f70-9b6b-fb4ad73792ed.png)
 
 *
 
@@ -172,7 +178,9 @@ List of graphs:
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(3) Americas region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2014%20COVID-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393424-bc3fff7f-05d7-4eaa-84d3-bb844934ef56.png)
 
 *
 
@@ -212,7 +220,9 @@ List of graphs:
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(3b) Americas region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2016%20COVID-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393438-5467bf02-ff66-4283-bfd3-e6b97d947730.png)
 
 *
 
@@ -238,6 +248,39 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 
 
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+  
+### (3b2) Americas region - Daily deaths, 5 scenarios, 2021, IHME
+
+
+
+
+*
+
+**uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
+
+(3b2) Americas region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20AMRO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20AMRO%205%20scenarios%2C%20IHME.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/147398852-6f164135-735e-4aca-8849-5ff5d5d3e4e2.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
   
@@ -250,7 +293,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(3c) Americas region [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2018%20COVID-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393453-de7a28db-d798-4ea5-ac44-66c0951a15b5.png)
 
 *
 
@@ -290,7 +335,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(4) Americas region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2021%20COVID-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393465-315e0dfb-39e7-4a01-b67d-6027fcd62cde.png)
 
 *
 
@@ -330,7 +377,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(5) Americas region [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2022%20COVID-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393472-95741825-3258-4346-a0f3-ed976faecbe7.png)
 
 *
 
@@ -371,7 +420,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(6) Americas region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2024%20COVID-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393479-f67d5206-6648-4358-8e34-853cb0ff4689.png)
 
 *
 
@@ -411,7 +462,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(6b) Americas region [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2022b%20COVID-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393501-53a5aabc-403e-450c-9d80-fe5b3bbc53ee.png)
 
 *
 
@@ -451,7 +504,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(6c) Americas region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20AMRO%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393511-d7824264-29ee-4162-802f-41249a145a38.png)
 
 *
 
@@ -491,7 +546,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(7) Americas region [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393520-06d4594f-e248-449d-bdae-e2f5326b07cc.png)
 
 *
 
@@ -531,7 +588,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(8) Americas region [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393528-676c8da4-67cc-4e02-ac04-6cbaf8f2e108.png)
 
 *
 
@@ -571,7 +630,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(9) Americas region [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20AMRO%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147393886-97cef9b6-685e-4cae-b2f3-f4afa3425a03.png)
 
 *
 
