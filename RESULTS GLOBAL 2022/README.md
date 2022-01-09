@@ -19,7 +19,7 @@ List of graphs:
   
 (4) Global - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
   
-(5) Global - [Daily cases, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021)
+(5) Global - [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021-on)
   
 (6) Global - [Daily cases, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6-global---daily-cases-or-infections-3-scenarios-2011)
 
