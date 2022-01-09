@@ -74,7 +74,9 @@ IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
+(1) Regions together [Daily deaths, with GLOBAL, IHME, IMPE, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%201a1%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/147399070-9decb42e-2ec8-4e5c-b7e4-b9e7f8872bb1.png)
 
 *
 
