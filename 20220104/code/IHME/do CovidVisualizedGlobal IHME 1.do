@@ -22,7 +22,7 @@ log using "log CovidVisualizedGlobal IHME 1.smcl", replace
 * download and prepare estimates files
 
                                                                                                          ***************************
-* To change update date, find and replace all, 2021-21-21 (old), with 2021-21-21 (new) <<--       <<<--- * change update date here *
+* To change update date, find and replace all, 2021-12-21 (old), with 2021-12-21 (new) <<--       <<<--- * change update date here *
                                                                                                          ***************************
 																										 
 clear 
