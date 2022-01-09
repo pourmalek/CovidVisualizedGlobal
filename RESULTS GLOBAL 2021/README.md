@@ -24,9 +24,7 @@ List of graphs:
   
 (6) Global - [Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#6-global---daily-cases-or-infections-3-scenarios-2011)
 
-(6a) Global - [Daily cases or infections, 5 scenarios, IHME 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#6a-global---daily-cases-or-infections-5-scenarios-ihme-2021) 
-
-(6b) Global - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#6b-global---daily-cases-2021)
+(6b) Global - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#6b-global---daily-cases-2021)
  
 (6c) Global - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#6c-global---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
   
