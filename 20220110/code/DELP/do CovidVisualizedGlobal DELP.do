@@ -24,14 +24,7 @@ log using "log CovidVisualizedGlobal DELP.smcl", replace
                                                                                                          ***************************
 
 																										 
-/*	
-Note on exclusion of extremely implausible values from the graphs:
 
-In DELP update 20220110, Global daily deaths start from about 800,000 around 2021-10-01 and 
-come down toward plausible values around 2021-10-22. Similar issue in WHO regions and in Daily Cases. 
-Such values compress down the curves of other models in daily deaths graphs. 
-As such, the implausible values are regarded as missing here. 
-*/
 
 
 
@@ -2359,35 +2352,6 @@ DayCfrUpRaA01S00	DayDeMMeRaA01S00	DayCaMMeRaA01S00	DayCbDMeRaA01S00	DayDMuMeRaA0
 *
 
 
-
-
-************
-
-/*	
-Note on exclusion of extremely implausible values from the graphs:
-
-In DELP update 20220110, Global daily deaths start from about 800,000 around 2021-10-01 and 
-come down toward plausible values around 2021-10-22. Similar issue in WHO regions and in Daily Cases. 
-Such values compress down the curves of other models in daily deaths graphs. 
-As such, the implausible values are regarded as missing here. 
-*/
-
-foreach var of varlist ///
-DayDeaMeRaA01S00AFRO DayDeaMeRaA01S00AMRO DayDeaMeRaA01S00AMR1 DayDeaMeRaA01S00AMR2 DayDeaMeRaA01S00EMRO DayDeaMeRaA01S00EURO DayDeaMeRaA01S00GLOBAL DayDeaMeRaA01S00SEARO DayDeaMeRaA01S00WPRO ///
-DayDeaLoRaA01S00AFRO DayDeaLoRaA01S00AMRO DayDeaLoRaA01S00AMR1 DayDeaLoRaA01S00AMR2 DayDeaLoRaA01S00EMRO DayDeaLoRaA01S00EURO DayDeaLoRaA01S00GLOBAL DayDeaLoRaA01S00SEARO DayDeaLoRaA01S00WPRO ///
-DayDeaUpRaA01S00AFRO DayDeaUpRaA01S00AMRO DayDeaUpRaA01S00AMR1 DayDeaUpRaA01S00AMR2 DayDeaUpRaA01S00EMRO DayDeaUpRaA01S00EURO DayDeaUpRaA01S00GLOBAL DayDeaUpRaA01S00SEARO DayDeaUpRaA01S00WPRO ///
-DayCasMeRaA01S00AFRO DayCasMeRaA01S00AMRO DayCasMeRaA01S00AMR1 DayCasMeRaA01S00AMR2 DayCasMeRaA01S00EMRO DayCasMeRaA01S00EURO DayCasMeRaA01S00GLOBAL DayCasMeRaA01S00SEARO DayCasMeRaA01S00WPRO ///
-DayCasLoRaA01S00AFRO DayCasLoRaA01S00AMRO DayCasLoRaA01S00AMR1 DayCasLoRaA01S00AMR2 DayCasLoRaA01S00EMRO DayCasLoRaA01S00EURO DayCasLoRaA01S00GLOBAL DayCasLoRaA01S00SEARO DayCasLoRaA01S00WPRO ///
-DayCasUpRaA01S00AFRO DayCasUpRaA01S00AMRO DayCasUpRaA01S00AMR1 DayCasUpRaA01S00AMR2 DayCasUpRaA01S00EMRO DayCasUpRaA01S00EURO DayCasUpRaA01S00GLOBAL DayCasUpRaA01S00SEARO DayCasUpRaA01S00WPRO ///
-DayCfrMeRaA01S00AFRO DayCfrMeRaA01S00AMRO DayCfrMeRaA01S00AMR1 DayCfrMeRaA01S00AMR2 DayCfrMeRaA01S00EMRO DayCfrMeRaA01S00EURO DayCfrMeRaA01S00GLOBAL DayCfrMeRaA01S00SEARO DayCfrMeRaA01S00WPRO ///
-DayCfrLoRaA01S00AFRO DayCfrLoRaA01S00AMRO DayCfrLoRaA01S00AMR1 DayCfrLoRaA01S00AMR2 DayCfrLoRaA01S00EMRO DayCfrLoRaA01S00EURO DayCfrLoRaA01S00GLOBAL DayCfrLoRaA01S00SEARO DayCfrLoRaA01S00WPRO ///
-DayCfrUpRaA01S00AFRO DayCfrUpRaA01S00AMRO DayCfrUpRaA01S00AMR1 DayCfrUpRaA01S00AMR2 DayCfrUpRaA01S00EMRO DayCfrUpRaA01S00EURO DayCfrUpRaA01S00GLOBAL DayCfrUpRaA01S00SEARO DayCfrUpRaA01S00WPRO {
-
-	qui replace `var' = . if date < td(22oct2021)
-
-
-}
-*
 
 
 sort date loc_grand_name
