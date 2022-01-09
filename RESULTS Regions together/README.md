@@ -41,7 +41,7 @@ IHME and IMPE, followed by DELP and SRIV.
 
 (7c) Regions together - [Daily infections, with GLOBAL, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#7c-regions-together---daily-infections-with-global-ihme-2022)
 
-(8) Regions together - [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#8-regions-together---daily-infections-without-global-ihme-impe)
+(8) Regions together - [Daily infections, without GLOBAL, IHME, IMPE, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#8-regions-together---daily-infections-without-global-ihme-impe-all-time)
 
 (9) Regions together - [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#9-regions-together---daily-cases-with-global-delp-sriv)
 
