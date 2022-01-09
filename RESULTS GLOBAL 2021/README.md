@@ -44,7 +44,7 @@ List of graphs:
 
 (12) Global - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#12-global---daily-mobility-3-scenarios-all-time-ihme)
 
-(13) Global - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#13-global---daily-mask-use-3-scenarios-ihme)
+(13) Global - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#13-global---daily-mask-use-3-scenarios-ihme)
 
 (14) Global - [Cumulative vaccinated percent, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#14-global---cumulative-vaccinated-percent-ihme)
 
