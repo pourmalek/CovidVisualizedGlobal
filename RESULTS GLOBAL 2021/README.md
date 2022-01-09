@@ -18,7 +18,7 @@ List of graphs:
 
 (3c) Global - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#3c-global---daily-deaths-3-scenarios-2021-impe)
   
-(4) Global - [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
+(4) Global - [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202021/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
   
 (5) Global - [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%20202/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021)
   
