@@ -45,7 +45,7 @@ List of graphs:
 
 (13) Global - [Daily mask use, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#13-global---daily-mask-use-3-scenarios-ihme)
 
-(14) Global - [Cumulative vaccinated percent, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#14-global---cumulative-vaccinated-percent-ihme)
+(14) Global - [Cumulative vaccinated percent, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#14-global---percent-cumulative-vaccinated-2021-on-ihme)
 
 
 ****
