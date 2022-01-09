@@ -5,27 +5,27 @@
 List of graphs:
 
   
-(1) Global - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#1-global---daily-deaths-reference-scenarios-all-time)
+(1) Global - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#1-global---daily-deaths-reference-scenarios-all-time)
 
-(2) Global - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#2-global---daily-deaths-reference-scenarios-2021)
+(2) Global - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#2-global---daily-deaths-reference-scenarios-2021)
 
-(2b) Global - [Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#2b-global---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
+(2b) Global - [Daily deaths, reference scenarios, with IHME excess deaths, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#2b-global---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
   
-(3) Global - [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3-global---daily-deaths-3-scenarios-2011)
+(3) Global - [Daily deaths, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#3-global---daily-deaths-3-scenarios-2011)
   
-(3b) Global - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3b-global---daily-deaths-3-scenarios-2021-ihme)
+(3b) Global - [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#3b-global---daily-deaths-3-scenarios-2021-ihme)
 
-(3b2) Global - [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3b2-global---daily-deaths-5-scenarios-2021-ihme)
+(3b2) Global - [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#3b2-global---daily-deaths-5-scenarios-2021-ihme)
 
-(3c) Global - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#3c-global---daily-deaths-3-scenarios-2021-impe)
+(3c) Global - [Daily deaths, 3 scenarios, 2021, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#3c-global---daily-deaths-3-scenarios-2021-impe)
   
-(4) Global - [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
+(4) Global - [Daily cases, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#4-global---daily-cases-or-infections-reference-scenarios-all-time)
   
-(5) Global - [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021)
+(5) Global - [Daily cases, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#5-global---daily-cases-or-infections-reference-scenarios-2021)
   
-(6) Global - [Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6-global---daily-cases-or-infections-3-scenarios-2011)
+(6) Global - [Daily cases, 3 scenarios, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6-global---daily-cases-or-infections-3-scenarios-2011)
 
-(6a) Global - [Daily cases or infections, 5 scenarios, IHME 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6a-global---daily-cases-or-infections-5-scenarios-ihme-2021) 
+(6a) Global - [Daily cases or infections, 5 scenarios, IHME 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL%202022/README.md#6a-global---daily-cases-or-infections-5-scenarios-ihme-2021) 
 
 (6b) Global - [Daily cases, 2011](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20GLOBAL/README.md#6b-global---daily-cases-2021)
  
