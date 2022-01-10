@@ -19,19 +19,19 @@ List of graphs:
 
 (4) Americas region Canada and United States - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#4-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-all-time)
 
-(5) Americas region Canada and United States - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#5-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2021-on)
+(5) Americas region Canada and United States - [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#5-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2021-on)
 
-(6) Americas region Canada and United States - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#6-americas-region-canada-and-united-states---daily-cases-or-infections-3-scenarios-2021-on)
+(6) Americas region Canada and United States - [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#6-americas-region-canada-and-united-states---daily-cases-or-infections-3-scenarios-2021-on)
 
-(6b) Americas region Canada and United States - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#6b-americas-region-canada-and-united-states---daily-cases-2021-on)
+(6b) Americas region Canada and United States - [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#6b-americas-region-canada-and-united-states---daily-cases-2021-on)
 
-(6c) Americas region Canada and United States - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6c-americas-region-canada-and-united-states---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+(6c) Americas region Canada and United States - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6c-americas-region-canada-and-united-states---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
 
 (7) Americas region Canada and United States - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#7-americas-region-canada-and-united-states---hospital-related-outcomes-all-time)
 
-(8) Americas region Canada and United States - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#8-americas-region-canada-and-united-states---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
+(8) Americas region Canada and United States - [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#8-americas-region-canada-and-united-states---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
-(9) Americas region Canada and United States - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#9-americas-region-canada-and-united-states---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+(9) Americas region Canada and United States - [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#9-americas-region-canada-and-united-states---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
 
 
