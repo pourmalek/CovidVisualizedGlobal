@@ -94,7 +94,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (2b) Americas region Canada and United States - Daily deaths, reference scenarios, 2021, with IHME excess deaths
+### (2b) Americas region Canada and United States - Daily deaths, reference scenarios, 2021 on, with IHME excess deaths
   
  
   
@@ -103,7 +103,7 @@ List of graphs:
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
-(2b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2012b%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
+(2b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2012b%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/148607180-61fde488-7d19-4960-b796-df096e81e003.png)
 
