@@ -30,7 +30,7 @@ List of graphs:
 
 (7) Americas region without Canada and United States - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#7-americas-region-without-canada-and-united-states---hospital-related-outcomes-all-time)
 
-(8) Americas region without Canada and United States - [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#8-americas-region-canada-and-united-states---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
+(8) Americas region without Canada and United States - [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#8-americas-region-without-canada-and-united-states---hospital-related-outcomes-2021-on-without-ihme-bed-need-and-impe-hospital-demand)
 
 (9) Americas region without Canada and United States - [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#9-americas-region-canada-and-united-states---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
