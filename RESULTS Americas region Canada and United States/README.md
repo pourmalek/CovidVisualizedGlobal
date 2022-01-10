@@ -69,7 +69,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (2) Americas region Canada and United States - Daily deaths, reference scenarios, 2021 on
   
  
   
@@ -94,7 +94,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (2b) Americas region Canada and United States - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
   
@@ -119,7 +119,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (3) Americas region Canada and United States - Daily deaths, 3 scenarios, 2021 on
   
  
   
@@ -143,7 +143,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (3b) Americas region Canada and United States - Daily deaths, 3 scenarios, 2021 on, IHME
   
  
   
@@ -168,7 +168,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (3c) Americas region Canada and United States - Daily deaths, 3 scenarios, 2021 on, IMPE
   
  
   
@@ -194,7 +194,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (4) Americas region Canada and United States - Daily cases or infections, reference scenarios, all time
   
  
   
@@ -221,7 +221,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (5) Americas region Canada and United States - Daily cases or infections, reference scenarios, 2021 on
   
  
   
@@ -248,7 +248,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (6) Americas region Canada and United States - Daily cases or infections, 3 scenarios, 2021 on
   
  
   
@@ -276,7 +276,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (6b) Americas region Canada and United States - Daily cases, 2021 on
   
  
   
@@ -303,7 +303,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (6c) Americas region Canada and United States - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on
   
  
   
@@ -330,7 +330,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (7) Americas region Canada and United States - Hospital-related outcomes, all time
   
  
   
@@ -355,7 +355,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (8) Americas region Canada and United States - Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand
   
  
   
@@ -379,7 +379,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region Canada and United States - Daily deaths, reference scenarios, all time
+### (9) Americas region Canada and United States - Daily deaths estimated to reported, reference scenarios, 2021 on
   
  
   
