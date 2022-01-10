@@ -57,7 +57,7 @@ IHME and IMPE, followed by DELP and SRIV.
 
 (13) Regions together - [Total deaths, with GLOBAL, DELP, SRIV all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#13-regions-together---total-deaths-with-global-delp-sriv-all-time)
 
-(14) Regions together - [Total deaths, without GLOBAL, DELP, SRIV all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#14-regions-together---total-deaths-without-global-delp-sriv)
+(14) Regions together - [Total deaths, without GLOBAL, DELP, SRIV all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#14-regions-together---total-deaths-without-global-delp-sriv-all-time)
   
 (15) Regions together - [Total excess deaths, with GLOBAL, IHME all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#15-regions-together---total-excess-deaths-with-global-ihme)
 
