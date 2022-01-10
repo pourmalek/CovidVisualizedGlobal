@@ -17,7 +17,7 @@ List of graphs:
 
 (3c) Americas region Canada and United States - [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#3c-americas-region-canada-and-united-states---daily-deaths-3-scenarios-2021-on-impe)
 
-(4) Americas region Canada and United States - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#4-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-all-time)
+(4) Americas region Canada and United States - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#4-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-all-time)
 
 (5) Americas region Canada and United States - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#5-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2021)
 
