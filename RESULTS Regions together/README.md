@@ -839,7 +839,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (12) Regions together - Total deaths, without GLOBAL, IHME, IMPE
+### (12) Regions together - Total deaths, without GLOBAL, IHME, IMPE, all time
 
  
   
@@ -886,7 +886,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (13) Regions together - Total deaths, with GLOBAL, DELP, SRIV
+### (13) Regions together - Total deaths, with GLOBAL, DELP, SRIV, all time
 
  
  
@@ -932,7 +932,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (14) Regions together - Total deaths, without GLOBAL, DELP, SRIV
+### (14) Regions together - Total deaths, without GLOBAL, DELP, SRIV, all time
 
  
  
@@ -979,7 +979,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (15) Regions together - Total excess deaths, with GLOBAL, IHME
+### (15) Regions together - Total excess deaths, with GLOBAL, IHME, all time
 
  
   
@@ -1027,7 +1027,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (16) Regions together - Total excess deaths, without GLOBAL, IHME
+### (16) Regions together - Total excess deaths, without GLOBAL, IHME, all time
 
  
  
@@ -1075,7 +1075,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (17) Regions together - Total infections, with GLOBAL, IHME, IMPE
+### (17) Regions together - Total infections, with GLOBAL, IHME, IMPE, all time
 
  
  
@@ -1123,7 +1123,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (18) Regions together - Total infections, without GLOBAL, IHME, IMPE
+### (18) Regions together - Total infections, without GLOBAL, IHME, IMPE, all time
 
  
  
@@ -1172,7 +1172,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (19) Regions together - Total cases, with GLOBAL, DELP, SRIV
+### (19) Regions together - Total cases, with GLOBAL, DELP, SRIV, all time
 
  
   
@@ -1218,7 +1218,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (20) Regions together - Total cases, without GLOBAL, DELP, SRIV
+### (20) Regions together - Total cases, without GLOBAL, DELP, SRIV, all time
 
  
  
