@@ -26,7 +26,7 @@ List of graphs:
 
 (6b) Americas region without Canada and United States - [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#6b-americas-region-without-canada-and-united-states---daily-cases-2021-on)
 
-(6c) Americas region without Canada and United States - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6c-americas-region-canada-and-united-states---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021)
+(6c) Americas region without Canada and United States - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#6c-americas-region-without-canada-and-united-states---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021-on)
 
 (7) Americas region without Canada and United States - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#7-americas-region-canada-and-united-states---hospital-related-outcomes-all-time)
 
