@@ -21,7 +21,6 @@ List of graphs:
 
 (5) Americas region Canada and United States - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#5-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2021)
 
-
 (6) Americas region Canada and United States - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6-americas-region-canada-and-united-states---daily-cases-or-infections-3-scenarios-2021)
 
 (6b) Americas region Canada and United States - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6b-americas-region-canada-and-united-states---daily-cases-2021)
