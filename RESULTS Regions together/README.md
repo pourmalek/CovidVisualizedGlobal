@@ -65,7 +65,7 @@ IHME and IMPE, followed by DELP and SRIV.
 
 (17) Regions together - [Total infections, with GLOBAL, IHME, IMPE all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#17-regions-together---total-infections-with-global-ihme-impe-all-time)
 
-(18) Regions together - [Total infections, without GLOBAL, IHME, IMPE all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#18-regions-together---total-infections-without-global-ihme-impe)
+(18) Regions together - [Total infections, without GLOBAL, IHME, IMPE all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#18-regions-together---total-infections-without-global-ihme-impe-all-time)
 
 (19) Regions together - [Total cases, with GLOBAL, DELP, SRIV all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Regions%20together/README.md#19-regions-together---total-cases-with-global-delp-sriv)
 
