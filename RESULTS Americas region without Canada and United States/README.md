@@ -1,4 +1,8 @@
+### Selected Results - Americas Region without Canada and United States (AMR 2)
+  
+<br/><br/>
 
+List of graphs:
 
 
 
@@ -31,3 +35,21 @@
 
 (9) Americas region without Canada and United States - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#9-americas-region-canada-and-united-states---daily-deaths-estimated-to-reported-reference-scenarios-2021)
 
+
+
+****
+  
+  
+  
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
+### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+  
+ 
+  
+  
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
