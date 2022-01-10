@@ -747,7 +747,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (10) Regions together - Daily cases, without GLOBAL, DELP, SRIV
+### (10) Regions together - Daily cases, without GLOBAL, DELP, SRIV, all time
 
  
  
