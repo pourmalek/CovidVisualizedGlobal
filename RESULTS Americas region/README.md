@@ -93,7 +93,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (2) Americas region - Daily deaths, reference scenarios, 2021
+### (2) Americas region - Daily deaths, reference scenarios, 2021 on
   
  
  
@@ -142,7 +142,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (2b) Americas region - Daily deaths, reference scenarios, 2021, with IHME excess deaths
+### (2b) Americas region - Daily deaths, reference scenarios, 2021 on, with IHME excess deaths
   
  
  
@@ -191,7 +191,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (3) Americas region - Daily deaths, 3 scenarios, 2021
+### (3) Americas region - Daily deaths, 3 scenarios, 2021 on
   
  
  
@@ -241,7 +241,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (3b) Americas region - Daily deaths, 3 scenarios, 2021, IHME
+### (3b) Americas region - Daily deaths, 3 scenarios, 2021 on, IHME
   
  
   
@@ -289,7 +289,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
   
-### (3b2) Americas region - Daily deaths, 5 scenarios, 2021, IHME
+### (3b2) Americas region - Daily deaths, 5 scenarios, 2021 on, IHME
 
 
 
@@ -426,7 +426,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (5) Americas region - Daily cases or infections, reference scenarios, 2021
+### (5) Americas region - Daily cases or infections, reference scenarios, 2021 on
   
  
  
@@ -477,7 +477,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (6) Americas region - Daily cases or infections, 3 scenarios, 2021
+### (6) Americas region - Daily cases or infections, 3 scenarios, 2021 on
   
  
  
@@ -527,7 +527,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (6b) Americas region - Daily cases, 2021
+### (6b) Americas region - Daily cases, 2021 on
   
  
  
@@ -579,7 +579,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (6c) Americas region - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
+### (6c) Americas region - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on
   
  
   
@@ -679,7 +679,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (8) Americas region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
+### (8) Americas region - Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand  
  
   
   
@@ -729,7 +729,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (9) Americas region - Daily deaths estimated to reported, reference scenarios, 2021
+### (9) Americas region - Daily deaths estimated to reported, reference scenarios, 2021 on
   
  
  
