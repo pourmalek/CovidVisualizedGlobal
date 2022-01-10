@@ -7,7 +7,7 @@ List of graphs:
   
 (1) Americas region - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region#1-Americas-region---daily-deaths-reference-scenarios-all-time)
 
-(2) Americas region - [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#2-Americas-region---daily-deaths-reference-scenarios-2021)
+(2) Americas region - [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#2-americas-region---daily-deaths-reference-scenarios-2021-on)
 
 (2b) Americas region - [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#2b-Americas-region---daily-deaths-reference-scenarios-2021-with-ihme-excess-deaths)
 
