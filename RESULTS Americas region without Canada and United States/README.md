@@ -6,7 +6,7 @@ List of graphs:
 
 
 
-(1) Americas region without Canada and United States - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#1-americas-region-without-canada-and-united-states---daily-deaths-reference-scenarios-all-time)
+(1) Americas region without Canada and United States - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#1-americas-region-without-canada-and-united-states---daily-deaths-reference-scenarios-all-time)
 
 (2) Americas region without Canada and United States - [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#2-americas-region-canada-and-united-states---daily-deaths-reference-scenarios-2021)
 
