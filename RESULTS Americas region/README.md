@@ -326,7 +326,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
   
-### (3c) Americas region - Daily deaths, 3 scenarios, 2021, IMPE
+### (3c) Americas region - Daily deaths, 3 scenarios, 2021 on, IMPE
 
 
 
