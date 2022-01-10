@@ -49,6 +49,12 @@ List of graphs:
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2011a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -91,6 +97,12 @@ List of graphs:
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (2) Eastern Mediterranean region [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2012a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
@@ -130,6 +142,12 @@ List of graphs:
  
  
   
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
 *
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
@@ -175,6 +193,12 @@ List of graphs:
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (3) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2014%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202021.pdf)
@@ -217,6 +241,12 @@ List of graphs:
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (3b) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2016%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
@@ -256,6 +286,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (3b2) Eastern Mediterranean region [Daily deaths, 5 scenarios, 2021, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/IHME/graph%20EMRO%202a%202%20COVID-19%20daily%20reported%20deaths%2C%20EMRO%205%20scenarios%2C%20IHME.pdf)
@@ -282,6 +318,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 ### (3c) Eastern Mediterranean region - Daily deaths, 3 scenarios, 2021, IMPE
 
+
+
+
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
 
 
@@ -329,6 +371,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2021%20COVID-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios.pdf)
@@ -369,6 +417,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
 *
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
@@ -414,6 +468,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2024%20COVID-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -454,6 +514,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
 *
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
@@ -498,6 +564,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (6c) Eastern Mediterranean region [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20EMRO%2C%20reference%20scenarios%202021.pdf)
@@ -538,6 +610,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
 *
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
@@ -582,6 +660,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
+*
+
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
 
 (8) Eastern Mediterranean region [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211221/output/merge/graph%20EMRO%2062a%20COVID-19%20hospital-related%20outcomes%2C%20wo%20extremes.pdf)
@@ -622,6 +706,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+
+
 *
 
 **uptake 20211221**: **_DELP 20211222_**, **_IHME 20211221_**, IMPE 20211205, **_SRIV 20211219_**
