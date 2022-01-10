@@ -6,7 +6,7 @@ List of graphs:
 
 
 
-(1) Americas region without Canada and United States - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#1-americas-region-canada-and-united-states-canada-and-united-states---daily-deaths-reference-scenarios-all-time)
+(1) Americas region without Canada and United States - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#1-americas-region-without-canada-and-united-states---daily-deaths-reference-scenarios-all-time)
 
 (2) Americas region without Canada and United States - [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#2-americas-region-canada-and-united-states---daily-deaths-reference-scenarios-2021)
 
@@ -22,7 +22,6 @@ List of graphs:
 
 (5) Americas region without Canada and United States - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#5-americas-region-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2021)
 
-
 (6) Americas region without Canada and United States - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6-americas-region-canada-and-united-states---daily-cases-or-infections-3-scenarios-2021)
 
 (6b) Americas region without Canada and United States - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6b-americas-region-canada-and-united-states---daily-cases-2021)
@@ -34,6 +33,7 @@ List of graphs:
 (8) Americas region without Canada and United States - [Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#8-americas-region-canada-and-united-states---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
 (9) Americas region without Canada and United States - [Daily deaths estimated to reported, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#9-americas-region-canada-and-united-states---daily-deaths-estimated-to-reported-reference-scenarios-2021)
+
 
 
 
