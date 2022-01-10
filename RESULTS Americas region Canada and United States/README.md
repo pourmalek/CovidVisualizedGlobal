@@ -27,7 +27,7 @@ List of graphs:
 
 (6c) Americas region Canada and United States - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#6c-americas-region-canada-and-united-states---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021-on)
 
-(7) Americas region Canada and United States - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#7-americas-region-canada-and-united-states---hospital-related-outcomes-all-time)
+(7) Americas region Canada and United States - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States#7-americas-region-canada-and-united-states---hospital-related-outcomes-all-time)
 
 (8) Americas region Canada and United States - [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#8-americas-region-canada-and-united-states---hospital-related-outcomes-2021-without-ihme-bed-need-and-impe-hospital-demand)
 
