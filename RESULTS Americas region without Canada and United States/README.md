@@ -70,7 +70,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (2) Americas region without Canada and United States - Daily deaths, reference scenarios, 2021 on
   
  
   
@@ -96,7 +96,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (2b) Americas region without Canada and United States - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
   
@@ -105,7 +105,7 @@ List of graphs:
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
-(2b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2021, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2012b%20COVID-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
+(2b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR2%2012b%20COVID-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/148612524-8a9dc8c2-5d1e-48c6-a75b-b5a24bb43113.png)
 
@@ -121,7 +121,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (3) Americas region without Canada and United States - Daily deaths, 3 scenarios, 2021 on
   
  
   
@@ -147,7 +147,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (3b) Americas region without Canada and United States - Daily deaths, 3 scenarios, 2021 on, IHME
   
  
   
@@ -174,7 +174,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (3c) Americas region without Canada and United States - Daily deaths, 3 scenarios, 2021 on, IMPE
   
  
   
@@ -200,7 +200,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (4) Americas region without Canada and United States - Daily cases or infections, reference scenarios, all time
   
  
   
@@ -226,7 +226,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (5) Americas region without Canada and United States - Daily cases or infections, reference scenarios, 2021 on
   
  
   
@@ -255,7 +255,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (6) Americas region without Canada and United States - Daily cases or infections, 3 scenarios, 2021 on
   
  
   
@@ -282,7 +282,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (6b) Americas region without Canada and United States - Daily cases, 2021 on
   
  
   
@@ -307,7 +307,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (6c) Americas region without Canada and United States - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on
   
  
   
@@ -335,7 +335,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (7) Americas region without Canada and United States - Hospital-related outcomes, all time
   
  
   
@@ -362,7 +362,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (8) Americas region without Canada and United States - Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand
   
  
   
@@ -389,7 +389,7 @@ List of graphs:
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (1) Americas region without Canada and United States - Daily deaths, reference scenarios, all time
+### (9) Americas region without Canada and United States - Daily deaths estimated to reported, reference scenarios, 2021 on
   
  
   
