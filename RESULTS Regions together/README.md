@@ -794,7 +794,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (11) Regions together - Total deaths, with GLOBAL, IHME, IMPE
+### (11) Regions together - Total deaths, with GLOBAL, IHME, IMPE, all time
 
  
  
