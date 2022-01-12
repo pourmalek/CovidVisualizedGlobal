@@ -145,16 +145,19 @@ AMRO is devided to AMR1 and AMR2:
 
 (12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149198991-ebad7e5f-d367-4b26-a574-5ae60d95e84f.png)
 
 ****
 
 (13) Global [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%203%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149199089-aa8319ff-d773-4f04-8b59-7bf6a78cebd5.png)
 
 ****
 
 (14) Global [Percent cumulative vaccinated, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20GLOBAL%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149199212-bccb3285-724e-4677-a652-ad2b330437b4.png)
 
 ****
 
