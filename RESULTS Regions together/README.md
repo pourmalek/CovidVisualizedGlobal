@@ -171,6 +171,17 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 *
 
+**uptake 20211217**: **_DELP 20211216_**, IHME 20211119, **_IMPE 20211205_**, **_SRIV 20211217_**
+
+
+
+*
+
+**uptake 20211210**: **_DELP 20211210_**, IHME 2021119, IMPE 20211129, **_SRIV 20211210_**
+
+
+
+*
 
 
 
@@ -423,7 +434,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
+(6) Regions together [Daily excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%201%202%20a1%20COVID-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148589481-8b69e6a5-21dd-4b3a-ad2b-09039a7d106b.png)
 
 *
 
@@ -463,17 +476,114 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
+### (00a) Regions together -Daily cases, with GLOBAL, JOHN
+
+ 
+ 
+ 
+ 
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+(00a) Regions together [Daily cases, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/148588800-f6a60447-f22c-4ca3-860d-15f2c1937597.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
+### (00b) Regions together - Daily cases, without GLOBAL, JOHN
+
+ 
+ 
+ 
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+(00b) Regions together [Daily cases, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/148588876-3359a53f-ade9-4348-8c00-db001f6d95bc.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
+### (00c) Regions together - Daily cases, without GLOBAL, JOHN, Recent
+
+ 
+ 
+ 
+*
+
+**uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
+
+(00c) Regions together [Daily cases, without GLOBAL, JOHN, Recent](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN%20recent.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/148588955-aa7a7d4e-c352-469b-829a-34f1b80ab21e.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
 ### (7) Regions together - Daily infections, with GLOBAL, IHME, IMPE, all time
 
  
  
  
-  
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
+(7) Regions together [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%202a1%20COVID-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/148589060-8f197bb2-5e49-4e4e-9253-365504ce5ace.png)
 
 *
 
