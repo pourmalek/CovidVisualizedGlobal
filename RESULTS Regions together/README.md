@@ -215,9 +215,9 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
-(3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
+(2) Regions together [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%201b1%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/148588256-e32410e3-26e6-48b0-94b3-d1bf62173c61.png)
+![image](https://user-images.githubusercontent.com/30849720/148588143-8abebde8-5ee1-4940-8311-43c5a7d3d050.png)
 
 *
 
