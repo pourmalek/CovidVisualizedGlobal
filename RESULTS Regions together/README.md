@@ -11,7 +11,7 @@ Deaths, followed by excess deaths, infections, and cases.
 
 With Global, followed by without Global. 
 
-IHME and IMPE, followed by DELP and SRIV.  
+JOHN, followed by IHME and IMPE, followed by DELP and SRIV.  
 
 .
 
