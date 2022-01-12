@@ -1,0 +1,3263 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220112/code/IHME/log CovidVisualizedGlobal IHME 1.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 Jan 2022, 07:13:31
+{txt}
+{com}. 
+. ***************************************************************************
+. * This is "do CovidVisualizedGlobal IHME 1.do"
+. 
+. * Project: Combine and visualize international periodically updating 
+. * estimates of COVID-19 at the global level (CovidVisualizedGlobal)
+. * Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
+. * Time (initial): 2021-04-14
+. ***************************************************************************
+. 
+. 
+. * download and prepare estimates files
+. 
+.                                                                                                          ***************************
+. * To change update date, find and replace all, 2022-01-10 (old), with 2022-01-10 (new) <<--       <<<--- * change update date here *
+.                                                                                                          ***************************
+.                                                                                                                                                                                                                  
+. clear 
+{txt}
+{com}.  
+. *****************************
+. 
+. * get IHME estimates
+. 
+. * URLs as of  2022-01-10
+. 
+. /*
+> Data dictionary
+> Data release information sheet
+> Reference scenario 2020
+> Reference scenario 2021
+> 80% mask use scenario 2020
+> 80% mask use scenario 2021
+> Reduced vaccine hesitancy scenario 2020
+> Reduced vaccine hesitancy scenario 2021
+> Severe Omicron scenario 2020
+> Severe Omicron scenario 2021
+> Third vaccine dose scenario 2020
+> Third vaccine dose scenario 2021
+> Checksum (sha-256) 
+> */
+. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_dictionary.csv data_dictionary.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/IHME_COVID_19_Data_Release_Information_Sheet.pdf IHME_COVID_19_Data_Release_Information_Sheet.pdf 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2020.csv data_download_file_reference_2020.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2021.csv data_download_file_reference_2021.csv 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_best_masks_2020.csv data_download_file_best_masks_2020.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_best_masks_2021.csv data_download_file_best_masks_2021.csv 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reduce_hesitancy_2020.csv data_download_file_reduce_hesitancy_2020.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reduce_hesitancy_2021.csv data_download_file_reduce_hesitancy_2021.csv 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_severe_omicron_2020.csv data_download_file_severe_omicron_2020.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_severe_omicron_2021.csv data_download_file_severe_omicron_2021.csv 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_third_dose_2020.csv data_download_file_third_dose_2020.csv 
+{txt}
+{com}. copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_third_dose_2021.csv data_download_file_third_dose_2021.csv 
+{txt}
+{com}. 
+. copy https://ihmecovid19storage.blob.core.windows.net/latest/sha256sums.txt sha256sums.txt 
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. ******************************
+. 
+. * import csv files
+. 
+. 
+. * my designation  variable name  var value   web site https://covid19.healthdata.org/global?view=daily-deaths&tab=trend
+. 
+. * scenario name = version_name = reference = Projection
+. 
+. import delimited using data_download_file_reference_2020.csv, clear varnames(1)
+{res}{text}(60 vars, 124,832 obs)
+
+{com}. save data_download_file_reference_2020.dta, replace
+{txt}file data_download_file_reference_2020.dta saved
+
+{com}. 
+. import delimited using data_download_file_reference_2021.csv, clear varnames(1)
+{res}{text}(60 vars, 182,736 obs)
+
+{com}. save data_download_file_reference_2021.dta, replace
+{txt}file data_download_file_reference_2021.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. * scenario name = version_name = best_masks = Masks
+.         
+. import delimited using data_download_file_best_masks_2020.csv, clear varnames(1)
+{res}{text}(60 vars, 124,832 obs)
+
+{com}. save data_download_file_best_masks_2020.dta, replace
+{txt}file data_download_file_best_masks_2020.dta saved
+
+{com}. 
+. import delimited using data_download_file_best_masks_2021.csv, clear varnames(1)
+{res}{text}(60 vars, 182,736 obs)
+
+{com}. save data_download_file_best_masks_2021.dta, replace
+{txt}file data_download_file_best_masks_2021.dta saved
+
+{com}. 
+. 
+.         
+. * scenario name = version_name = high_severity = Severe Omicron
+.         
+. import delimited using data_download_file_severe_omicron_2020.csv, clear varnames(1)
+{res}{text}(60 vars, 124,832 obs)
+
+{com}. save data_download_file_severe_omicron_2020.dta, replace
+{txt}file data_download_file_severe_omicron_2020.dta saved
+
+{com}. 
+. import delimited using data_download_file_severe_omicron_2021.csv, clear varnames(1)
+{res}{text}(60 vars, 182,736 obs)
+
+{com}. save data_download_file_severe_omicron_2021.dta, replace
+{txt}file data_download_file_severe_omicron_2021.dta saved
+
+{com}. 
+. 
+. 
+. * scenario name = version_name = reduced_hesitancy = Reduced hesitancy
+.         
+. import delimited using data_download_file_reduce_hesitancy_2020.csv, clear varnames(1)
+{res}{text}(60 vars, 124,832 obs)
+
+{com}. save data_download_file_reduce_hesitancy_2020.dta, replace
+{txt}file data_download_file_reduce_hesitancy_2020.dta saved
+
+{com}. 
+. import delimited using data_download_file_reduce_hesitancy_2021.csv, clear varnames(1)
+{res}{text}(60 vars, 182,736 obs)
+
+{com}. save data_download_file_reduce_hesitancy_2021.dta, replace
+{txt}file data_download_file_reduce_hesitancy_2021.dta saved
+
+{com}. 
+. 
+. 
+. * scenario name = version_name = booster = Third dose
+.         
+. import delimited using data_download_file_third_dose_2020.csv, clear varnames(1)
+{res}{text}(60 vars, 124,832 obs)
+
+{com}. save data_download_file_third_dose_2020.dta, replace
+{txt}file data_download_file_third_dose_2020.dta saved
+
+{com}. 
+. import delimited using data_download_file_third_dose_2021.csv, clear varnames(1)
+{res}{text}(60 vars, 182,736 obs)
+
+{com}. save data_download_file_third_dose_2021.dta, replace
+{txt}file data_download_file_third_dose_2021.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. ******************************
+. 
+. * gen scenario dta files
+. 
+. 
+. 
+. * _reference_
+. 
+. use "data_download_file_reference_2020.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean contains string
+{txt}(6,512 real changes made)
+reff_mean: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(16075 missing values generated)
+{res}reff_lower contains string
+{txt}(102 real changes made)
+reff_lower: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12332 missing values generated)
+{res}reff_upper contains string
+{txt}(4 real changes made)
+reff_upper: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(15678 missing values generated)
+{res}infection_fatality contains string
+{txt}(3,724 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(18766 missing values generated)
+{res}infection_detection contains string
+{txt}(1,716 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(11622 missing values generated)
+{res}infection_hospitalization contains string
+{txt}(2,284 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12179 missing values generated)
+{res}{txt}
+{com}. *
+. 
+. save "data_download_file_reference_2020.dta", replace 
+{txt}file data_download_file_reference_2020.dta saved
+
+{com}. 
+. 
+. 
+. 
+. use "data_download_file_reference_2021.dta", clear 
+{txt}
+{com}. 
+. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean is numeric
+reff_lower is numeric
+reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
+{txt}
+{com}. *
+. 
+. save "data_download_file_reference_2021.dta", replace 
+{txt}file data_download_file_reference_2021.dta saved
+
+{com}. 
+. append using "data_download_file_reference_2020.dta"
+{txt}{p 0 7 2}
+(note: variable
+reff_mean was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_lower was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_upper was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
+{com}. 
+. save "data_download_file_reference_2020_21.dta", replace
+{txt}file data_download_file_reference_2020_21.dta saved
+
+{com}. 
+. *
+. 
+. 
+. 
+. * _best_masks_
+. 
+. use "data_download_file_best_masks_2020.dta", clear
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean contains string
+{txt}(6,512 real changes made)
+reff_mean: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(16075 missing values generated)
+{res}reff_lower contains string
+{txt}(102 real changes made)
+reff_lower: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12332 missing values generated)
+{res}reff_upper contains string
+{txt}(4 real changes made)
+reff_upper: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(15678 missing values generated)
+{res}infection_fatality contains string
+{txt}(3,724 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(18766 missing values generated)
+{res}infection_detection contains string
+{txt}(1,716 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(11622 missing values generated)
+{res}infection_hospitalization contains string
+{txt}(2,284 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12179 missing values generated)
+{res}{txt}
+{com}. *
+. 
+. save "data_download_file_best_masks_2020.dta", replace
+{txt}file data_download_file_best_masks_2020.dta saved
+
+{com}. 
+. 
+. 
+. use "data_download_file_best_masks_2021.dta", clear
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean is numeric
+reff_lower is numeric
+reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
+{txt}
+{com}. *
+. 
+. save "data_download_file_best_masks_2021.dta", replace
+{txt}file data_download_file_best_masks_2021.dta saved
+
+{com}. 
+. append using "data_download_file_best_masks_2020.dta"
+{txt}{p 0 7 2}
+(note: variable
+reff_mean was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_lower was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_upper was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
+{com}. 
+. save "data_download_file_best_masks_2020_21.dta", replace
+{txt}file data_download_file_best_masks_2020_21.dta saved
+
+{com}. 
+. *
+. 
+. 
+. 
+. * _severe_omicron_
+. 
+. use "data_download_file_severe_omicron_2020.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean contains string
+{txt}(6,512 real changes made)
+reff_mean: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(16075 missing values generated)
+{res}reff_lower contains string
+{txt}(101 real changes made)
+reff_lower: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12331 missing values generated)
+{res}reff_upper contains string
+{txt}(4 real changes made)
+reff_upper: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(15679 missing values generated)
+{res}infection_fatality contains string
+{txt}(3,706 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(18746 missing values generated)
+{res}infection_detection contains string
+{txt}(1,712 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(11617 missing values generated)
+{res}infection_hospitalization contains string
+{txt}(2,281 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12176 missing values generated)
+{res}{txt}
+{com}. *
+. 
+. save "data_download_file_severe_omicron_2020.dta", replace 
+{txt}file data_download_file_severe_omicron_2020.dta saved
+
+{com}. 
+. 
+. 
+. use "data_download_file_severe_omicron_2021.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean is numeric
+reff_lower is numeric
+reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
+{txt}
+{com}. *
+. 
+. save "data_download_file_severe_omicron_2021.dta", replace 
+{txt}file data_download_file_severe_omicron_2021.dta saved
+
+{com}. 
+. append using "data_download_file_severe_omicron_2020.dta"
+{txt}{p 0 7 2}
+(note: variable
+reff_mean was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_lower was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_upper was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
+{com}. 
+. save "data_download_file_severe_omicron_2020_21.dta", replace
+{txt}file data_download_file_severe_omicron_2020_21.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. * _reduce_hesitancy_
+. 
+. use "data_download_file_reduce_hesitancy_2020.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean contains string
+{txt}(6,512 real changes made)
+reff_mean: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(16075 missing values generated)
+{res}reff_lower contains string
+{txt}(102 real changes made)
+reff_lower: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12332 missing values generated)
+{res}reff_upper contains string
+{txt}(4 real changes made)
+reff_upper: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(15678 missing values generated)
+{res}infection_fatality contains string
+{txt}(3,724 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(18766 missing values generated)
+{res}infection_detection contains string
+{txt}(1,716 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(11622 missing values generated)
+{res}infection_hospitalization contains string
+{txt}(2,284 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12179 missing values generated)
+{res}{txt}
+{com}. *
+. 
+. save "data_download_file_reduce_hesitancy_2020.dta", replace 
+{txt}file data_download_file_reduce_hesitancy_2020.dta saved
+
+{com}. 
+. 
+. 
+. use "data_download_file_reduce_hesitancy_2021.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean is numeric
+reff_lower is numeric
+reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
+{txt}
+{com}. *
+. 
+. save "data_download_file_reduce_hesitancy_2021.dta", replace 
+{txt}file data_download_file_reduce_hesitancy_2021.dta saved
+
+{com}. 
+. append using "data_download_file_reduce_hesitancy_2020.dta"
+{txt}{p 0 7 2}
+(note: variable
+reff_mean was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_lower was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_upper was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
+{com}. 
+. save "data_download_file_reduce_hesitancy_2020_21.dta", replace
+{txt}file data_download_file_reduce_hesitancy_2020_21.dta saved
+
+{com}. 
+. 
+. *
+. 
+. 
+. 
+. 
+. 
+. * _third_dose_
+. 
+. use "data_download_file_third_dose_2020.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean contains string
+{txt}(6,512 real changes made)
+reff_mean: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(16075 missing values generated)
+{res}reff_lower contains string
+{txt}(102 real changes made)
+reff_lower: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12332 missing values generated)
+{res}reff_upper contains string
+{txt}(4 real changes made)
+reff_upper: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(15678 missing values generated)
+{res}infection_fatality contains string
+{txt}(3,724 real changes made)
+infection_fatality: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(18766 missing values generated)
+{res}infection_detection contains string
+{txt}(1,716 real changes made)
+infection_detection: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(11622 missing values generated)
+{res}infection_hospitalization contains string
+{txt}(2,284 real changes made)
+infection_hospitalization: all characters numeric; {res}replaced {txt}as {res}double
+{txt}(12179 missing values generated)
+{res}{txt}
+{com}. *
+. 
+. save "data_download_file_third_dose_2020.dta", replace 
+{txt}file data_download_file_third_dose_2020.dta saved
+
+{com}. 
+. 
+. 
+. use "data_download_file_third_dose_2021.dta", clear 
+{txt}
+{com}. 
+. local varlist reff_mean reff_lower reff_upper infection_fatality infection_detection infection_hospitalization
+{txt}
+{com}. 
+. foreach v of local varlist {c -(}
+{txt}  2{com}.         capture confirm numeric variable `v'
+{txt}  3{com}.     if !_rc {c -(}
+{txt}  4{com}.                 di "`v'" " is numeric"
+{txt}  5{com}.     {c )-}
+{txt}  6{com}.     else {c -(}
+{txt}  7{com}.                 di "`v'" " contains string"
+{txt}  8{com}.                 replace `v' = "." if `v' == "Inf"
+{txt}  9{com}.                 destring `v', replace 
+{txt} 10{com}.     {c )-}
+{txt} 11{com}. {c )-}
+reff_mean is numeric
+reff_lower is numeric
+reff_upper is numeric
+infection_fatality is numeric
+infection_detection is numeric
+infection_hospitalization is numeric
+{txt}
+{com}. *
+. 
+. save "data_download_file_third_dose_2021.dta", replace 
+{txt}file data_download_file_third_dose_2021.dta saved
+
+{com}. 
+. append using "data_download_file_third_dose_2020.dta"
+{txt}{p 0 7 2}
+(note: variable
+reff_mean was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_lower was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+reff_upper was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_fatality was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_detection was 
+float, now double to accommodate using data's values)
+{p_end}
+{p 0 7 2}
+(note: variable
+infection_hospitalization was 
+float, now double to accommodate using data's values)
+{p_end}
+
+{com}. 
+. save "data_download_file_third_dose_2020_21.dta", replace
+{txt}file data_download_file_third_dose_2020_21.dta saved
+
+{com}. 
+. 
+. *
+. 
+. 
+. 
+. ******************************
+. 
+. * read scenario files
+. 
+. 
+. * scenarios
+. 
+. 
+. /*
+> 
+> Descending order of incidence of daily deaths GLOBAL
+> (1) High severity of Omicron
+> (2) Current projection
+> (3) Reduced vaccine hesitancy
+> (4) Third dose
+> (5) 80% mask use
+> 
+> 
+> Previous designation of three scenarios:
+> 
+> * S1 Reference
+> * S2 Best
+> * S3 Worse
+> 
+> *************************************************
+> *************************************************
+> ** Current designation of five scenarios:      **
+> **                                             **
+> ** * S1 Reference [Current projection]         **
+> ** * S2 Best [80% mask use]                    **
+> ** * S3 Worse [High severity of Omicron]       **
+> **                                             **
+> ** * S4 Second best [Third dose]               **
+> ** * S5 Third best [Reduced vaccine hesitancy] **
+> *************************************************
+> *************************************************
+> 
+> */
+. 
+. 
+. 
+. 
+. * data_dictionary
+. 
+. 
+. /*
+> 
+> data_dictionary.csv
+> 
+> * Temp Note: Contents of this data_dictionary.csv of 2021-12-21 have not changed compared to those of 2021-11-19, for version_name | Scenario version (reference, worse, best_masks).
+> 
+> variable                                                                description
+> 
+> version_name                                                    Scenario version (reference, worse, best_masks)
+> 
+> inf_mean                                                                Daily infections (mean estimate)
+> inf_upper                                                               Daily infections (upper 95% confidence interval)
+> inf_lower                                                               Daily infections (lower 95% confidence interval)
+> seir_cumulative_mean                                    Cumulative excess deaths (mean estimate)
+> seir_cumulative_lower                                   Cumulative excess deaths (lower 95% confidence interval)
+> seir_cumulative_upper                                   Cumulative excess deaths (upper 95% confidence interval)
+> inf_cuml_mean                                                   Cumulative infections (mean estimate)
+> inf_cuml_lower                                                  Cumulative infections (lower 95% confidence interval)
+> inf_cuml_upper                                                  Cumulative infections (upper 95% confidence interval)
+> seir_daily_mean                                                 Daily excess deaths (mean estimate)
+> seir_daily_lower                                                Daily excess deaths (lower 95% confidence interval)
+> seir_daily_upper                                                Daily excess deaths upper 95% confidence interval)
+> seir_daily_unscaled_mean                                Daily reported deaths (mean estimate)
+> seir_daily_unscaled_lower                               Daily reported deaths (lower 95% confidence interval)
+> seir_daily_unscaled_upper                               Daily reported deaths upper 95% confidence interval)
+> seir_cumulative_unscaled_mean                   Cumulative reported deaths (mean estimate)
+> seir_cumulative_unscaled_lower                  Cumulative reported deaths (lower 95% confidence interval)
+> seir_cumulative_unscaled_upper                  Cumulative reported deaths (upper 95% confidence interval)
+> 
+> reff_mean                                                               R effective (mean estimate)
+> reff_lower                                                              R effective (lower 95% confidence interval)
+> reff_upper                                                              R effective (upper 95% confidence interval)
+> 
+> 
+> cumulative_cases                                                Cumulative cases (raw data)
+> cumulative_deaths                                               Cumulative deaths (raw data with excess mortality scalar applied)
+> cumulative_hospitalizations                             Cumulative hospitalizations (raw data)
+> daily_deaths                                                    Daily deaths (raw data with excess mortality scalar applied)
+> daily_infections                                                Daily infections (raw data)
+> cumulative_deaths_unscaled                              Cumulative deaths (raw data without excess mortality scalar applied)
+> daily_deaths_unscaled                                   Daily deaths (raw data without excess mortality scalar applied)
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> infection_hospitalization                               Infection hospitalization ratio
+> 
+> 
+> 
+> IDENTICAL ACROSS SCENARIOS:
+> 
+> date                                                                    Date of projection
+> 
+> location_name                                                   Location name
+> location_id                                                             Location ID code
+> 
+> population                                                              Population size
+> mobility_mean                                                   Percent change in mobility from baseline (mean)
+> mobility_obs                                                    Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)
+> testing_mean                                                    Tests per 100,000 (mean estimate)
+> testing_lower                                                   Tests per 100,000 (lower 95% confidence interval)
+> testing_upper                                                   Tests per 100,000 (upper 95% confidence interval)
+> testing_obs                                                             Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)
+> pneumonia_mean                                                  Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location
+> pneumonia_obs                                                   Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)
+> mask_use_mean                                                   Percent of population reporting always wearing a mask when leaving home
+> mask_use_obs                                                    Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)
+> cumulative_all_vaccinated                               Initially vaccinated (one dose of two doses)
+> cumulative_all_effectively_vaccinated   Effectively vaccinated (one and two dose with efficacy)
+> cumulative_all_fully_vaccinated                 Fully vaccinated (one of one and†two†of two doses)
+> hospital_beds_mean                                              Daily COVID-19 hospital beds needed (mean estimate)
+> hospital_beds_upper                                             Daily COVID-19 hospital beds needed (upper 95% confidence interval)
+> hospital_beds_lower                                             Daily COVID-19 hospital beds needed (lower 95% confidence interval)
+> icu_beds_mean                                                   Daily COVID-19 ICU beds needed (mean estimate)
+> icu_beds_upper                                                  Daily COVID-19 ICU beds needed (upper 95% confidence interval)
+> icu_beds_lower                                                  Daily COVID-19 ICU beds needed (lower 95% confidence interval)
+> admis_mean                                                              Daily COVID-19 hospital admissions (mean estimate)
+> admis_upper                                                             Daily COVID-19 hospital admissions (mean estimate)
+> admis_lower                                                             Daily COVID-19 hospital admissions (mean estimate)
+> all_bed_capacity                                                Total number of beds that exist at a location
+> icu_bed_capacity                                                Total number of ICU beds that exist at a location
+> 
+> 
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> infection_hospitalization                               Infection hospitalization ratio
+> 
+> */
+. 
+. 
+. 
+. 
+. **********************
+. 
+. * S1 Reference
+. 
+. use "data_download_file_reference_2020_21.dta", clear
+{txt}
+{com}. 
+. rename date date_original
+{res}{txt}
+{com}. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21949{txt},{res}22766{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}04feb2020{txt},{res}01may2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}818{col 51}{txt}missing .:  {res}0{txt}/{res}307,568
+
+{txt}{col 19}mean:{res}{col 26} 22357.5{txt} = {res}18mar2021{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 236.136
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22030{col 37}   22153{col 47} 22357.5{col 57}   22562{col 67}   22685
+{col 26}25apr2020{col 36}26aug2020{col 46}18mar2021{col 56}09oct2021{col 66}09feb2022
+{txt}
+{com}. drop year month day date2
+{txt}
+{com}. 
+. 
+. 
+. * rename variables
+. 
+. * Total Reported Deaths smoothed
+. rename seir_cumulative_unscaled_mean  TotDeaMeSmA02S01
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_lower TotDeaLoSmA02S01
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_upper TotDeaUpSmA02S01
+{res}{txt}
+{com}. label var TotDeaMeSmA02S01 "Total Reported Deaths Mean smoothed IHME S1" // Cumulative reported deaths (mean estimate)
+{txt}
+{com}. label var TotDeaLoSmA02S01 "Total Reported Deaths Lower smoothed IHME S1" // Cumulative reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeaUpSmA02S01 "Total Reported Deaths Upper smoothed IHME S1" // Cumulative reported deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Total Excess Deaths smoothed
+. rename seir_cumulative_mean  TotDeXMeSmA02S01
+{res}{txt}
+{com}. rename seir_cumulative_lower TotDeXLoSmA02S01
+{res}{txt}
+{com}. rename seir_cumulative_upper TotDeXUpSmA02S01
+{res}{txt}
+{com}. label var TotDeXMeSmA02S01 "Total Excess Deaths Mean smoothed IHME S1" // Cumulative excess deaths (mean estimate)
+{txt}
+{com}. label var TotDeXLoSmA02S01 "Total Excess Deaths Lower smoothed IHME S1" // Cumulative excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeXUpSmA02S01 "Total Excess Deaths Upper smoothed IHME S1" // Cumulative excess deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily Reported Deaths smoothed
+. rename seir_daily_unscaled_mean  DayDeaMeSmA02S01
+{res}{txt}
+{com}. rename seir_daily_unscaled_lower DayDeaLoSmA02S01
+{res}{txt}
+{com}. rename seir_daily_unscaled_upper DayDeaUpSmA02S01
+{res}{txt}
+{com}. label var DayDeaMeSmA02S01 "Daily Reported Deaths Mean smoothed IHME S1" // Daily reported deaths (mean estimate)
+{txt}
+{com}. label var DayDeaLoSmA02S01 "Daily Reported Deaths Lower smoothed IHME S1" // Daily reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeaUpSmA02S01 "Daily Reported Deaths Upper smoothed IHME S1" // Daily reported deaths upper 95% confidence interval)
+{txt}
+{com}.         
+. * Daily Excess Deaths smoothed
+. rename seir_daily_mean  DayDeXMeSmA02S01
+{res}{txt}
+{com}. rename seir_daily_lower DayDeXLoSmA02S01
+{res}{txt}
+{com}. rename seir_daily_upper DayDeXUpSmA02S01
+{res}{txt}
+{com}. label var DayDeXMeSmA02S01 "Daily Excess Deaths Mean smoothed IHME S1" // Daily excess deaths (mean estimate)
+{txt}
+{com}. label var DayDeXLoSmA02S01 "Daily Excess Deaths Lower smoothed IHME S1" // Daily excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeXUpSmA02S01 "Daily Excess Deaths Upper smoothed IHME S1" // Daily excess deaths upper 95% confidence interval)
+{txt}
+{com}.                 
+. * Total infections smoothed
+. rename inf_cuml_mean  TotINFMeSmA02S01
+{res}{txt}
+{com}. rename inf_cuml_lower TotINFLoSmA02S01
+{res}{txt}
+{com}. rename inf_cuml_upper TotINFUpSmA02S01
+{res}{txt}
+{com}. label var TotINFMeSmA02S01 "Total infections Mean smoothed IHME S1" // Cumulative infections (mean estimate)
+{txt}
+{com}. label var TotINFLoSmA02S01 "Total infections Lower smoothed IHME S1" // Cumulative infections (lower 95% confidence interval)
+{txt}
+{com}. label var TotINFUpSmA02S01 "Total infections Upper smoothed IHME S1" // Cumulative infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily infections smoothed
+. rename inf_mean  DayINFMeSmA02S01 // previously est_infections_mean
+{res}{txt}
+{com}. rename inf_lower DayINFLoSmA02S01 // previously est_infections_lower
+{res}{txt}
+{com}. rename inf_upper DayINFUpSmA02S01 // previously est_infections_upper
+{res}{txt}
+{com}. label var DayINFMeSmA02S01 "Daily infections Mean smoothed IHME S1" // Daily infections (mean estimate)
+{txt}
+{com}. label var DayINFLoSmA02S01 "Daily infections Lower smoothed IHME S1" // Daily infections (lower 95% confidence interval)
+{txt}
+{com}. label var DayINFUpSmA02S01 "Daily infections Upper smoothed IHME S1" // Daily infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * other variables 
+. 
+. rename reff_mean reff_mean_A02S01
+{res}{txt}
+{com}. rename reff_lower reff_lower_A02S01
+{res}{txt}
+{com}. rename reff_upper reff_upper_A02S01
+{res}{txt}
+{com}. label var reff_mean "IHME R effective (mean estimate) S1"
+{txt}
+{com}. label var reff_lower "IHME R effective (lower 95% confidence interval) S1"
+{txt}
+{com}. label var reff_upper "IHME R effective (upper 95% confidence interval) S1"
+{txt}
+{com}. 
+. rename cumulative_cases cumulative_cases_A02S01
+{res}{txt}
+{com}. rename cumulative_deaths cumulative_deaths_A02S01
+{res}{txt}
+{com}. rename cumulative_hospitalizations cumulative_hosp_A02S01
+{res}{txt}
+{com}. rename daily_deaths daily_deaths_A02S01
+{res}{txt}
+{com}. rename daily_infections daily_infections_A02S01
+{res}{txt}
+{com}. rename cumulative_deaths_unscaled cumul_deaths_unscaled_A02S01
+{res}{txt}
+{com}. rename daily_deaths_unscaled dai_dea_unscaled_A02S01
+{res}{txt}
+{com}. label var cumulative_cases_A02S01 "IHME Cumulative cases (raw data) S1"
+{txt}
+{com}. label var cumulative_deaths_A02S01 "IHME Cumulative deaths (raw data with excess mortality scalar applied) S1"
+{txt}
+{com}. label var cumulative_hosp_A02S01 "IHME Cumulative hospitalizations (raw data) S1"
+{txt}
+{com}. label var daily_deaths_A02S01 "IHME Daily deaths (raw data with excess mortality scalar applied) S1"
+{txt}
+{com}. label var daily_infections_A02S01 "IHME Daily infections (raw data)"
+{txt}
+{com}. label var cumul_deaths_unscaled_A02S01 "IHME umulative deaths (raw data without excess mortality scalar applied) S1"
+{txt}
+{com}. label var dai_dea_unscaled_A02S01 "IHME Daily deaths (raw data without excess mortality scalar applied) S1"
+{txt}
+{com}. 
+. rename daily_infections dai_inf_A02S01
+{res}{txt}
+{com}. label var dai_inf_A02S01 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * IDENTICAL ACROSS SCENARIOS:
+. 
+. label var population "IHME Population size"
+{txt}
+{com}. label var mobility_obs "IHME Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var testing_mean "IHME Tests per 100,000 (mean estimate)"
+{txt}
+{com}. label var testing_lower "IHME Tests per 100,000 (lower 95% confidence interval)"
+{txt}
+{com}. label var testing_upper "IHME Tests per 100,000 (upper 95% confidence interval)"
+{txt}
+{com}. label var testing_obs "IHME Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_mean "IHME Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_obs "IHME Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var mask_use_obs "IHME Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var cumulative_all_vaccinated     "IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. label var cumulative_all_effectively_vacci "IHME Effectively vaccinated (one and two dose with efficacy)" // cumulative_all_effectively_vaccinated
+{txt}
+{com}. label var cumulative_all_fully_vaccinated "IHME Fully vaccinated (one of one and†two†of two doses)"
+{txt}
+{com}. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. /*
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> infection_hospitalization                               Infection hospitalization ratio
+> */
+. 
+. 
+. rename mobility_mean mobility_mean_A02S01
+{res}{txt}
+{com}. rename mask_use_mean mask_use_mean_A02S01
+{res}{txt}
+{com}. label var mobility_mean_A02S01 "IHME Percent change in mobility from baseline (mean)  S1"
+{txt}
+{com}. label var mask_use_mean_A02S01 "IHME Percent of population reporting always wearing a mask when leaving home  S1"
+{txt}
+{com}. 
+. rename hospital_beds_mean hospital_beds_mean_A02S01
+{res}{txt}
+{com}. rename hospital_beds_upper hospital_beds_upper_A02S01
+{res}{txt}
+{com}. rename hospital_beds_lower hospital_beds_lower_A02S01
+{res}{txt}
+{com}. rename icu_beds_mean icu_beds_mean_A02S01
+{res}{txt}
+{com}. rename icu_beds_upper icu_beds_upper_A02S01
+{res}{txt}
+{com}. rename icu_beds_lower icu_beds_lower_A02S01
+{res}{txt}
+{com}. rename admis_mean admis_mean_A02S01
+{res}{txt}
+{com}. rename admis_upper admis_upper_A02S01
+{res}{txt}
+{com}. rename admis_lower admis_lower_A02S01
+{res}{txt}
+{com}. label var hospital_beds_mean_A02S01 "IHME Daily COVID-19 hospital beds needed (mean estimate) S1"
+{txt}
+{com}. label var hospital_beds_upper_A02S01 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S1"
+{txt}
+{com}. label var hospital_beds_lower_A02S01 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S1"
+{txt}
+{com}. label var icu_beds_mean_A02S01  "IHME Daily COVID-19 ICU beds needed (mean estimate) S1"
+{txt}
+{com}. label var icu_beds_upper_A02S01 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S1"
+{txt}
+{com}. label var icu_beds_lower_A02S01 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S1"
+{txt}
+{com}. label var admis_mean_A02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. label var admis_upper_A02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. label var admis_lower_A02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. 
+. 
+. rename infection_fatality infection_fatality_A02S01
+{res}{txt}
+{com}. rename infection_detection infection_detection_A02S01
+{res}{txt}
+{com}. rename infection_hospitalization infection_hospitalization_A02S01
+{res}{txt}
+{com}. label var infection_fatality_A02S01 "IHME Infection fatality ratio S1"
+{txt}
+{com}. label var infection_detection_A02S01 "IHME Infection detection ratio S1"
+{txt}
+{com}. label var infection_hospitalization_A02S01 "IHME Infection hospitalization ratio S1"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. ***********************
+. * rename convention  
+. 
+. /*
+> 
+> allbed          Bed     covid beds needed by day 
+> icubed          Icu     ICU covid beds needed by day
+> invven          Ven     invasive ventilation needed by day
+> admis           Adm     hospital admissions by day
+> newicu          Icn             number of new people going to the ICU by day
+> bedover         Beo             [covid all beds needed] - ([total bed capacity] - [average all bed usage]) (* has been retired by IHME)
+> icuover         Ico             [covid ICU beds needed] - ([total ICU capacity] - [average ICU bed usage]) (* has been retired by IHME)
+> 
+> total_tests             Tes     tests
+> 
+> seroprev_mean   Ser seroprevalence 
+> 
+> */
+. 
+. *
+. 
+. /*
+> 
+> no more allbed_* , hospital_beds_* instead 
+> 
+> rename allbed_mean              DayBedMeSmA02S01
+> rename allbed_lower             DayBedLoSmA02S01
+> rename allbed_upper             DayBedUpSmA02S01
+> 
+> label var DayBedMeSmA02S01 "Daily Beds needed Mean IHME S1"
+> label var DayBedLoSmA02S01 "Daily Beds needed Lower IHME S1"
+> label var DayBedUpSmA02S01 "Daily Beds needed Upper IHME S1"
+> */
+. 
+. 
+. rename hospital_beds_mean_A02S01                DayBedMeSmA02S01
+{res}{txt}
+{com}. rename hospital_beds_upper_A02S01               DayBedLoSmA02S01
+{res}{txt}
+{com}. rename hospital_beds_lower_A02S01               DayBedUpSmA02S01
+{res}{txt}
+{com}. 
+. label var DayBedMeSmA02S01 "IHME Daily COVID-19 hospital beds needed (mean estimate) S1"
+{txt}
+{com}. label var DayBedLoSmA02S01 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S1"
+{txt}
+{com}. label var DayBedUpSmA02S01 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S1"
+{txt}
+{com}. 
+. *
+. 
+. rename icu_beds_mean_A02S01                     DayIcuMeSmA02S01
+{res}{txt}
+{com}. rename icu_beds_lower_A02S01            DayIcuLoSmA02S01
+{res}{txt}
+{com}. rename icu_beds_upper_A02S01            DayIcuUpSmA02S01
+{res}{txt}
+{com}. 
+. label var DayIcuMeSmA02S01"IHME Daily COVID-19 ICU beds needed (mean estimate) S1"
+{txt}
+{com}. label var DayIcuLoSmA02S01 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S1"
+{txt}
+{com}. label var DayIcuUpSmA02S01 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S1"
+{txt}
+{com}. 
+. 
+. /*
+> 
+> no more invven_*
+> 
+> rename invven_mean              DayVenMeSmA02S01
+> rename invven_lower             DayVenLoSmA02S01
+> rename invven_upper             DayVenUpSmA02S01
+> 
+> label var DayVenMeSmA02S01 "Daily invasive Ventilation needed Mean IHME S1"
+> label var DayVenLoSmA02S01 "Daily invasive Ventilation needed Lower IHME S1"
+> label var DayVenUpSmA02S01 "Daily invasive Ventilation needed Upper IHME S1"
+> */
+. 
+. 
+. rename admis_mean_A02S01                DayAdmMeSmA02S01
+{res}{txt}
+{com}. rename admis_lower_A02S01               DayAdmLoSmA02S01
+{res}{txt}
+{com}. rename admis_upper_A02S01               DayAdmUpSmA02S01
+{res}{txt}
+{com}. 
+. label var DayAdmMeSmA02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. label var DayAdmLoSmA02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. label var DayAdmUpSmA02S01 "IHME Daily COVID-19 hospital admissions (mean estimate) S1"
+{txt}
+{com}. 
+. 
+. /*
+> 
+> no more newicu_*
+> 
+> rename newicu_mean              DayIcnMeSmA02S01
+> rename newicu_lower             DayIcnLoSmA02S01
+> rename newicu_upper             DayIcnUpSmA02S01
+> 
+> label var DayIcnMeSmA02S01 "Daily new people going to ICU Mean IHME S1"
+> label var DayIcnLoSmA02S01 "Daily new people going to ICU Lower IHME S1"
+> label var DayIcnUpSmA02S01 "Daily new people going to ICU Upper IHME S1"
+> 
+> */
+. 
+. 
+. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. rename all_bed_capacity DayBEDMeSmA02
+{res}{txt}
+{com}. label var DayBEDMeSmA02 "IHME Total number of beds that exist at a location"
+{txt}
+{com}. 
+. rename icu_bed_capacity DayICUMeSmA02
+{res}{txt}
+{com}. label var DayICUMeSmA02 "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. /* using IHME's seroprev_mean in covir2 codes is retired, 
+> after a number of on-and-offs of existence of this variable in released estimates files. 
+> 
+> rename seroprev_mean            TotSerMeSmA02S01
+> rename seroprev_upper           TotSerLoSmA02S01
+> rename seroprev_lower           TotSerUpSmA02S01
+> 
+> label var TotSerMeSmA02S01 "Total seroprevalence Mean IHME S1"
+> label var TotSerLoSmA02S01 "Total seroprevalence Lower IHME S1"
+> label var TotSerUpSmA02S01 "Total seroprevalence Upper IHME S1"
+> */
+. 
+. 
+. order date location_name 
+{txt}
+{com}. 
+. sort date location_name 
+{txt}
+{com}. 
+. drop date_original version_name
+{txt}
+{com}. 
+. save "Reference.dta", replace
+{txt}file Reference.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. **********************
+. 
+. * S2 Best
+. 
+. use "data_download_file_best_masks_2020_21.dta", clear
+{txt}
+{com}. 
+. 
+. rename date date_original
+{res}{txt}
+{com}. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21949{txt},{res}22766{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}04feb2020{txt},{res}01may2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}818{col 51}{txt}missing .:  {res}0{txt}/{res}307,568
+
+{txt}{col 19}mean:{res}{col 26} 22357.5{txt} = {res}18mar2021{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 236.136
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22030{col 37}   22153{col 47} 22357.5{col 57}   22562{col 67}   22685
+{col 26}25apr2020{col 36}26aug2020{col 46}18mar2021{col 56}09oct2021{col 66}09feb2022
+{txt}
+{com}. drop year month day date2
+{txt}
+{com}. 
+. 
+. 
+. * rename variables
+. 
+. * Total Reported Deaths smoothed
+. rename seir_cumulative_unscaled_mean  TotDeaMeSmA02S02
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_lower TotDeaLoSmA02S02
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_upper TotDeaUpSmA02S02
+{res}{txt}
+{com}. label var TotDeaMeSmA02S02 "Total Reported Deaths Mean smoothed IHME S2" // Cumulative reported deaths (mean estimate)
+{txt}
+{com}. label var TotDeaLoSmA02S02 "Total Reported Deaths Lower smoothed IHME S2" // Cumulative reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeaUpSmA02S02 "Total Reported Deaths Upper smoothed IHME S2" // Cumulative reported deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Total Excess Deaths smoothed
+. rename seir_cumulative_mean  TotDeXMeSmA02S02
+{res}{txt}
+{com}. rename seir_cumulative_lower TotDeXLoSmA02S02
+{res}{txt}
+{com}. rename seir_cumulative_upper TotDeXUpSmA02S02
+{res}{txt}
+{com}. label var TotDeXMeSmA02S02 "Total Excess Deaths Mean smoothed IHME S2" // Cumulative excess deaths (mean estimate)
+{txt}
+{com}. label var TotDeXLoSmA02S02 "Total Excess Deaths Lower smoothed IHME S2" // Cumulative excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeXUpSmA02S02 "Total Excess Deaths Upper smoothed IHME S2" // Cumulative excess deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily Reported Deaths smoothed
+. rename seir_daily_unscaled_mean  DayDeaMeSmA02S02
+{res}{txt}
+{com}. rename seir_daily_unscaled_lower DayDeaLoSmA02S02
+{res}{txt}
+{com}. rename seir_daily_unscaled_upper DayDeaUpSmA02S02
+{res}{txt}
+{com}. label var DayDeaMeSmA02S02 "Daily Reported Deaths Mean smoothed IHME S2" // Daily reported deaths (mean estimate)
+{txt}
+{com}. label var DayDeaLoSmA02S02 "Daily Reported Deaths Lower smoothed IHME S2" // Daily reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeaUpSmA02S02 "Daily Reported Deaths Upper smoothed IHME S2" // Daily reported deaths upper 95% confidence interval)
+{txt}
+{com}.         
+. * Daily Excess Deaths smoothed
+. rename seir_daily_mean  DayDeXMeSmA02S02
+{res}{txt}
+{com}. rename seir_daily_lower DayDeXLoSmA02S02
+{res}{txt}
+{com}. rename seir_daily_upper DayDeXUpSmA02S02
+{res}{txt}
+{com}. label var DayDeXMeSmA02S02 "Daily Excess Deaths Mean smoothed IHME S2" // Daily excess deaths (mean estimate)
+{txt}
+{com}. label var DayDeXLoSmA02S02 "Daily Excess Deaths Lower smoothed IHME S2" // Daily excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeXUpSmA02S02 "Daily Excess Deaths Upper smoothed IHME S2" // Daily excess deaths upper 95% confidence interval)
+{txt}
+{com}.                 
+. * Total infections smoothed
+. rename inf_cuml_mean  TotINFMeSmA02S02
+{res}{txt}
+{com}. rename inf_cuml_lower TotINFLoSmA02S02
+{res}{txt}
+{com}. rename inf_cuml_upper TotINFUpSmA02S02
+{res}{txt}
+{com}. label var TotINFMeSmA02S02 "Total infections Mean smoothed IHME S2" // Cumulative infections (mean estimate)
+{txt}
+{com}. label var TotINFLoSmA02S02 "Total infections Lower smoothed IHME S2" // Cumulative infections (lower 95% confidence interval)
+{txt}
+{com}. label var TotINFUpSmA02S02 "Total infections Upper smoothed IHME S2" // Cumulative infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily infections smoothed
+. rename inf_mean  DayINFMeSmA02S02 // previously est_infections_mean
+{res}{txt}
+{com}. rename inf_lower DayINFLoSmA02S02 // previously est_infections_lower
+{res}{txt}
+{com}. rename inf_upper DayINFUpSmA02S02 // previously est_infections_upper
+{res}{txt}
+{com}. label var DayINFMeSmA02S02 "Daily infections Mean smoothed IHME S2" // Daily infections (mean estimate)
+{txt}
+{com}. label var DayINFLoSmA02S02 "Daily infections Lower smoothed IHME S2" // Daily infections (lower 95% confidence interval)
+{txt}
+{com}. label var DayINFUpSmA02S02 "Daily infections Upper smoothed IHME S2" // Daily infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * other variables 
+. 
+. rename reff_mean reff_mean_A02S02
+{res}{txt}
+{com}. rename reff_lower reff_lower_A02S02
+{res}{txt}
+{com}. rename reff_upper reff_upper_A02S02
+{res}{txt}
+{com}. label var reff_mean "IHME R effective (mean estimate) S2"
+{txt}
+{com}. label var reff_lower "IHME R effective (lower 95% confidence interval) S2"
+{txt}
+{com}. label var reff_upper "IHME R effective (upper 95% confidence interval) S2"
+{txt}
+{com}. 
+. rename cumulative_cases cumulative_cases_A02S02
+{res}{txt}
+{com}. rename cumulative_deaths cumulative_deaths_A02S02
+{res}{txt}
+{com}. rename cumulative_hospitalizations cumulative_hosp_A02S02
+{res}{txt}
+{com}. rename daily_deaths daily_deaths_A02S02
+{res}{txt}
+{com}. rename daily_infections daily_infections_A02S02
+{res}{txt}
+{com}. rename cumulative_deaths_unscaled cumul_deaths_unscaled_A02S02
+{res}{txt}
+{com}. rename daily_deaths_unscaled dai_dea_unscaled_A02S02
+{res}{txt}
+{com}. label var cumulative_cases_A02S02 "IHME Cumulative cases (raw data) S2"
+{txt}
+{com}. label var cumulative_deaths_A02S02 "IHME Cumulative deaths (raw data with excess mortality scalar applied) S2"
+{txt}
+{com}. label var cumulative_hosp_A02S02 "IHME Cumulative hospitalizations (raw data) S2"
+{txt}
+{com}. label var daily_deaths_A02S02 "IHME Daily deaths (raw data with excess mortality scalar applied) S2"
+{txt}
+{com}. label var daily_infections_A02S02 "IHME Daily infections (raw data)"
+{txt}
+{com}. label var cumul_deaths_unscaled_A02S02 "IHME umulative deaths (raw data without excess mortality scalar applied) S2"
+{txt}
+{com}. label var dai_dea_unscaled_A02S02 "IHME Daily deaths (raw data without excess mortality scalar applied) S2"
+{txt}
+{com}. 
+. rename daily_infections dai_inf_A02S02
+{res}{txt}
+{com}. label var dai_inf_A02S02 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * IDENTICAL ACROSS SCENARIOS:
+. 
+. label var population "IHME Population size"
+{txt}
+{com}. label var mobility_obs "IHME Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var testing_mean "IHME Tests per 100,000 (mean estimate)"
+{txt}
+{com}. label var testing_lower "IHME Tests per 100,000 (lower 95% confidence interval)"
+{txt}
+{com}. label var testing_upper "IHME Tests per 100,000 (upper 95% confidence interval)"
+{txt}
+{com}. label var testing_obs "IHME Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_mean "IHME Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_obs "IHME Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var mask_use_obs "IHME Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var cumulative_all_vaccinated     "IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. label var cumulative_all_effectively_vacci "IHME Effectively vaccinated (one and two dose with efficacy)" // cumulative_all_effectively_vaccinated
+{txt}
+{com}. label var cumulative_all_fully_vaccinated "IHME Fully vaccinated (one of one and†two†of two doses)"
+{txt}
+{com}. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. /*
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> infection_hospitalization                               Infection hospitalization ratio
+> */
+. 
+. 
+. rename mobility_mean mobility_mean_A02S02
+{res}{txt}
+{com}. rename mask_use_mean mask_use_mean_A02S02
+{res}{txt}
+{com}. label var mobility_mean_A02S02 "IHME Percent change in mobility from baseline (mean) S2"
+{txt}
+{com}. label var mask_use_mean_A02S02 "IHME Percent of population reporting always wearing a mask when leaving home S2"
+{txt}
+{com}. 
+. rename hospital_beds_mean hospital_beds_mean_A02S02
+{res}{txt}
+{com}. rename hospital_beds_upper hospital_beds_upper_A02S02
+{res}{txt}
+{com}. rename hospital_beds_lower hospital_beds_lower_A02S02
+{res}{txt}
+{com}. rename icu_beds_mean icu_beds_mean_A02S02
+{res}{txt}
+{com}. rename icu_beds_upper icu_beds_upper_A02S02
+{res}{txt}
+{com}. rename icu_beds_lower icu_beds_lower_A02S02
+{res}{txt}
+{com}. rename admis_mean admis_mean_A02S02
+{res}{txt}
+{com}. rename admis_upper admis_upper_A02S02
+{res}{txt}
+{com}. rename admis_lower admis_lower_A02S02
+{res}{txt}
+{com}. label var hospital_beds_mean_A02S02 "IHME Daily COVID-19 hospital beds needed (mean estimate) S2"
+{txt}
+{com}. label var hospital_beds_upper_A02S02 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S2"
+{txt}
+{com}. label var hospital_beds_lower_A02S02 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S2"
+{txt}
+{com}. label var icu_beds_mean_A02S02  "IHME Daily COVID-19 ICU beds needed (mean estimate) S2"
+{txt}
+{com}. label var icu_beds_upper_A02S02 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S2"
+{txt}
+{com}. label var icu_beds_lower_A02S02 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S2"
+{txt}
+{com}. label var admis_mean_A02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. label var admis_upper_A02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. label var admis_lower_A02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. 
+. 
+. rename infection_fatality infection_fatality_A02S02
+{res}{txt}
+{com}. rename infection_detection infection_detection_A02S02
+{res}{txt}
+{com}. rename infection_hospitalization infection_hospitalization_A02S02
+{res}{txt}
+{com}. label var infection_fatality_A02S02 "IHME Infection fatality ratio S2"
+{txt}
+{com}. label var infection_detection_A02S02 "IHME Infection detection ratio S2"
+{txt}
+{com}. label var infection_hospitalization_A02S02 "IHME Infection hospitalization ratio S2"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. *
+. 
+. rename hospital_beds_mean_A02S02                DayBedMeSmA02S02
+{res}{txt}
+{com}. rename hospital_beds_upper_A02S02               DayBedLoSmA02S02
+{res}{txt}
+{com}. rename hospital_beds_lower_A02S02               DayBedUpSmA02S02
+{res}{txt}
+{com}. 
+. label var DayBedMeSmA02S02 "IHME Daily COVID-19 hospital beds needed (mean estimate) S2"
+{txt}
+{com}. label var DayBedLoSmA02S02 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S2"
+{txt}
+{com}. label var DayBedUpSmA02S02 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S2"
+{txt}
+{com}. 
+. *
+. 
+. rename icu_beds_mean_A02S02                     DayIcuMeSmA02S02
+{res}{txt}
+{com}. rename icu_beds_lower_A02S02            DayIcuLoSmA02S02
+{res}{txt}
+{com}. rename icu_beds_upper_A02S02            DayIcuUpSmA02S02
+{res}{txt}
+{com}. 
+. label var DayIcuMeSmA02S02"IHME Daily COVID-19 ICU beds needed (mean estimate) S2"
+{txt}
+{com}. label var DayIcuLoSmA02S02 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S2"
+{txt}
+{com}. label var DayIcuUpSmA02S02 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S2"
+{txt}
+{com}. 
+. *
+. 
+. rename admis_mean_A02S02                DayAdmMeSmA02S02
+{res}{txt}
+{com}. rename admis_lower_A02S02               DayAdmLoSmA02S02
+{res}{txt}
+{com}. rename admis_upper_A02S02               DayAdmUpSmA02S02
+{res}{txt}
+{com}. 
+. label var DayAdmMeSmA02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. label var DayAdmLoSmA02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. label var DayAdmUpSmA02S02 "IHME Daily COVID-19 hospital admissions (mean estimate) S2"
+{txt}
+{com}. 
+. *
+. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. rename all_bed_capacity DayBEDMeSmA02
+{res}{txt}
+{com}. label var DayBEDMeSmA02 "IHME Total number of beds that exist at a location"
+{txt}
+{com}. 
+. rename icu_bed_capacity DayICUMeSmA02 
+{res}{txt}
+{com}. label var DayICUMeSmA02 "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. order date location_name 
+{txt}
+{com}. 
+. sort date location_name 
+{txt}
+{com}. 
+. drop date_original version_name
+{txt}
+{com}. 
+. 
+. save "Best.dta", replace
+{txt}file Best.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. **********************
+. 
+. * S3 Worse
+. 
+. use "data_download_file_severe_omicron_2020_21.dta", clear
+{txt}
+{com}. 
+. 
+. 
+. rename date date_original
+{res}{txt}
+{com}. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21949{txt},{res}22766{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}04feb2020{txt},{res}01may2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}818{col 51}{txt}missing .:  {res}0{txt}/{res}307,568
+
+{txt}{col 19}mean:{res}{col 26} 22357.5{txt} = {res}18mar2021{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 236.136
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22030{col 37}   22153{col 47} 22357.5{col 57}   22562{col 67}   22685
+{col 26}25apr2020{col 36}26aug2020{col 46}18mar2021{col 56}09oct2021{col 66}09feb2022
+{txt}
+{com}. drop year month day date2
+{txt}
+{com}. 
+. 
+. 
+. * rename variables
+. 
+. * Total Reported Deaths smoothed
+. rename seir_cumulative_unscaled_mean  TotDeaMeSmA02S03
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_lower TotDeaLoSmA02S03
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_upper TotDeaUpSmA02S03
+{res}{txt}
+{com}. label var TotDeaMeSmA02S03 "Total Reported Deaths Mean smoothed IHME S3" // Cumulative reported deaths (mean estimate)
+{txt}
+{com}. label var TotDeaLoSmA02S03 "Total Reported Deaths Lower smoothed IHME S3" // Cumulative reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeaUpSmA02S03 "Total Reported Deaths Upper smoothed IHME S3" // Cumulative reported deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Total Excess Deaths smoothed
+. rename seir_cumulative_mean  TotDeXMeSmA02S03
+{res}{txt}
+{com}. rename seir_cumulative_lower TotDeXLoSmA02S03
+{res}{txt}
+{com}. rename seir_cumulative_upper TotDeXUpSmA02S03
+{res}{txt}
+{com}. label var TotDeXMeSmA02S03 "Total Excess Deaths Mean smoothed IHME S3" // Cumulative excess deaths (mean estimate)
+{txt}
+{com}. label var TotDeXLoSmA02S03 "Total Excess Deaths Lower smoothed IHME S3" // Cumulative excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeXUpSmA02S03 "Total Excess Deaths Upper smoothed IHME S3" // Cumulative excess deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily Reported Deaths smoothed
+. rename seir_daily_unscaled_mean  DayDeaMeSmA02S03
+{res}{txt}
+{com}. rename seir_daily_unscaled_lower DayDeaLoSmA02S03
+{res}{txt}
+{com}. rename seir_daily_unscaled_upper DayDeaUpSmA02S03
+{res}{txt}
+{com}. label var DayDeaMeSmA02S03 "Daily Reported Deaths Mean smoothed IHME S3" // Daily reported deaths (mean estimate)
+{txt}
+{com}. label var DayDeaLoSmA02S03 "Daily Reported Deaths Lower smoothed IHME S3" // Daily reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeaUpSmA02S03 "Daily Reported Deaths Upper smoothed IHME S3" // Daily reported deaths upper 95% confidence interval)
+{txt}
+{com}.         
+. * Daily Excess Deaths smoothed
+. rename seir_daily_mean  DayDeXMeSmA02S03
+{res}{txt}
+{com}. rename seir_daily_lower DayDeXLoSmA02S03
+{res}{txt}
+{com}. rename seir_daily_upper DayDeXUpSmA02S03
+{res}{txt}
+{com}. label var DayDeXMeSmA02S03 "Daily Excess Deaths Mean smoothed IHME S3" // Daily excess deaths (mean estimate)
+{txt}
+{com}. label var DayDeXLoSmA02S03 "Daily Excess Deaths Lower smoothed IHME S3" // Daily excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeXUpSmA02S03 "Daily Excess Deaths Upper smoothed IHME S3" // Daily excess deaths upper 95% confidence interval)
+{txt}
+{com}.                 
+. * Total infections smoothed
+. rename inf_cuml_mean  TotINFMeSmA02S03
+{res}{txt}
+{com}. rename inf_cuml_lower TotINFLoSmA02S03
+{res}{txt}
+{com}. rename inf_cuml_upper TotINFUpSmA02S03
+{res}{txt}
+{com}. label var TotINFMeSmA02S03 "Total infections Mean smoothed IHME S3" // Cumulative infections (mean estimate)
+{txt}
+{com}. label var TotINFLoSmA02S03 "Total infections Lower smoothed IHME S3" // Cumulative infections (lower 95% confidence interval)
+{txt}
+{com}. label var TotINFUpSmA02S03 "Total infections Upper smoothed IHME S3" // Cumulative infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily infections smoothed
+. rename inf_mean  DayINFMeSmA02S03 // previously est_infections_mean
+{res}{txt}
+{com}. rename inf_lower DayINFLoSmA02S03 // previously est_infections_lower
+{res}{txt}
+{com}. rename inf_upper DayINFUpSmA02S03 // previously est_infections_upper
+{res}{txt}
+{com}. label var DayINFMeSmA02S03 "Daily infections Mean smoothed IHME S3" // Daily infections (mean estimate)
+{txt}
+{com}. label var DayINFLoSmA02S03 "Daily infections Lower smoothed IHME S3" // Daily infections (lower 95% confidence interval)
+{txt}
+{com}. label var DayINFUpSmA02S03 "Daily infections Upper smoothed IHME S3" // Daily infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * other variables 
+. 
+. rename reff_mean reff_mean_A02S03
+{res}{txt}
+{com}. rename reff_lower reff_lower_A02S03
+{res}{txt}
+{com}. rename reff_upper reff_upper_A02S03
+{res}{txt}
+{com}. label var reff_mean "IHME R effective (mean estimate) S3"
+{txt}
+{com}. label var reff_lower "IHME R effective (lower 95% confidence interval) S3"
+{txt}
+{com}. label var reff_upper "IHME R effective (upper 95% confidence interval) S3"
+{txt}
+{com}. 
+. rename cumulative_cases cumulative_cases_A02S03
+{res}{txt}
+{com}. rename cumulative_deaths cumulative_deaths_A02S03
+{res}{txt}
+{com}. rename cumulative_hospitalizations cumulative_hosp_A02S03
+{res}{txt}
+{com}. rename daily_deaths daily_deaths_A02S03
+{res}{txt}
+{com}. rename daily_infections daily_infections_A02S03
+{res}{txt}
+{com}. rename cumulative_deaths_unscaled cumul_deaths_unscaled_A02S03
+{res}{txt}
+{com}. rename daily_deaths_unscaled dai_dea_unscaled_A02S03
+{res}{txt}
+{com}. label var cumulative_cases_A02S03 "IHME Cumulative cases (raw data) S3"
+{txt}
+{com}. label var cumulative_deaths_A02S03 "IHME Cumulative deaths (raw data with excess mortality scalar applied) S3"
+{txt}
+{com}. label var cumulative_hosp_A02S03 "IHME Cumulative hospitalizations (raw data) S3"
+{txt}
+{com}. label var daily_deaths_A02S03 "IHME Daily deaths (raw data with excess mortality scalar applied) S3"
+{txt}
+{com}. label var daily_infections_A02S03 "IHME Daily infections (raw data)"
+{txt}
+{com}. label var cumul_deaths_unscaled_A02S03 "IHME umulative deaths (raw data without excess mortality scalar applied) S3"
+{txt}
+{com}. label var dai_dea_unscaled_A02S03 "IHME Daily deaths (raw data without excess mortality scalar applied) S3"
+{txt}
+{com}. 
+. rename daily_infections dai_inf_A02S03
+{res}{txt}
+{com}. label var dai_inf_A02S03 "IHME Daily infections (raw data without excess mortality scalar applied)" // present in data, not present in data_dictionary.csv
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * IDENTICAL ACROSS SCENARIOS:
+. 
+. label var population "IHME Population size"
+{txt}
+{com}. label var mobility_obs "IHME Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var testing_mean "IHME Tests per 100,000 (mean estimate)"
+{txt}
+{com}. label var testing_lower "IHME Tests per 100,000 (lower 95% confidence interval)"
+{txt}
+{com}. label var testing_upper "IHME Tests per 100,000 (upper 95% confidence interval)"
+{txt}
+{com}. label var testing_obs "IHME Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_mean "IHME Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_obs "IHME Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var mask_use_obs "IHME Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var cumulative_all_vaccinated     "IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. label var cumulative_all_effectively_vacci "IHME Effectively vaccinated (one and two dose with efficacy)" // cumulative_all_effectively_vaccinated
+{txt}
+{com}. label var cumulative_all_fully_vaccinated "IHME Fully vaccinated (one of one and†two†of two doses)"
+{txt}
+{com}. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. /*
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> infection_hospitalization                               Infection hospitalization ratio
+> */
+. 
+. 
+. rename mobility_mean mobility_mean_A02S03
+{res}{txt}
+{com}. rename mask_use_mean mask_use_mean_A02S03
+{res}{txt}
+{com}. label var mobility_mean_A02S03 "IHME Percent change in mobility from baseline (mean) S3"
+{txt}
+{com}. label var mask_use_mean_A02S03 "IHME Percent of population reporting always wearing a mask when leaving home S3"
+{txt}
+{com}. 
+. rename hospital_beds_mean hospital_beds_mean_A02S03
+{res}{txt}
+{com}. rename hospital_beds_upper hospital_beds_upper_A02S03
+{res}{txt}
+{com}. rename hospital_beds_lower hospital_beds_lower_A02S03
+{res}{txt}
+{com}. rename icu_beds_mean icu_beds_mean_A02S03
+{res}{txt}
+{com}. rename icu_beds_upper icu_beds_upper_A02S03
+{res}{txt}
+{com}. rename icu_beds_lower icu_beds_lower_A02S03
+{res}{txt}
+{com}. rename admis_mean admis_mean_A02S03
+{res}{txt}
+{com}. rename admis_upper admis_upper_A02S03
+{res}{txt}
+{com}. rename admis_lower admis_lower_A02S03
+{res}{txt}
+{com}. label var hospital_beds_mean_A02S03 "IHME Daily COVID-19 hospital beds needed (mean estimate) S3"
+{txt}
+{com}. label var hospital_beds_upper_A02S03 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S3"
+{txt}
+{com}. label var hospital_beds_lower_A02S03 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S3"
+{txt}
+{com}. label var icu_beds_mean_A02S03  "IHME Daily COVID-19 ICU beds needed (mean estimate) S3"
+{txt}
+{com}. label var icu_beds_upper_A02S03 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S3"
+{txt}
+{com}. label var icu_beds_lower_A02S03 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S3"
+{txt}
+{com}. label var admis_mean_A02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. label var admis_upper_A02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. label var admis_lower_A02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. 
+. 
+. rename infection_fatality infection_fatality_A02S03
+{res}{txt}
+{com}. rename infection_detection infection_detection_A02S03
+{res}{txt}
+{com}. rename infection_hospitalization infection_hospitalization_A02S03
+{res}{txt}
+{com}. label var infection_fatality_A02S03 "IHME Infection fatality ratio S3"
+{txt}
+{com}. label var infection_detection_A02S03 "IHME Infection detection ratio S3"
+{txt}
+{com}. label var infection_hospitalization_A02S03 "IHME Infection hospitalization ratio S3"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. *
+. 
+. rename hospital_beds_mean_A02S03                DayBedMeSmA02S03
+{res}{txt}
+{com}. rename hospital_beds_upper_A02S03               DayBedLoSmA02S03
+{res}{txt}
+{com}. rename hospital_beds_lower_A02S03               DayBedUpSmA02S03
+{res}{txt}
+{com}. 
+. label var DayBedMeSmA02S03 "IHME Daily COVID-19 hospital beds needed (mean estimate) S3"
+{txt}
+{com}. label var DayBedLoSmA02S03 "IHME Daily COVID-19 hospital beds needed (upper 95% confidence interval) S3"
+{txt}
+{com}. label var DayBedUpSmA02S03 "IHME Daily COVID-19 hospital beds needed (lower 95% confidence interval) S3"
+{txt}
+{com}. 
+. *
+. 
+. rename icu_beds_mean_A02S03                     DayIcuMeSmA02S03
+{res}{txt}
+{com}. rename icu_beds_lower_A02S03            DayIcuLoSmA02S03
+{res}{txt}
+{com}. rename icu_beds_upper_A02S03            DayIcuUpSmA02S03
+{res}{txt}
+{com}. 
+. label var DayIcuMeSmA02S03"IHME Daily COVID-19 ICU beds needed (mean estimate) S3"
+{txt}
+{com}. label var DayIcuLoSmA02S03 "IHME Daily COVID-19 ICU beds needed (upper 95% confidence interval) S3"
+{txt}
+{com}. label var DayIcuUpSmA02S03 "IHME Daily COVID-19 ICU beds needed (lower 95% confidence interval) S3"
+{txt}
+{com}. 
+. *
+. 
+. rename admis_mean_A02S03                DayAdmMeSmA02S03
+{res}{txt}
+{com}. rename admis_lower_A02S03               DayAdmLoSmA02S03
+{res}{txt}
+{com}. rename admis_upper_A02S03               DayAdmUpSmA02S03
+{res}{txt}
+{com}. 
+. label var DayAdmMeSmA02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. label var DayAdmLoSmA02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. label var DayAdmUpSmA02S03 "IHME Daily COVID-19 hospital admissions (mean estimate) S3"
+{txt}
+{com}. 
+. *
+. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. rename all_bed_capacity DayBEDMeSmA02
+{res}{txt}
+{com}. label var DayBEDMeSmA02 "IHME Total number of beds that exist at a location"
+{txt}
+{com}. 
+. rename icu_bed_capacity DayICUMeSmA02 
+{res}{txt}
+{com}. label var DayICUMeSmA02 "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. order date location_name 
+{txt}
+{com}. 
+. sort date location_name 
+{txt}
+{com}. 
+. drop date_original version_name
+{txt}
+{com}. 
+. 
+. save "Worse.dta", replace
+{txt}file Worse.dta saved
+
+{com}. 
+. 
+.  
+.  
+.  
+.  
+.  
+. 
+. **********************
+. 
+. * S4 Second best [Third dose] 
+. 
+. use "data_download_file_third_dose_2020_21.dta", clear
+{txt}
+{com}. 
+. 
+. 
+. rename date date_original
+{res}{txt}
+{com}. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21949{txt},{res}22766{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}04feb2020{txt},{res}01may2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}818{col 51}{txt}missing .:  {res}0{txt}/{res}307,568
+
+{txt}{col 19}mean:{res}{col 26} 22357.5{txt} = {res}18mar2021{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 236.136
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22030{col 37}   22153{col 47} 22357.5{col 57}   22562{col 67}   22685
+{col 26}25apr2020{col 36}26aug2020{col 46}18mar2021{col 56}09oct2021{col 66}09feb2022
+{txt}
+{com}. drop year month day date2
+{txt}
+{com}. 
+. 
+. 
+. * rename variables
+. 
+. * Total Reported Deaths smoothed
+. rename seir_cumulative_unscaled_mean  TotDeaMeSmA02S04
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_lower TotDeaLoSmA02S04
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_upper TotDeaUpSmA02S04
+{res}{txt}
+{com}. label var TotDeaMeSmA02S04 "Total Reported Deaths Mean smoothed IHME S4" // Cumulative reported deaths (mean estimate)
+{txt}
+{com}. label var TotDeaLoSmA02S04 "Total Reported Deaths Lower smoothed IHME S4" // Cumulative reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeaUpSmA02S04 "Total Reported Deaths Upper smoothed IHME S4" // Cumulative reported deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Total Excess Deaths smoothed
+. rename seir_cumulative_mean  TotDeXMeSmA02S04
+{res}{txt}
+{com}. rename seir_cumulative_lower TotDeXLoSmA02S04
+{res}{txt}
+{com}. rename seir_cumulative_upper TotDeXUpSmA02S04
+{res}{txt}
+{com}. label var TotDeXMeSmA02S04 "Total Excess Deaths Mean smoothed IHME S4" // Cumulative excess deaths (mean estimate)
+{txt}
+{com}. label var TotDeXLoSmA02S04 "Total Excess Deaths Lower smoothed IHME S4" // Cumulative excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeXUpSmA02S04 "Total Excess Deaths Upper smoothed IHME S4" // Cumulative excess deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily Reported Deaths smoothed
+. rename seir_daily_unscaled_mean  DayDeaMeSmA02S04
+{res}{txt}
+{com}. rename seir_daily_unscaled_lower DayDeaLoSmA02S04
+{res}{txt}
+{com}. rename seir_daily_unscaled_upper DayDeaUpSmA02S04
+{res}{txt}
+{com}. label var DayDeaMeSmA02S04 "Daily Reported Deaths Mean smoothed IHME S4" // Daily reported deaths (mean estimate)
+{txt}
+{com}. label var DayDeaLoSmA02S04 "Daily Reported Deaths Lower smoothed IHME S4" // Daily reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeaUpSmA02S04 "Daily Reported Deaths Upper smoothed IHME S4" // Daily reported deaths upper 95% confidence interval)
+{txt}
+{com}.         
+. * Daily Excess Deaths smoothed
+. rename seir_daily_mean  DayDeXMeSmA02S04
+{res}{txt}
+{com}. rename seir_daily_lower DayDeXLoSmA02S04
+{res}{txt}
+{com}. rename seir_daily_upper DayDeXUpSmA02S04
+{res}{txt}
+{com}. label var DayDeXMeSmA02S04 "Daily Excess Deaths Mean smoothed IHME S4" // Daily excess deaths (mean estimate)
+{txt}
+{com}. label var DayDeXLoSmA02S04 "Daily Excess Deaths Lower smoothed IHME S4" // Daily excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeXUpSmA02S04 "Daily Excess Deaths Upper smoothed IHME S4" // Daily excess deaths upper 95% confidence interval)
+{txt}
+{com}.                 
+. * Total infections smoothed
+. rename inf_cuml_mean  TotINFMeSmA02S04
+{res}{txt}
+{com}. rename inf_cuml_lower TotINFLoSmA02S04
+{res}{txt}
+{com}. rename inf_cuml_upper TotINFUpSmA02S04
+{res}{txt}
+{com}. label var TotINFMeSmA02S04 "Total infections Mean smoothed IHME S4" // Cumulative infections (mean estimate)
+{txt}
+{com}. label var TotINFLoSmA02S04 "Total infections Lower smoothed IHME S4" // Cumulative infections (lower 95% confidence interval)
+{txt}
+{com}. label var TotINFUpSmA02S04 "Total infections Upper smoothed IHME S4" // Cumulative infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily infections smoothed
+. rename inf_mean  DayINFMeSmA02S04 // previously est_infections_mean
+{res}{txt}
+{com}. rename inf_lower DayINFLoSmA02S04 // previously est_infections_lower
+{res}{txt}
+{com}. rename inf_upper DayINFUpSmA02S04 // previously est_infections_upper
+{res}{txt}
+{com}. label var DayINFMeSmA02S04 "Daily infections Mean smoothed IHME S4" // Daily infections (mean estimate)
+{txt}
+{com}. label var DayINFLoSmA02S04 "Daily infections Lower smoothed IHME S4" // Daily infections (lower 95% confidence interval)
+{txt}
+{com}. label var DayINFUpSmA02S04 "Daily infections Upper smoothed IHME S4" // Daily infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * other variables 
+. 
+. rename reff_mean reff_mean_A02S04
+{res}{txt}
+{com}. rename reff_lower reff_lower_A02S04
+{res}{txt}
+{com}. rename reff_upper reff_upper_A02S04
+{res}{txt}
+{com}. label var reff_mean_A02S04 "IHME R effective (mean estimate) S4"
+{txt}
+{com}. label var reff_lower_A02S04 "IHME R effective (lower 95% confidence interval) S4"
+{txt}
+{com}. label var reff_upper_A02S04 "IHME R effective (upper 95% confidence interval) S4"
+{txt}
+{com}. 
+. rename cumulative_cases cumulative_cases_A02S04
+{res}{txt}
+{com}. rename cumulative_deaths cumulative_deaths_A02S04
+{res}{txt}
+{com}. rename cumulative_hospitalizations cumulative_hosp_A02S04
+{res}{txt}
+{com}. rename daily_deaths daily_deaths_A02S04
+{res}{txt}
+{com}. rename daily_infections daily_infections_A02S04
+{res}{txt}
+{com}. rename cumulative_deaths_unscaled cumul_deaths_unscaled_A02S04
+{res}{txt}
+{com}. rename daily_deaths_unscaled dai_dea_unscaled_A02S04
+{res}{txt}
+{com}. label var cumulative_cases_A02S04 "IHME Cumulative cases (raw data) S4"
+{txt}
+{com}. label var cumulative_deaths_A02S04 "IHME Cumulative deaths (raw data with excess mortality scalar applied) S4"
+{txt}
+{com}. label var cumulative_hosp_A02S04 "IHME Cumulative hospitalizations (raw data) S4"
+{txt}
+{com}. label var daily_deaths_A02S04 "IHME Daily deaths (raw data with excess mortality scalar applied) S4"
+{txt}
+{com}. label var daily_infections_A02S04 "IHME Daily infections (raw data)"
+{txt}
+{com}. label var cumul_deaths_unscaled_A02S04 "IHME umulative deaths (raw data without excess mortality scalar applied) S4"
+{txt}
+{com}. label var dai_dea_unscaled_A02S04 "IHME Daily deaths (raw data without excess mortality scalar applied) S4"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. * IDENTICAL ACROSS SCENARIOS:
+. 
+. label var population "IHME Population size"
+{txt}
+{com}. label var mobility_obs "IHME Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var testing_mean "IHME Tests per 100,000 (mean estimate)"
+{txt}
+{com}. label var testing_lower "IHME Tests per 100,000 (lower 95% confidence interval)"
+{txt}
+{com}. label var testing_upper "IHME Tests per 100,000 (upper 95% confidence interval)"
+{txt}
+{com}. label var testing_obs "IHME Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_mean "IHME Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_obs "IHME Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var mask_use_obs "IHME Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. rename cumulative_all_vaccinated cumul_vax
+{res}{txt}
+{com}. rename cumulative_all_effectively_vacci cumul_effective_vax
+{res}{txt}
+{com}. rename cumulative_all_fully_vaccinated cumul_fully_vax
+{res}{txt}
+{com}. label var cumul_vax     "IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. label var cumul_effective_vax "IHME Effectively vaccinated (one and two dose with efficacy)" // cumulative_all_effectively_vaccinated
+{txt}
+{com}. label var cumul_fully_vax "IHME Fully vaccinated (one of one and†two†of two doses)"
+{txt}
+{com}. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. /*
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> inf_hosp                                Infection hospitalization ratio
+> */
+. 
+. 
+. rename mobility_mean mobility_mean_A02S04
+{res}{txt}
+{com}. rename mask_use_mean mask_use_mean_A02S04
+{res}{txt}
+{com}. label var mobility_mean_A02S04 "IHME Percent change in mobility from baseline (mean) S4"
+{txt}
+{com}. label var mask_use_mean_A02S04 "IHME Percent of population reporting always wearing a mask when leaving home S4"
+{txt}
+{com}. 
+. rename hospital_beds_mean hospital_beds_mean_A02S04
+{res}{txt}
+{com}. rename hospital_beds_upper hospital_beds_upper_A02S04
+{res}{txt}
+{com}. rename hospital_beds_lower hospital_beds_lower_A02S04
+{res}{txt}
+{com}. rename icu_beds_mean icu_beds_mean_A02S04
+{res}{txt}
+{com}. rename icu_beds_upper icu_beds_upper_A02S04
+{res}{txt}
+{com}. rename icu_beds_lower icu_beds_lower_A02S04
+{res}{txt}
+{com}. rename admis_mean admis_mean_A02S04
+{res}{txt}
+{com}. rename admis_upper admis_upper_A02S04
+{res}{txt}
+{com}. rename admis_lower admis_lower_A02S04
+{res}{txt}
+{com}. label var hospital_beds_mean_A02S04 "IHME Daily C-19 hospital beds needed (mean estimate) S4"
+{txt}
+{com}. label var hospital_beds_upper_A02S04 "IHME Daily C-19 hospital beds needed (upper 95% confidence interval) S4"
+{txt}
+{com}. label var hospital_beds_lower_A02S04 "IHME Daily C-19 hospital beds needed (lower 95% confidence interval) S4"
+{txt}
+{com}. label var icu_beds_mean_A02S04  "IHME Daily C-19 ICU beds needed (mean estimate) S4"
+{txt}
+{com}. label var icu_beds_upper_A02S04 "IHME Daily C-19 ICU beds needed (upper 95% confidence interval) S4"
+{txt}
+{com}. label var icu_beds_lower_A02S04 "IHME Daily C-19 ICU beds needed (lower 95% confidence interval) S4"
+{txt}
+{com}. label var admis_mean_A02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. label var admis_upper_A02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. label var admis_lower_A02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. 
+. 
+. rename infection_fatality infection_fatality_A02S04
+{res}{txt}
+{com}. rename infection_detection infection_detection_A02S04
+{res}{txt}
+{com}. rename infection_hospitalization inf_hosp_A02S04
+{res}{txt}
+{com}. label var infection_fatality_A02S04 "IHME Infection fatality ratio S4"
+{txt}
+{com}. label var infection_detection_A02S04 "IHME Infection detection ratio S4"
+{txt}
+{com}. label var inf_hosp_A02S04 "IHME Infection hospitalization ratio S4"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. *
+. 
+. rename hospital_beds_mean_A02S04                DayBedMeSmA02S04
+{res}{txt}
+{com}. rename hospital_beds_upper_A02S04               DayBedLoSmA02S04
+{res}{txt}
+{com}. rename hospital_beds_lower_A02S04               DayBedUpSmA02S04
+{res}{txt}
+{com}. 
+. label var DayBedMeSmA02S04 "IHME Daily C-19 hospital beds needed (mean estimate) S4"
+{txt}
+{com}. label var DayBedLoSmA02S04 "IHME Daily C-19 hospital beds needed (upper 95% confidence interval) S4"
+{txt}
+{com}. label var DayBedUpSmA02S04 "IHME Daily C-19 hospital beds needed (lower 95% confidence interval) S4"
+{txt}
+{com}. 
+. *
+. 
+. rename icu_beds_mean_A02S04                     DayIcuMeSmA02S04
+{res}{txt}
+{com}. rename icu_beds_lower_A02S04            DayIcuLoSmA02S04
+{res}{txt}
+{com}. rename icu_beds_upper_A02S04            DayIcuUpSmA02S04
+{res}{txt}
+{com}. 
+. label var DayIcuMeSmA02S04"IHME Daily C-19 ICU beds needed (mean estimate) S4"
+{txt}
+{com}. label var DayIcuLoSmA02S04 "IHME Daily C-19 ICU beds needed (upper 95% confidence interval) S4"
+{txt}
+{com}. label var DayIcuUpSmA02S04 "IHME Daily C-19 ICU beds needed (lower 95% confidence interval) S4"
+{txt}
+{com}. 
+. *
+. 
+. rename admis_mean_A02S04                DayAdmMeSmA02S04
+{res}{txt}
+{com}. rename admis_lower_A02S04               DayAdmLoSmA02S04
+{res}{txt}
+{com}. rename admis_upper_A02S04               DayAdmUpSmA02S04
+{res}{txt}
+{com}. 
+. label var DayAdmMeSmA02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. label var DayAdmLoSmA02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. label var DayAdmUpSmA02S04 "IHME Daily C-19 hospital admissions (mean estimate) S4"
+{txt}
+{com}. 
+. *
+. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. rename all_bed_capacity DayBEDMeSmA02
+{res}{txt}
+{com}. label var DayBEDMeSmA02 "IHME Total number of beds that exist at a location"
+{txt}
+{com}. 
+. rename icu_bed_capacity DayICUMeSmA02 
+{res}{txt}
+{com}. label var DayICUMeSmA02 "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. order date location_name 
+{txt}
+{com}. 
+. sort date location_name 
+{txt}
+{com}. 
+. drop date_original version_name
+{txt}
+{com}. 
+. 
+. save "2nd best is 3rd dose.dta", replace
+{txt}file 2nd best is 3rd dose.dta saved
+
+{com}. 
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+. 
+. **********************
+. 
+. * S5 Third best [Reduced vaccine hesitancy]
+. 
+. use "data_download_file_reduce_hesitancy_2020_21.dta", clear
+{txt}
+{com}. 
+. 
+. 
+. rename date date_original
+{res}{txt}
+{com}. gen year = substr(date_original,1,4) 
+{txt}
+{com}. gen month = substr(date_original,6,2) 
+{txt}
+{com}. gen day = substr(date_original,9,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. gen date = date(date2, "DMY", 2050)
+{txt}
+{com}. format date %tdDDMonCCYY
+{txt}
+{com}. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21949{txt},{res}22766{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}04feb2020{txt},{res}01may2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}818{col 51}{txt}missing .:  {res}0{txt}/{res}307,568
+
+{txt}{col 19}mean:{res}{col 26} 22357.5{txt} = {res}18mar2021{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 236.136
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   22030{col 37}   22153{col 47} 22357.5{col 57}   22562{col 67}   22685
+{col 26}25apr2020{col 36}26aug2020{col 46}18mar2021{col 56}09oct2021{col 66}09feb2022
+{txt}
+{com}. drop year month day date2
+{txt}
+{com}. 
+. 
+. 
+. * rename variables
+. 
+. * Total Reported Deaths smoothed
+. rename seir_cumulative_unscaled_mean  TotDeaMeSmA02S05
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_lower TotDeaLoSmA02S05
+{res}{txt}
+{com}. rename seir_cumulative_unscaled_upper TotDeaUpSmA02S05
+{res}{txt}
+{com}. label var TotDeaMeSmA02S05 "Total Reported Deaths Mean smoothed IHME S5" // Cumulative reported deaths (mean estimate)
+{txt}
+{com}. label var TotDeaLoSmA02S05 "Total Reported Deaths Lower smoothed IHME S5" // Cumulative reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeaUpSmA02S05 "Total Reported Deaths Upper smoothed IHME S5" // Cumulative reported deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Total Excess Deaths smoothed
+. rename seir_cumulative_mean  TotDeXMeSmA02S05
+{res}{txt}
+{com}. rename seir_cumulative_lower TotDeXLoSmA02S05
+{res}{txt}
+{com}. rename seir_cumulative_upper TotDeXUpSmA02S05
+{res}{txt}
+{com}. label var TotDeXMeSmA02S05 "Total Excess Deaths Mean smoothed IHME S5" // Cumulative excess deaths (mean estimate)
+{txt}
+{com}. label var TotDeXLoSmA02S05 "Total Excess Deaths Lower smoothed IHME S5" // Cumulative excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var TotDeXUpSmA02S05 "Total Excess Deaths Upper smoothed IHME S5" // Cumulative excess deaths (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily Reported Deaths smoothed
+. rename seir_daily_unscaled_mean  DayDeaMeSmA02S05
+{res}{txt}
+{com}. rename seir_daily_unscaled_lower DayDeaLoSmA02S05
+{res}{txt}
+{com}. rename seir_daily_unscaled_upper DayDeaUpSmA02S05
+{res}{txt}
+{com}. label var DayDeaMeSmA02S05 "Daily Reported Deaths Mean smoothed IHME S5" // Daily reported deaths (mean estimate)
+{txt}
+{com}. label var DayDeaLoSmA02S05 "Daily Reported Deaths Lower smoothed IHME S5" // Daily reported deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeaUpSmA02S05 "Daily Reported Deaths Upper smoothed IHME S5" // Daily reported deaths upper 95% confidence interval)
+{txt}
+{com}.         
+. * Daily Excess Deaths smoothed
+. rename seir_daily_mean  DayDeXMeSmA02S05
+{res}{txt}
+{com}. rename seir_daily_lower DayDeXLoSmA02S05
+{res}{txt}
+{com}. rename seir_daily_upper DayDeXUpSmA02S05
+{res}{txt}
+{com}. label var DayDeXMeSmA02S05 "Daily Excess Deaths Mean smoothed IHME S5" // Daily excess deaths (mean estimate)
+{txt}
+{com}. label var DayDeXLoSmA02S05 "Daily Excess Deaths Lower smoothed IHME S5" // Daily excess deaths (lower 95% confidence interval)
+{txt}
+{com}. label var DayDeXUpSmA02S05 "Daily Excess Deaths Upper smoothed IHME S5" // Daily excess deaths upper 95% confidence interval)
+{txt}
+{com}.                 
+. * Total infections smoothed
+. rename inf_cuml_mean  TotINFMeSmA02S05
+{res}{txt}
+{com}. rename inf_cuml_lower TotINFLoSmA02S05
+{res}{txt}
+{com}. rename inf_cuml_upper TotINFUpSmA02S05
+{res}{txt}
+{com}. label var TotINFMeSmA02S05 "Total infections Mean smoothed IHME S5" // Cumulative infections (mean estimate)
+{txt}
+{com}. label var TotINFLoSmA02S05 "Total infections Lower smoothed IHME S5" // Cumulative infections (lower 95% confidence interval)
+{txt}
+{com}. label var TotINFUpSmA02S05 "Total infections Upper smoothed IHME S5" // Cumulative infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. * Daily infections smoothed
+. rename inf_mean  DayINFMeSmA02S05 // previously est_infections_mean
+{res}{txt}
+{com}. rename inf_lower DayINFLoSmA02S05 // previously est_infections_lower
+{res}{txt}
+{com}. rename inf_upper DayINFUpSmA02S05 // previously est_infections_upper
+{res}{txt}
+{com}. label var DayINFMeSmA02S05 "Daily infections Mean smoothed IHME S5" // Daily infections (mean estimate)
+{txt}
+{com}. label var DayINFLoSmA02S05 "Daily infections Lower smoothed IHME S5" // Daily infections (lower 95% confidence interval)
+{txt}
+{com}. label var DayINFUpSmA02S05 "Daily infections Upper smoothed IHME S5" // Daily infections (upper 95% confidence interval)
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. * other variables 
+. 
+. rename reff_mean reff_mean_A02S05
+{res}{txt}
+{com}. rename reff_lower reff_lower_A02S05
+{res}{txt}
+{com}. rename reff_upper reff_upper_A02S05
+{res}{txt}
+{com}. label var reff_mean_A02S05 "IHME R effective (mean estimate) S5"
+{txt}
+{com}. label var reff_lower_A02S05 "IHME R effective (lower 95% confidence interval) S5"
+{txt}
+{com}. label var reff_upper_A02S05 "IHME R effective (upper 95% confidence interval) S5"
+{txt}
+{com}. 
+. rename cumulative_cases cumulative_cases_A02S05
+{res}{txt}
+{com}. rename cumulative_deaths cumulative_deaths_A02S05
+{res}{txt}
+{com}. rename cumulative_hospitalizations cumulative_hosp_A02S05
+{res}{txt}
+{com}. rename daily_deaths daily_deaths_A02S05
+{res}{txt}
+{com}. rename daily_infections daily_infections_A02S05
+{res}{txt}
+{com}. rename cumulative_deaths_unscaled cumul_deaths_unscaled_A02S05
+{res}{txt}
+{com}. rename daily_deaths_unscaled dai_dea_unscaled_A02S05
+{res}{txt}
+{com}. label var cumulative_cases_A02S05 "IHME Cumulative cases (raw data) S5"
+{txt}
+{com}. label var cumulative_deaths_A02S05 "IHME Cumulative deaths (raw data with excess mortality scalar applied) S5"
+{txt}
+{com}. label var cumulative_hosp_A02S05 "IHME Cumulative hospitalizations (raw data) S5"
+{txt}
+{com}. label var daily_deaths_A02S05 "IHME Daily deaths (raw data with excess mortality scalar applied) S5"
+{txt}
+{com}. label var daily_infections_A02S05 "IHME Daily infections (raw data)"
+{txt}
+{com}. label var cumul_deaths_unscaled_A02S05 "IHME umulative deaths (raw data without excess mortality scalar applied) S5"
+{txt}
+{com}. label var dai_dea_unscaled_A02S05 "IHME Daily deaths (raw data without excess mortality scalar applied) S5"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. * IDENTICAL ACROSS SCENARIOS:
+. 
+. label var population "IHME Population size"
+{txt}
+{com}. label var mobility_obs "IHME Indicator for whether mobility estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var testing_mean "IHME Tests per 100,000 (mean estimate)"
+{txt}
+{com}. label var testing_lower "IHME Tests per 100,000 (lower 95% confidence interval)"
+{txt}
+{com}. label var testing_upper "IHME Tests per 100,000 (upper 95% confidence interval)"
+{txt}
+{com}. label var testing_obs "IHME Indicator for whether testing estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_mean "IHME Ratio of pneumonia deaths in a given week to the average weekly pneumonia deaths by location"
+{txt}note: label truncated to 80 characters
+
+{com}. label var pneumonia_obs "IHME Indicator for whether pneumonia estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var mask_use_obs "IHME Indicator for whether mask estimate comes from observed data (1) or modelled estimates (0)"
+{txt}note: label truncated to 80 characters
+
+{com}. rename cumulative_all_vaccinated cumul_vax
+{res}{txt}
+{com}. rename cumulative_all_effectively_vacci cumul_effective_vax
+{res}{txt}
+{com}. rename cumulative_all_fully_vaccinated cumul_fully_vax
+{res}{txt}
+{com}. label var cumul_vax     "IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. label var cumul_effective_vax "IHME Effectively vaccinated (one and two dose with efficacy)" // cumulative_all_effectively_vaccinated
+{txt}
+{com}. label var cumul_fully_vax "IHME Fully vaccinated (one of one and†two†of two doses)"
+{txt}
+{com}. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. /*
+> BY DEFINITION, THE FOLLOWING VARIABLES SHOULD NOT BE IDENTICAL ACROSS SCENARIOS:
+> 
+> mobility_mean
+> 
+> mask_use_mean
+> 
+> hospital_beds_mean
+> hospital_beds_upper
+> hospital_beds_lower
+> icu_beds_mean
+> icu_beds_upper
+> icu_beds_lower
+> admis_mean
+> admis_upper
+> admis_lower
+> 
+> infection_fatality                                              Infection fatality ratio
+> infection_detection                                             Infection detection ratio
+> inf_hosp                                Infection hospitalization ratio
+> */
+. 
+. 
+. rename mobility_mean mobility_mean_A02S05
+{res}{txt}
+{com}. rename mask_use_mean mask_use_mean_A02S05
+{res}{txt}
+{com}. label var mobility_mean_A02S05 "IHME Percent change in mobility from baseline (mean) S5"
+{txt}
+{com}. label var mask_use_mean_A02S05 "IHME Percent of population reporting always wearing a mask when leaving home S5"
+{txt}
+{com}. 
+. rename hospital_beds_mean hospital_beds_mean_A02S05
+{res}{txt}
+{com}. rename hospital_beds_upper hospital_beds_upper_A02S05
+{res}{txt}
+{com}. rename hospital_beds_lower hospital_beds_lower_A02S05
+{res}{txt}
+{com}. rename icu_beds_mean icu_beds_mean_A02S05
+{res}{txt}
+{com}. rename icu_beds_upper icu_beds_upper_A02S05
+{res}{txt}
+{com}. rename icu_beds_lower icu_beds_lower_A02S05
+{res}{txt}
+{com}. rename admis_mean admis_mean_A02S05
+{res}{txt}
+{com}. rename admis_upper admis_upper_A02S05
+{res}{txt}
+{com}. rename admis_lower admis_lower_A02S05
+{res}{txt}
+{com}. label var hospital_beds_mean_A02S05 "IHME Daily C-19 hospital beds needed (mean estimate) S5"
+{txt}
+{com}. label var hospital_beds_upper_A02S05 "IHME Daily C-19 hospital beds needed (upper 95% confidence interval) S5"
+{txt}
+{com}. label var hospital_beds_lower_A02S05 "IHME Daily C-19 hospital beds needed (lower 95% confidence interval) S5"
+{txt}
+{com}. label var icu_beds_mean_A02S05  "IHME Daily C-19 ICU beds needed (mean estimate) S5"
+{txt}
+{com}. label var icu_beds_upper_A02S05 "IHME Daily C-19 ICU beds needed (upper 95% confidence interval) S5"
+{txt}
+{com}. label var icu_beds_lower_A02S05 "IHME Daily C-19 ICU beds needed (lower 95% confidence interval) S5"
+{txt}
+{com}. label var admis_mean_A02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. label var admis_upper_A02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. label var admis_lower_A02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. 
+. 
+. rename infection_fatality infection_fatality_A02S05
+{res}{txt}
+{com}. rename infection_detection infection_detection_A02S05
+{res}{txt}
+{com}. rename infection_hospitalization inf_hosp_A02S05
+{res}{txt}
+{com}. label var infection_fatality_A02S05 "IHME Infection fatality ratio S5"
+{txt}
+{com}. label var infection_detection_A02S05 "IHME Infection detection ratio S5"
+{txt}
+{com}. label var inf_hosp_A02S05 "IHME Infection hospitalization ratio S5"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. *
+. 
+. rename hospital_beds_mean_A02S05                DayBedMeSmA02S05
+{res}{txt}
+{com}. rename hospital_beds_upper_A02S05               DayBedLoSmA02S05
+{res}{txt}
+{com}. rename hospital_beds_lower_A02S05               DayBedUpSmA02S05
+{res}{txt}
+{com}. 
+. label var DayBedMeSmA02S05 "IHME Daily C-19 hospital beds needed (mean estimate) S5"
+{txt}
+{com}. label var DayBedLoSmA02S05 "IHME Daily C-19 hospital beds needed (upper 95% confidence interval) S5"
+{txt}
+{com}. label var DayBedUpSmA02S05 "IHME Daily C-19 hospital beds needed (lower 95% confidence interval) S5"
+{txt}
+{com}. 
+. *
+. 
+. rename icu_beds_mean_A02S05                     DayIcuMeSmA02S05
+{res}{txt}
+{com}. rename icu_beds_lower_A02S05            DayIcuLoSmA02S05
+{res}{txt}
+{com}. rename icu_beds_upper_A02S05            DayIcuUpSmA02S05
+{res}{txt}
+{com}. 
+. label var DayIcuMeSmA02S05"IHME Daily C-19 ICU beds needed (mean estimate) S5"
+{txt}
+{com}. label var DayIcuLoSmA02S05 "IHME Daily C-19 ICU beds needed (upper 95% confidence interval) S5"
+{txt}
+{com}. label var DayIcuUpSmA02S05 "IHME Daily C-19 ICU beds needed (lower 95% confidence interval) S5"
+{txt}
+{com}. 
+. *
+. 
+. rename admis_mean_A02S05                DayAdmMeSmA02S05
+{res}{txt}
+{com}. rename admis_lower_A02S05               DayAdmLoSmA02S05
+{res}{txt}
+{com}. rename admis_upper_A02S05               DayAdmUpSmA02S05
+{res}{txt}
+{com}. 
+. label var DayAdmMeSmA02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. label var DayAdmLoSmA02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. label var DayAdmUpSmA02S05 "IHME Daily C-19 hospital admissions (mean estimate) S5"
+{txt}
+{com}. 
+. *
+. 
+. label var all_bed_capacity "IHME Total number of beds that exist at a location"
+{txt}
+{com}. label var icu_bed_capacity "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. rename all_bed_capacity DayBEDMeSmA02
+{res}{txt}
+{com}. label var DayBEDMeSmA02 "IHME Total number of beds that exist at a location"
+{txt}
+{com}. 
+. rename icu_bed_capacity DayICUMeSmA02 
+{res}{txt}
+{com}. label var DayICUMeSmA02 "IHME Total number of ICU beds that exist at a location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. order date location_name 
+{txt}
+{com}. 
+. sort date location_name 
+{txt}
+{com}. 
+. drop date_original version_name
+{txt}
+{com}. 
+. 
+. save "3rd best is Reduced vaccine hesitancy.dta", replace
+{txt}file 3rd best is Reduced vaccine hesitancy.dta saved
+
+{com}. 
+.  
+.  
+.   
+.  
+.  
+.  
+. **********************
+. 
+.  
+. * merge scenario files
+. 
+. 
+. use "Reference.dta", clear
+{txt}
+{com}. merge 1:1 date location_name location_id using "Best.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}         307,568{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. merge 1:1 date location_name location_id using "Worse.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}         307,568{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. merge 1:1 date location_name location_id using "2nd best is 3rd dose.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}         307,568{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. merge 1:1 date location_name location_id using "3rd best is Reduced vaccine hesitancy.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}               0
+{txt}{col 5}matched{col 30}{res}         307,568{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. 
+. 
+. rename location_name loc_grand_name
+{res}{txt}
+{com}. 
+. 
+. 
+. * gen "Daily infections mean div by daily deaths mean IHME DayCbD" for visulization of temporal relation of deaths and infections peaks 
+. 
+. summ DayDeaMeSmA02S01 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDeaMeS~01 {c |}{res}    306,750    51.78493    468.5902          0   16432.34
+{txt}
+{com}. gen DayDeMMeSmA02S01 = r(mean)
+{txt}
+{com}. label var DayDeMMeSmA02S01 "Daily deaths mean IHME DayDeM"
+{txt}
+{com}.   
+. summ DayINFMeSmA02S01 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayINFMeS~01 {c |}{res}    307,568    63300.85    961865.4          0   8.11e+07
+{txt}
+{com}. gen DayCaMMeSmA02S01 = r(mean)
+{txt}
+{com}. label var DayCaMMeSmA02S01 "Daily infections mean IHME DayCaM"
+{txt}
+{com}.                            
+. gen DayCbDMeSmA02S01 = DayCaMMeSmA02S01 / DayDeMMeSmA02S01
+{txt}
+{com}. label var DayCbDMeSmA02S01 "Daily infections mean div by daily deaths mean IHME DayCbD"
+{txt}
+{com}. summ DayCbDMeSmA02S01
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayCbDMeS~01 {c |}{res}    307,568     1222.38           0    1222.38    1222.38
+{txt}
+{com}.                                               
+. gen DayDMuMeSmA02S01 = DayDeaMeSmA02S01 * DayCbDMeSmA02S01
+{txt}(818 missing values generated)
+
+{com}. label var DayDMuMeSmA02S01 "Daily deaths scaled (times means of infections by deaths) IHME"
+{txt}
+{com}. summ DayDMuMeSmA02S01
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+DayDMuMeS~01 {c |}{res}    306,750    63300.85    572795.2          0   2.01e+07
+{txt}
+{com}. 
+. 
+. 
+. * gen percent vaccinated 
+. 
+. gen cumulative_all_vaccin_pct = 100 * (cumulative_all_vaccinated / population)
+{txt}(113,176 missing values generated)
+
+{com}. label var cumulative_all_vaccin_pct "% population IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. 
+. gen cumul_all_effect_vacci_pct = 100 * (cumulative_all_effectively_vacci / population)
+{txt}(113,176 missing values generated)
+
+{com}. label var cumul_all_effect_vacci_pct "% population IHME Effectively vaccinated (one and two dose with efficacy)"
+{txt}
+{com}. 
+. gen cumul_all_fully_vacci_pct = 100 * (cumulative_all_fully_vaccinated / population)
+{txt}(113,176 missing values generated)
+
+{com}. label var cumul_all_fully_vacci_pct "% population IHME Fully vaccinated (one of one and two of two doses)"
+{txt}
+{com}. 
+. 
+. 
+. * gen daily vaccinated number 
+. 
+. sort loc_grand_name date
+{txt}
+{com}. 
+. bysort loc_grand_name: gen daily_all_vaccinated = cumulative_all_vaccinated[_n] - cumulative_all_vaccinated[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_vaccinated "Daily population IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. bysort loc_grand_name: gen daily_all_effectively_vacci = cumulative_all_effectively_vacci[_n] - cumulative_all_effectively_vacci[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_effectively_vacci "Daily population IHME Effectively vaccinated (one and two dose with efficacy)"
+{txt}
+{com}. bysort loc_grand_name: gen daily_all_fully_vaccinated = cumulative_all_fully_vaccinated[_n] - cumulative_all_fully_vaccinated[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_fully_vaccinated "Daily population IHME Fully vaccinated (one of one and two of two doses)"
+{txt}
+{com}. 
+. 
+. 
+. 
+. * gen daily vaccinated percent
+. 
+. sort loc_grand_name date
+{txt}
+{com}. 
+. bysort loc_grand_name: gen daily_all_vaccin_pct = cumulative_all_vaccin_pct[_n] - cumulative_all_vaccin_pct[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_vaccin_pct "% Daily population IHME Initially vaccinated (one dose of two doses)"
+{txt}
+{com}. bysort loc_grand_name: gen daily_all_effect_vacci_pct = cumul_all_effect_vacci_pct[_n] - cumul_all_effect_vacci_pct[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_effect_vacci_pct "% Daily population IHME Effectively vaccinated (one and two dose with efficacy)"
+{txt}
+{com}. bysort loc_grand_name: gen daily_all_fully_vacci_pct = cumul_all_fully_vacci_pct[_n] - cumul_all_fully_vacci_pct[_n-1]
+{txt}(113,550 missing values generated)
+
+{com}. label var daily_all_fully_vacci_pct "% Daily population IHME Fully vaccinated (one of one and two of two doses)"
+{txt}
+{com}. 
+. 
+. 
+. qui compress
+{txt}
+{com}. 
+. save "IHME.dta", replace
+{txt}file IHME.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+. view "log CovidVisualizedGlobal IHME 1.smcl"
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220112/code/IHME/log CovidVisualizedGlobal IHME 1.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}12 Jan 2022, 07:19:06
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
