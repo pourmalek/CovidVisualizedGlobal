@@ -102,7 +102,8 @@ List of graphs:
 ### (2) African region - Daily deaths, reference scenarios, 2021
   
  
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake.  
+
   
 *
 
@@ -151,7 +152,8 @@ List of graphs:
 ### (2b) African region - Daily deaths, reference scenarios, 2021, with IHME excess deaths
   
  
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -258,7 +260,8 @@ List of graphs:
 ### (3b) African region - Daily deaths, 3 scenarios, 2021, IHME
   
  
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -307,6 +310,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (3b2) African region - Daily deaths, 5 scenarios, 2021, IHME
 
 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
 
 
 *
@@ -342,6 +346,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (3c) African region - Daily deaths, 3 scenarios, 2021, IMPE
 
 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
 
 
 *
@@ -448,7 +453,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (5) African region - Daily cases or infections, reference scenarios, 2021
   
  
-  
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -555,7 +561,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (6b) African region - Daily cases, 2021
   
  
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -605,7 +612,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (6c) African region - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
   
  
-  
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -655,7 +663,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (7) African region - Hospital-related outcomes, all time
   
  
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -705,7 +714,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (8) African region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
  
   
-  
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
@@ -755,7 +765,8 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ### (9) African region - Daily deaths estimated to reported, reference scenarios, 2021
   
   
- 
+From the uptake 2022012, discontinued copying this graph here. It is available in the CovidVisualizedGlobal/20220112/output/merge/ where 20220112 is the directory for the uptake. 
+
   
 *
 
