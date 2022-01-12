@@ -1,5 +1,8 @@
 ! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 23 - 2022-01-12 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/23%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2023%20–%202022-01-12.pdf)
 
+<br/><br/>
+
+
 ### Study update dates in uptake 20220112
 
 **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
