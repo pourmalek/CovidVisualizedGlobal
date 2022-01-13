@@ -296,15 +296,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 
 
-
-
-
-
-
-
-
-
-
 ********************************************************************************************************************************************
   
 ### (3b2) African region - Daily deaths, 5 scenarios, 2021, IHME
@@ -328,14 +319,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ![image](https://user-images.githubusercontent.com/30849720/147398819-5204281f-2c87-4363-af20-fa86740663bd.png)
 
 *
-
-
-
-
-
-
-
-
 
 
 
@@ -598,7 +581,7 @@ From the uptake 2022012, discontinued copying this graph here. It is available i
 *
 
 
-********************************************************************************************************************************************
+
 ********************************************************************************************************************************************  
 
 ### (6c) African region - Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021
@@ -643,7 +626,6 @@ From the uptake 2022012, discontinued copying this graph here. It is available i
 
 
 ********************************************************************************************************************************************
-********************************************************************************************************************************************  
 
 ### (7) African region - Hospital-related outcomes, all time
   
@@ -687,7 +669,6 @@ From the uptake 2022012, discontinued copying this graph here. It is available i
 
 
 ********************************************************************************************************************************************
-********************************************************************************************************************************************  
 
 ### (8) African region - Hospital-related outcomes, 2021, without IHME Bed need and IMPE Hospital demand  
  
