@@ -50,6 +50,12 @@ List of graphs:
   
 *
 
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
+*
+
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
 (1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2011a%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -74,6 +80,12 @@ List of graphs:
  
   
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
@@ -124,6 +136,12 @@ List of graphs:
  
   
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
@@ -201,6 +219,12 @@ List of graphs:
   
 *
 
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
+*
+
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20AMR1%2021%20COVID-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
@@ -253,6 +277,12 @@ List of graphs:
  
   
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
