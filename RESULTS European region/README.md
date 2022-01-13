@@ -21,7 +21,6 @@ List of graphs:
 
 (5) European region - [Daily cases or infections, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20European%20region/README.md#5-European-region---daily-cases-or-infections-reference-scenarios-2021)
 
-
 (6) European region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20European%20region/README.md#6-European-region---daily-cases-or-infections-3-scenarios-2021)
 
 (6b) European region - [Daily cases, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20European%20region/README.md#6b-European-region---daily-cases-2021)
@@ -48,6 +47,12 @@ List of graphs:
  
  
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
@@ -198,6 +203,12 @@ List of graphs:
  
  
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
@@ -387,6 +398,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
+*
+
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
 
 (4) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/output/merge/graph%20EURO%2021%20COVID-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios.pdf)
@@ -486,6 +503,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
+
+
+
 *
 
 **uptake 20220104**: **_DELP 20220104_**, IHME 20211221, **_IMPE 20211213_**, **_SRIV 20220104_**
