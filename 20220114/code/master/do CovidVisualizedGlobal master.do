@@ -2,7 +2,7 @@
 ***************************************************************************
 * This is "do CovidVisualizedGlobal master.do"
                                                                                                           *******************
-* Project: Combine and visualize international periodically updating                                      * uptake 20220112 *
+* Project: Combine and visualize international periodically updating                                      * uptake 20220114 *
 * estimates of COVID-19 at the global level (CovidVisualizedGlobal)                                       *******************
 * Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
 * Time (initial): 2021-04-14
@@ -10,18 +10,18 @@
 
 
                                                                                                          ***************************
-* To change uptake date, find and replace all, 20220112 (old), with 20220112 (new) <<--           <<<--- * change uptake date here *
+* To change uptake date, find and replace all, 20220114 (old), with 20220114 (new) <<--           <<<--- * change uptake date here *
 *                                           1/ --------                                                  ***************************
 
 * To change uptake date in individual do files for models, change the following dates:
 
-global DELPdate 20220112
+global DELPdate 20220114
 *            2/ --------
 
 global IMPEdate 2021-12-26_v9
 *            3/ -------------
 
-global SRIVdate 2022-01-12
+global SRIVdate 2022-01-13
 *            4/ ----------
 
 
@@ -29,7 +29,7 @@ global SRIVdate 2022-01-12
 
 This file "do CovidVisualizedGlobal master.do" was set up to be run from:
   |Users|local-user-name|Downloads|CovidVisualizedGlobal-main|202YMMDD|code|master|do CovidVisualizedGlobal master.do
-  where 2021MMDD is the udpate date, e.g. update 20220112
+  where 2021MMDD is the udpate date, e.g. update 20220114
 
 If the first run does not go thru due to directory path clash, edit the contents within " " of the line _59_ or _62_ below, located beneath ****** set path based on local operating system ****** ,,, 
 ,,, to reflect the location of directory /CovidVisualizedGlobal-main/ or \CovidVisualizedGlobal-main\ on your local machine. Path should be:
@@ -66,10 +66,10 @@ di "`usrnam'"
 ****** set path based on local operating system ******
 
 if regexm(c(os),"Mac") == 1 {
-	global pathCovidVisualizedGlobal "/Users/`usrnam'/Downloads/CovidVisualizedGlobal-main/20220112/code/" 
+	global pathCovidVisualizedGlobal "/Users/`usrnam'/Downloads/CovidVisualizedGlobal-main/20220114/code/" 
 }
 else if regexm(c(os),"Windows") {
-	global pathCovidVisualizedGlobal = "C:\Users\\`usrnam'\Downloads\CovidVisualizedGlobal-main\20220112\code\"
+	global pathCovidVisualizedGlobal = "C:\Users\\`usrnam'\Downloads\CovidVisualizedGlobal-main\20220114\code\"
 }
 *
 
