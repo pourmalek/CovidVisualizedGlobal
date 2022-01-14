@@ -4,7 +4,6 @@
 
 **_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, **_SRIV 20220113_**
 
-SRIV update 20220114 cannot be downloaded. Issue with https://raw.githubusercontent.com/scc-usc/ReCOVER-COVID-19/master/results/historical_forecasts/$SRIVdate/2022-01-14/
 
 
 <br/><br/>
@@ -554,6 +553,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20SEARO%2011a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149596766-17885cb7-6676-41c9-a57e-09b5b4911421.png)
 
 ****
 
