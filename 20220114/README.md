@@ -2,7 +2,16 @@
 
 ### Study update dates in uptake 20220114
 
-**_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, **_SRIV 20220113_**
+**_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**
+
+Note: SRIV not used in the graphs of this uptake:
+
+The file format and the included variables in the SRIV 20220114 update have changed, compared to their 20220113 and previous updates, in a way that I cannot locate the estimates of deaths and cases. 
+
+Therefore, I resorted to using the SRIV 20220113 update for this uptake. 
+
+The magnitudes of the estimates in the SRIV 20220113 update are several times – and generally highly implausibly – more than the estimates from all other models. See [`SRIV 20220113 outputs`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220114/output/SRIV). That suppresses all the curves of the other models in the graphs. Therefore, in this uptake, the estimates from the SRIV model are not included.
+
 
 
 
@@ -50,25 +59,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591081-6bc536d0-dbbd-46d9-97ca-6c032a9e7b56.png)
 
 ****
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2012a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591154-dab603b8-b7c3-4781-81ef-6a916d23f4ec.png)
 
 ****
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2012b%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591229-fb802d39-780e-42c9-bb7d-1309fa3b7068.png)
 
 ****
 
 (3) Global [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2014%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591294-15df8ad1-de20-421b-b846-477e5b8afc8c.png)
 
 ****
 
@@ -86,25 +91,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (4) Global [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2021%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591544-c4e62cdf-d275-4615-a51c-b4fecb694fa1.png)
 
 ****
 
 (5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591616-e39d6683-d583-4292-b49a-631092da15ad.png)
 
 ****
 
 (6) Global [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2024%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591665-1b0cd28d-3a46-424f-a062-2130ebf64310.png)
 
 ****
 
 (6b) Global [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2022b%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591733-b42b8d73-7f04-4a18-9a40-ab33f0842ff6.png)
 
 ****
 
@@ -128,13 +129,11 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Global [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149591979-94a81d8a-b758-4ae1-90f4-4c331310d00f.png)
 
 ****
 
 (11) Global [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149592031-a6b06264-1ceb-4ba9-aae3-f324ca32edb1.png)
 
 ****
 
@@ -200,13 +199,11 @@ AMRO is devided to AMR1 and AMR2:
 
 (3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149592591-b267fdf8-02aa-4c9d-a694-7c00b6f18663.png)
 
 ****
 
 (4) Regions together [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201b2%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149592670-f0673f77-3637-4a93-8ec9-a68f8a7cb762.png)
 
 ****
 
@@ -253,13 +250,11 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Regions together [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202a2%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149593321-becbf31f-012c-4f64-a300-f8b02b6f1809.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202b2%20COVID-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149593388-e1ec0835-219c-4f52-8202-88b47d4db289.png)
 
 ****
 
@@ -277,13 +272,11 @@ AMRO is devided to AMR1 and AMR2:
 
 (13) Regions together [Total deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%203a2%20COVID-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149593607-faeac48c-62ea-4be5-8223-6149ec9f6dbb.png)
 
 ****
 
 (14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%203b2%20COVID-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149593665-8cfb3145-5dea-408e-930d-8e408a37b8fd.png)
 
 ****
 
@@ -313,13 +306,11 @@ AMRO is devided to AMR1 and AMR2:
 
 (19) Regions together [Total cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%204a2%20COVID-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594052-289a625d-e092-4d00-aa1a-ed09c75ff654.png)
 
 ****
 
 (20) Regions together [Total cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%204b2%20COVID-19%20total%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594109-eafa2f7a-1c19-4a96-9504-3c9f4c5addbb.png)
 
 ****
 
@@ -338,25 +329,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) African region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AFRO%2011a%20COVID-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594763-bc1d1401-a9f0-4513-b9e2-71cf969f30a5.png)
 
 ****
 
 (3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AFRO%2014%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594835-f2a585be-6035-41cf-a59f-cb2e01b77e7e.png)
 
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AFRO%2021%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594878-f34d8cc3-b70f-4989-8d99-091f659123c2.png)
 
 ****
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149594935-fcd46155-0f15-4eec-9097-ea43ca7523aa.png)
 
 ****
 
@@ -376,25 +363,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMRO%2011a%20COVID-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595018-78f16cff-153f-4172-9824-d7a5ce60ed23.png)
 
 ****
 
 (3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMRO%2014%20COVID-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595070-4f5c35df-8af1-4372-bfff-a5c0bff75fbf.png)
 
 ****
 
 (4) Americas region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMRO%2021%20COVID-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595131-a583208f-b7d7-47e4-b757-506eaded6349.png)
 
 ****
 
 (6) Americas region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMRO%2024%20COVID-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595175-1aa92d5a-c499-4af1-9f77-7fa1c45e9c42.png)
 
 ****
 
@@ -410,25 +393,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2011a%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595644-4c187b7f-2527-4dc2-8c4d-f71df388e813.png)
 
 ****
 
 (3) Americas region, Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2014%20COVID-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595708-4622f473-bc83-4c8a-adf0-38c51230d372.png)
 
 ****
 
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2021%20COVID-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595756-7b684470-de12-4f8f-bb54-1b2c2ecfb77a.png)
 
 ****
 
 (6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2024%20COVID-19%20daily%20cases%2C%20AMR1%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595827-119dd801-6a6b-41e6-8175-84c5b0bfb8bb.png)
 
 ****
 
@@ -446,25 +425,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR2%2011a%20COVID-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149595923-466322b1-f9b3-448f-b93c-7a21b93c6d0e.png)
 
 ****
 
 (3) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR2%2014%20COVID-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596002-c90344fa-6477-4b23-959a-9241a29a4c64.png)
 
 ****
 
 (4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR2%2021%20COVID-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596057-6b1c8b46-5718-4642-8262-3f4009695211.png)
 
 ****
 
 (6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR2%2024%20COVID-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596115-dad0487c-93c3-4720-8ac2-c3118a2320b1.png)
 
 ****
 
@@ -480,25 +455,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2011a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596201-af70e9ba-94ff-4048-8af3-eaab86d52b6c.png)
 
 ****
 
 (3) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2014%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596285-4d09b230-1408-43e4-b30b-3dda8ab0b398.png)
 
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2021%20COVID-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596342-c9edd8d7-01ef-49f8-90d4-ed4733a2686f.png)
 
 ****
 
 (6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2024%20COVID-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596403-41612bb2-2ee9-4db3-a2fe-7bcee1cf669a.png)
 
 ****
 
@@ -515,25 +486,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2011a%20COVID-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596497-deb72138-ab1b-4503-bda0-6209ce86d3cf.png)
 
 ****
 
 (3) European region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2014%20COVID-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596557-97b2bac1-0659-48ea-a09a-e17f42c88342.png)
 
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2021%20COVID-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596618-254dfa0d-b796-45bb-afa4-1195995d94ab.png)
 
 ****
 
 (6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2024%20COVID-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596677-8c6e0bcc-8f3a-4de8-b2ee-027bc08c3c55.png)
 
 ****
 
@@ -553,25 +520,21 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20SEARO%2011a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596766-17885cb7-6676-41c9-a57e-09b5b4911421.png)
 
 ****
 
 (3) South-East Asian region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20SEARO%2014%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149596935-041cadfe-5325-45df-ae9b-a954dc2d0dd2.png)
 
 ****
 
 (4) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20SEARO%2021%20COVID-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149597004-4f514225-4cd5-4867-adc3-57ac8c95105c.png)
 
 ****
 
 (6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20SEARO%2024%20COVID-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/149597069-c642f093-134b-41ae-b4ac-6d9f12b38d3c.png)
 
 ****
 
