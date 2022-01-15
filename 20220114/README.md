@@ -2,7 +2,7 @@
 
 ### Study update dates in uptake 20220114
 
-**_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**
+**_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, NO SRIV
 
 Note: SRIV not used in the graphs of this uptake:
 
