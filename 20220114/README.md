@@ -4,13 +4,21 @@
 
 **_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, NO SRIV
 
-Note: SRIV not used in the graphs of this uptake:
+<br/><br/>
 
-The file format and the included variables in the SRIV 20220114 update have changed, compared to their 20220113 and previous updates, in a way that I cannot locate the estimates of deaths and cases. 
 
-Therefore, I resorted to using the SRIV 20220113 update for this uptake. 
+### Summary of predictions
 
-The magnitudes of the estimates in the SRIV 20220113 update are several times – and generally highly implausibly – more than the estimates from all other models. See [`SRIV 20220113 outputs`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220114/output/SRIV). That suppresses all the curves of the other models in the graphs. Therefore, in this uptake, the estimates from the SRIV model are not included.
+Note on why the SRIV model is not used in the graphs of this uptake: The file format and the included variables in the SRIV 20220114 update have changed, compared to their 20220113 and previous updates, in a way that I cannot locate the estimates of deaths and cases. Therefore, I resorted to using the SRIV 20220113 update for this uptake. The magnitudes of the estimates in the SRIV 20220113 update are several times – and generally highly implausibly – more than the estimates from all other models. That suppresses all the curves of the other models in the graphs. Therefore, in this uptake, the estimates from the SRIV model are not included.
+
+Even without the outlier SRIV model, the results of the remaining three models (i.e., DELP, IHME, and IMPE) are very heterogeneous. Such degree of heterogenous was not seen before, even with the Delta variant. This heterogeneity is both qualitative and quantitative. Qualitative heterogeneity: The directions of the rise and fall of the same variables (i.e., infections, cases, or deaths) during similar calendar time periods in future, for a given location (i.e., WHO region), across the models, are contradictory. One model says it will rise, the other model says it will fall, and the third model says it will stagnate horizontally. Quantitative heterogeneity: Levels of the same estimates in the same times and places have several-fold differences in magnitude across models. Peak times also several weeks to few months difference across models. 
+
+Notably, both the IHME and the IMPE models have had two estimates update releases each with inclusion of the Omicron variant. 
+
+One possible underlying cause of this extreme heterogeneity in the models’ results can consist of the following factors: (1) Volatile and rapidly changing dynamics of the spread, symptomacity, and fatality of the Omicron Variant across the globe. (2) The resultant variability of the set of published and unpublished data and evidence that are used in models for parametrization of the Omicron dynamics. (3) The degree of the meticulousness of different models in the inclusion of the Omicron dynamics in their models. (4) Asynchronicity of the different models’ update release time. 
+
+Omicron not only is disrupting health care services, but it also poses an unprecedented turmoil and challenge for its inclusion in the epidemic models. What will happen with a possible next variant of concern? 
+
 
 
 
