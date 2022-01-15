@@ -489,21 +489,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2011a%20COVID-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603384-6675be4f-3672-4070-94b6-e6a6b120cd83.png)
 
 ****
 
 (3) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2014%20COVID-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603413-7613934b-e966-42a0-a447-c5c0a08d1728.png)
 
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2021%20COVID-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603438-c9c9cb87-c265-4ed6-a4cc-30a62eaf0da2.png)
 
 ****
 
 (6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EMRO%2024%20COVID-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603452-f74fc3ca-1440-4b36-bba6-524354d40288.png)
 
 ****
 
@@ -520,21 +524,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2011a%20COVID-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603471-49a3afd4-6591-4649-82c6-e73caf97585c.png)
 
 ****
 
 (3) European region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2014%20COVID-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603492-c1edfbff-cbff-4d94-902c-d3c26745d5ab.png)
 
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2021%20COVID-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603507-cdf1e2e4-33f2-4bfe-8d61-a92ae05b5ff2.png)
 
 ****
 
 (6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20EURO%2024%20COVID-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603530-d771e22b-93dc-48e6-bfbc-7cdae28e9858.png)
 
 ****
 
