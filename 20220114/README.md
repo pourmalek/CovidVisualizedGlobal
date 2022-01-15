@@ -95,21 +95,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (4) Global [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2021%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602083-4d17fafe-fa5a-4e0c-bf57-cd89115a9434.png)
 
 ****
 
 (5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602131-d8fc2262-4f28-4e0e-bc9e-e5d3118a3fd0.png)
 
 ****
 
 (6) Global [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2024%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602171-afa91cbd-b5c0-4f09-8753-47a768c8df1c.png)
 
 ****
 
 (6b) Global [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2022b%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602198-b238bd25-ffca-467b-b262-a215b1cbbf2f.png)
 
 ****
 
@@ -133,11 +137,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Global [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602242-4a59a3aa-fbfc-431d-a0b6-121a21abe27c.png)
 
 ****
 
 (11) Global [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2091%20COVID-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%203%20scenarios%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602275-61ec74c9-bc31-4926-9d72-43407ed44b13.png)
 
 ****
 
