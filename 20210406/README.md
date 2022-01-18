@@ -7,10 +7,6 @@ DELP 20210406 used to be accessible on https://github.com/COVIDAnalytics/website
 <br/><br/>
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210406/graphs%20merge%2020210406.pdf)
-
-
-****
 
 
 ### Selected graphs
