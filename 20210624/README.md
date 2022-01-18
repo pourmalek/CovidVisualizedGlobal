@@ -24,7 +24,7 @@ DELP 20210624, IHME 20210618, **_IMPE 20210618_**, LANL 20210613, SRIV 20210624
 
 (2) [Daily deaths, reference scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210624/output/merge/graph%2012%20COVID-19%20daily%20deaths%2C%20global%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/124203548-d4309980-da91-11eb-9f43-fc8136103991.png)
+![image](https://user-images.githubusercontent.com/30849720/150032289-425139dc-639c-4eed-9c59-8c7f3625946a.png)
 
 ****
 
