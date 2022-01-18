@@ -9,7 +9,7 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 <br/><br/>
 
-[IHME COVID-19 Results Briefing - Global - 20210909](http://www.healthdata.org/sites/default/files/files/Projects/COVID/2021/1_briefing_Global_19.pdf) || [PDF](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210910/IHME%20COVID-19%20Results%20Briefing%20-%20Global%20-%2020210909.pdf)
+[IHME COVID-19 Results Briefing - Global - 20210909](http://www.healthdata.org/sites/default/files/files/Projects/COVID/2021/1_briefing_Global_19.pdf) 
 
 <br/><br/>
 
