@@ -12,7 +12,9 @@
 
 ### Combine and visualize international periodically updated estimates of COVID-19 pandemic 
 
-### <div align="center"> at the GLOBAL level 🌍 
+### <div align="center"> at the at the country level, countries with subnational level estimates 
+  
+## <div align="center"> Canada
   
 ## <div align="center"> and for SIX WHO REGIONS 
   
