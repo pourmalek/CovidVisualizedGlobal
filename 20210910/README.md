@@ -15,11 +15,6 @@ Note: IMPE update 20210825 was dead at birth for IRAN since predicted daily deat
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210910/graphs%20merge%2020210910.pdf)
-
-
-****
-
 
 ### Selected graphs
 
