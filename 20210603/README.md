@@ -10,11 +10,6 @@ IMPE update 20210527 (2021-05-27_v8.csv.zip) released on 20210603.
 <br/><br/>
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210603/graphs%20merge%2020210603.pdf)
-
-
-****
-
 
 ### Selected graphs
 
