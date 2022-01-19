@@ -12,11 +12,6 @@ Since IHME update 20210702, it takes a few stages for IHME update to be fully de
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210819/graphs%20merge%2020210819.pdf)
-
-
-****
-
 
 ### Selected graphs
 
