@@ -6,6 +6,8 @@
 
 <br/><br/>
 
+The magnitudes of the estimates in this **SRIV** update are several times – and generally highly implausibly – more than the estimates from all other models. That suppresses all the curves of the other models in the graphs. Therefore, in this uptake, the estimates from the SRIV model are not included in the graphs.
+
 
 ****
 
