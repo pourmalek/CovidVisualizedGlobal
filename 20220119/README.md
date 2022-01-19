@@ -144,18 +144,21 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
+(12) Global [Daily mobility, 2 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150221134-f12b357d-4d48-41ba-a190-bb488d732714.png)
 
 ****
 
-(13) Global [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%203%20scenarios.pdf)
+(13) Global [Daily mask use, 2 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20GLOBAL%2093%20COVID-19%20daily%20mask_use%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150221275-eb81c32a-ecbd-453d-94d0-1576c5799171.png)
 
 ****
 
 (14) Global [Percent cumulative vaccinated, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20GLOBAL%2094%20COVID-19%20cumulative%20vaccinated%20percent%2C%20GLOBAL%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150221405-e5e4c820-deeb-4471-ae6f-e4d817e087f4.png)
 
 ****
 
