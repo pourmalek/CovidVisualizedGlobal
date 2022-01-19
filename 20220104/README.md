@@ -51,11 +51,6 @@ In **DELP update 20220104**, Global daily deaths start from about 800,000 around
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220104/graphs%20merge%2020220104.pdf)
-
-
-****
-
 
 ### Selected graphs
 
