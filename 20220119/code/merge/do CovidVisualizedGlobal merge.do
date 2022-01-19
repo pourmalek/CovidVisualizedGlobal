@@ -744,7 +744,7 @@ foreach region of local list5 {
 	if date >= td(01jan2021)  ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
-	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', 3 scenarios, IHME", size(medium)) ///
+	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', 2 scenarios, IHME", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "JOHN raw" 2 "JOHN smooth" 3 "IHME reference" 4 " IHME best" ///
 	) size(small) row(2)) ///
@@ -1679,7 +1679,7 @@ foreach region of local list5 {
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-	ytitle(Daily mask use) title("COVID-19 daily mask use, `region', IHME, 3 scenarios", size(medium)) ///
+	ytitle(Daily mask use) title("COVID-19 daily mask use, `region', IHME, 2 scenarios", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "Better" 2 "Reference") rows(1)) ///
 	subtitle(Proportion of population reporting always wearing a mask when leaving home, size(small))
@@ -1712,7 +1712,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 2 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Infection detection ratio" 2 "Infection hospitalization ratio" 3 "Infection fatality ratio") rows(2)) ///
 note("Better scenario: dashed curves")
@@ -1724,7 +1724,7 @@ qui graph export "graph GLOBAL 91 COVID-19 daily Infection outcomes ratios, GLOB
 
 
 	
-* daily Infection outcomes (hospitalizationratios, fatality), 3 scenarios 
+* daily Infection outcomes (hospitalizationratios, fatality), 2 scenarios 
   
 twoway ///
 (line InfHospitA02S01GLOBAL date, sort lcolor(black)) ///
@@ -1734,13 +1734,13 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%9.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily infection outcome ratios) title("COVID-19 daily infection outcome ratios, GLOBAL, IHME, 2 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1  "Infection hospitalization ratio" 2 "Infection fatality ratio") rows(2)) ///
 note("Better scenario: dashed curves")
 
-qui graph save "graph GLOBAL 91b COVID-19 daily Infection outcomes ratios, GLOBAL 3 scenarios, IHME.gph", replace
-qui graph export "graph GLOBAL 91b COVID-19 daily Infection outcomes ratios, GLOBAL 3 scenarios, IHME.pdf", replace
+qui graph save "graph GLOBAL 91b COVID-19 daily Infection outcomes ratios, GLOBAL 2 scenarios, IHME.gph", replace
+qui graph export "graph GLOBAL 91b COVID-19 daily Infection outcomes ratios, GLOBAL 2 scenarios, IHME.pdf", replace
 
 
 
@@ -1754,7 +1754,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily % change in mobility from baseline) title("COVID-19 daily % change in mobility, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily % change in mobility from baseline) title("COVID-19 daily % change in mobility, GLOBAL, IHME, 2 scenarios", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Better" 2 "Reference") rows(1)) 
 
@@ -1772,7 +1772,7 @@ twoway ///
 if date >= td(01dec2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(% Cumulative vaccinated percent) title("COVID-19 cumulative vaccinated percent, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(% Cumulative vaccinated percent) title("COVID-19 cumulative vaccinated percent, GLOBAL, IHME, ref scenario", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Vaccinated" 2 "Effectively vaccinated" 3 "Fully vaccinated") rows(1)) ///
 note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
@@ -1796,7 +1796,7 @@ twoway ///
 if date >= td(01dec2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(% Daily vaccinated percent) title("COVID-19 daily vaccinated percent, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(% Daily vaccinated percent) title("COVID-19 daily vaccinated percent, GLOBAL, IHME, ref scenario", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Vaccinated" 2 "Effectively vaccinated" 3 "Fully vaccinated") rows(1)) ///
 note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
@@ -1818,7 +1818,7 @@ twoway ///
 if date >= td(01jan2021) ///
 , xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-ytitle(Daily vaccinated number) title("COVID-19 daily vaccinated number, GLOBAL, IHME, 3 scenarios", size(medium)) ///
+ytitle(Daily vaccinated number) title("COVID-19 daily vaccinated number, GLOBAL, IHME, ref scenario", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "Vaccinated" 2 "Effectively vaccinated" 3 "Fully vaccinated") rows(1)) ///
 note("Vaccinated: Initially vaccinated (one dose of two doses)" ///
