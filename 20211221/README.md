@@ -36,7 +36,6 @@ Estimated daily deaths are not expected to surpass those seen in previous wases 
 Among the regions, the highest numbers of estimated daily deaths are expected be seen in EURO (about > 5,000 in late January 2022), and in AMRO (about 3,000 in early February 2022). At the Global level, the number of estimated daily deaths are expected to peak at about > 9,000 at late January to early February 2022. 
 
 
-
 ***************************************************************************************************************************************
 
 WHO Regeions
