@@ -32,11 +32,6 @@ However, the previously stored results, such as the graphs stored in "CovidVisua
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210806/graphs%20merge%2020210806.pdf)
-
-
-****
-
 
 ### Selected graphs
 
