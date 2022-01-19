@@ -1870,7 +1870,7 @@ twoway ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -1923,7 +1923,7 @@ twoway ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) ) ///
-(line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black)) ///
 (line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
 (line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -1932,7 +1932,7 @@ twoway ///
 (line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -1959,7 +1959,7 @@ twoway ///
 (line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
 if date >= td(01oct2021) ///
 , xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2046,7 +2046,7 @@ twoway ///
 (line DayDeXMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
-(line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayDeXMeSmA02S01GLOBAL date, sort lcolor(black)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2101,7 +2101,7 @@ twoway ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black) lwidth(thick)) ///
+(line DayCasMeSmA00S00GLOBAL date, sort lcolor(black)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2178,8 +2178,8 @@ twoway ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
-(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayINFMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown)) /// IMPE
 (line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line DayINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
 (line DayINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
@@ -2187,7 +2187,7 @@ twoway ///
 (line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+(line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2216,7 +2216,7 @@ twoway ///
 (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
 if date >= td(01oct2021) ///
 , xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2304,7 +2304,7 @@ twoway ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
 (line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
 (line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line TotDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -2313,7 +2313,7 @@ twoway ///
 (line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+(line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2340,7 +2340,7 @@ twoway ///
 (line TotDeaMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
-(line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeaMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
 if date >= td(01oct2021) ///
 , xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2427,7 +2427,7 @@ twoway ///
 (line TotDeXMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeXMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeXMeSmA02S01WPRO date, sort lcolor(blue)) ///
-(line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotDeXMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2478,7 +2478,7 @@ twoway ///
 (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
-(line TotINFMeSmA02S01GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotINFMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
 (line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
 (line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
 (line TotINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -2487,7 +2487,7 @@ twoway ///
 (line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
 (line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lwidth(thick) lpattern(dash)) ///
+(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2514,7 +2514,7 @@ twoway ///
 (line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
 (line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
 (line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black) lwidth(thick)) /// 
+(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
 if date >= td(01oct2021) ///
 , xtitle(Date) xlabel(#8, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
