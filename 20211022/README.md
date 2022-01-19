@@ -25,11 +25,6 @@ IHME COVID-19 estimate downloads http://www.healthdata.org/covid/data-downloads 
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211022/graphs%20merge%2020211022.pdf)
-
-
-****
-
 
 ### Selected graphs
 
