@@ -17,11 +17,6 @@ As of 20210808, the file URL is https://ihmecovid19storage.blob.core.windows.net
 
 ****
 
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20210730/graphs%20merge%2020210730.pdf)
-
-
-****
-
 
 ### Selected graphs
 
