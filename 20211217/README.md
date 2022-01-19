@@ -46,15 +46,6 @@ Farshad Pourmalek, December 15, 2021
 
 
 
-
-****
-
-### Merged graphs of this uptake [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211217/graphs%20merge%2020211217.pdf)
-
-
-****
-
-
 ### Selected graphs
 
 
