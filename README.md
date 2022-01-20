@@ -1362,7 +1362,7 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
   
 ### Selected graphs from previous uptakes are stored in the following web pages: 
   
-[RESULTS African region]()
+[RESULTS African region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20African%20region)
   
 [RESULTS Americas region]()
   
