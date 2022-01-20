@@ -1,6 +1,6 @@
 # CovidVisualizedGlobal 
 
-## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/24%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2024%20–%202022-01-14.pdf).
+## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/25%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2025%20–%202022-01-19.pdf).
 
 
 <br/><br/>
@@ -137,7 +137,7 @@ Omicron not only is disrupting health care services, but it also poses an unprec
   <br/><br/>
 
 
-# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 24 – 2022-01-14](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/24%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2024%20–%202022-01-14.pdf)  
+# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 25 – 2022-01-19](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/25%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2025%20–%202022-01-19.pdf)  
 
   
 ****
