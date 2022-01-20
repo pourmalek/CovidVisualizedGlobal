@@ -1199,10 +1199,11 @@ Scenarios of IHME model before update 20211221:
 . 
   
   
-  **_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, NO SRIV
+(60) uptake [`20220119`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/2022019): 
+**_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, NO SRIV
   
-(59) uptake [`2022014`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/2022014): 
-**_DELP 2022014_**, IHME 20220110, **_IMPE 20211226_**, NO SRIV
+(59) uptake [`20220114`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/2022014): 
+**_DELP 20220114_**, IHME 20220110, **_IMPE 20211226_**, NO SRIV
  
 (58) uptake [`20220112`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220112): 
 **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -1364,51 +1365,26 @@ DELP 20210726, **_IHME 20210723 version 2_**, IMPE 20210709, LANL 20210718, SRIV
   
 [RESULTS African region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20African%20region)
   
-[RESULTS Americas region]()
+[RESULTS Americas region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region)
   
-[RESULTS Americas region Canada and United States]()
+[RESULTS Americas region Canada and United States](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Americas%20region%20Canada%20and%20United%20States)
   
 [RESULTS Americas region without Canada and United States]()
   
-[RESULTS Eastern Mediterranean region]()
+[RESULTS Eastern Mediterranean region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean%20region)
   
-[RESULTS European region]()
+[RESULTS European region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20European%20region)
   
-[RESULTS GLOBAL 2021]()
+[RESULTS GLOBAL 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202021)
   
-[RESULTS GLOBAL 2022]()
+[RESULTS GLOBAL 2022](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022)
   
-[RESULTS Regions together]()
+[RESULTS Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together)
   
-[RESULTS South-East Asian region]()
+[RESULTS South-East Asian region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region)
   
-[RESULTS Western Pacific region]()
+[RESULTS Western Pacific region](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Western%20Pacific%20region)
   
-
-
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-
-
-
-
-
 
 
 
