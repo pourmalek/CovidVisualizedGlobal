@@ -38,7 +38,7 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -147,7 +147,7 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -221,7 +221,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -296,7 +296,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -374,7 +374,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -451,7 +451,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -524,7 +524,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -596,7 +596,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -647,7 +647,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -699,7 +699,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -752,7 +752,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -830,7 +830,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -905,7 +905,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -984,7 +984,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1062,7 +1062,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1135,7 +1135,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1210,7 +1210,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1286,7 +1286,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1363,7 +1363,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1439,7 +1439,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1515,7 +1515,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1591,7 +1591,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1668,7 +1668,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
@@ -1744,7 +1744,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
-**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+**uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
 
 
