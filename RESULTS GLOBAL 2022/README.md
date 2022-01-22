@@ -16,6 +16,12 @@
 
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -46,6 +52,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -81,6 +93,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2012b%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
@@ -110,6 +128,12 @@
   
  
  
+
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
 
 *
 
@@ -143,6 +167,12 @@
   
  
  
+
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
 
 *
 
@@ -180,6 +210,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (3c) Global [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2018%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
@@ -210,6 +246,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -245,6 +287,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
@@ -277,6 +325,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (6) Global [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2024%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -307,6 +361,12 @@
   
  
  
+
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
 
 *
 
@@ -344,6 +404,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20GLOBAL%2C%20reference%20scenarios%202021.pdf)
@@ -379,6 +445,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (7) Global [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
@@ -410,6 +482,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -446,6 +524,12 @@
   
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (9) Global [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
@@ -478,6 +562,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -513,6 +603,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -553,6 +649,12 @@
 
 *
 
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
+*
+
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
 (12) Global [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20GLOBAL%2092%20COVID-19%20daily%20mobility%2C%20GLOBAL%2C%203%20scenarios.pdf)
@@ -585,6 +687,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -621,6 +729,12 @@
  
  
   
+*
+
+**uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
+
+
+
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
