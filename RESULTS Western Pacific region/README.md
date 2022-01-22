@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603682-42ee5054-7e43-4495-85f2-fa710ed30ff8.png)
 
 *
 
@@ -97,7 +99,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20WPRO%2014%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603703-3851ddaf-caa5-422e-9acc-28bbb4afe0a8.png)
 
 *
 
@@ -167,7 +171,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(4) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20WPRO%2021%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603721-e5079135-b68f-4ed7-a348-9ebc89d2cbfd.png)
 
 *
 
@@ -237,7 +243,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20WPRO%2024%20COVID-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603745-8e1cafe4-a692-41a7-ae96-9aca2c76713a.png)
 
 *
 
