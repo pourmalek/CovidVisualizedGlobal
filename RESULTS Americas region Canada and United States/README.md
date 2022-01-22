@@ -29,7 +29,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2011a%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602947-0e38a62c-2532-4cda-b13a-29f9d8db58df.png)
 
 *
 
@@ -72,7 +74,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(3) Americas region, Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2014%20COVID-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602974-fd62239c-6942-43ae-80c9-b632ad100581.png)
 
 *
 
@@ -115,7 +119,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2021%20COVID-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603014-dc4e1384-1d50-4f39-bd5f-ba11d57da3a9.png)
 
 *
 
@@ -163,7 +169,9 @@ List of graphs:
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20AMR1%2024%20COVID-19%20daily%20cases%2C%20AMR1%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149603057-0166b5ac-d233-4198-8a94-3d57dd141e7e.png)
 
 *
 
