@@ -30,7 +30,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20SEARO%2011a%20COVID-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385296-749c34d0-53a5-4122-ba0b-d544fa5e4a7f.png)
 
 *
 
@@ -104,7 +106,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(3) South-East Asian region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20SEARO%2014%20COVID-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385404-0ed73107-41c8-4085-8a65-e6b55d718055.png)
 
 *
 
@@ -180,7 +184,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(4) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20SEARO%2021%20COVID-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385522-1f5c7869-099d-45a2-86bf-4c52745a6537.png)
 
 *
 
@@ -255,7 +261,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20SEARO%2024%20COVID-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385647-c6bed0b1-188a-4cbf-8a44-dcd186fa914e.png)
 
 *
 
