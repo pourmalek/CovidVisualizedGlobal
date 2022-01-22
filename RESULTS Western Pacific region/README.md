@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385778-9449f943-ee6d-4ff9-850f-f0a92090e1fb.png)
 
 *
 
@@ -105,7 +107,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20WPRO%2014%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150385897-51321a8b-387b-4f0c-a805-d46a2ef2c393.png)
 
 *
 
@@ -183,7 +187,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(4) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20WPRO%2021%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150386024-6ba27951-a27d-4323-aa49-7880e25d75e7.png)
 
 *
 
@@ -261,7 +267,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, **_IHME 20220114_**, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20WPRO%2024%20COVID-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150386145-8edee53f-a7ed-4f64-88e7-64dea1b80bd5.png)
 
 *
 
