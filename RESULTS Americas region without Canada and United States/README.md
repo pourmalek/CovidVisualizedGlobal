@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AMR2%2011a%20COVID-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150236199-ec8a9ba0-797a-45d7-bacc-3db81f7a615a.png)
 
 *
 
@@ -81,7 +83,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(3) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AMR2%2014%20COVID-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150236300-4d1de507-7351-4251-a336-5ba1720ae4d7.png)
 
 *
 
@@ -129,7 +133,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AMR2%2021%20COVID-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150236369-de1254b6-c259-400d-b689-a2476a55871f.png)
 
 *
 
@@ -181,7 +187,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AMR2%2024%20COVID-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150236455-7c8091c7-d37e-4c25-88e6-05b4f22c3527.png)
 
 *
 
