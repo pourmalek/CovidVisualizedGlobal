@@ -29,7 +29,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(1) African region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AFRO%2011a%20COVID-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150235358-43ced1b5-7099-4b67-bebb-827ce8696ae6.png)
 
 *
 
@@ -105,7 +107,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AFRO%2014%20COVID-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150235444-24af67e1-ad60-4bf6-bd25-91572c965e31.png)
 
 *
 
@@ -185,7 +189,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(4) African region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AFRO%2021%20COVID-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150235511-a0e9bdd9-498b-42cb-a5c9-f08878f8c5ed.png)
 
 *
 
@@ -261,7 +267,9 @@ List of graphs:
 
 **uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
 
+(6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220119/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150235582-95131331-8629-401a-a6a9-3d202e92550e.png)
 
 *
 
