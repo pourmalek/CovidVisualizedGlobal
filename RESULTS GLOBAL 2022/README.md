@@ -16,6 +16,12 @@
 
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -54,6 +60,12 @@
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
@@ -97,6 +109,12 @@
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2012b%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
@@ -134,6 +152,12 @@
   
  
  
+
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
 
 *
 
@@ -178,6 +202,12 @@
 
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 Both this and the previous uptake use the same model update, so the graphs are identical.
@@ -218,6 +248,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 Both this and the previous uptake use the same model update, so the graphs are identical.
@@ -254,6 +290,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
@@ -297,6 +339,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2022%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
@@ -337,6 +385,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (6) Global [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2024%20COVID-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -375,6 +429,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
  
  
+
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
 
 *
 
@@ -420,6 +480,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 Both this and the previous uptake use the same model update, so the graphs are identical.
@@ -461,6 +527,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (7) Global [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2061a%20COVID-19%20hospital-related%20outcomes.pdf)
@@ -500,6 +572,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
@@ -544,6 +622,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 (9) Global [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%20GLOBAL%2082%20COVID-19%20daily%20deaths%20estimated%20to%20reported%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
@@ -586,6 +670,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 Both this and the previous uptake use the same model update, so the graphs are identical.
@@ -625,6 +715,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
@@ -671,6 +767,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 *
 
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
+*
+
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 Both this and the previous uptake use the same model update, so the graphs are identical.
@@ -709,6 +811,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
@@ -751,6 +859,12 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
+*
+
+**uptake 20220119**: **_DELP 20220118_**, IHME 2022014, **_IMPE 20220102_**, **_SRIV 20220119_**
+
+
+
 *
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
