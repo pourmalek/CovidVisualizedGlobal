@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149230333-cd2dbaf4-de86-4354-bba4-a631b4f6988a.png)
 
 *
 
@@ -89,7 +91,9 @@ List of graphs:
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
+(3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20WPRO%2014%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149230409-25b486e3-0ebe-4f00-9986-afc9221cde38.png)
 
 *
 
@@ -151,7 +155,9 @@ List of graphs:
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
+(4) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20WPRO%2021%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149230497-ea0c2b6c-053a-409f-b026-6a06e5a82003.png)
 
 *
 
@@ -213,7 +219,9 @@ List of graphs:
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
 
+(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220112/output/merge/graph%20WPRO%2024%20COVID-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149230578-e39293e6-9a6d-46fb-906d-1414e570f2df.png)
 
 *
 
