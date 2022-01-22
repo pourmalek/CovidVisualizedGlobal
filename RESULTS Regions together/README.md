@@ -40,7 +40,9 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(0a) Regions together [Daily deaths, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201a1%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149592321-330f6f77-3b03-402b-84fc-f11108c15748.png)
 
 *
 
@@ -87,7 +89,9 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(0b) Regions together [Daily deaths, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149592397-329f1daf-9519-46ae-bf77-5ebe1daadacb.png)
 
 *
 
@@ -133,7 +137,7 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -201,7 +205,7 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -270,7 +274,9 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(3) Regions together [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201a2%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602329-07663d57-64d1-42d4-8c28-8a7a7dffb574.png)
 
 *
 
@@ -340,7 +346,9 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(4) Regions together [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%201b2%20COVID-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602389-63049c39-eb1b-4d1e-a5c7-35bf1ffe6e31.png)
 
 *
 
@@ -409,7 +417,7 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -476,7 +484,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -542,7 +550,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(00a) Regions together [Daily cases, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149592939-afe82023-6dae-46f5-a643-3ae12eb2bb2b.png)
 
 *
 
@@ -585,7 +595,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(00b) Regions together [Daily cases, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149593016-a9dff28d-ad9c-4334-811d-55e6645cc54d.png)
 
 *
 
@@ -629,7 +641,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(00c) Regions together [Daily cases, without GLOBAL, JOHN, Recent](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN%20recent.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149593087-6e6a3fa4-dcb1-4818-9e8b-358fdef29215.png)
 
 *
 
@@ -674,7 +688,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -746,7 +760,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -815,7 +829,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(9) Regions together [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202a2%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602433-2e237271-9102-48fe-a54e-094f3dcefc31.png)
 
 *
 
@@ -886,7 +902,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%202b2%20COVID-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602466-db5094df-ec3d-4c0f-9cca-6ecd5b07a6a2.png)
 
 *
 
@@ -956,7 +974,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1023,7 +1041,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1092,7 +1110,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(13) Regions together [Total deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%203a2%20COVID-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602488-427667f1-5f08-4a5e-ab4f-5d2e1389565b.png)
 
 *
 
@@ -1160,7 +1180,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%203b2%20COVID-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602508-0d183388-2fa3-4afc-8263-4b5c0183df6e.png)
 
 *
 
@@ -1229,7 +1251,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1299,7 +1321,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1369,7 +1391,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1440,7 +1462,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 *
 
 **uptake 20220112**: **_DELP 20220111_**, **_IHME 20220110_**, **_IMPE 20211226_**, **_SRIV 20220112_**
@@ -1510,7 +1532,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(19) Regions together [Total cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%204a2%20COVID-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602608-49f253a0-b2ad-4de8-bbd6-64cb5900f7b3.png)
 
 *
 
@@ -1578,7 +1602,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220114**: **_DELP 20220114_**, IHME 20220110, IMPE 20211226, NO SRIV 
 
+(20) Regions together [Total cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220114/output/merge/graph%204b2%20COVID-19%20total%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/149602653-f7ed7ea6-cd67-444c-b4cd-66b115f89d1e.png)
 
 *
 
