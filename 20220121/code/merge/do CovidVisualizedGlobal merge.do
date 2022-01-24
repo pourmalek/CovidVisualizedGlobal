@@ -1909,6 +1909,33 @@ qui graph export "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.p
 
 
 
+
+* daily deaths, without GLOBAL, JOHN, recent
+
+twoway ///
+(line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+(line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+(line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+(line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+(line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+if date >= td(01jan2022) & date <= td(01feb2022) ///
+, xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+subtitle("without GLOBAL", size(small)) 
+
+qui graph save "graph 1a3 JOHN COVID-19 daily deaths, regions together, JOHN.gph", replace
+qui graph export "graph 1a3 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+
+
+
+
+
 * models
 
 
