@@ -141,7 +141,7 @@ The officially reported daily cases are rising in all WHO regions, with highest 
 Comparison of previous model estimates of peak times with official reports shows that the model estimates might have about two weeks error, i.e., their estimates of peak times might be within two weeks sooner to two weeks later than the peak times in the official reports. 
 
   
-    <br/><br/>
+ <br/><br/>
 
  
   
