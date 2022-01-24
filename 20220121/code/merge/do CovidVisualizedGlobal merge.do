@@ -2151,7 +2151,7 @@ twoway ///
 (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-if date >= td(17dec2021) & date <= td(15jan2022) ///
+if date >= td(17dec2021) & date <= td(30jan2022) ///
 , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
