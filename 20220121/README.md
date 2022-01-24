@@ -179,13 +179,13 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(0b) Regions together [Daily deaths, without GLOBAL, 2021 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+(0b) Regions together [Daily deaths, without GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/150848993-ecfbe7da-3624-4506-9bd1-2d6e012d10a1.png)
 
 ****
 
-(0c) Regions together [Daily deaths, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%201a3%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+(0c) Regions together [Daily deaths, without GLOBAL, 2022, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%201a3%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/150853171-658e3fce-8b1b-4929-8866-f1149e805a1c.png)
 
@@ -246,21 +246,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (7) Regions together [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%202a1%20COVID-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150853561-ea58dfa8-8843-4c5f-b3be-6df94e2bc6ef.png)
 
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%202b1%20COVID-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150853654-72e81a17-ea63-410d-a0b2-9e7f2473220f.png)
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%202a2%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150853770-0e0de66c-34ab-44c6-9a59-5b3263c9fd97.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%202b2%20COVID-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150853863-2927fa6b-d593-4097-ab6b-9ba63be10a0f.png)
 
 ****
 
