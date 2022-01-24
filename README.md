@@ -120,6 +120,29 @@ The codes in these repositories can be adapted for use for any country or region
   
   
   <br/><br/>
+  
+#### Summary of uptake 20220119 with IHME update 20220119 and IMPE update 20220102
+
+#### Daily Deaths
+
+The officially reported daily deaths are rising in all WHO regions, with highest rates in the Americas, both in Canada and United States and the Americas without them. EMRO and AFRO have the lowest rates of increase now. 
+
+The IHME model estimates show decline of the daily deaths started in mid-January 2022 at the global level. IMPE model estimates of daily deaths show a rise to more than 15,000 in AFRO, about 10,000 in Canada and United States, and about 10,000 in EURO in early March 2022.
+
+The officially reported daily deaths have surpassed IHME estimates at the Global level, AMRO, Canada and United States, EMRO, EURO, and WPRO. 
+
+
+#### Daily Cases or Infections
+
+The officially reported daily cases are rising in all WHO regions, with highest rates in the EURO, Americas without Canada and United States, and SEARO. The IHME model estimates show decline of the daily infections started in December 2021 in AFRO; at the Global level, AMRO, SEARO, EURO, in January 2022; to start in EMRO in late- January 2022, and in SAERO in February 2022. IMPE model estimates of daily infections peak in early February 2022 at the global level, with the highest peak in AFRO in early February 2022. 
+
+#### Peak Times
+
+Comparison of previous model estimates of peak times with official reports shows that the model estimates might have about two weeks error, i.e., their estimates of peak times might be within two weeks sooner to two weeks later than the peak times in the official reports. 
+
+  
+    <br/><br/>
+
  
   
 # :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 25 – 2022-01-19](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/25%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2025%20–%202022-01-19.pdf)  
