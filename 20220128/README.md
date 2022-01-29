@@ -47,21 +47,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%20GLOBAL%2011a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151680143-26024431-066e-4429-9651-effcdb58405e.png)
 
 ****
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%20GLOBAL%2012a%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151680192-c5db8415-82dd-4eec-9536-f7bb1dfbfa09.png)
 
 ****
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%20GLOBAL%2012b%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20with%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151680226-c08d4c19-20d2-4762-8538-7d780190a57f.png)
 
 ****
 
 (3) Global [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%20GLOBAL%2014%20COVID-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151680259-8cf6dab1-9802-4384-b1c2-4d2de5955295.png)
 
 ****
 
