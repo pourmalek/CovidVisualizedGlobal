@@ -127,7 +127,9 @@ SRIV
 * IF the target server for a given study is temp down, the respective line can be commented out. Edits would then be needed in merge.do, however. 
 
 
-do "$pathCovidVisualizedGlobal/JOHN/do CovidVisualizedGlobal JOHN.do" 
+do "$pathCovidVisualizedGlobal/JOHN/do CovidVisualizedGlobal JOHN.do"
+
+/* 
 
 do "$pathCovidVisualizedGlobal/DELP/do CovidVisualizedGlobal DELP.do" 
 
@@ -138,6 +140,8 @@ do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do"
 // do "$pathCovidVisualizedGlobal/LANL/do CovidVisualizedGlobal LANL.do" // The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 
 do "$pathCovidVisualizedGlobal/SRIV/do CovidVisualizedGlobal SRIV.do" 
+
+*/
 
 do "$pathCovidVisualizedGlobal/merge/do CovidVisualizedGlobal merge.do" 
 

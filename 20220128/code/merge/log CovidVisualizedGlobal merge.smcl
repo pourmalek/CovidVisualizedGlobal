@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220128/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}29 Jan 2022, 18:13:15
+ {txt}opened on:  {res}29 Jan 2022, 16:01:18
 {txt}
 {com}. 
 . 
@@ -362,92 +362,6 @@ now 732
 . 
 . 
 . 
-. * daily cases, with GLOBAL, JOHN
-. 
-. twoway ///
-> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-> (line DayCasMeSmA00S00GLOBAL date, sort lcolor(black)) ///
-> if date >= td(01jan2020) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
-> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
-> subtitle("with GLOBAL", size(small)) 
-{res}{txt}
-{com}. 
-. qui graph save "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
-{txt}
-{com}. qui graph export "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
-{txt}
-{com}. 
-. 
-. 
-. 
-. * daily cases, without GLOBAL, JOHN
-. 
-. twoway ///
-> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-> if date >= td(01jan2020) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
-> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
-> subtitle("without GLOBAL", size(small)) 
-{res}{txt}
-{com}. 
-. qui graph save "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
-{txt}
-{com}. qui graph export "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
-{txt}
-{com}. 
-. 
-. 
-. 
-. * daily cases, without GLOBAL, JOHN, recent
-. 
-. twoway ///
-> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
-> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
-> if date >= td(01jan2022) & date <= td(01feb2022) ///
-> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
-> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
-> subtitle("without GLOBAL", size(small)) 
-{res}{txt}
-{com}. 
-. qui graph save "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN.gph", replace
-{txt}
-{com}. qui graph export "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
-{txt}
-{com}. 
-. 
-. 
-. 
-. 
 .         
 . 
 . ************
@@ -469,7 +383,7 @@ now 732
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220128/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}29 Jan 2022, 18:13:26
+ {txt}closed on:  {res}29 Jan 2022, 16:01:25
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
