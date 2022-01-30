@@ -2,17 +2,23 @@
 
 ### JOHN only in uptake 20220128
 
+IHME and IMPE models have not been updated since the previous uptake of CovidVisualizedGlobal, and the SRIV model updated estimates are highly implausible. 
+
+<br/><br/>
+
+
+#### Summary of reported daily deaths and cases as of 20220128
+
+Reported daily deaths are on the rise at the Global level and in all WHO regions, but the increase rate so far is small in AFRO and EMRO. 
+
+Reported daily cases deaths are on the rise at the Global level and in all WHO regions, except in SAERO and AFRO. Second notches (double tips) show in AMRO (PAHO) and WPRO – AMRO both with and without Canada and United States. 
+
+
 
 <br/><br/>
 
 
 ### Selected graphs
-
-
-****
-****
-
-### Selected graphs - [Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/README.md#selected-graphs---regions-together-1)
 
 
 ****
@@ -54,7 +60,7 @@
 
 ****
 
-(00c) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN%20recent.pdf)
+(00c) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/151681022-db8f5e78-e33f-47a7-86f6-0647b730014a.png)
 
