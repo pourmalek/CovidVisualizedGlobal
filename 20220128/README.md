@@ -2,7 +2,7 @@
 
 ### JOHN only in uptake 20220128
 
-IHME and IMPE models have not been updated since the previous uptake of CovidVisualizedGlobal, and the SRIV model updated updates are highly implausible. 
+IHME and IMPE models have not been updated since the previous uptake of CovidVisualizedGlobal, and the SRIV model updated estimates are highly implausible. 
 
 <br/><br/>
 
