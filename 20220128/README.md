@@ -2,17 +2,18 @@
 
 ### JOHN only in uptake 20220128
 
+#### Summary of reported daily deaths and cases as of 20220128
+
+Reported daily deaths are on the rise at the Global level and in all WHO regions, but the increase rate so far is small in AFRO and EMRO. 
+
+Reported daily cases deaths are on the rise at the Global level and in all WHO regions, except in SAERO and AFRO. Second notches (double tips) show in AMRO (PAHO) and WPRO – AMRO both wit hand without Canada and United States. 
+
+
 
 <br/><br/>
 
 
 ### Selected graphs
-
-
-****
-****
-
-### Selected graphs - [Regions together](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220128/README.md#selected-graphs---regions-together-1)
 
 
 ****
