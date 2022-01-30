@@ -2,6 +2,11 @@
 
 ### JOHN only in uptake 20220128
 
+IHME and IMPE models have not been updated since the previous uptake of CovidVisualizedGlobal, and the SRIV model updated updates are highly implausible. 
+
+<br/><br/>
+
+
 #### Summary of reported daily deaths and cases as of 20220128
 
 Reported daily deaths are on the rise at the Global level and in all WHO regions, but the increase rate so far is small in AFRO and EMRO. 
