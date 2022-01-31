@@ -22,11 +22,13 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 (0a) Regions together [Daily deaths, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220130/output/merge/graph%201a1%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151759200-6e106298-64e6-40e2-94c6-d9201e7a32d3.png)
 
 ****
 
 (0b) Regions together [Daily deaths, without GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220130/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/151759337-a69f4c98-5870-40c8-a03c-761ce18db22d.png)
 
 ****
 
