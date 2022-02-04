@@ -18,7 +18,7 @@
 global DELPdate 20220204
 *            2/ --------
 
-global IMPEdate 2022-01-02_v9 
+global IMPEdate 2022-01-02_v9 // IMPE 20220102 is > one month old and is not included in the graphs.
 *            3/ -------------
 
 global SRIVdate 2022-02-04 
@@ -133,7 +133,7 @@ do "$pathCovidVisualizedGlobal/DELP/do CovidVisualizedGlobal DELP.do"
 
 do "$pathCovidVisualizedGlobal/IHME/do CovidVisualizedGlobal IHME.do" 
 
-do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
+// do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" // IMPE 20220102 is > one month old and is not included in the graphs.
 
 // do "$pathCovidVisualizedGlobal/LANL/do CovidVisualizedGlobal LANL.do" // The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 
