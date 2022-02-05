@@ -48,10 +48,12 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 (00b) Regions together [Daily cases, without GLOBAL, 2021 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/152655059-fc4ecb8d-21f0-4afb-9bce-fbae3111cf26.png)
 
 ****
 
 (00c) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/152655080-57450588-3a24-442e-b573-5c33fbe414f0.png)
 
 ****
