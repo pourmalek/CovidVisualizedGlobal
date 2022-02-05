@@ -11,7 +11,7 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 **Daily reported COVID-19 deaths** are _increasing_ at the Global level and in WHO regions AMRO (PAHO), EURO, and SAERO. They are _slightly increasing_ in EMRO, _stagnating_ in WPRO, and _decreasing_ in AFRO.
 
-**Daily reported COVID-19 cases** show a _small upward nudge_ after their most recent peaks at the Global level and in WHO region AMRO (PAHO). They are increasing and have _not peaked yet_ in EURO and EMRO, are _stagnating_ in WPRO, and _decreasing_ in AFRO. 
+**Daily reported COVID-19 cases** show a _small upward nudge_ after their most recent peaks at the Global level and in WHO region AMRO (PAHO). They are _increasing and have not peaked yet_ in EURO and EMRO, are _stagnating_ in WPRO, and _decreasing_ in AFRO. 
 
 <br/><br/>
 
