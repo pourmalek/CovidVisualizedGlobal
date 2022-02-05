@@ -1,6 +1,10 @@
 # CovidVisualizedGlobal 
 
-## ! THE MOST RECENT WEEKLY SITUATION REPORT, EVERY MONDAY MORNING, [HERE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/26%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2026%20–%202022-01-21.pdf).
+## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
+
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 26 - 2022-01-21 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/26%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2026%20–%202022-01-21.pdf).
+
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 28 - 2022-02-04 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/28%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2028%20–%202022-02-04.pdf)
 
 
 <br/><br/>
