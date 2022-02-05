@@ -6,7 +6,9 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 <br/><br/>
 
+Daily deaths on the rise at the Global level and in WHO region, except in EMRO (_slightly_ increasing), WPRO (_stagnating_), and AFRO (_decreasing_). 
 
+<br/><br/>
 
 ### Selected graphs
 
