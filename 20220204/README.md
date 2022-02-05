@@ -6,7 +6,7 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 <br/><br/>
 
-Daily deaths on the rise at the Global level and in WHO region, except in EMRO (_slightly_ increasing), WPRO (_stagnating_), and AFRO (_decreasing_). 
+**Daily deaths** are on the rise at the Global level and in WHO region, except in EMRO (_slightly_ increasing), WPRO (_stagnating_), and AFRO (_decreasing_). 
 
 <br/><br/>
 
@@ -42,6 +42,7 @@ Daily deaths on the rise at the Global level and in WHO region, except in EMRO (
 
 (00a) Regions together [Daily cases, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/152655022-75f23698-0319-40ea-bcbd-0c1f3b4d5850.png)
 
 ****
 
