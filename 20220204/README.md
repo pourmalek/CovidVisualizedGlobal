@@ -9,9 +9,9 @@ IHME and IMPE models have not been updated since the previous uptake of CovidVis
 
 <br/><br/>
 
-**Daily reported deaths** are on the rise at the Global level and in WHO region, except in EMRO (_slightly_ increasing), WPRO (_stagnating_), and AFRO (_decreasing_).
+**Daily reported deaths** are on the rise at the Global level and in WHO regions, except in EMRO (_slightly_ increasing), WPRO (_stagnating_), and AFRO (_decreasing_).
 
-**Daily reported cases** show a small upward nudge after their most recent peaks at the Global level and in WHO region, except AFRO (_decreasing_). Daily cases have _not peaked_ in EURO and EMRO yet. 
+**Daily reported cases** show a small upward nudge after their most recent peaks at the Global level and in WHO regions, except AFRO (_decreasing_). Daily cases have _not peaked_ in EURO and EMRO yet. 
 
 <br/><br/>
 
