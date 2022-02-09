@@ -141,12 +141,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region [Daily deaths, reference scenarios, all time]
+(1) Americas region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20AMRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
 
-(2) Americas region [Daily cases or infections, reference scenarios, all time]
+(2) Americas region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20AMRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -163,12 +163,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time]
+(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20AMR1%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
 
-(2) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time]
+(2) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20AMR1%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -188,11 +188,11 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time]
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20AMR2%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 ****
 
-(2) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time]
+(2) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20AMR2%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -211,12 +211,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time]
+(1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20EMRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
 
-(2) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time]
+(2) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20EMRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -237,11 +237,11 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) European region [Daily deaths, reference scenarios, all time]
+(1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20EURO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 ****
 
-(2) European region [Daily cases or infections, reference scenarios, all time]
+(2) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20EURO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -263,12 +263,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) South-East Asian region [Daily deaths, reference scenarios, all time]
+(1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20SEARO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
 
-(2) South-East Asian region [Daily cases or infections, reference scenarios, all time]
+(2) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20SEARO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 
 ****
@@ -286,11 +286,11 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Western Pacific region [Daily deaths, reference scenarios, all time]
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20WPRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 ****
 
-(2) Western Pacific region [Daily cases or infections, reference scenarios, all time]
+(2) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20WPRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
 ****
 
