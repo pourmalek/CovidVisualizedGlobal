@@ -247,11 +247,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20EMRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153261416-1a96179c-a15e-4a8b-b983-b9a9fe1f7974.png)
 
 ****
 
 (2) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20EMRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153261521-f6e2ef81-53b6-447b-bbff-415278c893d2.png)
 
 ****
 
