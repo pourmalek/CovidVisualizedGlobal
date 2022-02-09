@@ -275,6 +275,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20EURO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+
+
 ****
 
 (2) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20EURO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
