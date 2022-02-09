@@ -146,7 +146,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) Americas region [Daily deaths, 3 scenarios, 2021 on]
+(2) Americas region [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -168,7 +168,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) Americas region, Canada and United States [Daily deaths, 3 scenarios, 2021 on]
+(2) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -192,7 +192,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on]
+(2) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -216,7 +216,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021 on]
+(2) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -241,7 +241,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) European region [Daily deaths, 3 scenarios, 2021 on]
+(2) European region [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -268,7 +268,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) South-East Asian region [Daily deaths, 3 scenarios, 2021 on]
+(2) South-East Asian region [Daily cases or infections, reference scenarios, all time]
 
 
 ****
@@ -290,7 +290,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(2) Western Pacific region [Daily deaths, 3 scenarios, 2021 on]
+(2) Western Pacific region [Daily cases or infections, reference scenarios, all time]
 
 ****
 
