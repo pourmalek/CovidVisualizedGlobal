@@ -2,9 +2,9 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 26 - 2022-01-21 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/26%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2026%20–%202022-01-21.pdf).
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 29 - 2022-02-04 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/29%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2029%20–%202022-02-04.pdf).
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 28 - 2022-02-04 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/28%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2028%20–%202022-02-04.pdf)
+
 
 
 <br/><br/>
@@ -130,7 +130,7 @@ The codes in these repositories can be adapted for use for any country or region
 
  
   
-# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [Global COVID-19 epidemic models situation report No 26 – 2022-01-21](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/26%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2026%20–%202022-01-21.pdf)  
+# :eyes: SEE: See the predictions of the GLOBAL and REGIONAL COVID-19 pandemic trajectory, in: [https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/29%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2029%20–%202022-02-04.pdf)  
 
   
 ****
