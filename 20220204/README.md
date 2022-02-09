@@ -103,6 +103,25 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
+#### (b) Models: IHME 
+
+****
+
+(5) Regions together [Daily deaths, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/07%20regions%20C-19%20daily%20deaths%2C%20IHME%20reference%20scenarios%2C%202020%20on.pdf)
+
+****
+
+(6) Regions together [Daily deaths, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/08%20regions%20C-19%20daily%20deaths%2C%20IHME%20reference%20scenarios%2C%202022.pdf)
+
+****
+
+(7) Regions together [Daily infections, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/09%20regions%20C-19%20daily%20infections%2C%20IHME%20reference%20scenarios%2C%202020%20on.pdf)
+
+****
+
+(8) Regions together [Daily infections, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/10%20regions%20C-19%20daily%20infections%2C%20IHME%20reference%20scenarios%2C%202022.pdf)
+
+****
 
 *
 
