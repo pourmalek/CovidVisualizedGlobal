@@ -275,12 +275,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20EURO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
-
+![image](https://user-images.githubusercontent.com/30849720/153262452-a811b06d-4a67-4506-a878-2db98733fd16.png)
 
 ****
 
 (2) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20EURO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262558-8d7269d3-7647-4bcb-8f05-b60f6086d834.png)
 
 ****
 
@@ -303,11 +304,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20SEARO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262671-2484b40e-890d-4961-a257-fa36bed8fc9e.png)
 
 ****
 
 (2) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20SEARO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262785-cfc031d8-ab21-45fc-a341-abf6a45d8bdf.png)
 
 ****
 
@@ -326,9 +329,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20WPRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262896-807dbc69-10be-45f5-b17e-b5fbca5eea67.png)
+
 ****
 
 (2) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20WPRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/153263021-460efd4d-d428-4605-ab32-2d71928a3151.png)
 
 ****
 
