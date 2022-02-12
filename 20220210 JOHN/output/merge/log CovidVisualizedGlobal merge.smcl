@@ -1,9 +1,9 @@
 {smcl}
-{txt}{sf}{ul off}{.-}
+{com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220204/code/merge/log CovidVisualizedGlobal merge.smcl
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220210 JOHN/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 5 Feb 2022, 10:42:32
+ {txt}opened on:  {res}11 Feb 2022, 16:20:23
 {txt}
 {com}. 
 . 
@@ -65,8 +65,7 @@
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal merge.dta", replace
-{txt}(note: file CovidVisualizedGlobal merge.dta not found)
-file CovidVisualizedGlobal merge.dta saved
+{txt}file CovidVisualizedGlobal merge.dta saved
 
 {com}. 
 . 
@@ -144,9 +143,9 @@ now 732
 {res}
 {txt}{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}             327
+{col 5}not matched{col 30}{res}             381
 {txt}{col 9}from master{col 30}{res}              21{txt}  (_merge==1)
-{col 9}from using{col 30}{res}             306{txt}  (_merge==2)
+{col 9}from using{col 30}{res}             360{txt}  (_merge==2)
 
 {col 5}matched{col 30}{res}           6,399{txt}  (_merge==3)
 {col 5}{hline 41}
@@ -199,7 +198,7 @@ now 732
 
 {txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
 {hline 13}{c +}{hline 57}
-{space 8}date {c |}{res}      6,726     22306.8    215.8036      21915      22680
+{space 8}date {c |}{res}      6,780     22309.8    217.5352      21915      22686
 {txt}
 {com}. 
 . gen mergemaxdate = r(max)
@@ -210,7 +209,7 @@ now 732
 {txt}
 {com}. 
 . replace monthspast01jan2020merge = round(monthspast01jan2020merge)
-{txt}(6,726 real changes made)
+{txt}(6,780 real changes made)
 
 {com}. 
 . global monthspast01jan2020merge = monthspast01jan2020merge
@@ -226,14 +225,14 @@ now 732
 {txt}
 {com}. 
 . replace monthspast01jan2021merge = round(monthspast01jan2021merge)
-{txt}(6,726 real changes made)
+{txt}(6,780 real changes made)
 
 {com}. 
 . global monthspast01jan2021merge = monthspast01jan2021merge
 {txt}
 {com}. 
 . di $monthspast01jan2021merge
-{res}14
+{res}15
 {txt}
 {com}. 
 . 
@@ -242,7 +241,7 @@ now 732
 {txt}
 {com}. 
 . replace monthspast01jan2022merge = round(monthspast01jan2022merge)
-{txt}(6,726 real changes made)
+{txt}(6,780 real changes made)
 
 {com}. 
 . global monthspast01jan2022merge = monthspast01jan2022merge
@@ -448,7 +447,7 @@ now 732
 {txt}
 {com}. 
 . di c(scheme)
-{res}_GRSTYLE_
+{res}s2color
 {txt}
 {com}. 
 . 
@@ -457,9 +456,9 @@ now 732
 {com}. 
 . log close
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220204/code/merge/log CovidVisualizedGlobal merge.smcl
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220210 JOHN/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 5 Feb 2022, 10:42:42
+ {txt}closed on:  {res}11 Feb 2022, 16:20:33
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
