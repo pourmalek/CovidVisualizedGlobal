@@ -41,15 +41,18 @@
 
 (4) Regions together [Daily cases, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153688044-8f31b612-afd6-44ce-949c-a01564ab727a.png)
 
 ****
 
 (5) Regions together [Daily cases, without GLOBAL, 2021 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153688074-3d6d1a61-ef91-4916-b535-b1c3d2acd6e1.png)
 
 ****
 
 (6) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153688102-9aa63e57-2a6e-46c9-9586-885f3aa25b7d.png)
 
 ****
