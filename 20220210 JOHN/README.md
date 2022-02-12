@@ -21,32 +21,35 @@
 
 ****
 
-(0a) Regions together [Daily deaths, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a1%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+(1) Regions together [Daily deaths, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a1%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/153687893-53ca9d75-0df2-4b41-98a3-8bc1742b085c.png)
+
+****
+
+(2) Regions together [Daily deaths, without GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/153687922-adbe2a1d-8d90-4665-b32b-58953b8b5e50.png)
+
+****
+
+(3) Regions together [Daily deaths, without GLOBAL, 2022, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a3%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/153687954-c2742bf7-21cf-428a-aefd-2de75b0eb5f3.png)
+
+****
+
+(4) Regions together [Daily cases, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
 
 ****
 
-(0b) Regions together [Daily deaths, without GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a2%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
+(5) Regions together [Daily cases, without GLOBAL, 2021 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
 
 ****
 
-(0c) Regions together [Daily deaths, without GLOBAL, 2022, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%201a3%20JOHN%20COVID-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
-
-
-****
-
-(00a) Regions together [Daily cases, with GLOBAL, all time, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a1%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
-
-
-****
-
-(00b) Regions together [Daily cases, without GLOBAL, 2021 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a2%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
-
-
-****
-
-(00c) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
+(6) Regions together [Daily cases, without GLOBAL, recent, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220210%20JOHN/output/merge/graph%202a3%20JOHN%20COVID-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
 
 ****
