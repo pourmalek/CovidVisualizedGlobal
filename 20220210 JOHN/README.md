@@ -5,9 +5,17 @@
 
 ### JOHN only in uptake 20220210
 
+<br/><br/>
+
+#### Summary of 20220210 findings:
+
+Officially reported COVID-19 daily deaths are rising at the Global level and in all WHO regions except in the Americas region only Canada and United States, African region, and Western Pacific region. 
+
+Officially reported COVID-19 daily are declining at the Global level and in all WHO regions except in the Eastern Mediterranean region. 
 
 
 <br/><br/>
+
 
 ### Selected graphs
 
