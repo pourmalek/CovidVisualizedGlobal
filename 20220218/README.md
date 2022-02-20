@@ -247,11 +247,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20EMRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827165-9c23e76b-b5c2-47b5-9f61-a5dac9d55e2c.png)
 
 ****
 
 (2) Eastern Mediterranean region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20EMRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827182-9f8112cb-1033-4fe5-a61e-9558455414e8.png)
 
 ****
 
@@ -273,11 +275,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20EURO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827201-112de318-27d7-4f3a-9a52-bd052cd76d7f.png)
 
 ****
 
 (2) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20EURO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827211-bd0c8de4-e48a-4dfa-af8f-852486f8caa4.png)
 
 ****
 
@@ -300,11 +304,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20SEARO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827230-4fd7abdc-b670-41d3-8137-1bc2f1dc29c7.png)
 
 ****
 
 (2) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20SEARO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827246-a9a7c78c-ac52-4681-9e37-a9e3b8e3b6e0.png)
 
 ****
 
@@ -323,11 +329,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20WPRO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827261-3819fca5-b837-49f8-bccd-373b1c3ed014.png)
 
 ****
 
 (2) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20WPRO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827282-16a6ae0f-9373-4b61-b868-c4cf7aabe2ff.png)
 
 ****
 
