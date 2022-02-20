@@ -51,11 +51,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20GLOBAL%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826481-c5fc4329-b308-47d3-b707-1d6d0bc47698.png)
 
 ****
 
 (2) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20GLOBAL%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826541-03cd9225-6213-4c97-afe9-6166136384fe.png)
 
 ****
 
@@ -79,21 +81,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Regions together [Daily deaths, JOHN, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/01%20regions%20C-19%20daily%20deaths%2C%20JOHN%202020.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826553-0f2344c8-40aa-4cba-bd8e-f28c52b192a2.png)
 
 ****
 
 (2) Regions together [Daily deaths, JOHN, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/02%20regions%20C-19%20daily%20deaths%2C%20JOHN%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826571-6b7ec12f-07a3-4d56-9030-a8aca3c7024c.png)
 
 ****
 
 (3) Regions together [Daily cases, JOHN, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/03%20regions%20C-19%20daily%20cases%2C%20JOHN%202020.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826585-5928e6e3-9e16-4b08-9b67-52a9dccb7b37.png)
 
 ****
 
 (4) Regions together [Daily cases, JOHN, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/04%20regions%20C-19%20daily%20cases%2C%20JOHN%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826608-dcf52700-f49e-41fe-bb8f-78f304147cc9.png)
 
 ****
 
