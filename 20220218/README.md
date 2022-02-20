@@ -109,21 +109,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (5) Regions together [Daily deaths, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/07%20regions%20C-19%20daily%20deaths%2C%20IHME%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826645-18d05a8a-2920-44af-8ba7-6125c017a75c.png)
 
 ****
 
 (6) Regions together [Daily deaths, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/08%20regions%20C-19%20daily%20deaths%2C%20IHME%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826652-fb730589-c2a9-4b86-b39d-020193810bff.png)
 
 ****
 
 (7) Regions together [Daily infections, IHME, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/09%20regions%20C-19%20daily%20infections%2C%20IHME%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826667-f696242f-bf70-44fa-83d1-6a02229cd684.png)
 
 ****
 
 (8) Regions together [Daily infections, IHME, 2022](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/10%20regions%20C-19%20daily%20infections%2C%20IHME%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154826680-f8b19acb-cfbd-41aa-a181-52d0123c4499.png)
 
 ****
 
