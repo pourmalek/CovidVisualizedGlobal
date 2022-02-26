@@ -5,6 +5,7 @@
 ! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 31 - 2022-02-18 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/31%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2031%20–%202022-02-18.pdf)
 
 
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 32 - 2022-02-25 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/32%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2032%20–%202022-02-25.pdf)
 
 
 
