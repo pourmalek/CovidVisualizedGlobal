@@ -11,7 +11,7 @@ Summary 20220304:
 
 Daily reported deaths are on the rise in European region, Americas without Canada and United States, and South East Asian region. 
 
-Daily reported cases on on slight rise in Eastern Mediterranean region.  
+Daily reported cases on slight rise in Eastern Mediterranean region.  
 
 <br/><br/>
 
