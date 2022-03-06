@@ -1,0 +1,453 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220304 JOHN/code/merge/log CovidVisualizedGlobal merge.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 5 Mar 2022, 18:35:18
+{txt}
+{com}. 
+. 
+. ***************************************************************************
+. * This is "do CovidVisualizedGlobal merge.do"
+. 
+. * Project: Combine and visualize international periodically updating 
+. * estimates of COVID-19 at the global level (CovidVisualizedGlobal)
+. * Person: Farshad Pourmalek pourmalek_farshad at yahoo dot com
+. * Time (initial): 2021-04-14
+. ***************************************************************************
+. 
+. /*
+> 
+> The magnitudes of the estimates in this SRIV update are several times – and generally highly implausibly – more than the estimates from all other models. That suppresses all the curves of the other models in the graphs. Therefore, in this uptake, the estimates from the SRIV model are not included.
+> */
+. 
+. 
+. /* studies / models:
+> JOHN
+> DELP 
+> IHME
+> IMPE
+> LANL // The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
+> SRIV
+> */
+. 
+. 
+. 
+. set maxvar 10000 // Stata MP & SE
+
+{txt}
+{com}. 
+. 
+. 
+. * JOHN
+. 
+. if regexm(c(os),"Mac") == 1 {c -(}
+. 
+.         use "$pathCovidVisualizedGlobal/JOHN/CovidVisualizedGlobal JOHN.dta", clear 
+. {c )-}
+{txt}
+{com}. else if regexm(c(os),"Windows") == 1 use "$pathCovidVisualizedGlobal\JOHN\CovidVisualizedGlobal JOHN.dta", clear 
+{txt}
+{com}. 
+. 
+. 
+. 
+. label var loc_grand_name "Location"
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. sort date
+{txt}
+{com}. 
+. save "CovidVisualizedGlobal merge.dta", replace
+{txt}(note: file CovidVisualizedGlobal merge.dta not found)
+file CovidVisualizedGlobal merge.dta saved
+
+{com}. 
+. 
+. *
+. 
+. 
+. * gen calendar file
+. 
+. 
+. clear
+{txt}
+{com}. 
+. di td(01jan2020) // 21915
+{res}21915
+{txt}
+{com}. 
+. di td(01jan2022) // 22646
+{res}22646
+{txt}
+{com}. 
+. di td(01jan2022) - td(01jan2020) // 731 + 1 = 732
+{res}731
+{txt}
+{com}. 
+. 
+. 
+. set obs 732
+{txt}{p}
+number of observations (_N)  was 0,
+now 732
+{p_end}
+
+{com}. 
+. gen date = .
+{txt}(732 missing values generated)
+
+{com}. 
+. replace date = 21915 in 1
+{txt}(1 real change made)
+
+{com}. 
+. replace date = date[_n-1] + 1 in 2/l
+{txt}(731 real changes made)
+
+{com}. 
+. replace date = date[_n-1] + 1 in 2/732
+{txt}(0 real changes made)
+
+{com}. 
+. format date %tdDDMonCCYY
+{txt}
+{com}. 
+. codebook date
+
+{txt}{hline}
+{res}date{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}21915{txt},{res}22646{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}01jan2020{txt},{res}01jan2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}732{col 51}{txt}missing .:  {res}0{txt}/{res}732
+
+{txt}{col 19}mean:{res}{col 26} 22280.5{txt} = {res}31dec2020{txt} (+ 12 hours)
+{col 15}std. dev:{res}{col 26} 211.454
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   21988{col 37} 22097.5{col 47} 22280.5{col 57} 22463.5{col 67}   22573
+{col 26}14mar2020{col 36}01jul2020{col 46}31dec2020{col 56}02jul2021{col 66}20oct2021
+{txt}
+{com}. 
+. 
+. merge m:m date using "CovidVisualizedGlobal merge.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}             579
+{txt}{col 9}from master{col 30}{res}              21{txt}  (_merge==1)
+{col 9}from using{col 30}{res}             558{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}           6,399{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. 
+. sort date loc_grand_name
+{txt}
+{com}. 
+. isid date loc_grand_name, missok
+{txt}
+{com}. 
+. drop _merge
+{txt}
+{com}. 
+. qui compress
+{txt}
+{com}. 
+. 
+. save "CovidVisualizedGlobal merge.dta", replace
+{txt}file CovidVisualizedGlobal merge.dta saved
+
+{com}. 
+. 
+. 
+. 
+. 
+.  
+. ***************
+. 
+. ***************
+. 
+. * graphs 
+. 
+. 
+. grstyle init
+{res}{txt}
+{com}. 
+. grstyle color background white
+{txt}
+{com}. 
+. 
+. 
+. 
+. **********
+. 
+. * gen monthspast vars for #thicknumber of graphs
+. 
+. 
+. summ date
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}date {c |}{res}      6,978    22320.81    223.8846      21915      22708
+{txt}
+{com}. 
+. gen mergemaxdate = r(max)
+{txt}
+{com}. 
+. 
+. gen monthspast01jan2020merge = ((mergemaxdate - td(01jan2020)) / 30) + 1
+{txt}
+{com}. 
+. replace monthspast01jan2020merge = round(monthspast01jan2020merge)
+{txt}(6,978 real changes made)
+
+{com}. 
+. global monthspast01jan2020merge = monthspast01jan2020merge
+{txt}
+{com}. 
+. di $monthspast01jan2020merge
+{res}27
+{txt}
+{com}. 
+. 
+. 
+. gen monthspast01jan2021merge = ((mergemaxdate - td(01jan2021)) / 30) + 1
+{txt}
+{com}. 
+. replace monthspast01jan2021merge = round(monthspast01jan2021merge)
+{txt}(6,978 real changes made)
+
+{com}. 
+. global monthspast01jan2021merge = monthspast01jan2021merge
+{txt}
+{com}. 
+. di $monthspast01jan2021merge
+{res}15
+{txt}
+{com}. 
+. 
+. 
+. gen monthspast01jan2022merge = ((mergemaxdate - td(01jan2022)) / 30) + 1
+{txt}
+{com}. 
+. replace monthspast01jan2022merge = round(monthspast01jan2022merge)
+{txt}(6,978 real changes made)
+
+{com}. 
+. global monthspast01jan2022merge = monthspast01jan2022merge
+{txt}
+{com}. 
+. di $monthspast01jan2022merge
+{res}3
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. *******************************
+. *******************************
+. 
+. 
+. * regions together
+. 
+. 
+. 
+. * JOHN
+. 
+. 
+. 
+. * daily deaths, with GLOBAL, JOHN
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+> subtitle("with GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 1a1 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily deaths, without GLOBAL, JOHN
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+> subtitle("without GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 1a2 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily deaths, without GLOBAL, JOHN, recent
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2022) & date <= td(01feb2022) ///
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("COVID-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+> subtitle("without GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 1a3 JOHN COVID-19 daily deaths, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily cases, with GLOBAL, JOHN
+. 
+. twoway ///
+> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> (line DayCasMeSmA00S00GLOBAL date, sort lcolor(black)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+> subtitle("with GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 2a1 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily cases, without GLOBAL, JOHN
+. 
+. twoway ///
+> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2020) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+> subtitle("without GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 2a2 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. * daily cases, without GLOBAL, JOHN, recent
+. 
+. twoway ///
+> (line DayCasMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayCasMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jan2022) & date <= td(01feb2022) ///
+> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily cases) title("COVID-19 daily cases, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+> subtitle("without GLOBAL", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 2a3 JOHN COVID-19 daily cases, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+.         
+. 
+. ************
+. 
+. * restore native scheme (of the local machine)
+. 
+. set scheme $nativescheme
+{txt}
+{com}. 
+. di c(scheme)
+{res}_GRSTYLE_
+{txt}
+{com}. 
+. 
+. view "log CovidVisualizedGlobal merge.smcl"
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220304 JOHN/code/merge/log CovidVisualizedGlobal merge.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 5 Mar 2022, 18:35:30
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
