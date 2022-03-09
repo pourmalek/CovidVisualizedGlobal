@@ -35,7 +35,7 @@
   
 *****************************
   
-## TOC
+## Table of Contents
 
 ### [I. SELECTED GRAPHS FROM LATEST UPTAKE](https://github.com/pourmalek/CovidVisualizedGlobal#i-selected-graphs-from-latest-uptake-1)
 
