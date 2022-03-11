@@ -128,28 +128,27 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(11) Global [Daily Infection outcomes ratios, 2 scenarios, all time, IHME]()
+(11) Global [Daily Infection outcomes ratios, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2091%20C-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%202%20scenarios%2C%20IHME.pdf)
 
-
-****
-
-(11b) Global [Daily Infection -detection and -hospitalizations ratios, 2 scenarios, all time, IHME]()
-
+![image](https://user-images.githubusercontent.com/30849720/157889715-9989e0b3-83f5-43dc-9b23-3667258ece8b.png)
 
 ****
 
-(12) Global [Daily mobility, 2 scenarios, all time, IHME]()
+(11b) Global [Daily Infection -detection and -hospitalizations ratios, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2091b%20C-19%20daily%20Infection%20outcomes%20ratios%2C%20GLOBAL%202%20scenarios%2C%20IHME.pdf)
 
-
-****
-
-(13) Global [Daily mask use, 2 scenarios, IHME]()
-
+![image](https://user-images.githubusercontent.com/30849720/157889885-12ed2090-774d-4b81-9084-c011daa595ff.png)
 
 ****
 
-(14) Global [Percent cumulative vaccinated, 2021 on, IHME]()
+(12) Global [Daily mobility, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2092%20C-19%20daily%20mobility%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157890145-df121d5d-d7b4-4b93-a91d-f8df2e6b58c6.png)
+
+****
+
+(13) Global [Daily mask use, 2 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2093%20C-19%20daily%20mask_use%2C%20GLOBAL%2C%202%20scenarios.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157890294-a06d6f15-2b5f-410d-a2fb-511a96d52517.png)
 
 ****
 
