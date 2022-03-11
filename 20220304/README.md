@@ -274,23 +274,27 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME]()
+(15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
-
-****
-
-(16) Regions together [Total excess deaths, without GLOBAL, 2020 on, IHME]()
-
+![image](https://user-images.githubusercontent.com/30849720/157927620-5aa53c38-ea53-469c-ac7f-6216572eb81d.png)
 
 ****
 
-(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME, IMPE]()
+(16) Regions together [Total excess deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157927953-d29db841-6cab-44d1-a45e-8497e35eb34a.png)
 
 ****
 
-(18) Regions together [Total infections, without GLOBAL, 2020 on, IHME, IMPE]()
+(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a2%20C-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157928360-cfa9131f-0273-49c7-99a1-5c2723692d4a.png)
+
+****
+
+(18) Regions together [Total infections, without GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203b1%20C-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157929454-b36903d0-85d9-4823-a591-b4fb1d5f85f8.png)
 
 ****
 
@@ -299,8 +303,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(20) Regions together [Total cases, without GLOBAL, 2022 on, DELP, SRIV]()
+(20) Regions together [Total cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%204b2%20C-19%20total%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157929985-e1d270b1-0d1c-47d2-bab6-3e578c0af9ee.png)
 
 ****
 
