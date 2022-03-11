@@ -98,23 +98,27 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(6b) Global [Daily cases, 2021 on]()
+(6b) Global [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2022b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
-
-****
-
-(6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on]()
-
+![image](https://user-images.githubusercontent.com/30849720/157887814-d9d360a5-6ebf-4bf6-96ed-e86b000f6a13.png)
 
 ****
 
-(7) Global [Hospital-related outcomes, all time]()
+(6c) Global [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20GLOBAL%2C%20reference%20scenarios%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157888138-ffe8fa06-e5f2-4de1-9e8d-f750aff412a5.png)
 
 ****
 
-(8) Global [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand]()
+(7) Global [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2061a%20C-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157888365-530fc6bc-e175-41b4-8837-656b764c7704.png)
+
+****
+
+(8) Global [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2063%20C-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202021.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157888597-b5a6ec30-c2b2-4152-a3e0-58affefba2f7.png)
 
 ****
 
