@@ -327,8 +327,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) African region [Daily deaths, reference scenarios, all time]()
+(1) African region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157938796-3a9aec7c-ca27-4557-94ed-54f7a669a9ef.png)
 
 ****
 
@@ -361,8 +362,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region [Daily deaths, reference scenarios, all time]()
+(1) Americas region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157941489-793f03fc-11dd-4058-90e7-161897bc0da1.png)
  
 ****
 
@@ -391,8 +393,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time]()
+(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMR1%2011a%20C-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157940012-a4710ee3-8ccb-4e23-9b86-b32a14b42b1e.png)
  
 ****
 
@@ -423,8 +426,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time]()
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157940765-ffc386ba-e451-4e7c-b793-a1f0e364058e.png)
  
 ****
 
@@ -453,8 +457,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time]()
+(1) Eastern Mediterranean region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157942576-faeb8735-b4f4-4c8a-9798-5ee65f2fc180.png)
  
 ****
 
@@ -484,8 +489,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) European region [Daily deaths, reference scenarios, all time]()
+(1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157944142-9c8b4a19-3d5a-43f8-b6a8-fef3826b5ed5.png)
  
 ****
 
@@ -518,8 +524,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) South-East Asian region [Daily deaths, reference scenarios, all time]()
+(1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20SEARO%2011a%20C-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157944879-23937f58-fa7f-407a-b595-b807e34f0b42.png)
  
 ****
 
@@ -551,8 +558,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Western Pacific region [Daily deaths, reference scenarios, all time]()
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157945525-0986bc5c-9cd5-4287-999a-59d1e4201f69.png)
  
 ****
 
