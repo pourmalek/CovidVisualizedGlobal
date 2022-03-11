@@ -80,18 +80,21 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(4) Global [Daily cases or infections, reference scenarios, all time]()
+(4) Global [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
-
-****
-
-(5) Global [Daily cases or infections, reference scenarios, 2021 on]()
-
+![image](https://user-images.githubusercontent.com/30849720/157887057-b06134b6-b23b-49cd-afbe-ef959ed68656.png)
 
 ****
 
-(6) Global [Daily cases or infections, 3 scenarios, 2021 on]()
+(5) Global [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2022%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157887232-7642642e-af70-44e1-a2ea-e6f34f1c70b6.png)
+
+****
+
+(6) Global [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2024%20C-19%20daily%20cases%2C%20GLOBAL%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157887411-277dabb9-57fe-4d41-baf2-261f05c7d3ac.png)
 
 ****
 
