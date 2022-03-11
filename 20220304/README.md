@@ -198,25 +198,30 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(5) Regions together [Daily excess deaths, with GLOBAL, IHME]()
+(5) Regions together [Daily excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
-
-****
-
-(6) Regions together [Daily excess deaths, without GLOBAL, IHME]()
-
+![image](https://user-images.githubusercontent.com/30849720/157896209-a941cf2c-c15d-4d83-aadf-cc0d41f7a4cd.png)
 
 ****
 
-(00a) Regions together [Daily cases, with GLOBAL, JOHN]()
+(6) Regions together [Daily excess deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157896405-748b03e3-7876-4dd3-ac52-cec4693e4f8f.png)
+
+****
+
+(00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157896686-397ac343-9b8a-4ecd-a3b1-8b0e6a0851eb.png)
 
 ****
 
-(00b) Regions together [Daily cases, without GLOBAL, JOHN]()
+(00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157896960-e887cfe8-0c1c-4c49-8b69-684f561ffb90.png)
 
 ****
+
 (00c) Regions together [Daily cases, without GLOBAL, JOHN, Recent]()
 
 
