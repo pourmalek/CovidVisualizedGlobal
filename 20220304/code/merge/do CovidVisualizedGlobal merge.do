@@ -693,8 +693,6 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 6 IMPE mean, better scenario
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, worse scenario
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
-	(line DayDeaLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 9 SRIV lower
-	(line DayDeaUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 10 SRIV upper
 	if date >= td(01jan2021)  ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -1932,7 +1930,48 @@ qui graph export "graph 1a2 C-19 daily deaths, regions together, DELP, SRIV.pdf"
 
 
 
+
+
+
 * daily deaths, Without GLOBAL, IHME, IMPE, 2020 on
+
+twoway ///
+(line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
+(line DayDeaMeSmA02S01AMRO date, sort lcolor(red)) /// 
+(line DayDeaMeSmA02S01AMR1 date, sort lcolor(orange)) /// 
+(line DayDeaMeSmA02S01AMR2 date, sort lcolor(purple)) /// 
+(line DayDeaMeSmA02S01EMRO date, sort lcolor(gold)) ///
+(line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
+(line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
+(line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
+if date >= td(01jan2020) ///
+, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+subtitle("Without GLOBAL, 2020 on", size(small)) ///
+note("IHME: solid curves; IMPE: dashed curves")
+
+qui graph export "graph 1b1 C-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
+
+
+
+
+
+
+
+* daily deaths, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -1957,10 +1996,10 @@ xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, l
 ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
-subtitle("Without GLOBAL, 2020 on", size(small)) ///
+subtitle("With GLOBAL, 2020 on", size(small)) ///
 note("IHME: solid curves; IMPE: dashed curves")
 
-qui graph export "graph 1b1 C-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
+qui graph export "graph 1b1 C-19 daily deaths, regions together with global, IHME, IMPE.pdf", replace
 
 
 
@@ -2312,6 +2351,47 @@ qui graph export "graph 2b1 C-19 daily infections, regions together wo global, I
 
 
 
+
+
+
+* daily cases, With GLOBAL, DELP, SRIV, 2022 on
+
+twoway ///
+(line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line DayCasMeRaA01S00GLOBAL date, sort lcolor(black)) ///
+(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
+if date >= td(01jan2022) & date <= td(01apr2022) ///
+, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Daily cases) title("C-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+subtitle("With GLOBAL, 2022 on", size(small)) ///
+note("DELP cases: solid curves; SRIV: dashed curves")
+
+qui graph export "graph 2b2 C-19 daily cases, regions together with global, DELP, SRIV.pdf", replace
+
+
+
+
+
+
+
 * daily cases, Without GLOBAL, DELP, SRIV, 2022 on
 
 twoway ///
@@ -2634,6 +2714,41 @@ qui graph export "graph 4b1 C-19 total infections, regions together wo global, I
 
 
 
+* total cases, With GLOBAL, DELP, SRIV, 2022 on
+
+twoway ///
+(line TotCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
+(line TotCasMeRaA01S00AMRO date, sort lcolor(red)) ///
+(line TotCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
+(line TotCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
+(line TotCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
+(line TotCasMeRaA01S00EURO date, sort lcolor(green)) ///
+(line TotCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
+(line TotCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+(line TotCasMeRaA01S00GLOBAL date, sort lcolor(black)) ///
+(line TotCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line TotCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
+if date >= td(01jan2022) ///
+, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+ytitle(Total cases) title("C-19 total cases, WHO regions, DELP, SRIV", size(medium)) ///
+xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
+subtitle("With GLOBAL, 2022 on", size(small)) ///
+note("DELP: solid curves; SRIV: dashed curves")
+
+qui graph export "graph 4b1 C-19 total cases, regions together with global, DELP, SRIV.pdf", replace
+
+
+
+
 * total cases, Without GLOBAL, DELP, SRIV, 2022 on
 
 twoway ///
@@ -2663,8 +2778,6 @@ subtitle("Without GLOBAL, 2022 on", size(small)) ///
 note("DELP: solid curves; SRIV: dashed curves")
 
 qui graph export "graph 4b2 C-19 total cases, regions together wo global, DELP, SRIV.pdf", replace
-
-
 
 
 
