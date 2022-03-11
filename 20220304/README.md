@@ -228,30 +228,32 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(7) Regions together [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/157916501-fed1df4c-433c-4e42-ab86-ac80c4fe7936.png)
 
 ****
 
-(8) Regions together [Daily infections, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
+(8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/157916882-48a9d02e-7a0a-4403-b2c0-a9c78f656528.png)
 
 ****
 
-(9) Regions together [Daily cases, with GLOBAL, DELP, SRIV]()
+(9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV]()
 
 
 ****
 
-(10) Regions together [Daily cases, without GLOBAL, DELP, SRIV]()
+(10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157924764-190ea948-097f-4ede-9620-e5bc8b10a13a.png)
 
 ****
 
-(11) Regions together [Total deaths, with GLOBAL, IHME, IMPE]()
+(11) Regions together [Total deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157925249-38592e32-a439-4cc4-a1d7-fdd995dcd0ff.png)
 
 ****
 
