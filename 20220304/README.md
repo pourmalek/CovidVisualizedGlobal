@@ -301,8 +301,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV]()
+(19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157936217-12b4c625-c9fb-4b56-8413-32e4fc1a4c2b.png)
 
 ****
 
