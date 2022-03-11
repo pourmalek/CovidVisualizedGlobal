@@ -245,19 +245,19 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(10) Regions together [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
+(10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/157924764-190ea948-097f-4ede-9620-e5bc8b10a13a.png)
 
 ****
 
-(11) Regions together [Total deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(11) Regions together [Total deaths, with GLOBAL, 2002 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/157925249-38592e32-a439-4cc4-a1d7-fdd995dcd0ff.png)
 
 ****
 
-(12) Regions together [Total deaths, without GLOBAL, IHME, IMPE]()
+(12) Regions together [Total deaths, without GLOBAL, 2002 on, IHME, IMPE]()
 
 
 ****
