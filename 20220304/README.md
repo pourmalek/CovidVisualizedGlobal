@@ -45,18 +45,21 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Global [Daily deaths, reference scenarios, all time]()
+(1) Global [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-
-****
-
-(2) Global [Daily deaths, reference scenarios, 2021 on]()
-
+![image](https://user-images.githubusercontent.com/30849720/157882945-3cc02048-94b1-406c-8dcb-34e2858929a9.png)
 
 ****
 
-(2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths]()
+(2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2012a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157883253-8e7be692-bb50-43ef-8403-1552420765fb.png)
+
+****
+
+(2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2012b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20With%20IHME%20excess%20deaths.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157884495-71987dec-7bd1-47dd-bfcb-64a01ee7ce0e.png)
 
 ****
 
