@@ -251,53 +251,55 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(11) Regions together [Total deaths, with GLOBAL, 2002 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/157925249-38592e32-a439-4cc4-a1d7-fdd995dcd0ff.png)
 
 ****
 
-(12) Regions together [Total deaths, without GLOBAL, 2002 on, IHME, IMPE]()
+(12) Regions together [Total deaths, without GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%203b1%20C-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157925996-57d1b2a6-8ff3-4642-ac61-f842e9c5caf0.png)
+
+****
+
+(13) Regions together [Total deaths, with GLOBAL, 2022 on, DELP, SRIV]()
 
 
 ****
 
-(13) Regions together [Total deaths, with GLOBAL, DELP, SRIV]()
+(14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%201b2%20C-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/157926484-2a5c8455-aa1d-42f9-a5e7-e852ee369c61.png)
+
+****
+
+(15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME]()
 
 
 ****
 
-(14) Regions together [Total deaths, without GLOBAL, DELP, SRIV]()
+(16) Regions together [Total excess deaths, without GLOBAL, 2020 on, IHME]()
 
 
 ****
 
-(15) Regions together [Total excess deaths, with GLOBAL, IHME]()
+(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
 
-(16) Regions together [Total excess deaths, without GLOBAL, IHME]()
+(18) Regions together [Total infections, without GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
 
-(17) Regions together [Total infections, with GLOBAL, IHME, IMPE]()
+(19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV]()
 
 
 ****
 
-(18) Regions together [Total infections, without GLOBAL, IHME, IMPE]()
-
-
-****
-
-(19) Regions together [Total cases, with GLOBAL, DELP, SRIV]()
-
-
-****
-
-(20) Regions together [Total cases, without GLOBAL, DELP, SRIV]()
+(20) Regions together [Total cases, without GLOBAL, 2022 on, DELP, SRIV]()
 
 
 ****
