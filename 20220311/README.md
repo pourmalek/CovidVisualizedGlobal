@@ -189,12 +189,13 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(1) Regions together [Daily deaths, with GLOBAL, IHME, IMPE]()
+(1) Regions together [Daily deaths, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%201a1%20C-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158027762-96766e11-cd0b-4000-b85b-f21435a9af7e.png)
 
 ****
 
-(2) Regions together [Daily deaths, without GLOBAL, IHME, IMPE]()
+(2) Regions together [Daily deaths, without GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
@@ -209,12 +210,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(5) Regions together [Daily excess deaths, with GLOBAL, IHME]()
+(5) Regions together [Daily excess deaths, with GLOBAL, 2020 on, IHME]()
 
 
 ****
 
-(6) Regions together [Daily excess deaths, without GLOBAL, IHME]()
+(6) Regions together [Daily excess deaths, without GLOBAL, 2020 on, IHME]()
 
 
 ****
@@ -228,17 +229,18 @@ AMRO is devided to AMR1 and AMR2:
 
 
 ****
+
 (00c) Regions together [Daily cases, without GLOBAL, JOHN, Recent]()
 
 
 ****
 
-(7) Regions together [Daily infections, with GLOBAL, IHME, IMPE]()
+(7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
 
-(8) Regions together [Daily infections, without GLOBAL, IHME, IMPE]()
+(8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
@@ -253,12 +255,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(11) Regions together [Total deaths, with GLOBAL, IHME, IMPE]()
+(11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
 
-(12) Regions together [Total deaths, without GLOBAL, IHME, IMPE]()
+(12) Regions together [Total deaths, without GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
@@ -273,22 +275,22 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(15) Regions together [Total excess deaths, with GLOBAL, IHME]()
+(15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME]()
 
 
 ****
 
-(16) Regions together [Total excess deaths, without GLOBAL, IHME]()
+(16) Regions together [Total excess deaths, without GLOBAL, 2020 on, IHME]()
 
 
 ****
 
-(17) Regions together [Total infections, with GLOBAL, IHME, IMPE]()
+(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
 
-(18) Regions together [Total infections, without GLOBAL, IHME, IMPE]()
+(18) Regions together [Total infections, without GLOBAL, 2020 on, IHME, IMPE]()
 
 
 ****
