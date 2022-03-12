@@ -420,7 +420,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMR1%2024%20C-19%20daily%20cases%2C%20AMR1%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
- 
+![image](https://user-images.githubusercontent.com/30849720/157995265-02e03916-a71b-42c5-be0f-2802a5d5e2e6.png)
+  
 ****
 
 
