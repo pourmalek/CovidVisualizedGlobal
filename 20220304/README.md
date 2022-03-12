@@ -384,8 +384,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) Americas region [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) Americas region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMRO%2024%20C-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157993887-c6818ce7-e53e-4267-9a0e-a7d061de8843.png)
  
 ****
 
@@ -417,7 +418,7 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMR1%2024%20C-19%20daily%20cases%2C%20AMR1%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
  
 ****
@@ -452,8 +453,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20AMR2%2024%20C-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157993825-7e84ce06-d393-4b48-8b03-09a396b474f6.png)
  
 ****
 
@@ -485,8 +487,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20EMRO%2024%20C-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157993941-9bd23474-1991-48d0-bcd7-814a604603d5.png)
  
 ****
 
@@ -519,8 +522,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) European region [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20EURO%2024%20C-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157993987-cdafd69c-5348-4e67-9b49-4fc829130924.png)
  
 ****
 
@@ -556,8 +560,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20SEARO%2024%20C-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157994036-42451ff1-8389-4a70-9a2f-e192e5dd73e2.png)
  
 ****
 
@@ -592,8 +597,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on]()
+(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20WPRO%2024%20C-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/157994085-dd7b7569-954f-42d4-8b11-9885fd225b9b.png)
  
 ****
 
