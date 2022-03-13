@@ -47,36 +47,43 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062578-f2e1654e-99a0-42a0-a88e-56fbfec5d251.png)
 
 ****
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2012a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062609-03648ea0-d6b8-4b4b-b0e8-44ba07d438ee.png)
 
 ****
 
 (2b) Global [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2012b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021%20With%20IHME%20excess%20deaths.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062627-fd4886db-cb6b-4fc0-aefc-432f88e93ae7.png)
 
 ****
 
 (3) Global [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2014%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062647-28bc761f-8c08-4714-8aa4-f51e1032bdc0.png)
 
 ****
 
 (3b) Global [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2016%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062679-9549c50f-1be9-4261-b410-a4f5958c0b30.png)
 
 ****
 
 (3c) Global [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2018%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062715-6b334d63-53be-4d89-aa14-ccaa0db6ec62.png)
 
 ****
 
 (4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158062753-60452449-1246-4fe8-9024-9d472119b088.png)
 
 ****
 
