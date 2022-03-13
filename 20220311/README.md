@@ -8,6 +8,22 @@
 
 ****
 
+#### Summary 20220311:
+
+#### Observation:
+
+Reported COVID-19 daily deaths are bouncing up at the Global level, in Europe, Canada and USA, and continuing to rise in the Western Pacific region. 
+
+Reported COVID-19 daily cases are bouncing up at the Global level and in Europe, continuing to rise in the Western Pacific region, and stagnating from the previous decree in other regions.
+
+#### Probability:
+
+Even though the models are highly divergent about the future trajectory of the pandemic, the above-observed trajectories of the reported daily deaths and cases might signify _a new surge_. 
+
+<br/><br/>
+
+****
+
 
 ### Selected graphs
 
