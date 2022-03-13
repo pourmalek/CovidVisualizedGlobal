@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220311/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}12 Mar 2022, 10:24:09
+ {txt}opened on:  {res}12 Mar 2022, 16:25:20
 {txt}
 {com}. 
 . 
@@ -595,7 +595,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,090                          
-{txt} vars:{res}         4,607                          12 Mar 2022 10:24
+{txt} vars:{res}         4,607                          12 Mar 2022 16:25
 {txt} size:{res}   155,934,750                          
 {txt}{hline}
               storage   display    value
@@ -11865,7 +11865,7 @@ all files already exist and are up to date.
 > (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 > (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
 > (line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
-> if date >= td(01jan2022) & date <= td(01apr2022) ///
+> if date >= td(01jan2022) & date <= td(01jul2022) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily cases) title("C-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
@@ -11903,7 +11903,7 @@ all files already exist and are up to date.
 > (line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
 > (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 > (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-> if date >= td(01jan2022) & date <= td(01apr2022) ///
+> if date >= td(01jan2022) & date <= td(01jul2022) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily cases) title("C-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
@@ -12321,7 +12321,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220311/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}12 Mar 2022, 10:33:14
+ {txt}closed on:  {res}12 Mar 2022, 16:34:53
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

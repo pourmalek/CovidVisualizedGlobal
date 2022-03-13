@@ -2373,7 +2373,7 @@ twoway ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
 (line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
-if date >= td(01jan2022) & date <= td(01apr2022) ///
+if date >= td(01jan2022) & date <= td(01jul2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("C-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
@@ -2409,7 +2409,7 @@ twoway ///
 (line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
 (line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-if date >= td(01jan2022) & date <= td(01apr2022) ///
+if date >= td(01jan2022) & date <= td(01jul2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily cases) title("C-19 daily cases, WHO regions, DELP, SRIV", size(medium)) ///
