@@ -20,7 +20,7 @@ Reported COVID-19 daily cases are bouncing up at the Global level and in Europe,
 
 ![image](https://user-images.githubusercontent.com/30849720/158045726-7a4acab2-54c2-4234-b429-024fb40f5ba4.png)
 
-Even though the models are highly divergent about the future trajectory of the pandemic, the above-observed trajectories of the reported daily deaths and cases might signify _a new surge_. 
+**Even though the models are highly divergent about the future trajectory of the pandemic, the above-observed trajectories of the reported daily deaths and cases might signify _a new surge_.**
 
 <br/><br/>
 
