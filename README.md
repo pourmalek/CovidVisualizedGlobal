@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 35 - 2022-03-11 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/35%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2035%20–%202022-03-11.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 36 - 2022-03-18 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/36%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2036%20–%202022-03-18.pdf)
 
 
 
@@ -127,7 +127,7 @@ The [`CovidLongitudinal`](https://github.com/pourmalek/CovidLongitudinal) reposi
 
  
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 31 - 2022-02-18 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/31%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2031%20–%202022-02-18.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 36 - 2022-03-18 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/36%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2036%20–%202022-03-18.pdf)
 
 
   
