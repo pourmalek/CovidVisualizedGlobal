@@ -20,7 +20,7 @@ Reported COVID-19 daily cases are bouncing up at the Global level and in Europe,
 
 ![image](https://user-images.githubusercontent.com/30849720/158045726-7a4acab2-54c2-4234-b429-024fb40f5ba4.png)
 
-Even though the models are highly divergent about the future trajectory of the pandemic, the above-observed trajectories of the reported daily deaths and cases might signify _a new surge_. 
+**Even though the models are highly divergent about the future trajectory of the pandemic, the above-observed trajectories of the reported daily deaths and cases might signify _a new surge_.**
 
 <br/><br/>
 
@@ -333,9 +333,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
+(19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%204a2%20C-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/158042467-bdea207c-c2e8-40ff-9859-9630cafd4e98.png)
+![image](https://user-images.githubusercontent.com/30849720/158490796-fd613d35-fc6d-41c1-9c89-d04a81cee12a.png)
 
 ****
 
