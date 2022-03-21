@@ -217,31 +217,37 @@ AMRO is devided to AMR1 and AMR2:
 
 (5) Regions together [Daily excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159271382-adb93b59-152a-4ea3-ad7d-3ab0a055d6f0.png)
 
 ****
 
 (6) Regions together [Daily excess deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159271554-d393d0fc-ec9e-4b12-9cb4-6ae06ab57818.png)
 
 ****
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159271705-080d8466-6051-4d3b-8c90-93405e118b18.png)
 
 ****
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159272053-d7ff60c0-bfcf-4d81-a064-121a6b6b493c.png)
 
 ****
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159272203-02bd76ce-b092-4abf-80d7-8bfb8889dc6a.png)
 
 ****
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159272368-79b6b72a-f82c-4172-8dba-05648ab05b7d.png)
 
 ****
 
