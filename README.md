@@ -90,7 +90,12 @@ THREE “CovidVisualized” repositories, use a common template and logic for vi
 [`covir2`](https://github.com/pourmalek/covir2) for countries without subnational estimates: [`IRAN`](https://github.com/pourmalek/covir2/blob/main/README.md), with sample applications of “covir2” to countries without subnational estimates: [`Afghanistan`](https://github.com/pourmalek/covir2/blob/main/ADAPTATIONS_EXAMPLES/Afghanistan_%2020210625/20210625/README.md) [`Pakistan`](https://github.com/pourmalek/covir2/tree/main/ADAPTATIONS_EXAMPLES/Pakistan_20210704) [`Japan 20210506`](https://github.com/pourmalek/covir2/tree/main/ADAPTATIONS_EXAMPLES/Japan_20210506) [`Japan 20210928`](https://github.com/pourmalek/covir2/tree/main/ADAPTATIONS_EXAMPLES/Japan_20210928)
  
 <br/><br/>
-
+ 
+ 
+[`CovidVisualizedMethodology`](https://github.com/pourmalek/CovidVisualizedMethodology) explains the conceptual and computational details of the development of CovidVisualized tools and provides examples of what the CovidVisualized tools provide in addition to the individual models. 
+ 
+<br/><br/>
+ 
 and:
  
 The [`CovidLongitudinal`](https://github.com/pourmalek/CovidLongitudinal) repository compares predictions of periodically updated international COVID-19 pandemic models with official reports of the countries to the World Health Organization, for the [`Global level and WHO Regions`](https://github.com/pourmalek/CovidLongitudinal/tree/main/Global), [`Canada and its provinces`](https://github.com/pourmalek/CovidLongitudinal/tree/main/Canada), and [`Iran`](https://github.com/pourmalek/CovidLongitudinal/tree/main/Iran).
