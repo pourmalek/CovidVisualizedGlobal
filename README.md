@@ -1073,17 +1073,17 @@ There were no sources of funding for this research.
 
 ## III. INNER WORKS OF THIS REPOSITORY 
 
-The Stata _codes_ can be executed on local machines:
+TThe Stata _codes_ can be executed on local machines:
 
-Run in Stata the _master Stata do file_ on your local machine after the downloaded _repository directory_ is stored in the root of /Downloads/ folder of your local machine.
+Run in Stata the _master do file_ on your local machine after the _downloaded repository directory_ is stored in the root of /Downloads/ folder of your local machine.
   
-For covir2, the _master Stata do file_ is:
+For CovidVisualizedGlobal, the _master do file_ is:
   
-covir2/20220318/code/master/do country master.do
+CovidVisualizedGlobal-main/20220318/code/master/do CovidVisualizedGlobal master.do
   
-and the downloaded _repository directory_ is:
+and the _downloaded repository directory_ is:
   
-/covir2-main/
+/CovidVisualizedGlobal-main/
   
 and /20220318/ denotes the date of uptake.  
 
@@ -1091,10 +1091,10 @@ and /20220318/ denotes the date of uptake.
 *********
 
   
-[Data management](https://github.com/pourmalek/CovidVisualizedMethodology#data-management) describes the template for models’ output data management used in this repository. 
+[`Data management`](https://github.com/pourmalek/CovidVisualizedMethodology#data-management) describes the template for models’ output data management used in this repository. 
 
 
-[Periodical updates and uptakes](https://github.com/pourmalek/CovidVisualizedMethodology#periodical-updates-and-uptakes) describes the rule for periodical uptakes used in this repository. 
+[`Periodical updates and uptakes`](https://github.com/pourmalek/CovidVisualizedMethodology#periodical-updates-and-uptakes) describes the rule for periodical uptakes used in this repository. 
  
   
 [`Bugs and issues`](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/Bugs%20and%20issues.md) describes how to report bugs and issues. 
@@ -1106,6 +1106,7 @@ and /20220318/ denotes the date of uptake.
 <br/><br/>   
   
 ************************************
+
 
 
 
