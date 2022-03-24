@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20AMR2%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153260697-1779f192-75bb-45a6-9193-2ce2d48ec336.png)
 
 *
 
@@ -97,7 +99,7 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
@@ -161,7 +163,9 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
+(2) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20AMR2%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153260805-319b466b-ac65-43ec-a479-31487093ed6f.png)
 
 *
 
@@ -229,7 +233,7 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
