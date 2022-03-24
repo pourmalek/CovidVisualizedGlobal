@@ -29,7 +29,9 @@ List of graphs:
 
 **uptake 20220218**: **_DELP 20220218_**, **_IHME 20220218_**, NO IMPE, NO SRIV 
 
+(1) European region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/05%20EURO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827201-112de318-27d7-4f3a-9a52-bd052cd76d7f.png)
 
 *
 
@@ -127,7 +129,7 @@ List of graphs:
 
 **uptake 20220218**: **_DELP 20220218_**, **_IHME 20220218_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
@@ -226,7 +228,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220218**: **_DELP 20220218_**, **_IHME 20220218_**, NO IMPE, NO SRIV 
 
+(2) European region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220218/output/merge/06%20EURO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/154827211-bd0c8de4-e48a-4dfa-af8f-852486f8caa4.png)
 
 *
 
@@ -326,7 +330,7 @@ This graph was not generated for this uptake.
 
 **uptake 20220218**: **_DELP 20220218_**, **_IHME 20220218_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
