@@ -29,7 +29,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(1) Americas region, Canada and United States [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20AMR1%2011a%20COVID-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150858229-2d0f346a-d32d-4ab7-8c51-12c77a00796e.png)
 
 *
 
@@ -88,7 +90,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(3) Americas region, Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20AMR1%2014%20COVID-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150858320-04f9b6c3-2a6a-4466-a720-76f3377e32b1.png)
 
 *
 
@@ -147,7 +151,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20AMR1%2021%20COVID-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150858409-496ab3e8-a406-4277-9e81-b58992f1b350.png)
 
 *
 
@@ -211,7 +217,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(6) Americas region, Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20AMR1%2024%20COVID-19%20daily%20cases%2C%20AMR1%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150858508-5711fe81-3bcc-4a12-b8ff-3189bd98132b.png)
 
 *
 
