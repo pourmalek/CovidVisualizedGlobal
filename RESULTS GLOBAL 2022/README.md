@@ -6,7 +6,7 @@
 
 List of graphs:
 
-Go through outcomes, calendar time intervals, scenarios, and models.
+Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 
 
 (1) GLOBAL - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#1-global---daily-deaths-reference-scenarios-all-time)
