@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(1) Western Pacific region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20WPRO%2011a%20COVID-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150860458-0cc2115e-44d2-4b6d-a7eb-079f99991696.png)
 
 *
 
@@ -113,7 +115,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20WPRO%2014%20COVID-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150860536-85092ea1-5342-4aa1-a4d8-76bd73fba067.png)
 
 *
 
@@ -199,7 +203,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(4) Western Pacific region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20WPRO%2021%20COVID-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150860628-bcb02733-bde1-4dc5-bbe2-b5a2b6363499.png)
 
 *
 
@@ -285,7 +291,9 @@ List of graphs:
 
 **uptake 20220121**: **_DELP 20220121_**, **_IHME 20220121_**, IMPE 20220102, **_SRIV 20220119_**
 
+(6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220121/output/merge/graph%20WPRO%2024%20COVID-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/150860725-1116f56d-6113-4cd4-8241-262958990fbc.png)
 
 *
 
