@@ -36,6 +36,15 @@ List of graphs:
 
 (11) GLOBAL - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
 
+(11b) GLOBAL - [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11b-global---daily-infection--detection-and--hospitalizations-ratios-3-scenarios-all-time-ihme)
+
+(12) GLOBAL - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#12-global---daily-mobility-3-scenarios-all-time-ihme)
+
+(13) GLOBAL - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#13-global---daily-mask-use-3-scenarios-ihme)
+
+(14) GLOBAL - [Percent cumulative vaccinated, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#14-global---percent-cumulative-vaccinated-2021-on-ihme)
+
+
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
