@@ -20,10 +20,21 @@ List of graphs:
 
 (4) GLOBAL - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#4-global---daily-cases-or-infections-reference-scenarios-all-time)
 
+(5) GLOBAL - [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#5-global---daily-cases-or-infections-reference-scenarios-2021-on)
 
+(6) GLOBAL - [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6-global---daily-cases-or-infections-3-scenarios-2021-on)
 
+(6b) GLOBAL - [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6b-global---daily-cases-2021-on)
 
+(6c) GLOBAL - [Daily estimated infections IHME IMPE to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6c-global---daily-estimated-infections-ihme-impe-to-reported-cases-john-main-scenarios-2021-on)
 
+(7) GLOBAL - [Hospital-related outcomes, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#7-global---hospital-related-outcomes-all-time)
+
+(8) GLOBAL - [Hospital-related outcomes, 2021 on, without IHME Bed need and IMPE Hospital demand](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#8-global---hospital-related-outcomes-2021-on-without-ihme-bed-need-and-impe-hospital-demand)
+
+(9) GLOBAL - [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021-on)
+
+(11) GLOBAL - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
