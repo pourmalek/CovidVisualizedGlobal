@@ -29,7 +29,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159336379-4f217269-97f7-460a-b269-061c20692112.png)
 
 *
 
@@ -151,7 +153,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(3) European region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20EURO%2014%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159336495-412377b9-fa8d-4cff-a9a9-b0f5cde37fb6.png)
 
 *
 
@@ -272,7 +276,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20EURO%2022%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159336957-169116d7-96ab-41f7-9914-a993c981cc91.png)
 
 *
 
@@ -396,7 +402,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20EURO%2024%20C-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159337074-ee7df2e1-0085-4126-9f8d-b287d059cfdb.png)
 
 *
 
