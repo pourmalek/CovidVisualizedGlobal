@@ -4,6 +4,8 @@
 
 **_DELP 20220218_**, **_IHME 20220218_**, NO IMPE, NO SRIV 
 
+IMPE and SRIV not in this upatke. 
+
 **IMPE** 20220102 is > one month old and is not included in the graphs. 
 
 **SRIV** Highly implausibly high estimate.
