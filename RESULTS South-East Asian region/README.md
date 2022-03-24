@@ -30,7 +30,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(1) South-East Asian region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20SEARO%2011a%20C-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159337178-c4b08939-f707-4ede-9c04-9919336df731.png)
 
 *
 
@@ -152,7 +154,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(3) South-East Asian region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20SEARO%2014%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159337274-6b0ae4ee-679b-4caf-945a-e9a0684e3d29.png)
 
 *
 
@@ -272,7 +276,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(4) South-East Asian region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20SEARO%2022%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159337375-abbfd34a-c630-4e7c-87fc-b2db559d704f.png)
 
 *
 
@@ -395,7 +401,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20SEARO%2024%20C-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159337498-6518aa5e-2264-4683-ab56-2db03aaf7196.png)
 
 *
 
