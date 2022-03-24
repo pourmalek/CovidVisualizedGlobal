@@ -28,7 +28,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159276894-3555a02e-88cf-4aaf-968e-787c510732b2.png)
 
 *
 
@@ -151,7 +153,9 @@ List of graphs:
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20AFRO%2014%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
+ ![image](https://user-images.githubusercontent.com/30849720/159277007-ce596dbb-7f88-477f-8a01-f5d2ce0fb750.png)
 
 *
 
@@ -274,7 +278,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159277180-bd377fc8-2fc0-4146-8e13-301da38e1007.png)
 
 *
 
@@ -397,7 +403,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220318**: **_DELP 20220318_**, IHME 20220218, IMPE 20220120, **_SRIV 20220318_**
 
+(6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220318/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/159277296-fd81cd64-bd10-4834-abb7-a9ff1034778f.png)
 
 *
 
