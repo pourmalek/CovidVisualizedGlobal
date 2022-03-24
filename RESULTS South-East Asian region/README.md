@@ -30,7 +30,9 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
+(1) South-East Asian region [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/05%20SEARO%20C-19%20daily%20deaths%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262671-2484b40e-890d-4961-a257-fa36bed8fc9e.png)
 
 *
 
@@ -120,7 +122,7 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
@@ -212,7 +214,9 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
+(2) South-East Asian region [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220204/output/merge/06%20SEARO%20C-19%20daily%20cases%2C%20reference%20scenarios%2C%202020%20on.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/153262785-cfc031d8-ab21-45fc-a341-abf6a45d8bdf.png)
 
 *
 
@@ -303,7 +307,7 @@ List of graphs:
 
 **uptake 20220204**: **_DELP 20220204_**, **_IHME 20220204_**, NO IMPE, NO SRIV 
 
-
+This graph was not generated for this uptake. 
 
 *
 
