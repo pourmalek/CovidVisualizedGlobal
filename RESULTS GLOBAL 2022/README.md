@@ -8,9 +8,9 @@ List of graphs:
 
 (1) GLOBAL - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#1-global---daily-deaths-reference-scenarios-all-time)
 
-(2) GLOBAL - [Daily deaths, reference scenarios, 2021 on])https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2-global---daily-deaths-reference-scenarios-2021-on  
+(2) GLOBAL - [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2-global---daily-deaths-reference-scenarios-2021-on)
 
-(2b) GLOBAL - [Daily deaths, reference scenarios, 2021 on, with IHME excess] deaths(https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2b-global---daily-deaths-reference-scenarios-2021-on-with-ihme-excess-deaths)
+(2b) GLOBAL - [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2b-global---daily-deaths-reference-scenarios-2021-on-with-ihme-excess-deaths)
 
 (3) GLOBAL - [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3-global---daily-deaths-3-scenarios-2021-on)
 
