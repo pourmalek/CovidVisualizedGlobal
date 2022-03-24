@@ -61,12 +61,6 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 
 **uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
 
-
-
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220304/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/158062578-f2e1654e-99a0-42a0-a88e-56fbfec5d251.png)
@@ -127,11 +121,6 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -198,11 +187,6 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -267,11 +251,6 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
   
  
  
-
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
 
 
 *
@@ -339,11 +318,6 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
  
  
 
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -409,11 +383,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -477,11 +446,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -548,11 +512,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -618,11 +577,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -688,11 +642,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
   
  
  
-
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
 
 
 *
@@ -761,11 +710,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -832,11 +776,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -903,11 +842,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -975,11 +909,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -1047,11 +976,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -1118,11 +1042,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -1192,11 +1111,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
 
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -1262,11 +1176,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
@@ -1334,11 +1243,6 @@ Both this and the previous uptake use the same model update, so the graphs are i
  
  
   
-*
-
-**uptake 20220304**: **_DELP 20220304_**, IHME 20220218, **_IMPE 20220120_**, **_SRIV 20220301_**
-
-
 
 *
 
