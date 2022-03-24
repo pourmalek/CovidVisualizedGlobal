@@ -8,7 +8,22 @@ List of graphs:
 
 (1) GLOBAL - [Daily deaths, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#1-global---daily-deaths-reference-scenarios-all-time)
 
-(2) GLOBAL - [Daily deaths, reference scenarios, 2021 on]https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2-global---daily-deaths-reference-scenarios-2021-on  
+(2) GLOBAL - [Daily deaths, reference scenarios, 2021 on])https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2-global---daily-deaths-reference-scenarios-2021-on  
+
+(2b) GLOBAL - [Daily deaths, reference scenarios, 2021 on, with IHME excess] deaths(https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2b-global---daily-deaths-reference-scenarios-2021-on-with-ihme-excess-deaths)
+
+(3) GLOBAL - [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3-global---daily-deaths-3-scenarios-2021-on)
+
+(3b) GLOBAL - [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3b-global---daily-deaths-3-scenarios-2021-on-ihme)
+
+(3c) GLOBAL - [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3c-global---daily-deaths-3-scenarios-2021-on-impe)
+
+(4) GLOBAL - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#4-global---daily-cases-or-infections-reference-scenarios-all-time)
+
+
+
+
+
 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
