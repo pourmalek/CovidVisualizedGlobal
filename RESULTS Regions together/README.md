@@ -15,13 +15,15 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 .
 
+(0a) Regions together - [Daily deaths, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#0a-regions-together---daily-deaths-with-global-john)
+  
+(0b) Regions together - [Daily deaths, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#0b-regions-together---daily-deaths-without-global-john)  
+  
+(0c) Regions together - [Daily deaths, without GLOBAL, 2022, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#0c-regions-together---daily-deaths-without-global-2022-john)  
+  
+(1) Regions together - [Daily deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#1-regions-together---daily-deaths-with-global-ihme-impe)
 
-  
-  
-  
-  
-  
-  
+(2) Regions together - [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2-regions-together---daily-deaths-without-global-ihme-impe)  
   
   
   
