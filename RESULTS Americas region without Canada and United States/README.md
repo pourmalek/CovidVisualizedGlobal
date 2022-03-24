@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158043280-cc64fb8c-05bd-4ff6-81a0-a461ddb76672.png)
 
 *
 
@@ -121,7 +123,9 @@ List of graphs:
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(3) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMR2%2014%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
+ ![image](https://user-images.githubusercontent.com/30849720/158043291-88382f37-4fa5-417d-94df-c74658e6a645.png)
 
 *
 
@@ -205,7 +209,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMR2%2022%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158043310-e3b15f9a-1d47-4b4f-97ed-73a001e08934.png)
 
 *
 
@@ -297,7 +303,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMR2%2024%20C-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158043327-25a72b36-795e-4fc1-8efd-dce927cc0ea9.png)
 
 *
 
