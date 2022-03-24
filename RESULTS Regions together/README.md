@@ -25,9 +25,22 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 (2) Regions together - [Daily deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#2-regions-together---daily-deaths-without-global-ihme-impe)  
   
+(3) Regions together - [Daily deaths, with GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#3-regions-together---daily-deaths-with-global-delp-sriv)  
   
-  
-  
+(4) Regions together - [Daily deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#4-regions-together---daily-deaths-without-global-delp-sriv)  
+
+(5) Regions together - [Daily excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#5-regions-together---daily-excess-deaths-with-global-ihme)
+
+(6) Regions together - [Daily excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#6-regions-together---daily-excess-deaths-without-global-ihme)
+
+(00a) Regions together - [Daily cases, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#00a-regions-together---daily-cases-with-global-john)
+
+(00b) Regions together - [Daily cases, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#00b-regions-together---daily-cases-without-global-john)
+
+(00c) Regions together - [Daily cases, without GLOBAL, JOHN, Recent](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#00c-regions-together---daily-cases-without-global-john-recent)
+
+(7) Regions together - [Daily infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#7-regions-together---daily-infections-with-global-ihme-impe)
+
   
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
