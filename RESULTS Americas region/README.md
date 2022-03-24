@@ -28,7 +28,9 @@ List of graphs:
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158042821-dc3783e3-4df1-4c43-a2d6-a2adac4df52f.png)
 
 *
 
@@ -145,7 +147,9 @@ List of graphs:
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158042846-3b607fa9-65d5-4b35-bcdd-7972c21fbeb6.png)
 
 *
 
@@ -257,7 +261,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMRO%2022%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+ ![image](https://user-images.githubusercontent.com/30849720/158042869-27b701ce-dd75-4dde-aedf-c9868c2688a0.png)
 
 *
 
@@ -372,7 +378,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220311**: **_DELP 20220311_**, IHME 20220218, IMPE 20220120, **_SRIV 20220311_**
 
+(6) Americas region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220311/output/merge/graph%20AMRO%2024%20C-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/158042889-eb7c947c-42a4-407c-8e55-2c5f63468dc8.png)
 
 *
 
