@@ -10,10 +10,9 @@ Note that the latest available IMPE model update reflects their predictions as o
 
 **Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
 
+<br/><br/>
 
-****
 
-****
 
 
 ### Selected graphs
