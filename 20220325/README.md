@@ -4,7 +4,12 @@
 
 **_DELP 20220325_**, **_IHME 20220222_**, IMPE 20220120, **_SRIV 20220325_**
 
+Note that the latest available IMPE model update reflects their predictions as of 2022-01-20, more than two months old now.
+
 <br/><br/>
+
+**Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
+
 
 ****
 
@@ -49,6 +54,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220325/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/160201629-e88fd485-6a7f-4dab-96f5-ebcbf262f43a.png)
 
 ****
 
