@@ -128,9 +128,29 @@ The [`CovidLongitudinal`](https://github.com/pourmalek/CovidLongitudinal) reposi
   
  <br/><br/>
   
-****
+**Summary 20220325:**
 
- 
+Models’ predictions are divergent about the current and the next surge.
+
+IHME predicts the highest-ever daily deaths peak at the global level in June 2022.
+
+IMPE model is functionally next to retirement: their latest predictions as of 2022-03-25 dates back to 2022-01-20.
+
+Reported daily deaths are rising in the Americas region without Canada and United States.
+
+Reported daily cases are fluctuating horizontally in the European and Western Pacific regions. 
+
+Premature release of mandates for using masks and physical distancing serves the political and economic purposes of the governments, not the public health and survival needs of the populations.
+
+<br/><br/>
+
+**Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
+
+<br/><br/>  
+  
+  
+
+**** 
   
 # :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 37 - 2022-03-25 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/37%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2037%20–%202022-03-25.pdf)
 
