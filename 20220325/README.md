@@ -365,7 +365,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220325/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/30849720/160218486-5ad50f33-06a1-47a2-b04b-466dde3eb0ee.png)
   
 ****
 
