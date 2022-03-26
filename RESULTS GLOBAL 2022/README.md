@@ -15,17 +15,17 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 
 (2b) GLOBAL - [Daily deaths, reference scenarios, 2021 on, with IHME excess deaths](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#2b-global---daily-deaths-reference-scenarios-2021-on-with-ihme-excess-deaths)
 
-(3) GLOBAL - [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3-global---daily-deaths-3-scenarios-2021-on)
+(3) GLOBAL - [Daily deaths, alternate scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3-global---daily-deaths-3-scenarios-2021-on)
 
-(3b) GLOBAL - [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3b-global---daily-deaths-3-scenarios-2021-on-ihme)
+(3b) GLOBAL - [Daily deaths, alternate scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3b-global---daily-deaths-3-scenarios-2021-on-ihme)
 
-(3c) GLOBAL - [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3c-global---daily-deaths-3-scenarios-2021-on-impe)
+(3c) GLOBAL - [Daily deaths, alternate scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3c-global---daily-deaths-3-scenarios-2021-on-impe)
 
 (4) GLOBAL - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#4-global---daily-cases-or-infections-reference-scenarios-all-time)
 
 (5) GLOBAL - [Daily cases or infections, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#5-global---daily-cases-or-infections-reference-scenarios-2021-on)
 
-(6) GLOBAL - [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6-global---daily-cases-or-infections-3-scenarios-2021-on)
+(6) GLOBAL - [Daily cases or infections, alternate scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6-global---daily-cases-or-infections-3-scenarios-2021-on)
 
 (6b) GLOBAL - [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#6b-global---daily-cases-2021-on)
 
@@ -37,13 +37,13 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 
 (9) GLOBAL - [Daily deaths estimated to reported, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#9-global---daily-deaths-estimated-to-reported-reference-scenarios-2021-on)
 
-(11) GLOBAL - [Daily Infection outcomes ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
+(11) GLOBAL - [Daily Infection outcomes ratios, alternate scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11-global---daily-infection-outcomes-ratios-3-scenarios-all-time-ihme)
 
 (11b) GLOBAL - [Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#11b-global---daily-infection--detection-and--hospitalizations-ratios-3-scenarios-all-time-ihme)
 
-(12) GLOBAL - [Daily mobility, 3 scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#12-global---daily-mobility-3-scenarios-all-time-ihme)
+(12) GLOBAL - [Daily mobility, alternate scenarios, all time, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#12-global---daily-mobility-3-scenarios-all-time-ihme)
 
-(13) GLOBAL - [Daily mask use, 3 scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#13-global---daily-mask-use-3-scenarios-ihme)
+(13) GLOBAL - [Daily mask use, alternate scenarios, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#13-global---daily-mask-use-3-scenarios-ihme)
 
 (14) GLOBAL - [Percent cumulative vaccinated, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#14-global---percent-cumulative-vaccinated-2021-on-ihme)
 
@@ -319,7 +319,7 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (3) GLOBAL - Daily deaths, 3 scenarios, 2021 on
+### (3) GLOBAL - Daily deaths, alternate scenarios, 2021 on
   
  
  
@@ -409,7 +409,7 @@ Go through outcomes, calendar time intervals, scenarios, models, and uptakes.
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (3b) GLOBAL - Daily deaths, 3 scenarios, 2021 on, IHME
+### (3b) GLOBAL - Daily deaths, alternate scenarios, 2021 on, IHME
   
  
  
@@ -498,7 +498,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (3c) GLOBAL - Daily deaths, 3 scenarios, 2021 on, IMPE
+### (3c) GLOBAL - Daily deaths, alternate scenarios, 2021 on, IMPE
   
  
  
@@ -764,7 +764,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (6) GLOBAL - Daily cases or infections, 3 scenarios, 2021 on
+### (6) GLOBAL - Daily cases or infections, alternate scenarios, 2021 on
 
  
  
@@ -854,7 +854,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (6b) GLOBAL - Daily cases, 2021 on
+### (6b) GLOBAL - Daily cases, reference scenarios, 2021 on
   
  
  
@@ -1307,7 +1307,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (11) GLOBAL - Daily Infection outcomes ratios, 3 scenarios, all time, IHME
+### (11) GLOBAL - Daily Infection outcomes ratios, alternate scenarios, all time, IHME
   
  
  
@@ -1397,7 +1397,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (11b) GLOBAL - Daily Infection -detection and -hospitalizations ratios, 3 scenarios, all time, IHME
+### (11b) GLOBAL - Daily Infection -detection and -hospitalizations ratios, alternate scenarios, all time, IHME
   
  
  
@@ -1490,7 +1490,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (12) GLOBAL - Daily mobility, 3 scenarios, all time, IHME
+### (12) GLOBAL - Daily mobility, alternate scenarios, all time, IHME
   
  
  
@@ -1579,7 +1579,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************  
 
-### (13) GLOBAL - Daily mask use, 3 scenarios, IHME
+### (13) GLOBAL - Daily mask use, alternate scenarios, IHME
   
  
  
