@@ -8,6 +8,14 @@ Note that the latest available IMPE model update reflects their predictions as o
 
 <br/><br/>
 
+**Summary 20220325:**
+
+Models’ predictions are divergent about the current and the next surge.
+
+Premature release of mandates for using masks and physical distancing serves the political and economic purposes of the governments, not the public health and survival needs of the populations.
+
+<br/><br/>
+
 **Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
 
 <br/><br/>
