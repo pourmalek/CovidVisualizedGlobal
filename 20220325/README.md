@@ -12,6 +12,14 @@ Note that the latest available IMPE model update reflects their predictions as o
 
 Models’ predictions are divergent about the current and the next surge.
 
+IHME predicts the highest-ever daily deaths peak at the global level in June 2022.
+
+IMPE model is functionally next to retirement: their latest predictions as of 2022-03-25 dates back to 2022-01-20.
+
+Reported daily deaths are rising in the Americas region without Canada and United States.
+
+Reported daily cases are fluctuating horizontally in the European and Western Pacific regions. 
+
 Premature release of mandates for using masks and physical distancing serves the political and economic purposes of the governments, not the public health and survival needs of the populations.
 
 <br/><br/>
