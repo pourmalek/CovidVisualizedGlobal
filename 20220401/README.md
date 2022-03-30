@@ -2,7 +2,7 @@
 
 ### Study update dates in uptake 20220401
 
-**_DELP 20220401_**, IHME 20220222, IMPE 20220120, **_SRIV 20220401_**
+**_DELP 20220401_**, IHME 20220222, **_IMPE 20220131_**, **_SRIV 20220401_**
 
 <br/><br/>
 
