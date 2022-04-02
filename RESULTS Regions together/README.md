@@ -15,6 +15,8 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 .
 
+Daily deaths:
+
 (0a) Regions together - [Daily deaths, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#0a-regions-together---daily-deaths-with-global-john)
   
 (0b) Regions together - [Daily deaths, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#0b-regions-together---daily-deaths-without-global-john)  
@@ -33,6 +35,8 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 (6) Regions together - [Daily excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#6-regions-together---daily-excess-deaths-without-global-ihme)
 
+Daily cases or infections:
+
 (00a) Regions together - [Daily cases, with GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#00a-regions-together---daily-cases-with-global-john)
 
 (00b) Regions together - [Daily cases, without GLOBAL, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#00b-regions-together---daily-cases-without-global-john)
@@ -47,6 +51,8 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 
 (10) Regions together - [Daily cases, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#10-regions-together---daily-cases-without-global-delp-sriv)
 
+Total deaths:
+
 (11) Regions together - [Total deaths, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#11-regions-together---total-deaths-with-global-ihme-impe)
 
 (12) Regions together - [Total deaths, without GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#12-regions-together---total-deaths-without-global-ihme-impe)
@@ -58,6 +64,8 @@ JOHN, followed by IHME and IMPE, followed by DELP and SRIV.
 (15) Regions together - [Total excess deaths, with GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#15-regions-together---total-excess-deaths-with-global-ihme)
 
 (16) Regions together - [Total excess deaths, without GLOBAL, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#16-regions-together---total-excess-deaths-without-global-ihme)
+
+Total cases or infections:
 
 (17) Regions together - [Total infections, with GLOBAL, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Regions%20together#17-regions-together---total-infections-with-global-ihme-impe)
 
