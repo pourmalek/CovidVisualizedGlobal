@@ -1,4 +1,4 @@
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 38 - 2022-04-01 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/38%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2038%20–%202022-04-01.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 38 - 2022-04-01 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/38%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2038%20–%202022-04-01.pdf) 
 
 ### Study update dates in uptake 20220401
 
