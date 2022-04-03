@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 37 - 2022-03-25 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/37%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2037%20–%202022-03-25.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 38 - 2022-04-01 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/38%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2038%20–%202022-04-01.pdf)
 
 
 
@@ -176,7 +176,7 @@ Premature release of mandates for using masks and physical distancing serves the
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 37 - 2022-03-25 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/37%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2037%20–%202022-03-25.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 38 - 2022-04-01 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/38%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2038%20–%202022-04-01.pdf)
 
 
   
