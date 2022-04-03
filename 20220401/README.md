@@ -10,6 +10,11 @@ Note that the latest available update of IMPE (20220131) is more than 2 months o
 
 <br/><br/>
 
+
+Observation on IHME's “excess deaths”: The IHME model predicted outcome, predicted “excess deaths”, was time more than the official “reported deaths” (via JOHN) and IHME’s predicted “reported deaths” (backcast), up until 2022-05-01. In the latest IHME update (i.e., 20220322), the difference between the predicted “excess deaths” and the predicted reported deaths becomes very small, compared to all time before 2022-05-01. For this to be true, there are two logical ways available: (a) Under-reporting of COVID-19 deaths becomes very small (i.e., reporting of COVID-19 deaths becomes near complete) and the number of excess deaths also becomes very small. (b) Under-reporting of COVID-19 deaths becomes less than before, but the net sum of excess deaths becomes negative. The excess deaths outcome is the net sum of increased deaths due to some causes of death and decreased deaths due to some other causes of death. (The Lancet, https://doi.org/10.1016/S0140-6736(21)02796-3)
+
+<br/><br/>
+
 ****
 
 ****
