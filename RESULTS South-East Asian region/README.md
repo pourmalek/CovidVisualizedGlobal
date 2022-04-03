@@ -30,7 +30,9 @@ List of graphs:
 
 **uptake 20220401**: **_DELP 20220328_**, **_IHME 20220322_**, **_IMPE 20220131_**, **_SRIV 20220401_**
 
+(1) South-East Asian region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220401/output/merge/graph%20SEARO%2011a%20C-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/161413753-e9e8cb83-1a0a-4d40-8bdf-7b5a18e47c97.png)
 
 *
 
@@ -168,7 +170,9 @@ List of graphs:
 
 **uptake 20220401**: **_DELP 20220328_**, **_IHME 20220322_**, **_IMPE 20220131_**, **_SRIV 20220401_**
 
+(3) South-East Asian region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220401/output/merge/graph%20SEARO%2014%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/161413789-18181efa-a5c1-4301-b11d-2a47f927af45.png)
 
 *
 
@@ -304,7 +308,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220401**: **_DELP 20220328_**, **_IHME 20220322_**, **_IMPE 20220131_**, **_SRIV 20220401_**
 
+(4) South-East Asian region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220401/output/merge/graph%20SEARO%2022%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/161413816-2b1426f0-cfaa-49b0-a8c0-c7c4afec235b.png)
 
 *
 
@@ -443,7 +449,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220401**: **_DELP 20220328_**, **_IHME 20220322_**, **_IMPE 20220131_**, **_SRIV 20220401_**
 
+(6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220401/output/merge/graph%20SEARO%2024%20C-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/161413857-9d27cbe6-f8b2-422b-b0ac-27296c3e4ca4.png)
 
 *
 
