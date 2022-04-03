@@ -563,7 +563,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 4 "IHME"
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 "IMPE"
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 6 "SRIV"
-	if date >= td(01jan2020) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
@@ -588,7 +588,7 @@ foreach region of local list5 {
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 5 "IHME"
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 6 "IMPE"
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"	
-	if date >= td(01jan2020) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
@@ -612,7 +612,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 4 "IHME"
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 "IMPE"
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 6 "SRIV"	
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
@@ -636,7 +636,7 @@ foreach region of local list5 {
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 5 "IHME"
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 6 "IMPE"
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"		
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
@@ -667,7 +667,7 @@ foreach region of local list5 {
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 11 SRIV mean
 	(line DayDeaLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 12 SRIV lower
 	(line DayDeaUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 13 SRIV upper
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
@@ -693,7 +693,7 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 6 IMPE mean, better scenario
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, worse scenario
 	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
@@ -716,7 +716,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME reference mean
 	(line DayDeaLoSmA02S01`region' date, sort lcolor(green) lpattern(dash)) /// 4 IHME reference lower
 	(line DayDeaUpSmA02S01`region' date, sort lcolor(red) lpattern(dash)) /// 5 IHME reference upper
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region', IHME", size(medium)) ///
@@ -740,7 +740,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME reference mean
 	(line DayDeaMeSmA02S02`region' date, sort lcolor(green) lwidth(thick) lpattern(tight_dot)) /// 4 IHME Masks mean
 	(line DayDeaMeSmA02S03`region' date, sort lcolor(blue) lwidth(thick) lpattern(tight_dot)) /// 5 IHME 3rd dose mean
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region', IHME", size(medium)) ///
@@ -763,7 +763,7 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(black)) /// 3 IMPE reference mean
 	(line DayDeaLoRaA03S02`region' date, sort lcolor(green) lpattern(dash)) /// 4 IMPE reference lower
 	(line DayDeaUpRaA03S02`region' date, sort lcolor(red) lpattern(dash)) /// 5 IMPE reference upper
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region', IMPE", size(medium)) ///
@@ -787,7 +787,7 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(green) lwidth(thick) lpattern(tight_dot)) /// 4 IMPE better mean
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(red) lwidth(thick) lpattern(tight_dot)) /// 5 IMPE worse mean
 	(line DayDeaUpRaA03S03`region' date, sort lcolor(red) lpattern(dash)) /// 6 IMPE worse upper
-	if date >= td(01jan2021) & DayDeaMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region', IMPE, 2021 on", size(medium)) ///
@@ -863,7 +863,7 @@ foreach region of local list5 {
 	(line DayCasMeSmA00S00`region' date, sort lcolor(cyan*1.2) lwidth(thick)) /// 2 "JOHN"
 	(line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"	
-	if date >= td(01jan2021) & DayCasMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases) title("C-19 daily cases, `region'", size(medium)) /// 
@@ -893,7 +893,7 @@ foreach region of local list5 {
 	(line DayCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 11 IMPE mean
 	(line DayCasLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 IMPE lower
 	(line DayCasUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 IMPE upper	
-	if date >= td(01jan2021) & DayCasMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
@@ -921,7 +921,7 @@ foreach region of local list5 {
 	(line DayINFMeSmA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, better scenario
 	(line DayINFMeSmA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 8 IMPE mean, worse scenario
 	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean	
-	if date >= td(01jan2021) & DayCasMeSmA00S00`region' >= 0 ///
+	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
