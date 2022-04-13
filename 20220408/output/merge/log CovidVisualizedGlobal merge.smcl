@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220408/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}13 Apr 2022, 08:26:37
+ {txt}opened on:  {res}13 Apr 2022, 09:30:43
 {txt}
 {com}. 
 . 
@@ -596,7 +596,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,488                          
-{txt} vars:{res}         4,941                          13 Apr 2022 08:26
+{txt} vars:{res}         4,941                          13 Apr 2022 09:30
 {txt} size:{res}   175,429,984                          
 {txt}{hline}
               storage   display    value
@@ -10471,6 +10471,107 @@ Sorted by: {res}date  loc_grand_name
 . 
 . 
 . 
+. * gen monthspast01jan2022JOHN for end date of JOHN graphs
+. 
+. gen today_date_string = "`c(current_date)'"
+{txt}
+{com}. 
+. gen year = substr(today_date_string,8,4) 
+{txt}
+{com}. gen month = substr(today_date_string,4,3) 
+{txt}
+{com}. gen day = substr(today_date_string,1,2) 
+{txt}
+{com}. egen date2 = concat(day month year)
+{txt}
+{com}. 
+. gen today_numericdailydate  = date(date2, "DMY", 2050)
+{txt}
+{com}. format today_numericdailydate  %tdDDMonCCYY
+{txt}
+{com}. 
+. drop year month day date2
+{txt}
+{com}. 
+. codebook today_numericdailydate today_date_string
+
+{txt}{hline}
+{res}today_numericdailydate{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric daily date ({res}float{txt})
+
+{col 18}range:  [{res}22748{txt},{res}22748{txt}]{col 55}units:  {res}1
+{col 8}{txt}or equivalently:  [{res}13apr2022{txt},{res}13apr2022{txt}]{col 55}units:  {res}days
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}8,488
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     8,488{col 33}22748{col 40}{txt}13apr2022
+
+{txt}{hline}
+{res}today_date_string{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  string ({res}str11{txt})
+
+{col 10}unique values:  {res}1{col 51}{txt}missing "":  {res}0{txt}/{res}8,488
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     8,488{col 33}"13 Apr 2022"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{com}. 
+. 
+. 
+. 
+. gen monthspast01jan2020JOHN = ((today_numericdailydate - td(01jan2020)) / 30) 
+{txt}
+{com}. 
+. replace monthspast01jan2020JOHN = ceil(monthspast01jan2020JOHN)
+{txt}(8,488 real changes made)
+
+{com}. 
+. global monthspast01jan2020JOHN = monthspast01jan2020JOHN
+{txt}
+{com}. 
+. di $monthspast01jan2020JOHN
+{res}28
+{txt}
+{com}. 
+. 
+. 
+. gen monthspast01jan2021JOHN = ((today_numericdailydate - td(01jan2021)) / 30) 
+{txt}
+{com}. 
+. replace monthspast01jan2021JOHN = ceil(monthspast01jan2021JOHN)
+{txt}(8,488 real changes made)
+
+{com}. 
+. global monthspast01jan2021JOHN = monthspast01jan2021JOHN
+{txt}
+{com}. 
+. di $monthspast01jan2021JOHN
+{res}16
+{txt}
+{com}. 
+. 
+. 
+. gen monthspast01jan2022JOHN = ((today_numericdailydate - td(01jan2022)) / 30) 
+{txt}
+{com}. 
+. replace monthspast01jan2022JOHN = ceil(monthspast01jan2022JOHN)
+{txt}(8,488 real changes made)
+
+{com}. 
+. global monthspast01jan2022JOHN = monthspast01jan2022JOHN
+{txt}
+{com}. 
+. di $monthspast01jan2022JOHN
+{res}4
+{txt}
+{com}. 
+. 
 . 
 . ******************
 . 
@@ -12294,7 +12395,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
 > if date >= td(01jan2020) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -12320,7 +12421,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > if date >= td(01jan2020) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2020JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -12346,7 +12447,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
 > if date >= td(01jan2021) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2021JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -12372,7 +12473,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > if date >= td(01jan2021) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2021JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -12398,7 +12499,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
 > if date >= td(01jan2022) & date <= td(01apr2022) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2022JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -12424,7 +12525,7 @@ all files already exist and are up to date.
 > (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 > (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > if date >= td(01jan2022) & date <= td(01apr2022) ///
-> , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(#$monthspast01jan2022JOHN, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -13370,7 +13471,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220408/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}13 Apr 2022, 08:33:02
+ {txt}closed on:  {res}13 Apr 2022, 09:38:47
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
