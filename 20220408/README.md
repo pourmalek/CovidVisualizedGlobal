@@ -354,6 +354,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 ****
 
+(3b) African region [Daily deaths, reference scenarios, 2022 on]()
+
+
+****
+
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/163245858-6ac4363f-5432-4ed2-bf32-05db3c3e624a.png)
@@ -364,6 +369,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 ![image](https://user-images.githubusercontent.com/30849720/163246113-8002f55a-05f0-46b8-90db-a66c488fc769.png)
  
+****
+
+(6b) African region [Daily cases or infections, reference scenarios, 2022 on]()
+
+
 ****
 
 
@@ -388,6 +398,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 (3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
   
+****
+
+(3b) Americas region [Daily deaths, reference scenarios, 2022 on]()
+
+
 ****
 
 (4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2022%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
@@ -420,6 +435,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
+(3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on]()
+
+
+****
+
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR1%2022%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202021.pdf)
 
  
@@ -447,9 +467,14 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3) Americas region, without Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2014%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
+(3) Americas region, without  Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2014%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
  
+****
+
+(3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on]()
+
+
 ****
 
 (4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2022%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
