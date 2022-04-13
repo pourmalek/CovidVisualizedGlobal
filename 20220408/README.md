@@ -2,11 +2,11 @@
 
 ### Study update dates in uptake 20220408
 
-**_DELP 20220408_**, **_IHME 20220408_**, **_IMPE 20220131_**, **_SRIV 20220408_**, No PHAC
+**_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_**
 
 Days old: DELP 0, IHME 0, IMPE 68, SRIV 0
 
-
+The latest available IMPE update 20220131 is 68 days old on 20220408.
 
 <br/><br/>
 
