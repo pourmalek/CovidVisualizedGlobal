@@ -145,11 +145,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 (12) Global [Daily mobility, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2092%20C-19%20daily%20mobility%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163223081-e1c776ef-52f3-4fa9-b5ea-0c16f3407e9e.png)
 
 ****
 
 (13) Global [Daily mask use, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2093%20C-19%20daily%20mask_use%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163223192-d8445ccf-ba79-48c1-acf9-ada1469f59ed.png)
 
 ****
 
@@ -167,11 +169,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 (0a) Regions together [Daily deaths, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201a1%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163223335-c86b56df-b971-4b99-b5e4-353832679455.png)
 
 ****
 
 (0b) Regions together [Daily deaths, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201a2%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163223450-0d5234f4-5cda-472e-9081-f7d12f40a677.png)
 
 ****
 
