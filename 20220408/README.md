@@ -6,7 +6,7 @@
 
 Days old: DELP 0, IHME 0, SRIV 0
 
-The latest available IMPE update 20220131 is 68 days old on 20220408.
+The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08. Not included.
 
 <br/><br/>
 
@@ -61,21 +61,25 @@ AMRO is devided to AMR1 and AMR2:
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2012a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219232-1a83a058-dc3d-4cfe-8753-b1ed2e8cb37b.png)
 
 ****
 
 (3) Global [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2014%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219388-0a5478ed-3b1b-4878-9fcd-a0ada2b0a2b7.png)
 
 ****
 
 (3b) Global [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2016%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219680-59baf4d7-b995-4f56-9f2f-adc1368add71.png)
 
 ****
 
-(3c) Global [Daily deaths, 3 scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2018%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%20uncertainty%2C%202021%2C%20IMPE.pdf)
+(3c) Global [Daily deaths, 3 scenarios, 2021 on, IMPE]
 
+The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08. Not included.
 
 ****
 
