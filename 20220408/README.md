@@ -354,8 +354,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 ****
 
-(3b) African region [Daily deaths, reference scenarios, 2022 on]()
+(3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163251547-7feb2a02-ac32-40f5-9e4a-4b5f48943ffb.png)
 
 ****
 
