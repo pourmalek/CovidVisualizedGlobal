@@ -421,12 +421,12 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(6) Americas region [Daily reference, 3 scenarios, 2022 on]
-https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf
+(6b) Americas region [Daily reference, 3 scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/163253114-f97ff9cb-b435-410a-8b95-55ed29659c12.png)
 
 ****
+
 *
 
 
