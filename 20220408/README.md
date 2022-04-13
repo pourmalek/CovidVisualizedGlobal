@@ -394,21 +394,25 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 (1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163251968-02a3761d-d02c-42f6-ba82-89ca6e521123.png)
   
 ****
 
 (3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163252090-d51d0588-bc9c-45b9-ab4e-bbe9218f0849.png)
   
 ****
 
-(3b) Americas region [Daily deaths, reference scenarios, 2022 on]()
+(3b) Americas region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2014b%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163252394-5d4e26da-5767-44d6-ab9d-a119164942de.png)
 
 ****
 
 (4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2022%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163252795-b064f86c-ad98-4164-ad80-4af67e7863c5.png)
  
 ****
 
@@ -417,8 +421,18 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
+(6) Americas region [Daily reference, 3 scenarios, 2022 on]
+https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf
 
+![image](https://user-images.githubusercontent.com/30849720/163253114-f97ff9cb-b435-410a-8b95-55ed29659c12.png)
+
+****
 *
+
+
+
+
+
 
 ****
 ****
