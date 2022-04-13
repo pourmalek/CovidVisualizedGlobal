@@ -344,21 +344,25 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245333-7c6f505a-b5d4-4513-b387-da4f021130b6.png)
  
 ****
 
 (3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2014%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245736-29f4d00f-d2a2-4e84-86ef-0763c8027ec2.png)
 
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245858-6ac4363f-5432-4ed2-bf32-05db3c3e624a.png)
  
 ****
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163246113-8002f55a-05f0-46b8-90db-a66c488fc769.png)
  
 ****
 
