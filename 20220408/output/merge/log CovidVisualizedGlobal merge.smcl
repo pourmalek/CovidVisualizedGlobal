@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220408/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}12 Apr 2022, 15:10:39
+ {txt}opened on:  {res}12 Apr 2022, 19:16:15
 {txt}
 {com}. 
 . 
@@ -140,8 +140,9 @@
 . if regexm(c(os),"Mac") == 1 {c -(}
 . 
 .         merge 1:1 loc_grand_name date using "$pathCovidVisualizedGlobal/SRIV/CovidVisualizedGlobal SRIV.dta"
-{res}
-{txt}{col 5}Result{col 38}# of obs.
+{res}{txt}(label loc_grand_name_encoded already defined)
+
+{col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
 {col 5}not matched{col 30}{res}           7,579
 {txt}{col 9}from master{col 30}{res}           7,579{txt}  (_merge==1)
@@ -193,7 +194,7 @@
 .         
 .         
 .         
-.         gen DayCTDMeRaA01S00`region' =  DayCasMeRaA01S00`region' / DayDeaMeRaA01S00`region'
+.         gen DayCTDMeRaA01S00`region' =  DayCasMeSmA01S00`region' / DayDeaMeSmA01S00`region'
 {txt}  8{com}.         
 .         label var DayCTDMeRaA01S00`region'  "Daily Cases to Deaths S0 DELP"
 {txt}  9{com}.         
@@ -281,7 +282,7 @@
 .         label var DayDERMeRaA00S00`region' "Daily Deaths estim to reported JOHN = 1" 
 {txt} 37{com}.         
 .         
-.         gen DayDERMeRaA01S00`region' = DayDeaMeRaA01S00`region' / DayDeaMeRaA00S00`region'
+.         gen DayDERMeRaA01S00`region' = DayDeaMeSmA01S00`region' / DayDeaMeRaA00S00`region'
 {txt} 38{com}.         
 .         label var DayDERMeRaA01S00`region' "Daily Deaths estim to reported Mean DELP S0"
 {txt} 39{com}.         
@@ -329,7 +330,7 @@
 .         label var DayCERMeRaA00S00`region' "Daily Cases estim to reported JOHN = 1" 
 {txt} 53{com}.         
 .         
-.         gen DayCERMeRaA01S00`region' = DayCasMeRaA01S00`region' / DayCasMeRaA00S00`region'
+.         gen DayCERMeRaA01S00`region' = DayCasMeSmA01S00`region' / DayCasMeRaA00S00`region'
 {txt} 54{com}.         
 .         label var DayCERMeRaA01S00`region' "Daily Cases estim to reported Mean DELP S0"
 {txt} 55{com}.         
@@ -595,8 +596,8 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,488                          
-{txt} vars:{res}         4,863                          12 Apr 2022 15:10
-{txt} size:{res}   172,611,968                          
+{txt} vars:{res}         4,941                          12 Apr 2022 19:16
+{txt} size:{res}   175,260,224                          
 {txt}{hline}
               storage   display    value
 variable name   type    format     label      variable label
@@ -913,9 +914,17 @@ variable name   type    format     label      variable label
 {p 0 48}DayDMuMeRaA01S00{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths scaled (times means of cases by deaths) only for visualization DELP{p_end}
 {p 0 48}DayDeaMeSmA01S00{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths smooth A01 DELP{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths smooth mean DELP{p_end}
 {p 0 48}DayCasMeSmA01S00{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases smooth A01 DELP{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases smooth mean DELP{p_end}
+{p 0 48}DayDeaLoSmA01S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths smooth lower DELP{p_end}
+{p 0 48}DayCasLoSmA01S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases smooth lower DELP{p_end}
+{p 0 48}DayDeaUpSmA01S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths smooth upper DELP{p_end}
+{p 0 48}DayCasUpSmA01S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases smooth upper DELP{p_end}
 {p 0 48}TotDeaMeRaA01S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA01S00 AFRO{p_end}
 {p 0 48}TotDeaMeRaA01S00AMRO{p_end}
@@ -1330,6 +1339,114 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDMuMeRaA01S00 SEARO{p_end}
 {p 0 48}DayDMuMeRaA01S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDMuMeRaA01S00 WPRO{p_end}
+{p 0 48}DayDeaMeSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 AFRO{p_end}
+{p 0 48}DayDeaMeSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 AMRO{p_end}
+{p 0 48}DayDeaMeSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 AMR1{p_end}
+{p 0 48}DayDeaMeSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 AMR2{p_end}
+{p 0 48}DayDeaMeSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 EMRO{p_end}
+{p 0 48}DayDeaMeSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 EURO{p_end}
+{p 0 48}DayDeaMeSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 GLOBAL{p_end}
+{p 0 48}DayDeaMeSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 SEARO{p_end}
+{p 0 48}DayDeaMeSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA01S00 WPRO{p_end}
+{p 0 48}DayCasMeSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 AFRO{p_end}
+{p 0 48}DayCasMeSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 AMRO{p_end}
+{p 0 48}DayCasMeSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 AMR1{p_end}
+{p 0 48}DayCasMeSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 AMR2{p_end}
+{p 0 48}DayCasMeSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 EMRO{p_end}
+{p 0 48}DayCasMeSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 EURO{p_end}
+{p 0 48}DayCasMeSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 GLOBAL{p_end}
+{p 0 48}DayCasMeSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 SEARO{p_end}
+{p 0 48}DayCasMeSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA01S00 WPRO{p_end}
+{p 0 48}DayDeaLoSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 AFRO{p_end}
+{p 0 48}DayDeaLoSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 AMRO{p_end}
+{p 0 48}DayDeaLoSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 AMR1{p_end}
+{p 0 48}DayDeaLoSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 AMR2{p_end}
+{p 0 48}DayDeaLoSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 EMRO{p_end}
+{p 0 48}DayDeaLoSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 EURO{p_end}
+{p 0 48}DayDeaLoSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 GLOBAL{p_end}
+{p 0 48}DayDeaLoSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 SEARO{p_end}
+{p 0 48}DayDeaLoSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoSmA01S00 WPRO{p_end}
+{p 0 48}DayCasLoSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 AFRO{p_end}
+{p 0 48}DayCasLoSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 AMRO{p_end}
+{p 0 48}DayCasLoSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 AMR1{p_end}
+{p 0 48}DayCasLoSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 AMR2{p_end}
+{p 0 48}DayCasLoSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 EMRO{p_end}
+{p 0 48}DayCasLoSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 EURO{p_end}
+{p 0 48}DayCasLoSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 GLOBAL{p_end}
+{p 0 48}DayCasLoSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 SEARO{p_end}
+{p 0 48}DayCasLoSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoSmA01S00 WPRO{p_end}
+{p 0 48}DayDeaUpSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 AFRO{p_end}
+{p 0 48}DayDeaUpSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 AMRO{p_end}
+{p 0 48}DayDeaUpSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 AMR1{p_end}
+{p 0 48}DayDeaUpSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 AMR2{p_end}
+{p 0 48}DayDeaUpSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 EMRO{p_end}
+{p 0 48}DayDeaUpSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 EURO{p_end}
+{p 0 48}DayDeaUpSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 GLOBAL{p_end}
+{p 0 48}DayDeaUpSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 SEARO{p_end}
+{p 0 48}DayDeaUpSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpSmA01S00 WPRO{p_end}
+{p 0 48}DayCasUpSmA01S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 AFRO{p_end}
+{p 0 48}DayCasUpSmA01S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 AMRO{p_end}
+{p 0 48}DayCasUpSmA01S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 AMR1{p_end}
+{p 0 48}DayCasUpSmA01S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 AMR2{p_end}
+{p 0 48}DayCasUpSmA01S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 EMRO{p_end}
+{p 0 48}DayCasUpSmA01S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 EURO{p_end}
+{p 0 48}DayCasUpSmA01S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 GLOBAL{p_end}
+{p 0 48}DayCasUpSmA01S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 SEARO{p_end}
+{p 0 48}DayCasUpSmA01S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpSmA01S00 WPRO{p_end}
 {p 0 48}{bind:epoch_DELP     }{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DELP Forecast start date{p_end}
 {p 0 48}DayDeaFOREA01S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw DELP AFRO{p_end}
@@ -9005,272 +9122,42 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw IMPE WPRO{p_end}
 {p 0 48}DayINFFOREA03S02WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Infections Mean raw IMPE WPRO{p_end}
-{p 0 48}TotDeaMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Mean SRIV{p_end}
-{p 0 48}TotDeaLoRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Lower SRIV{p_end}
-{p 0 48}TotDeaUpRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Upper SRIV{p_end}
-{p 0 48}TotCasMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Mean SRIV{p_end}
-{p 0 48}TotCasLoRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Lower SRIV{p_end}
-{p 0 48}TotCasUpRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Upper SRIV{p_end}
-{p 0 48}DayDeaMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Mean SRIV{p_end}
-{p 0 48}DayDeaLoRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Lower SRIV{p_end}
-{p 0 48}DayDeaUpRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Upper SRIV{p_end}
-{p 0 48}DayCasMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Mean SRIV{p_end}
-{p 0 48}DayCasLoRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Lower SRIV{p_end}
-{p 0 48}DayCasUpRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Upper SRIV{p_end}
-{p 0 48}DayDeMMeRaA05S00{p_end}
-{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths mean SRIV  DayDeM{p_end}
 {p 0 48}DayCaMMeRaA05S00{p_end}
 {p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases mean SRIV  DayCaM{p_end}
+{p 0 48}DayCasLoRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Lower SRIV{p_end}
+{p 0 48}DayCasMeRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Mean SRIV{p_end}
+{p 0 48}DayCasMeSmA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases smooth A05 SRIV{p_end}
+{p 0 48}DayCasUpRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases Upper SRIV{p_end}
 {p 0 48}DayCbDMeRaA05S00{p_end}
 {p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily cases mean div by daily deaths mean SRIV  DayCbD{p_end}
 {p 0 48}DayDMuMeRaA05S00{p_end}
 {p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths scaled (times means of cases by deaths) SRIV{p_end}
-{p 0 48}TotDeaMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AFRO{p_end}
-{p 0 48}TotDeaMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMRO{p_end}
-{p 0 48}TotDeaMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMR1{p_end}
-{p 0 48}TotDeaMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMR2{p_end}
-{p 0 48}TotDeaMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 EMRO{p_end}
-{p 0 48}TotDeaMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 EURO{p_end}
-{p 0 48}TotDeaMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 GLOBAL{p_end}
-{p 0 48}TotDeaMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 SEARO{p_end}
-{p 0 48}TotDeaMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 WPRO{p_end}
-{p 0 48}TotDeaLoRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AFRO{p_end}
-{p 0 48}TotDeaLoRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMRO{p_end}
-{p 0 48}TotDeaLoRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMR1{p_end}
-{p 0 48}TotDeaLoRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMR2{p_end}
-{p 0 48}TotDeaLoRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 EMRO{p_end}
-{p 0 48}TotDeaLoRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 EURO{p_end}
-{p 0 48}TotDeaLoRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 GLOBAL{p_end}
-{p 0 48}TotDeaLoRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 SEARO{p_end}
-{p 0 48}TotDeaLoRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 WPRO{p_end}
-{p 0 48}TotDeaUpRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AFRO{p_end}
-{p 0 48}TotDeaUpRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMRO{p_end}
-{p 0 48}TotDeaUpRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMR1{p_end}
-{p 0 48}TotDeaUpRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMR2{p_end}
-{p 0 48}TotDeaUpRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 EMRO{p_end}
-{p 0 48}TotDeaUpRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 EURO{p_end}
-{p 0 48}TotDeaUpRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 GLOBAL{p_end}
-{p 0 48}TotDeaUpRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 SEARO{p_end}
-{p 0 48}TotDeaUpRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 WPRO{p_end}
-{p 0 48}TotCasMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AFRO{p_end}
-{p 0 48}TotCasMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMRO{p_end}
-{p 0 48}TotCasMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMR1{p_end}
-{p 0 48}TotCasMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMR2{p_end}
-{p 0 48}TotCasMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 EMRO{p_end}
-{p 0 48}TotCasMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 EURO{p_end}
-{p 0 48}TotCasMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 GLOBAL{p_end}
-{p 0 48}TotCasMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 SEARO{p_end}
-{p 0 48}TotCasMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 WPRO{p_end}
-{p 0 48}TotCasLoRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AFRO{p_end}
-{p 0 48}TotCasLoRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMRO{p_end}
-{p 0 48}TotCasLoRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMR1{p_end}
-{p 0 48}TotCasLoRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMR2{p_end}
-{p 0 48}TotCasLoRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 EMRO{p_end}
-{p 0 48}TotCasLoRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 EURO{p_end}
-{p 0 48}TotCasLoRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 GLOBAL{p_end}
-{p 0 48}TotCasLoRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 SEARO{p_end}
-{p 0 48}TotCasLoRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 WPRO{p_end}
-{p 0 48}TotCasUpRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AFRO{p_end}
-{p 0 48}TotCasUpRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMRO{p_end}
-{p 0 48}TotCasUpRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMR1{p_end}
-{p 0 48}TotCasUpRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMR2{p_end}
-{p 0 48}TotCasUpRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 EMRO{p_end}
-{p 0 48}TotCasUpRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 EURO{p_end}
-{p 0 48}TotCasUpRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 GLOBAL{p_end}
-{p 0 48}TotCasUpRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 SEARO{p_end}
-{p 0 48}TotCasUpRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 WPRO{p_end}
-{p 0 48}DayDeaMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AFRO{p_end}
-{p 0 48}DayDeaMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMRO{p_end}
-{p 0 48}DayDeaMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMR1{p_end}
-{p 0 48}DayDeaMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMR2{p_end}
-{p 0 48}DayDeaMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 EMRO{p_end}
-{p 0 48}DayDeaMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 EURO{p_end}
-{p 0 48}DayDeaMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 GLOBAL{p_end}
-{p 0 48}DayDeaMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 SEARO{p_end}
-{p 0 48}DayDeaMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 WPRO{p_end}
-{p 0 48}DayDeaLoRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AFRO{p_end}
-{p 0 48}DayDeaLoRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMRO{p_end}
-{p 0 48}DayDeaLoRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMR1{p_end}
-{p 0 48}DayDeaLoRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMR2{p_end}
-{p 0 48}DayDeaLoRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 EMRO{p_end}
-{p 0 48}DayDeaLoRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 EURO{p_end}
-{p 0 48}DayDeaLoRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 GLOBAL{p_end}
-{p 0 48}DayDeaLoRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 SEARO{p_end}
-{p 0 48}DayDeaLoRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 WPRO{p_end}
-{p 0 48}DayDeaUpRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AFRO{p_end}
-{p 0 48}DayDeaUpRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMRO{p_end}
-{p 0 48}DayDeaUpRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMR1{p_end}
-{p 0 48}DayDeaUpRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMR2{p_end}
-{p 0 48}DayDeaUpRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 EMRO{p_end}
-{p 0 48}DayDeaUpRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 EURO{p_end}
-{p 0 48}DayDeaUpRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 GLOBAL{p_end}
-{p 0 48}DayDeaUpRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 SEARO{p_end}
-{p 0 48}DayDeaUpRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 WPRO{p_end}
-{p 0 48}DayCasMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AFRO{p_end}
-{p 0 48}DayCasMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMRO{p_end}
-{p 0 48}DayCasMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMR1{p_end}
-{p 0 48}DayCasMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMR2{p_end}
-{p 0 48}DayCasMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 EMRO{p_end}
-{p 0 48}DayCasMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 EURO{p_end}
-{p 0 48}DayCasMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 GLOBAL{p_end}
-{p 0 48}DayCasMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 SEARO{p_end}
-{p 0 48}DayCasMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 WPRO{p_end}
-{p 0 48}DayCasLoRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AFRO{p_end}
-{p 0 48}DayCasLoRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMRO{p_end}
-{p 0 48}DayCasLoRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMR1{p_end}
-{p 0 48}DayCasLoRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMR2{p_end}
-{p 0 48}DayCasLoRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 EMRO{p_end}
-{p 0 48}DayCasLoRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 EURO{p_end}
-{p 0 48}DayCasLoRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 GLOBAL{p_end}
-{p 0 48}DayCasLoRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 SEARO{p_end}
-{p 0 48}DayCasLoRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 WPRO{p_end}
-{p 0 48}DayCasUpRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AFRO{p_end}
-{p 0 48}DayCasUpRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMRO{p_end}
-{p 0 48}DayCasUpRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMR1{p_end}
-{p 0 48}DayCasUpRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMR2{p_end}
-{p 0 48}DayCasUpRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 EMRO{p_end}
-{p 0 48}DayCasUpRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 EURO{p_end}
-{p 0 48}DayCasUpRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 GLOBAL{p_end}
-{p 0 48}DayCasUpRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 SEARO{p_end}
-{p 0 48}DayCasUpRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 WPRO{p_end}
-{p 0 48}DayDeMMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AFRO{p_end}
-{p 0 48}DayDeMMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMRO{p_end}
-{p 0 48}DayDeMMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMR1{p_end}
-{p 0 48}DayDeMMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMR2{p_end}
-{p 0 48}DayDeMMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 EMRO{p_end}
-{p 0 48}DayDeMMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 EURO{p_end}
-{p 0 48}DayDeMMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 GLOBAL{p_end}
-{p 0 48}DayDeMMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 SEARO{p_end}
-{p 0 48}DayDeMMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 WPRO{p_end}
+{p 0 48}DayDeMMeRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: double  }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths mean SRIV  DayDeM{p_end}
+{p 0 48}DayDeaLoRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Lower SRIV{p_end}
+{p 0 48}DayDeaMeRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Mean SRIV{p_end}
+{p 0 48}DayDeaMeSmA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily deaths smooth A05 SRIV{p_end}
+{p 0 48}DayDeaUpRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Deaths Upper SRIV{p_end}
+{p 0 48}TotCasLoRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Lower SRIV{p_end}
+{p 0 48}TotCasMeRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Mean SRIV{p_end}
+{p 0 48}TotCasUpRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Cases Upper SRIV{p_end}
+{p 0 48}TotDeaLoRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Lower SRIV{p_end}
+{p 0 48}TotDeaMeRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Mean SRIV{p_end}
+{p 0 48}TotDeaUpRaA05S00{p_end}
+{p 0 48}{space 15}{txt}{bind: long    }{bind:{txt}%12.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths Upper SRIV{p_end}
 {p 0 48}DayCaMMeRaA05S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCaMMeRaA05S00 AFRO{p_end}
 {p 0 48}DayCaMMeRaA05S00AMRO{p_end}
@@ -9289,6 +9176,78 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCaMMeRaA05S00 SEARO{p_end}
 {p 0 48}DayCaMMeRaA05S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCaMMeRaA05S00 WPRO{p_end}
+{p 0 48}DayCasLoRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AFRO{p_end}
+{p 0 48}DayCasLoRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMRO{p_end}
+{p 0 48}DayCasLoRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMR1{p_end}
+{p 0 48}DayCasLoRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 AMR2{p_end}
+{p 0 48}DayCasLoRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 EMRO{p_end}
+{p 0 48}DayCasLoRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 EURO{p_end}
+{p 0 48}DayCasLoRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 GLOBAL{p_end}
+{p 0 48}DayCasLoRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 SEARO{p_end}
+{p 0 48}DayCasLoRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasLoRaA05S00 WPRO{p_end}
+{p 0 48}DayCasMeRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AFRO{p_end}
+{p 0 48}DayCasMeRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMRO{p_end}
+{p 0 48}DayCasMeRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMR1{p_end}
+{p 0 48}DayCasMeRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 AMR2{p_end}
+{p 0 48}DayCasMeRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 EMRO{p_end}
+{p 0 48}DayCasMeRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 EURO{p_end}
+{p 0 48}DayCasMeRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 GLOBAL{p_end}
+{p 0 48}DayCasMeRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 SEARO{p_end}
+{p 0 48}DayCasMeRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeRaA05S00 WPRO{p_end}
+{p 0 48}DayCasMeSmA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 AFRO{p_end}
+{p 0 48}DayCasMeSmA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 AMRO{p_end}
+{p 0 48}DayCasMeSmA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 AMR1{p_end}
+{p 0 48}DayCasMeSmA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 AMR2{p_end}
+{p 0 48}DayCasMeSmA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 EMRO{p_end}
+{p 0 48}DayCasMeSmA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 EURO{p_end}
+{p 0 48}DayCasMeSmA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 GLOBAL{p_end}
+{p 0 48}DayCasMeSmA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 SEARO{p_end}
+{p 0 48}DayCasMeSmA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasMeSmA05S00 WPRO{p_end}
+{p 0 48}DayCasUpRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AFRO{p_end}
+{p 0 48}DayCasUpRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMRO{p_end}
+{p 0 48}DayCasUpRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMR1{p_end}
+{p 0 48}DayCasUpRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 AMR2{p_end}
+{p 0 48}DayCasUpRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 EMRO{p_end}
+{p 0 48}DayCasUpRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 EURO{p_end}
+{p 0 48}DayCasUpRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 GLOBAL{p_end}
+{p 0 48}DayCasUpRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 SEARO{p_end}
+{p 0 48}DayCasUpRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCasUpRaA05S00 WPRO{p_end}
 {p 0 48}DayCbDMeRaA05S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayCbDMeRaA05S00 AFRO{p_end}
 {p 0 48}DayCbDMeRaA05S00AMRO{p_end}
@@ -9325,41 +9284,239 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDMuMeRaA05S00 SEARO{p_end}
 {p 0 48}DayDMuMeRaA05S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDMuMeRaA05S00 WPRO{p_end}
+{p 0 48}DayDeMMeRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AFRO{p_end}
+{p 0 48}DayDeMMeRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMRO{p_end}
+{p 0 48}DayDeMMeRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMR1{p_end}
+{p 0 48}DayDeMMeRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 AMR2{p_end}
+{p 0 48}DayDeMMeRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 EMRO{p_end}
+{p 0 48}DayDeMMeRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 EURO{p_end}
+{p 0 48}DayDeMMeRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 GLOBAL{p_end}
+{p 0 48}DayDeMMeRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 SEARO{p_end}
+{p 0 48}DayDeMMeRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeMMeRaA05S00 WPRO{p_end}
+{p 0 48}DayDeaLoRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AFRO{p_end}
+{p 0 48}DayDeaLoRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMRO{p_end}
+{p 0 48}DayDeaLoRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMR1{p_end}
+{p 0 48}DayDeaLoRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 AMR2{p_end}
+{p 0 48}DayDeaLoRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 EMRO{p_end}
+{p 0 48}DayDeaLoRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 EURO{p_end}
+{p 0 48}DayDeaLoRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 GLOBAL{p_end}
+{p 0 48}DayDeaLoRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 SEARO{p_end}
+{p 0 48}DayDeaLoRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaLoRaA05S00 WPRO{p_end}
+{p 0 48}DayDeaMeRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AFRO{p_end}
+{p 0 48}DayDeaMeRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMRO{p_end}
+{p 0 48}DayDeaMeRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMR1{p_end}
+{p 0 48}DayDeaMeRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 AMR2{p_end}
+{p 0 48}DayDeaMeRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 EMRO{p_end}
+{p 0 48}DayDeaMeRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 EURO{p_end}
+{p 0 48}DayDeaMeRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 GLOBAL{p_end}
+{p 0 48}DayDeaMeRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 SEARO{p_end}
+{p 0 48}DayDeaMeRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeRaA05S00 WPRO{p_end}
+{p 0 48}DayDeaMeSmA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 AFRO{p_end}
+{p 0 48}DayDeaMeSmA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 AMRO{p_end}
+{p 0 48}DayDeaMeSmA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 AMR1{p_end}
+{p 0 48}DayDeaMeSmA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 AMR2{p_end}
+{p 0 48}DayDeaMeSmA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 EMRO{p_end}
+{p 0 48}DayDeaMeSmA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 EURO{p_end}
+{p 0 48}DayDeaMeSmA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 GLOBAL{p_end}
+{p 0 48}DayDeaMeSmA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 SEARO{p_end}
+{p 0 48}DayDeaMeSmA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaMeSmA05S00 WPRO{p_end}
+{p 0 48}DayDeaUpRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AFRO{p_end}
+{p 0 48}DayDeaUpRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMRO{p_end}
+{p 0 48}DayDeaUpRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMR1{p_end}
+{p 0 48}DayDeaUpRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 AMR2{p_end}
+{p 0 48}DayDeaUpRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 EMRO{p_end}
+{p 0 48}DayDeaUpRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 EURO{p_end}
+{p 0 48}DayDeaUpRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 GLOBAL{p_end}
+{p 0 48}DayDeaUpRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 SEARO{p_end}
+{p 0 48}DayDeaUpRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}DayDeaUpRaA05S00 WPRO{p_end}
+{p 0 48}TotCasLoRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AFRO{p_end}
+{p 0 48}TotCasLoRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMRO{p_end}
+{p 0 48}TotCasLoRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMR1{p_end}
+{p 0 48}TotCasLoRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 AMR2{p_end}
+{p 0 48}TotCasLoRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 EMRO{p_end}
+{p 0 48}TotCasLoRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 EURO{p_end}
+{p 0 48}TotCasLoRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 GLOBAL{p_end}
+{p 0 48}TotCasLoRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 SEARO{p_end}
+{p 0 48}TotCasLoRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasLoRaA05S00 WPRO{p_end}
+{p 0 48}TotCasMeRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AFRO{p_end}
+{p 0 48}TotCasMeRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMRO{p_end}
+{p 0 48}TotCasMeRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMR1{p_end}
+{p 0 48}TotCasMeRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 AMR2{p_end}
+{p 0 48}TotCasMeRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 EMRO{p_end}
+{p 0 48}TotCasMeRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 EURO{p_end}
+{p 0 48}TotCasMeRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 GLOBAL{p_end}
+{p 0 48}TotCasMeRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 SEARO{p_end}
+{p 0 48}TotCasMeRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasMeRaA05S00 WPRO{p_end}
+{p 0 48}TotCasUpRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AFRO{p_end}
+{p 0 48}TotCasUpRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMRO{p_end}
+{p 0 48}TotCasUpRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMR1{p_end}
+{p 0 48}TotCasUpRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 AMR2{p_end}
+{p 0 48}TotCasUpRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 EMRO{p_end}
+{p 0 48}TotCasUpRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 EURO{p_end}
+{p 0 48}TotCasUpRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 GLOBAL{p_end}
+{p 0 48}TotCasUpRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 SEARO{p_end}
+{p 0 48}TotCasUpRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotCasUpRaA05S00 WPRO{p_end}
+{p 0 48}TotDeaLoRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AFRO{p_end}
+{p 0 48}TotDeaLoRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMRO{p_end}
+{p 0 48}TotDeaLoRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMR1{p_end}
+{p 0 48}TotDeaLoRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 AMR2{p_end}
+{p 0 48}TotDeaLoRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 EMRO{p_end}
+{p 0 48}TotDeaLoRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 EURO{p_end}
+{p 0 48}TotDeaLoRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 GLOBAL{p_end}
+{p 0 48}TotDeaLoRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 SEARO{p_end}
+{p 0 48}TotDeaLoRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaLoRaA05S00 WPRO{p_end}
+{p 0 48}TotDeaMeRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AFRO{p_end}
+{p 0 48}TotDeaMeRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMRO{p_end}
+{p 0 48}TotDeaMeRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMR1{p_end}
+{p 0 48}TotDeaMeRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 AMR2{p_end}
+{p 0 48}TotDeaMeRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 EMRO{p_end}
+{p 0 48}TotDeaMeRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 EURO{p_end}
+{p 0 48}TotDeaMeRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 GLOBAL{p_end}
+{p 0 48}TotDeaMeRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 SEARO{p_end}
+{p 0 48}TotDeaMeRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaMeRaA05S00 WPRO{p_end}
+{p 0 48}TotDeaUpRaA05S00AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AFRO{p_end}
+{p 0 48}TotDeaUpRaA05S00AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMRO{p_end}
+{p 0 48}TotDeaUpRaA05S00AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMR1{p_end}
+{p 0 48}TotDeaUpRaA05S00AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 AMR2{p_end}
+{p 0 48}TotDeaUpRaA05S00EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 EMRO{p_end}
+{p 0 48}TotDeaUpRaA05S00EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 EURO{p_end}
+{p 0 48}TotDeaUpRaA05S00GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 GLOBAL{p_end}
+{p 0 48}TotDeaUpRaA05S00SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 SEARO{p_end}
+{p 0 48}TotDeaUpRaA05S00WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 WPRO{p_end}
 {p 0 48}{bind:epoch_SRIV     }{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}SRIV Forecast start date{p_end}
 {p 0 48}DayDeaFOREA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AFRO{p_end}
 {p 0 48}DayCasFOREA05S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AFRO{p_end}
 {p 0 48}DayDeaFOREA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMRO{p_end}
 {p 0 48}DayCasFOREA05S00AMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMRO{p_end}
 {p 0 48}DayDeaFOREA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR1{p_end}
 {p 0 48}DayCasFOREA05S00AMR1{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR1{p_end}
 {p 0 48}DayDeaFOREA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR2{p_end}
 {p 0 48}DayCasFOREA05S00AMR2{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR2{p_end}
 {p 0 48}DayDeaFOREA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EMRO{p_end}
 {p 0 48}DayCasFOREA05S00EMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EMRO{p_end}
 {p 0 48}DayDeaFOREA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EURO{p_end}
 {p 0 48}DayCasFOREA05S00EURO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EURO{p_end}
 {p 0 48}DayDeaFOREA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV GLOBAL{p_end}
 {p 0 48}DayCasFOREA05S00GLOBAL{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV GLOBAL{p_end}
 {p 0 48}DayDeaFOREA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV SEARO{p_end}
 {p 0 48}DayCasFOREA05S00SEARO{p_end}
 {p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV SEARO{p_end}
 {p 0 48}DayDeaFOREA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean smooth SRIV WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV WPRO{p_end}
 {p 0 48}DayCasFOREA05S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV WPRO{p_end}
 {p 0 48}DayCTDMeRaA00S00GLOBAL{p_end}
@@ -10337,7 +10494,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
@@ -10364,7 +10521,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only
@@ -10390,7 +10547,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
@@ -10418,7 +10575,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
@@ -10441,12 +10598,40 @@ Sorted by: {res}date  loc_grand_name
 .         
 .         
 .         ****
+.         * daily deaths, reference scenarios, 2022
+.         
+.         twoway ///
+>         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
+>         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
+>         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
+>         (line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
+>         (line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
+>         (line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
+>         (line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
+>         (line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"          
+>         if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
+>         , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+>         xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+>         ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
+>         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+>         legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV") size(small) rows(1)) ///
+>         subtitle("Reference scenarios, 2022 on", size(small)) ///
+>         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
+{txt} 11{com}.         
+.         qui graph export "graph `region' 12b C-19 daily deaths, `region', reference scenarios, 2022.pdf", replace
+{txt} 12{com}.         
+.         
+.         
+.         
+.         ****
 .         * daily deaths, reference scenarios, 2021, uncertainty
 .         
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
 >         (line DayDeaLoRaA01S00`region' date, sort lcolor(red) lpattern(dash)) /// 4 "DELP" lower
 >         (line DayDeaUpRaA01S00`region' date, sort lcolor(red) lpattern(dash)) /// 5 "DELP" upper
 >         (line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 6 "IHME" Forecast only
@@ -10470,9 +10655,9 @@ Sorted by: {res}date  loc_grand_name
 >         subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) ///
 >         note("Uncertainty limits: dashed curves" ///
 >         "Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 11{com}.         
+{txt} 13{com}.         
 .         qui graph export "graph `region' 13 C-19 daily deaths, `region', reference scenarios, 2021, uncertainty.pdf", replace
-{txt} 12{com}.         
+{txt} 14{com}.         
 .         
 .         
 .         
@@ -10481,7 +10666,7 @@ Sorted by: {res}date  loc_grand_name
 .         
 .         twoway ///
 >         (line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
->         (line DayDeaMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP" mean
+>         (line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 2 "DELP" mean
 >         (line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME mean, reference scenario
 >         (line DayDeaMeSmA02S02`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 4 IHME mean, Masks scenario
 >         (line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 IMPE mean, 3rd dose scenario
@@ -10493,12 +10678,12 @@ Sorted by: {res}date  loc_grand_name
 >         xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 >         ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
->         legend(order(1 "JOHN smooth" 2 "DELP" 3 "IHME" 5 "IMPE" 8 "SRIV") size(small) row(2)) ///
+>         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 5 "IMPE" 8 "SRIV") size(small) row(2)) ///
 >         subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
 >         note("Alternate scenarios: tight dot (|||||) curves; IHME and IMPE", size(small)) 
-{txt} 13{com}.         
+{txt} 15{com}.         
 .         qui graph export "graph `region' 14 C-19 daily deaths, `region', 3 scenarios, 2021.pdf", replace
-{txt} 14{com}.         
+{txt} 16{com}.         
 .         
 .         
 .         
@@ -10520,9 +10705,9 @@ Sorted by: {res}date  loc_grand_name
 >         subtitle("Reference scenario with uncertainty, 2021 on", size(small)) ///
 >         note("Uncertainty limits: dashed (– – –) curves" ///
 >         "Reference scenario forecasts are marked with |||||||||||| ", size(small))
-{txt} 15{com}.         
+{txt} 17{com}.         
 .         qui graph export "graph `region' 15 C-19 daily deaths, `region', reference scenario, uncertainty, 2021, IHME.pdf", replace
-{txt} 16{com}.         
+{txt} 18{com}.         
 .         
 .         
 .         
@@ -10543,9 +10728,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN" 3 "IHME reference" 4 "IHME Masks" 5 "IHME 3rd dose") size(small) row(2)) ///
 >         subtitle("Reference scenario with alternate scenarios, 2021 on", size(small)) ///
 >         note("Reference scenario forecasts are marked with |||||||||||| ", size(small))
-{txt} 17{com}. 
+{txt} 19{com}. 
 .         qui graph export "graph `region' 16 C-19 daily deaths, `region', scenarios, uncertainty, 2021, IHME.pdf", replace
-{txt} 18{com}.         
+{txt} 20{com}.         
 .         
 .         
 .                 
@@ -10566,9 +10751,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN" 3 "IHME reference" 4 "IHME Masks" 5 "IHME 3rd dose") size(small) row(2)) ///
 >         subtitle("Reference scenario with alternate scenarios, 2021 on", size(small)) ///
 >         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 19{com}.         
+{txt} 21{com}.         
 .         qui graph export "graph `region' 16b C-19 daily deaths, `region', scenarios, uncertainty, 2022, IHME.pdf", replace
-{txt} 20{com}.         
+{txt} 22{com}.         
 .         
 .         
 .         
@@ -10592,9 +10777,9 @@ Sorted by: {res}date  loc_grand_name
 >         subtitle("Reference scenario with uncertainty, 2021 on", size(small)) ///
 >         note("Uncertainty limits: dashed (– – –) curves" ///
 >         "Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 21{com}.         
+{txt} 23{com}.         
 .         qui graph export "graph `region' 17 C-19 daily deaths, `region', reference scenario, uncertainty, 2021, IMPE.pdf", replace
-{txt} 22{com}.         
+{txt} 24{com}.         
 .         
 .         
 .         
@@ -10616,9 +10801,9 @@ Sorted by: {res}date  loc_grand_name
 >         5 "IMPE worse upper") size(small) row(2)) ///
 >         subtitle("Reference scenario with alternate scenarios, 2021 on", size(small)) ///
 >         note("Alternate scenarios: tight dot (|||||) curves; Uncertainty limits: dashed (– – –) curves") 
-{txt} 23{com}.         
+{txt} 25{com}.         
 .         qui graph export "graph `region' 18 C-19 daily deaths, `region', 3 scenarios, uncertainty, 2021, IMPE.pdf", replace
-{txt} 24{com}.         
+{txt} 26{com}.         
 .         
 .         
 .         
@@ -10634,7 +10819,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
@@ -10650,10 +10835,10 @@ Sorted by: {res}date  loc_grand_name
 >         9 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) ///
 >         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 25{com}. 
+{txt} 27{com}. 
 .         
 .         qui graph export "graph `region' 21 C-19 daily cases, `region', reference scenarios.pdf", replace
-{txt} 26{com}.         
+{txt} 28{com}.         
 .         
 . 
 . 
@@ -10664,7 +10849,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 >         (line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 >         (line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 >         (line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
@@ -10680,10 +10865,36 @@ Sorted by: {res}date  loc_grand_name
 >         9 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) ///
 >         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 27{com}.         
+{txt} 29{com}.         
 .         qui graph export "graph `region' 22 C-19 daily cases, `region', reference scenarios, 2021.pdf", replace
-{txt} 28{com}.         
+{txt} 30{com}.         
 .         
+.         
+.         ****
+.         * daily cases or infections, reference scenarios, 2022
+.         
+.         twoway ///
+>         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
+>         (line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
+>         (line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
+>         (line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
+>         (line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
+>         (line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
+>         (line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"   
+>         if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
+>         , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+>         xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+>         ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) /// 
+>         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+>         legend(order(1 "JOHN" 3 "DELP cases" 5 "IHME infections" 7 "IMPE infections" ///
+>         9 "SRIV cases") size(small) row(2)) ///
+>         subtitle("Reference scenarios, 2022 on", size(small)) ///
+>         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
+{txt} 31{com}.         
+.         qui graph export "graph `region' 22b C-19 daily cases, `region', reference scenarios, 2022.pdf", replace
+{txt} 32{com}.         
 .         
 .         
 .         ****
@@ -10692,7 +10903,7 @@ Sorted by: {res}date  loc_grand_name
 .         twoway ///
 >         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 >         (line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
->         (line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 >         (line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 4 "SRIV" Forecast only
 >         (line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"   
 >         if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
@@ -10703,9 +10914,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 3 "DELP cases" 5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) ///
 >         note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-{txt} 29{com}.         
+{txt} 33{com}.         
 .         qui graph export "graph `region' 22b C-19 daily cases, `region', reference scenarios, 2021.pdf", replace
-{txt} 30{com}.         
+{txt} 34{com}.         
 .         
 .         
 .         
@@ -10714,7 +10925,7 @@ Sorted by: {res}date  loc_grand_name
 .         
 .         twoway ///
 >         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 JOHN
->         (line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 2 DELP mean
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 2 DELP mean
 >         (line DayCasLoRaA01S00`region' date, sort lcolor(red) lpattern(dash)) /// 3 DELP lower
 >         (line DayCasUpRaA01S00`region' date, sort lcolor(red) lpattern(dash)) /// 4 DELP upper
 >         (line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean
@@ -10735,9 +10946,9 @@ Sorted by: {res}date  loc_grand_name
 >         "IMPE infections" 11 "IMPE cases") size(small) row(2)) ///
 >         note("Uncertainty limits: dashed curves") ///
 >         subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
-{txt} 31{com}.         
+{txt} 35{com}.         
 .         qui graph export "graph `region' 23 C-19 daily cases, `region', reference scenarios, 2021, uncertainty.pdf", replace
-{txt} 32{com}.         
+{txt} 36{com}.         
 .         
 .         
 .         
@@ -10746,7 +10957,7 @@ Sorted by: {res}date  loc_grand_name
 .         
 .         twoway ///
 >         (line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 JOHN
->         (line DayCasMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP" mean
+>         (line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 2 "DELP" mean
 >         (line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME mean, reference scenario
 >         (line DayINFMeSmA02S02`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 4 IHME mean, Masks scenario
 >         (line DayINFMeSmA02S03`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 5 IHME mean, 3rd dose scenario
@@ -10763,9 +10974,9 @@ Sorted by: {res}date  loc_grand_name
 >         6 "IMPE infections" 9 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
 >         note("Alternate scenarios: tight dot (|||||) curves; IHME and IMPE") 
-{txt} 33{com}.         
+{txt} 37{com}.         
 .         qui graph export "graph `region' 24 C-19 daily cases, `region', 3 scenarios, 2021, uncertainty.pdf", replace
-{txt} 34{com}.         
+{txt} 38{com}.         
 .         
 .         
 .         
@@ -10777,13 +10988,13 @@ Sorted by: {res}date  loc_grand_name
 .         
 .         
 .         gen DayITCMeSmA02S01`region' =  DayINFMeSmA02S01`region' / DayCasMeRaA00S00`region'
-{txt} 35{com}.         
+{txt} 39{com}.         
 .         label var DayITCMeSmA02S01`region'  "Daily Infections IHME to cases JOHN"
-{txt} 36{com}.         
+{txt} 40{com}.         
 .         gen DayITCMeRaA03S02`region' =  DayINFMeSmA03S02`region' / DayCasMeRaA00S00`region'
-{txt} 37{com}.         
+{txt} 41{com}.         
 .         label var DayITCMeRaA03S02`region'  "Daily Infections IMPE to cases JOHN"
-{txt} 38{com}.         
+{txt} 42{com}.         
 .         
 .         twoway ///
 >         (line DayITCMeSmA02S01`region' date, sort lcolor(black)) /// 1 "IHME"
@@ -10795,9 +11006,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "IHME" 2 "IMPE" 3) size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 39{com}. 
+{txt} 43{com}. 
 .         qui graph export "graph `region' 25 C19 daily estimated infections to reported cases, `region', reference scenarios.pdf", replace
-{txt} 40{com}.         
+{txt} 44{com}.         
 .         
 .         
 .         
@@ -10808,49 +11019,49 @@ Sorted by: {res}date  loc_grand_name
 .         * smooth Infections to cases ratio of IHME and IMPE
 .         
 .         capture drop loc_grand_name_encoded
-{txt} 41{com}.         
+{txt} 45{com}.         
 .         encode loc_grand_name, generate(loc_grand_name_encoded)
-{txt} 42{com}.         
+{txt} 46{com}.         
 .         tsset date loc_grand_name_encoded, daily   
-{txt} 43{com}.         
+{txt} 47{com}.         
 .         
 .         foreach var of varlist ///
 >         DayITCMeSmA02S01`region' DayITCMeRaA03S02`region' {c -(}
-{txt} 44{com}.         
+{txt} 48{com}.         
 .         
 .         tssmooth ma `var'_w = `var', window(3 1 3) // _w = _window
-{txt} 45{com}.         
+{txt} 49{com}.         
 .         tssmooth ma `var'sm = `var'_w, weights( 1 2 3 <4> 3 2 1) replace
-{txt} 46{com}.         
+{txt} 50{com}.         
 .         drop `var'_w
-{txt} 47{com}.         
+{txt} 51{com}.         
 .         {c )-}
-{txt} 48{com}.         *
+{txt} 52{com}.         *
 .         
 .         tsset, clear
-{txt} 49{com}.         
+{txt} 53{com}.         
 .         ssc install labutil2
-{txt} 50{com}.         
+{txt} 54{com}.         
 .         labvars DayITCMeSmA02S01`region'sm DayITCMeRaA03S02`region'sm ,names
-{txt} 51{com}.         
+{txt} 55{com}.         
 .                           
 .         qui summ DayITCMeSmA02S01`region'sm if date >= td(01jan2021) , detail
-{txt} 52{com}.         
+{txt} 56{com}.         
 .         gen DayITCMeSmA02S01`region'sm_m = r(p50) // _m = _median
-{txt} 53{com}.         
+{txt} 57{com}.         
 .         replace DayITCMeSmA02S01`region'sm_m = round(DayITCMeSmA02S01`region'sm_m)
-{txt} 54{com}.         
+{txt} 58{com}.         
 .         local DayITCMeSmA02S01`region'sm_m = DayITCMeSmA02S01`region'sm_m
-{txt} 55{com}.         
+{txt} 59{com}.         
 .         
 .         qui summ DayITCMeRaA03S02`region'sm if date >= td(01jan2021) , detail
-{txt} 56{com}.         
+{txt} 60{com}.         
 .         gen DayITCMeRaA03S02`region'sm_m = r(p50)
-{txt} 57{com}.         
+{txt} 61{com}.         
 .         replace DayITCMeRaA03S02`region'sm_m = round(DayITCMeRaA03S02`region'sm_m)
-{txt} 58{com}.         
+{txt} 62{com}.         
 .         local DayITCMeRaA03S02`region'sm_m = DayITCMeRaA03S02`region'sm_m
-{txt} 59{com}.         
+{txt} 63{com}.         
 .         twoway ///
 >         (line DayITCMeSmA02S01`region' date, sort lcolor(black*0.2)) /// 1 "IHME"
 >         (line DayITCMeRaA03S02`region' date, sort lcolor(magenta*0.2)) /// 2 "IMPE"
@@ -10866,9 +11077,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "IHME" 2 "IMPE" 3 "IHME smooth" 4 "IMPE smooth" 5 "IHME smooth meadian" 6 "IMPE smooth meadian") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) ///
 >         note("IHME smooth median 2021 on = `DayITCMeSmA02S01`region'sm_m'; IMPE smooth median 2021 on = `DayITCMeRaA03S02`region'sm_m'")
-{txt} 60{com}.         
+{txt} 64{com}.         
 .         qui graph export "graph `region' 26 C19 daily estimated infections to reported cases, `region', reference scenarios 2021.pdf", replace
-{txt} 61{com}.         
+{txt} 65{com}.         
 .         
 .         
 .         
@@ -10900,9 +11111,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 62{com}.         
+{txt} 66{com}.         
 .         qui graph export "graph `region' 31a C-19 total deaths, `region', reference scenarios, all time.pdf", replace
-{txt} 63{com}.         
+{txt} 67{com}.         
 .         
 .         
 .         
@@ -10924,9 +11135,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IHME excess" 5 "IMPE" 6 "SRIV") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 64{com}.         
+{txt} 68{com}.         
 .         qui graph export "graph `region' 31b C-19 total deaths, `region', reference scenarios, all time.pdf", replace
-{txt} 65{com}.         
+{txt} 69{com}.         
 .         
 .         
 .         
@@ -10948,9 +11159,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) 
-{txt} 66{com}.         
+{txt} 70{com}.         
 .         qui graph export "graph `region' 32 C-19 total deaths, `region', reference scenarios, 2021.pdf", replace
-{txt} 67{com}.         
+{txt} 71{com}.         
 .         
 .         
 .         
@@ -10979,9 +11190,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN" 2 "DELP" 5 "IHME" 8 "IMPE" 11 "SRIV") size(small) rows(1)) ///
 >         note("Uncertainty limits: dashed curves") ///
 >         subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
-{txt} 68{com}.         
+{txt} 72{com}.         
 .         qui graph export "graph `region' 33 C-19 total deaths, `region', reference scenarios, 2021, uncertainty.pdf", replace
-{txt} 69{com}.         
+{txt} 73{com}.         
 .         
 .         
 .         
@@ -11009,9 +11220,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios with uncertainty, 2020 on", size(small)) 
-{txt} 70{com}.         
+{txt} 74{com}.         
 .         qui graph export "graph `region' 41 C-19 total cases, `region', reference scenarios, all time.pdf", replace
-{txt} 71{com}.         
+{txt} 75{com}.         
 .         
 .         
 .         
@@ -11032,9 +11243,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
-{txt} 72{com}.         
+{txt} 76{com}.         
 .         qui graph export "graph `region' 42 C-19 total cases, `region', reference scenarios, 2021.pdf", replace
-{txt} 73{com}.         
+{txt} 77{com}.         
 .         
 .         
 .         
@@ -11064,9 +11275,9 @@ Sorted by: {res}date  loc_grand_name
 >         11 "SRIV cases") size(small) row(2)) ///
 >         note("Uncertainty limits: dashed curves") ///
 >         subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
-{txt} 74{com}.         
+{txt} 78{com}.         
 .         qui graph export "graph `region' 43 C-19 total cases, `region', reference scenarios, 2021, uncertainty.pdf", replace
-{txt} 75{com}.         
+{txt} 79{com}.         
 .         
 .         
 .         
@@ -11096,9 +11307,9 @@ Sorted by: {res}date  loc_grand_name
 >         5 "IHME Admissions" 6 "IMPE Hosp demand" ///
 >         7 "IMPE Hosp incidence" 8 "IMPE ICU demand" 9 "IMPE ICU incidence") rows(4) size(small)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 76{com}.                 
+{txt} 80{com}.                 
 .         qui graph export "graph `region' 61a C-19 hospital-related outcomes.pdf", replace
-{txt} 77{com}.         
+{txt} 81{com}.         
 .         
 .         
 .         
@@ -11122,9 +11333,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "DELP Hospitalized" 2 "DELP Ventilated" 3 "IHME ICU need" ///
 >         4 "IHME Admissions" 5 "IMPE Hosp incidence" 6 "IMPE ICU demand" 7 "IMPE ICU incidence") rows(4) size(small)) ///
 >         subtitle("Reference scenarios, Without IHME Bed need, IMPE Hospital demand, 2021 on", size(small)) 
-{txt} 78{com}.         
+{txt} 82{com}.         
 .         qui graph export "graph `region' 62b C-19 hospital-related outcomes, wo extremes ICU bed capcity.pdf", replace
-{txt} 79{com}.         
+{txt} 83{com}.         
 .         
 .         
 .         
@@ -11147,9 +11358,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "DELP Hospitalized" 2 "DELP Ventilated" 3 "IHME ICU need" ///
 >         4 "IHME Admissions" 5 "IMPE Hosp incidence" 6 "IMPE ICU demand" 7 "IMPE ICU incidence") rows(3) size(small)) ///
 >         subtitle("Reference scenarios, Without IHME Bed need, IMPE Hospital demand, 2021 on", size(small)) 
-{txt} 80{com}.         
+{txt} 84{com}.         
 .         qui graph export "graph `region' 63 C-19 hospital-related outcomes, wo extremes, 2021.pdf", replace
-{txt} 81{com}.         
+{txt} 85{com}.         
 .         
 .         
 .         *******************************
@@ -11175,9 +11386,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 82{com}.                 
+{txt} 86{com}.                 
 .         qui graph export "graph `region' 71 C-19 daily cases to deaths, `region', reference scenarios, all time.pdf", replace
-{txt} 83{com}.         
+{txt} 87{com}.         
 .         
 .         
 .         
@@ -11198,9 +11409,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 84{com}.         
+{txt} 88{com}.         
 .         qui graph export "graph `region' 72 C-19 daily cases to deaths, `region', reference scenarios, 2021.pdf", replace
-{txt} 85{com}.         
+{txt} 89{com}.         
 .         
 .         
 .         
@@ -11221,9 +11432,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 86{com}.         
+{txt} 90{com}.         
 .         qui graph export "graph `region' 73 C-19 total cases to deaths, `region', reference scenarios, all time.pdf", replace
-{txt} 87{com}.         
+{txt} 91{com}.         
 .         
 .         
 .         
@@ -11244,9 +11455,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) 
-{txt} 88{com}.         
+{txt} 92{com}.         
 .         qui graph export "graph `region' 74 C-19 total cases to deaths, `region', reference scenarios, 2021.pdf", replace
-{txt} 89{com}.         
+{txt} 93{com}.         
 .         
 .         
 .         
@@ -11275,9 +11486,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
-{txt} 90{com}.         
+{txt} 94{com}.         
 .         qui graph export "graph `region' 81 C-19 daily deaths estimated to reported, `region', reference scenarios, all time.pdf", replace
-{txt} 91{com}.         
+{txt} 95{com}.         
 .         
 .         
 .         
@@ -11302,9 +11513,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
-{txt} 92{com}.         
+{txt} 96{com}.         
 .         qui graph export "graph `region' 83 C-19 daily cases estimated to reported, `region', reference scenarios, all time.pdf", replace
-{txt} 93{com}.         
+{txt} 97{com}.         
 .         
 .         
 .         
@@ -11325,9 +11536,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
 >         5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) yscale(titlegap(2))
-{txt} 94{com}.         
+{txt} 98{com}.         
 .         qui graph export "graph `region' 84 C-19 daily cases estimated to reported, `region', reference scenarios, 2021.pdf", replace
-{txt} 95{com}.         
+{txt} 99{com}.         
 .         
 .         
 .         
@@ -11347,9 +11558,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
-{txt} 96{com}.         
+{txt}100{com}.         
 .         qui graph export "graph `region' 85 C-19 total deaths estimated to reported, `region', reference scenarios, all time.pdf", replace
-{txt} 97{com}.         
+{txt}101{com}.         
 .         
 .         
 .         
@@ -11369,9 +11580,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 >         subtitle("Reference scenarios, 2021 on", size(small)) yscale(titlegap(2))
-{txt} 98{com}.         
+{txt}102{com}.         
 .         qui graph export "graph `region' 86 C-19 total deaths estimated to reported, `region', reference scenarios, 2021.pdf", replace
-{txt} 99{com}.         
+{txt}103{com}.         
 .         
 .         
 .         
@@ -11392,9 +11603,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
 >         4 "IMPE infections" 5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
-{txt}100{com}.         
+{txt}104{com}.         
 .         qui graph export "graph `region' 87 C-19 total cases estimated to reported, `region', reference scenarios, all time.pdf", replace
-{txt}101{com}.         
+{txt}105{com}.         
 .         
 .         
 .         
@@ -11416,9 +11627,9 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
 >         4 "IMPE infections" 5 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
-{txt}102{com}.         
+{txt}106{com}.         
 .         qui graph export "graph `region' 88 C-19 total cases estimated to reported, `region', reference scenarios, 2021.pdf", replace
-{txt}103{com}.         
+{txt}107{com}.         
 .         ***
 .         
 .         
@@ -11439,9 +11650,9 @@ Sorted by: {res}date  loc_grand_name
 >         xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 >         legend(order(1 "Masks scenario" 2 "Reference scenario") rows(1)) ///
 >         note("Proportion of population reporting always wearing a mask when leaving home", size(small)) 
-{txt}104{com}.         
+{txt}108{com}.         
 .         qui graph export "graph `region' 93 C-19 daily mask_use, `region', 2 scenarios.pdf", replace
-{txt}105{com}.         
+{txt}109{com}.         
 .         
 . {c )-}
 {res}{txt}(7,690 missing values generated)
@@ -11914,15 +12125,15 @@ all files already exist and are up to date.
 . * daily deaths, With GLOBAL, DELP, SRIV, 2022 on 
 . 
 . twoway ///
-> (line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
-> (line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
-> (line DayDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
-> (line DayDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
-> (line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
-> (line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
-> (line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
-> (line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
-> (line DayDeaMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
+> (line DayDeaMeSmA01S00AFRO date, sort lcolor(brown)) /// DELP
+> (line DayDeaMeSmA01S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA01S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA01S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA01S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA01S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA01S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA01S00WPRO date, sort lcolor(blue)) ///
+> (line DayDeaMeSmA01S00GLOBAL date, sort lcolor(black)) /// 
 > (line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 > (line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
 > (line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -12027,14 +12238,14 @@ all files already exist and are up to date.
 . * daily deaths, Without GLOBAL, DELP, SRIV, 2022 on
 . 
 . twoway ///
-> (line DayDeaMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
-> (line DayDeaMeRaA01S00AMRO date, sort lcolor(red)) ///
-> (line DayDeaMeRaA01S00AMR1 date, sort lcolor(orange)) ///
-> (line DayDeaMeRaA01S00AMR2 date, sort lcolor(purple)) ///
-> (line DayDeaMeRaA01S00EMRO date, sort lcolor(gold)) ///
-> (line DayDeaMeRaA01S00EURO date, sort lcolor(green)) ///
-> (line DayDeaMeRaA01S00SEARO date, sort lcolor(cyan)) ///
-> (line DayDeaMeRaA01S00WPRO date, sort lcolor(blue)) ///
+> (line DayDeaMeSmA01S00AFRO date, sort lcolor(brown)) /// DELP
+> (line DayDeaMeSmA01S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA01S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA01S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA01S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA01S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA01S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA01S00WPRO date, sort lcolor(blue)) ///
 > (line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 > (line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
 > (line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -12326,15 +12537,15 @@ all files already exist and are up to date.
 . * daily cases, With GLOBAL, DELP, SRIV, 2022 on
 . 
 . twoway ///
-> (line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
-> (line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-> (line DayCasMeRaA01S00GLOBAL date, sort lcolor(black)) /// 
+> (line DayCasMeSmA01S00AFRO date, sort lcolor(brown)) /// DELP
+> (line DayCasMeSmA01S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA01S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA01S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA01S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA01S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
+> (line DayCasMeSmA01S00GLOBAL date, sort lcolor(black)) /// 
 > (line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 > (line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
 > (line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -12401,15 +12612,15 @@ all files already exist and are up to date.
 . * daily cases, With GLOBAL, DELP, SRIV, 2022 on
 . 
 . twoway ///
-> (line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
-> (line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
-> (line DayCasMeRaA01S00GLOBAL date, sort lcolor(black)) ///
+> (line DayCasMeSmA01S00AFRO date, sort lcolor(brown)) /// DELP
+> (line DayCasMeSmA01S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA01S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA01S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA01S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA01S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
+> (line DayCasMeSmA01S00GLOBAL date, sort lcolor(black)) ///
 > (line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 > (line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
 > (line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -12441,14 +12652,14 @@ all files already exist and are up to date.
 . * daily cases, Without GLOBAL, DELP, SRIV, 2022 on
 . 
 . twoway ///
-> (line DayCasMeRaA01S00AFRO date, sort lcolor(brown)) /// DELP
-> (line DayCasMeRaA01S00AMRO date, sort lcolor(red)) ///
-> (line DayCasMeRaA01S00AMR1 date, sort lcolor(orange)) ///
-> (line DayCasMeRaA01S00AMR2 date, sort lcolor(purple)) ///
-> (line DayCasMeRaA01S00EMRO date, sort lcolor(gold)) ///
-> (line DayCasMeRaA01S00EURO date, sort lcolor(green)) ///
-> (line DayCasMeRaA01S00SEARO date, sort lcolor(cyan)) ///
-> (line DayCasMeRaA01S00WPRO date, sort lcolor(blue)) ///
+> (line DayCasMeSmA01S00AFRO date, sort lcolor(brown)) /// DELP
+> (line DayCasMeSmA01S00AMRO date, sort lcolor(red)) ///
+> (line DayCasMeSmA01S00AMR1 date, sort lcolor(orange)) ///
+> (line DayCasMeSmA01S00AMR2 date, sort lcolor(purple)) ///
+> (line DayCasMeSmA01S00EMRO date, sort lcolor(gold)) ///
+> (line DayCasMeSmA01S00EURO date, sort lcolor(green)) ///
+> (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
+> (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
 > (line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
 > (line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
 > (line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
@@ -12875,7 +13086,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220408/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}12 Apr 2022, 15:21:31
+ {txt}closed on:  {res}12 Apr 2022, 19:28:24
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
