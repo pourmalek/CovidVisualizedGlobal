@@ -454,8 +454,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on]()
+(3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR1%2014b%20C-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163276775-f3813071-6f87-41db-9419-0c91dbc611d0.png)
 
 ****
 
@@ -503,8 +504,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
  
 ****
 
-(3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on]()
+(3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2014b%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163277012-831cb46f-58c5-44b1-ae96-43b7e08dd408.png)
 
 ****
 
@@ -554,8 +556,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on]()
+(3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163277142-10fc9d10-a754-45fa-836a-2754ca33a44e.png)
 
 ****
 
@@ -604,8 +607,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3b) European region [Daily deaths, reference scenarios, 2022 on]()
+(3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163277272-29d177e4-07d2-4aa8-ae7d-b28145629f15.png)
 
 ****
 
@@ -655,8 +659,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on]()
+(3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20SEARO%2014b%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163277381-ed78aa43-b109-4d4b-9195-630fd4be21b0.png)
 
 ****
 
@@ -704,8 +709,9 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
-(3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on]()
+(3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20WPRO%2014b%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163277500-be227229-9e0d-47fb-a3c5-739dc7b5fa4d.png)
 
 ****
 
