@@ -191,13 +191,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 ****
 
-(1) Regions together [Daily deaths, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201a1%20C-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(1) Regions together [Daily deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201a1%20C-19%20daily%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/163236168-bb4c4045-3e70-41b8-8bc1-66225ccf22d1.png)
 
 ****
 
-(2) Regions together [Daily deaths, without GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201b1%20C-19%20daily%20deaths%2C%20regions%20together%20with%20global%2C%20IHME%2C%20IMPE.pdf)
+(2) Regions together [Daily deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%201b1%20C-19%20daily%20deaths%2C%20regions%20together%20with%20global%2C%20IHME%2C%20IMPE.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/163236319-63b19ca1-f8f8-4a56-b416-59893b350c6a.png)
 
