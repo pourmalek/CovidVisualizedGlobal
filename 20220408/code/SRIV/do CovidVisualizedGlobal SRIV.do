@@ -947,9 +947,49 @@ foreach region of local list4 {
 
 
 
+
+
+
+******************
+	
+* smooth 
+
+encode loc_grand_name, gen(loc_grand_name_encoded)
+
+tsset loc_grand_name_encoded date, daily   
+
+qui {
+	tssmooth ma DayDeaMeRaA05S00_window = DayDeaMeRaA05S00 if DayDeaMeRaA05S00 >= 0, window(3 1 3) 
+	
+	tssmooth ma DayDeaMeSmA05S00 = DayDeaMeRaA05S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayDeaMeSmA05S00 "Daily deaths smooth A05 SRIV"
+	
+	drop DayDeaMeRaA05S00_window
+	
+	
+	tssmooth ma DayCasMeRaA05S00_window = DayCasMeRaA05S00 if DayCasMeRaA05S00 >= 0, window(3 1 3)
+	
+	tssmooth ma DayCasMeSmA05S00 = DayCasMeRaA05S00_window, weights( 1 2 3 <4> 3 2 1) replace
+	
+	label var DayCasMeSmA05S00 "Daily cases smooth A05 SRIV"
+	
+	drop DayCasMeRaA05S00_window
+}
+*
+
+
+
+
+
+
+
+
 * gen vars by location 
 
-foreach var of varlist TotDeaMeRaA05S00-DayDMuMeRaA05S00 {
+order *, alpha
+
+foreach var of varlist DayCaMMeRaA05S00-TotDeaUpRaA05S00 {
 
 
 	qui gen `var'AFRO = `var' 
@@ -1005,11 +1045,11 @@ label var epoch_SRIV "SRIV Forecast start date"
 
 foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
-	gen DayDeaFOREA05S00`var' = DayDeaMeRaA05S00`var'
+	gen DayDeaFOREA05S00`var' = DayDeaMeSmA05S00`var'
 	replace DayDeaFOREA05S00`var' = . if date < td(08Apr2022)
-	label var DayDeaFOREA05S00`var' "Daily Forecasted Deaths Mean smooth SRIV `var'"
+	label var DayDeaFOREA05S00`var' "Daily Forecasted Deaths Mean raw SRIV `var'"
 	
-	gen DayCasFOREA05S00`var' = DayCasMeRaA05S00`var'
+	gen DayCasFOREA05S00`var' = DayCasMeSmA05S00`var'
 	replace DayCasFOREA05S00`var' = . if date < td(08Apr2022)
 	label var DayCasFOREA05S00`var' "Daily Forecasted Cases smooth raw SRIV `var'"
 

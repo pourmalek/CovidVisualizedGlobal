@@ -207,7 +207,7 @@ foreach region of local list5 {
 	
 	
 	
-	gen DayCTDMeRaA05S00`region'  = DayCasMeRaA05S00`region'  / DayDeaMeRaA05S00`region'   
+	gen DayCTDMeRaA05S00`region'  = DayCasMeSmA05S00`region'  / DayDeaMeSmA05S00`region'   
 	
 	label var DayCTDMeRaA05S00`region'  "Daily Cases to Deaths S0 SRIV"
 	
@@ -259,7 +259,7 @@ foreach region of local list5 {
 	label var DayDERMeRaA03S03`region' "Daily Deaths estim to reported Mean S3 IMPE"
 	
 	
-	gen DayDERMeRaA05S00`region'  = DayDeaMeRaA05S00`region' / DayDeaMeRaA00S00`region'
+	gen DayDERMeRaA05S00`region'  = DayDeaMeSmA05S00`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA05S00`region' "Daily Deaths estim to reported S0 SRIV"
 	
@@ -307,7 +307,7 @@ foreach region of local list5 {
 	label var DayIERMeRaA03S03`region' "Daily infections estim to reported cases Mean S3 IMPE"
 	
 	
-	gen DayCERMeRaA05S00`region'  = DayCasMeRaA05S00`region' / DayCasMeRaA00S00`region'
+	gen DayCERMeRaA05S00`region'  = DayCasMeSmA05S00`region' / DayCasMeRaA00S00`region'
 	
 	label var DayCERMeRaA05S00`region' "Daily Cases estim to reported S0 SRIV"
 	
@@ -565,7 +565,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -590,7 +590,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -619,7 +619,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -647,7 +647,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -675,7 +675,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -708,7 +708,7 @@ foreach region of local list5 {
 	(line DayDeaLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 IMPE lower
 	(line DayDeaUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 IMPE upper
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 14 "SRIV" Forecast only
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 15 SRIV mean
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 15 SRIV mean
 	(line DayDeaLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 16 SRIV lower
 	(line DayDeaUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 17 SRIV upper
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
@@ -737,7 +737,7 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 IMPE mean, 3rd dose scenario
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 6 IMPE mean, better scenario
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, worse scenario
-	(line DayDeaMeRaA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -890,7 +890,7 @@ foreach region of local list5 {
 	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
-	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -920,7 +920,7 @@ foreach region of local list5 {
 	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
-	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -947,7 +947,7 @@ foreach region of local list5 {
 	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
-	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -970,7 +970,7 @@ foreach region of local list5 {
 	(line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 4 "SRIV" Forecast only
-	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
 	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -999,7 +999,7 @@ foreach region of local list5 {
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 8 IMPE mean
 	(line DayINFLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 IMPE lower
 	(line DayINFUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 IMPE upper
-	(line DayCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 11 IMPE mean
+	(line DayCasMeSmA05S00`region' date, sort lcolor(magenta)) /// 11 IMPE mean
 	(line DayCasLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 IMPE lower
 	(line DayCasUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 IMPE upper	
 	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
@@ -1029,7 +1029,7 @@ foreach region of local list5 {
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 6 IMPE mean, reference scenario
 	(line DayINFMeSmA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, better scenario
 	(line DayINFMeSmA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 8 IMPE mean, worse scenario
-	(line DayCasMeRaA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean	
 	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -2016,15 +2016,15 @@ twoway ///
 (line DayDeaMeSmA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA01S00WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeSmA01S00GLOBAL date, sort lcolor(black)) /// 
-(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
-(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
-(line DayDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
-(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayDeaMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) /// 
+(line DayDeaMeSmA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayDeaMeSmA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeSmA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeSmA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeSmA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeSmA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeSmA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) /// 
 if date >= td(01jan2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2122,14 +2122,14 @@ twoway ///
 (line DayDeaMeSmA01S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA01S00WPRO date, sort lcolor(blue)) ///
-(line DayDeaMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
-(line DayDeaMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayDeaMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
-(line DayDeaMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
-(line DayDeaMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayDeaMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayDeaMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayDeaMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeSmA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayDeaMeSmA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeSmA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeSmA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeSmA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeSmA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2402,15 +2402,15 @@ twoway ///
 (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
 (line DayCasMeSmA01S00GLOBAL date, sort lcolor(black)) /// 
-(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
-(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
-(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) /// 
+(line DayCasMeSmA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeSmA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeSmA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeSmA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeSmA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) /// 
 if date >= td(01jan2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2473,15 +2473,15 @@ twoway ///
 (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
 (line DayCasMeSmA01S00GLOBAL date, sort lcolor(black)) ///
-(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
-(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
-(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
-(line DayCasMeRaA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
+(line DayCasMeSmA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeSmA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeSmA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeSmA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeSmA05S00GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2022) & date <= td(01jul2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
@@ -2510,14 +2510,14 @@ twoway ///
 (line DayCasMeSmA01S00EURO date, sort lcolor(green)) ///
 (line DayCasMeSmA01S00SEARO date, sort lcolor(cyan)) ///
 (line DayCasMeSmA01S00WPRO date, sort lcolor(blue)) ///
-(line DayCasMeRaA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
-(line DayCasMeRaA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
-(line DayCasMeRaA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
-(line DayCasMeRaA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
-(line DayCasMeRaA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
-(line DayCasMeRaA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
-(line DayCasMeRaA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayCasMeSmA05S00AFRO date, sort lcolor(brown) lpattern(dash)) /// SRIV
+(line DayCasMeSmA05S00AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayCasMeSmA05S00AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayCasMeSmA05S00EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayCasMeSmA05S00EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayCasMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayCasMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2022) & date <= td(01jul2022) ///
 , xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
