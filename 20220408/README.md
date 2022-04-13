@@ -378,11 +378,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 ****
 
-
-
-
-
 *
+
+
+
+
 
 
 ****
@@ -471,10 +471,18 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
+(6b) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2022 on]()
 
 
+****
 
 *
+
+
+
+
+
+
 
 ****
 ****
@@ -507,6 +515,18 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
   
 ****
+
+(6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on]()
+
+
+****
+
+
+
+
+
+
+
 
 
 *
@@ -543,6 +563,16 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
  
 ****
 
+(6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on]()
+
+
+****
+
+
+
+
+
+
 
 *
 
@@ -578,6 +608,14 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
   
 ****
+
+(6b) European region [Daily cases or infections, reference scenarios, 2022 on]()
+
+
+****
+
+
+
 
 
 
@@ -618,6 +656,15 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
   
 ****
 
+(6b) South-East Asian region [Daily cases or infections, reference scenarios, 2022 on]()
+
+
+****
+
+
+
+
+
 
 
 
@@ -654,6 +701,11 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 (6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20WPRO%2024%20C-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
   
+****
+
+(6b) Western Pacific region [Daily cases or infections, reference scenarios, 2022 on]()
+
+
 ****
 
 
