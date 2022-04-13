@@ -706,11 +706,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08
 
 (1) Western Pacific region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163282075-8393531f-fc2b-42c6-bb7e-75d13e6b1717.png)
   
 ****
 
 (3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20WPRO%2014%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163282146-a72b57ab-b059-45ed-bcae-9277bc259282.png)
   
 ****
 
