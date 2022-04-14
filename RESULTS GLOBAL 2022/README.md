@@ -22,6 +22,8 @@ Predicted daily deaths:
 
 (3c) GLOBAL - [Daily deaths, alternate scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3c-global---daily-deaths-alternate-scenarios-2021-on-impe)
 
+(3d) GLOBAL - [Daily deaths, reference scenarios, 2022 on]
+
 Predicted daily cases or infections:
 
 (4) GLOBAL - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#4-global---daily-cases-or-infections-reference-scenarios-all-time)
@@ -72,7 +74,9 @@ Outcomes predicted by IHME:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163218766-d614fa1b-d8dc-4c1f-ab9a-706bd87876d0.png)
 
 *
 
@@ -175,7 +179,9 @@ Outcomes predicted by IHME:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2012a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219232-1a83a058-dc3d-4cfe-8753-b1ed2e8cb37b.png)
 
 *
 
@@ -271,15 +277,7 @@ Outcomes predicted by IHME:
 
 ### (2b) GLOBAL - Daily deaths, reference scenarios, 2021 on, with IHME excess deaths
   
- 
- 
-  
-
-*
-
-**uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
-
-
+This graph was retired on 20220408.  
 
 *
 
@@ -382,7 +380,9 @@ Outcomes predicted by IHME:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(3) Global [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2014%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219388-0a5478ed-3b1b-4878-9fcd-a0ada2b0a2b7.png)
 
 *
 
@@ -486,7 +486,9 @@ Outcomes predicted by IHME:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(3b) Global [Daily deaths, 3 scenarios, 2021 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2016%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20scenarios%2C%20uncertainty%2C%202021%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163219680-59baf4d7-b995-4f56-9f2f-adc1368add71.png)
 
 *
 
@@ -589,7 +591,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
-
+The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08. Not included.
 
 *
 
@@ -670,6 +672,29 @@ Both this and the previous uptake use the same model update, so the graphs are i
 ![image](https://user-images.githubusercontent.com/30849720/148586567-3b73790b-dc5b-45b0-9423-c822362131b8.png)
 
 *
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+********************************************************************************************************************************************  
+
+### (3d) GLOBAL - Daily deaths, reference scenarios, 2022 on
+
+
+
+*
+
+(3d) Global [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20GLOBAL%2012b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202022.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/163220315-d02a05bc-1c41-483f-99cf-f4332ad21d6e.png)
+
+*
+
 
 
 
