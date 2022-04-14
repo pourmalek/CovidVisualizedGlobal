@@ -16,7 +16,7 @@ List of graphs:
 
 (6) Americas region without Canada and United States - [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#6-americas-region-without-canada-and-united-states---daily-cases-or-infections-3-scenarios-2021-on)
 
-(6b) Americas region without Canada and United States - [Daily cases or infections, reference scenarios, 2022 on]()  
+(6b) Americas region without Canada and United States - [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region%20without%20Canada%20and%20United%20States/README.md#6b-americas-region-without-canada-and-united-states---daily-cases-or-infections-reference-scenarios-2022-on)  
   
   
   
