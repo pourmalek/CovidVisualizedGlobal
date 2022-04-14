@@ -9,7 +9,7 @@ List of graphs:
 
 (3) African region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3-african-region---daily-deaths-3-scenarios-2021)
 
-(3b) African region - [Daily deaths, reference scenarios, 2022 on]()
+(3b) African region - [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#3b-african-region---daily-deaths-reference-scenarios-2022-on)
 
 (4) African region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#4-african-region---daily-cases-or-infections-reference-scenarios-all-time)
 
