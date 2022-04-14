@@ -22,7 +22,7 @@ Predicted daily deaths:
 
 (3c) GLOBAL - [Daily deaths, alternate scenarios, 2021 on, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3c-global---daily-deaths-alternate-scenarios-2021-on-impe)
 
-(3d) GLOBAL - [Daily deaths, reference scenarios, 2022 on]
+(3d) GLOBAL - [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20GLOBAL%202022#3d-global---daily-deaths-reference-scenarios-2022-on)
 
 Predicted daily cases or infections:
 
