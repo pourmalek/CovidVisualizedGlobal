@@ -15,7 +15,7 @@ List of graphs:
 
 (6) African region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#6-african-region---daily-cases-or-infections-3-scenarios-2021)
 
-(6b) African region - [Daily cases or infections, reference scenarios, 2022 on]()  
+(6b) African region - [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20African%20region/README.md#6b-african-region---daily-cases-or-infections-reference-scenarios-2022-on)  
   
 
 ********************************************************************************************************************************************
