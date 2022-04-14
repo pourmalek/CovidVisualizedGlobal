@@ -9,7 +9,7 @@ List of graphs:
 
 (3) Western Pacific region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#3-western-pacific-region---daily-deaths-3-scenarios-2021)
 
-(3b) Western Pacific region - [Daily deaths, reference scenarios, 2022 on]()
+(3b) Western Pacific region - [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#3b-western-pacific-region---daily-deaths-reference-scenarios-2022-on)
 
 (4) Western Pacific region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Western%20Pacific%20region/README.md#4-western-pacific-region---daily-cases-or-infections-reference-scenarios-all-time)
 
