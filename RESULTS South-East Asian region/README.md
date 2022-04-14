@@ -15,7 +15,7 @@ List of graphs:
 
 (6) South-East Asian region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6-south-east-asian-region---daily-cases-or-infections-3-scenarios-2021)
 
-(6b) South-East Asian region - [Daily cases or infections, reference scenarios, 2022 on]()  
+(6b) South-East Asian region - [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6b-south-east-asian-region---daily-cases-or-infections-reference-scenarios-2022-on)  
   
   
 
