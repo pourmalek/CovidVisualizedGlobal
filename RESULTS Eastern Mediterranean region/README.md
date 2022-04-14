@@ -9,10 +9,13 @@ List of graphs:
 
 (3) Eastern Mediterranean region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean%20region#3-eastern-mediterranean-region---daily-deaths-3-scenarios-2021)
 
+(3b) Eastern Mediterranean region - [Daily deaths, reference scenarios, 2022 on]()
+
 (4) Eastern Mediterranean region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean%20region#4-eastern-mediterranean-region---daily-cases-or-infections-reference-scenarios-all-time)
 
 (6) Eastern Mediterranean region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20Eastern%20Mediterranean%20region#6-eastern-mediterranean-region---daily-cases-or-infections-3-scenarios-2021)
 
+(6b) Eastern Mediterranean region - [Daily cases or infections, reference scenarios, 2022 on]()   
   
   
 
