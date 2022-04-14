@@ -33,7 +33,9 @@ List of graphs:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(1) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163273667-2d2b791f-ed79-4706-a351-0e67701ecf52.png)
 
 *
 
@@ -155,7 +157,9 @@ List of graphs:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(3) Americas region, without  Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2014%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163273738-220cce1a-8da1-4004-9921-7a040d3492d9.png)
 
 *
 
@@ -273,6 +277,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2014b%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202022.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/163277012-831cb46f-58c5-44b1-ae96-43b7e08dd408.png)
 
 *
 
@@ -302,7 +309,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2022%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163274393-81e136ba-3131-41c4-95e9-7489efbfc55a.png)
 
 *
 
@@ -426,7 +435,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(6) Americas region, without Canada and United States [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2024%20C-19%20daily%20cases%2C%20AMR2%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163274519-69d9fd09-13e8-4029-9ec2-4978935c3bcd.png)
 
 *
 
@@ -545,8 +556,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AMR2%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMR2%2C%20reference%20scenarios%2C%202022.pdf)
 
-
+![image](https://user-images.githubusercontent.com/30849720/163278114-a54b5745-f847-49f5-b37d-1fdf87dce99d.png)
 
 *
 
