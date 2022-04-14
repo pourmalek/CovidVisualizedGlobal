@@ -15,7 +15,7 @@ List of graphs:
 
 (6) Americas region - [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6-Americas-region---daily-cases-or-infections-3-scenarios-2021-on)
 
-(6b) Americas region - [Daily cases or infections, reference scenarios, 2022 on]()  
+(6b) Americas region - [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#6b-americas-region---daily-cases-or-infections-reference-scenarios-2022-on)  
   
 
 ********************************************************************************************************************************************
