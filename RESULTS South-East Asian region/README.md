@@ -9,11 +9,13 @@ List of graphs:
 
 (3) South-East Asian region - [Daily deaths, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#3-south-east-asian-region---daily-deaths-3-scenarios-2021)
 
+(3b) South-East Asian region - [Daily deaths, reference scenarios, 2022 on]()
+
 (4) South-East Asian region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#4-south-east-asian-region---daily-cases-or-infections-reference-scenarios-all-time)
 
 (6) South-East Asian region - [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/RESULTS%20South-East%20Asian%20region#6-south-east-asian-region---daily-cases-or-infections-3-scenarios-2021)
 
-  
+(6b) South-East Asian region - [Daily cases or infections, reference scenarios, 2022 on]()  
   
   
 
