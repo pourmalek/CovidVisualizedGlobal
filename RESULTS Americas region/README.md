@@ -9,7 +9,7 @@ List of graphs:
 
 (3) Americas region - [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#3-americas-region---daily-deaths-3-scenarios-2021-on)
 
-(3b) Americas region - [Daily deaths, reference scenarios, 2022 on]()
+(3b) Americas region - [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#3b-americas-region---daily-deaths-reference-scenarios-2022-on)
 
 (4) Americas region - [Daily cases or infections, reference scenarios, all time](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/RESULTS%20Americas%20region/README.md#4-americas-region---daily-cases-or-infections-reference-scenarios-all-time)
 
