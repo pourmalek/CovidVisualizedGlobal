@@ -28,7 +28,9 @@ List of graphs:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245333-7c6f505a-b5d4-4513-b387-da4f021130b6.png)
 
 *
 
@@ -175,7 +177,9 @@ List of graphs:
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2014%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245736-29f4d00f-d2a2-4e84-86ef-0763c8027ec2.png)
 
 *  
 
@@ -307,6 +311,33 @@ This graph was not generated for this uptake.
 
 
 
+********************************************************************************************************************************************
+******************************************************************************************************************************************** 
+
+### (3b) African region - Daily deaths, reference scenarios, 2022 on
+
+
+
+
+*
+
+**uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
+
+(3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/163251547-7feb2a02-ac32-40f5-9e4a-4b5f48943ffb.png)
+
+*
+
+
+
+
+
+
+
+
+
+
 
 
 ********************************************************************************************************************************************
@@ -322,7 +353,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163245858-6ac4363f-5432-4ed2-bf32-05db3c3e624a.png)
 
 *
 
@@ -469,7 +502,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220408**: **_DELP 20220408_**, **_IHME 20220408_**, no IMPE, **_SRIV 20220408_** 
 
+(6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163246113-8002f55a-05f0-46b8-90db-a66c488fc769.png)
 
 *
 
@@ -586,6 +621,35 @@ This graph was not generated for this uptake.
 (6) African region [Daily cases or infections, 3 scenarios, 2021](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20211210/output/merge/graph%20AFRO%2024%20COVID-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/145894412-b1d03714-7c87-4784-a95e-a0a2f13c2b97.png)
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************************************************************************************************************************
+******************************************************************************************************************************************** 
+
+### (6b) African region - Daily cases or infections, reference scenarios, 2022 on
+
+
+
+
+*
+
+(6b) African region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220408/output/merge/graph%20AFRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AFRO%2C%20reference%20scenarios%2C%202022.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/163250812-8877cb7d-c359-47dd-98da-eb20213f8180.png)
 
 *
 
