@@ -12,12 +12,12 @@ Published article:
 
 ********
 
-Under review pre-print: 
+Published article: 
  
  https://europepmc.org/article/PPR/PPR377517
    
- [Pourmalek F. CovidVisualized: Visualized compilation of international updating models’ estimates of COVID-19 pandemic at global and country levels. Research Square; 2021. DOI: 10.21203/rs.3.rs-768714/v1.](https://www.researchsquare.com/article/rs-768714/v1)
+ [Pourmalek F. CovidVisualized: Visualized compilation of international updated models' estimates of COVID-19 pandemic at global and country levels. BMC Res Notes. 2022 Apr 9;15(1):136. doi: 10.1186/s13104-022-06020-4. PMID: 35397567](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-022-06020-4)
 
- [PDF](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/journal%20articles%2C%20this%20work/Pourmalek%20F%20-%20CovidVisualized-%20Visualized%20compilation%20of%20international%20updating%20models’%20estimates%20of%20COVID-19%20pandemic%20at%20global%20and%20country%20levels%20-%20PREPRINT%20%20Research%20Square%2020210802.pdf)
+[PDF](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/journal%20articles%2C%20this%20work/Pourmalek%20F%20-%20CovidVisualized-%20Visualized%20compilation%20of%20international%20updating%20models’%20estimates%20of%20COVID-19%20pandemic%20at%20global%20and%20country%20levels%20-%20PREPRINT%20%20Research%20Square%2020210802.pdf)
 
 ********
