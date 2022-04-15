@@ -538,7 +538,6 @@ di $monthspast01jan2022merge
 
 
 
-
 ******************
 
 
@@ -563,6 +562,33 @@ foreach region of local list5 {
 	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"
+	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
+	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
+	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
+	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "IMPE" 9 "SRIV") size(small) rows(1)) ///
+	subtitle("Reference scenarios, 2020 on", size(small)) ///
+	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
+	
+	qui graph export "graph `region' 11a C-19 daily deaths, `region', reference scenarios, all time.pdf", replace
+	
+
+
+
+	****
+	* daily deaths, reference scenarios, all time, wo IMPE
+	
+	twoway ///
+	(line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
+	(line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only
+	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
+	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
+	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
@@ -571,23 +597,12 @@ foreach region of local list5 {
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "SRIV") size(small) rows(1)) ///
-	subtitle("Reference scenarios, 2020 on", size(small)) ///
+	subtitle("Reference scenarios, 2020 on, without IMPE", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
-	qui graph export "graph `region' 11a C-19 daily deaths, `region', reference scenarios, all time.pdf", replace
+	qui graph export "graph `region' 11aa C-19 daily deaths, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 
 	
 	
@@ -601,28 +616,22 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 7 "SRIV" Forecast only
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 8 "SRIV"
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 11b C-19 daily deaths, `region', reference scenarios, all time With IHME excess deaths.pdf", replace
 	
-}
-*
 
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
 	
 	
 	****
@@ -635,30 +644,23 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 7 "SRIV" Forecast only
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 8 "SRIV"		
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 12a C-19 daily deaths, `region', reference scenarios, 2021.pdf", replace
 	
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	****
 	* daily deaths, reference scenarios, 2022
@@ -670,28 +672,22 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 7 "SRIV" Forecast only
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 8 "SRIV"		
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2022 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 12b C-19 daily deaths, `region', reference scenarios, 2022.pdf", replace
 	
-}
-*
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -707,32 +703,27 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 7 IHME mean
 	(line DayDeaLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 8 IHME lower
 	(line DayDeaUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 9 IHME upper
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 10 "SRIV" Forecast only
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 11 SRIV mean
-	(line DayDeaLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 12 SRIV lower
-	(line DayDeaUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 13 SRIV upper
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 10 "IMPE" Forecast only
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 11 IMPE mean
+	(line DayDeaLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 IMPE lower
+	(line DayDeaUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 IMPE upper
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 14 "SRIV" Forecast only
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 15 SRIV mean
+	(line DayDeaLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 16 SRIV lower
+	(line DayDeaUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 17 SRIV upper
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 7 "IHME" 11 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 7 "IHME" 11 "IMPE" 15 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) ///
 	note("Uncertainty limits: dashed curves" ///
 	"Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 13 C-19 daily deaths, `region', reference scenarios, 2021, uncertainty.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -743,66 +734,23 @@ foreach region of local list5 {
 	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 2 "DELP" mean
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME mean, reference scenario
 	(line DayDeaMeSmA02S02`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 4 IHME mean, Masks scenario
-	(line DayDeaMeSmA02S03`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 5 IHME mean, 3rd dose scenario
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 6 SRIV mean
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 IMPE mean
+	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 6 IMPE mean, better scenario
+	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, worse scenario
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 6 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 5 "IMPE" 8 "SRIV") size(small) row(2)) ///
 	subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
-	note("Alternate scenarios: tight dot (|||||) curves; IHME", size(small)) 
+	note("Alternate scenarios: tight dot (|||||) curves; IHME and IMPE", size(small)) 
 	
 	qui graph export "graph `region' 14 C-19 daily deaths, `region', 3 scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
 	
 	
-	****
-	* daily deaths, reference scenarios, 2022
-	
-	twoway ///
-	(line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
-	(line DayDeaFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only	
-	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
-	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
-	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only	
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 7 SRIV mean
-	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
-	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
-	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
-	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "SRIV") size(small) rows(1)) ///
-	subtitle("Reference scenarios, 2022 on", size(small)) ///
-	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-	
-	qui graph export "graph `region' 14b C-19 daily deaths, `region', 3 scenarios, 2022.pdf", replace
-	
-}
-*
-
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {		
 	
 	****
 	* daily deaths, reference scenario, uncertainty, 2021, IHME 
@@ -818,24 +766,14 @@ foreach region of local list5 {
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region', IHME", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "IHME mean" 4 "IHME lower" 5 "IHME upper") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "IHME mean" 4 "IHME lower" 5 "IHME upper") size(small) row(1)) ///
 	subtitle("Reference scenario with uncertainty, 2021 on", size(small)) ///
 	note("Uncertainty limits: dashed (– – –) curves" ///
 	"Reference scenario forecasts are marked with |||||||||||| ", size(small))
 	
 	qui graph export "graph `region' 15 C-19 daily deaths, `region', reference scenario, uncertainty, 2021, IHME.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -858,16 +796,7 @@ foreach region of local list5 {
 
 	qui graph export "graph `region' 16 C-19 daily deaths, `region', scenarios, uncertainty, 2021, IHME.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 		
 	****
@@ -890,20 +819,7 @@ foreach region of local list5 {
 	
 	qui graph export "graph `region' 16b C-19 daily deaths, `region', scenarios, uncertainty, 2022, IHME.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-
-/*
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	
@@ -929,19 +845,7 @@ foreach region of local list5 {
 	
 	qui graph export "graph `region' 17 C-19 daily deaths, `region', reference scenario, uncertainty, 2021, IMPE.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -965,18 +869,7 @@ foreach region of local list5 {
 	
 	qui graph export "graph `region' 18 C-19 daily deaths, `region', 3 scenarios, uncertainty, 2021, IMPE.pdf", replace
 	
-}
-*
-
-*/
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	***********************
@@ -994,32 +887,24 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only	
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"	
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
+	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
+	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 3 "DELP cases" 5 "IHME infections"  ///
-	7 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 3 "DELP cases" 5 "IHME infections" 7 "IMPE infections" ///
+	9 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 
+	
 	qui graph export "graph `region' 21 C-19 daily cases, `region', reference scenarios.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 
 
 	
@@ -1032,32 +917,23 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"	
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
+	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
+	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2021) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP cases" 5 "IHME infections"  ///
-	7 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN" 3 "DELP cases" 5 "IHME infections" 7 "IMPE infections" ///
+	9 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 22 C-19 daily cases, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	****
 	* daily cases or infections, reference scenarios, 2022
@@ -1068,30 +944,23 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 7 "SRIV"	
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
+	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
+	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP cases" 5 "IHME infections"  ///
-	7 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN" 3 "DELP cases" 5 "IHME infections" 7 "IMPE infections" ///
+	9 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2022 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
 	qui graph export "graph `region' 22b C-19 daily cases, `region', reference scenarios, 2022.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	****
 	* daily cases, reference scenarios, 2021
@@ -1113,16 +982,7 @@ foreach region of local list5 {
 	
 	qui graph export "graph `region' 22b C-19 daily cases, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {
+	
 	
 	
 	****
@@ -1136,32 +996,25 @@ foreach region of local list5 {
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean
 	(line DayINFLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 6 IHME lower
 	(line DayINFUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 7 IHME upper
-	(line DayCasMeSmA05S00`region' date, sort lcolor(magenta)) /// 8 SRIV mean
-	(line DayCasLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 SRIV lower
-	(line DayCasUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 SRIV upper	
+	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 8 IMPE mean
+	(line DayINFLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 IMPE lower
+	(line DayINFUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 IMPE upper
+	(line DayCasMeSmA05S00`region' date, sort lcolor(magenta)) /// 11 SRIV mean
+	(line DayCasLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 SRIV lower
+	(line DayCasUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 SRIV upper	
 	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 5 "IHME infections"  ///
-	8 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 5 "IHME infections" 8 ///
+	"IMPE infections" 11 "SRIV cases") size(small) row(2)) ///
 	note("Uncertainty limits: dashed curves") ///
 	subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 23 C-19 daily cases, `region', reference scenarios, 2021, uncertainty.pdf", replace
 	
-}
-*	
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {
+	
 	
 	
 	****
@@ -1173,80 +1026,35 @@ foreach region of local list5 {
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME mean, reference scenario
 	(line DayINFMeSmA02S02`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 4 IHME mean, Masks scenario
 	(line DayINFMeSmA02S03`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 5 IHME mean, 3rd dose scenario
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 6 SRIV mean	
+	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 6 IMPE mean, reference scenario
+	(line DayINFMeSmA03S01`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 7 IMPE mean, better scenario
+	(line DayINFMeSmA03S03`region' date, sort lcolor(magenta) lwidth(thick) lpattern(tight_dot)) /// 8 IMPE mean, worse scenario
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean	
 	if date >= td(01jan2021) & DayCasMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
-	6 "SRIV cases") size(small) row(2)) ///
+	6 "IMPE infections" 9 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
-	note("Alternate scenarios: tight dot (|||||) curves; IHME") 
+	note("Alternate scenarios: tight dot (|||||) curves; IHME and IMPE") 
 	
 	qui graph export "graph `region' 24 C-19 daily cases, `region', 3 scenarios, 2021, uncertainty.pdf", replace
 	
 	
-}
-*	
-	
-	
-	
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
-	
-	
-	****
-	* daily cases or infections, reference scenarios, 2022
-	
-	twoway ///
-	(line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
-	(line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only	
-	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
-	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
-	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
-	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 6 "SRIV" Forecast only	
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 7 SRIV mean
-	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
-	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
-	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
-	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "SRIV") size(small) rows(1)) ///
-	subtitle("Reference scenarios, 2022 on", size(small)) ///
-	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
-	
-	qui graph export "graph `region' 24b C-19 daily cases or infections, `region', reference scenarios, 2022.pdf", replace
-	
-}
-*
-
 	
 	
 	
 	
-	
-	
-	
-	
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {
 	
 	****
 	* daily estimated infections to reported cases IHME, IMPE, all time
 	
-	capture drop DayITCMeSmA02S01`region'
 	
 	gen DayITCMeSmA02S01`region' =  DayINFMeSmA02S01`region' / DayCasMeRaA00S00`region'
 	
 	label var DayITCMeSmA02S01`region'  "Daily Infections IHME to cases JOHN"
-	
-	
-	capture drop DayITCMeRaA03S02`region'
 	
 	gen DayITCMeRaA03S02`region' =  DayINFMeSmA03S02`region' / DayCasMeRaA00S00`region'
 	
@@ -1255,29 +1063,18 @@ foreach region of local list5 {
 	
 	twoway ///
 	(line DayITCMeSmA02S01`region' date, sort lcolor(black)) /// 1 "IHME"
+	(line DayITCMeRaA03S02`region' date, sort lcolor(magenta)) /// 2 "IMPE"
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily estimated infections to reported cases) title("C-19 daily estimated infections to reported cases, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "IHME") size(small) rows(1)) ///
-	subtitle("Reference scenarios, 2020 on, IHME", size(small)) 
+	legend(order(1 "IHME" 2 "IMPE" 3) size(small) rows(1)) ///
+	subtitle("Reference scenarios, 2020 on", size(small)) 
 
 	qui graph export "graph `region' 25 C19 daily estimated infections to reported cases, `region', reference scenarios.pdf", replace
 	
-}
-*
-
-
-
-
-
-ssc install labutil2
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1308,7 +1105,7 @@ foreach region of local list5 {
 	
 	tsset, clear
 	
-	
+	ssc install labutil2
 	
 	labvars DayITCMeSmA02S01`region'sm DayITCMeRaA03S02`region'sm ,names
 	
@@ -1332,21 +1129,22 @@ foreach region of local list5 {
 	
 	twoway ///
 	(line DayITCMeSmA02S01`region' date, sort lcolor(black*0.2)) /// 1 "IHME"
-	(line DayITCMeSmA02S01`region'sm date, sort lcolor(black) lwidth(medthick)) /// 2 "IHME"
-	(line DayITCMeSmA02S01`region'sm_m date, sort lcolor(black) lwidth(thin) lpattern(dash)) /// 3 "IHME"
+	(line DayITCMeRaA03S02`region' date, sort lcolor(magenta*0.2)) /// 2 "IMPE"
+	(line DayITCMeSmA02S01`region'sm date, sort lcolor(black) lwidth(medthick)) /// 3 "IHME"
+	(line DayITCMeRaA03S02`region'sm date, sort lcolor(magenta) lwidth(medthick)) /// 4 "IMPE"
+	(line DayITCMeSmA02S01`region'sm_m date, sort lcolor(black) lwidth(thin) lpattern(dash)) /// 5 "IHME"
+	(line DayITCMeRaA03S02`region'sm_m date, sort lcolor(magenta) lwidth(thin) lpattern(dash)) /// 6 "IMPE"
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily estimated infections to reported cases) title("C-19 daily estimated infections to reported cases, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "IHME" 2 "IHME smooth" 3 "IHME smooth meadian") size(small) row(1)) ///
+	legend(order(1 "IHME" 2 "IMPE" 3 "IHME smooth" 4 "IMPE smooth" 5 "IHME smooth meadian" 6 "IMPE smooth meadian") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) ///
-	note("IHME smooth median 2021 on = `DayITCMeSmA02S01`region'sm_m' ")
+	note("IHME smooth median 2021 on = `DayITCMeSmA02S01`region'sm_m'; IMPE smooth median 2021 on = `DayITCMeRaA03S02`region'sm_m'")
 	
 	qui graph export "graph `region' 26 C19 daily estimated infections to reported cases, `region', reference scenarios 2021.pdf", replace
 	
-}
-*	
 	
 	
 	
@@ -1354,9 +1152,8 @@ foreach region of local list5 {
 	
 	
 	
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
+	
 	
 	*****************
 	
@@ -1370,29 +1167,19 @@ foreach region of local list5 {
 	(line TotDeaMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotDeaMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"	
+	(line TotDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("C-19 total deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 31a C-19 total deaths, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	
@@ -1404,29 +1191,22 @@ foreach region of local list5 {
 	(line TotDeaMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
 	(line TotDeXMeSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 4 "IHME"
-	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"		
+	(line TotDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 5 "IMPE"
+	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 6 "SRIV"		
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("C-19 total deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IHME excess" 5 "SRIV") size(small) row(2)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IHME excess" 5 "IMPE" 6 "SRIV") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 31b C-19 total deaths, `region', reference scenarios, all time.pdf", replace
 	
-}
-*	
 	
 	
 	
-
 	
-	
-	
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {
 	
 	****
 	* total deaths, reference scenarios, 2021
@@ -1435,28 +1215,19 @@ foreach region of local list5 {
 	(line TotDeaMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotDeaMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"			
+	(line TotDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotDeaMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"			
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("C-19 total deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 32 C-19 total deaths, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1470,33 +1241,24 @@ foreach region of local list5 {
 	(line TotDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean
 	(line TotDeaLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 6 IHME lower
 	(line TotDeaUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 7 IHME upper
-	(line TotDeaMeRaA05S00`region' date, sort lcolor(magenta)) /// 8 SRIV mean
-	(line TotDeaLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 SRIV lower
-	(line TotDeaUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 SRIV upper	
+	(line TotDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 IMPE mean
+	(line TotDeaLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 IMPE lower
+	(line TotDeaUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 IMPE upper
+	(line TotDeaMeRaA05S00`region' date, sort lcolor(magenta)) /// 11 SRIV mean
+	(line TotDeaLoRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 SRIV lower
+	(line TotDeaUpRaA05S00`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 SRIV upper	
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths) title("C-19 total deaths, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 5 "IHME" 8 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 5 "IHME" 8 "IMPE" 11 "SRIV") size(small) rows(1)) ///
 	note("Uncertainty limits: dashed curves") ///
 	subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 33 C-19 total deaths, `region', reference scenarios, 2021, uncertainty.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	
@@ -1513,31 +1275,20 @@ foreach region of local list5 {
 	(line TotCasMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCasMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotINFMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 4 "SRIV"	
+	(line TotINFMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 5 "SRIV"	
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections) title("C-19 total cases or infections, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios with uncertainty, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 41 C-19 total cases, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1547,30 +1298,20 @@ foreach region of local list5 {
 	(line TotCasMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCasMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotINFMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 4 "SRIV"	
+	(line TotINFMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCasMeRaA05S00`region' date, sort lcolor(magenta)) /// 5 "SRIV"	
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections) title("C-19 total cases or infections, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 42 C-19 total cases, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1584,31 +1325,25 @@ foreach region of local list5 {
 	(line TotINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean
 	(line TotINFLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 6 IHME lower
 	(line TotINFUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 7 IHME upper
-	(line TotCasMeRaA05S00`region' date, sort lcolor(green)) /// 8 SRIV mean
-	(line TotCasLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 9 SRIV lower
-	(line TotCasUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 10 SRIV upper	
+	(line TotINFMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 IMPE mean
+	(line TotINFLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 9 IMPE lower
+	(line TotINFUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 10 IMPE upper
+	(line TotCasMeRaA05S00`region' date, sort lcolor(green)) /// 11 SRIV mean
+	(line TotCasLoRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 12 SRIV lower
+	(line TotCasUpRaA05S00`region' date, sort lcolor(green) lpattern(dash)) /// 13 SRIV upper	
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections) title("C-19 total cases or infections, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 5 "IHME infections"  ///
-	8 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 5 "IHME infections" 8 "IMPE infections" ///
+	11 "SRIV cases") size(small) row(2)) ///
 	note("Uncertainty limits: dashed curves") ///
 	subtitle("Reference scenarios with uncertainty, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 43 C-19 total cases, `region', reference scenarios, 2021, uncertainty.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	************************
@@ -1624,27 +1359,23 @@ foreach region of local list5 {
 	(line DayBedMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME Bed need (Daily Beds needed Mean IHME S1)
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) /// 4 IHME ICU need (Daily ICU beds needed Mean IHME S1)
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) /// 5 IHME Admissions (Daily hospital admissions Mean IHME S1)
+	(line DayHodMeRaA03S01`region' date, sort lcolor(magenta)) /// 6 IMPE Hosp demand (Daily hospital demand Mean A03 S01`region' )
+	(line DayHoiMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash)) /// 7 IMPE Hosp incidence (Daily hospital incidence Mean A03 S01`region' )
+	(line DayIcdMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash_dot)) /// 8 IMPE ICU demand (Daily ICU demand Mean A03 S01`region' )
+	(line DayIciMeRaA03S01`region' date, sort lcolor(magenta) lpattern(longdash_shortdash)) /// 9 IMPE ICU incidence (Daily ICU incidence Mean A03 S01`region' )
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("C-19 daily hospital-related outcomes `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "DELP Hospitalized" 2 "DELP Ventilated" 3 "IHME Bed need" 4 "IHME ICU need" ///
-	5 "IHME Admissions") rows(3) size(small)) ///
+	5 "IHME Admissions" 6 "IMPE Hosp demand" ///
+	7 "IMPE Hosp incidence" 8 "IMPE ICU demand" 9 "IMPE ICU incidence") rows(4) size(small)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 		
 	qui graph export "graph `region' 61a C-19 hospital-related outcomes.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	
@@ -1656,28 +1387,21 @@ foreach region of local list5 {
 	(line DayVenMeRaA01S00`region' date, sort lcolor(red) lpattern(dash)  lwidth(thick)) /// 2 DELP Ventilated (Daily Cases Active Ventilated Mean DELP S0)
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) /// 3 IHME ICU need (Daily ICU beds needed Mean IHME S1)
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) /// 4 IHME Admissions (Daily hospital admissions Mean IHME S1)
+	(line DayHoiMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash)) /// 5 IMPE Hosp incidence (Daily hospital incidence Mean A03 S01`region' )
+	(line DayIcdMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash_dot)) /// 6 IMPE ICU demand (Daily ICU demand Mean A03 S01`region' )
+	(line DayIciMeRaA03S01`region' date, sort lcolor(magenta) lpattern(longdash_shortdash)) /// 7 IMPE ICU incidence (Daily ICU incidence Mean A03 S01`region' )
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("C-19 daily hospital-related outcomes `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "DELP Hospitalized" 2 "DELP Ventilated" 3 "IHME ICU need" ///
-	4 "IHME Admissions") rows(2) size(small)) ///
-	subtitle("Reference scenarios, Without IHME Bed need, 2021 on", size(small)) 
+	4 "IHME Admissions" 5 "IMPE Hosp incidence" 6 "IMPE ICU demand" 7 "IMPE ICU incidence") rows(4) size(small)) ///
+	subtitle("Reference scenarios, Without IHME Bed need, IMPE Hospital demand, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 62b C-19 hospital-related outcomes, wo extremes ICU bed capcity.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1688,29 +1412,21 @@ foreach region of local list5 {
 	(line DayVenMeRaA01S00`region' date, sort lcolor(red) lpattern(dash)  lwidth(thick)) /// 2 DELP Ventilated (Daily Cases Active Ventilated Mean DELP S0)
 	(line DayIcuMeSmA02S01`region' date, sort lcolor(green)) /// 3 IHME ICU need (Daily ICU beds needed Mean IHME S1)
 	(line DayAdmMeSmA02S01`region' date, sort lcolor(yellow)) /// 4 IHME Admissions (Daily hospital admissions Mean IHME S1)
+	(line DayHoiMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash)) /// 5 IMPE Hosp incidence (Daily hospital incidence Mean A03 S01`region' )
+	(line DayIcdMeRaA03S01`region' date, sort lcolor(magenta) lpattern(dash_dot)) /// 6 IMPE ICU demand (Daily ICU demand Mean A03 S01`region' )
+	(line DayIciMeRaA03S01`region' date, sort lcolor(magenta) lpattern(longdash_shortdash)) /// 7 IMPE ICU incidence (Daily ICU incidence Mean A03 S01`region' )
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily outcomes) title("C-19 daily hospital-related outcomes `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "DELP Hospitalized" 2 "DELP Ventilated" 3 "IHME ICU need" ///
-	4 "IHME Admissions") rows(2) size(small)) ///
-	subtitle("Reference scenarios, Without IHME Bed need, 2021 on", size(small)) 
+	4 "IHME Admissions" 5 "IMPE Hosp incidence" 6 "IMPE ICU demand" 7 "IMPE ICU incidence") rows(3) size(small)) ///
+	subtitle("Reference scenarios, Without IHME Bed need, IMPE Hospital demand, 2021 on", size(small)) 
 	
 	qui graph export "graph `region' 63 C-19 hospital-related outcomes, wo extremes, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	*******************************
 	
@@ -1725,30 +1441,20 @@ foreach region of local list5 {
 	(line DayCTDMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line DayCTDMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line DayITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line DayCTDMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"	
+	(line DayITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line DayCTDMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections to deaths) title("C-19 daily cases or infections to deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 		
 	qui graph export "graph `region' 71 C-19 daily cases to deaths, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1758,29 +1464,20 @@ foreach region of local list5 {
 	(line DayCTDMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line DayCTDMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line DayITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line DayCTDMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"		
+	(line DayITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line DayCTDMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"		
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases or infections to deaths) title("C-19 daily cases or infections to deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 72 C-19 daily cases to deaths, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1790,30 +1487,20 @@ foreach region of local list5 {
 	(line TotCTDMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCTDMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCTDMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"			
+	(line TotITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCTDMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"			
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections to deaths) title("C-19 total cases or infections to deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 73 C-19 total cases to deaths, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1823,29 +1510,20 @@ foreach region of local list5 {
 	(line TotCTDMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCTDMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCTDMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"				
+	(line TotITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCTDMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"				
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections to deaths) title("C-19 total cases or infections to deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) 
 	
 	qui graph export "graph `region' 74 C-19 total cases to deaths, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	*******************************
@@ -1864,27 +1542,19 @@ foreach region of local list5 {
 	(line DayDERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line DayDERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line DayDERMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line DayDERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"	
+	(line DayDERMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line DayDERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths estimated to reported) title("C-19 daily deaths estimated to reported, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 81 C-19 daily deaths estimated to reported, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	* daily cases or infections estimated to reported cases
@@ -1898,29 +1568,20 @@ foreach region of local list5 {
 	(line DayCERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line DayCERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line DayITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line DayCERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"			
+	(line DayITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line DayCERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"			
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases estimated to reported) title("C-19 daily cases estimated to reported, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 83 C-19 daily cases estimated to reported, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1930,29 +1591,20 @@ foreach region of local list5 {
 	(line DayCERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line DayCERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line DayITDMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line DayCERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"				
+	(line DayITDMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line DayCERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"				
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.1fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily cases estimated to reported) title("C-19 daily cases estimated to reported, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections"  ///
-	4 "SRIV cases") size(small) row(2)) ///
+	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 4 "IMPE infections" ///
+	5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 84 C-19 daily cases estimated to reported, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1962,29 +1614,19 @@ foreach region of local list5 {
 	(line TotDERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN
 	(line TotDERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotDERMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotDERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"					
+	(line TotDERMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotDERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"					
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths estimated to reported) title("C-19 total deaths estimated to reported, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 85 C-19 total deaths estimated to reported, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -1994,28 +1636,19 @@ foreach region of local list5 {
 	(line TotDERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN
 	(line TotDERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotDERMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotDERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"						
+	(line TotDERMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotDERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"						
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%12.2fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total deaths estimated to reported) title("C-19 total deaths estimated to reported, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 2 "DELP" 3 "IHME" 4 "IMPE" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2021 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 86 C-19 total deaths estimated to reported, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*
-
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -2025,28 +1658,20 @@ foreach region of local list5 {
 	(line TotCERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotIERMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"	
+	(line TotIERMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"	
 	if date >= td(01jan2020) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Total cases or infections estimated to reported cases, size(medium)) title("C-19 total cases or infections estimated to reported cases, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
-	4 "SRIV cases") size(small) row(2)) ///
+	4 "IMPE infections" 5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 87 C-19 total cases estimated to reported, `region', reference scenarios, all time.pdf", replace
 	
-}
-*
-
-
-
-
-
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
+	
 	
 	
 	****
@@ -2056,7 +1681,8 @@ foreach region of local list5 {
 	(line TotCERMeRaA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN"
 	(line TotCERMeRaA01S00`region' date, sort lcolor(red)) /// 2 "DELP"
 	(line TotIERMeSmA02S01`region' date, sort lcolor(black)) /// 3 "IHME"
-	(line TotCERMeRaA05S00`region' date, sort lcolor(green)) /// 4 "SRIV"		
+	(line TotIERMeRaA03S02`region' date, sort lcolor(magenta)) /// 4 "IMPE"
+	(line TotCERMeRaA05S00`region' date, sort lcolor(green)) /// 5 "SRIV"		
 	if date >= td(01jan2021) ///
 	, xtitle(Date) xlabel(#$monthspast01jan2021merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
@@ -2064,26 +1690,18 @@ foreach region of local list5 {
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" ///
-	4 "SRIV cases") size(small) row(2)) ///
+	4 "IMPE infections" 5 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) yscale(titlegap(2))
 	
 	qui graph export "graph `region' 88 C-19 total cases estimated to reported, `region', reference scenarios, 2021.pdf", replace
 	
-}
-*	
+	***
 	
 	
 	
-	
-	
-	
-************* IHME graphs
+	* IHME graphs
 
 	
-	
-local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
-
-foreach region of local list5 {	
 	
 	* daily mask use Percent of population reporting always wearing a mask when leaving home
 	
@@ -2307,8 +1925,8 @@ twoway ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
 (line DayDeaMeSmA00S00GLOBAL date, sort lcolor(black)) ///
-if date >= td(01jan2022) & date <= td(01may2022) ///
-, xtitle(Date) xlabel(#6, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2022) & date <= td(01apr2022) ///
+, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2331,8 +1949,8 @@ twoway ///
 (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2022) & date <= td(01may2022) ///
-, xtitle(Date) xlabel(#5, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+if date >= td(01jan2022) & date <= td(01apr2022) ///
+, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -2363,14 +1981,23 @@ twoway ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue) ) ///
 (line DayDeaMeSmA02S01GLOBAL date, sort lcolor(black)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayDeaMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 1a1 C-19 daily deaths, regions together, IHME, IMPE.pdf", replace
 
@@ -2426,14 +2053,22 @@ twoway ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 1b1 C-19 daily deaths, regions together wo global, IHME, IMPE.pdf", replace
 
@@ -2454,14 +2089,22 @@ twoway ///
 (line DayDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 1b1 C-19 daily deaths, regions together with global, IHME, IMPE.pdf", replace
 
@@ -2722,14 +2365,23 @@ twoway ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line DayINFMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown)) /// IMPE
+(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line DayINFMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
-note("IHME infections: solid curves")
+note("IHME infections: solid curves; IMPE infections: dashed curves")
 
 qui graph export "graph 2a1 C-19 daily infections, regions together, IHME, IMPE.pdf", replace
 
@@ -2784,14 +2436,22 @@ twoway ///
 (line DayINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line DayINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line DayINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line DayINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line DayINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line DayINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line DayINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line DayINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line DayINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line DayINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
-note("IHME infections: solid curves")
+note("IHME infections: solid curves; IMPE infections: dashed curves")
 
 qui graph export "graph 2b1 C-19 daily infections, regions together wo global, IHME, IMPE.pdf", replace
 
@@ -2885,14 +2545,23 @@ twoway ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line TotDeaMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotDeaMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 3a1 C-19 total deaths, regions together, IHME, IMPE.pdf", replace
 
@@ -2945,14 +2614,22 @@ twoway ///
 (line TotDeaMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotDeaMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotDeaMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotDeaMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotDeaMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotDeaMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotDeaMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotDeaMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotDeaMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 3b1 C-19 total deaths, regions together wo global, IHME, IMPE.pdf", replace
 
@@ -3053,14 +2730,23 @@ twoway ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
 (line TotINFMeSmA02S01GLOBAL date, sort lcolor(black)) /// 
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
+(line TotINFMeRaA03S02GLOBAL date, sort lcolor(black) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 4a1 C-19 total infections, regions together, IHME, IMPE.pdf", replace
 
@@ -3113,14 +2799,22 @@ twoway ///
 (line TotINFMeSmA02S01EURO date, sort lcolor(green)) ///
 (line TotINFMeSmA02S01SEARO date, sort lcolor(cyan)) ///
 (line TotINFMeSmA02S01WPRO date, sort lcolor(blue)) ///
+(line TotINFMeRaA03S02AFRO date, sort lcolor(brown) lpattern(dash)) /// IMPE
+(line TotINFMeRaA03S02AMRO date, sort lcolor(red) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR1 date, sort lcolor(orange) lpattern(dash)) ///
+(line TotINFMeRaA03S02AMR2 date, sort lcolor(purple) lpattern(dash)) ///
+(line TotINFMeRaA03S02EMRO date, sort lcolor(gold) lpattern(dash)) ///
+(line TotINFMeRaA03S02EURO date, sort lcolor(green) lpattern(dash)) ///
+(line TotINFMeRaA03S02SEARO date, sort lcolor(cyan) lpattern(dash)) ///
+(line TotINFMeRaA03S02WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
-note("IHME: solid curves")
+note("IHME: solid curves; IMPE: dashed curves")
 
 qui graph export "graph 4b1 C-19 total infections, regions together wo global, IHME, IMPE.pdf", replace
 

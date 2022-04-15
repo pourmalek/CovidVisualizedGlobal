@@ -18,7 +18,7 @@
 global DELPdate 20220415
 *            2/ --------
 
-global IHMEdate 20220322
+global IHMEdate 2022-04-08
 *            3/ --------
 
 global IMPEdate 2022-01-31_v9 
