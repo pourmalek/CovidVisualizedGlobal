@@ -1040,17 +1040,17 @@ foreach var of varlist DayCaMMeRaA05S00-TotDeaUpRaA05S00 {
 
 * Forecast start date 
 
-gen epoch_SRIV = td(08Apr2022) // update release date
+gen epoch_SRIV = td($SRIVepoch) // update release date
 label var epoch_SRIV "SRIV Forecast start date"
 
 foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
 	gen DayDeaFOREA05S00`var' = DayDeaMeSmA05S00`var'
-	replace DayDeaFOREA05S00`var' = . if date < td(08Apr2022)
+	replace DayDeaFOREA05S00`var' = . if date < td($SRIVepoch)
 	label var DayDeaFOREA05S00`var' "Daily Forecasted Deaths Mean raw SRIV `var'"
 	
 	gen DayCasFOREA05S00`var' = DayCasMeSmA05S00`var'
-	replace DayCasFOREA05S00`var' = . if date < td(08Apr2022)
+	replace DayCasFOREA05S00`var' = . if date < td($SRIVepoch)
 	label var DayCasFOREA05S00`var' "Daily Forecasted Cases smooth raw SRIV `var'"
 
 }

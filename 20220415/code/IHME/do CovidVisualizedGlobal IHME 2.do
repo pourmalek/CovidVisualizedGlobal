@@ -570,17 +570,17 @@ foreach var of varlist DayINFMeSmA02S01-inf_hosp_A02S03 {
 
 * Forecast start date 
 
-gen epoch_IHME = td(08Apr2022) // update release date
+gen epoch_IHME = td($IHMEepoch) // as per https://covid19.healthdata.org/global?view=daily-deaths&tab=trend
 label var epoch_IHME "IHME Forecast start date"
 
 foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
 	gen DayDeaFOREA02S01`var' = DayDeaMeSmA02S01`var'
-	replace DayDeaFOREA02S01`var' = . if date < td(08Apr2022)
+	replace DayDeaFOREA02S01`var' = . if date < td($IHMEepoch)
 	label var DayDeaFOREA02S01`var' "Daily Forecasted Deaths Mean smoothed IHME `var'"
 	
 	gen DayINFFOREA02S01`var' = DayINFMeSmA02S01`var'
-	replace DayINFFOREA02S01`var' = . if date < td(08Apr2022)
+	replace DayINFFOREA02S01`var' = . if date < td($IHMEepoch)
 	label var DayINFFOREA02S01`var' "Daily Forecasted Infections Mean smoothed IHME `var'"
 
 }

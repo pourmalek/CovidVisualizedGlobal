@@ -173,17 +173,17 @@ foreach var of varlist TotDeaMeRaA03S01-DayINFMeSmA03S06 {
 
 * Forecast start date 
 
-gen epoch_IMPE = td(31Jan2022) // update release date
+gen epoch_IMPE = td($IMPEepoch) // update release date
 label var epoch_IMPE "IMPE Forecast start date"
 
 foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
 	gen DayDeaFOREA03S02`var' = DayDeaMeRaA03S02`var'
-	replace DayDeaFOREA03S02`var' = . if date < td(31Jan2022)
+	replace DayDeaFOREA03S02`var' = . if date < td($IMPEepoch)
 	label var DayDeaFOREA03S02`var' "Daily Forecasted Deaths Mean raw IMPE `var'"
 	
 	gen DayINFFOREA03S02`var' = DayINFMeSmA03S02`var'
-	replace DayINFFOREA03S02`var' = . if date < td(31Jan2022)
+	replace DayINFFOREA03S02`var' = . if date < td($IMPEepoch)
 	label var DayINFFOREA03S02`var' "Daily Forecasted Infections Mean raw IMPE `var'"
 
 }

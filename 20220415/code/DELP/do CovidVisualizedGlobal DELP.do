@@ -2697,17 +2697,17 @@ DayDeaMeSmA01S00    DayCasMeSmA01S00	DayDeaLoSmA01S00    DayCasLoSmA01S00	DayDea
 
 * Forecast start date 
 
-gen epoch_DELP = td(08Apr2022) // update release date
+gen epoch_DELP = td($DELPepoch) // update release date
 label var epoch_DELP "DELP Forecast start date"
 
 foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
 	gen DayDeaFOREA01S00`var' = DayDeaMeRaA01S00`var'
-	replace DayDeaFOREA01S00`var' = . if date < td(08Apr2022)
+	replace DayDeaFOREA01S00`var' = . if date < td($DELPepoch)
 	label var DayDeaFOREA01S00`var' "Daily Forecasted Deaths Mean raw DELP `var'"
 	
 	gen DayCasFOREA01S00`var' = DayCasMeRaA01S00`var'
-	replace DayCasFOREA01S00`var' = . if date < td(08Apr2022)
+	replace DayCasFOREA01S00`var' = . if date < td($DELPepoch)
 	label var DayCasFOREA01S00`var' "Daily Forecasted Cases Mean raw DELP `var'"
 
 }
