@@ -31,18 +31,9 @@ clear
 * get IHME estimates
 
 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2020.csv data_download_file_reference_2020.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2021.csv data_download_file_reference_2021.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_reference_2022.csv data_download_file_reference_2022.csv 
-
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_best_masks_2020.csv data_download_file_best_masks_2020.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_best_masks_2021.csv data_download_file_best_masks_2021.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_best_masks_2022.csv data_download_file_best_masks_2022.csv 
-
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_third_dose_2020.csv data_download_file_third_dose_2020.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_third_dose_2021.csv data_download_file_third_dose_2021.csv 
-copy https://ihmecovid19storage.blob.core.windows.net/latest/data_download_file_third_dose_2022.csv data_download_file_third_dose_2022.csv 
-
+copy https://ihmecovid19storage.blob.core.windows.net/archive/$IHMEdate/ihme-covid19.zip ihme-covid19.zip
+unzipfile ihme-covid19.zip, replace
+erase ihme-covid19.zip 
 
 
 
