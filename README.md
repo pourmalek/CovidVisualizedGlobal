@@ -230,7 +230,7 @@ The latest available IMPE update (i.e., 2022-01-31) is 75 days old on 2022-04-08
 
 (3c) Global Daily deaths, 3 scenarios, 2021 on, IMPE
 
-The latest available IMPE update (i.e., 2022-01-31) is 68 days old on 2022-04-08. Not included.
+The latest available IMPE update (i.e., 2022-01-31) is 75 days old on 2022-04-08. Not included.
 
 ****
 
