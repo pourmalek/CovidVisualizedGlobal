@@ -18,7 +18,7 @@
 global DELPdate 20220429
 *            2/ --------
 
-global IHMEdate 20220322
+global IHMEdate 2022-04-08
 *            3/ --------
 
 global IMPEdate 2022-01-31_v9 
@@ -28,29 +28,25 @@ global SRIVdate 2022-04-29
 *            5/ ----------
 
 
-/* 
+***************************************
 
-This file "do CovidVisualizedGlobal master.do" was set up to be run from:
-  |Users|local-user-name|Downloads|CovidVisualizedGlobal-main|202YMMDD|code|master|do CovidVisualizedGlobal master.do
-  where 2021MMDD is the udpate date, e.g. update 20220429
+* set epoch for marking forecasts with ||||||||||
 
-If the first run does not go thru due to directory path clash, edit the contents within " " of the line _59_ or _62_ below, located beneath ****** set path based on local operating system ****** ,,, 
-,,, to reflect the location of directory /CovidVisualizedGlobal-main/ or \CovidVisualizedGlobal-main\ on your local machine. Path should be:
+global DELPepoch 29Apr2022 // update release date
+*            6/ ----------
 
+global IHMEepoch 01Apr2022 // as per https://covid19.healthdata.org/global?view=daily-deaths&tab=trend
+*            7/ ----------
 
-global pathCovidVisualizedGlobal "/Users/`usrnam'/Downloads/CovidVisualizedGlobal-main/202YMMDD/code/" [for Mac]
+global IMPEepoch 31Jan2022 // update release date																		 
+*            8/ ----------
 
-global pathCovidVisualizedGlobal = "C:\Users\\`usrnam'\Downloads\CovidVisualizedGlobal-main\202YMMDD\code\" [for Windows]
-
-
-
-It can be moved to and run from anywhere else as far as path requirements are adjusted. 
-
-This code was developed and run using Stata SE 14.2 on MacOS Big Sur 11.2.2 (also ran on same flavour of Stata on Windows 10).
-
-*/
+global SRIVepoch 29Apr2022 // update release date																		 
+*            9/ ----------
 
 
+
+****************************************
 
 * setup Stata path by operating system 
 
