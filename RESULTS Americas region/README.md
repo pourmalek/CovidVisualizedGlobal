@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679026-1b49ed09-2120-4781-bd30-bfc20dbd1f15.png)
 
 *
 
@@ -189,7 +191,9 @@ List of graphs:
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679050-28833a51-ec44-4fbb-9f1d-10504c825fae.png)
 
 *
 
@@ -338,7 +342,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(3b) Americas region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2014b%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679072-6168b9a5-6afb-455e-8173-0d4da527257a.png)
 
 *
 
@@ -384,7 +390,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2022%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679093-8af3de3f-2934-45c7-96d1-4d305c958d7e.png)
 
 *
 
@@ -540,7 +548,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(6) Americas region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2024%20C-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679111-1b82faac-c3b4-4b63-b470-cc5bcb52e191.png)
 
 *
 
@@ -692,7 +702,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220415**: **_DELP 20220415_**, IHME 20220408, no IMPE, **_SRIV 20220413_** || Days old: DELP 0, IHME 7, no IMPE, SRIV 2
 
+(6b) Americas region [Daily reference, 3 scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220415/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/163679117-8f4fee8b-13f8-4917-96da-bc59c6fa56da.png)
 
 *
 
