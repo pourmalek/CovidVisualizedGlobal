@@ -283,11 +283,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 82 days old on 2022-04-08
 
 (13) Regions together [Total deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%203a2%20C-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/164910593-193fa8ae-b62c-4e15-9331-e790785fb29d.png)
 
 ****
 
 (14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%203b2%20C-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/164910617-accef15b-4004-4d6f-ae1e-625ad3c1de24.png)
 
 ****
 
