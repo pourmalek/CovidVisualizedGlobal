@@ -253,7 +253,7 @@ The latest available IMPE update (i.e., 2022-01-31) is 82 days old on 2022-04-08
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/164874248-c15f33cc-20ee-4501-a09f-676ff982836c.png)
+![image](https://user-images.githubusercontent.com/30849720/164910532-44cca9e6-41a3-4802-bd56-56f26a0d26b4.png)
 
 ****
 
