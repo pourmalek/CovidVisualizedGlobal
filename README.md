@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 40 - 2022-04-15 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/40%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2040%20–%202022-04-15.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 41 - 2022-04-22 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/41%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2041%20–%202022-04-22.pdf)
 
 
 
@@ -170,7 +170,7 @@ Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 40 - 2022-04-15 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/40%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2040%20–%202022-04-15.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 41 - 2022-04-22 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/41%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2041%20–%202022-04-22.pdf)
 
 
   
