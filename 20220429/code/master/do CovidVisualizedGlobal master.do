@@ -130,7 +130,7 @@ do "$pathCovidVisualizedGlobal/DELP/do CovidVisualizedGlobal DELP.do"
 
 do "$pathCovidVisualizedGlobal/IHME/do CovidVisualizedGlobal IHME.do" 
 
-do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
+// do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
 // do "$pathCovidVisualizedGlobal/LANL/do CovidVisualizedGlobal LANL.do" // The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 

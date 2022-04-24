@@ -71,7 +71,7 @@ drop _merge
 
 
 
-* IMPE
+/* IMPE
 
 if regexm(c(os),"Mac") == 1 {
 
@@ -79,7 +79,7 @@ if regexm(c(os),"Mac") == 1 {
 }
 else if regexm(c(os),"Windows") == 1 merge 1:1 date using "$pathCovidVisualizedGlobal\IMPE\CovidVisualizedGlobal IMPE.dta"
 
-drop _merge
+drop _merge */
 
 
 
@@ -174,7 +174,7 @@ foreach region of local list5 {
 	
 	
 	
-	
+	/*
 	gen DayITDMeRaA03S01`region'  = DayINFMeSmA03S01`region'  / DayDeaMeRaA03S01`region'   
 	
 	label var DayITDMeRaA03S01`region'  "Daily infections to Deaths S1 IMPE"
@@ -204,7 +204,7 @@ foreach region of local list5 {
 	gen TotITDMeRaA03S03`region'  = TotINFMeRaA03S03`region'  / TotDeaMeRaA03S03`region'   
 	
 	label var TotITDMeRaA03S03`region'  "Total infections to Deaths S3 IMPE"
-	
+	*/
 	
 	
 	gen DayCTDMeRaA05S00`region'  = DayCasMeSmA05S00`region'  / DayDeaMeSmA05S00`region'   
@@ -243,7 +243,7 @@ foreach region of local list5 {
 	label var DayDERMeSmA02S02`region' "Daily Deaths estim to reported Mean smoothed IHME S2"
 	
 	
-	
+	/*
 	gen DayDERMeRaA03S01`region' = DayDeaMeRaA03S01`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA03S01`region' "Daily Deaths estim to reported Mean S1 IMPE"
@@ -257,7 +257,7 @@ foreach region of local list5 {
 	gen DayDERMeRaA03S03`region' = DayDeaMeRaA03S03`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA03S03`region' "Daily Deaths estim to reported Mean S3 IMPE"
-	
+	*/s
 	
 	gen DayDERMeRaA05S00`region'  = DayDeaMeSmA05S00`region' / DayDeaMeRaA00S00`region'
 	
@@ -291,7 +291,7 @@ foreach region of local list5 {
 	label var DayIERMeSmA02S02`region' "Daily infections estim to reported cases Mean smoothed IHME S2"
 	
 	
-	
+	/*
 	gen DayIERMeRaA03S01`region' = DayINFMeSmA03S01`region' / DayCasMeRaA00S00`region'
 	
 	label var DayIERMeRaA03S01`region' "Daily infections estim to reported cases Mean S1 IMPE"
@@ -305,7 +305,7 @@ foreach region of local list5 {
 	gen DayIERMeRaA03S03`region' = DayINFMeSmA03S03`region' / DayCasMeRaA00S00`region'
 	
 	label var DayIERMeRaA03S03`region' "Daily infections estim to reported cases Mean S3 IMPE"
-	
+	*/
 	
 	gen DayCERMeRaA05S00`region'  = DayCasMeSmA05S00`region' / DayCasMeRaA00S00`region'
 	
@@ -339,7 +339,7 @@ foreach region of local list5 {
 	label var TotDERMeSmA02S02`region' "Total Deaths estim to reported Mean smoothed IHME S2"
 	
 	
-	
+	/*
 	gen TotDERMeRaA03S01`region' = TotDeaMeRaA03S01`region' / TotDeaMeRaA00S00`region'
 	
 	label var TotDERMeRaA03S01`region' "Total Deaths estim to reported Mean S1 IMPE"
@@ -353,7 +353,7 @@ foreach region of local list5 {
 	gen TotDERMeRaA03S03`region' = TotDeaMeRaA03S03`region' / TotDeaMeRaA00S00`region'
 	
 	label var TotDERMeRaA03S03`region' "Total Deaths estim to reported Mean S3 IMPE"
-	
+	*/
 	
 	gen TotDERMeRaA05S00`region'  = TotDeaMeRaA05S00`region' / TotDeaMeRaA00S00`region'
 	
@@ -387,7 +387,7 @@ foreach region of local list5 {
 	label var TotIERMeSmA02S02`region' "Total infections estim to reported cases Mean smoothed IHME S2"
 	
 	
-	
+	/*
 	gen TotIERMeRaA03S01`region' = TotINFMeRaA03S01`region' / TotCasMeRaA00S00`region'
 	
 	label var TotIERMeRaA03S01`region' "Total infections estim to reported cases Mean S1 IMPE"
@@ -401,7 +401,7 @@ foreach region of local list5 {
 	gen TotIERMeRaA03S03`region' = TotINFMeRaA03S03`region' / TotCasMeRaA00S00`region'
 	
 	label var TotIERMeRaA03S03`region' "Total infections estim to reported cases Mean S3 IMPE"
-	
+	*/
 	
 	gen TotCERMeRaA05S00`region'  = TotCasMeRaA05S00`region' / TotCasMeRaA00S00`region'
 	
@@ -1245,13 +1245,13 @@ foreach region of local list5 {
 	
 	label var DayITCMeSmA02S01`region'  "Daily Infections IHME to cases JOHN"
 	
-	
+	/*
 	capture drop DayITCMeRaA03S02`region'
 	
 	gen DayITCMeRaA03S02`region' =  DayINFMeSmA03S02`region' / DayCasMeRaA00S00`region'
 	
 	label var DayITCMeRaA03S02`region'  "Daily Infections IMPE to cases JOHN"
-	
+	*/
 	
 	twoway ///
 	(line DayITCMeSmA02S01`region' date, sort lcolor(black)) /// 1 "IHME"
@@ -1294,7 +1294,7 @@ foreach region of local list5 {
 	
 	
 	foreach var of varlist ///
-	DayITCMeSmA02S01`region' DayITCMeRaA03S02`region' {
+	DayITCMeSmA02S01`region' {
 	
 	
 	tssmooth ma `var'_w = `var', window(3 1 3) // _w = _window
@@ -1310,7 +1310,7 @@ foreach region of local list5 {
 	
 	
 	
-	labvars DayITCMeSmA02S01`region'sm DayITCMeRaA03S02`region'sm ,names
+	labvars DayITCMeSmA02S01`region'sm ,names
 	
 			  
 	qui summ DayITCMeSmA02S01`region'sm if date >= td(01jan2021) , detail
@@ -1322,13 +1322,13 @@ foreach region of local list5 {
 	local DayITCMeSmA02S01`region'sm_m = DayITCMeSmA02S01`region'sm_m
 	
 	
-	qui summ DayITCMeRaA03S02`region'sm if date >= td(01jan2021) , detail
+	/* qui summ DayITCMeRaA03S02`region'sm if date >= td(01jan2021) , detail
 	
 	gen DayITCMeRaA03S02`region'sm_m = r(p50)
 	
 	replace DayITCMeRaA03S02`region'sm_m = round(DayITCMeRaA03S02`region'sm_m)
 	
-	local DayITCMeRaA03S02`region'sm_m = DayITCMeRaA03S02`region'sm_m
+	local DayITCMeRaA03S02`region'sm_m = DayITCMeRaA03S02`region'sm_m */
 	
 	twoway ///
 	(line DayITCMeSmA02S01`region' date, sort lcolor(black*0.2)) /// 1 "IHME"
