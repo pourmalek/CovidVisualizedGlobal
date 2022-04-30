@@ -10,6 +10,17 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 <br/><br/>
 
+**Summary 20220429**
+
+Reported daily deaths are bouncing up at the global level and all regional levels except African and Eastern Mediterranean regions. 
+
+Reported daily cases are bouncing up at the global level and all regional levels except African, Eastern Mediterranean, and South East Asian regions. 
+
+**Recipe for the next waves:**
+
+Abandoning Non-Pharmaceutical Interventions (NPIs) sets the stage for increase of susceptible population. Emergent variants will feed on the pool of susceptible population. 
+
+
 <br/><br/>
 
 ****
@@ -247,11 +258,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166119599-10aaeb33-1c68-40e3-a653-b6ec6a7eb4f3.png)
 
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166119621-d3cec7c3-9a11-496d-a1dd-2c9e881d1d6f.png)
 
 ****
 
