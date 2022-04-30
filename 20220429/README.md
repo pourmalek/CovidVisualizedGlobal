@@ -10,6 +10,18 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 <br/><br/>
 
+**Summary 20220429**
+
+Models’ predictions for the future trajectory of the epidemic are quite divergent. The latest update of the IHME model is three weeks old. The IMPE model is out. 
+
+Reported daily deaths are bouncing up at the global level and all regional levels except African and Eastern Mediterranean regions. 
+
+Reported daily cases are bouncing up at the global level and all regional levels except African, Eastern Mediterranean, and South East Asian regions. 
+
+_Recipe for the next waves:_
+
+Abandoning Non-Pharmaceutical Interventions (NPIs) sets the stage for increase of susceptible population. Emergent variants will feed on the pool of susceptible population. 
+
 <br/><br/>
 
 ****
