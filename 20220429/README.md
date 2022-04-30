@@ -12,6 +12,8 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 **Summary 20220429**
 
+Models’ predictions for the future trajectory of the epidemic are quite divergent. The latest update of the IHME model is three weeks old. 
+
 Reported daily deaths are bouncing up at the global level and all regional levels except African and Eastern Mediterranean regions. 
 
 Reported daily cases are bouncing up at the global level and all regional levels except African, Eastern Mediterranean, and South East Asian regions. 
