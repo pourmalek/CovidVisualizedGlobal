@@ -126,6 +126,7 @@ foreach region of local list5 {
 
 	qui {
 
+
 	* Cases or infections to deaths ratio
 	
 	
@@ -257,7 +258,7 @@ foreach region of local list5 {
 	gen DayDERMeRaA03S03`region' = DayDeaMeRaA03S03`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA03S03`region' "Daily Deaths estim to reported Mean S3 IMPE"
-	*/s
+	*/
 	
 	gen DayDERMeRaA05S00`region'  = DayDeaMeSmA05S00`region' / DayDeaMeRaA00S00`region'
 	
@@ -459,7 +460,7 @@ merge m:m date using "CovidVisualizedGlobal merge.dta"
 
 sort date loc_grand_name
 
-isid date loc_grand_name
+isid date loc_grand_name, missok
 
 drop _merge
 
