@@ -574,11 +574,13 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 (6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2024%20C-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153321-f1ff8328-440a-4884-a740-68ff3e8bcca7.png)
  
 ****
 
 (6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153702-62809577-1ee3-481a-babe-26d6ff17e5ee.png)
 
 ****
 
