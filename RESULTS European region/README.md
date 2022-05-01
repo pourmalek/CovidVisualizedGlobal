@@ -31,7 +31,9 @@ List of graphs:
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153750-e59d273a-0e1e-4444-9e0a-892b00708368.png)
 
 *
 
@@ -201,7 +203,9 @@ List of graphs:
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(3) European region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2014%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153772-5213b51e-1e36-4c08-b04a-a33f99165b04.png)
 
 *
 
@@ -365,7 +369,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166156096-d020e232-ae12-4b19-a201-474b13d55ade.png)
 
 *
 
@@ -426,7 +432,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2022%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166156140-4dd6cdc5-0979-49e7-bb57-416b50b55726.png)
 
 *
 
@@ -598,7 +606,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2024%20C-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166156170-344d34d5-4cd8-4a35-b978-70ec0fea146c.png)
 
 *
 
@@ -765,7 +775,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(6b) European region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EURO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EURO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166156198-56c43b04-c840-467e-977d-08ca115a5217.png)
 
 *
 
