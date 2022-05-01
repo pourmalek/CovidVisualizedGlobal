@@ -10,6 +10,18 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 <br/><br/>
 
+**Summary 20220429**
+
+Models’ predictions for the future trajectory of the epidemic are quite divergent. The latest update of the IHME model is three weeks old. The IMPE model is out. 
+
+Reported daily deaths are bouncing up at the global level and all regional levels except African and Eastern Mediterranean regions. 
+
+Reported daily cases are bouncing up at the global level and all regional levels except African, Eastern Mediterranean, and South East Asian regions. 
+
+_Recipe for the next waves:_
+
+Abandoning Non-Pharmaceutical Interventions (NPIs) sets the stage for increase of susceptible population. Emergent variants will feed on the pool of susceptible population. 
+
 <br/><br/>
 
 ****
@@ -241,61 +253,73 @@ The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128026-e2b6a6c9-e9b0-4330-b7fd-31cebb79d131.png)
 
 ****
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128052-e1297f67-3911-4a15-8eeb-7d945be8612b.png)
 
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128085-c31b6f80-16f7-42ad-8ddf-84b4bb6df08d.png)
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128105-7286eed2-8e65-401d-910c-6be61586ce19.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128114-c90fc2ac-31e3-45af-bf65-17aa468aceaa.png)
 
 ****
 
 (11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128152-b81d490a-69a9-4f7f-a0e6-95b4a70b0c9e.png)
 
 ****
 
 (12) Regions together [Total deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203b1%20C-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128165-318980d0-e2fc-40b6-bda3-ec2d51329acd.png)
 
 ****
 
 (13) Regions together [Total deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203a2%20C-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128176-ce8826b8-7ec5-4c00-b29c-be542110f6ff.png)
 
 ****
 
 (14) Regions together [Total deaths, without GLOBAL, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203b2%20C-19%20total%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128188-41d55865-0f59-4eb0-8c06-27a23542206c.png)
 
 ****
 
 (15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128201-1d66c482-9db7-4911-80eb-1e0225f4a54c.png)
 
 ****
 
 (16) Regions together [Total excess deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128214-204f0cf9-6a0b-4a9b-a217-73f4784b8b78.png)
 
 ****
 
 (17) Regions together [Total infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%204a1%20C-19%20total%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166128228-a0af26af-8ba4-4402-b0e1-665cd4688cfc.png)
 
 ****
 
