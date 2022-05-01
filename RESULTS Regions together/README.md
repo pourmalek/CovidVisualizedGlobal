@@ -1190,9 +1190,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
-(5) Regions together [Daily excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/164874113-15db7472-22a5-42e6-8788-8e4af61144f0.png)
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1341,9 +1339,7 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
-(6) Regions together [Daily excess deaths, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20IHME.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/164874135-1a95fdd2-9192-449d-8a49-650f3962a562.png)
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
@@ -1485,7 +1481,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166147151-b663f828-8766-4008-b83a-f90da22553ce.png)
 
 *
 
@@ -1616,7 +1614,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166147172-1e629995-0e41-4e82-b7a5-20db5fa5fab0.png)
 
 *
 
@@ -1748,7 +1748,9 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166147194-dd627f58-0d34-4ca6-911c-efbdb7922b09.png)
 
 *
 
@@ -1881,15 +1883,13 @@ Both this and the previous uptake use the same model update, so the graphs are i
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
-
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
-(7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
-
-![image](https://user-images.githubusercontent.com/30849720/164874223-cd2a2f34-9fd4-4add-82e7-60d2458063fc.png)
+Both this and the previous uptake use the same model update, so the graphs are identical.
 
 *
 
