@@ -28,6 +28,12 @@ List of graphs:
   
 *
 
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+
+
+
+*
+
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
@@ -193,6 +199,12 @@ List of graphs:
   
 *
 
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+
+
+
+*
+
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
 (3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%20AFRO%2014%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
@@ -355,6 +367,12 @@ This graph was not generated for this uptake.
 
 *
 
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+
+
+
+*
+
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
 (3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
@@ -399,6 +417,12 @@ This graph was not generated for this uptake.
  
  
   
+*
+
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+
+
+
 *
 
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
@@ -566,6 +590,12 @@ This graph was not generated for this uptake.
   
 *
 
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+
+
+
+*
+
 **uptake 20220422**: **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220422/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -724,6 +754,12 @@ This graph was not generated for this uptake.
 
 ### (6b) African region - Daily cases or infections, reference scenarios, 2022 on
 
+
+
+
+*
+
+**uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
 
 
