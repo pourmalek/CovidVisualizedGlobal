@@ -507,7 +507,7 @@ summ date
 gen mergemaxdate = r(max)
 
 
-gen monthspast01jan2020merge = ((mergemaxdate - td(01jan2020)) / 30)
+gen monthspast01jan2020merge = ((mergemaxdate - td(01jan2020)) / 30) + 1
 
 replace monthspast01jan2020merge = round(monthspast01jan2020merge)
 
@@ -517,7 +517,7 @@ di $monthspast01jan2020merge
 
 
 
-gen monthspast01jan2021merge = ((mergemaxdate - td(01jan2021)) / 30)
+gen monthspast01jan2021merge = ((mergemaxdate - td(01jan2021)) / 30) + 1
 
 replace monthspast01jan2021merge = round(monthspast01jan2021merge)
 
@@ -527,7 +527,7 @@ di $monthspast01jan2021merge
 
 
 
-gen monthspast01jan2022merge = ((mergemaxdate - td(01jan2022)) / 30)
+gen monthspast01jan2022merge = ((mergemaxdate - td(01jan2022)) / 30) + 1
 
 replace monthspast01jan2022merge = round(monthspast01jan2022merge)
 
