@@ -32,7 +32,9 @@ List of graphs:
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(1) Eastern Mediterranean region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166152843-cf88a7e8-b553-454e-8d8c-f9daf601aec5.png)
 
 *
 
@@ -206,7 +208,9 @@ List of graphs:
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(3) Eastern Mediterranean region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2014%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166152874-204d7b7c-78f7-4c42-9663-585ce8fcd2d2.png)
 
 *
 
@@ -375,7 +379,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166152915-00f6823c-c405-49a6-bec8-7433678b9b2c.png)
 
 *
 
@@ -434,7 +440,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2022%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166152939-ae16f5ef-a28b-401b-b414-1e0e89571ec5.png)
 
 *
 
@@ -610,7 +618,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2024%20C-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153321-f1ff8328-440a-4884-a740-68ff3e8bcca7.png)
 
 *
 
@@ -776,7 +786,9 @@ This graph was not generated for this uptake.
 
 **uptake 20220429**: **_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_** || Days old: DELP 0, IHME 21, no IMPE, SRIV 0
 
+(6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/166153702-62809577-1ee3-481a-babe-26d6ff17e5ee.png)
 
 *
 
