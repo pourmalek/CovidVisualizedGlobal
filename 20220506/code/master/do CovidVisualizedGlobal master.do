@@ -17,26 +17,35 @@
 
 * set epoch for marking forecasts with ||||||||||
 
-global DELPepoch 06May2022 // update release date
+global DELPepoch 02May2022 // update release date
 *            2/ ----------
 
-global IHMEepoch 01Apr2022 // as per https://covid19.healthdata.org/global?view=daily-deaths&tab=trend
+global IHMEepoch 29Apr2022 // as per https://covid19.healthdata.org/iran-(islamic-republic-of)?view=daily-deaths&tab=trend
 *            3/ ----------
 
-global SRIVepoch 06May2022 // update release date																		 
-*            4/ ----------
+global IMPEdate 2022-03-15_v9 
+*            4/ -------------
+
+global SRIVdate 2022-05-02
+*            5/ ----------
+
+
+
 
 
 * To change uptake date in individual do files for models, change the following dates:
 
-global DELPdate 20220506
-*            5/ --------
-
-global IHMEdate 2022-04-08
+global DELPdate 20220502 
 *            6/ --------
 
-global SRIVdate 2022-05-06
-*            7/ ----------
+global IHMEdate 2022-05-06
+*            7/ --------
+
+global IMPEepoch 15Mar2022 // update release date																		 
+*            8/ ----------
+
+global SRIVepoch 02May2022 // update release date																		 
+*            9/ ----------
 
 
 
@@ -105,9 +114,17 @@ List of component studies:
 JOHN
 DELP
 IHME
-IMPE * discontinued
+IMPE 
 LANL * discontinued
 SRIV
+
+WHO	 A06 * 
+* Global excess deaths associated with COVID-19 (modelled estimates) 
+* Most recent update: 5 May 2022
+* Temporal coverage	1 January 2020 - 31 December 2021
+* Source web page:
+* https://www.who.int/data/sets/global-excess-deaths-associated-with-covid-19-modelled-estimates
+
 */
 
 
@@ -124,11 +141,13 @@ do "$pathCovidVisualizedGlobal/DELP/do CovidVisualizedGlobal DELP.do"
 
 do "$pathCovidVisualizedGlobal/IHME/do CovidVisualizedGlobal IHME.do" 
 
-// do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" // The latest / last available update of the IMPE model was for 2022-01-31. 
+do "$pathCovidVisualizedGlobal/IMPE/do CovidVisualizedGlobal IMPE.do" 
 
 // do "$pathCovidVisualizedGlobal/LANL/do CovidVisualizedGlobal LANL.do" // The LANL COVID-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 
 do "$pathCovidVisualizedGlobal/SRIV/do CovidVisualizedGlobal SRIV.do" 
+
+do "$pathCovidVisualizedGlobal/WHO/do CovidVisualizedGlobal WHO.do" 
 
 do "$pathCovidVisualizedGlobal/merge/do CovidVisualizedGlobal merge.do" 
 

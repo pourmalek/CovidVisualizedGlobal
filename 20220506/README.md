@@ -1,12 +1,17 @@
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 42 - 2022-04-29 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/42%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2042%20–%202022-04-29.pdf) 
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 43 - 2022-05-06 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/43%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2043%20–%202022-05-06.pdf) 
 
-### Study update dates in uptake 20220429
+### Study update dates in uptake 20220506
 
-**_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_**
+**_DELP 20220502_**, **_IHME 20220506_**, **_IMPE 20220315_**, **_SRIV 20220502_**, **_WHO 20220505_**
 
-Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+Days old: DELP 4, IHME 0, IMPE 53, SRIV 4, WHO 1
 
-The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08. Not included.
+IMPE update 20220315 was released on 20220505.
+
+WHO	: Global excess deaths associated with COVID-19 (modelled estimates) 
+Most recent update: 5 May 2022 // Temporal coverage	1 January 2020 - 31 December 2021 //
+Source web page:
+https://www.who.int/data/sets/global-excess-deaths-associated-with-covid-19-modelled-estimates
 
 <br/><br/>
 

@@ -214,6 +214,7 @@ foreach l of local levels {
 
 
 
+
 * append country files
 
 
@@ -983,6 +984,70 @@ qui {
 
 
 
+capture replace TotDayCasLoRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotCasLoRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotCasMeRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotCasUpRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaLoRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaMeRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00AFRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00AMR1 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00AMR2 = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00AMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00EMRO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00EURO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00GLOBAL = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00SEARO = . if DayCasLoRaA05S00 == .
+capture replace TotDeaUpRaA05S00WPRO = . if DayCasLoRaA05S00 == .
+
+
+
+
 
 
 * gen vars by location 
@@ -1055,6 +1120,13 @@ foreach var in AFRO AMRO AMR1 AMR2 EMRO EURO GLOBAL SEARO WPRO {
 
 }
 *
+
+
+
+
+
+
+
 
 
 order loc_grand_name date

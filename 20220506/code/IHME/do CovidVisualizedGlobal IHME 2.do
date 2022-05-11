@@ -114,6 +114,7 @@ order date loc_grand_name
 sort date loc_grand_name
 
 qui compress
+
 save "IHME AFRO.dta", replace
 
 

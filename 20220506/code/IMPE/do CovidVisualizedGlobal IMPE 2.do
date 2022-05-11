@@ -112,6 +112,130 @@ drop *_w
 
 
 
+
+
+tssmooth ma DayINFLoRaA03S01_w = DayINFLoRaA03S01, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S01 = DayINFLoRaA03S01_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S01 "Daily infections smooth A03 IMPE S01"
+
+drop *_w
+
+
+
+tssmooth ma DayINFLoRaA03S02_w = DayINFLoRaA03S02, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S02 = DayINFLoRaA03S02_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S02 "Daily infections smooth A03 IMPE S02"
+
+drop *_w
+
+
+
+tssmooth ma DayINFLoRaA03S03_w = DayINFLoRaA03S03, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S03 = DayINFLoRaA03S03_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S03 "Daily infections smooth A03 IMPE S03"
+
+drop *_w
+
+
+
+tssmooth ma DayINFLoRaA03S04_w = DayINFLoRaA03S04, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S04 = DayINFLoRaA03S04_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S04 "Daily infections smooth A03 IMPE S04"
+
+drop *_w
+
+
+
+tssmooth ma DayINFLoRaA03S05_w = DayINFLoRaA03S05, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S05 = DayINFLoRaA03S05_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S05 "Daily infections smooth A03 IMPE S05"
+
+drop *_w
+
+
+
+tssmooth ma DayINFLoRaA03S06_w = DayINFLoRaA03S06, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFLoSmA03S06 = DayINFLoRaA03S06_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFLoSmA03S06 "Daily infections smooth A03 IMPE S06"
+
+drop *_w
+
+
+
+
+
+tssmooth ma DayINFUpRaA03S01_w = DayINFUpRaA03S01, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S01 = DayINFUpRaA03S01_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S01 "Daily infections smooth A03 IMPE S01"
+
+drop *_w
+
+
+
+tssmooth ma DayINFUpRaA03S02_w = DayINFUpRaA03S02, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S02 = DayINFUpRaA03S02_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S02 "Daily infections smooth A03 IMPE S02"
+
+drop *_w
+
+
+
+tssmooth ma DayINFUpRaA03S03_w = DayINFUpRaA03S03, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S03 = DayINFUpRaA03S03_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S03 "Daily infections smooth A03 IMPE S03"
+
+drop *_w
+
+
+
+tssmooth ma DayINFUpRaA03S04_w = DayINFUpRaA03S04, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S04 = DayINFUpRaA03S04_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S04 "Daily infections smooth A03 IMPE S04"
+
+drop *_w
+
+
+
+tssmooth ma DayINFUpRaA03S05_w = DayINFUpRaA03S05, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S05 = DayINFUpRaA03S05_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S05 "Daily infections smooth A03 IMPE S05"
+
+drop *_w
+
+
+
+tssmooth ma DayINFUpRaA03S06_w = DayINFUpRaA03S06, window(3 1 3) // _w = _window
+
+tssmooth ma DayINFUpSmA03S06 = DayINFUpRaA03S06_w, weights( 1 2 3 <4> 3 2 1) replace
+
+label var DayINFUpSmA03S06 "Daily infections smooth A03 IMPE S06"
+
+drop *_w
+
+
+
 tsset, clear
 
 *
@@ -122,7 +246,7 @@ tsset, clear
 
 * gen vars by location 
 
-foreach var of varlist TotDeaMeRaA03S01-DayINFMeSmA03S06 {
+foreach var of varlist TotDeaMeRaA03S01-DayINFUpSmA03S06 {
 
 
 	qui gen `var'AFRO = `var' 
