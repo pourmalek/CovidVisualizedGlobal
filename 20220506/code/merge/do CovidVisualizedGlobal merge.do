@@ -1207,28 +1207,24 @@ foreach region of local list5 {
 	
 	
 	****
-	* daily cases or infections, reference scenarios, 2022
+	* daily cases, reference scenarios, 2022
 	
 	twoway ///
 	(line DayCasMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
 	(line DayCasFOREA01S00`region' date, sort lcolor(red) lpattern(tight_dot) lwidth(vthick)) /// 2 "DELP" Forecast only	
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
-	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
-	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
-	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
-	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean
-	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
-	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean
+	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 4 "SRIV" Forecast only	
+	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 5 SRIV mean
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
-	ytitle(Daily cases or infections) title("C-19 daily cases or infections, `region'", size(medium)) ///
+	ytitle(Daily cases) title("C-19 daily cases, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "IMPE" 9 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2022 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
-	qui graph export "graph `region' 24b C-19 daily cases or infections, `region', reference scenarios, 2022.pdf", replace
+	qui graph export "graph `region' 24b C-19 daily cases, `region', reference scenarios, 2022.pdf", replace
 	
 }
 *
