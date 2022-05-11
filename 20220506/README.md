@@ -161,13 +161,15 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 ****
 
-(12) Global [Daily mobility, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2092%20C-19%20daily%20mobility%2C%20GLOBAL%2C%202%20scenarios.pdf)
+(12) Global [Daily mobility, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2092%20C-19%20daily%20mobility%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167897982-db0f6942-fa5e-4877-b33c-d20d99daa822.png)
 
 ****
 
-(13) Global [Daily mask use, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2093%20C-19%20daily%20mask_use%2C%20GLOBAL%2C%202%20scenarios.pdf)
+(13) Global [Daily mask use, 2 scenarios, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2093%20C-19%20daily%20mask_use%2C%20GLOBAL%2C%202%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167898251-e149b8da-74f4-459c-b36a-3e7125d5779b.png)
 
 ****
 
