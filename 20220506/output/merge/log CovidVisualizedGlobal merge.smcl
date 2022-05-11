@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}11 May 2022, 09:27:29
+ {txt}opened on:  {res}11 May 2022, 10:03:33
 {txt}
 {com}. 
 . 
@@ -615,7 +615,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,814                          
-{txt} vars:{res}         5,081                          11 May 2022 09:27
+{txt} vars:{res}         5,081                          11 May 2022 10:03
 {txt} size:{res}   186,971,382                          
 {txt}{hline}
               storage   display    value
@@ -12770,7 +12770,7 @@ all files already exist and are up to date.
 . * models
 . 
 . 
-. * daily deaths, With GLOBAL, IHME, 2020 on
+. * daily deaths, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -12847,7 +12847,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily deaths, Without GLOBAL, IHME, 2020 on
+. * daily deaths, Without GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -12885,7 +12885,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily deaths, With GLOBAL, IHME, 2020 on
+. * daily deaths, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -12957,7 +12957,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily excess deaths, With GLOBAL, IHME, 2020 on
+. * daily excess deaths, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -12984,7 +12984,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily excess deaths, Without GLOBAL, IHME, 2020 on
+. * daily excess deaths, Without GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13860,7 +13860,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}11 May 2022, 09:37:35
+ {txt}closed on:  {res}11 May 2022, 10:10:59
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

@@ -2356,7 +2356,7 @@ qui graph export "graph 1a6 JOHN C-19 daily deaths, regions together, JOHN.pdf",
 * models
 
 
-* daily deaths, With GLOBAL, IHME, 2020 on
+* daily deaths, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2429,7 +2429,7 @@ qui graph export "graph 1a2 C-19 daily deaths, regions together, DELP, SRIV.pdf"
 
 
 
-* daily deaths, Without GLOBAL, IHME, 2020 on
+* daily deaths, Without GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2465,7 +2465,7 @@ qui graph export "graph 1b1 C-19 daily deaths, regions together wo global, IHME.
 
 
 
-* daily deaths, With GLOBAL, IHME, 2020 on
+* daily deaths, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2533,7 +2533,7 @@ qui graph export "graph 1b2 C-19 daily deaths, regions together wo global, DELP,
 
 
 
-* daily excess deaths, With GLOBAL, IHME, 2020 on
+* daily excess deaths, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2558,7 +2558,7 @@ qui graph export "graph 1 2 a1 C-19 daily excess deaths, regions together, IHME.
 
 
 
-* daily excess deaths, Without GLOBAL, IHME, 2020 on
+* daily excess deaths, Without GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
