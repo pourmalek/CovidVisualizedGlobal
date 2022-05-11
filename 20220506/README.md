@@ -119,6 +119,19 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
+<p align="center">
+<img  src="https://user-images.githubusercontent.com/30849720/167875392-0d1b2b57-9577-491f-af9c-5e7c2da0f7be.png">
+</p>
+
+<p align="center">
+ 
+. . .
+
+In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. All the four models together cannot be right since the future trajectory is a single curve. This represents very high-end heterogeneity in predictions and very low-end of agreement in epidemic modelling. 
+
+. . .
+ 
+</p> 
 
 ****
 
