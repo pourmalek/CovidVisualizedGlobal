@@ -119,8 +119,9 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 ****
 
-(6b) Global [Daily cases, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2022b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
+(6b) Global [Daily cases, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2024b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167883867-a01d5a4d-c1f8-4bff-b590-0e7d5ed3d1d0.png)
 
 ****
 
