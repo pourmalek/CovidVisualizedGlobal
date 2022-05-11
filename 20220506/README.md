@@ -62,36 +62,6 @@ AMRO is devided to AMR1 and AMR2:
 
 ![image](https://user-images.githubusercontent.com/30849720/167864169-fee73279-7ffa-4eb8-b8a7-48a38ccf13d9.png)
 
-
-<p align="center">
-. . .
-</p> 
-
-<p align="center">
-<img  src="https://user-images.githubusercontent.com/30849720/167866826-59e93329-0726-48f2-84ec-856cef17f02e.png">
-</p> 
-
-<p align="center">
-(1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
-</p> 
-
-
-<p align="center">
-<img  src="https://user-images.githubusercontent.com/30849720/167875392-0d1b2b57-9577-491f-af9c-5e7c2da0f7be.png">
-</p>
-
-
-
-<p align="center">
-. . .
-</p> 
-
-In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. All the four models together cannot be right since the future trajectory is a single curve. This represents very high-end heterogeneity in predictions and very low-end of agreement in epidemic modelling. 
-
-<p align="center">
-. . .
-</p> 
-
 ****
 
 (2) Global [Daily deaths, reference scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2012a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%202021.pdf)
@@ -124,9 +94,13 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 </p>
 
 <p align="center">
+. . .
+</p> 
 
 In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. All the four models together cannot be right since the future trajectory is a single curve. This represents very high-end heterogeneity in predictions and very low-end of agreement in epidemic modelling. 
 
+<p align="center">
+. . .
 </p> 
 
 ****
