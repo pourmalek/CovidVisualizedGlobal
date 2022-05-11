@@ -66,7 +66,7 @@ AMRO is devided to AMR1 and AMR2:
 
 <p align="center">
  
-<img width="460" height="300" src="https://user-images.githubusercontent.com/30849720/167866826-59e93329-0726-48f2-84ec-856cef17f02e.png">
+<img  src="https://user-images.githubusercontent.com/30849720/167866826-59e93329-0726-48f2-84ec-856cef17f02e.png">
  
 </p> 
 
