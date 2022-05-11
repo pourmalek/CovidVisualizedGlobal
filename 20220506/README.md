@@ -72,6 +72,17 @@ AMRO is devided to AMR1 and AMR2:
 </p> 
 
 <p align="center">
+(1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
+</p> 
+
+
+<p align="center">
+<img  src="https://user-images.githubusercontent.com/30849720/167875392-0d1b2b57-9577-491f-af9c-5e7c2da0f7be.png">
+</p>
+
+
+
+<p align="center">
 . . .
 </p> 
 
