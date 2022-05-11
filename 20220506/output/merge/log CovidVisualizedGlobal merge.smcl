@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}11 May 2022, 10:03:33
+ {txt}opened on:  {res}11 May 2022, 10:20:47
 {txt}
 {com}. 
 . 
@@ -615,7 +615,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,814                          
-{txt} vars:{res}         5,081                          11 May 2022 10:03
+{txt} vars:{res}         5,081                          11 May 2022 10:20
 {txt} size:{res}   186,971,382                          
 {txt}{hline}
               storage   display    value
@@ -12794,7 +12794,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 > subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -12869,7 +12869,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 > subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -12909,7 +12909,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 > subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -12957,7 +12957,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily excess deaths, With GLOBAL, IHME, IMPE, 2020 on
+. * daily excess deaths, With GLOBAL, IHME, 2020 on
 . 
 . twoway ///
 > (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -12984,7 +12984,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily excess deaths, Without GLOBAL, IHME, IMPE, 2020 on
+. * daily excess deaths, Without GLOBAL, IHME, 2020 on
 . 
 . twoway ///
 > (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13269,7 +13269,7 @@ all files already exist and are up to date.
 . * models
 . 
 . 
-. * daily infections, With GLOBAL, IHME, 2020 on
+. * daily infections, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13293,7 +13293,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+> ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 > subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -13345,7 +13345,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * daily infections, Without GLOBAL, IHME, 2020 on
+. * daily infections, Without GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13367,7 +13367,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+> ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 > subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -13459,7 +13459,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * total deaths, With GLOBAL, IHME, 2020 on
+. * total deaths, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13483,7 +13483,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+> ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 > subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -13533,7 +13533,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * total deaths, Without GLOBAL, IHME, 2020 on
+. * total deaths, Without GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13555,7 +13555,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+> ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 > subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -13656,7 +13656,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * total infections, With GLOBAL, IHME, 2020 on
+. * total infections, With GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13680,7 +13680,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+> ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 > subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -13730,7 +13730,7 @@ all files already exist and are up to date.
 . 
 . 
 . 
-. * total infections, Without GLOBAL, IHME, 2020 on
+. * total infections, Without GLOBAL, IHME, IMPE, 2020 on
 . 
 . twoway ///
 > (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -13752,7 +13752,7 @@ all files already exist and are up to date.
 > if date >= td(01jan2020) ///
 > , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-> ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+> ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 > legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 > subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -13860,7 +13860,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}11 May 2022, 10:10:59
+ {txt}closed on:  {res}11 May 2022, 10:31:51
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

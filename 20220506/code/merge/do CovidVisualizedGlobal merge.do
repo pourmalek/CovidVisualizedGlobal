@@ -2380,7 +2380,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -2451,7 +2451,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -2489,7 +2489,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -2533,7 +2533,7 @@ qui graph export "graph 1b2 C-19 daily deaths, regions together wo global, DELP,
 
 
 
-* daily excess deaths, With GLOBAL, IHME, IMPE, 2020 on
+* daily excess deaths, With GLOBAL, IHME, 2020 on
 
 twoway ///
 (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2558,7 +2558,7 @@ qui graph export "graph 1 2 a1 C-19 daily excess deaths, regions together, IHME.
 
 
 
-* daily excess deaths, Without GLOBAL, IHME, IMPE, 2020 on
+* daily excess deaths, Without GLOBAL, IHME, 2020 on
 
 twoway ///
 (line DayDeXMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2823,7 +2823,7 @@ qui graph export "graph 2a6 JOHN C-19 daily cases, regions together, JOHN.pdf", 
 * models
 
 
-* daily infections, With GLOBAL, IHME, 2020 on
+* daily infections, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2847,7 +2847,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -2895,7 +2895,7 @@ qui graph export "graph 2a2 C-19 daily cases, regions together, DELP, SRIV.pdf",
 
 
 
-* daily infections, Without GLOBAL, IHME, 2020 on
+* daily infections, Without GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line DayINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -2917,7 +2917,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME", size(medium)) ///
+ytitle(Daily infections) title("C-19 daily infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -3003,7 +3003,7 @@ qui graph export "graph 2b2 C-19 daily cases, regions together wo global, DELP, 
 
 
 
-* total deaths, With GLOBAL, IHME, 2020 on
+* total deaths, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -3027,7 +3027,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -3073,7 +3073,7 @@ qui graph export "graph 3a2 C-19 total deaths, regions together, DELP, SRIV.pdf"
 
 
 
-* total deaths, Without GLOBAL, IHME, 2020 on
+* total deaths, Without GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line TotDeaMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -3095,7 +3095,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME", size(medium)) ///
+ytitle(Total deaths) title("C-19 total deaths, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
@@ -3188,7 +3188,7 @@ qui graph export "graph 3 2 a1 C-19 total excess deaths, regions together wo glo
 
 
 
-* total infections, With GLOBAL, IHME, 2020 on
+* total infections, With GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -3212,7 +3212,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
 subtitle("With GLOBAL, 2020 on", size(small)) ///
@@ -3258,7 +3258,7 @@ qui graph export "graph 4a2 C-19 total cases, regions together, DELP, SRIV.pdf",
 
 
 
-* total infections, Without GLOBAL, IHME, 2020 on
+* total infections, Without GLOBAL, IHME, IMPE, 2020 on
 
 twoway ///
 (line TotINFMeSmA02S01AFRO date, sort lcolor(brown)) /// IHME
@@ -3280,7 +3280,7 @@ twoway ///
 if date >= td(01jan2020) ///
 , xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Total infections) title("C-19 total infections, WHO regions, IHME", size(medium)) ///
+ytitle(Total infections) title("C-19 total infections, WHO regions, IHME, IMPE", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
 subtitle("Without GLOBAL, 2020 on", size(small)) ///
