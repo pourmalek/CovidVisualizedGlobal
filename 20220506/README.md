@@ -70,7 +70,10 @@ AMRO is devided to AMR1 and AMR2:
  
 </p> 
 
+
+<p align="center">
   <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 
 In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. This is a caricature of the strength of the epidemic modelling. 
 
