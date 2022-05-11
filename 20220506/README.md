@@ -125,18 +125,21 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 ****
 
-(6c) Global [Daily estimated infections IHME to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2026%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20GLOBAL%2C%20reference%20scenarios%202021.pdf)
+(6c) Global [Daily estimated infections IHME to reported cases JOHN, main scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2025%20C19%20daily%20estimated%20infections%20to%20reported%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
-
-****
-
-(7) Global [Hospital-related outcomes, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2061a%20C-19%20hospital-related%20outcomes.pdf)
-
+![image](https://user-images.githubusercontent.com/30849720/167896017-5ee17d12-79bf-4bfe-bde5-31e59a12926c.png)
 
 ****
 
-(8) Global [Hospital-related outcomes, 2021 on, without IHME Bed need](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2063%20C-19%20hospital-related%20outcomes%2C%20wo%20extremes%2C%202021.pdf)
+(7) Global [Hospital-related outcomes, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2061a%20C-19%20hospital-related%20outcomes.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167896300-a5ea5829-e1bd-46e9-8663-e13746362049.png)
+
+****
+
+(8) Global [Hospital-related outcomes, 2021 on, without IHME Bed need](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2062b%20C-19%20hospital-related%20outcomes%2C%20wo%20extremes%20ICU%20bed%20capcity.pdf)
+
+![image](https://user-images.githubusercontent.com/30849720/167896585-cd7dd975-901c-4874-b292-9bf9b07f5a9f.png)
 
 ****
 
