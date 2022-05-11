@@ -124,13 +124,9 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 </p>
 
 <p align="center">
- 
 . . .
-
 In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. All the four models together cannot be right since the future trajectory is a single curve. This represents very high-end heterogeneity in predictions and very low-end of agreement in epidemic modelling. 
-
 . . .
- 
 </p> 
 
 ****
