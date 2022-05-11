@@ -199,7 +199,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (0c) Regions together [Daily deaths, with GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%201a5%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/167899326-bab47ced-2594-4595-8e3d-ccc9cb4513be.png)
+![image](https://user-images.githubusercontent.com/30849720/167904855-ccedc1a3-94f9-448c-9034-132f95df322f.png)
 
 ****
 
