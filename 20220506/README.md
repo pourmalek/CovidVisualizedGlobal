@@ -85,10 +85,6 @@ AMRO is devided to AMR1 and AMR2:
 (3d) Global [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20GLOBAL%2014b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202022.pdf)
 
 
-****
-
-(4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
-
 <p align="center">
 <img  src="https://user-images.githubusercontent.com/30849720/167875392-0d1b2b57-9577-491f-af9c-5e7c2da0f7be.png">
 </p>
@@ -102,6 +98,11 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 <p align="center">
 . . .
 </p> 
+
+****
+
+(4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
+
 
 ****
 
