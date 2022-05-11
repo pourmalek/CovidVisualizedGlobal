@@ -62,16 +62,15 @@ AMRO is devided to AMR1 and AMR2:
 
 ![image](https://user-images.githubusercontent.com/30849720/167864169-fee73279-7ffa-4eb8-b8a7-48a38ccf13d9.png)
 
-.
+. . .
 
 <p align="center">
 <img  src="https://user-images.githubusercontent.com/30849720/167866826-59e93329-0726-48f2-84ec-856cef17f02e.png">
 </p> 
 
+.
 
-
-
-In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. This is a caricature of the strength of the epidemic modelling. 
+In the third year of the COVID-19 pandemic, four international and periodically updated models predict four very distinct future trajectories of the pandemic. All the four models together cannot be right since the future trajectory is a single curve. This represents very high-end heterogeneity in predictions and very low-end of agreement in epidemic modelling. 
 
 .
 
