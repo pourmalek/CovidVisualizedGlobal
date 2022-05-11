@@ -570,7 +570,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"
@@ -609,7 +609,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 7 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
@@ -646,7 +646,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 7 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
@@ -687,7 +687,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 7 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"		
@@ -724,7 +724,7 @@ foreach region of local list5 {
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
 	(line DayDeXMeSmA02S01`region' date, sort lcolor(brown) lpattern(dash)) /// 6 "IHME excess"
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 7 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 7 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"				
@@ -766,7 +766,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 7 IHME mean
 	(line DayDeaLoSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 8 IHME lower
 	(line DayDeaUpSmA02S01`region' date, sort lcolor(black) lpattern(dash)) /// 9 IHME upper
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 10 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 10 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 11 "IMPE" mean
 	(line DayDeaLoRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 12 "IMPE" lower
 	(line DayDeaUpRaA03S02`region' date, sort lcolor(magenta) lpattern(dash)) /// 13 "IMPE" upper
@@ -807,7 +807,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 3 IHME mean, reference scenario
 	(line DayDeaMeSmA02S02`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 4 IHME mean, Masks scenario
 	(line DayDeaMeSmA02S03`region' date, sort lcolor(black) lwidth(thick) lpattern(tight_dot)) /// 5 IHME mean, 3rd dose scenario
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean reference scenario
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta)) /// 8 "IMPE" mean better scenario
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta)) /// 9 "IMPE" mean worse scenario
@@ -845,7 +845,7 @@ foreach region of local list5 {
 	(line DayDeaMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
 	(line DayDeaFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
-	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean reference scenario
 	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta)) /// 8 "IMPE" mean better scenario
 	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta)) /// 9 "IMPE" mean worse scenario
@@ -991,7 +991,7 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean	
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
 	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
@@ -1031,7 +1031,7 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean	
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
 	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
@@ -1069,7 +1069,7 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP"
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 "IHME"
-	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean	
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
 	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 "SRIV"	
@@ -1217,7 +1217,7 @@ foreach region of local list5 {
 	(line DayCasMeSmA01S00`region' date, sort lcolor(red)) /// 3 "DELP" mean
 	(line DayINFFOREA02S01`region' date, sort lcolor(black) lpattern(tight_dot) lwidth(vthick)) /// 4 "IHME" Forecast only
 	(line DayINFMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
-	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot)) /// 6 "IMPE" Forecast only
+	(line DayINFFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayINFMeSmA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean
 	(line DayCasFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
 	(line DayCasMeSmA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean
