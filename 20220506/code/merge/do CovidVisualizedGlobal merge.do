@@ -847,16 +847,14 @@ foreach region of local list5 {
 	(line DayDeaMeSmA02S01`region' date, sort lcolor(black)) /// 5 IHME mean, reference scenario
 	(line DayDeaFOREA03S02`region' date, sort lcolor(magenta) lpattern(tight_dot) lwidth(vthick)) /// 6 "IMPE" Forecast only
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 7 "IMPE" mean reference scenario
-	(line DayDeaMeRaA03S01`region' date, sort lcolor(magenta)) /// 8 "IMPE" mean better scenario
-	(line DayDeaMeRaA03S03`region' date, sort lcolor(magenta)) /// 9 "IMPE" mean worse scenario
-	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 10 "SRIV" Forecast only	
-	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 11 SRIV mean
+	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 8 "SRIV" Forecast only	
+	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 9 SRIV mean
 	if date >= td(01jan2022) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) ///
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "IMPE" 11 "SRIV") size(small) rows(1)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 7 "IMPE" 9 "SRIV") size(small) rows(1)) ///
 	subtitle("Reference scenarios, 2022 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
