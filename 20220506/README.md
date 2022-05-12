@@ -597,21 +597,25 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168099162-f48282fb-556e-424d-9ffc-9a2505d8f1b3.png)
 
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EMRO%2022%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168099326-337d166b-cb58-4b53-b0c9-532a7c519b98.png)
   
 ****
 
 (6) Eastern Mediterranean region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EMRO%2024%20C-19%20daily%20cases%2C%20EMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168099488-69ec6296-80f4-4675-adc0-344a8ccb96bb.png)
  
 ****
 
 (6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168099611-f0aa7db3-1f7d-4fd8-b91f-30d9c6527420.png)
 
 ****
 
