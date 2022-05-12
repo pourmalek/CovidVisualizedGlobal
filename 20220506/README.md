@@ -743,31 +743,37 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (1) Western Pacific region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168112912-cb50457f-313c-4dd2-8560-6446faf11075.png)
   
 ****
 
 (3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2014%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168113057-2e141f13-5617-41f1-9d70-243d5892a28e.png)
  
 ****
 
 (3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2014b%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168113211-269ec98b-281f-443e-ae40-98ba37f13b36.png)
 
 ****
 
 (4) Western Pacific region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2022%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168113337-7d1e9623-aa0c-451d-85ad-d810c7e7047f.png)
   
 ****
 
 (6) Western Pacific region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2024%20C-19%20daily%20cases%2C%20WPRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168113473-5b79e103-0a8b-4d2c-b9a6-2edafad4f44c.png)
   
 ****
 
 (6b) Western Pacific region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20WPRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20WPRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168113640-e82fa64e-ac30-41c4-89df-f3d17890ebd3.png)
 
 ****
 
