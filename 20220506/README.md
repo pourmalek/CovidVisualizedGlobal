@@ -562,6 +562,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20AMR2%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AMR2%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168094247-9fd92823-296d-4aa2-a1e6-5333cd2e51f4.png)
 
 ****
 
