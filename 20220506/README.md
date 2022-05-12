@@ -229,6 +229,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (4) Regions together [Daily deaths, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%201b2%20C-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167972222-d534292b-aa85-4247-b3a4-54186fd13b3b.png)
 
 ****
 
