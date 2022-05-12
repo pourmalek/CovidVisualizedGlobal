@@ -431,6 +431,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168087907-cbf26cab-71c8-4f92-bea0-15bb8368450d.png)
   
 ****
 
