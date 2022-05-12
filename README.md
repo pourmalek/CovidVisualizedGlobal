@@ -157,27 +157,22 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220429`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220429)
- 
-**_DELP 20220429_**, IHME 20220408, no IMPE, **_SRIV 20220429_**
+### LATEST UPTAKE: uptake [`20220506`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220506)
 
-Days old: DELP 0, IHME 21, no IMPE, SRIV 0
+**_DELP 20220502_**, **_IHME 20220506_**, **_IMPE 20220315_**, **_SRIV 20220502_**, **_WHO 20220505_**
 
-The latest available IMPE update (i.e., 2022-01-31) is 89 days old on 2022-04-08. Not included.
+Days old: DELP 4, IHME 0, IMPE 53, SRIV 4, WHO 1
+
+IMPE update 20220315 was released on 20220505.
+
+WHO	: Global excess deaths associated with COVID-19 (modelled estimates) 
+Most recent update: 5 May 2022 // Temporal coverage	1 January 2020 - 31 December 2021 //
+Source web page:
+https://www.who.int/data/sets/global-excess-deaths-associated-with-covid-19-modelled-estimates
   
- <br/><br/>
   
-**Summary 20220429**
-
-Models’ predictions for the future trajectory of the epidemic are quite divergent. The latest update of the IHME model is three weeks old. The IMPE model is out. 
-
-Reported daily deaths are bouncing up at the global level and all regional levels except African and Eastern Mediterranean regions. 
-
-Reported daily cases are bouncing up at the global level and all regional levels except African, Eastern Mediterranean, and South East Asian regions. 
-
-_Recipe for the next waves:_
-
-Abandoning Non-Pharmaceutical Interventions (NPIs) sets the stage for increase of susceptible population. Emergent variants will feed on the pool of susceptible population.   
+<br/><br/>
+  
   
 <br/><br/>
   
@@ -1288,6 +1283,10 @@ and /20220318/ denotes the date of uptake.
   
 
 
+
+
+(70) uptake [`20220506`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220506): 
+**_DELP 20220502_**, **_IHME 20220506_**, **_IMPE 20220315_**, **_SRIV 20220502_**, **_WHO 20220505_** || Days old: DELP 4, IHME 0, IMPE 53, SRIV 4, WHO 1  
 
 (69) uptake [`20220415`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220415): 
 **_DELP 20220422_**, IHME 20220408, no IMPE, **_SRIV 20220422_** || Days old: DELP 0, IHME 14, no IMPE, SRIV 0
