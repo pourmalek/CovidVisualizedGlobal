@@ -637,26 +637,31 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168099944-7e99b1d6-bbd4-47e6-a28e-c22e7e30aa18.png)
   
 ****
 
 (3) European region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EURO%2014%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168100118-0eabf825-27a0-4e19-b667-62ad332ed40e.png)
   
 ****
 
 (3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168100290-2007c1ea-6208-4cf2-8316-0d9569ee31a3.png)
 
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EURO%2022%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168100420-4370050f-9414-4437-9f91-c2a8030e31db.png)
   
 ****
 
 (6) European region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20EURO%2024%20C-19%20daily%20cases%2C%20EURO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168100587-c4f5541c-2b2b-4ebe-ae62-7da13c58fc93.png)
   
 ****
 
