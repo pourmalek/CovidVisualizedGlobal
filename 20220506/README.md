@@ -284,6 +284,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/167974252-2d55ba1a-500c-4a9e-b0df-a6923972b62d.png)
 
 ****
 
