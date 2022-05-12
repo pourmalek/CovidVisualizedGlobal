@@ -702,21 +702,25 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20SEARO%2014b%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168112148-6c621bdf-0575-40c3-97ac-14d9a9481f0f.png)
 
 ****
 
 (4) South-East Asian region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20SEARO%2022%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168112268-bf4fff1b-4cd4-424e-8778-569f9ce7cbf9.png)
   
 ****
 
 (6) South-East Asian region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20SEARO%2024%20C-19%20daily%20cases%2C%20SEARO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168112424-53fe0c0e-d467-4906-b639-b748fef44c31.png)
   
 ****
 
 (6b) South-East Asian region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20SEARO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20SEARO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168112685-640f7daa-9cc0-44af-9d24-d6b780f79e71.png)
 
 ****
 
