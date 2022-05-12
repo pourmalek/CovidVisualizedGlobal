@@ -2520,7 +2520,7 @@ twoway ///
 (line DayDeaMeSmA05S00SEARO date, sort lcolor(cyan) lpattern(dash)) ///
 (line DayDeaMeSmA05S00WPRO date, sort lcolor(blue) lpattern(dash)) ///
 if date >= td(01jan2022) ///
-, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, DELP, SRIV", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
