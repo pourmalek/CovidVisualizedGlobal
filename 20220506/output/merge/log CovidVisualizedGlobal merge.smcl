@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}11 May 2022, 17:58:12
+ {txt}opened on:  {res}12 May 2022, 06:32:14
 {txt}
 {com}. 
 . 
@@ -615,7 +615,7 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,814                          
-{txt} vars:{res}         5,081                          11 May 2022 17:58
+{txt} vars:{res}         5,081                          12 May 2022 06:32
 {txt} size:{res}   186,971,382                          
 {txt}{hline}
               storage   display    value
@@ -11449,7 +11449,7 @@ Sorted by: {res}date  loc_grand_name
 >         legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 6 "IHME infections" ///
 >         10 "SRIV cases") size(small) row(2)) ///
 >         subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
->         note("Alternate scenarios: tight dot (|||||) curves; IHME") 
+>         note("Alternate scenarios: tight dot (|||||) curves; IHME, IMPE") 
 {txt}  3{com}.         
 .         qui graph export "graph `region' 24 C-19 daily cases, `region', 3 scenarios, 2021, uncertainty.pdf", replace
 {txt}  4{com}.         
@@ -13860,7 +13860,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220506/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}11 May 2022, 18:07:37
+ {txt}closed on:  {res}12 May 2022, 06:42:50
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

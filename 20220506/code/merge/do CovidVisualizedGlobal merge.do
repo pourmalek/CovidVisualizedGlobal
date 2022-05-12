@@ -1189,7 +1189,7 @@ foreach region of local list5 {
 	legend(order(1 "JOHN cases" 2 "DELP cases" 3 "IHME infections" 6 "IHME infections" ///
 	10 "SRIV cases") size(small) row(2)) ///
 	subtitle("Reference scenarios with alternate scenarios, 2021 on", size(small)) ///
-	note("Alternate scenarios: tight dot (|||||) curves; IHME") 
+	note("Alternate scenarios: tight dot (|||||) curves; IHME, IMPE") 
 	
 	qui graph export "graph `region' 24 C-19 daily cases, `region', 3 scenarios, 2021, uncertainty.pdf", replace
 	
