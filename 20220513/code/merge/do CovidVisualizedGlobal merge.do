@@ -30,13 +30,6 @@ IMPE
 LANL // The LANL C-19 Team made its last real-time forecast on September 27th, 2021. [for 20210926]. This is more than two weeks old and will not be used. 
 SRIV
 
-WHO	 A06 * 
-* Global excess deaths associated with COVID-19 (modelled estimates) 
-* Most recent update: 5 May 2022
-* Temporal coverage	1 January 2020 - 31 December 2021
-* Source web page:
-* https://www.who.int/data/sets/global-excess-deaths-associated-with-covid-19-modelled-estimates
-
 */
 
 
@@ -102,16 +95,6 @@ else if regexm(c(os),"Windows") == 1 merge 1:1 date using "$pathCovidVisualizedG
 drop _merge
 
 
-
-* WHO
-
-if regexm(c(os),"Mac") == 1 {
-
-	merge 1:1 loc_grand_name date using "$pathCovidVisualizedGlobal/WHO/CovidVisualizedGlobal WHO.dta"
-}
-else if regexm(c(os),"Windows") == 1 merge 1:1 date using "$pathCovidVisualizedGlobal\WHO\CovidVisualizedGlobal WHO.dta"
-
-drop _merge
 
 
 * 
@@ -650,13 +633,12 @@ foreach region of local list5 {
 	(line DayDeaMeRaA03S02`region' date, sort lcolor(magenta)) /// 8 "IMPE"
 	(line DayDeaFOREA05S00`region' date, sort lcolor(green) lpattern(tight_dot) lwidth(vthick)) /// 9 "SRIV" Forecast only
 	(line DayDeaMeSmA05S00`region' date, sort lcolor(green)) /// 10 "SRIV"
-	(line DayDeXMeSmA06S00`region' date, sort lcolor(gold)) /// 11 "WHO" Excess	
 	if date >= td(01jan2020) & DayDeaMeRaA00S00`region' >= 0 ///
 	, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
 	xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(horizontal)) ///
 	ytitle(Daily deaths) title("C-19 daily deaths, `region'", size(medium)) /// 
 	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV" 11 "WHO Excess") size(small) rows(2)) ///
+	legend(order(1 "JOHN" 3 "DELP" 5 "IHME" 6 "IHME excess" 8 "IMPE" 10 "SRIV") size(small) rows(2)) ///
 	subtitle("Reference scenarios, 2020 on", size(small)) ///
 	note("Reference scenario forecasts are marked with |||||||||||| " , size(small))
 	
@@ -2579,81 +2561,6 @@ subtitle("Without GLOBAL, 2020 on", size(small)) ///
 
 qui graph export "graph 1 2 a1 C-19 daily excess deaths, regions together  wo global, IHME.pdf", replace
 
-
-
-
-
-
-
-* daily excess deaths, With GLOBAL, WHO, 2020 on
-
-twoway ///
-(line DayDeXMeSmA06S00AFRO date, sort lcolor(brown)) /// WHO
-(line DayDeXMeSmA06S00AMRO date, sort lcolor(red)) ///
-(line DayDeXMeSmA06S00AMR1 date, sort lcolor(orange)) ///
-(line DayDeXMeSmA06S00AMR2 date, sort lcolor(purple)) ///
-(line DayDeXMeSmA06S00EMRO date, sort lcolor(gold)) ///
-(line DayDeXMeSmA06S00EURO date, sort lcolor(green)) ///
-(line DayDeXMeSmA06S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeXMeSmA06S00WPRO date, sort lcolor(blue)) ///
-(line DayDeXMeSmA06S00GLOBAL date, sort lcolor(black)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily excess deaths) title("C-19 daily excess deaths, WHO regions, WHO", size(medium)) ///
-xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO" 9 "GLOBAL") size(small) rows (3)) ///
-subtitle("With GLOBAL, 2020 on", size(small)) 
-
-qui graph export "graph 1b 2 a1 C-19 daily excess deaths, regions together, WHO.pdf", replace
-
-
-
-
-* daily excess deaths, Without GLOBAL, WHO, 2020 on
-
-twoway ///
-(line DayDeXMeSmA06S00AFRO date, sort lcolor(brown)) /// WHO
-(line DayDeXMeSmA06S00AMRO date, sort lcolor(red)) ///
-(line DayDeXMeSmA06S00AMR1 date, sort lcolor(orange)) ///
-(line DayDeXMeSmA06S00AMR2 date, sort lcolor(purple)) ///
-(line DayDeXMeSmA06S00EMRO date, sort lcolor(gold)) ///
-(line DayDeXMeSmA06S00EURO date, sort lcolor(green)) ///
-(line DayDeXMeSmA06S00SEARO date, sort lcolor(cyan)) ///
-(line DayDeXMeSmA06S00WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily excess deaths) title("C-19 daily excess deaths, WHO regions, WHO", size(medium)) ///
-xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
-subtitle("Without GLOBAL, 2020 on", size(small)) 
-
-qui graph export "graph 1b 2 a1 C-19 daily excess deaths, regions together  wo global, WHO.pdf", replace
-
-
-
-
-
-* daily excess deaths, Without GLOBAL, WHO, 2020 on, wo SEARO
-
-twoway ///
-(line DayDeXMeSmA06S00AFRO date, sort lcolor(brown)) /// WHO
-(line DayDeXMeSmA06S00AMRO date, sort lcolor(red)) ///
-(line DayDeXMeSmA06S00AMR1 date, sort lcolor(orange)) ///
-(line DayDeXMeSmA06S00AMR2 date, sort lcolor(purple)) ///
-(line DayDeXMeSmA06S00EMRO date, sort lcolor(gold)) ///
-(line DayDeXMeSmA06S00EURO date, sort lcolor(green)) ///
-(line DayDeXMeSmA06S00WPRO date, sort lcolor(blue)) ///
-if date >= td(01jan2020) ///
-, xtitle(Date) xlabel(#$monthspast01jan2020merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
-xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
-ytitle(Daily excess deaths) title("C-19 daily excess deaths, WHO regions, WHO", size(medium)) ///
-xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
-legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "WPRO") size(small) rows (3)) ///
-subtitle("Without GLOBAL and SEARO, 2020 on", size(small)) 
-
-qui graph export "graph 1c 2 a1 C-19 daily excess deaths, regions together  wo global, WHO.pdf", replace
 
 
 
