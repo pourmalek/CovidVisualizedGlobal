@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 42 - 2022-04-29 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/42%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2042%20–%202022-04-29.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 43 - 2022-05-06 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/43%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2043%20–%202022-05-06.pdf)
 
 
 
@@ -184,7 +184,7 @@ https://www.who.int/data/sets/global-excess-deaths-associated-with-covid-19-mode
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 42 - 2022-04-29 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/42%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2042%20–%202022-04-29.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 43 - 2022-05-06 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/43%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2043%20–%202022-05-06.pdf)
 
 
   
