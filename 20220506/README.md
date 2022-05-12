@@ -290,21 +290,25 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168078269-90067ee7-88b1-46c3-a65f-2eecbacb2b19.png)
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168078492-bc1b67cc-150a-4e7f-a285-2dfc46eb28fd.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168078609-1dc2d45e-6cd1-4065-a465-ddfa000f7b26.png)
 
 ****
 
 (11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME, IMPE](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220429/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168078783-513ff8f9-f3ab-4a5a-b55a-b1a7affcde80.png)
 
 ****
 
