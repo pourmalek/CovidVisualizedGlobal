@@ -412,8 +412,7 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 ****
 
-(6b) Regions together [Daily excess deaths, without GLOBAL and SEARO,, 2020 on, WHO]
-(https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%201c%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20WHO.pdf)
+(6c) Regions together [Daily excess deaths, without GLOBAL and SEARO,, 2020 on, WHO](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%201c%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%20%20wo%20global%2C%20WHO.pdf)
 
 ![image](https://user-images.githubusercontent.com/30849720/167974151-d0d84bcc-8b21-42a7-a871-a4362706df78.png)
 
