@@ -405,11 +405,13 @@ In the third year of the COVID-19 pandemic, four international and periodically 
 
 (6) African region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20AFRO%2024%20C-19%20daily%20cases%2C%20AFRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168086372-39d957fb-4416-4c3f-a0d6-4a396789d7ad.png)
  
 ****
 
 (6b) African region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220506/output/merge/graph%20AFRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20AFRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168086503-15a8ef26-9b51-4ef2-ba2c-5d8ed2d51eb4.png)
 
 ****
 
