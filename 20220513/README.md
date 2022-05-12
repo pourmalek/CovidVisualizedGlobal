@@ -1,6 +1,6 @@
 ! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 44 - 2022-05-13 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/44%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2044%20–%202022-05-13.pdf) 
 
-### Study update dates in uptake 20220513
+### Study update dates in uptake 20220513 
 
 **_DELP 20220513_**, IHME 20220506, No IMPE, **_SRIV 20220513_**
 
