@@ -511,6 +511,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402325-46ee167a-115e-4cd1-9824-78ccd59d22e5.png)
    
 ****
 
@@ -521,11 +522,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402366-13d615ab-f7e1-4ec4-b85d-c738e63018b7.png)
  
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EMRO%2022%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402397-43098cc0-88ef-4f04-9c44-a47b546c8e23.png)
    
 ****
 
@@ -534,8 +537,9 @@ AMRO is devided to AMR1 and AMR2:
   
 ****
 
-(6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
+(6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402448-b2a546f6-14bd-4bb5-80f0-3118bec82d99.png)
  
 ****
 
