@@ -561,6 +561,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402796-e8927b55-c5d4-4670-b2e7-b88abc1057e3.png)
    
 ****
 
@@ -571,11 +572,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402826-14b651a9-e45c-4ea5-ad08-e7aab558b8df.png)
  
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EURO%2022%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402858-aee17bd1-6da3-4a5a-b1a1-4b25ead6b159.png)
    
 ****
 
@@ -584,8 +587,9 @@ AMRO is devided to AMR1 and AMR2:
    
 ****
 
-(6b) European region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EURO%2024b%20C-19%20daily%20cases%20or%20infections%2C%20EURO%2C%20reference%20scenarios%2C%202022.pdf)
+(6b) European region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220513/output/merge/graph%20EURO%2024b%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/168402897-458cc193-bf4c-471a-aaa1-fe0c0578d2e3.png)
  
 ****
 
