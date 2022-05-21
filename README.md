@@ -5,6 +5,9 @@
 ! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 44 - 2022-05-13 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/44%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2044%20–%202022-05-13.pdf)
 
 
+<br/><br/>
+
+![image](https://user-images.githubusercontent.com/30849720/169628100-1336755d-432e-4cca-8eaf-35cdb8375807.png)
 
 <br/><br/>
 
