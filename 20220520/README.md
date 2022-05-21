@@ -23,6 +23,8 @@ The DELP model predicts a huge spike in daily deaths in Africa June 2000, up to 
 
 <br/><br/>
 
+### NEXT-DEMICS:
+
 ![image](https://user-images.githubusercontent.com/30849720/169635487-dfc4e1ff-5078-4a92-aee4-c7504ef5db39.png)
 
 <br/><br/>
