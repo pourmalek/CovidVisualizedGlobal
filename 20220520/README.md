@@ -653,6 +653,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Western Pacific region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/169634489-ea70a3e2-e530-4aa3-a12e-7437300253e0.png)
    
 ****
 
@@ -663,6 +664,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20WPRO%2014b%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/169634523-dce33ab0-b025-441d-b018-2fa2c2bc69eb.png)
  
 ****
 
@@ -678,7 +680,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Western Pacific region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20WPRO%2024b%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202022.pdf)
 
- 
+![image](https://user-images.githubusercontent.com/30849720/169634542-ed1f159f-5a2b-416e-8ec6-8fef2630a0e8.png)
+  
 ****
 
 
