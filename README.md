@@ -160,20 +160,29 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220513`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220513)
+### LATEST UPTAKE: uptake [`20220520`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220520)
 
-### Study update dates in uptake 20220513  
+### Study update dates in uptake 20220520  
 
-**_DELP 20220512_**, IHME 20220506, No IMPE, **_SRIV 20220508_** 
+**_DELP 20220520_**, IHME 20220506, No IMPE, **_SRIV 20220520_** 
 
-Days old: DELP 1, IHME 7, IMPE 60, SRIV 5
+Days old: DELP 0, IHME 14, IMPE 67, SRIV 0
 
-IMPE update 20220315 was released on 20220505 and is 60 days old on 20220513. Not included. 
-  
-  
+IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220520. Not included. 
+
+
 <br/><br/>
-  
-  
+
+### Summary 20220520:
+
+Reported deaths show a small bounce up trend in Europe, United States, and Canada. 
+
+Reported cases show a small bounce up trend in United States and Canada. 
+
+The SRIV model predicts increase in global daily deaths starting from mid-May 2022 reaching 8000 per day in late August and above 2.5 million global cases about mid-August – primarily in United States, Canada, and Europe. 
+
+The DELP model predicts a huge spike in daily deaths in Africa June 2000, up to 900 per day, down to current levels in July. 
+
 <br/><br/>
   
 **Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
@@ -1230,12 +1239,15 @@ and /20220318/ denotes the date of uptake.
 . 
  
   
-  ### Study update dates in uptake 20220513  
 
  
 
 
 
+
+
+(72) uptake [`20220520`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220520): 
+**_DELP 20220520_**, IHME 20220506, No IMPE, **_SRIV 20220520_**  || Days old: DELP 0, IHME 14, IMPE 67, SRIV 0
 
 (71) uptake [`20220513`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220513): 
 **_DELP 20220512_**, IHME 20220506, No IMPE, **_SRIV 20220508_** || Days old: DELP 1, IHME 7, IMPE 60, SRIV 5
