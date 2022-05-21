@@ -11,7 +11,22 @@ IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220520. 
 
 <br/><br/>
 
+### Summary 20220520:
+
+Reported deaths show a small bounce up trend in Europe, United States, and Canada. 
+
+Reported cases show a small bounce up trend in United States and Canada. 
+
+The SRIV model predicts increase in global daily deaths starting from mid-May 2022 reaching 8000 per day in late August and above 2.5 million global cases about mid-August – primarily in United States, Canada, and Europe. 
+
+The DELP model predicts a huge spike in daily deaths in Africa June 2000, up to 900 per day, down to current levels in July. 
+
 <br/><br/>
+
+![image](https://user-images.githubusercontent.com/30849720/169635487-dfc4e1ff-5078-4a92-aee4-c7504ef5db39.png)
+
+<br/><br/>
+
 
 ****
 
