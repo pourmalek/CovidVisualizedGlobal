@@ -603,6 +603,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20SEARO%2011a%20C-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/169634414-a46b3daf-e122-426c-9a09-b4fc2ac1884b.png)
   
 ****
 
@@ -613,6 +614,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20SEARO%2014b%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/169634438-8c6806fd-afd7-4154-abfc-80429c9a1b4c.png)
  
 ****
 
@@ -628,6 +630,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) South-East Asian region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220520/output/merge/graph%20SEARO%2024b%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/169634460-bb297c3b-67dd-4b79-9d10-44a938350d5d.png)
  
 ****
 
