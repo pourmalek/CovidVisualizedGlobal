@@ -199,6 +199,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3) Regions together [Daily deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%201a2%20C-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804128-8fd5878a-37e0-46df-a61e-49b59e7f1588.png)
  
 ****
 
@@ -219,6 +220,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804166-08369c78-bf4e-4b51-819c-781f51399268.png)
  
 ****
 
