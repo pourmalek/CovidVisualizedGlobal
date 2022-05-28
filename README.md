@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 45 - 2022-05-20 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/45%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2045%20–%202022-05-20.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 46 - 2022-05-27 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/46%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2046%20–%202022-05-27.pdf)
 
 
 <br/><br/>
@@ -200,7 +200,7 @@ The DELP model predicts a huge spike in daily deaths in Africa in June 2000, up 
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 45 - 2022-05-20 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/45%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2045%20–%202022-05-20.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 46 - 2022-05-27 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/46%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2046%20–%202022-05-27.pdf)
 
 
   
