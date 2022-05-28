@@ -160,30 +160,37 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220520`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220520)
+### LATEST UPTAKE: uptake [`20220527`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220527)
 
-### Study update dates in uptake 20220520  
+### Study update dates in uptake 20220527  
 
-**_DELP 20220520_**, IHME 20220506, No IMPE, **_SRIV 20220520_** 
+**_DELP 20220527_**, IHME 20220506, No IMPE, **_SRIV 20220522_** 
 
-Days old: DELP 0, IHME 14, IMPE 67, SRIV 0
+Days old: DELP 0, IHME 21, no IMPE, SRIV 5
 
-IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220520. Not included. 
+IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220527. Not included. 
 
+
+<br/><br/>
+
+### Summary 20220527:
+
+Reported deaths show a small bounce up trend in Europe and United States.
+
+Reported cases show a small bounce up trend in United States.
+
+The SRIV model predicts increase in global daily deaths starting from mid-May 2022 reaching 12,000 per day in late August and above 3 million global cases about mid-August – primarily in United States and Europe.
+
+The DELP model predicts a huge spike in daily deaths in Africa in June 2000, up to 950 per day, down to current levels in July.
 
 <br/><br/>
 
-### Summary 20220520:
+### NEXT-DEMICS:
 
-Reported deaths show a small bounce up trend in Europe, United States, and Canada. 
-
-Reported cases show a small bounce up trend in United States and Canada. 
-
-The SRIV model predicts increase in global daily deaths starting from mid-May 2022 reaching 8000 per day in late August and above 2.5 million global cases about mid-August – primarily in United States, Canada, and Europe. 
-
-The DELP model predicts a huge spike in daily deaths in Africa June 2000, up to 900 per day, down to current levels in July. 
+![image](https://user-images.githubusercontent.com/30849720/169635487-dfc4e1ff-5078-4a92-aee4-c7504ef5db39.png)
 
 <br/><br/>
+
   
 **Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
 
@@ -1227,11 +1234,15 @@ and /20220318/ denotes the date of uptake.
  
   
 
+
  
 
 
 
 
+
+(73) uptake [`20220527`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220527): 
+**_DELP 20220527_**, IHME 20220506, No IMPE, **_SRIV 20220522_**  || Days old: DELP 0, IHME 21, no IMPE, SRIV 5
 
 (72) uptake [`20220520`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220520): 
 **_DELP 20220520_**, IHME 20220506, No IMPE, **_SRIV 20220520_**  || Days old: DELP 0, IHME 14, IMPE 67, SRIV 0
