@@ -429,11 +429,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR1%2014b%20C-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804899-65494357-01f3-4bec-986b-91bf8ae65c4a.png)
  
 ****
 
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR1%2022%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804918-0a0747b3-9b8f-47e1-b50c-6daf36baf634.png)
   
 ****
 
@@ -444,6 +446,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR1%2024b%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804938-5e04322b-f7eb-4775-8d44-8a0f724cdfe9.png)
  
 ****
 
@@ -464,6 +467,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804956-a5dbcbc4-e606-4675-ad9e-05a375480c42.png)
    
 ****
 
@@ -474,11 +478,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR2%2014b%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170804976-b72de215-080b-492a-9caf-048fd80ae591.png)
  
 ****
 
 (4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR2%2022%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170805008-11986564-a4d3-4010-be17-379a0747818f.png)
    
 ****
 
@@ -489,6 +495,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220527/output/merge/graph%20AMR2%2024b%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/170805035-645b9cfd-361b-423c-b1dd-96315c7d9939.png)
  
 ****
 
