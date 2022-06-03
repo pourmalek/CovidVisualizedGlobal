@@ -367,7 +367,6 @@ loc_grand_name == "Switzerland" | ///
 loc_grand_name == "Tajikistan" | ///
 loc_grand_name == "Turkey" | ///
 loc_grand_name == "Ukraine" | ///
-loc_grand_name == "Umbria" | ///
 loc_grand_name == "United Kingdom" | ///
 loc_grand_name == "Uzbekistan" | ///
 loc_grand_name == "Georgia" & location_id == 35 // The counry Georgia, not the Georgia state in USA
