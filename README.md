@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 46 - 2022-05-27 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/46%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2046%20–%202022-05-27.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 47 - 2022-06-03 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/47%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2047%20–%202022-06-03.pdf)
 
 
 <br/><br/>
@@ -183,7 +183,7 @@ IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220603. 
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 46 - 2022-05-27 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/46%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2046%20–%202022-05-27.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 47 - 2022-06-03 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/47%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2047%20–%202022-06-03.pdf)
 
 
   
