@@ -2,18 +2,19 @@
 
 ### Study update dates in uptake 20220603  
 
-copy from covir2
+**_DELP 20220529 check if they have a newer update_**, IHME 20220506, No IMPE, **_SRIV 20220603_** 
+
+Days old: DELP 5, IHME 29, no IMPE, SRIV 0
+
+IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220603. Not included. 
 
 
 <br/><br/>
 
 ### Summary 20220603:
 
-<br/><br/>
 
-### NEXT-DEMICS:
 
-![image](https://user-images.githubusercontent.com/30849720/169635487-dfc4e1ff-5078-4a92-aee4-c7504ef5db39.png)
 
 <br/><br/>
 
@@ -61,6 +62,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172010494-7223b007-ef9f-4700-adc8-9315a2f10975.png)
 
 ****
 
@@ -91,6 +93,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172010822-78806b68-ab75-4214-98f3-a32f81a1d491.png)
  
 ****
 
@@ -101,6 +104,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Global [Daily cases, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%20GLOBAL%2024b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172010884-e7299424-e80f-42f9-9cac-c879fa4d1f86.png)
  
 ****
 
@@ -158,7 +162,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (0a) Regions together [Daily deaths, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%201a1%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
- 
+![image](https://user-images.githubusercontent.com/30849720/172011059-1a03ec9b-12fd-47d5-8f6d-8311b1dfb144.png)
+  
 ****
 
 (0b) Regions together [Daily deaths, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%201a2%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
@@ -173,6 +178,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (0d) Regions together [Daily deaths, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%201a6%20JOHN%20C-19%20daily%20deaths%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172011105-6663d630-fcef-4017-b6cc-3819a476ade8.png)
  
 ****
 
@@ -188,11 +194,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3) Regions together [Daily deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%201a2%20C-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172011162-ab3aea5b-3012-4591-a94f-30d0affcc4ec.png)
  
 ****
 
 (4) Regions together [Daily deaths, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%201b2%20C-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172011206-24124f3e-30a8-4de4-b29b-4e7c1bf3c49d.png)
  
 ****
 
@@ -208,6 +216,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172011258-cd715a93-5568-4285-92a2-22036fdac537.png)
  
 ****
 
@@ -218,6 +227,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220603/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/172011319-7619e269-4a2f-4b6b-8f4c-1338795ec1cb.png)
  
 ****
 
