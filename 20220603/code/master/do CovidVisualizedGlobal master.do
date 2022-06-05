@@ -17,9 +17,9 @@
 
 Study update dates in uptake 20220603
 
-DELP 20220603, IHME 20220506, No IMPE, SRIV 20220522
+DELP 20220529 check if they have a newer update, IHME 20220506, No IMPE, SRIV 20220603
 
-Days old: DELP 0, IHME 21, no IMPE, SRIV 5
+Days old: DELP 5, IHME 29, no IMPE, SRIV 0
 
 IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220603. Not included.
 
@@ -29,10 +29,7 @@ IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220603. 
 
 * set epoch for marking forecasts with ||||||||||
 
-
-copy from covir2
-
-global DELPepoch 27May2022 // update release date
+global DELPepoch 29May2022 // update release date
 *            2/ ----------
 
 global IHMEepoch 29Apr2022 // as per https://covid19.healthdata.org/iran-(islamic-republic-of)?view=daily-deaths&tab=trend
@@ -41,7 +38,7 @@ global IHMEepoch 29Apr2022 // as per https://covid19.healthdata.org/iran-(islami
 global IMPEdate 2022-03-15_v9 
 *            4/ -------------
 
-global SRIVdate 2022-05-22
+global SRIVdate 2022-06-03
 *            5/ ----------
 
 
@@ -50,7 +47,7 @@ global SRIVdate 2022-05-22
 
 * To change uptake date in individual do files for models, change the following dates:
 
-global DELPdate 20220603 
+global DELPdate 20220529
 *            6/ --------
 
 global IHMEdate 2022-05-06
@@ -59,7 +56,7 @@ global IHMEdate 2022-05-06
 global IMPEepoch 15Mar2022 // update release date																		 
 *            8/ ----------
 
-global SRIVepoch 22May2022 // update release date																		 
+global SRIVepoch 03Jun2022 // update release date																		 
 *            9/ ----------
 
 
