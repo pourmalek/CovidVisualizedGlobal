@@ -530,11 +530,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/173365368-82f34da0-fc03-48eb-83d8-a29b1019836d.png)
  
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20EMRO%2022%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/173365502-d59fc2fe-d899-4178-9208-598ae179b356.png)
    
 ****
 
@@ -577,11 +579,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/173365660-5ea25e95-ddbb-4a79-9a55-83ebd40a2052.png)
  
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20EURO%2022%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/173365858-45133267-1d66-4481-a8d9-dd68f62c2b56.png)
    
 ****
 
@@ -625,6 +629,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20SEARO%2014b%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/173366031-951e6c30-4656-48b4-bab9-a8753ccdea0a.png)
  
 ****
 
