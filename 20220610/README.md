@@ -113,7 +113,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Global [Daily cases, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%20GLOBAL%2024b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202022.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/172010884-e7299424-e80f-42f9-9cac-c879fa4d1f86.png)
+![image](https://user-images.githubusercontent.com/30849720/173270913-c2058ab4-e906-470d-bb32-54da8f285ecb.png)
  
 ****
 
