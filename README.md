@@ -158,25 +158,46 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220603`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220603)
+### LATEST UPTAKE: uptake [`20220610`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220610)
 
-### Study update dates in uptake 20220603  
+### Study update dates in uptake 20220610
 
-**_DELP 20220529_**, IHME 20220506, No IMPE, **_SRIV 20220603_** 
+DELP 20220529, **_IHME 20220610_**, No IMPE, **_SRIV 20220610_** 
 
-Days old: DELP 5, IHME 29, no IMPE, SRIV 0
+Days old: DELP 13, IHME 0, no IMPE, SRIV 0
 
-IMPE update 20220315 was released on 20220505 and is > 60 days old on 20220603. Not included. 
+IMPE update 20220315 was released on 20220505 and is > 120 days old on 20220610. Not included. 
+
+<br/><br/> 
+
+A new IHME scenario, “Global antivirals”, has replaced the old scenario “Vaccine 3rd dose”. “Global antivirals” = Globally distributed antivirals extends coverage to all LMICs over the period of July 15, 2022, to September 15, 2022. 
+
+
+<br/><br/> 
+
+
+*********
+
+WE KNOW THAT AMONG THE COMING PANDEMICS IS THE SPREAD OF SEVERAL EPIDEMICS OF MORTALITY AND MORBIDITY DUE TO LOW OR ABSENT FOOD INTAKE, CONCENTRATED IN MIDDLE EAST, NORTH AFRICA, AND SUBSAHARAN AFRICA. DON’T WE KNOW?  
+
+*********
+
+"Famine in 2022" by Dr. John Campbell, Jun 3, 2022 https://www.youtube.com/watch?v=kNv6LSpOqok
+
+*********
+  
 
 
 <br/><br/>
 
 
-<br/><br/>
 
+*********
   
 **Strengths and weakness** of the international and periodically update COVID-19 pandemic models are discussed [here]( https://github.com/pourmalek/CovidVisualizedMethodology#characteristics-of-the-models). 
 
+********* 
+  
 <br/><br/>  
   
   
@@ -1226,6 +1247,10 @@ and /20220318/ denotes the date of uptake.
 
 
 
+
+
+(75) uptake [`20220610`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220610): 
+DELP 20220529, **_IHME 20220610_**, No IMPE, **_SRIV 20220610_**   || Days old: DELP 13, IHME 0, no IMPE, SRIV 0
 
 (74) uptake [`20220603`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220603): 
 **_DELP 20220529_**, IHME 20220506, No IMPE, **_SRIV 20220603_**  || Days old: DELP 5, IHME 29, no IMPE, SRIV 0
