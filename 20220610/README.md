@@ -236,7 +236,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/172015292-c902917d-15e7-48e4-b7f2-ae4e70745cfb.png)
+![image](https://user-images.githubusercontent.com/30849720/173358888-0534fe32-3bd0-47e6-a0c9-d0d7b84e8e92.png)
  
 ****
 
@@ -252,13 +252,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/172015384-1fde9f70-2604-48aa-803c-c27ae8acdcaa.png)
+![image](https://user-images.githubusercontent.com/30849720/173359054-426b9491-b4a2-4a8d-9154-cc1b5dd4a4da.png)
  
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220610/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/172015433-0e4ca04c-fe45-49fc-a271-62db354f077f.png)
+![image](https://user-images.githubusercontent.com/30849720/173359240-740d9280-bb41-4096-92de-ead684b19496.png)
  
 ****
 
