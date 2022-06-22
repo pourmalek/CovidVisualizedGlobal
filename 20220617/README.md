@@ -531,7 +531,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/173363063-8550eceb-6426-4a6c-b108-9d0e8d60b202.png)
+![image](https://user-images.githubusercontent.com/30849720/175029201-6c98527f-488a-42f8-b325-4c74bfd3972f.png)
    
 ****
 
@@ -542,13 +542,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/173365368-82f34da0-fc03-48eb-83d8-a29b1019836d.png)
+![image](https://user-images.githubusercontent.com/30849720/175029386-0d5662fc-b27c-4ae8-bad6-28d59e4683b1.png)
  
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20EMRO%2022%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/173365502-d59fc2fe-d899-4178-9208-598ae179b356.png)
+![image](https://user-images.githubusercontent.com/30849720/175029570-03be40bd-16b8-4175-adab-9adaf9a39ef8.png)
    
 ****
 
@@ -559,7 +559,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/173368504-1d4fdf02-26fc-4094-af8a-ab9d850ed9b8.png)
+![image](https://user-images.githubusercontent.com/30849720/175029737-846ded59-0a33-4005-a8b8-23646fdb35cc.png)
  
 ****
 
