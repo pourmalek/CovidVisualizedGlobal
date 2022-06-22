@@ -336,6 +336,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/174944439-9cb83214-53a2-464f-b27d-66b0238a5cbe.png)
     
 ****
 
@@ -346,7 +347,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220617/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/173363818-e3c54c27-c54d-4354-860b-ee662935ff4d.png)
+![image](https://user-images.githubusercontent.com/30849720/174944528-3534b9c5-da1a-42e4-a580-d8ad2e0c5ba7.png)
  
 ****
 
