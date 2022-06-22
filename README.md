@@ -158,15 +158,15 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220610`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220610)
+### LATEST UPTAKE: uptake [`20220617`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220617)
 
-### Study update dates in uptake 20220610
+### Study update dates in uptake 20220617
 
-DELP 20220529, **_IHME 20220610_**, No IMPE, **_SRIV 20220610_** 
+DELP 20220529, IHME 20220610, **_IMPE 20220530_**, **_SRIV 20220617_** 
 
-Days old: DELP 13, IHME 0, no IMPE, SRIV 0
+Days old: DELP 20, IHME 7, IMPE 19, SRIV 0
 
-IMPE update 20220315 was released on 20220505 and is > 120 days old on 20220610. Not included. 
+IMPE update 20220530 was released on 20220617. 
 
 <br/><br/> 
 
@@ -1254,8 +1254,9 @@ and /20220318/ denotes the date of uptake.
 
 
 
-
-
+(76) uptake [`20220617`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220617): 
+DELP 20220529, IHME 20220610, **_IMPE 20220530_**, **_SRIV 20220617_**   || Days old: DELP 20, IHME 7, IMPE 19, SRIV 0
+  
 (75) uptake [`20220610`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220610): 
 DELP 20220529, **_IHME 20220610_**, No IMPE, **_SRIV 20220610_**   || Days old: DELP 13, IHME 0, no IMPE, SRIV 0
 
