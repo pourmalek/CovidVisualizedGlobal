@@ -684,8 +684,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Western Pacific region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-m
-   
+![image](https://user-images.githubusercontent.com/30849720/175543723-ca2df846-a2d6-4df1-b2fe-3d8538c9912f.png)
+
 ****
 
 (3) Western Pacific region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20WPRO%2014%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202021.pdf)
@@ -695,8 +695,7 @@ m
 
 (3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20WPRO%2014b%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202022.pdf)
 
-m
- 
+
 ****
 
 (4) Western Pacific region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20WPRO%2021%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
@@ -712,7 +711,7 @@ m
 
 (6b) Western Pacific region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20WPRO%2024b%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-m
+![image](https://user-images.githubusercontent.com/30849720/175543967-55c99af4-e428-40cc-b1cc-c565a018040e.png)
   
 ****
 
