@@ -238,6 +238,12 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
+(00a) GLOBAl waves and variants [Daily cases, 2020 on, Our World in Data, via Eric Topol (@EricTopol)]
+
+![image](https://user-images.githubusercontent.com/30849720/175568239-b97ff847-a3c2-43ec-acf3-39684d3caeea.png)(https://pbs.twimg.com/media/FWBgNvOUIAAhwkh?format=jpg&name=4096x4096)
+
+****
+
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
  
