@@ -261,14 +261,14 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-m
- 
+![image](https://user-images.githubusercontent.com/30849720/175470155-596af6a8-17c3-47a2-9d6b-64c0a2ee5d86.png)
+
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-m
- 
+![image](https://user-images.githubusercontent.com/30849720/175470275-8853e9a5-0487-4877-b9c8-4b2b174b2760.png)
+
 ****
 
 (11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
@@ -336,8 +336,8 @@ m
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-m
-    
+![image](https://user-images.githubusercontent.com/30849720/175470406-767515d1-49eb-4f55-81f9-baeeccd4c4b9.png)
+
 ****
 
 (3) African region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AFRO%2014%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202021.pdf)
@@ -347,8 +347,8 @@ m
 
 (3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
 
-m
- 
+![image](https://user-images.githubusercontent.com/30849720/175470514-8db6cf93-e233-4458-b4f6-55a65d1d9c76.png)
+
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
