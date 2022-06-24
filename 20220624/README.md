@@ -384,8 +384,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-m
-      
+![image](https://user-images.githubusercontent.com/30849720/175530948-82fc4fc4-1cd8-470d-be34-194edf066c86.png)
+
 ****
 
 (3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
@@ -395,13 +395,13 @@ m
 
 (3b) Americas region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMRO%2014b%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202022.pdf)
 
-m
+![image](https://user-images.githubusercontent.com/30849720/175531050-5d11a7fb-1709-41e8-8861-d1bf454715f2.png)
  
 ****
 
 (4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMRO%2022%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202021.pdf)
 
-m
+![image](https://user-images.githubusercontent.com/30849720/175531172-b30915de-06dd-4f85-b394-c12791de21f7.png)
   
 ****
 
@@ -412,7 +412,7 @@ m
 
 (6b) Americas region [Daily reference, 3 scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-m
+![image](https://user-images.githubusercontent.com/30849720/175531277-01e47c8e-6c46-47eb-b45a-31b93f6308ef.png)
   
 ****
 
@@ -432,7 +432,7 @@ m
 
 (1) Americas region, Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%20AMR1%2011a%20C-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-m
+![image](https://user-images.githubusercontent.com/30849720/175531425-4876ad8d-4f54-40a3-9f10-fe7ca370bc08.png)
    
 ****
 
