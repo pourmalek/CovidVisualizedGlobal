@@ -158,25 +158,41 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220617`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220617)
+### LATEST UPTAKE: uptake [`20220624`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220624)
 
-### Study update dates in uptake 20220617
+### Study update dates in uptake 20220624
 
-DELP 20220529, IHME 20220610, **_IMPE 20220530_**, **_SRIV 20220617_** 
+**_DELP 20220618_**, IHME 20220610, No 20220530, **_SRIV 20220623_** 
 
-Days old: DELP 20, IHME 7, IMPE 19, SRIV 0
+Days old: DELP 7, IHME 15, IMPE 26, SRIV 1
 
-IMPE update 20220530 was released on 20220617. 
+The IMPE update 20220530 was released on 20220624. Not included. 
 
 <br/><br/> 
 
-#### IHME update 20220610: 
 
-Global infections are increasing: Secondary Omicron waves are hitting parts of sub-Saharan Africa, Latin America, Portugal, and the United States. We expect a peak in June, but another surge in the northern hemisphere in September, leading to an additional 120,000 deaths by October.
+### Summary 20220624:
 
-https://www.healthdata.org/covid/video/insights-ihmes-latest-covid-19-model-run
+**Predicted daily deaths:**
 
-A new IHME scenario, “Global antivirals”, has replaced the old scenario “Vaccine 3rd dose”. “Global antivirals” = Globally distributed antivirals extends coverage to all LMICs over the period of July 15, 2022, to September 15, 2022. 
+The IHME model predicts declining global daily deaths through October first. The SRIV model predicts unprecedented rise in global daily deaths from July to October 1, reaching about 18,000 per day on October 1, 2022. 
+
+**Predicted daily infections and cases:** 
+
+The IHME model predicts declining global daily infections from early June (8.7 million) to early September 2022 (5.5 million) and rise from early September to October first, 2022 (6.5 million). 
+
+The SRIV model predicts increase in global daily cases from mid-June (650,000) to late August (5 million), and then decline through October 1, 2022 (4.5 million). The SRIV model predicts peak of daily cases in WHO regions at different heights during August and September 2022, except for South-East Asia (SEAR) and Eastern Mediterranean (EMR) regions which do not peek before October 1, 2022.
+
+The DELP model predicts peak of cases deaths in the African region (AFR) at about late August to early September 2022.
+
+**Officially reported daily deaths:**
+
+Officially reported daily deaths have been stagnating since mid-June 2022 in most WHO regions, except increase in Americas and Europe. 
+
+**Officially reported daily cases:**
+
+Officially reported daily cases have increased since early June 2022 at the global level, Europe, and Latin America, and have decreased in Western Pacific region (WPR) as well as in Canada and United States together (AMR without Canada and United States). The size of the increase has been largest in the Europe. The increases during the same time in South-East Asia (SEAR), Eastern Mediterranean (EMR), and African (AFR) regions have been relatively much smaller. 
+
 
 
 <br/><br/> 
@@ -1254,6 +1270,12 @@ and /20220318/ denotes the date of uptake.
   
 
 
+
+ 
+  
+
+(77) uptake [`20220624`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220624): 
+**_DELP 20220618_**, IHME 20220610, No 20220530, **_SRIV 20220623_**    || Days old: DELP 7, IHME 15, IMPE 26, SRIV 1
 
 (76) uptake [`20220617`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220617): 
 DELP 20220529, IHME 20220610, **_IMPE 20220530_**, **_SRIV 20220617_**   || Days old: DELP 20, IHME 7, IMPE 19, SRIV 0
