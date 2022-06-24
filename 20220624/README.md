@@ -246,6 +246,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/175568950-40e0b5ea-16c7-4e4d-88d2-ae0239413eff.png)
  
 ****
 
