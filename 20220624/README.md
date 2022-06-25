@@ -260,7 +260,7 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(00a) [GLOBAL waves and variants, Daily cases, 2020 on, Our World in Data, via Eric Topol (@EricTopol)](https://pbs.twimg.com/media/FWBgNvOUIAAhwkh?format=jpg&name=4096x4096)
+(00a) [GLOBAL waves and variants, Daily cases, 2020 on, Our World in Data, via Eric Topol (@EricTopol)](https://twitter.com/erictopol/status/1540336950548131846?s=21&t=jrEfkcpv51UY6Mm4qP4HOQ)
 
 ![image](https://user-images.githubusercontent.com/30849720/175568239-b97ff847-a3c2-43ec-acf3-39684d3caeea.png)
 
