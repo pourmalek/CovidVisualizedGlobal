@@ -264,6 +264,26 @@ AMRO is devided to AMR1 and AMR2:
 
 ![image](https://user-images.githubusercontent.com/30849720/175568239-b97ff847-a3c2-43ec-acf3-39684d3caeea.png)
 
+<br/><br/> 
+
+Note: 
+
+While looking at the graph of dominant variants at the global level, it is critical to note that in general, such a global graph,
+
+"[...] would be totally dominated by the USA & UK, and not necessarily representative [of the GLOBE] ". 
+
+SOURCE CITATION: Emma B. Hodcroft. 2021. "CoVariants: SARS-CoV-2 Mutations and Variants of Interest." https://covariants.org/
+
+SOURCE WEB PAGE:
+
+https://github.com/hodcroftlab/covariants/discussions/241 
+
+https://covariants.org/per-country
+
+DATE ACCESED: June 24, 2022
+
+<br/><br/> 
+
 ****
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220624/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
