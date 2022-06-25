@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 49 - 2022-06-17 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/49%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2049%20–%202022-06-17.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 50 - 2022-06-24 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/50%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2050%20–%202022-06-24.pdf)
 
 
 <br/><br/>
@@ -226,7 +226,7 @@ WE KNOW THAT AMONG THE COMING PANDEMICS IS THE SPREAD OF SEVERAL EPIDEMICS OF MO
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 49 - 2022-06-17 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/49%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2049%20–%202022-06-17.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 50 - 2022-06-24 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/50%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2050%20–%202022-06-24.pdf)
 
 
   
