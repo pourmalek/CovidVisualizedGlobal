@@ -262,27 +262,32 @@ AMRO is devided to AMR1 and AMR2:
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book 
+![image](https://user-images.githubusercontent.com/30849720/176987900-a94730ca-a314-4383-b06d-98e156bfb633.png)
+
 ****
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/176987920-d76afdd3-a7d3-45b1-95b7-a839202368b8.png)
+
 ****
 
 (00d) Regions together [Daily cases, without GLOBAL, 2022 June, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/176987938-59a5ab53-1131-456a-80d2-a3a70b389f99.png)
+
 ****
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
-book 
+![image](https://user-images.githubusercontent.com/30849720/176987957-a11088cb-7015-452b-af1c-f2fff2b80c96.png)
+
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
-book 
+![image](https://user-images.githubusercontent.com/30849720/176987974-248d7b4f-e6b1-41d1-b55e-a7f6ce72e8d4.png)
+
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
