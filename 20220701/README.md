@@ -234,12 +234,14 @@ AMRO is devided to AMR1 and AMR2:
 
 (3) Regions together [Daily deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%201a2%20C-19%20daily%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/176987674-b4d55d88-04ec-40aa-a42c-5ba11adf8171.png)
+
 ****
 
 (4) Regions together [Daily deaths, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%201b2%20C-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/176987698-1b61c1b3-15ff-4198-879b-cf52a52fa6cf.png)
+
 ****
 
 (5) Regions together [Daily excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%201%202%20a1%20C-19%20daily%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
@@ -254,32 +256,7 @@ book
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
-****
-
-(00a) [GLOBAL waves and variants, Daily cases, 2020 on, Our World in Data, via Eric Topol (@EricTopol)](https://twitter.com/erictopol/status/1540336950548131846?s=21&t=jrEfkcpv51UY6Mm4qP4HOQ)
-
-![image](https://user-images.githubusercontent.com/30849720/175568239-b97ff847-a3c2-43ec-acf3-39684d3caeea.png)
-
-<br/><br/> 
-
-Note: 
-
-While looking at the graph of dominant variants at the global level, it is critical to note that in general, such a global graph,
-
-"[...] would be totally dominated by the USA & UK, and not necessarily representative [of the GLOBE] ". 
-
-SOURCE CITATION: Emma B. Hodcroft. 2021. "CoVariants: SARS-CoV-2 Mutations and Variants of Interest." https://covariants.org/
-
-SOURCE WEB PAGE:
-
-https://github.com/hodcroftlab/covariants/discussions/241 
-
-https://covariants.org/per-country
-
-DATE ACCESED: June 24, 2022
-
-<br/><br/> 
+![image](https://user-images.githubusercontent.com/30849720/176987873-15a22aab-749b-4e48-a64a-7fc18fc719c6.png)
 
 ****
 
