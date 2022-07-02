@@ -395,7 +395,8 @@ AMRO is devided to AMR1 and AMR2:
 
 (6b) African region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AFRO%2024b%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/177003455-7454429a-ecfc-462c-910c-2ace0c65aea7.png)
+
 ****
 
 *
@@ -414,7 +415,8 @@ book
 
 (1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/177003480-0cebe1f3-bd32-4956-8d38-2119d2ec4739.png)
+
 ****
 
 (3) Americas region [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2014%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202021.pdf)
@@ -424,12 +426,14 @@ book
 
 (3b) Americas region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2014b%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202022.pdf)
 
-book 
+![image](https://user-images.githubusercontent.com/30849720/177003509-5566aa00-857d-4137-9201-82393e8e291c.png)
+
 ****
 
 (4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2021%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios.pdf)
 
-book    
+![image](https://user-images.githubusercontent.com/30849720/177003536-4c4e6611-0e9c-4c48-bf76-fe822097baab.png)
+
 ****
 
 (6) Americas region [Daily cases or infections, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2024%20C-19%20daily%20cases%2C%20AMRO%2C%203%20scenarios%2C%202021%2C%20uncertainty.pdf)
@@ -439,7 +443,8 @@ book
 
 (6b) Americas region [Daily reference, 3 scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220701/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book  
+![image](https://user-images.githubusercontent.com/30849720/177003564-c488738d-ea62-40c7-8bad-c3e5b5d6ddf5.png)
+
 ****
 
 *
