@@ -1,9 +1,9 @@
 {smcl}
-{txt}{sf}{ul off}{.-}
+{com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220701/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 1 Jul 2022, 21:59:50
+ {txt}opened on:  {res} 3 Jul 2022, 10:45:51
 {txt}
 {com}. 
 . 
@@ -58,11 +58,11 @@
 
 {col 5}Result{col 38}# of obs.
 {col 5}{hline 41}
-{col 5}not matched{col 30}{res}           7,740
+{col 5}not matched{col 30}{res}           7,722
 {txt}{col 9}from master{col 30}{res}           7,047{txt}  (_merge==1)
-{col 9}from using{col 30}{res}             693{txt}  (_merge==2)
+{col 9}from using{col 30}{res}             675{txt}  (_merge==2)
 
-{col 5}matched{col 30}{res}             972{txt}  (_merge==3)
+{col 5}matched{col 30}{res}             990{txt}  (_merge==3)
 {col 5}{hline 41}
 {com}. {c )-}
 {txt}
@@ -455,8 +455,7 @@
 {txt}
 {com}. 
 . save "CovidVisualizedGlobal merge.dta", replace
-{txt}(note: file CovidVisualizedGlobal merge.dta not found)
-file CovidVisualizedGlobal merge.dta saved
+{txt}file CovidVisualizedGlobal merge.dta saved
 
 {com}. 
 . 
@@ -574,8 +573,8 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         8,940                          
-{txt} vars:{res}         2,491                          1 Jul 2022 21:59
-{txt} size:{res}    89,739,720                          
+{txt} vars:{res}         2,491                          3 Jul 2022 10:45
+{txt} size:{res}    90,222,480                          
 {txt}{hline}
               storage   display    value
 variable name   type    format     label      variable label
@@ -4971,7 +4970,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02GLOBAL{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00GLOBAL{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00GLOBAL{p_end}
@@ -4981,7 +4980,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02GLOBAL{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00AFRO{p_end}
@@ -5031,7 +5030,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00AFRO{p_end}
@@ -5041,7 +5040,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02AFRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00AMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00AMRO{p_end}
@@ -5091,7 +5090,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02AMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00AMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00AMRO{p_end}
@@ -5101,7 +5100,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02AMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00AMR1{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00AMR1{p_end}
@@ -5151,7 +5150,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02AMR1{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00AMR1{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00AMR1{p_end}
@@ -5161,7 +5160,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02AMR1{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00AMR2{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00AMR2{p_end}
@@ -5211,7 +5210,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02AMR2{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00AMR2{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00AMR2{p_end}
@@ -5221,7 +5220,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02AMR2{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00EMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00EMRO{p_end}
@@ -5271,7 +5270,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02EMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00EMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00EMRO{p_end}
@@ -5281,7 +5280,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02EMRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00EURO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00EURO{p_end}
@@ -5331,7 +5330,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02EURO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00EURO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00EURO{p_end}
@@ -5341,7 +5340,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02EURO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00SEARO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00SEARO{p_end}
@@ -5391,7 +5390,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02SEARO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00SEARO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00SEARO{p_end}
@@ -5401,7 +5400,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02SEARO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {p 0 48}DayCTDMeRaA00S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00WPRO{p_end}
@@ -5451,7 +5450,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotDERMeSmA02S02WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported Mean smoothed IHME S2{p_end}
 {p 0 48}TotDERMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Deaths estim to reported S0 SRIV{p_end}
 {p 0 48}TotCERMeRaA00S00WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported JOHN = 1{p_end}
 {p 0 48}TotCERMeRaA01S00WPRO{p_end}
@@ -5461,7 +5460,7 @@ variable name   type    format     label      variable label
 {p 0 48}TotIERMeSmA02S02WPRO{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total infections estim to reported cases Mean smoothed IHME S2{p_end}
 {p 0 48}TotCERMeRaA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total Cases estim to reported S0 SRIV{p_end}
 {txt}{hline}
 Sorted by: {res}date  loc_grand_name
 {txt}
@@ -6273,15 +6272,15 @@ Sorted by: {res}date  loc_grand_name
 .         qui graph export "graph `region' 25 C19 daily estimated infections to reported cases, `region', reference scenarios.pdf", replace
 {txt}  7{com}.         
 . {c )-}
-{txt}(8,062 missing values generated)
-{res}{txt}(8,088 missing values generated)
-{res}{txt}(8,063 missing values generated)
-{res}{txt}(8,070 missing values generated)
-{res}{txt}(8,074 missing values generated)
-{res}{txt}(8,073 missing values generated)
-{res}{txt}(8,066 missing values generated)
-{res}{txt}(8,081 missing values generated)
-{res}{txt}(8,062 missing values generated)
+{txt}(8,060 missing values generated)
+{res}{txt}(8,086 missing values generated)
+{res}{txt}(8,061 missing values generated)
+{res}{txt}(8,068 missing values generated)
+{res}{txt}(8,072 missing values generated)
+{res}{txt}(8,071 missing values generated)
+{res}{txt}(8,064 missing values generated)
+{res}{txt}(8,079 missing values generated)
+{res}{txt}(8,060 missing values generated)
 {res}{txt}
 {com}. *
 . 
@@ -7503,6 +7502,37 @@ all files already exist and are up to date.
 . 
 . 
 . 
+. * daily deaths, Without GLOBAL, JOHN, 2022 June
+. 
+. twoway ///
+> (line DayDeaMeSmA00S00AFRO date, sort lcolor(brown)) /// JOHN
+> (line DayDeaMeSmA00S00AMRO date, sort lcolor(red)) ///
+> (line DayDeaMeSmA00S00AMR1 date, sort lcolor(orange)) ///
+> (line DayDeaMeSmA00S00AMR2 date, sort lcolor(purple)) ///
+> (line DayDeaMeSmA00S00EMRO date, sort lcolor(gold)) ///
+> (line DayDeaMeSmA00S00EURO date, sort lcolor(green)) ///
+> (line DayDeaMeSmA00S00SEARO date, sort lcolor(cyan)) ///
+> (line DayDeaMeSmA00S00WPRO date, sort lcolor(blue)) ///
+> if date >= td(01jun2022) & date <= td(01jul2022) ///
+> , xtitle(Date) xlabel(22797 22803 22810 22817 22824 22827, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
+> ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
+> xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+> legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
+> subtitle("Without GLOBAL, 2022 on", size(small)) 
+{res}{txt}
+{com}. 
+. qui graph export "graph 1a7 JOHN C-19 daily deaths, regions together, JOHN.pdf", replace
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
 . 
 . * models
 . 
@@ -7902,7 +7932,7 @@ all files already exist and are up to date.
 > (line DayCasMeSmA00S00SEARO date, sort lcolor(cyan)) ///
 > (line DayCasMeSmA00S00WPRO date, sort lcolor(blue)) ///
 > if date >= td(01jun2022) & date <= td(01jul2022) ///
-> , xtitle(Date) xlabel(, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
+> , xtitle(Date) xlabel(22797 22803 22810 22817 22824 22827, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid) xlabel(, grid) ///
 > xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, labsize(small) angle(forty_five)) ///
 > ytitle(Daily cases) title("C-19 daily cases, WHO regions, JOHN", size(medium)) ///
 > xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
@@ -8445,7 +8475,7 @@ all files already exist and are up to date.
 {txt}
 {com}. 
 . di c(scheme)
-{res}_GRSTYLE_
+{res}s2color
 {txt}
 {com}. 
 . 
@@ -8456,7 +8486,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220701/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 1 Jul 2022, 22:08:21
+ {txt}closed on:  {res} 3 Jul 2022, 10:53:36
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
