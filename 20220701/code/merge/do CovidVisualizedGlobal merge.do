@@ -2310,7 +2310,7 @@ xlabel(, angle(forty_five)) ylabel(, format(%15.0fc) labsize(small))  ylabel(, l
 ytitle(Daily deaths) title("C-19 daily deaths, WHO regions, JOHN", size(medium)) ///
 xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
 legend(order(1 "AFRO" 2 "AMRO" 3 "AMRCANUSA" 4 "AMRwoCANUSA" 5 "EMRO" 6 "EURO" 7 "SEARO" 8 "WPRO") size(small) rows (3)) ///
-subtitle("Without GLOBAL, 2022 on", size(small)) 
+subtitle("Without GLOBAL, 2022 June", size(small)) 
 
 qui graph export "graph 1a7 JOHN C-19 daily deaths, regions together, JOHN.pdf", replace
 
