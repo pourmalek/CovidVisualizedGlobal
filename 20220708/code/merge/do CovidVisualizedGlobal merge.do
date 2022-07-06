@@ -72,7 +72,7 @@ drop _merge
 
 
 
-/* IMPE
+* IMPE
 
 if regexm(c(os),"Mac") == 1 {
 
@@ -81,7 +81,7 @@ if regexm(c(os),"Mac") == 1 {
 else if regexm(c(os),"Windows") == 1 merge 1:1 date using "$pathCovidVisualizedGlobal\IMPE\CovidVisualizedGlobal IMPE.dta"
 
 drop _merge
-*/
+
 
 
 * SRIV
@@ -161,7 +161,7 @@ foreach region of local list5 {
 	label var TotITDMeSmA02S02`region' "Total infections to Deaths S2 IHME"
 	
 	
-	/*
+	
 	gen DayITDMeRaA03S01`region'  = DayINFMeSmA03S01`region'  / DayDeaMeRaA03S01`region'   
 	
 	label var DayITDMeRaA03S01`region'  "Daily infections to Deaths S1 IMPE"
@@ -191,7 +191,7 @@ foreach region of local list5 {
 	gen TotITDMeRaA03S03`region'  = TotINFMeRaA03S03`region'  / TotDeaMeRaA03S03`region'   
 	
 	label var TotITDMeRaA03S03`region'  "Total infections to Deaths S3 IMPE"
-	*/
+	
 	
 	
 
@@ -230,7 +230,7 @@ foreach region of local list5 {
 	
 	label var DayDERMeSmA02S02`region' "Daily Deaths estim to reported Mean smoothed IHME S2"
 	
-	/*
+	
 	gen DayDERMeRaA03S01`region' = DayDeaMeRaA03S01`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA03S01`region' "Daily Deaths estim to reported Mean S1 IMPE"
@@ -244,7 +244,7 @@ foreach region of local list5 {
 	gen DayDERMeRaA03S03`region' = DayDeaMeRaA03S03`region' / DayDeaMeRaA00S00`region'
 	
 	label var DayDERMeRaA03S03`region' "Daily Deaths estim to reported Mean S3 IMPE"
-	*/
+	
 	
 	
 	gen DayDERMeRaA05S00`region'  = DayDeaMeSmA05S00`region' / DayDeaMeRaA00S00`region'
@@ -279,7 +279,7 @@ foreach region of local list5 {
 	label var DayIERMeSmA02S02`region' "Daily infections estim to reported cases Mean smoothed IHME S2"
 	
 
-	/*
+	
 	gen DayIERMeRaA03S01`region' = DayINFMeSmA03S01`region' / DayCasMeRaA00S00`region'
 	
 	label var DayIERMeRaA03S01`region' "Daily infections estim to reported cases Mean S1 IMPE"
@@ -293,7 +293,7 @@ foreach region of local list5 {
 	gen DayIERMeRaA03S03`region' = DayINFMeSmA03S03`region' / DayCasMeRaA00S00`region'
 	
 	label var DayIERMeRaA03S03`region' "Daily infections estim to reported cases Mean S3 IMPE"
-	*/
+	
 	
 	
 	gen DayCERMeRaA05S00`region'  = DayCasMeSmA05S00`region' / DayCasMeRaA00S00`region'
@@ -328,7 +328,7 @@ foreach region of local list5 {
 	label var TotDERMeSmA02S02`region' "Total Deaths estim to reported Mean smoothed IHME S2"
 	
 
-	/*
+	
 	gen TotDERMeRaA03S01`region' = TotDeaMeRaA03S01`region' / TotDeaMeRaA00S00`region'
 	
 	label var TotDERMeRaA03S01`region' "Total Deaths estim to reported Mean S1 IMPE"
@@ -342,7 +342,7 @@ foreach region of local list5 {
 	gen TotDERMeRaA03S03`region' = TotDeaMeRaA03S03`region' / TotDeaMeRaA00S00`region'
 	
 	label var TotDERMeRaA03S03`region' "Total Deaths estim to reported Mean S3 IMPE"
-	*/
+	
 	
 	
 	gen TotDERMeRaA05S00`region'  = TotDeaMeRaA05S00`region' / TotDeaMeRaA00S00`region'
@@ -377,7 +377,7 @@ foreach region of local list5 {
 	label var TotIERMeSmA02S02`region' "Total infections estim to reported cases Mean smoothed IHME S2"
 	
 
-	/*
+	
 	gen TotIERMeRaA03S01`region' = TotINFMeRaA03S01`region' / TotCasMeRaA00S00`region'
 	
 	label var TotIERMeRaA03S01`region' "Total infections estim to reported cases Mean S1 IMPE"
@@ -391,7 +391,7 @@ foreach region of local list5 {
 	gen TotIERMeRaA03S03`region' = TotINFMeRaA03S03`region' / TotCasMeRaA00S00`region'
 	
 	label var TotIERMeRaA03S03`region' "Total infections estim to reported cases Mean S3 IMPE"
-	*/
+	
 	
 	gen TotCERMeRaA05S00`region'  = TotCasMeRaA05S00`region' / TotCasMeRaA00S00`region'
 	
@@ -934,6 +934,38 @@ local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list5 {	
 	
+	****
+	* daily deaths, reference scenario, uncertainty, 2022, IMPE 
+	
+	twoway ///
+	(line DayDeaMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
+	(line DayDeaMeRaA03S02`region' date, sort lcolor(black)) /// 2 IMPE reference mean
+	(line DayDeaLoRaA03S02`region' date, sort lcolor(green) lpattern(dash)) /// 3 IMPE reference lower
+	(line DayDeaUpRaA03S02`region' date, sort lcolor(red) lpattern(dash)) /// 4 IMPE reference upper
+	if date >= td(01jan2022)  ///
+	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
+	ytitle(Daily deaths) title("COVID-19 daily deaths, `region', reference scenario w/ uncertainty, IMPE", size(medium)) ///
+	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+	legend(order(1 "JOHN smooth" 2 "IMPE mean" 3 "IMPE lower" 4 "IMPE upper") size(small) row(2)) ///
+	subtitle("after 2021-01-01", size(small)) ///
+	note("Uncertainty limits: dashed (– – –) curves") 
+	
+	qui graph export "graph `region' 17 COVID-19 daily deaths, `region', reference scenario, uncertainty, 2022, IMPE.pdf", replace
+	
+}
+*
+
+
+	
+
+
+
+
+local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
+
+foreach region of local list5 {	
+	
 	
 	***********************
 	
@@ -1214,6 +1246,41 @@ foreach region of local list5 {
 	
 }
 *
+
+
+
+
+
+
+
+local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
+
+foreach region of local list5 {	
+	
+	****
+	* daily infections, reference scenario, uncertainty, 2022, IMPE 
+	
+	twoway ///
+	(line DayINFMeSmA00S00`region' date, sort lcolor(cyan) lwidth(thick)) /// 1 "JOHN smooth"
+	(line DayINFMeRaA03S02`region' date, sort lcolor(black)) /// 2 IMPE reference mean
+	(line DayINFLoRaA03S02`region' date, sort lcolor(green) lpattern(dash)) /// 3 IMPE reference lower
+	(line DayINFUpRaA03S02`region' date, sort lcolor(red) lpattern(dash)) /// 4 IMPE reference upper
+	if date >= td(01jan2022)  ///
+	, xtitle(Date) xlabel(#$monthspast01jan2022merge, format(%tdYY-NN-DD) labsize(small)) xlabel(, grid)  ///
+	xlabel(, angle(forty_five)) ylabel(, format(%12.0fc) labsize(small)) ylabel(, labsize(small) angle(horizontal)) ///
+	ytitle(Daily infections) title("COVID-19 daily infections, `region', reference scenario w/ uncertainty, IMPE", size(medium)) ///
+	xscale(lwidth(vthin) lcolor(gray*.2)) yscale(lwidth(vthin) lcolor(gray*.2)) legend(region(lcolor(none))) legend(bexpand) ///
+	legend(order(1 "JOHN smooth" 2 "IMPE mean" 3 "IMPE lower" 4 "IMPE upper") size(small) row(2)) ///
+	subtitle("after 2021-01-01", size(small)) ///
+	note("Uncertainty limits: dashed (– – –) curves") 
+	
+	qui graph export "graph `region' 26 b COVID-19 daily infections, `region', reference scenario, uncertainty, 2022, IMPE.pdf", replace
+	
+}
+*
+
+
+
 
 
 
