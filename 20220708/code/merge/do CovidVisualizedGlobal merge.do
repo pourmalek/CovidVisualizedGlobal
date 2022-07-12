@@ -1252,7 +1252,7 @@ foreach region of local list5 {
 
 
 
-
+/*
 local list5 GLOBAL AFRO AMRO AMR1 AMR2 EMRO EURO SEARO WPRO
 
 foreach region of local list5 {	
@@ -1279,7 +1279,7 @@ foreach region of local list5 {
 }
 *
 
-
+*/
 
 
 
