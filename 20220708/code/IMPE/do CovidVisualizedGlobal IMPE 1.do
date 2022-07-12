@@ -43,7 +43,24 @@ erase $IMPEdate.csv.zip
 
 * import csv file
 
+* this update creates:
+* /Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220708/code/IMPE/Users/gbarnsle/Documents/LMIC_fitting/global-lmic-reports-orderly/gh-pages/data
+
+cd Users/
+cd gbarnsle/
+cd Documents/
+cd LMIC_fitting/
+cd "global-lmic-reports-orderly"
+cd "gh-pages"
+cd data
+
+
 import delimited "$IMPEdate.csv", clear varnames(1) // * Wait Note: large file size, takes a while ...
+
+
+cd "$pathCovidVisualizedGlobal"
+
+cd IMPE
 
 save "IMPE.dta", replace
 
@@ -123,15 +140,23 @@ S3	Pessimistic
 S4	Surged Optimistic
 S5	Surged Maintain Status Quo
 S6	Surged Pessimistic
+
+
+*** With IMPE 2022-06-20_v9, IMPE has new terms for their scenarios:
+
+
+Surged Maintain Status has changed to Central
+
+
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -715,31 +740,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -1320,31 +1345,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -1882,31 +1907,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -2479,31 +2504,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -3076,31 +3101,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -3698,31 +3723,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -4284,31 +4309,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
@@ -4882,31 +4907,31 @@ tab scenario
 Scenarios:
 
 S1  "Additional 50% Reduction"			"S1_Add_Half_Reduction"
-S2  "Maintain Status Quo"				"S2_Maintain_Staus_Quo"
+S2  "Central"				"S2_Maintain_Staus_Quo"
 S3  "Relax Interventions 50%" 			"S3_Relax_Half_Intervention"
 
 S4  "Surged Additional 50% Reduction"	"S4_Surged_Add_Half_Reduction"
-S5  "Surged Maintain Status Quo"		"S5_Surged_Maintain_Staus_Quo"
+S5  "Surged Central"		"S5_Surged_Maintain_Staus_Quo"
 S6  "Surged Relax Interventions 50%"	"S6_Surged_Relax_Half_Intervention"
 
 With IMPE update 20211103 (2021-12-26_v9.csv.zip) released on 20211110., IMPE has new terms for their scenarios:
 
 S1	Optimistic
-S2	Maintain Status Quo
+S2	Central
 S3	Pessimistic
 
 S4	Surged Optimistic
-S5	Surged Maintain Status Quo
+S5	Surged Central
 S6	Surged Pessimistic
 */
 
 
 gen scenario_snail = ""
 replace scenario_snail = "S1" if scenario == "Optimistic"
-replace scenario_snail = "S2" if scenario == "Maintain Status Quo"
+replace scenario_snail = "S2" if scenario == "Central"
 replace scenario_snail = "S3" if scenario == "Pessimistic"
 replace scenario_snail = "S4" if scenario == "Surged Optimistic"
-replace scenario_snail = "S5" if scenario == "Surged Maintain Status Quo"
+replace scenario_snail = "S5" if scenario == "Surged Central"
 replace scenario_snail = "S6" if scenario == "Surged Pessimistic"
 
 
