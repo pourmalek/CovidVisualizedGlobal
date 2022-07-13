@@ -487,7 +487,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR1%2021%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178734529-9101910c-31e9-461a-ba4c-75fd9e3f0a0c.png)
 
 ****
 
@@ -498,7 +498,7 @@ book
 
 (6b) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR1%2024b%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178734671-a05fc4f6-eb7a-4727-9812-b37404e5c608.png)
 
 ****
 
@@ -519,18 +519,19 @@ book
 
 (1) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178734894-d94237c1-62f5-4b30-a053-713e568be3bc.png)
 
 ****
 
 (3) Americas region, without  Canada and United States [Daily deaths, 3 scenarios, 2021 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR2%2014%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202021.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/178735098-e79b32ad-3eb6-40c5-9d4d-3d3b5744d003.png)
   
 ****
 
 (3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR2%2014b%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178735219-67d15871-cad0-4b8f-8fa5-ebebf7a10e6d.png)
 
 ****
 
@@ -547,7 +548,7 @@ book
 
 (6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR2%2024b%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178735368-00e7b71b-11db-474f-b30f-aeced4b76668.png)
 
 ****
 
