@@ -12,35 +12,6 @@ The latest IMPE update 20220620 was released on 20220704.
 <br/><br/> 
 
 
-### Summary 20220708:
-
-**Predicted daily deaths:**
-
-The IHME model (update 20220610) had predicted declining global daily deaths through October first. The SRIV model (update 20220708) predicts unprecedented rise in global daily deaths from July to October 1, reaching more than 15,000 per day on October 1, 2022.
-
-
-**Predicted daily infections and cases:** 
-
-The IHME model (update 20220610) predicted declining global daily infections from early June (8.7 million) to early September 2022 (5.5 million) and rise from early September to October first, 2022 (6.5 million).
-
-The SRIV model (update 20220708) predicts increase in global daily cases from July 1st (about one million) to more than 4 million in mid-September, and then decline through October 1, 2022 (to less than 4 million). The SRIV model predicts peak of daily cases in WHO regions at different heights during August and September 2022.
-
-The DELP model (update 20220618) had predicted peak of cases and deaths in the African region (AFR) at about late August to early September 2022.
-
-
-**Officially reported daily deaths:**
-
-Officially reported daily deaths have been stagnating since mid-June 2022 in most WHO regions, but they are increasing since early June in Americas, with and without Canada and United States. 
-
-
-**Officially reported daily cases:**
-
-Officially reported daily cases have increased since early June 2022 at the global level, and in all regions. Largest increase has been in the European region (from < 150,000 to > 400,000). 
-
-
-<br/><br/> 
-
-
 *********
 
 WE KNOW THAT AMONG THE COMING PANDEMICS IS THE SPREAD OF SEVERAL EPIDEMICS OF MORTALITY AND MORBIDITY DUE TO LOW OR ABSENT FOOD INTAKE, CONCENTRATED IN MIDDLE EAST, NORTH AFRICA, AND SUBSAHARAN AFRICA. 
