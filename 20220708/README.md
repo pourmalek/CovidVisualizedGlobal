@@ -482,6 +482,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AMR1%2014b%20C-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202022.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/178738634-65734611-379c-4d1a-a2b7-80a277fbbfe0.png)
 
 ****
 
@@ -570,7 +571,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178738836-67f7feb1-189f-4828-b02b-1db76d0a5a29.png)
 
 ****
 
@@ -581,13 +582,13 @@ book
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178738983-76deb026-d066-415b-94da-5278f887638a.png)
 
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20EMRO%2021%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178739109-786ba1fb-c8fd-4674-9005-a95c5fdc8f2b.png)
 
 ****
 
@@ -598,7 +599,7 @@ book
 
 (6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178739286-b3d8346f-795b-4bd1-9a2b-fc90fbf83b93.png)
 
 ****
 
