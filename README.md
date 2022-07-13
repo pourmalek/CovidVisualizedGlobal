@@ -158,47 +158,17 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220701`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220701)
+### LATEST UPTAKE: uptake [`20220708`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220708)
 
-### Study update dates in uptake 20220701
+### Study update dates in uptake 20220708
 
-DELP 20220618, IHME 20220610, No IMPE 20220530, **_SRIV 20220701_** 
+DELP 20220618, IHME 20220610, **_IMPE 20220620_**, **_SRIV 20220708_** 
 
-Days old: DELP 14, IHME 22, IMPE 33, SRIV 0
+Days old: DELP 21, IHME 29, IMPE 19, SRIV 0
 
-The latest IMPE update 20220530 was released on 20220624. Not included.
-
-<br/><br/> 
-
-
-### Summary 20220701:
-
-**Predicted daily deaths:**
-
-The IHME model (update 20220610) had predicted declining global daily deaths through October first. The SRIV model (update 20220701) predicts unprecedented rise in global daily deaths from July to October 1, reaching more than 15,000 per day on October 1, 2022.
-
-
-**Predicted daily infections and cases:** 
-
-The IHME model (update 20220610) predicted declining global daily infections from early June (8.7 million) to early September 2022 (5.5 million) and rise from early September to October first, 2022 (6.5 million).
-
-The SRIV model (update 20220701) predicts increase in global daily cases from July 1st (about one million) to more than 4 million in mid-September, and then decline through October 1, 2022 (to less than 4 million). The SRIV model predicts peak of daily cases in WHO regions at different heights during August and September 2022.
-
-The DELP model (update 20220618) had predicted peak of cases and deaths in the African region (AFR) at about late August to early September 2022.
-
-
-**Officially reported daily deaths:**
-
-Officially reported daily deaths have been stagnating since mid-June 2022 in most WHO regions, but they are increasing since early June in Americas, with and without Canada and United States. 
-
-
-**Officially reported daily cases:**
-
-Officially reported daily cases have increased since early June 2022 at the global level, and in all regions. Largest increase has been in the European region (from < 150,000 to > 400,000). 
-
+The latest IMPE update 20220620 was released on 20220704.
 
 <br/><br/> 
-
 
 *********
 
@@ -1295,7 +1265,8 @@ and /20220318/ denotes the date of uptake.
 
 
 
-
+(79) uptake [`20220708`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220708): 
+DELP 20220618, IHME 20220610, **_IMPE 20220620_**, **_SRIV 20220708_**   || Days old: DELP 21, IHME 29, IMPE 19, SRIV 0
  
 (78) uptake [`20220701`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220701): 
 DELP 20220618, IHME 20220610, No IMPE 20220530, **_SRIV 20220701_**    || Days old: DELP 14, IHME 22, IMPE 33, SRIV 0
