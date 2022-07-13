@@ -249,7 +249,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (4) Regions together [Daily deaths, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%201b2%20C-19%20daily%20deaths%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178632474-ee87c0ab-821c-410c-a4bf-de4b0293ae66.png)
 
 ****
 
@@ -265,37 +265,37 @@ book
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178632852-6c7b15fd-d9e8-4119-8c1f-afcb6fef5616.png)
 
 ****
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178633306-3cd339f4-ea0c-4b7d-b44c-3892d6edad67.png)
 
 ****
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178633627-7312ee45-3d33-4ae7-8de0-8b8ca0e552ab.png)
 
 ****
 
 (00d) Regions together [Daily cases, without GLOBAL, 2022 June, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178633997-b21a9aa5-8756-4a1a-a3ed-967a891f3d93.png)
 
 ****
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178634326-e4e7cb41-ffff-493a-bb6c-89b1d562b4eb.png)
 
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178634485-014954ed-c1e6-4737-b016-d8d480d53ddb.png)
 
 ****
 
