@@ -301,13 +301,13 @@ AMRO is devided to AMR1 and AMR2:
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178634813-d7cb0ce2-7982-4fcb-985b-c6a1169e6deb.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178634926-409f6edd-4f4c-4963-9287-4e879cfd91bd.png)
 
 ****
 
@@ -376,7 +376,7 @@ book
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178635014-05dc0c2a-8d84-4e7c-8ed3-544649c2fe64.png)
 
 ****
 
@@ -387,13 +387,13 @@ book
 
 (3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178635150-8a5ff1ad-7f58-4980-97a0-fee83830bdbc.png)
 
 ****
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178635237-8dffc857-80e1-4a0b-83bf-24a4e3a5e4ee.png)
 
 ****
 
@@ -404,7 +404,7 @@ book
 
 (6b) African region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20AFRO%2024b%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178635325-ef24aabe-170b-41d5-8ef2-73b030839e72.png)
 
 ****
 
