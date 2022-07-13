@@ -103,7 +103,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178616413-3d9fd744-b25d-4a8d-9848-f00e304544a9.png)
 
 ****
 
@@ -129,13 +129,13 @@ book
 
 (3d) Global [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20GLOBAL%2014b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178616473-cb0100b7-36b3-4f2c-94ab-de0e3b114479.png)
 
 ****
 
 (4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220708/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/178624399-3c390a09-15bf-4f1e-a967-7271666e499d.png)
 
 ****
 
