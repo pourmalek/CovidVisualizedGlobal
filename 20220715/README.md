@@ -364,7 +364,7 @@ book
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179561624-8dd93cfb-5ce5-4f73-a16a-10d49a492261.png)
 
 ****
 
@@ -412,7 +412,7 @@ book
 
 (4) Americas region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AMRO%2021%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179561796-880cef27-a1fc-4582-9c63-a62f5e3e2b33.png)
 
 ****
 
@@ -423,7 +423,7 @@ book
 
 (6b) Americas region [Daily reference, 3 scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AMRO%2024b%20C-19%20daily%20cases%2C%20AMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179561949-6581822a-135e-4ab5-a8b2-d07a7bf2d8e8.png)
 
 ****
 
