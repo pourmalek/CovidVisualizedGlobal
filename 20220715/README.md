@@ -593,7 +593,7 @@ book
 
 (1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179566923-58172252-928d-4379-81a7-838ea8ce3e4a.png)
 
 ****
 
@@ -604,13 +604,13 @@ book
 
 (3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179567562-2748bb34-c970-42e5-8e3b-9defb5bb7587.png)
 
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20EURO%2021%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179567725-5edad54d-ad12-45f4-b0e9-924cdb778836.png)
 
 ****
 
@@ -621,7 +621,7 @@ book
 
 (6b) European region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20EURO%2024b%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179567893-afa6e5b8-e694-4712-8839-4ed5014b1360.png)
 
 ****
 
