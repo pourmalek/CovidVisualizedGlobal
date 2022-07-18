@@ -252,33 +252,33 @@ book
 
 ****
 
-(00d) Regions together [Daily cases, without GLOBAL, 2022 June, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
+(00d) Regions together [Daily cases, without GLOBAL, 2022 June on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179555157-fddf974c-2dba-439b-9b75-b6773f75a4f5.png)
 
 ****
 
 (7) Regions together [Daily infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202a1%20C-19%20daily%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
-book
+.
 
 ****
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
-book
+.
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179555496-a2d5546f-5c2b-4671-9982-385d002cdd01.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179555707-7b3108a8-e307-4700-b33a-c6d9ce31d20d.png)
 
 ****
 
@@ -347,7 +347,7 @@ book
 
 (1) African region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AFRO%2011a%20C-19%20daily%20deaths%2C%20AFRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179555880-9bb7acc5-e6bb-45b9-9fe5-6e3d39bfda0e.png)
 
 ****
 
@@ -358,7 +358,7 @@ book
 
 (3b) African region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AFRO%2014b%20C-19%20daily%20deaths%2C%20AFRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179556028-72230165-107b-4aaa-9988-cd6fcdc26ccc.png)
 
 ****
 
@@ -375,7 +375,7 @@ book
 
 (6b) African region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AFRO%2024b%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179556209-6afca04e-6237-471d-9a5f-f267fdefe319.png)
 
 ****
 
@@ -395,7 +395,7 @@ book
 
 (1) Americas region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AMRO%2011a%20C-19%20daily%20deaths%2C%20AMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179556335-1d883050-fcdf-4dc0-bf71-6b6584dfb23f.png)
 
 ****
 
@@ -406,7 +406,7 @@ book
 
 (3b) Americas region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220715/output/merge/graph%20AMRO%2014b%20C-19%20daily%20deaths%2C%20AMRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/179556485-c050c9db-0da3-4835-9adc-7d6aafba5240.png)
 
 ****
 
