@@ -654,7 +654,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) South-East Asian region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20SEARO%2011a%20C-19%20daily%20deaths%2C%20SEARO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653570-f53bcb73-9ada-40e2-b805-e35ca3d09547.png)
 
 ****
 
@@ -665,13 +665,13 @@ book
 
 (3b) South-East Asian region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20SEARO%2014b%20C-19%20daily%20deaths%2C%20SEARO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653657-bc5d432b-3bf1-40cb-bff7-62f1193bb3a2.png)
 
 ****
 
 (4) South-East Asian region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20SEARO%2021%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653972-81a19521-4034-41c7-8861-1e66ac739abd.png)
 
 ****
 
@@ -682,7 +682,7 @@ book
 
 (6b) South-East Asian region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20SEARO%2024b%20C-19%20daily%20cases%2C%20SEARO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180654008-91e4fc1f-15b9-4648-bca2-f2b3f39faff5.png)
 
 ****
 
@@ -705,7 +705,7 @@ book
 
 (1) Western Pacific region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20WPRO%2011a%20C-19%20daily%20deaths%2C%20WPRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180654037-60e5d450-d5fb-4db7-8b79-b80bb286d538.png)
 
 ****
 
@@ -716,13 +716,13 @@ book
 
 (3b) Western Pacific region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20WPRO%2014b%20C-19%20daily%20deaths%2C%20WPRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180654068-af1f114a-5c44-4609-a8da-6035a33f2133.png)
 
 ****
 
 (4) Western Pacific region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20WPRO%2021%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180654096-151179c3-fc24-4f6b-90b3-a2f42be59aef.png)
 
 ****
 
@@ -733,7 +733,7 @@ book
 
 (6b) Western Pacific region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20WPRO%2024b%20C-19%20daily%20cases%2C%20WPRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180654137-8760eebd-4848-49a7-9305-a33e788a1360.png)
 
 ****
 
