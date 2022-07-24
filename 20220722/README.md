@@ -287,8 +287,9 @@ AMRO is devided to AMR1 and AMR2:
 
 ****
 
-(11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/180651765-22ff92e1-cf97-4c2e-8533-a39abedbc5b1.png)
  
 ****
 
@@ -299,6 +300,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (13) Regions together [Total deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%203a2%20C-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/180651826-aeef2d98-67a5-449b-978f-dfa720d4444d.png)
  
 ****
 
@@ -309,6 +311,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/180651867-4d36aaec-7fbf-4dd1-84ed-8fc67b4af562.png)
  
 ****
 
@@ -317,8 +320,9 @@ AMRO is devided to AMR1 and AMR2:
  
 ****
 
-(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%204a1%20C-19%20total%20infections%2C%20regions%20together%2C%20IHME%2C%20IMPE.pdf)
+(17) Regions together [Total infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%204a1%20C-19%20total%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/180652011-1d6815b1-b6c0-444b-b6fc-572a53ed017f.png)
  
 ****
 
@@ -329,6 +333,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%204a2%20C-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
+![image](https://user-images.githubusercontent.com/30849720/180652061-775a2393-4098-4ab3-aea8-abe94d5f1c2e.png)
  
 ****
 
