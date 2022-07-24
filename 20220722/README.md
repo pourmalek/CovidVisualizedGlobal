@@ -74,7 +74,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Global [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20GLOBAL%2011a%20C-19%20daily%20deaths%2C%20GLOBAL%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180648097-871a53a3-5e18-44c0-9df7-7a5d3274ce4c.png)
 
 ****
 
@@ -100,13 +100,13 @@ book
 
 (3d) Global [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20GLOBAL%2014b%20C-19%20daily%20deaths%2C%20GLOBAL%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180648155-91b8052c-c724-469d-a684-8b78431b20bd.png)
 
 ****
 
 (4) Global [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20GLOBAL%2021%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180648181-971cc871-db9c-40c4-b4f1-5ae4914fb89d.png)
 
 ****
 
@@ -117,7 +117,7 @@ book
 
 (6b) Global [Daily cases, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20GLOBAL%2024b%20C-19%20daily%20cases%2C%20GLOBAL%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180648318-bde8e952-c88c-4700-a8fd-13d2b709ab81.png)
 
 ****
 
