@@ -2,7 +2,7 @@
 
 ## ! THE MOST RECENT WEEKLY SITUATION REPORT, HERE:
 
-! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 53 - 2022-07-15 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/53%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2053%20–%202022-07-15.pdf)
+! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 54 - 2022-07-22 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/54%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2054%20–%202022-07-22.pdf)
 
 
 <br/><br/>
@@ -202,7 +202,7 @@ DON’T WE KNOW? Yes, we do.
 
 **** 
   
-# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 53 - 2022-07-15 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/53%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2053%20–%202022-07-15.pdf)
+# :eyes: SEE: the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 54 - 2022-07-22 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/54%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2054%20–%202022-07-22.pdf)
 
 
   
