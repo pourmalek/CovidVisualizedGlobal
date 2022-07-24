@@ -453,7 +453,7 @@ AMRO is devided to AMR1 and AMR2:
 
 (1) Americas region, Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR1%2011a%20C-19%20daily%20deaths%2C%20AMR1%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180652908-3a5f276c-3158-4270-81b0-d3d11aced9e8.png)
 
 ****
 
@@ -464,13 +464,13 @@ book
 
 (3b) Americas region, Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR1%2014b%20C-19%20daily%20deaths%2C%20AMR1%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180652937-eaf6869e-2667-45db-99e5-920125227839.png)
 
 ****
 
 (4) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR1%2021%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180652967-677971a5-4d8f-41b0-ba2b-224dffbea9d4.png)
 
 ****
 
@@ -481,7 +481,7 @@ book
 
 (6b) Americas region, Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR1%2024b%20C-19%20daily%20cases%2C%20AMR1%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653003-8eef1a46-5ff8-43f9-b5f5-09462f49cf6f.png)
 
 ****
 
@@ -502,7 +502,7 @@ book
 
 (1) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR2%2011a%20C-19%20daily%20deaths%2C%20AMR2%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653048-96260029-18d4-49e1-ab0d-0cccef74f678.png)
 
 ****
 
@@ -513,13 +513,13 @@ book
 
 (3b) Americas region, without Canada and United States [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR2%2014b%20C-19%20daily%20deaths%2C%20AMR2%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653072-dd4737c1-1a9a-4af3-b204-1670d445e8a0.png)
 
 ****
 
 (4) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR2%2021%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653106-51a28bfe-ee8f-48e8-a62b-d9ccfdebbc06.png)
 
 ****
 
@@ -530,7 +530,7 @@ book
 
 (6b) Americas region, without Canada and United States [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20AMR2%2024b%20C-19%20daily%20cases%2C%20AMR2%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653142-057419b7-26cb-44be-ae73-6497b51a602a.png)
 
 ****
 
@@ -553,7 +553,7 @@ book
 
 (1) Eastern Mediterranean region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EMRO%2011a%20C-19%20daily%20deaths%2C%20EMRO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653204-630ada5b-329b-4788-bf10-0b48375d9d7b.png)
 
 ****
 
@@ -564,13 +564,13 @@ book
 
 (3b) Eastern Mediterranean region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EMRO%2014b%20C-19%20daily%20deaths%2C%20EMRO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653244-2d5ebf1c-f5bd-443f-88b5-bc4fbef239f9.png)
 
 ****
 
 (4) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EMRO%2021%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653299-229f57bf-1045-4323-b285-9255e118c9cf.png)
 
 ****
 
@@ -581,7 +581,7 @@ book
 
 (6b) Eastern Mediterranean region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EMRO%2024b%20C-19%20daily%20cases%2C%20EMRO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653352-99427255-ec0f-41c0-984b-41dc24ba1cc6.png)
 
 ****
 
@@ -603,7 +603,7 @@ book
 
 (1) European region [Daily deaths, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EURO%2011a%20C-19%20daily%20deaths%2C%20EURO%2C%20reference%20scenarios%2C%20all%20time.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653387-e486a412-fa8f-4f9a-a1df-84a4381888eb.png)
 
 ****
 
@@ -614,13 +614,13 @@ book
 
 (3b) European region [Daily deaths, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EURO%2014b%20C-19%20daily%20deaths%2C%20EURO%2C%203%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653429-6e06af5a-d8ed-4621-8414-442a268f6bd0.png)
 
 ****
 
 (4) European region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EURO%2021%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653470-1677ed76-9245-4fdf-9fc3-92a0ccbd6d83.png)
 
 ****
 
@@ -631,7 +631,7 @@ book
 
 (6b) European region [Daily cases or infections, reference scenarios, 2022 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220722/output/merge/graph%20EURO%2024b%20C-19%20daily%20cases%2C%20EURO%2C%20reference%20scenarios%2C%202022.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/180653516-9d492639-5b73-41ab-9e13-699d6e124483.png)
 
 ****
 
