@@ -83,6 +83,8 @@ Not to forget:
 
 (6) Governments have chosen to set the current and ongoing (low or high) levels of morbidity and mortality of the people to preserve the economy and stability. People have regressed into personal and family survival mode. Numerable individuals speak, and no one listens. Environmental degradation (consequences of which includes the infamous global warming) is an existential threat for Homo sapiens, and the causes and solutions have been explained since the 1970s. 
 
+Carl Sagan testifying before Congress in 1985 on climate change || https://www.youtube.com/watch?v=Wp-WiNXH6hI
+
 <br/><br/> 
 
 
