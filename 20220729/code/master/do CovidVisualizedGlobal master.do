@@ -54,7 +54,7 @@ global IHMEdate 2022-07-19
 global IMPEepoch 03Jul2022 // update release date																		 
 *            8/ ----------
 
-global SRIVepoch 28Jul2028 // update release date																		 
+global SRIVepoch 28Jul2022 // update release date																		 
 *            9/ ----------
 
 

@@ -3,7 +3,7 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220729/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}30 Jul 2022, 17:32:20
+ {txt}opened on:  {res}30 Jul 2022, 17:56:01
 {txt}
 {com}. 
 . 
@@ -573,8 +573,8 @@ now 732
 
 {txt}Contains data from {res}CovidVisualizedGlobal merge.dta
 {txt}  obs:{res}         9,183                          
-{txt} vars:{res}         2,491                          30 Jul 2022 17:32
-{txt} size:{res}    92,142,222                          
+{txt} vars:{res}         2,491                          30 Jul 2022 17:56
+{txt} size:{res}    92,638,104                          
 {txt}{hline}
               storage   display    value
 variable name   type    format     label      variable label
@@ -4886,41 +4886,41 @@ variable name   type    format     label      variable label
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}TotDeaUpRaA05S00 WPRO{p_end}
 {p 0 48}{bind:epoch_SRIV     }{txt}{bind: int     }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}SRIV Forecast start date{p_end}
 {p 0 48}DayDeaFOREA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AFRO{p_end}
 {p 0 48}DayCasFOREA05S00AFRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AFRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AFRO{p_end}
 {p 0 48}DayDeaFOREA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMRO{p_end}
 {p 0 48}DayCasFOREA05S00AMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMRO{p_end}
 {p 0 48}DayDeaFOREA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR1{p_end}
 {p 0 48}DayCasFOREA05S00AMR1{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR1{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR1{p_end}
 {p 0 48}DayDeaFOREA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV AMR2{p_end}
 {p 0 48}DayCasFOREA05S00AMR2{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR2{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV AMR2{p_end}
 {p 0 48}DayDeaFOREA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EMRO{p_end}
 {p 0 48}DayCasFOREA05S00EMRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EMRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EMRO{p_end}
 {p 0 48}DayDeaFOREA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV EURO{p_end}
 {p 0 48}DayCasFOREA05S00EURO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EURO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV EURO{p_end}
 {p 0 48}DayDeaFOREA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV GLOBAL{p_end}
 {p 0 48}DayCasFOREA05S00GLOBAL{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV GLOBAL{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV GLOBAL{p_end}
 {p 0 48}DayDeaFOREA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV SEARO{p_end}
 {p 0 48}DayCasFOREA05S00SEARO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV SEARO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV SEARO{p_end}
 {p 0 48}DayDeaFOREA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Deaths Mean raw SRIV WPRO{p_end}
 {p 0 48}DayCasFOREA05S00WPRO{p_end}
-{p 0 48}{space 15}{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV WPRO{p_end}
+{p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Forecasted Cases smooth raw SRIV WPRO{p_end}
 {p 0 48}DayCTDMeRaA00S00GLOBAL{p_end}
 {p 0 48}{space 15}{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}Daily Cases to Deaths S0 JOHN{p_end}
 {p 0 48}TotCTDMeRaA00S00GLOBAL{p_end}
@@ -8556,7 +8556,7 @@ all files already exist and are up to date.
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/farshadpourmalek/Downloads/CovidVisualizedGlobal-main/20220729/code/merge/log CovidVisualizedGlobal merge.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}30 Jul 2022, 17:35:45
+ {txt}closed on:  {res}30 Jul 2022, 17:59:24
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
