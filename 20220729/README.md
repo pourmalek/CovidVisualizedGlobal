@@ -296,25 +296,24 @@ AMRO is devided to AMR1 and AMR2:
 
 (8) Regions together [Daily infections, without GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%202b1%20C-19%20daily%20infections%2C%20regions%20together%20wo%20global%2C%20IHME.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/182038413-eff9fb22-0106-45e0-9b28-0e2e8638de10.png)
 
 ****
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/182038801-8ac746d4-728b-4e11-8037-6da266f1e4a9.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/182038819-e5cdd3ad-a793-4b1f-bd1f-309785f11898.png)
 
 ****
 
 (11) Regions together [Total deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%203a1%20C-19%20total%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
-book
  
 ****
 
@@ -325,7 +324,6 @@ book
 
 (13) Regions together [Total deaths, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%203a2%20C-19%20total%20deaths%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-book
  
 ****
 
@@ -336,7 +334,6 @@ book
 
 (15) Regions together [Total excess deaths, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%203%202%20a1%20C-19%20total%20excess%20deaths%2C%20regions%20together%2C%20IHME.pdf)
 
-book
  
 ****
 
@@ -347,7 +344,6 @@ book
 
 (17) Regions together [Total infections, with GLOBAL, 2020 on, IHME](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%204a1%20C-19%20total%20infections%2C%20regions%20together%2C%20IHME.pdf)
 
-book
  
 ****
 
@@ -358,7 +354,6 @@ book
 
 (19) Regions together [Total cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220729/output/merge/graph%204a2%20C-19%20total%20cases%2C%20regions%20together%2C%20DELP%2C%20SRIV.pdf)
 
-book
  
 ****
 
