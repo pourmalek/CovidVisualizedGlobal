@@ -394,7 +394,6 @@ book
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
-![image](https://user-images.githubusercontent.com/30849720/184417979-4fe6dfb3-90aa-4bae-9f3c-2232a1566b0c.png)
 
 ****
 
