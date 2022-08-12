@@ -266,7 +266,7 @@ book
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184418334-75e415c2-9b36-4248-bff4-55c24467eb6c.png)
 
 ****
 
@@ -278,13 +278,13 @@ book
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184418458-8cf71f12-60cd-4c88-bd10-a90c2a77fd13.png)
 
 ****
 
 (00d) Regions together [Daily cases, without GLOBAL, 2022 June on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184418568-f7d66bc3-ee87-4f36-aa8f-6df689b717c2.png)
 
 ****
 
@@ -302,13 +302,13 @@ book
 
 (9) Regions together [Daily cases, with GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20with%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184418703-b8055597-86d3-4efc-b2b2-a3b04308480d.png)
 
 ****
 
 (10) Regions together [Daily cases, without GLOBAL, 2022 on, DELP, SRIV](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%202b2%20C-19%20daily%20cases%2C%20regions%20together%20wo%20global%2C%20DELP%2C%20SRIV.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184418801-d69f6ee0-02b0-4cbf-a02e-e7068193a52b.png)
 
 ****
 
@@ -394,7 +394,7 @@ book
 
 (4) African region [Daily cases or infections, reference scenarios, 2020 on](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220812/output/merge/graph%20AFRO%2021%20C-19%20daily%20cases%2C%20AFRO%2C%20reference%20scenarios.pdf)
 
-book
+![image](https://user-images.githubusercontent.com/30849720/184417979-4fe6dfb3-90aa-4bae-9f3c-2232a1566b0c.png)
 
 ****
 
