@@ -1,12 +1,14 @@
 ! Read the GLOBAL and REGIONAL COVID-19 epidemic models situation report No 56 - 2022-08-26 [here](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/situation%20reports/56%20Global%20and%20regional%20COVID-19%20epidemic%20models%20situation%20report%20No%2056%20–%202022-08-26.pdf) 
 
-### Study update dates in uptake 20220812 
+### Study update dates in uptake 20220826  
 
-DELP 20220721, IHME 20220719, **_IMPE 20220808_**, SRIV 20220728 
+DELP 20220721, IHME 20220719, IMPE 20220808, SRIV 20220824 
 
-Days old: DELP 23, IHME 25, IMPE 5, SRIV 16
+Days old: DELP 37, IHME 39, IMPE 19, SRIV 3
 
 As the IHME and IMPE models’ estimates are released monthly and the DELP and SRIV models’ estimates are released almost biweekly, the uptakes of the current repository are changed from weekly to biweekly. 
+
+The only new model update (compared to the previous uptake here) is SRIV 20220824.
 
 
 <br/><br/> 
