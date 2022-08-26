@@ -266,25 +266,25 @@ book
 
 (00a) Regions together [Daily cases, with GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220826/output/merge/graph%202a1%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book new
+![image](https://user-images.githubusercontent.com/30849720/186978613-d222783e-5e28-47ee-9a31-b9a0393e1266.png)
 
 ****
 
 (00b) Regions together [Daily cases, without GLOBAL, 2020 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220826/output/merge/graph%202a2%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book new
+![image](https://user-images.githubusercontent.com/30849720/186978737-eecbfe12-9d89-496d-aeea-05217b5a5358.png)
 
 ****
 
 (00c) Regions together [Daily cases, without GLOBAL, 2022 on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220826/output/merge/graph%202a6%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book new
+![image](https://user-images.githubusercontent.com/30849720/186978858-2aff8516-0a6e-4f0a-9182-a72e2b0b755b.png)
 
 ****
 
 (00d) Regions together [Daily cases, without GLOBAL, 2022 June on, JOHN](https://github.com/pourmalek/CovidVisualizedGlobal/blob/main/20220826/output/merge/graph%202a6b%20JOHN%20C-19%20daily%20cases%2C%20regions%20together%2C%20JOHN.pdf)
 
-book new
+![image](https://user-images.githubusercontent.com/30849720/186978979-c24dc5ff-7ae7-43c7-b35e-e670a75e8bc1.png)
 
 ****
 
