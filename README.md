@@ -158,15 +158,17 @@ JOHN: Johns Hopkins. The coronavirus resource center, Johns Hopkins University, 
 ********************************************************************************************************************************************
 ********************************************************************************************************************************************
 
-### LATEST UPTAKE: uptake [`20220812`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220812)
+### LATEST UPTAKE: uptake [`20220826`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220826)
 
-### Study update dates in uptake 20220812 
+### Study update dates in uptake 20220826  
 
-DELP 20220721, IHME 20220719, **_IMPE 20220808_**, SRIV 20220728 
+DELP 20220721, IHME 20220719, IMPE 20220808, SRIV 20220824 
 
-Days old: DELP 23, IHME 25, IMPE 5, SRIV 16
+Days old: DELP 37, IHME 39, IMPE 19, SRIV 3
 
 As the IHME and IMPE models’ estimates are released monthly and the DELP and SRIV models’ estimates are released almost biweekly, the uptakes of the current repository are changed from weekly to biweekly. 
+
+The only new model update (compared to the previous uptake here) is SRIV 20220824.
 
 <br/><br/> 
 
@@ -1268,6 +1270,12 @@ and /20220318/ denotes the date of uptake.
   
 
 
+ 
+
+
+
+(84) uptake [`20220826`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220826): 
+DELP 20220721, IHME 20220719, IMPE 20220808, SRIV 20220824     || Days old: DELP 37, IHME 39, IMPE 19, SRIV 3
 
 (83) uptake [`20220812`](https://github.com/pourmalek/CovidVisualizedGlobal/tree/main/20220812): 
 DELP 20220721, IHME 20220719, **_IMPE 20220808_**, SRIV 20220728     || Days old: DELP 23, IHME 25, IMPE 5, SRIV 16
