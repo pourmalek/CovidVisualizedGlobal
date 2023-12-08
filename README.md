@@ -171,13 +171,6 @@ The only new model update (compared to the previous uptake here) is SRIV 2022082
 
 *********
 
-WE KNOW THAT AMONG THE COMING PANDEMICS IS THE SPREAD OF SEVERAL EPIDEMICS OF MORTALITY AND MORBIDITY DUE TO LOW OR ABSENT FOOD INTAKE, CONCENTRATED IN MIDDLE EAST, NORTH AFRICA, AND SUBSAHARAN AFRICA. 
-
-DON’T WE KNOW? Yes, we do.
-
-*
-
-"Famine in 2022" by Dr. John Campbell, Jun 3, 2022 https://www.youtube.com/watch?v=kNv6LSpOqok
 
 *********
   
